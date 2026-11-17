@@ -52,8 +52,8 @@ export default function Page({ company: c }: { company: Company }) {
             Nous expédions avec {carrier}, dans un emballage discret et avec suivi. Pays de
             livraison : Allemagne{others.length > 0 ? <>, {countryNames(others, "fr")}</> : null} ; autres pays sur accord.
           </li>
-          <li>Les pièces en stock vous parviennent en Allemagne en {deliveryDaysOf(c)} jours – pour le paiement anticipé et PayPal à partir du lendemain de la réception du paiement, sinon à partir du lendemain de la conclusion du contrat. Pour l'étranger, nous vous indiquons le délai avant la conclusion du contrat.</li>
-          <li>Nous fabriquons les pièces sur mesure en {madeToOrderDaysOf(c)} jours environ, dès réception de toutes les informations et – pour le paiement anticipé ou PayPal – du paiement.</li>
+          <li>Les pièces en stock vous parviennent en Allemagne en {deliveryDaysOf(c)} jours ouvrables – pour le paiement anticipé et PayPal à partir du lendemain de la réception du paiement, sinon à partir du lendemain de la conclusion du contrat. Pour l'étranger, nous vous indiquons le délai avant la conclusion du contrat.</li>
+          <li>Nous fabriquons les pièces sur mesure en {madeToOrderDaysOf(c)} jours ouvrables environ, dès réception de toutes les informations et – pour le paiement anticipé ou PayPal – du paiement.</li>
           <li>Pour des raisons de sécurité, nous ne pouvons pas expédier certains produits d'entretien, adhésifs et solvants dans tous les pays. Nous le signalons sur la page produit.</li>
         </ul>
       </section>

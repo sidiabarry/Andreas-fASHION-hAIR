@@ -29,7 +29,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
     summaryNotes: [
       vatNote,
       shipNote,
-      `Czas dostawy: produkty z magazynu na terenie Niemiec ${delivery} dni (przedpłata/PayPal: od otrzymania płatności); zagranica: podawany przed zawarciem umowy. Produkty na wymiar: zob. strona produktu.`,
+      `Czas dostawy: produkty z magazynu na terenie Niemiec ${delivery} dni roboczych (przedpłata/PayPal: od otrzymania płatności); zagranica: podawany przed zawarciem umowy. Produkty na wymiar: zob. strona produktu.`,
       "Wiele produktów to egzemplarze unikatowe. Osobiście sprawdzamy dostępność; umowa zostaje zawarta dopiero z naszym potwierdzeniem zamówienia przesłanym e-mailem. Płacą Państwo dopiero potem.",
       "Produkty na wymiar są wyłączone z prawa odstąpienia od umowy.",
     ],

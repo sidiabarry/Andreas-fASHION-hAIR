@@ -29,7 +29,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
     summaryNotes: [
       vatNote,
       shipNote,
-      `Tempi di consegna: pezzi disponibili in Germania ${delivery} giorni (pagamento anticipato/PayPal: dal ricevimento del pagamento); estero: indicati prima della conclusione del contratto. Pezzi su misura: vedi pagina del prodotto.`,
+      `Tempi di consegna: pezzi disponibili in Germania ${delivery} giorni lavorativi (pagamento anticipato/PayPal: dal ricevimento del pagamento); estero: indicati prima della conclusione del contratto. Pezzi su misura: vedi pagina del prodotto.`,
       "Molti pezzi sono unici. Verifichiamo personalmente la disponibilità; il contratto è concluso solo con la nostra conferma d'ordine via e-mail. Il pagamento avviene solo dopo.",
       "I pezzi realizzati su misura sono esclusi dal diritto di recesso.",
     ],

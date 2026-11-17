@@ -32,7 +32,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
     summaryNotes: [
       vatNote,
       shipNote,
-      `Delivery time: pieces in stock within Germany ${delivery} days (advance payment/PayPal: from receipt of payment); abroad: stated before conclusion of the contract. Custom-made pieces: see product page.`,
+      `Delivery time: pieces in stock within Germany ${delivery} business days (advance payment/PayPal: from receipt of payment); abroad: stated before conclusion of the contract. Custom-made pieces: see product page.`,
       "Many pieces are unique. We check availability personally; the contract is only concluded with our order confirmation by email. You only pay after that.",
       "Custom-made pieces are excluded from the right of withdrawal.",
     ],

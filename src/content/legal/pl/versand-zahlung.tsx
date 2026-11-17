@@ -52,8 +52,8 @@ export default function Page({ company: c }: { company: Company }) {
             Wysyłamy z {carrier}, w dyskretnym opakowaniu i z możliwością śledzenia. Kraje dostawy:
             Niemcy{others.length > 0 ? <>, {countryNames(others, "pl")}</> : null}; inne kraje po uzgodnieniu.
           </li>
-          <li>Produkty z magazynu docierają na terenie Niemiec w ciągu {deliveryDaysOf(c)} dni – przy przedpłacie i PayPal od dnia następującego po otrzymaniu płatności, w pozostałych przypadkach od dnia następującego po zawarciu umowy. Czas dostawy za granicę podajemy przed zawarciem umowy.</li>
-          <li>Produkty na wymiar wykonujemy w ciągu ok. {madeToOrderDaysOf(c)} dni od otrzymania wszystkich danych oraz – przy przedpłacie lub PayPal – płatności.</li>
+          <li>Produkty z magazynu docierają na terenie Niemiec w ciągu {deliveryDaysOf(c)} dni roboczych – przy przedpłacie i PayPal od dnia następującego po otrzymaniu płatności, w pozostałych przypadkach od dnia następującego po zawarciu umowy. Czas dostawy za granicę podajemy przed zawarciem umowy.</li>
+          <li>Produkty na wymiar wykonujemy w ciągu ok. {madeToOrderDaysOf(c)} dni roboczych od otrzymania wszystkich danych oraz – przy przedpłacie lub PayPal – płatności.</li>
           <li>Ze względów bezpieczeństwa niektórych produktów do pielęgnacji, klejów i rozpuszczalników nie możemy wysyłać do wszystkich krajów. Informujemy o tym na stronie produktu.</li>
         </ul>
       </section>

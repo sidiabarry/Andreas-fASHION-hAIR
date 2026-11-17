@@ -48,9 +48,9 @@ export default function Page({ company: c }: { company: Company }) {
             Deutschland{others.length > 0 ? <>, {countryNames(others)}</> : null}; weitere Länder nach
             Absprache.
           </li>
-          <li>Lagernde Stücke sind innerhalb Deutschlands in {deliveryDaysOf(c)} Tagen bei Ihnen – bei Vorkasse und PayPal ab dem Tag nach Zahlungseingang, sonst ab dem Tag nach Vertragsschluss. Die Lieferzeit ins Ausland nennen wir Ihnen vor Vertragsschluss.</li>
+          <li>Lagernde Stücke sind innerhalb Deutschlands in {deliveryDaysOf(c)} Werktagen bei Ihnen – bei Vorkasse und PayPal ab dem Tag nach Zahlungseingang, sonst ab dem Tag nach Vertragsschluss. Die Lieferzeit ins Ausland nennen wir Ihnen vor Vertragsschluss.</li>
           <li>
-            Maßanfertigungen fertigen wir in etwa {madeToOrderDaysOf(c)} Tagen, sobald alle Angaben
+            Maßanfertigungen fertigen wir in etwa {madeToOrderDaysOf(c)} Werktagen, sobald alle Angaben
             und – bei Vorkasse oder PayPal – die Zahlung vorliegen.
           </li>
           <li>

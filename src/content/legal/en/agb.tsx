@@ -132,9 +132,9 @@ export default function Page({ company: c }: { company: Company }) {
             {others.length > 0 ? <> and to the following countries: {countryNames(others, "en")}</> : null}. Deliveries
             to other countries are possible by prior arrangement. Shipping is carried out by {carrier}.
           </li>
-          <li>Delivery time for goods in stock within Germany: {deliveryDaysOf(c)} days. For advance payment or PayPal the period begins on the day after receipt of payment, otherwise on the day after conclusion of the contract. We will tell you the delivery time for shipments abroad before the contract is concluded.</li>
+          <li>Delivery time for goods in stock within Germany: {deliveryDaysOf(c)} business days. For advance payment or PayPal the period begins on the day after receipt of payment, otherwise on the day after conclusion of the contract. We will tell you the delivery time for shipments abroad before the contract is concluded.</li>
           <li>
-            We produce custom-made pieces within about {madeToOrderDaysOf(c)} days after we have all
+            We produce custom-made pieces within about {madeToOrderDaysOf(c)} business days after we have all
             the details needed and – for advance payment or PayPal – payment has been received. We
             will tell you the expected dispatch date.
           </li>

@@ -102,8 +102,8 @@ export default function Page({ company: c }: { company: Company }) {
             {others.length > 0 ? <> e nos seguintes países: {countryNames(others, "pt")}</> : null}. As
             entregas para outros países são possíveis mediante acordo prévio. O envio é feito pela {carrier}.
           </li>
-          <li>Prazo de entrega de artigos em stock na Alemanha: {deliveryDaysOf(c)} dias. Com pagamento antecipado ou PayPal, o prazo começa no dia seguinte à receção do pagamento; nos restantes casos, no dia seguinte à celebração do contrato. O prazo para envios para o estrangeiro é-lhe comunicado antes da celebração do contrato.</li>
-          <li>Fabricamos as peças por medida em cerca de {madeToOrderDaysOf(c)} dias, depois de recebermos todos os dados necessários e – com pagamento antecipado ou PayPal – o pagamento. Comunicamos-lhe a data de envio prevista.</li>
+          <li>Prazo de entrega de artigos em stock na Alemanha: {deliveryDaysOf(c)} dias úteis. Com pagamento antecipado ou PayPal, o prazo começa no dia seguinte à receção do pagamento; nos restantes casos, no dia seguinte à celebração do contrato. O prazo para envios para o estrangeiro é-lhe comunicado antes da celebração do contrato.</li>
+          <li>Fabricamos as peças por medida em cerca de {madeToOrderDaysOf(c)} dias úteis, depois de recebermos todos os dados necessários e – com pagamento antecipado ou PayPal – o pagamento. Comunicamos-lhe a data de envio prevista.</li>
           <li>Se a mercadoria chegar com danos de transporte visíveis, reclame junto do estafeta e informe-nos brevemente. Os seus direitos legais mantêm-se; a sua comunicação ajuda-nos a reclamar junto da transportadora.</li>
         </ol>
       </section>

@@ -131,9 +131,9 @@ export default function Page({ company: c }: { company: Company }) {
             livraisons vers d'autres pays sont possibles sur accord préalable. L'expédition est assurée
             par {carrier}.
           </li>
-          <li>Délai de livraison des articles en stock en Allemagne : {deliveryDaysOf(c)} jours. Pour le paiement anticipé ou PayPal, le délai court à partir du lendemain de la réception du paiement, sinon à partir du lendemain de la conclusion du contrat. Pour les envois à l'étranger, nous vous indiquons le délai avant la conclusion du contrat.</li>
+          <li>Délai de livraison des articles en stock en Allemagne : {deliveryDaysOf(c)} jours ouvrables. Pour le paiement anticipé ou PayPal, le délai court à partir du lendemain de la réception du paiement, sinon à partir du lendemain de la conclusion du contrat. Pour les envois à l'étranger, nous vous indiquons le délai avant la conclusion du contrat.</li>
           <li>
-            Nous fabriquons les pièces sur mesure en {madeToOrderDaysOf(c)} jours environ, dès que
+            Nous fabriquons les pièces sur mesure en {madeToOrderDaysOf(c)} jours ouvrables environ, dès que
             nous disposons de toutes les informations nécessaires et – pour le paiement anticipé ou
             PayPal – du paiement. Nous vous indiquons la date d'expédition prévue.
           </li>
