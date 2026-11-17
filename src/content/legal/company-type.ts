@@ -50,7 +50,13 @@ export type Company = {
    * - prepayment: Vorkasse per Banküberweisung; Versand nach Zahlungseingang.
    * - bankTransfer: Kauf auf Rechnung; Überweisung nach Erhalt der Ware.
    */
-  payments: { paypal: boolean; bankTransfer: boolean; prepayment: boolean };
+  payments: {
+    paypal: boolean;
+    bankTransfer: boolean;
+    prepayment: boolean;
+    /** Ratenzahlung über PayPal (Kreditgeber: PayPal). Standard: aus. */
+    paypalInstallments?: boolean;
+  };
 
   /** Wer trägt die unmittelbaren Kosten der Rücksendung bei Widerruf? Fehlt/null = Marker. */
   returnCosts?: "customer" | "merchant" | null;
@@ -66,9 +72,11 @@ export type Company = {
   withdrawalUrl?: string | null;
   /** Versandkosten in Cent. Standard: DE 600, versandkostenfrei ab 15000, EU 1500. */
   shippingRates?: { domesticCents: number; freeFromCents: number | null; euCents: number | null };
-  /** Spanne in Werktagen bis zur Übergabe lagernder Ware an den Versanddienstleister (nur Zahlen). Standard "3–5". */
+  /** Gesamtlieferzeit lagernder Ware bis zur Zustellung in Deutschland, in Werktagen (nur Zahlen). Standard "2–5". */
+  deliveryDays?: string;
+  /** @deprecated Nicht mehr verwendet; ersetzt durch `deliveryDays`. */
   processingDays?: string;
-  /** Fertigungszeit bei Maßanfertigung in Tagen (nur Zahlen). Standard "15–20". */
+  /** Fertigungszeit bei Maßanfertigung in Werktagen (nur Zahlen). Standard "15–20". */
   madeToOrderDays?: string;
   /** Datum, ab dem die Texte gelten (Stand-Angabe), z. B. "1. Dezember 2026". */
   effectiveDate?: string | null;
@@ -88,8 +96,8 @@ export function euro(cents: number, locale = "de-DE"): string {
   return new Intl.NumberFormat(locale, { style: "currency", currency: "EUR" }).format(cents / 100);
 }
 
-export function processingDaysOf(c: Company): string {
-  return c.processingDays ?? "3–5";
+export function deliveryDaysOf(c: Company): string {
+  return c.deliveryDays ?? "2–5";
 }
 
 export function madeToOrderDaysOf(c: Company): string {

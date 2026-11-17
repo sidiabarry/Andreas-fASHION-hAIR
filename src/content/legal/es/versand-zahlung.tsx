@@ -1,4 +1,4 @@
-import { type Company, anyPayment, countryNames, euro, madeToOrderDaysOf, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, anyPayment, countryNames, euro, madeToOrderDaysOf, deliveryDaysOf, shippingOf } from "../company-type";
 
 const Missing = ({ field, label }: { field: string; label: string }) => (
   <mark data-missing={field}>[Dato pendiente: {label}]</mark>
@@ -52,8 +52,8 @@ export default function Page({ company: c }: { company: Company }) {
             Enviamos con {carrier}, en un embalaje discreto y con seguimiento. Países de entrega:
             Alemania{others.length > 0 ? <>, {countryNames(others, "es")}</> : null}; otros países previo acuerdo.
           </li>
-          <li>Entregamos las piezas en stock a la empresa de transporte en un plazo de {processingDaysOf(c)} días hábiles –con pago anticipado y PayPal, a partir del día siguiente a la recepción del pago; en los demás casos, a partir del día siguiente a la celebración del contrato–. A ello se suma el tiempo de tránsito.</li>
-          <li>Fabricamos las piezas a medida en unos {madeToOrderDaysOf(c)} días, una vez recibidos todos los datos y –con pago anticipado o PayPal– el pago.</li>
+          <li>Las piezas en stock le llegan dentro de Alemania en {deliveryDaysOf(c)} días hábiles –con pago anticipado y PayPal, a partir del día siguiente a la recepción del pago; en los demás casos, a partir del día siguiente a la celebración del contrato–. El plazo al extranjero se lo indicamos antes de la celebración del contrato.</li>
+          <li>Fabricamos las piezas a medida en unos {madeToOrderDaysOf(c)} días hábiles, una vez recibidos todos los datos y –con pago anticipado o PayPal– el pago.</li>
           <li>Por motivos de seguridad, no podemos enviar algunos productos de cuidado, adhesivos y disolventes a todos los países. Lo indicamos en la página del producto.</li>
         </ul>
       </section>
@@ -89,6 +89,7 @@ export default function Page({ company: c }: { company: Company }) {
                 ; pagadera en 7 días. Envío tras recibir el pago.
               </li>
             ) : null}
+            {c.payments.paypalInstallments ? <li><strong>Pago a plazos con PayPal</strong> – si PayPal se lo ofrece; el prestamista es PayPal, según su comprobación de solvencia y sus condiciones. Nosotros no concedemos crédito.</li> : null}
             {c.payments.bankTransfer ? (
               <li>
                 <strong>Factura</strong> – transferencia en un plazo de 14 días desde la recepción de

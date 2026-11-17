@@ -1,4 +1,4 @@
-import { type Company, UNIVERSAL_ADR, addressLine, anyPayment, countryNames, euro, madeToOrderDaysOf, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, UNIVERSAL_ADR, addressLine, anyPayment, countryNames, euro, madeToOrderDaysOf, deliveryDaysOf, shippingOf } from "../company-type";
 
 const Missing = ({ field, label }: { field: string; label: string }) => (
   <mark data-missing={field}>[Missing: {label}]</mark>
@@ -25,6 +25,7 @@ export default function Page({ company: c }: { company: Company }) {
             {addressLine(c)}, phone {c.phone}, email {c.email}.
           </li>
           <li>The language of the contract is German. Translations are provided for your understanding only.</li>
+        <li>These GTC apply to consumers only. Salons, hairdressers and other businesses receive an individual offer on separate terms on request.</li>
         </ol>
       </section>
 
@@ -109,6 +110,7 @@ export default function Page({ company: c }: { company: Company }) {
                   ship once payment has been received.
                 </li>
               ) : null}
+              {c.payments.paypalInstallments ? <li><strong>PayPal instalments:</strong> If PayPal offers you this option, you can pay the amount in instalments after a credit check by PayPal. You conclude the instalment credit directly with PayPal as the lender; its terms and pre-contractual information apply. We do not grant credit ourselves. Your contract of sale with us remains unaffected.</li> : null}
               {c.payments.bankTransfer ? (
                 <li>
                   <strong>Invoice (bank transfer after receipt of the goods):</strong> The invoice
@@ -130,14 +132,9 @@ export default function Page({ company: c }: { company: Company }) {
             {others.length > 0 ? <> and to the following countries: {countryNames(others, "en")}</> : null}. Deliveries
             to other countries are possible by prior arrangement. Shipping is carried out by {carrier}.
           </li>
+          <li>Delivery time for goods in stock within Germany: {deliveryDaysOf(c)} business days. For advance payment or PayPal the period begins on the day after receipt of payment, otherwise on the day after conclusion of the contract. We will tell you the delivery time for shipments abroad before the contract is concluded.</li>
           <li>
-            We hand over goods in stock to the carrier within {processingDaysOf(c)} working days. For
-            advance payment or PayPal the period begins on the day after receipt of payment,
-            otherwise on the day after conclusion of the contract. The transit time of the parcel is
-            added. We state the expected delivery time on the product page and in the order summary.
-          </li>
-          <li>
-            We produce custom-made pieces within about {madeToOrderDaysOf(c)} days after we have all
+            We produce custom-made pieces within about {madeToOrderDaysOf(c)} business days after we have all
             the details needed and – for advance payment or PayPal – payment has been received. We
             will tell you the expected dispatch date.
           </li>

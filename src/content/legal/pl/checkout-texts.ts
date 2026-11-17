@@ -1,7 +1,7 @@
-import { type Company, euro, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, euro, deliveryDaysOf, shippingOf } from "../company-type";
 
 /** Polskie tłumaczenie ../checkout-texts.ts (te same klucze i znaczniki). Wiążąca jest wyłącznie wersja niemiecka. */
-function build(smallBusiness: boolean | null, domesticCents: number, freeFromCents: number | null, euCents: number | null, processing: string) {
+function build(smallBusiness: boolean | null, domesticCents: number, freeFromCents: number | null, euCents: number | null, delivery: string) {
   const eur = (n: number) => euro(n, "pl-PL");
   const vatNote =
     smallBusiness === true
@@ -29,7 +29,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
     summaryNotes: [
       vatNote,
       shipNote,
-      `Czas dostawy: produkty z magazynu przekazujemy DHL w ciągu ${processing} dni roboczych (przedpłata/PayPal: od otrzymania płatności) plus czas transportu. Produkty na wymiar: zob. strona produktu.`,
+      `Czas dostawy: produkty z magazynu na terenie Niemiec ${delivery} dni roboczych (przedpłata/PayPal: od otrzymania płatności); zagranica: podawany przed zawarciem umowy. Produkty na wymiar: zob. strona produktu.`,
       "Wiele produktów to egzemplarze unikatowe. Osobiście sprawdzamy dostępność; umowa zostaje zawarta dopiero z naszym potwierdzeniem zamówienia przesłanym e-mailem. Płacą Państwo dopiero potem.",
       "Produkty na wymiar są wyłączone z prawa odstąpienia od umowy.",
     ],
@@ -127,6 +127,8 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
         ].join("\n"),
       },
     },
+    /** Hinweis für Salons/Unternehmer (B2B): Shop richtet sich an Verbraucher. */
+    b2bNotice: "Zamawiają Państwo jako salon, zakład fryzjerski lub inna firma? Nasz sklep jest przeznaczony dla konsumentów. Prosimy o zapytanie – otrzymają Państwo indywidualną ofertę.",
     healthDataNotice:
       "Prosimy nie podawać tutaj informacji o zdrowiu (np. chorobach lub leczeniu). Nie są nam potrzebne do doradztwa ani wykonania.",
   };
@@ -136,7 +138,7 @@ export type CheckoutTexts = ReturnType<typeof build>;
 
 export function checkoutTextsFor(c: Company): CheckoutTexts {
   const s = shippingOf(c);
-  return build(c.smallBusiness, s.domesticCents, s.freeFromCents, s.euCents, processingDaysOf(c));
+  return build(c.smallBusiness, s.domesticCents, s.freeFromCents, s.euCents, deliveryDaysOf(c));
 }
 
-export const checkoutTexts: CheckoutTexts = build(true, 600, 15000, 1500, "3–5");
+export const checkoutTexts: CheckoutTexts = build(true, 600, 15000, 1500, "2–5");

@@ -1,0 +1,113 @@
+{
+  "locale": "es",
+  "inlineColorLowercase": true,
+  "names": {
+    "topper": "Topper de cabello natural {len} cm",
+    "topperPlain": "Topper de cabello natural",
+    "topperR": "Topper de cabello natural (R)",
+    "wig": "Peluca front lace {len} cm",
+    "wigPlain": "Peluca front lace",
+    "curtain": "Flequillo cortina {len} cm",
+    "topperFringe": "Topper flequillo {len} cm",
+    "volume": "Topper volumen {len} cm",
+    "menSkin": "Sistema capilar skin para hombres",
+    "menCustom": "Prótesis capilar a medida para hombres",
+    "menSystem": "Sistema capilar de cabello natural para hombres {len} cm",
+    "glue": "Walker Tape Ultra Hold adhesivo líquido",
+    "solvent": "Walker Tape C-22 disolvente",
+    "tapeRoll": "Walker Tape Ultra Hold cinta adhesiva 3/4\" x 12 yd",
+    "tapeStrips": "Walker Tape Ultra Hold tiras adhesivas"
+  },
+  "subtitles": {
+    "premium": "Cabello natural premium",
+    "men": "Sistema capilar para hombres",
+    "care": "Sujeción y cuidado"
+  },
+  "colors": {
+    "Blond mit Reflexen und dunklem Goldblond": "Rubio con reflejos y rubio dorado oscuro",
+    "Blond mit beigen Highlights und sanft goldenem Ansatz": "Rubio con mechas beige y raíz suavemente dorada",
+    "Braun mit leichtem Kupferton": "Castaño con un ligero tono cobrizo",
+    "Dunkelbraun": "Castaño oscuro",
+    "Goldblond": "Rubio dorado",
+    "Goldblond mit hellblonden Strähnen": "Rubio dorado con mechas rubio claro",
+    "Grau meliert": "Gris jaspeado",
+    "Helles Aschblond": "Rubio ceniza claro",
+    "Helles Aschblond Ombré": "Rubio ceniza claro ombré",
+    "Helles Kupferbraun": "Castaño cobrizo claro",
+    "Kupferbraun": "Castaño cobrizo",
+    "Kupferbraun mit dunkelgoldblonden Reflexen": "Castaño cobrizo con reflejos rubio dorado oscuro",
+    "Kupferbraun mit sanften Goldhighlights": "Castaño cobrizo con suaves mechas doradas",
+    "Mittelbraun": "Castaño medio",
+    "Mittelbraun Ombré": "Castaño medio ombré",
+    "Mittleres Goldblond": "Rubio dorado medio",
+    "Mittleres Kupferbraun": "Castaño cobrizo medio",
+    "Natürliches Dunkelbraun": "Castaño oscuro natural",
+    "Natürliches Dunkelbraun mit Kupferhighlights": "Castaño oscuro natural con mechas cobrizas",
+    "Natürliches Dunkelbraun mit sanften Grausträhnen": "Castaño oscuro natural con suaves mechas grises",
+    "Natürliches Dunkelbraun mit violettroten Highlights": "Castaño oscuro natural con mechas rojo violáceo",
+    "Schwarz": "Negro"
+  },
+  "textures": {
+    "Glatt": "Liso",
+    "Leicht gewellt": "Ligeramente ondulado",
+    "Lockig": "Rizado"
+  },
+  "textureHair": {
+    "Glatt": "Cabello natural liso",
+    "Leicht gewellt": "Cabello natural ligeramente ondulado",
+    "Lockig": "Cabello natural rizado",
+    "": "Cabello natural fino"
+  },
+  "hair": {
+    "colorLen": "{hair} en {color}, de {len} cm de largo.",
+    "len": "{hair}, de {len} cm de largo.",
+    "plain": "{hair}."
+  },
+  "bodies": {
+    "topper": "Cada pelo se implanta a mano en una base nano skin finísima, por eso la raya cae donde usted quiere. Se sujeta con clips, se coloca en segundos y nadie ve una transición.",
+    "topperBase": "Cada pelo se implanta a mano en una base nano skin finísima ({base} cm), por eso la raya cae donde usted quiere. Se sujeta con clips, se coloca en segundos y nadie ve una transición.",
+    "pony": "Un flequillo que rellena la frente y el nacimiento en segundos, sin cortar su propio cabello. Se sujeta con clips y se quita en cualquier momento.",
+    "wig": "La línea front lace está trabajada con tanta finura que el nacimiento parece su propio crecimiento. Colocarla, ajustarla, y el espejo vuelve a mostrarla a usted."
+  },
+  "descriptions": {
+    "menSkin": "Sistema capilar de micropiel ultrafina que prácticamente desaparece sobre el cuero cabelludo. 100 % cabello natural, ligero, transpirable y elaborado para que el nacimiento parezca crecimiento propio.",
+    "menCustom": "Hecha a su medida: color, densidad, dirección del pelo y base se adaptan a usted. El resultado es cómodo, natural y discreto.",
+    "menSystem": "Sistema capilar de cabello natural premium con {len} cm de largo. Se adapta en el taller a su nacimiento y a su color, para que nadie vea una transición.",
+    "glue": "Adhesivo líquido profesional de fuerte sujeción para postizos, pelucas y sistemas capilares. Dura mucho, resiste la humedad y resulta agradable sobre la piel.",
+    "solvent": "Elimina rápida y suavemente los restos de adhesivo y cinta de postizos, pelucas y extensiones. La fórmula a base de cítricos actúa en pocos instantes.",
+    "tapeRoll": "Cinta adhesiva de doble cara con fuerte sujeción para sistemas de reemplazo capilar, pelucas y extensiones. Sujeta firme, pasa desapercibida y resiste la humedad y el sudor.",
+    "tapeStrips": "Tiras adhesivas precortadas y curvadas para sistemas capilares. Sujeción extrafuerte, resistentes al sudor y a la humedad, fáciles de aplicar."
+  },
+  "specs": {
+    "premium": "100 % cabello natural premium",
+    "human": "100 % cabello natural",
+    "length": "Largo del cabello {len} cm",
+    "color": "Color: {color}",
+    "nano": "Base nano skin, implantada pelo a pelo a mano (3D)",
+    "parting": "Raya libre, se puede peinar en cualquier dirección",
+    "base": "Base {base} cm",
+    "clips": "Sujeción con clips",
+    "texture": "Textura: {texture}",
+    "textureStyled": "Textura: {texture}, peinado",
+    "frontLace": "Front lace con nacimiento natural",
+    "microskin": "Base de micropiel ultrafina",
+    "light": "Ligero y transpirable",
+    "durability": "Duración de 3 a 6 meses según el cuidado",
+    "madeToMeasure": "Elaboración a medida",
+    "colorDensity": "Color y densidad según su cabello",
+    "production": "Elaboración en 15 a 20 días laborables",
+    "strongHold": "Sujeción fuerte y duradera",
+    "moisture": "Resistente a la humedad",
+    "forPieces": "Para postizos, pelucas y sistemas capilares",
+    "citrus": "A base de cítricos",
+    "removes": "Elimina restos de adhesivo y cinta",
+    "forSystems": "Para sistemas capilares, pelucas y extensiones",
+    "doubleSided": "Doble cara, 3/4 de pulgada x 12 yardas",
+    "discreet": "Sujeción fuerte, acabado discreto",
+    "sweat": "Resistente a la humedad y al sudor",
+    "precut": "Tiras precortadas",
+    "extraHold": "Sujeción extrafuerte",
+    "sweatMoisture": "Resistente al sudor y a la humedad",
+    "fitting": "Ajuste en el taller"
+  }
+}

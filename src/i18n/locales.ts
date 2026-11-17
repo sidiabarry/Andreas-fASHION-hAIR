@@ -7,7 +7,7 @@
 export const ALL_LOCALES = ["de", "en", "fr", "es", "pt", "it", "nl", "pl", "tr"] as const;
 export type AnyLocale = (typeof ALL_LOCALES)[number];
 /** Freigeschaltete Sprachen (jede braucht vollständige Übersetzungen in src/messages). */
-export const LOCALES = ["de", "en"] as const satisfies readonly AnyLocale[];
+export const LOCALES = ["de", "en", "fr", "es"] as const satisfies readonly AnyLocale[];
 export type Locale = (typeof LOCALES)[number];
 export const DEFAULT_LOCALE: Locale = "de";
 /** Fallback, wenn weder Browser-Sprache noch Land passen. */

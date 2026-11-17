@@ -1,0 +1,591 @@
+{
+  "11": {
+    "description": "Cheveux naturels fins, couleur blond doré moyen, 20 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 20 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 20 cm",
+      "Couleur : Blond doré moyen"
+    ],
+    "subtitle": "Blond doré moyen"
+  },
+  "12": {
+    "description": "Cheveux naturels fins, couleur gris mêlé, 20 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 20 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 20 cm",
+      "Couleur : Gris mêlé"
+    ],
+    "subtitle": "Gris mêlé"
+  },
+  "17": {
+    "description": "Cheveux naturels fins, couleur brun foncé, 47 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 47 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 47 cm",
+      "Couleur : Brun foncé"
+    ],
+    "subtitle": "Brun foncé"
+  },
+  "21": {
+    "description": "Système capillaire en cheveux naturels premium avec une longueur de 20 cm. Adapté à l'atelier à votre racine et à votre couleur, pour que personne ne voie de transition.",
+    "name": "Système capillaire en cheveux naturels pour hommes 20 cm",
+    "specs": [
+      "100 % cheveux naturels",
+      "Longueur des cheveux 20 cm",
+      "Adaptation à l'atelier"
+    ],
+    "subtitle": "Système capillaire pour hommes"
+  },
+  "29": {
+    "description": "Cheveux naturels fins, couleur brun foncé naturel, 14 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper volume 14 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 14 cm",
+      "Couleur : Brun foncé naturel"
+    ],
+    "subtitle": "Brun foncé naturel"
+  },
+  "33": {
+    "description": "Cheveux naturels fins, couleur brun foncé naturel avec douces mèches grises, 20 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 20 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 20 cm",
+      "Couleur : Brun foncé naturel avec douces mèches grises"
+    ],
+    "subtitle": "Brun foncé naturel avec douces mèches grises"
+  },
+  "38": {
+    "description": "Cheveux naturels fins, couleur brun foncé naturel avec mèches rouge violine, 25 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 25 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 25 cm",
+      "Couleur : Brun foncé naturel avec mèches rouge violine"
+    ],
+    "subtitle": "Brun foncé naturel avec mèches rouge violine"
+  },
+  "43": {
+    "description": "Cheveux naturels fins, couleur brun foncé naturel avec mèches cuivrées, 25 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 25 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 25 cm",
+      "Couleur : Brun foncé naturel avec mèches cuivrées"
+    ],
+    "subtitle": "Brun foncé naturel avec mèches cuivrées"
+  },
+  "48": {
+    "description": "Cheveux naturels fins, couleur brun cuivré avec douces mèches dorées, 45 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 45 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 45 cm",
+      "Couleur : Brun cuivré avec douces mèches dorées"
+    ],
+    "subtitle": "Brun cuivré avec douces mèches dorées"
+  },
+  "53": {
+    "description": "Cheveux naturels fins, couleur brun foncé naturel, 25 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 25 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 25 cm",
+      "Couleur : Brun foncé naturel"
+    ],
+    "subtitle": "Brun foncé naturel"
+  },
+  "58": {
+    "description": "Cheveux naturels fins, couleur gris mêlé, 35 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 35 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 35 cm",
+      "Couleur : Gris mêlé"
+    ],
+    "subtitle": "Gris mêlé"
+  },
+  "63": {
+    "description": "Cheveux naturels fins, couleur brun foncé naturel, 25 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 25 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 25 cm",
+      "Couleur : Brun foncé naturel"
+    ],
+    "subtitle": "Brun foncé naturel"
+  },
+  "68": {
+    "description": "Cheveux naturels fins, couleur brun cuivré avec reflets blond doré foncé, 40 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 40 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 40 cm",
+      "Couleur : Brun cuivré avec reflets blond doré foncé"
+    ],
+    "subtitle": "Brun cuivré avec reflets blond doré foncé"
+  },
+  "73": {
+    "description": "Cheveux naturels fins, couleur blond avec mèches beiges et racine légèrement dorée, 40 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 40 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 40 cm",
+      "Couleur : Blond avec mèches beiges et racine légèrement dorée"
+    ],
+    "subtitle": "Blond avec mèches beiges et racine légèrement dorée"
+  },
+  "78": {
+    "description": "Cheveux naturels fins, couleur brun moyen, 56 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 56 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 56 cm",
+      "Couleur : Brun moyen"
+    ],
+    "subtitle": "Brun moyen"
+  },
+  "83": {
+    "description": "Cheveux naturels fins, couleur brun moyen, 45 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 45 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 45 cm",
+      "Couleur : Brun moyen"
+    ],
+    "subtitle": "Brun moyen"
+  },
+  "88": {
+    "description": "Cheveux naturels fins, 53 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 53 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 53 cm"
+    ],
+    "subtitle": "Cheveux naturels premium"
+  },
+  "93": {
+    "description": "Cheveux naturels fins, couleur blond cendré clair ombré, 55 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 55 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 55 cm",
+      "Couleur : Blond cendré clair ombré"
+    ],
+    "subtitle": "Blond cendré clair ombré"
+  },
+  "99": {
+    "description": "Cheveux naturels fins, couleur blond cendré clair ombré, 56 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 56 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 56 cm",
+      "Couleur : Blond cendré clair ombré"
+    ],
+    "subtitle": "Blond cendré clair ombré"
+  },
+  "105": {
+    "description": "Cheveux naturels fins, couleur brun foncé naturel, 65 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 65 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 65 cm",
+      "Couleur : Brun foncé naturel"
+    ],
+    "subtitle": "Brun foncé naturel"
+  },
+  "110": {
+    "description": "Cheveux naturels lisses. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Texture : Lisse",
+      "Base nano skin, implantation cheveu par cheveu à la main (3D)",
+      "Raie libre, orientable dans toutes les directions"
+    ],
+    "subtitle": "Cheveux naturels premium"
+  },
+  "164": {
+    "description": "Cheveux naturels légèrement ondulés, couleur brun avec une légère nuance cuivrée, 43 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine (13 x 15 cm), la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 43 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 43 cm",
+      "Base 13 x 15 cm",
+      "Couleur : Brun avec une légère nuance cuivrée",
+      "Texture : Légèrement ondulé, coiffé",
+      "Base nano skin, implantation cheveu par cheveu à la main (3D)",
+      "Raie libre, orientable dans toutes les directions",
+      "Fixation par clips"
+    ],
+    "subtitle": "Brun avec une légère nuance cuivrée"
+  },
+  "169": {
+    "description": "Cheveux naturels bouclés, couleur brun foncé, 25 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine (13 x 15 cm), la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 25 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 25 cm",
+      "Base 13 x 15 cm",
+      "Couleur : Brun foncé",
+      "Texture : Bouclé",
+      "Base nano skin, implantation cheveu par cheveu à la main (3D)",
+      "Raie libre, orientable dans toutes les directions",
+      "Fixation par clips"
+    ],
+    "subtitle": "Brun foncé"
+  },
+  "175": {
+    "description": "Cheveux naturels lisses, couleur blond doré avec mèches blond clair, 25 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine (13 x 10 cm), la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 25 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 25 cm",
+      "Base 13 x 10 cm",
+      "Couleur : Blond doré avec mèches blond clair",
+      "Texture : Lisse",
+      "Base nano skin, implantation cheveu par cheveu à la main (3D)",
+      "Raie libre, orientable dans toutes les directions",
+      "Fixation par clips"
+    ],
+    "subtitle": "Blond doré avec mèches blond clair"
+  },
+  "180": {
+    "description": "Cheveux naturels lisses, couleur brun cuivré clair, 25 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine (13 x 10 cm), la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 25 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 25 cm",
+      "Base 13 x 10 cm",
+      "Couleur : Brun cuivré clair",
+      "Texture : Lisse",
+      "Base nano skin, implantation cheveu par cheveu à la main (3D)",
+      "Raie libre, orientable dans toutes les directions",
+      "Fixation par clips"
+    ],
+    "subtitle": "Brun cuivré clair"
+  },
+  "186": {
+    "description": "Cheveux naturels légèrement ondulés, couleur brun foncé, 40 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine (13 x 10 cm), la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 40 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 40 cm",
+      "Base 13 x 10 cm",
+      "Couleur : Brun foncé",
+      "Texture : Légèrement ondulé, coiffé",
+      "Base nano skin, implantation cheveu par cheveu à la main (3D)",
+      "Raie libre, orientable dans toutes les directions",
+      "Fixation par clips"
+    ],
+    "subtitle": "Brun foncé"
+  },
+  "191": {
+    "description": "Cheveux naturels légèrement ondulés, couleur brun cuivré clair, 47 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine (13 x 10 cm), la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 47 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 47 cm",
+      "Base 13 x 10 cm",
+      "Couleur : Brun cuivré clair",
+      "Texture : Légèrement ondulé",
+      "Base nano skin, implantation cheveu par cheveu à la main (3D)",
+      "Raie libre, orientable dans toutes les directions",
+      "Fixation par clips"
+    ],
+    "subtitle": "Brun cuivré clair"
+  },
+  "200": {
+    "description": "Cheveux naturels légèrement ondulés, couleur brun foncé, 47 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine (13 x 10 cm), la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 47 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 47 cm",
+      "Base 13 x 10 cm",
+      "Couleur : Brun foncé",
+      "Texture : Légèrement ondulé",
+      "Base nano skin, implantation cheveu par cheveu à la main (3D)",
+      "Raie libre, orientable dans toutes les directions",
+      "Fixation par clips"
+    ],
+    "subtitle": "Brun foncé"
+  },
+  "206": {
+    "description": "Cheveux naturels légèrement ondulés, couleur gris mêlé, 47 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine (13 x 10 cm), la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 47 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 47 cm",
+      "Base 13 x 10 cm",
+      "Couleur : Gris mêlé",
+      "Texture : Légèrement ondulé",
+      "Base nano skin, implantation cheveu par cheveu à la main (3D)",
+      "Raie libre, orientable dans toutes les directions",
+      "Fixation par clips"
+    ],
+    "subtitle": "Gris mêlé"
+  },
+  "220": {
+    "description": "Bandes adhésives prédécoupées et incurvées pour systèmes capillaires. Tenue extra forte, résistantes à la transpiration et à l'humidité, faciles à appliquer.",
+    "name": "Walker Tape Ultra Hold bandes adhésives",
+    "specs": [
+      "Bandes prédécoupées",
+      "Tenue extra forte",
+      "Résiste à la transpiration et à l'humidité"
+    ],
+    "subtitle": "Fixation et soin"
+  },
+  "222": {
+    "description": "Élimine rapidement et en douceur les résidus de colle et d'adhésif sur les compléments capillaires, perruques et extensions. La formule à base d'agrumes agit en quelques instants.",
+    "name": "Walker Tape C-22 solvant",
+    "specs": [
+      "À base d'agrumes",
+      "Élimine les résidus de colle et d'adhésif",
+      "Pour systèmes capillaires, perruques et extensions"
+    ],
+    "subtitle": "Fixation et soin"
+  },
+  "228": {
+    "description": "Ruban adhésif double face à forte tenue pour systèmes de remplacement capillaire, perruques et extensions. Tient bien, reste discret et résiste à l'humidité et à la transpiration.",
+    "name": "Walker Tape Ultra Hold ruban adhésif 3/4\" x 12 yd",
+    "specs": [
+      "Double face, 3/4 pouce x 12 yards",
+      "Tenue forte, finition discrète",
+      "Résiste à l'humidité et à la transpiration"
+    ],
+    "subtitle": "Fixation et soin"
+  },
+  "234": {
+    "description": "Colle liquide professionnelle à forte tenue pour compléments capillaires, perruques et systèmes capillaires. Tient longtemps, résiste à l'humidité et reste agréable sur la peau.",
+    "name": "Walker Tape Ultra Hold colle liquide",
+    "specs": [
+      "Tenue forte et durable",
+      "Résiste à l'humidité",
+      "Pour compléments capillaires, perruques et systèmes capillaires"
+    ],
+    "subtitle": "Fixation et soin"
+  },
+  "238": {
+    "description": "Réalisée selon vos mesures : couleur, densité, sens des cheveux et base sont adaptés à vous. Le résultat est confortable, naturel et discret.",
+    "name": "Prothèse capillaire sur mesure pour hommes",
+    "specs": [
+      "Réalisation sur mesure",
+      "Couleur et densité selon vos cheveux",
+      "100 % cheveux naturels",
+      "Fabrication en 15 à 20 jours ouvrés"
+    ],
+    "subtitle": "Système capillaire pour hommes"
+  },
+  "241": {
+    "description": "Système capillaire en micro-peau ultrafine qui disparaît pratiquement sur le cuir chevelu. 100 % cheveux naturels, léger, respirant et réalisé de sorte que la racine ressemble à une pousse naturelle.",
+    "name": "Système capillaire skin pour hommes",
+    "specs": [
+      "100 % cheveux naturels",
+      "Base en micro-peau ultrafine",
+      "Léger et respirant",
+      "Durée de vie de 3 à 6 mois selon l'entretien"
+    ],
+    "subtitle": "Système capillaire pour hommes"
+  },
+  "246": {
+    "description": "Cheveux naturels légèrement ondulés, couleur brun moyen ombré, 50 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine (11 x 10 cm), la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 50 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 50 cm",
+      "Base 11 x 10 cm",
+      "Couleur : Brun moyen ombré",
+      "Texture : Légèrement ondulé",
+      "Base nano skin, implantation cheveu par cheveu à la main (3D)",
+      "Raie libre, orientable dans toutes les directions",
+      "Fixation par clips"
+    ],
+    "subtitle": "Brun moyen ombré"
+  },
+  "256": {
+    "description": "Cheveux naturels lisses, couleur noir, 30 cm de long. Une frange qui comble le front et la racine en quelques secondes, sans couper vos propres cheveux. Fixée par clips et retirable à tout moment.",
+    "name": "Topper frange 30 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 30 cm",
+      "Base 10 x 10 cm",
+      "Couleur : Noir",
+      "Texture : Lisse",
+      "Base nano skin, implantation cheveu par cheveu à la main (3D)",
+      "Raie libre, orientable dans toutes les directions",
+      "Fixation par clips"
+    ],
+    "subtitle": "Noir"
+  },
+  "263": {
+    "description": "Cheveux naturels lisses, couleur noir, 30 cm de long. Une frange qui comble le front et la racine en quelques secondes, sans couper vos propres cheveux. Fixée par clips et retirable à tout moment.",
+    "name": "Frange rideau 30 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 30 cm",
+      "Base 5 x 7 cm",
+      "Couleur : Noir",
+      "Texture : Lisse",
+      "Base nano skin, implantation cheveu par cheveu à la main (3D)",
+      "Raie libre, orientable dans toutes les directions",
+      "Fixation par clips"
+    ],
+    "subtitle": "Noir"
+  },
+  "287": {
+    "description": "Cheveux naturels légèrement ondulés, couleur blond doré, 35 cm de long. La ligne front lace est travaillée si finement que la racine ressemble à votre propre pousse. Posez-la, ajustez-la, et le miroir vous montre à nouveau.",
+    "name": "Perruque front lace 35 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 35 cm",
+      "Couleur : Blond doré",
+      "Texture : Légèrement ondulé",
+      "Front lace avec ligne frontale naturelle"
+    ],
+    "subtitle": "Blond doré"
+  },
+  "405": {
+    "description": "Cheveux naturels lisses, couleur brun cuivré moyen, 25 cm de long. Une frange qui comble le front et la racine en quelques secondes, sans couper vos propres cheveux. Fixée par clips et retirable à tout moment.",
+    "name": "Topper frange 25 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 25 cm",
+      "Base 13 x 10 cm",
+      "Couleur : Brun cuivré moyen",
+      "Texture : Lisse, coiffé",
+      "Base nano skin, implantation cheveu par cheveu à la main (3D)",
+      "Raie libre, orientable dans toutes les directions",
+      "Fixation par clips"
+    ],
+    "subtitle": "Brun cuivré moyen"
+  },
+  "407": {
+    "description": "Cheveux naturels lisses, 25 cm de long. Une frange qui comble le front et la racine en quelques secondes, sans couper vos propres cheveux. Fixée par clips et retirable à tout moment.",
+    "name": "Frange rideau 25 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 25 cm",
+      "Base 7 x 5 cm",
+      "Texture : Lisse",
+      "Base nano skin, implantation cheveu par cheveu à la main (3D)",
+      "Raie libre, orientable dans toutes les directions",
+      "Fixation par clips"
+    ],
+    "subtitle": "Cheveux naturels premium"
+  },
+  "408": {
+    "description": "Cheveux naturels légèrement ondulés, couleur blond cendré clair, 25 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine (9 x 11 cm), la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 25 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 25 cm",
+      "Base 9 x 11 cm",
+      "Couleur : Blond cendré clair",
+      "Texture : Légèrement ondulé, coiffé",
+      "Base nano skin, implantation cheveu par cheveu à la main (3D)",
+      "Raie libre, orientable dans toutes les directions",
+      "Fixation par clips"
+    ],
+    "subtitle": "Blond cendré clair"
+  },
+  "413": {
+    "description": "Cheveux naturels légèrement ondulés, couleur blond cendré clair, 35 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine (9 x 11 cm), la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 35 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 35 cm",
+      "Base 9 x 11 cm",
+      "Couleur : Blond cendré clair",
+      "Texture : Légèrement ondulé",
+      "Base nano skin, implantation cheveu par cheveu à la main (3D)",
+      "Raie libre, orientable dans toutes les directions",
+      "Fixation par clips"
+    ],
+    "subtitle": "Blond cendré clair"
+  },
+  "414": {
+    "description": "Cheveux naturels lisses, couleur blond avec reflets et blond doré foncé, 45 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine (9 x 11 cm), la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 45 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 45 cm",
+      "Base 9 x 11 cm",
+      "Couleur : Blond avec reflets et blond doré foncé",
+      "Texture : Lisse, coiffé",
+      "Base nano skin, implantation cheveu par cheveu à la main (3D)",
+      "Raie libre, orientable dans toutes les directions",
+      "Fixation par clips"
+    ],
+    "subtitle": "Blond avec reflets et blond doré foncé"
+  },
+  "415": {
+    "description": "Cheveux naturels lisses, couleur brun cuivré, 33 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine (9 x 11 cm), la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 33 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 33 cm",
+      "Base 9 x 11 cm",
+      "Couleur : Brun cuivré",
+      "Texture : Lisse, coiffé",
+      "Base nano skin, implantation cheveu par cheveu à la main (3D)",
+      "Raie libre, orientable dans toutes les directions",
+      "Fixation par clips"
+    ],
+    "subtitle": "Brun cuivré"
+  },
+  "416": {
+    "description": "Cheveux naturels lisses, couleur brun foncé, 40 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine (11 x 9 cm), la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 40 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 40 cm",
+      "Base 11 x 9 cm",
+      "Couleur : Brun foncé",
+      "Texture : Lisse, coiffé",
+      "Base nano skin, implantation cheveu par cheveu à la main (3D)",
+      "Raie libre, orientable dans toutes les directions",
+      "Fixation par clips"
+    ],
+    "subtitle": "Brun foncé"
+  },
+  "417": {
+    "description": "Cheveux naturels fins. La ligne front lace est travaillée si finement que la racine ressemble à votre propre pousse. Posez-la, ajustez-la, et le miroir vous montre à nouveau.",
+    "name": "Perruque front lace",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Front lace avec ligne frontale naturelle"
+    ],
+    "subtitle": "Cheveux naturels premium"
+  },
+  "419": {
+    "description": "Cheveux naturels fins, 30 cm de long. La ligne front lace est travaillée si finement que la racine ressemble à votre propre pousse. Posez-la, ajustez-la, et le miroir vous montre à nouveau.",
+    "name": "Perruque front lace 30 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 30 cm",
+      "Front lace avec ligne frontale naturelle"
+    ],
+    "subtitle": "Cheveux naturels premium"
+  },
+  "420": {
+    "description": "Cheveux naturels fins. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels (R)",
+    "specs": [
+      "100 % cheveux naturels premium"
+    ],
+    "subtitle": "Cheveux naturels premium"
+  },
+  "421": {
+    "description": "Cheveux naturels fins, 30 cm de long. Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
+    "name": "Topper en cheveux naturels 30 cm",
+    "specs": [
+      "100 % cheveux naturels premium",
+      "Longueur des cheveux 30 cm"
+    ],
+    "subtitle": "Cheveux naturels premium"
+  }
+}

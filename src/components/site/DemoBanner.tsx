@@ -6,7 +6,7 @@ export async function DemoBanner() {
   return (
     <aside aria-label={t("demoLabel")} className="af-demo">
       <b>{t("demoLabel")}</b>
-      {t("demoText")}
+      <span className="af-demo__text">{t("demoText")}</span>
     </aside>
   );
 }

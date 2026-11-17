@@ -1,4 +1,4 @@
-import { type Company, anyPayment, countryNames, euro, madeToOrderDaysOf, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, anyPayment, countryNames, euro, madeToOrderDaysOf, deliveryDaysOf, shippingOf } from "../company-type";
 
 const Missing = ({ field, label }: { field: string; label: string }) => (
   <mark data-missing={field}>[Brak danych: {label}]</mark>
@@ -52,8 +52,8 @@ export default function Page({ company: c }: { company: Company }) {
             Wysyłamy z {carrier}, w dyskretnym opakowaniu i z możliwością śledzenia. Kraje dostawy:
             Niemcy{others.length > 0 ? <>, {countryNames(others, "pl")}</> : null}; inne kraje po uzgodnieniu.
           </li>
-          <li>Produkty z magazynu przekazujemy przewoźnikowi w ciągu {processingDaysOf(c)} dni roboczych – przy przedpłacie i PayPal od dnia następującego po otrzymaniu płatności, w pozostałych przypadkach od dnia następującego po zawarciu umowy. Do tego dochodzi czas transportu.</li>
-          <li>Produkty na wymiar wykonujemy w ciągu ok. {madeToOrderDaysOf(c)} dni od otrzymania wszystkich danych oraz – przy przedpłacie lub PayPal – płatności.</li>
+          <li>Produkty z magazynu docierają na terenie Niemiec w ciągu {deliveryDaysOf(c)} dni roboczych – przy przedpłacie i PayPal od dnia następującego po otrzymaniu płatności, w pozostałych przypadkach od dnia następującego po zawarciu umowy. Czas dostawy za granicę podajemy przed zawarciem umowy.</li>
+          <li>Produkty na wymiar wykonujemy w ciągu ok. {madeToOrderDaysOf(c)} dni roboczych od otrzymania wszystkich danych oraz – przy przedpłacie lub PayPal – płatności.</li>
           <li>Ze względów bezpieczeństwa niektórych produktów do pielęgnacji, klejów i rozpuszczalników nie możemy wysyłać do wszystkich krajów. Informujemy o tym na stronie produktu.</li>
         </ul>
       </section>
@@ -88,6 +88,7 @@ export default function Page({ company: c }: { company: Company }) {
                 ; płatne w ciągu 7 dni. Wysyłka po otrzymaniu płatności.
               </li>
             ) : null}
+            {c.payments.paypalInstallments ? <li><strong>Płatność w ratach przez PayPal</strong> – jeżeli PayPal ją zaoferuje; kredytodawcą jest PayPal, po ocenie zdolności kredytowej i na jego warunkach. Sami nie udzielamy kredytu.</li> : null}
             {c.payments.bankTransfer ? (
               <li>
                 <strong>Faktura</strong> – przelew w ciągu 14 dni od otrzymania towaru. W pojedynczych

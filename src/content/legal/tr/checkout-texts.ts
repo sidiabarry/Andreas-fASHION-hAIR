@@ -1,7 +1,7 @@
-import { type Company, euro, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, euro, deliveryDaysOf, shippingOf } from "../company-type";
 
 /** ../checkout-texts.ts dosyasının Türkçe çevirisi (aynı anahtarlar ve yer tutucular). Yalnızca Almanca metin bağlayıcıdır. */
-function build(smallBusiness: boolean | null, domesticCents: number, freeFromCents: number | null, euCents: number | null, processing: string) {
+function build(smallBusiness: boolean | null, domesticCents: number, freeFromCents: number | null, euCents: number | null, delivery: string) {
   const eur = (n: number) => euro(n, "tr-TR");
   const vatNote =
     smallBusiness === true
@@ -29,7 +29,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
     summaryNotes: [
       vatNote,
       shipNote,
-      `Teslimat süresi: stoktaki ürünleri ${processing} iş günü içinde DHL'ye teslim ederiz (ön ödeme/PayPal: ödemenin alınmasından itibaren), buna taşıma süresi eklenir. Ölçüye göre ürünler: ürün sayfasına bakın.`,
+      `Teslimat süresi: stoktaki ürünler Almanya içinde ${delivery} iş günü (ön ödeme/PayPal: ödemenin alınmasından itibaren); yurt dışı: sözleşme öncesinde bildirilir. Ölçüye göre ürünler: ürün sayfasına bakın.`,
       "Ürünlerin birçoğu tektir. Stok durumunu kişisel olarak kontrol ederiz; sözleşme ancak e-posta ile göndereceğimiz sipariş onayıyla kurulur. Ödemeyi ondan sonra yaparsınız.",
       "Ölçüye göre üretilen ürünlerde cayma hakkı yoktur.",
     ],
@@ -127,6 +127,8 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
         ].join("\n"),
       },
     },
+    /** Hinweis für Salons/Unternehmer (B2B): Shop richtet sich an Verbraucher. */
+    b2bNotice: "Salon, kuaför veya başka bir işletme olarak mı sipariş veriyorsunuz? Çevrim içi mağazamız tüketicilere yöneliktir. Lütfen bize talep gönderin – size bireysel bir teklif sunarız.",
     healthDataNotice:
       "Lütfen buraya sağlığınızla ilgili bilgi (örneğin hastalık veya tedavi) yazmayın. Danışmanlık veya üretim için bu bilgilere ihtiyacımız yoktur.",
   };
@@ -136,7 +138,7 @@ export type CheckoutTexts = ReturnType<typeof build>;
 
 export function checkoutTextsFor(c: Company): CheckoutTexts {
   const s = shippingOf(c);
-  return build(c.smallBusiness, s.domesticCents, s.freeFromCents, s.euCents, processingDaysOf(c));
+  return build(c.smallBusiness, s.domesticCents, s.freeFromCents, s.euCents, deliveryDaysOf(c));
 }
 
-export const checkoutTexts: CheckoutTexts = build(true, 600, 15000, 1500, "3–5");
+export const checkoutTexts: CheckoutTexts = build(true, 600, 15000, 1500, "2–5");

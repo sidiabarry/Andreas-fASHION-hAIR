@@ -62,9 +62,9 @@ body.af-body {
   hyphens: auto;
 }
 .af-body *, .af-body *::before, .af-body *::after { box-sizing: border-box; border-color: var(--af-line); }
-.af-body a { color: inherit; text-decoration: none; }
-.af-body img { display: block; max-width: 100%; }
-.af-body button { font: inherit; color: inherit; cursor: pointer; }
+:where(.af-body) a { color: inherit; text-decoration: none; }
+:where(.af-body) img { display: block; max-width: 100%; }
+:where(.af-body) button { font: inherit; color: inherit; cursor: pointer; }
 .af-body ::selection { background: var(--af-gold); color: var(--af-bg); }
 .af-body :focus-visible { outline: 2px solid var(--af-gold); outline-offset: 3px; }
 .af-body main:focus { outline: none; }
@@ -296,7 +296,7 @@ body.af-body {
 .af-form { display: grid; gap: 18px; }
 .af-form__two { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
 @media (max-width: 560px) { .af-form__two { grid-template-columns: 1fr; } }
-.af-field { display: grid; gap: 8px; }
+.af-field { display: grid; gap: 8px; align-content: start; }
 .af-field label { font-size: 0.86rem; color: var(--af-muted); }
 .af-body input, .af-body textarea, .af-body select { width: 100%; height: 50px; padding-inline: 16px; border-radius: 12px; border: 1px solid var(--af-line); background: var(--af-surface); color: var(--af-ink); font: inherit; font-size: 1rem; transition: border-color 0.3s var(--af-ease); }
 .af-body textarea { height: auto; min-height: 120px; padding-block: 14px; resize: vertical; }
@@ -464,3 +464,89 @@ ol.af-steps { list-style: none; padding: 0; }
 .af-hero__in { display: grid; gap: 22px; padding-block: 140px clamp(56px, 9vw, 110px); }
 .af-hero__in .af-h1 { max-width: 14ch; }
 .af-warranty { width: 100%; max-width: 520px; height: auto; background: #fff; border-radius: 8px; }
+
+/* ---------- Warenkorb-Schublade ---------- */
+.af-drawer { margin: 0 0 0 auto; height: 100dvh; max-height: 100dvh; width: min(440px, 100vw); max-width: 100vw; padding: 0; border: 0; border-left: 1px solid var(--af-line); background: var(--af-bg); color: var(--af-ink); }
+.af-drawer::backdrop { background: rgba(8, 7, 6, 0.66); backdrop-filter: blur(4px); }
+.af-drawer[open] { animation: af-drawer-in var(--af-dur) var(--af-ease-out); }
+@keyframes af-drawer-in { from { transform: translateX(40px); opacity: 0.4; } to { transform: none; opacity: 1; } }
+.af-drawer__in { display: grid; gap: 16px; padding: 22px 22px 32px; }
+.af-drawer__head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.af-drawer__x, .af-iconbtn { display: inline-grid; place-items: center; width: var(--af-touch); height: var(--af-touch); border-radius: 999px; border: 1px solid var(--af-field-line); background: transparent; color: var(--af-ink); }
+.af-drawer__x:hover, .af-iconbtn:hover { border-color: var(--af-gold); color: var(--af-gold); }
+.af-drawer__line { display: grid; grid-template-columns: 72px 1fr auto; gap: 14px; align-items: center; padding: 12px 0; border-bottom: 1px solid var(--af-line); }
+.af-drawer__line img { width: 72px; height: 92px; object-fit: cover; border-radius: 10px; background: var(--af-surface); }
+.af-drawer__line p { margin: 2px 0 0; }
+.af-drawer__actions { display: grid; gap: 14px; }
+.af-drawer__links { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+.af-drawer__suggest { padding-top: 10px; border-top: 1px solid var(--af-line); }
+.af-drawer__add { width: var(--af-touch); height: var(--af-touch); border-radius: 999px; border: 1px solid var(--af-gold); background: transparent; color: var(--af-gold); font-size: 1.3rem; line-height: 1; }
+.af-drawer__add:hover { background: var(--af-gold); color: var(--af-bg); }
+@media (max-width: 520px) { .af-iconbtn { display: none; } }
+
+/* ---------- Produktseite: Conversion ---------- */
+.af-pdp__main { position: relative; }
+.af-zoombtn { position: absolute; right: 14px; bottom: 14px; display: inline-grid; place-items: center; width: var(--af-touch); height: var(--af-touch); border-radius: 999px; border: 1px solid color-mix(in srgb, var(--af-ink) 30%, transparent); background: color-mix(in srgb, var(--af-bg) 70%, transparent); backdrop-filter: blur(8px); color: var(--af-ink); }
+.af-zoombtn:hover { border-color: var(--af-gold); color: var(--af-gold); }
+.af-zoom { width: 100vw; height: 100dvh; max-width: 100vw; max-height: 100dvh; margin: 0; padding: 0; border: 0; background: rgba(8, 7, 6, 0.96); }
+.af-zoom::backdrop { background: rgba(8, 7, 6, 0.9); }
+.af-zoom__x { position: fixed; top: 16px; right: 16px; z-index: 2; background: var(--af-bg); }
+.af-zoom__stage { width: 100%; height: 100%; overflow: auto; display: grid; place-items: center; touch-action: pinch-zoom pan-x pan-y; }
+.af-zoom__stage img { max-width: 100%; max-height: 100dvh; object-fit: contain; transition: transform var(--af-dur) var(--af-ease-out); cursor: zoom-in; }
+.af-compare { position: relative; aspect-ratio: 3 / 4; border-radius: var(--af-radius-l); overflow: hidden; background: var(--af-surface); }
+.af-compare__img { object-fit: cover; }
+.af-compare__top { position: absolute; inset: 0; clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
+.af-compare__line { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 2px; margin-left: -1px; background: var(--af-gold); pointer-events: none; }
+.af-compare__tag { position: absolute; top: 12px; padding: 6px 10px; border-radius: 999px; font-family: var(--af-mono); font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; background: color-mix(in srgb, var(--af-bg) 78%, transparent); }
+.af-compare__tag--l { left: 12px; }
+.af-compare__tag--r { right: 12px; }
+.af-compare__range { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; margin: 0; }
+.af-body .af-compare__range { height: 100%; min-height: 0; border: 0; padding: 0; }
+.af-compare:has(.af-compare__range:focus-visible) { outline: 2px solid var(--af-gold); outline-offset: 3px; }
+.af-pdp__secondary { display: flex; flex-wrap: wrap; gap: 10px; }
+.af-wish, .af-chip { display: inline-flex; align-items: center; gap: 10px; min-height: var(--af-touch); padding: 8px 16px; border-radius: 999px; border: 1px solid var(--af-field-line); background: transparent; color: var(--af-ink); font-size: 0.92rem; text-align: left; }
+.af-wish[aria-pressed="true"] { color: var(--af-gold); border-color: var(--af-gold); }
+.af-wish:hover, .af-chip:hover { border-color: var(--af-gold); }
+.af-chip::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #25d366; flex: none; }
+.af-trust { padding: 20px; border-radius: var(--af-radius); background: var(--af-surface); display: grid; gap: 12px; }
+.af-trust ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.af-trust li { position: relative; padding-left: 22px; font-size: 0.93rem; color: var(--af-muted); }
+.af-trust li::before { content: ""; position: absolute; left: 2px; top: 0.6em; width: 8px; height: 8px; border-radius: 50%; border: 1.5px solid var(--af-gold); }
+.af-faq--compact { margin-top: 0; }
+.af-faq--compact summary { font-size: 1.02rem; padding: 18px 0; }
+.af-faq--compact h2 { margin-bottom: 6px; }
+.af-recent { margin-top: 64px; }
+.af-recent ul { list-style: none; margin: 18px 0 0; padding: 0; display: grid; grid-auto-flow: column; grid-auto-columns: 120px; gap: 14px; overflow-x: auto; overscroll-behavior-x: contain; padding-bottom: 6px; }
+.af-recent a { display: grid; gap: 6px; font-size: 0.86rem; }
+.af-recent img { width: 120px; height: 160px; object-fit: cover; border-radius: 12px; }
+.af-sticky { display: none; }
+@media (max-width: 900px) {
+  .af-sticky { position: fixed; left: 0; right: 0; bottom: 0; z-index: 55; display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 12px max(16px, env(safe-area-inset-right)) calc(12px + env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left)); background: color-mix(in srgb, var(--af-bg) 92%, transparent); backdrop-filter: blur(14px); border-top: 1px solid var(--af-line); transform: translateY(110%); transition: transform var(--af-dur) var(--af-ease-out); }
+  .af-sticky[data-visible="true"] { transform: none; }
+  .af-sticky__info { display: grid; min-width: 0; }
+  .af-sticky__name { font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .af-sticky__btn { flex: none; display: inline-flex; align-items: center; min-height: 48px; padding: 0 20px; border-radius: 999px; border: 0; background: var(--af-gold); color: var(--af-bg); font-weight: 600; }
+  body:has(.af-sticky[data-visible="true"]) .af-foot { padding-bottom: 120px; }
+}
+.af-ext { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 72px); margin-top: 44px; align-items: start; }
+@media (max-width: 900px) { .af-ext { grid-template-columns: 1fr; } }
+.af-ext__methods { margin: 18px 0; display: grid; gap: 0; border-top: 1px solid var(--af-line); }
+.af-ext__methods > div { padding: 16px 0; border-bottom: 1px solid var(--af-line); }
+.af-ext__methods dt { font-weight: 550; }
+.af-ext__methods dd { margin: 4px 0 0; color: var(--af-muted); }
+@media (max-width: 760px) {
+  .af-demo { padding: 6px 10px; left: 8px; bottom: 8px; }
+  .af-demo__text { display: none; }
+  .af-toolbar .af-filters { flex-wrap: nowrap; overflow-x: auto; margin-inline: -24px; padding-inline: 24px; padding-bottom: 4px; scrollbar-width: none; }
+  .af-toolbar .af-filters .af-tab { flex: none; height: 44px; padding-inline: 18px; font-size: 0.94rem; }
+}
+.af-checkout__grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: clamp(28px, 4vw, 56px); align-items: start; margin-top: 28px; }
+@media (max-width: 960px) { .af-checkout__grid { grid-template-columns: 1fr; } }
+.af-checkout .af-fieldset legend.af-h3 { margin-bottom: 14px; padding: 0; }
+.af-checkout .af-fieldset + .af-fieldset { margin-top: 18px; }
+.af-review__dl { display: grid; gap: 4px 0; margin: 0; }
+.af-review__dl dt { color: var(--af-muted); font-size: 0.86rem; margin-top: 8px; }
+.af-review__dl dd { margin: 0; font-size: 0.95rem; }
+/* Warenkorb und Kasse laden ihren Inhalt aus dem Gerät: Platz reservieren, damit nichts springt */
+.af-cartview { min-height: 75svh; }
+.af-homelink { display: inline-flex; align-items: center; }

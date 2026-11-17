@@ -4,6 +4,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { InquiryForm } from "@/components/forms/InquiryForm";
 import { ContactLinks } from "@/components/site/ContactLinks";
 import { company } from "@/config/company";
+import { toLegalCompany } from "@/config/legal-company";
+import { legalFor } from "@/content/legal-registry";
 import type { Locale } from "@/i18n/locales";
 import { pageMetadata } from "@/lib/seo";
 import { INQUIRY_TOPICS } from "@/lib/validation";
@@ -38,7 +40,7 @@ export default async function InquiryPage({ params, searchParams }: PageProps<"/
           <ContactLinks />
         </div>
         {available ? (
-          <InquiryForm ownerEmail={company.email} product={product} topic={topic} />
+          <InquiryForm b2bNotice={legalFor(locale).checkoutTextsFor(toLegalCompany()).b2bNotice} ownerEmail={company.email} product={product} topic={topic} />
         ) : (
           <div className="af-msg" data-kind="info" role="status">
             <h2 className="af-h3">{t("unavailableTitle")}</h2>

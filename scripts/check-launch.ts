@@ -50,6 +50,12 @@ for (const file of ["impressum.tsx", "datenschutz.tsx", "agb.tsx", "widerruf.tsx
   }
 }
 
+// Herkunftsangabe „Brasilianisches Echthaar“ (vom Auftraggeber bestätigt): Nachweis bereithalten
+findings.push({ area: "catalog.json", blocking: false, text: "Herkunft „Brasilianisches Echthaar“ wird angezeigt: Herkunftsnachweis (Lieferantenbelege) bereithalten" });
+if (catalog.some((p) => (p as { availability?: string }).availability === "unknown")) {
+  findings.push({ area: "catalog.json", blocking: false, text: "Katalog mit Andrea abgleichen: Verfügbarkeit (availability) ist bei Stücken noch „unknown“" });
+}
+
 // Harmonisierte Gewährleistungsmitteilung (DVO (EU) 2025/1960), amtliche Grafik
 if (!WARRANTY_LABEL || !existsSync(join(root, "public", WARRANTY_LABEL.src))) {
   findings.push({

@@ -1,4 +1,4 @@
-import { type Company, anyPayment, countryNames, euro, madeToOrderDaysOf, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, anyPayment, countryNames, euro, madeToOrderDaysOf, deliveryDaysOf, shippingOf } from "../company-type";
 
 const Missing = ({ field, label }: { field: string; label: string }) => (
   <mark data-missing={field}>[Dado em falta: {label}]</mark>
@@ -52,8 +52,8 @@ export default function Page({ company: c }: { company: Company }) {
             Enviamos pela {carrier}, em embalagem discreta e com seguimento. Países de entrega:
             Alemanha{others.length > 0 ? <>, {countryNames(others, "pt")}</> : null}; outros países mediante acordo.
           </li>
-          <li>Entregamos as peças em stock à transportadora no prazo de {processingDaysOf(c)} dias úteis – com pagamento antecipado e PayPal a partir do dia seguinte à receção do pagamento; caso contrário, a partir do dia seguinte à celebração do contrato. Acresce o tempo de transporte.</li>
-          <li>Fabricamos as peças por medida em cerca de {madeToOrderDaysOf(c)} dias, depois de recebermos todos os dados e – com pagamento antecipado ou PayPal – o pagamento.</li>
+          <li>As peças em stock chegam-lhe na Alemanha em {deliveryDaysOf(c)} dias úteis – com pagamento antecipado e PayPal a partir do dia seguinte à receção do pagamento; caso contrário, a partir do dia seguinte à celebração do contrato. O prazo para o estrangeiro é indicado antes da celebração do contrato.</li>
+          <li>Fabricamos as peças por medida em cerca de {madeToOrderDaysOf(c)} dias úteis, depois de recebermos todos os dados e – com pagamento antecipado ou PayPal – o pagamento.</li>
           <li>Por razões de segurança, não podemos enviar alguns produtos de cuidado, adesivos e solventes para todos os países. Indicamo-lo na página do produto.</li>
         </ul>
       </section>
@@ -88,6 +88,7 @@ export default function Page({ company: c }: { company: Company }) {
                 ; a pagar no prazo de 7 dias. Envio após a receção do pagamento.
               </li>
             ) : null}
+            {c.payments.paypalInstallments ? <li><strong>Pagamento em prestações via PayPal</strong> – se a PayPal lho oferecer; o mutuante é a PayPal, sujeito à sua verificação de solvabilidade e condições. Nós não concedemos crédito.</li> : null}
             {c.payments.bankTransfer ? (
               <li>
                 <strong>Fatura</strong> – transferência no prazo de 14 dias após a receção da

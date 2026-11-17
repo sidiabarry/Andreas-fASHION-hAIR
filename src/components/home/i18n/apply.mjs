@@ -1,5 +1,6 @@
 // Schreibt die Texte der Startseite (hero.*, home.*) und von „Über Andrea“ (about.*) in die
 // Nachrichtendateien. Aufruf: node src/components/home/i18n/apply.mjs
+// Erst beim Umstieg auf die neuen Szenen ausführen: Die bestehenden Seiten brauchen die bisherigen Schlüssel.
 // Sprachen ohne Nachrichtendatei (noch nicht freigeschaltet) werden übersprungen und gemeldet.
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -12,7 +13,7 @@ for (const file of readdirSync(here).filter((f) => /^[a-z]{2}\.mjs$/.test(f))) {
   const locale = file.slice(0, 2);
   const target = join(messagesDir, `${locale}.json`);
   if (!existsSync(target)) {
-    console.log(`übersprungen: ${locale} (keine src/messages/${locale}.json)`);
+    console.warn(`übersprungen: ${locale} (keine src/messages/${locale}.json)`);
     continue;
   }
   const texts = await import(pathToFileURL(join(here, file)).href);
@@ -22,5 +23,5 @@ for (const file of readdirSync(here).filter((f) => /^[a-z]{2}\.mjs$/.test(f))) {
   messages.home = texts.home;
   messages.about = texts.about;
   writeFileSync(target, `${JSON.stringify(messages, null, 2)}\n`);
-  console.log(`geschrieben: ${locale}`);
+  process.stdout.write(`geschrieben: ${locale}\n`);
 }

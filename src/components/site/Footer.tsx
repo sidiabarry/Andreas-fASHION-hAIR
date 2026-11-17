@@ -35,8 +35,9 @@ export async function Footer({ demo }: { demo: boolean }) {
       <div className="af-wrap">
         <div className="af-foot__grid">
           <div className="af-stack">
-            <Link aria-label={t("logo.homeLabel")} href="/">
+            <Link className="af-homelink" href="/">
               <Logo claim size={44} />
+              <span className="af-sr"> – {t("common.home")}</span>
             </Link>
             <p className="af-text">{t("footer.claim")}</p>
             {social.length ? (

@@ -1,4 +1,4 @@
-import { type Company, anyPayment, countryNames, euro, madeToOrderDaysOf, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, anyPayment, countryNames, euro, madeToOrderDaysOf, deliveryDaysOf, shippingOf } from "../company-type";
 
 const Missing = ({ field, label }: { field: string; label: string }) => (
   <mark data-missing={field}>[Eksik bilgi: {label}]</mark>
@@ -52,8 +52,8 @@ export default function Page({ company: c }: { company: Company }) {
             Gönderim kargo şirketi ile yapılır: {carrier} – gizli ambalajda ve takip numarasıyla.
             Teslimat ülkeleri: Almanya{others.length > 0 ? <>, {countryNames(others, "tr")}</> : null}; diğer ülkeler anlaşma ile.
           </li>
-          <li>Stoktaki ürünleri {processingDaysOf(c)} iş günü içinde kargo şirketine teslim ederiz – ön ödeme ve PayPal'da ödemenin alındığı günü izleyen günden, diğer durumlarda sözleşmenin kurulduğu günü izleyen günden itibaren. Buna taşıma süresi eklenir.</li>
-          <li>Ölçüye göre ürünleri, tüm bilgiler ve – ön ödeme veya PayPal'da – ödeme alındıktan sonra yaklaşık {madeToOrderDaysOf(c)} günde üretiriz.</li>
+          <li>Stoktaki ürünler Almanya içinde {deliveryDaysOf(c)} iş günü içinde size ulaşır – ön ödeme ve PayPal'da ödemenin alındığı günü izleyen günden, diğer durumlarda sözleşmenin kurulduğu günü izleyen günden itibaren. Yurt dışı teslimat süresini sözleşme kurulmadan önce bildiririz.</li>
+          <li>Ölçüye göre ürünleri, tüm bilgiler ve – ön ödeme veya PayPal'da – ödeme alındıktan sonra yaklaşık {madeToOrderDaysOf(c)} iş gününde üretiriz.</li>
           <li>Güvenlik nedeniyle bazı bakım, yapıştırıcı ve çözücü ürünlerini her ülkeye gönderemiyoruz. Bunu ürün sayfasında belirtiriz.</li>
         </ul>
       </section>
@@ -88,6 +88,7 @@ export default function Page({ company: c }: { company: Company }) {
                 ; 7 gün içinde ödenir. Ödeme alındıktan sonra gönderim.
               </li>
             ) : null}
+            {c.payments.paypalInstallments ? <li><strong>PayPal ile taksitli ödeme</strong> – PayPal size sunarsa; kredi veren, kendi kredi değerlendirmesi ve koşullarıyla PayPal'dır. Biz kendimiz kredi vermiyoruz.</li> : null}
             {c.payments.bankTransfer ? (
               <li>
                 <strong>Fatura</strong> – ürünün tesliminden itibaren 14 gün içinde havale. Bu yöntemi

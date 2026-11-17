@@ -7,6 +7,10 @@
  * - Weltweit: 7 bis 14 Werktage, Versandkosten auf Anfrage
  * - Bearbeitung: in der Regel 3 bis 5 Werktage, individuelle/maßgefertigte Stücke können länger dauern
  *
+ * Gespräch mit der Inhaberin (11/2026, docs/ANDREA-GESCHICHTE.md): Lieferzeit ab Lager 2 bis 5 Tage,
+ * Maßanfertigung 15 bis 20 Tage; Versand weltweit mit DHL (Vertrag inkl. Ausland).
+ * Außerhalb der EU nennt Andrea die Versandkosten vor ihrer Bestätigung (keine Online-Kasse, Anfrage).
+ *
  * Die Live-Seite schreibt "ab 6 €" bzw. "ab 15 €". Solange keine Staffel bekannt ist,
  * gilt der genannte Betrag als fester Preis. Bitte mit Andrea bestätigen (docs/CHECKLISTE-LAUNCH.md).
  *
@@ -25,7 +29,12 @@ export type ShippingZone = {
   transitDays: [number, number];
 };
 
-export const HANDLING_DAYS: [number, number] = [3, 5];
+/** Lieferzeit ab Lager in WERKTAGEN bis zur Kundin (vom Auftraggeber bestätigt). Einzige Quelle für alle Angaben. */
+export const DELIVERY_DAYS_IN_STOCK: [number, number] = [2, 5];
+/** Fertigungszeit Maßanfertigung in WERKTAGEN (vom Auftraggeber bestätigt). */
+export const MADE_TO_ORDER_DAYS: [number, number] = [15, 20];
+/** Für die Rechtstexte (Übergabe an den Versanddienstleister spätestens innerhalb dieser Spanne). */
+export const HANDLING_DAYS: [number, number] = DELIVERY_DAYS_IN_STOCK;
 
 export const SHIPPING_ZONES: Record<ShippingZoneId, ShippingZone> = {
   de: { id: "de", priceCents: 600, freeFromCents: 15000, transitDays: [2, 4] },
@@ -39,8 +48,18 @@ export const EU_COUNTRIES = [
   "IT", "LT", "LU", "LV", "MT", "NL", "PL", "PT", "RO", "SE", "SI", "SK",
 ] as const;
 
-/** Länder, in die online bestellt werden kann. Alles andere: auf Anfrage. */
-export const ORDER_COUNTRIES: string[] = ["DE", ...EU_COUNTRIES];
+/**
+ * Konkreter Versandpreis je Land (Cent). Nur Länder in dieser Tabelle sind online bestellbar.
+ * Vorerst: Deutschland 6,00 € (frei ab 150 €), alle anderen EU-Länder pauschal 15,00 €.
+ * Abweichungen je Land hier eintragen. Länder außerhalb: individuelles Angebot (Anfrage).
+ */
+export const COUNTRY_RATES: Record<string, number> = Object.fromEntries([
+  ["DE", 600],
+  ...EU_COUNTRIES.map((code) => [code, 1500] as const),
+]);
+
+/** Länder, in die online bestellt werden kann. Alles andere: Versand anfragen (individuelles Angebot). */
+export const ORDER_COUNTRIES: string[] = Object.keys(COUNTRY_RATES);
 
 export function zoneForCountry(countryCode: string): ShippingZone {
   const code = countryCode.toUpperCase();
@@ -57,7 +76,18 @@ export function shippingCents(countryCode: string, subtotalCents: number): numbe
     throw new RangeError("subtotalCents must be a non-negative integer");
   }
   const zone = zoneForCountry(countryCode);
-  if (zone.priceCents === null) return null;
+  const rate = COUNTRY_RATES[countryCode.toUpperCase()];
+  if (rate === undefined) return null;
   if (zone.freeFromCents !== null && subtotalCents >= zone.freeFromCents) return 0;
-  return zone.priceCents;
+  return rate;
+}
+
+/** Platzhalter für Texte zu Lieferzeiten (eine Quelle für alle Seiten). */
+export function deliveryParams() {
+  return {
+    from: DELIVERY_DAYS_IN_STOCK[0],
+    mFrom: MADE_TO_ORDER_DAYS[0],
+    mTo: MADE_TO_ORDER_DAYS[1],
+    to: DELIVERY_DAYS_IN_STOCK[1],
+  };
 }

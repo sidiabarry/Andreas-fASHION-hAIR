@@ -1,4 +1,4 @@
-import { type Company, UNIVERSAL_ADR, addressLine, anyPayment, countryNames, euro, madeToOrderDaysOf, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, UNIVERSAL_ADR, addressLine, anyPayment, countryNames, euro, madeToOrderDaysOf, deliveryDaysOf, shippingOf } from "../company-type";
 
 const Missing = ({ field, label }: { field: string; label: string }) => (
   <mark data-missing={field}>[Dato pendiente: {label}]</mark>
@@ -25,6 +25,7 @@ export default function Page({ company: c }: { company: Company }) {
             {addressLine(c)}, teléfono {c.phone}, correo electrónico {c.email}.
           </li>
           <li>El idioma del contrato es el alemán. Las traducciones sirven únicamente para su comprensión.</li>
+        <li>Estas CG solo se aplican a consumidores. Los salones, peluqueros y otros empresarios reciben, previa solicitud, una oferta individual en condiciones específicas.</li>
         </ol>
       </section>
 
@@ -84,6 +85,7 @@ export default function Page({ company: c }: { company: Company }) {
               {c.payments.paypal ? (
                 <li><strong>PayPal:</strong> tras la confirmación del pedido recibe una solicitud de pago de PayPal. Pague en un plazo de 7 días. Se aplican además las condiciones de PayPal. Enviamos tras recibir el pago.</li>
               ) : null}
+              {c.payments.paypalInstallments ? <li><strong>Pago a plazos con PayPal:</strong> si PayPal le ofrece esta opción, puede pagar a plazos tras una comprobación de solvencia de PayPal. El crédito lo celebra directamente con PayPal como prestamista; se aplican sus condiciones e información precontractual. Nosotros no concedemos crédito. Su contrato de compraventa con nosotros no se ve afectado.</li> : null}
               {c.payments.bankTransfer ? (
                 <li><strong>Factura (transferencia tras la recepción):</strong> el importe debe transferirse sin descuento en un plazo de 14 días desde la recepción de la mercancía. Podemos rechazar esta forma de pago en casos concretos, en particular para importes elevados o envíos al extranjero, y ofrecerle otra forma de pago disponible.</li>
               ) : null}
@@ -100,8 +102,8 @@ export default function Page({ company: c }: { company: Company }) {
             {others.length > 0 ? <> y en los siguientes países: {countryNames(others, "es")}</> : null}. Los
             envíos a otros países son posibles previo acuerdo. El envío lo realiza {carrier}.
           </li>
-          <li>Entregamos los artículos en stock a la empresa de transporte en un plazo de {processingDaysOf(c)} días hábiles. En caso de pago anticipado o PayPal, el plazo comienza el día siguiente a la recepción del pago; en los demás casos, el día siguiente a la celebración del contrato. A ello se suma el tiempo de tránsito. Indicamos el plazo de entrega previsto en la página del producto y en el resumen del pedido.</li>
-          <li>Fabricamos las piezas a medida en unos {madeToOrderDaysOf(c)} días, una vez que disponemos de todos los datos necesarios y –en caso de pago anticipado o PayPal– del pago. Le comunicamos la fecha de envío prevista.</li>
+          <li>Plazo de entrega de los artículos en stock dentro de Alemania: {deliveryDaysOf(c)} días hábiles. Con pago anticipado o PayPal, el plazo comienza el día siguiente a la recepción del pago; en los demás casos, el día siguiente a la celebración del contrato. El plazo para envíos al extranjero se lo comunicamos antes de la celebración del contrato.</li>
+          <li>Fabricamos las piezas a medida en unos {madeToOrderDaysOf(c)} días hábiles, una vez que disponemos de todos los datos necesarios y –en caso de pago anticipado o PayPal– del pago. Le comunicamos la fecha de envío prevista.</li>
           <li>Si la mercancía llega con daños de transporte visibles, reclame al repartidor e infórmenos brevemente. Sus derechos legales no se ven afectados; su aviso nos ayuda a reclamar a la empresa de transporte.</li>
         </ol>
       </section>

@@ -1,7 +1,7 @@
-import { type Company, euro, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, euro, deliveryDaysOf, shippingOf } from "../company-type";
 
 /** Traduzione italiana di ../checkout-texts.ts (stesse chiavi e segnaposto). Fa fede solo la versione tedesca. */
-function build(smallBusiness: boolean | null, domesticCents: number, freeFromCents: number | null, euCents: number | null, processing: string) {
+function build(smallBusiness: boolean | null, domesticCents: number, freeFromCents: number | null, euCents: number | null, delivery: string) {
   const eur = (n: number) => euro(n, "it-IT");
   const vatNote =
     smallBusiness === true
@@ -29,7 +29,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
     summaryNotes: [
       vatNote,
       shipNote,
-      `Tempi di consegna: consegniamo i pezzi disponibili a DHL entro ${processing} giorni lavorativi (pagamento anticipato/PayPal: dal ricevimento del pagamento), più il tempo di trasporto. Pezzi su misura: vedi pagina del prodotto.`,
+      `Tempi di consegna: pezzi disponibili in Germania ${delivery} giorni lavorativi (pagamento anticipato/PayPal: dal ricevimento del pagamento); estero: indicati prima della conclusione del contratto. Pezzi su misura: vedi pagina del prodotto.`,
       "Molti pezzi sono unici. Verifichiamo personalmente la disponibilità; il contratto è concluso solo con la nostra conferma d'ordine via e-mail. Il pagamento avviene solo dopo.",
       "I pezzi realizzati su misura sono esclusi dal diritto di recesso.",
     ],
@@ -127,6 +127,8 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
         ].join("\n"),
       },
     },
+    /** Hinweis für Salons/Unternehmer (B2B): Shop richtet sich an Verbraucher. */
+    b2bNotice: "Ordina come salone, parrucchiere o altra impresa? Il nostro negozio si rivolge ai consumatori. Ci invii una richiesta: riceverà un'offerta individuale.",
     healthDataNotice:
       "La preghiamo di non indicare qui dati sulla Sua salute (ad esempio malattie o terapie). Non ci servono per la consulenza o la realizzazione.",
   };
@@ -136,7 +138,7 @@ export type CheckoutTexts = ReturnType<typeof build>;
 
 export function checkoutTextsFor(c: Company): CheckoutTexts {
   const s = shippingOf(c);
-  return build(c.smallBusiness, s.domesticCents, s.freeFromCents, s.euCents, processingDaysOf(c));
+  return build(c.smallBusiness, s.domesticCents, s.freeFromCents, s.euCents, deliveryDaysOf(c));
 }
 
-export const checkoutTexts: CheckoutTexts = build(true, 600, 15000, 1500, "3–5");
+export const checkoutTexts: CheckoutTexts = build(true, 600, 15000, 1500, "2–5");

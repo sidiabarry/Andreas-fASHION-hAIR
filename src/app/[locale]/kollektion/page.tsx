@@ -4,7 +4,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { JsonLd } from "@/components/JsonLd";
 import { ProductCard } from "@/components/product/ProductCard";
 import { SortSelect } from "@/components/product/SortSelect";
-import { CATEGORY_IDS, isCategoryId, products } from "@/data/catalog";
+import { CATEGORY_IDS, INQUIRY_ONLY_CATEGORIES, isCategoryId, products } from "@/data/catalog";
+import { ExtensionsSection } from "@/components/product/ExtensionsSection";
 import type { Product } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
@@ -33,9 +34,30 @@ export async function generateMetadata({ params, searchParams }: PageProps<"/[lo
   return meta;
 }
 
+/** Farbfamilie für die Mischung in der Standardansicht (alle Haarfarben gleichwertig sichtbar). */
+function family(p: Product): string {
+  const c = `${p.color} ${p.subtitle}`.toLowerCase();
+  if (c.includes("grau")) return "grau";
+  if (c.includes("schwarz")) return "schwarz";
+  if (c.includes("blond")) return "blond";
+  if (c.includes("kupfer") || c.includes("rot")) return "kupfer";
+  if (c.includes("braun")) return "braun";
+  return "andere";
+}
+
+/** Reihum je Farbfamilie, damit oben nicht nur eine Haarfarbe steht. */
+function interleave(list: Product[]): Product[] {
+  const groups = new Map<string, Product[]>();
+  for (const p of list) groups.set(family(p), [...(groups.get(family(p)) ?? []), p]);
+  const queues = [...groups.values()];
+  const out: Product[] = [];
+  while (out.length < list.length) for (const q of queues) if (q.length) out.push(q.shift()!);
+  return out;
+}
+
 function sortProducts(list: Product[], sort: Sort, sold: Set<string>): Product[] {
   const isSold = (p: Product) => (p.sold || sold.has(p.slug) ? 1 : 0);
-  const copy = list.slice();
+  const copy = sort === "empfehlung" ? interleave(list) : list.slice();
   copy.sort((a, b) => {
     const bySold = isSold(a) - isSold(b);
     if (bySold !== 0) return bySold;
@@ -44,6 +66,7 @@ function sortProducts(list: Product[], sort: Sort, sold: Set<string>): Product[]
     if (sort === "laenge") return (Number(b.length) || 0) - (Number(a.length) || 0);
     return 0;
   });
+  // Array.prototype.sort ist stabil: Die Mischung bleibt innerhalb von „verfügbar“/„verkauft“ erhalten.
   return copy;
 }
 
@@ -73,12 +96,12 @@ export default async function CollectionPage({ params, searchParams }: PageProps
         ])}
       />
       <div className="af-wrap">
-        <p className="af-mono">{t("collection.available", { count: open })}</p>
+        {category && INQUIRY_ONLY_CATEGORIES.includes(category) ? null : <p className="af-mono">{t("collection.available", { count: open })}</p>}
         <h1 className="af-h1" style={{ marginTop: 18 }}>
           {category ? t(`categories.${category}.label`) : t("collection.title")}
         </h1>
         <p className="af-lead" style={{ marginTop: 22 }}>
-          {category ? t(`categories.${category}.caption`) : t("collection.lead")}
+          {category === "extensions" ? t("extensions.lead") : category ? t(`categories.${category}.caption`) : t("collection.lead")}
         </p>
         <div className="af-toolbar">
           <nav aria-label={t("collection.filterLabel")} className="af-filters">
@@ -91,6 +114,7 @@ export default async function CollectionPage({ params, searchParams }: PageProps
               </Link>
             ))}
           </nav>
+          {category && INQUIRY_ONLY_CATEGORIES.includes(category) ? null : (
           <SortSelect
             apply={t("collection.apply")}
             category={category}
@@ -103,7 +127,12 @@ export default async function CollectionPage({ params, searchParams }: PageProps
             ]}
             value={sort}
           />
+          )}
         </div>
+        {category && INQUIRY_ONLY_CATEGORIES.includes(category) ? (
+          <ExtensionsSection locale={locale} />
+        ) : (
+          <>
         <p aria-live="polite" className="af-note" style={{ marginTop: 18 }}>
           {t("collection.results", { count: list.length })}. {t("collection.soldHint")}
         </p>
@@ -112,6 +141,8 @@ export default async function CollectionPage({ params, searchParams }: PageProps
             <ProductCard key={product.slug} locale={locale} priority={index < 2} product={product} sold={sold.has(product.slug)} />
           ))}
         </div>
+          </>
+        )}
       </div>
     </main>
   );

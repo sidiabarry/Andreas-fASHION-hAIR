@@ -1,10 +1,10 @@
-import { type Company, euro, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, euro, deliveryDaysOf, shippingOf } from "../company-type";
 
 /**
  * English convenience translation of ../checkout-texts.ts (same keys and placeholders).
  * Legally binding is the German version.
  */
-function build(smallBusiness: boolean | null, domesticCents: number, freeFromCents: number | null, euCents: number | null, processing: string) {
+function build(smallBusiness: boolean | null, domesticCents: number, freeFromCents: number | null, euCents: number | null, delivery: string) {
   const eur = (n: number) => euro(n, "en-IE");
   const vatNote =
     smallBusiness === true
@@ -32,7 +32,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
     summaryNotes: [
       vatNote,
       shipNote,
-      `Delivery time: we hand over pieces in stock to DHL within ${processing} working days (for advance payment/PayPal from receipt of payment), plus transit time. Custom-made pieces: see product page.`,
+      `Delivery time: pieces in stock within Germany ${delivery} business days (advance payment/PayPal: from receipt of payment); abroad: stated before conclusion of the contract. Custom-made pieces: see product page.`,
       "Many pieces are unique. We check availability personally; the contract is only concluded with our order confirmation by email. You only pay after that.",
       "Custom-made pieces are excluded from the right of withdrawal.",
     ],
@@ -130,6 +130,8 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
         ].join("\n"),
       },
     },
+    /** Hinweis für Salons/Unternehmer (B2B): Shop richtet sich an Verbraucher. */
+    b2bNotice: "Ordering as a salon, hairdresser or other business? Our online shop is aimed at consumers. Please send us an enquiry – you will receive an individual offer.",
     healthDataNotice:
       "Please do not enter any information about your health here (for example illnesses or treatments). We do not need it for advice or production.",
   };
@@ -139,7 +141,7 @@ export type CheckoutTexts = ReturnType<typeof build>;
 
 export function checkoutTextsFor(c: Company): CheckoutTexts {
   const s = shippingOf(c);
-  return build(c.smallBusiness, s.domesticCents, s.freeFromCents, s.euCents, processingDaysOf(c));
+  return build(c.smallBusiness, s.domesticCents, s.freeFromCents, s.euCents, deliveryDaysOf(c));
 }
 
-export const checkoutTexts: CheckoutTexts = build(true, 600, 15000, 1500, "3–5");
+export const checkoutTexts: CheckoutTexts = build(true, 600, 15000, 1500, "2–5");
