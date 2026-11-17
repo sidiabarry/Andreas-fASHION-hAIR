@@ -83,6 +83,8 @@ export const inquirySchema = z.object({
   amount: optionalText(80),
   // Salon (B2B)
   company: optionalText(120),
+  // Bestellanfrage (z. B. Versand außerhalb der EU)
+  country: optionalText(80),
 }).refine((v) => v.topic !== "salon" || v.company.length >= 2, { message: "required", path: ["company"] });
 export type InquiryInput = z.infer<typeof inquirySchema>;
 

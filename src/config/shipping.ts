@@ -48,8 +48,18 @@ export const EU_COUNTRIES = [
   "IT", "LT", "LU", "LV", "MT", "NL", "PL", "PT", "RO", "SE", "SI", "SK",
 ] as const;
 
-/** Länder, in die online bestellt werden kann. Alles andere: auf Anfrage. */
-export const ORDER_COUNTRIES: string[] = ["DE", ...EU_COUNTRIES];
+/**
+ * Konkreter Versandpreis je Land (Cent). Nur Länder in dieser Tabelle sind online bestellbar.
+ * Vorerst: Deutschland 6,00 € (frei ab 150 €), alle anderen EU-Länder pauschal 15,00 €.
+ * Abweichungen je Land hier eintragen. Länder außerhalb: individuelles Angebot (Anfrage).
+ */
+export const COUNTRY_RATES: Record<string, number> = Object.fromEntries([
+  ["DE", 600],
+  ...EU_COUNTRIES.map((code) => [code, 1500] as const),
+]);
+
+/** Länder, in die online bestellt werden kann. Alles andere: Versand anfragen (individuelles Angebot). */
+export const ORDER_COUNTRIES: string[] = Object.keys(COUNTRY_RATES);
 
 export function zoneForCountry(countryCode: string): ShippingZone {
   const code = countryCode.toUpperCase();
@@ -66,9 +76,10 @@ export function shippingCents(countryCode: string, subtotalCents: number): numbe
     throw new RangeError("subtotalCents must be a non-negative integer");
   }
   const zone = zoneForCountry(countryCode);
-  if (zone.priceCents === null) return null;
+  const rate = COUNTRY_RATES[countryCode.toUpperCase()];
+  if (rate === undefined) return null;
   if (zone.freeFromCents !== null && subtotalCents >= zone.freeFromCents) return 0;
-  return zone.priceCents;
+  return rate;
 }
 
 /** Platzhalter für Texte zu Lieferzeiten (eine Quelle für alle Seiten). */

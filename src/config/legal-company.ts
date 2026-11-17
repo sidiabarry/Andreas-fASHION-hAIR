@@ -7,7 +7,7 @@ import type { Company as LegalCompany } from "@/content/legal/company-type";
 
 import { company } from "./company";
 import type { Company } from "./company";
-import { EU_COUNTRIES, HANDLING_DAYS, MADE_TO_ORDER_DAYS, SHIPPING_ZONES } from "./shipping";
+import { DELIVERY_DAYS_IN_STOCK, EU_COUNTRIES, MADE_TO_ORDER_DAYS, SHIPPING_ZONES } from "./shipping";
 
 /** Hosting und Auftragsverarbeiter (für die Datenschutzerklärung). Vor dem Launch mit den AV-Verträgen abgleichen. */
 export const HOSTING = {
@@ -53,11 +53,12 @@ export function toLegalCompany(c: Company = company): LegalCompany {
     paypalEmail: c.paypal,
     payments: {
       bankTransfer: c.paymentMethods.includes("rechnung"),
+      paypalInstallments: c.paymentMethods.includes("paypal-raten"),
       paypal: c.paymentMethods.includes("paypal"),
       prepayment: c.paymentMethods.includes("ueberweisung"),
     },
     phone: c.phone,
-    processingDays: `${HANDLING_DAYS[0]}–${HANDLING_DAYS[1]}`,
+    deliveryDays: `${DELIVERY_DAYS_IN_STOCK[0]}–${DELIVERY_DAYS_IN_STOCK[1]}`,
     processors: PROCESSORS,
     returnCosts: c.returnCosts,
     shippingCountries: ["DE", ...EU_COUNTRIES],

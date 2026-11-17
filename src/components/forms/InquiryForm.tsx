@@ -15,7 +15,7 @@ import type { InquiryTopic } from "@/lib/validation";
 import { sendInquiry } from "@/server/actions";
 import type { FormState } from "@/server/actions";
 
-export function InquiryForm({ topic: initialTopic, product, ownerEmail }: { topic: InquiryTopic; product: string; ownerEmail: string }) {
+export function InquiryForm({ topic: initialTopic, product, ownerEmail, b2bNotice, fixedTopic = false }: { topic: InquiryTopic; product: string; ownerEmail: string; b2bNotice: string; fixedTopic?: boolean }) {
   const t = useTranslations();
   const locale = useLocale() as Locale;
   const cart = useCart();
@@ -69,6 +69,9 @@ export function InquiryForm({ topic: initialTopic, product, ownerEmail }: { topi
       <input name="product" type="hidden" value={product} />
       <input name="items" type="hidden" value={selection.map((item) => item.product.slug).join(",")} />
       <Honeypot />
+      {fixedTopic ? (
+        <input name="topic" type="hidden" value={topic} />
+      ) : (
       <Field label={t("inquiry.topicLabel")} name="topic" required requiredLabel={t("common.required")}>
         {(p) => (
           <select {...p} onChange={(event) => setTopic(event.target.value as InquiryTopic)} value={topic}>
@@ -80,6 +83,50 @@ export function InquiryForm({ topic: initialTopic, product, ownerEmail }: { topi
           </select>
         )}
       </Field>
+      )}
+      {topic === "salon" ? (
+        <>
+          <p className="af-msg" data-kind="info" lang="de">
+            {b2bNotice}
+          </p>
+          <Field error={err("company")} label={t("inquiry.company")} name="company" required requiredLabel={t("common.required")}>
+            {(p) => <input {...p} autoComplete="organization" maxLength={120} />}
+          </Field>
+        </>
+      ) : null}
+      {topic === "extensions" ? (
+        <>
+          <Field error={err("method")} label={t("inquiry.method")} name="method" optionalLabel={t("common.optional")}>
+            {(p) => (
+              <select {...p} defaultValue="">
+                <option value="">–</option>
+                {(["butterfly", "genius", "invisible", "tape", "keratin", "clip"] as const).map((m) => (
+                  <option key={m} value={m}>
+                    {t(`extensions.${m}`)}
+                  </option>
+                ))}
+                <option value="unsure">{t("inquiry.methodUnsure")}</option>
+              </select>
+            )}
+          </Field>
+          <div className="af-form__two">
+            <Field error={err("length")} label={t("inquiry.length")} name="length" optionalLabel={t("common.optional")}>
+              {(p) => <input {...p} maxLength={60} />}
+            </Field>
+            <Field error={err("color")} label={t("inquiry.color")} name="color" optionalLabel={t("common.optional")}>
+              {(p) => <input {...p} maxLength={80} />}
+            </Field>
+          </div>
+          <Field error={err("amount")} hint={t("inquiry.amountHint")} label={t("inquiry.amount")} name="amount" optionalLabel={t("common.optional")}>
+            {(p) => <input {...p} maxLength={80} />}
+          </Field>
+        </>
+      ) : null}
+      {topic === "bestellung" ? (
+        <Field error={err("country")} hint={t("inquiry.countryHint")} label={t("inquiry.country")} name="country" optionalLabel={t("common.optional")}>
+          {(p) => <input {...p} autoComplete="country-name" maxLength={80} />}
+        </Field>
+      ) : null}
       {selection.length ? (
         <section aria-label={t("inquiry.selection")} className="af-review">
           <h2 className="af-mono">{t("inquiry.selection")}</h2>
@@ -97,7 +144,7 @@ export function InquiryForm({ topic: initialTopic, product, ownerEmail }: { topi
         </section>
       ) : null}
       <div className="af-form__two">
-        <Field error={err("name")} label={t("inquiry.name")} name="name" required requiredLabel={t("common.required")}>
+        <Field error={err("name")} label={topic === "salon" ? t("inquiry.contactPerson") : t("inquiry.name")} name="name" required requiredLabel={t("common.required")}>
           {(p) => <input {...p} autoComplete="name" maxLength={120} />}
         </Field>
         <Field error={err("email")} label={t("inquiry.email")} name="email" required requiredLabel={t("common.required")}>

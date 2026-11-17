@@ -377,7 +377,9 @@
     "amountHint": "For example number of strands or grams, if you know.",
     "company": "Salon or company",
     "contactPerson": "Contact person",
-    "salonNote": "For salons, Andrea prepares an individual offer. The shop terms and conditions apply to consumers."
+    "salonNote": "For salons, Andrea prepares an individual offer. The shop terms and conditions apply to consumers.",
+    "country": "Delivery country",
+    "countryHint": "For countries outside the EU, Andrea will tell you the shipping costs before confirming."
   },
   "about": {
     "metaTitle": "About Andrea",

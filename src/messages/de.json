@@ -377,7 +377,9 @@
     "amountHint": "Zum Beispiel Anzahl der Strähnen oder Gramm, falls Sie es wissen.",
     "company": "Salon oder Firma",
     "contactPerson": "Ansprechpartnerin oder Ansprechpartner",
-    "salonNote": "Für Salons erstellt Andrea ein individuelles Angebot. Die AGB des Shops gelten für Verbraucherinnen und Verbraucher."
+    "salonNote": "Für Salons erstellt Andrea ein individuelles Angebot. Die AGB des Shops gelten für Verbraucherinnen und Verbraucher.",
+    "country": "Lieferland",
+    "countryHint": "Für Länder außerhalb der EU nennt Andrea Ihnen die Versandkosten vor der Bestätigung."
   },
   "about": {
     "metaTitle": "Über Andrea",

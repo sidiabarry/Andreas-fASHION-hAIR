@@ -42,10 +42,10 @@ export function Header() {
   const current = (href: string) => (pathname === href ? "page" : undefined);
   const links = (
     <>
+      <Link href={{ pathname: "/kollektion", query: { kategorie: "extensions" } }}>{t("nav.extensions")}</Link>
       <Link aria-current={current("/kollektion")} href="/kollektion">
         {t("nav.collection")}
       </Link>
-      <Link href={{ hash: "extensions", pathname: "/" }}>{t("nav.extensions")}</Link>
       <Link href={{ hash: "handwerk", pathname: "/" }}>{t("nav.craft")}</Link>
       <Link aria-current={current("/ueber-andrea")} href="/ueber-andrea">
         {t("nav.about")}

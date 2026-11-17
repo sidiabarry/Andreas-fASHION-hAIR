@@ -9,7 +9,7 @@ import { Logo } from "@/components/Logo";
 import { ProductCard } from "@/components/product/ProductCard";
 import { HeroPlaceholder } from "@/components/home/HeroPlaceholder";
 import { company } from "@/config/company";
-import { byCategory, CATEGORY_IDS, featured } from "@/data/catalog";
+import { byCategory, CATEGORY_IDS, featured, INQUIRY_ONLY_CATEGORIES } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
 import { organizationJsonLd } from "@/lib/jsonld";
@@ -37,7 +37,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
   const steps = [1, 2, 3].map((n) => ({ text: t(`home.step${n}`, { carrier }), title: t(`home.step${n}Title`) }));
   const faqs = [1, 2, 3, 4, 5, 6].map((n) => ({ a: t(`home.faq${n}A`, { carrier }), q: t(`home.faq${n}Q`) }));
 
-  const tabs = CATEGORY_IDS.map((id) => {
+  const tabs = CATEGORY_IDS.filter((id) => !INQUIRY_ONLY_CATEGORIES.includes(id)).map((id) => {
       const picks = byCategory(id)
         .filter((product) => !product.sold && !sold.has(product.slug))
         .slice(0, 4);

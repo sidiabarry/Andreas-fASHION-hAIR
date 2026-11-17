@@ -215,7 +215,8 @@ async function placeOrder(page, slug, add = true, locale = "de") {
   if (add) {
     await page.goto(`${BASE}/${locale}/produkt/${slug}`, { waitUntil: "networkidle" });
     await page.click(".af-cta-add");
-    await page.waitForSelector(".af-toast");
+    await page.waitForSelector(".af-drawer[open]");
+    await page.keyboard.press("Escape");
   }
   await page.goto(`${BASE}/${locale}/kasse`, { waitUntil: "networkidle" });
   await page.waitForSelector("#f-name");
@@ -225,8 +226,6 @@ async function placeOrder(page, slug, add = true, locale = "de") {
   await page.fill("#f-street", "Musterweg 1");
   await page.fill("#f-postalCode", "58642");
   await page.fill("#f-city", "Iserlohn");
-  await page.click('form button[type="submit"]');
-  await page.waitForSelector("#agb");
   await page.check("#agb");
 }
 
@@ -241,18 +240,20 @@ async function flow() {
   // Pflichtfeld-Fehler sichtbar und angekündigt
   await a.goto(`${BASE}/de/produkt/${slug}`, { waitUntil: "networkidle" });
   await a.click(".af-cta-add");
-  await a.waitForSelector(".af-toast");
+  await a.waitForSelector(".af-drawer[open]");
+  check(await a.isVisible(".af-drawer >> text=Zur Kasse"), "Warenkorb-Schublade öffnet sich nach dem Hinzufügen");
+  await a.keyboard.press("Escape");
   await a.goto(`${BASE}/de/kasse`, { waitUntil: "networkidle" });
-  await a.click('form button[type="submit"]');
+  await a.click('main form button[type="submit"]');
   check(await a.isVisible('[role="alert"]'), "Fehlerzusammenfassung bei leerem Formular");
   check((await a.locator('[aria-invalid="true"]').count()) >= 5, "Felder als ungültig markiert");
   // Zwei Kundinnen gleichzeitig dasselbe Einzelstück
   await placeOrder(a, slug, false);
   await placeOrder(b, slug);
-  const buttonText = await a.textContent('form button[type="submit"]');
+  const buttonText = await a.textContent('main form button[type="submit"]');
   check(buttonText?.trim() === "Zahlungspflichtig bestellen", `Bestellknopf beschriftet: ${buttonText}`);
   check(await a.isVisible("text=Gesamtsumme"), "Übersicht zeigt Gesamtsumme");
-  await Promise.all([a.click('form button[type="submit"]'), b.click('form button[type="submit"]')]);
+  await Promise.all([a.click('main form button[type="submit"]'), b.click('main form button[type="submit"]')]);
   await a.waitForTimeout(2500);
   const urls = [a.url(), b.url()];
   const okCount = urls.filter((u) => /\/bestellung\/AF-[A-Z0-9]{6}\?code=/.test(u)).length;
