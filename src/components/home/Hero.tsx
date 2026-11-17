@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import type { ImgHTMLAttributes } from "react";
 
 import { Arrow } from "@/components/Arrow";
-import { prefersReducedMotion, setPaused, useMotionStill, useUserPaused } from "@/components/fx/motion";
+import { restoreMotionChoice, setPaused, useMotionStill, useReducedMotion, useUserPaused } from "@/components/fx/motion";
 import { Link } from "@/i18n/navigation";
 
 import { Words } from "./Words";
@@ -26,8 +26,6 @@ export type HeroTexts = {
   pause: string;
   play: string;
   replay: string;
-  trust: string[];
-  trustLabel: string;
   filmAlt: string;
   ctaCollection: string;
   ctaConsult: string;
@@ -45,35 +43,49 @@ const FX: Record<number, Record<string, string>> = {
 };
 
 export function Hero({ texts, posters, videos, whatsapp }: { texts: HeroTexts; posters: Poster[]; videos: { desktop: string; mobile: string }[]; whatsapp: string | null }) {
-  const [chapter, setChapter] = useState(0);
+  const [step, setStep] = useState(0);
   const [done, setDone] = useState(false);
-  const [useVideo, setUseVideo] = useState(false);
-  const [mobile, setMobile] = useState(false);
+  const [videoSize, setVideoSize] = useState<"desktop" | "mobile" | null>(null);
+  const [visible, setVisible] = useState(false);
   const [ready, setReady] = useState<boolean[]>([false, false, false]);
+  const reduced = useReducedMotion();
   const still = useMotionStill();
   const userPaused = useUserPaused();
+  const chapter = reduced ? 1 : step;
+  const useVideo = videoSize !== null && !reduced;
+  const section = useRef<HTMLElement>(null);
   const elapsed = useRef(0);
   const bars = useRef<(HTMLSpanElement | null)[]>([]);
   const vids = useRef<(HTMLVideoElement | null)[]>([]);
 
   // Gerät prüfen: Datensparen/langsame Verbindung/reduzierte Bewegung → nur Poster
   useEffect(() => {
+    restoreMotionChoice();
     const conn = (navigator as Navigator & { connection?: { saveData?: boolean; effectiveType?: string } }).connection;
     const slow = Boolean(conn?.saveData) || /(^|-)2g|3g/.test(conn?.effectiveType ?? "");
-    const reduced = prefersReducedMotion();
-    /* eslint-disable react-hooks/set-state-in-effect -- einmalige Geräteprüfung nach dem Hydrieren */
-    setMobile(window.matchMedia("(max-width: 767px)").matches);
-    setUseVideo(!slow && !reduced);
-    if (reduced) {
-      setChapter(2);
-      setDone(true);
+    if (!slow) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- Geräteprüfung nach dem Hydrieren
+      setVideoSize(window.matchMedia("(max-width: 767px)").matches ? "mobile" : "desktop");
     }
-    /* eslint-enable react-hooks/set-state-in-effect */
+    const element = section.current;
+    if (!element) return;
+    let inView = false;
+    const sync = () => setVisible(inView && !document.hidden);
+    const observer = new IntersectionObserver(([entry]) => {
+      inView = entry.isIntersecting;
+      sync();
+    });
+    observer.observe(element);
+    document.addEventListener("visibilitychange", sync);
+    return () => {
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", sync);
+    };
   }, []);
 
   // Uhr: zählt nur, solange sich etwas bewegen darf
   useEffect(() => {
-    if (done || still) return;
+    if (done || still || !visible) return;
     let last = performance.now();
     const id = window.setInterval(() => {
       const now = performance.now();
@@ -83,19 +95,21 @@ export function Hero({ texts, posters, videos, whatsapp }: { texts: HeroTexts; p
       if (bar) bar.style.transform = `scaleX(${Math.min(1, elapsed.current / CHAPTER_MS)})`;
       if (elapsed.current >= CHAPTER_MS) {
         elapsed.current = 0;
-        if (chapter < 2) setChapter(chapter + 1);
-        else setDone(true);
+        if (chapter < 2) setStep(chapter + 1);
+        else {
+          if (bar) bar.style.transform = "scaleX(1)";
+          setDone(true);
+        }
       }
     }, 80);
     return () => window.clearInterval(id);
-  }, [chapter, done, still]);
+  }, [chapter, done, still, visible]);
 
   // Fortschrittsbalken der Kapitel
   useEffect(() => {
     bars.current.forEach((bar, i) => {
       if (!bar) return;
-      if (i < chapter || done) bar.style.transform = "scaleX(1)";
-      else if (i > chapter) bar.style.transform = "scaleX(0)";
+      bar.style.transform = i < chapter || done ? "scaleX(1)" : `scaleX(${i === chapter ? elapsed.current / CHAPTER_MS : 0})`;
     });
   }, [chapter, done]);
 
@@ -104,16 +118,10 @@ export function Hero({ texts, posters, videos, whatsapp }: { texts: HeroTexts; p
     if (!useVideo) return;
     vids.current.forEach((video, i) => {
       if (!video) return;
-      if (i === chapter) {
-        if (still) video.pause();
-        else if (!(done && video.ended)) video.play().catch(() => undefined);
-      } else if (i === chapter + 1) {
-        video.preload = "auto";
-      } else {
-        window.setTimeout(() => video.pause(), 1400);
-      }
+      if (i === chapter && visible && !still && !done) video.play().catch(() => undefined);
+      else video.pause();
     });
-  }, [chapter, done, still, useVideo]);
+  }, [chapter, done, still, useVideo, visible]);
 
   const replay = useCallback(() => {
     elapsed.current = 0;
@@ -121,7 +129,8 @@ export function Hero({ texts, posters, videos, whatsapp }: { texts: HeroTexts; p
       if (v) v.currentTime = 0;
     });
     setDone(false);
-    setChapter(0);
+    setStep(0);
+    if (bars.current[0]) bars.current[0].style.transform = "scaleX(0)";
     if (userPaused) setPaused(false);
   }, [userPaused]);
 
@@ -129,7 +138,7 @@ export function Hero({ texts, posters, videos, whatsapp }: { texts: HeroTexts; p
   const fx = FX[done ? 2 : chapter];
 
   return (
-    <section aria-labelledby="hero-title" className="hero" data-chapter={chapter} data-done={done || undefined} {...fx}>
+    <section aria-labelledby="hero-title" className="hero" data-chapter={chapter} ref={section} {...fx}>
       <div className="hero__stage">
         {posters.map((poster, i) => (
           <picture className="hero__poster" data-on={i === chapter || undefined} key={i}>
@@ -143,61 +152,56 @@ export function Hero({ texts, posters, videos, whatsapp }: { texts: HeroTexts; p
               <video
                 aria-hidden="true"
                 className="hero__video"
-                data-on={(i === chapter && ready[i]) || undefined}
+                data-on={(i === chapter && ready[i] && !done) || undefined}
                 disablePictureInPicture
                 key={i}
                 muted
                 onPlaying={() => markReady(i)}
                 playsInline
-                preload={i === 0 ? "auto" : "none"}
+                preload={i === chapter + 1 && visible && !still ? "auto" : "none"}
                 ref={(node) => {
                   vids.current[i] = node;
                 }}
-                src={mobile ? video.mobile : video.desktop}
+                src={video[videoSize]}
                 tabIndex={-1}
               />
             ))
           : null}
         <div className="hero__veil" />
-        <p className="af-sr">{texts.filmAlt}</p>
       </div>
 
       <div className="af-wrap hero__in">
         <p className="hero__kicker">{texts.kicker}</p>
-        <h1 className="hero__title" id="hero-title">
+        <h2 className="hero__title" id="hero-title">
           {texts.lines.map((line, i) => (
             <span className="hero__line" data-on={i === chapter || undefined} key={i}>
               <Words text={line} />{" "}
             </span>
           ))}
-        </h1>
+        </h2>
         <p className="hero__lead">{texts.lead}</p>
         <div className="hero__actions">
-          <Link className="h-btn h-btn--gold" href="/kollektion">
+          <Link className="af-cta-gold" href="/kollektion">
             <span>{texts.ctaCollection}</span> <Arrow />
           </Link>
           {whatsapp ? (
-            <a className="h-btn h-btn--line" href={whatsapp} rel="noopener noreferrer" target="_blank">
+            <a className="af-cta-line" href={whatsapp} rel="noopener noreferrer" target="_blank">
               <span>{texts.ctaConsult}</span>
               <small>
                 {texts.ctaConsultVia}
-                <span className="af-sr"> ({texts.whatsappNote})</span>
+                <span className="af-sr"> {texts.whatsappNote}</span>
               </small>
             </a>
           ) : (
-            <Link className="h-btn h-btn--line" href="/anfrage">
+            <Link className="af-cta-line" href="/anfrage">
               <span>{texts.ctaConsult}</span>
             </Link>
           )}
         </div>
-        <ul aria-label={texts.trustLabel} className="hero__trust">
-          {texts.trust.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
+        <p className="af-sr">{texts.filmAlt}</p>
       </div>
 
-      <div className="af-wrap hero__chapters">
+      {!reduced ? <div className="af-wrap hero__chapters">
         <ol aria-label={texts.chapters}>
           {texts.labels.map((label, i) => (
             <li aria-current={i === chapter ? "step" : undefined} data-past={i < chapter || done || undefined} key={label}>
@@ -228,7 +232,7 @@ export function Hero({ texts, posters, videos, whatsapp }: { texts: HeroTexts; p
             {userPaused ? texts.play : texts.pause}
           </button>
         </div>
-      </div>
+      </div> : null}
     </section>
   );
 }

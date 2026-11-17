@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from "react";
 
 import { CartDrawer } from "@/components/cart/CartDrawer";
 import { useCart } from "@/components/cart/CartProvider";
-import { useLocalList, WISHLIST_KEY } from "@/components/cart/useLocalList";
 import { Logo } from "@/components/Logo";
 import { Link, usePathname } from "@/i18n/navigation";
 
@@ -18,7 +17,6 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const menuButton = useRef<HTMLButtonElement>(null);
   const count = cart.ready ? cart.count : 0;
-  const wishlist = useLocalList(WISHLIST_KEY);
 
   // Menü schließen, sobald sich die Seite ändert (Zustand beim Rendern anpassen)
   const [seenPath, setSeenPath] = useState(pathname);
@@ -69,13 +67,12 @@ export function Header() {
           </nav>
           <div className="af-nav__right">
             <LocaleSwitcher id="locale-head" />
-            <Link aria-label={t("wishlist.nav", { count: wishlist.items.length })} className="af-iconbtn" href="/merkliste">
-              <svg aria-hidden="true" fill={wishlist.items.length ? "currentColor" : "none"} height="18" viewBox="0 0 24 24" width="18">
-                <path d="M12 20.5s-7.5-4.6-9.2-9.4C1.7 7.9 3.8 4.5 7.2 4.5c2 0 3.4 1.1 4.8 2.9 1.4-1.8 2.8-2.9 4.8-2.9 3.4 0 5.5 3.4 4.4 6.6-1.7 4.8-9.2 9.4-9.2 9.4Z" stroke="currentColor" strokeWidth="1.6" />
+            <Link className="af-bag" href="/warenkorb">
+              <svg aria-hidden="true" className="af-bag__icon" fill="none" height="18" viewBox="0 0 24 24" width="18">
+                <path d="M5.5 8.5h13l1.25 12H4.25l1.25-12ZM9 9V6.5a3 3 0 1 1 6 0V9" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.6" />
               </svg>
-            </Link>
-            <Link aria-label={t("common.cartWithCount", { count })} className="af-bag" href="/warenkorb">
-              <span aria-hidden="true">{t("common.cart")}</span> <b aria-hidden="true">{count}</b>
+              <span className="af-bag__label">{t("common.cart")}</span>
+              <b>{count}</b>
             </Link>
             <button
               aria-controls="af-sheet"

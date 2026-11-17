@@ -37,7 +37,10 @@ export function setPaused(paused: boolean) {
 /** Einmal beim Start: gemerkte Wahl übernehmen. */
 export function restoreMotionChoice() {
   try {
-    if (window.localStorage.getItem(KEY) === "paused") document.documentElement.dataset.motion = "paused";
+    if (window.localStorage.getItem(KEY) === "paused" && !isPaused()) {
+      document.documentElement.dataset.motion = "paused";
+      window.dispatchEvent(new Event(EVENT));
+    }
   } catch {
     // ignorieren
   }
@@ -65,6 +68,10 @@ export function useMotionStill() {
 /** Nur der Schalter (für die Beschriftung des Knopfs). */
 export function useUserPaused() {
   return useSyncExternalStore(subscribe, isPaused, () => false);
+}
+
+export function useReducedMotion() {
+  return useSyncExternalStore(subscribe, prefersReducedMotion, () => false);
 }
 
 export function onMotionChange(callback: () => void) {

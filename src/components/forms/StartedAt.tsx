@@ -9,5 +9,5 @@ const subscribe = () => () => {};
 /** Verstecktes Feld mit dem Ladezeitpunkt. Server-Rendering: leer; nach dem Hydrieren: Zeitstempel. */
 export function StartedAt() {
   const value = useSyncExternalStore(subscribe, () => loadedAt, () => 0);
-  return <input name="startedAt" readOnly type="hidden" value={value ? String(value) : ""} />;
+  return <input name="startedAt" type="hidden" value={value ? String(value) : ""} />;
 }

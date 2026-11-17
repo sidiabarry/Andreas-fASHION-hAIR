@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 
 import { GoldField, type SceneTarget } from "./engine";
-import { isPaused, onMotionChange, prefersReducedMotion, restoreMotionChoice } from "./motion";
+import { isPaused, onMotionChange, prefersReducedMotion } from "./motion";
 import { isShape, samplePhoenix } from "./shapes";
 
 /**
@@ -54,7 +54,6 @@ export default function AtelierField() {
   useEffect(() => {
     const canvas = ref.current;
     if (!canvas) return;
-    restoreMotionChoice();
     const root = document.documentElement;
     if (prefersReducedMotion()) return;
     let field: GoldField;
@@ -70,6 +69,10 @@ export default function AtelierField() {
 
     let scenes: HTMLElement[] = [];
     let active: HTMLElement | null = null;
+    const sync = () => {
+      if (!active || document.hidden || isPaused() || prefersReducedMotion()) field.stop();
+      else field.start();
+    };
     const collect = () => {
       scenes = Array.from(document.querySelectorAll<HTMLElement>("[data-fx]"));
     };
@@ -85,7 +88,9 @@ export default function AtelierField() {
       }
       if (found !== active) {
         active = found;
+        canvas.hidden = !active;
         apply();
+        sync();
       }
     };
     const apply = () => {
@@ -120,10 +125,6 @@ export default function AtelierField() {
     });
     mo.observe(document.body, { attributeFilter: ["data-fx", "data-fx-x", "data-fx-y", "data-fx-s", "data-fx-a", "data-fx-loose", "data-fx-heat"], attributes: true, childList: true, subtree: true });
 
-    const sync = () => {
-      if (document.hidden || isPaused() || prefersReducedMotion()) field.stop();
-      else field.start();
-    };
     const offMotion = onMotionChange(sync);
     sync();
 
@@ -148,5 +149,5 @@ export default function AtelierField() {
     };
   }, []);
 
-  return <canvas aria-hidden="true" className="fx-canvas" ref={ref} />;
+  return <canvas aria-hidden="true" className="fx-canvas" hidden ref={ref} />;
 }

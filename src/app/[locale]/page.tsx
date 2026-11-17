@@ -1,13 +1,14 @@
-import Image from "next/image";
+import Image, { getImageProps } from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 
 import { Arrow } from "@/components/Arrow";
+import { AtelierFilm } from "@/components/home/AtelierFilm";
 import { Finder } from "@/components/home/Finder";
+import { Hero } from "@/components/home/Hero";
 import { JsonLd } from "@/components/JsonLd";
 import { Logo } from "@/components/Logo";
 import { ProductCard } from "@/components/product/ProductCard";
-import { HeroPlaceholder } from "@/components/home/HeroPlaceholder";
 import { company } from "@/config/company";
 import { byCategory, CATEGORY_IDS, featured, INQUIRY_ONLY_CATEGORIES } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
@@ -15,6 +16,8 @@ import { Link } from "@/i18n/navigation";
 import { organizationJsonLd } from "@/lib/jsonld";
 import { pageMetadata } from "@/lib/seo";
 import { soldSlugs } from "@/server/sold";
+
+import "@/styles/home.css";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]">): Promise<Metadata> {
   const { locale } = await params;
@@ -24,6 +27,23 @@ export async function generateMetadata({ params }: PageProps<"/[locale]">): Prom
 
 const methods = ["Butterfly Weft", "Genius Weft", "Invisible Tape", "Tape-In", "Keratin Bondings", "Clip-In"];
 
+const chapters = ["01", "02", "03"].map((chapter, index) => {
+  const base = `/assets/world/scene-${chapter}`;
+  const common = { alt: "", sizes: "100vw" };
+  const img = getImageProps({
+    ...common,
+    fetchPriority: index === 0 ? "high" : "low",
+    height: 1080,
+    src: `${base}-poster.jpg`,
+    width: 1920,
+  }).props;
+  const mobile = getImageProps({ ...common, height: 720, src: `${base}-mobile-poster.jpg`, width: 1280 }).props;
+  return {
+    poster: { img, mobileSrcSet: mobile.srcSet ?? mobile.src },
+    video: { desktop: `${base}.mp4`, mobile: `${base}-mobile.mp4` },
+  };
+});
+
 export default async function Home({ params }: PageProps<"/[locale]">) {
   const { locale: raw } = await params;
   const locale = raw as Locale;
@@ -32,7 +52,6 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
   const sold = await soldSlugs();
   const carrier = company.shippingCarrier ?? "";
 
-  const facts = [1, 2, 3, 4].map((n) => ({ big: t(`home.fact${n}Big`), text: t(`home.fact${n}`) }));
   const craft = [1, 2, 3, 4].map((n) => ({ key: t(`home.craft${n}Key`), text: t(`home.craft${n}`) }));
   const steps = [1, 2, 3].map((n) => ({ text: t(`home.step${n}`, { carrier }), title: t(`home.step${n}Title`) }));
   const faqs = [1, 2, 3, 4, 5, 6].map((n) => ({ a: t(`home.faq${n}A`, { carrier }), q: t(`home.faq${n}Q`) }));
@@ -75,31 +94,45 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
   };
 
   return (
-    <main>
+    <main className="atelier-home">
       <JsonLd data={organizationJsonLd(locale)} />
       <JsonLd data={faqJson} />
-      <HeroPlaceholder
-        body={t("hero.scene1.body")}
-        kicker={t("hero.scene1.kicker")}
-        primary={t("hero.ctaCollection")}
-        secondary={t("hero.ctaConsult")}
-        title={t("hero.scene1.title")}
-      />
-
-      <section aria-label={t("home.factsLabel")} className="af-section--tight">
-        <div className="af-wrap af-facts">
-          {facts.map((fact) => (
-            <div className="af-fact af-rise" key={fact.big}>
-              <strong>{fact.big}</strong>
-              <span>{fact.text}</span>
+      <section aria-labelledby="atelier-intro-title" className="atelier-intro">
+        <div className="af-wrap atelier-intro__grid">
+          <div className="atelier-intro__copy">
+            <p className="af-mono">{t("editorial.location")}</p>
+            <h1 id="atelier-intro-title">{t("editorial.headline")} <em>{t("editorial.headlineAccent")}</em></h1>
+            <p className="atelier-intro__lead">{t("editorial.lead")}</p>
+            <div className="atelier-intro__actions">
+              <Link className="af-cta-gold" href="/kollektion">
+                {t("hero.ctaCollection")} <Arrow />
+              </Link>
+              <Link className="atelier-intro__consult" href="/anfrage">
+                {t("editorial.ask")} <Arrow />
+              </Link>
             </div>
-          ))}
+          </div>
+          <figure className="atelier-intro__photo">
+            <Image
+              alt={t("editorial.portraitAlt")}
+              fill
+              fetchPriority="high"
+              sizes="(max-width: 760px) 100vw, (max-width: 1400px) 50vw, 720px"
+              src="/assets/content/atelier-editorial.webp"
+            />
+            <figcaption>{t("editorial.illustration")}</figcaption>
+          </figure>
         </div>
       </section>
+      <ul aria-label={t("home.ribbon.label")} className="af-wrap atelier-intro__facts">
+        <li>{t("home.ribbon.hair")}</li>
+        <li>{t("home.ribbon.atelier")}</li>
+        <li>{t("home.ribbon.consultation")}</li>
+      </ul>
 
-      <section aria-labelledby="finden-title" className="af-section" id="finden">
+      <section aria-labelledby="finden-title" className="af-section atelier-home__finder" id="finden">
         <div className="af-wrap">
-          <div className="af-stack af-rise">
+          <div className="af-stack">
             <h2 className="af-h2" id="finden-title">
               {t("home.finderTitle")}
             </h2>
@@ -109,17 +142,17 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
         </div>
       </section>
 
-      <section aria-labelledby="handwerk-title" className="af-section af-surface" id="handwerk">
+      <section aria-labelledby="handwerk-title" className="af-section af-surface atelier-home__craft" id="handwerk">
         <div className="af-wrap af-split">
-          <div className="af-split__media af-rise">
+          <div className="af-split__media">
             <Image alt={t("home.craftImageAlt")} height={1194} sizes="(max-width: 900px) 100vw, 640px" src="/assets/content/craft.jpg" width={1600} />
           </div>
-          <div className="af-rise">
+          <div>
             <p className="af-mono">{t("home.craftKicker")}</p>
-            <h2 className="af-h2" id="handwerk-title" style={{ marginTop: 18 }}>
+            <h2 className="af-h2" id="handwerk-title" style={{ marginTop: 14 }}>
               {t("home.craftTitle")}
             </h2>
-            <p className="af-lead" style={{ marginTop: 22 }}>
+            <p className="af-lead" style={{ marginTop: 16 }}>
               {t("home.craftLead")}
             </p>
             <dl className="af-list">
@@ -131,6 +164,30 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
               ))}
             </dl>
           </div>
+        </div>
+        <div className="af-wrap atelier-film-wrap">
+          <AtelierFilm label={t("editorial.film")}>
+            <Hero
+              posters={chapters.map(({ poster }) => poster)}
+              videos={chapters.map(({ video }) => video)}
+              texts={{
+                chapters: t("hero.chapters"),
+                ctaCollection: t("hero.ctaCollection"),
+                ctaConsult: t("hero.ctaConsult"),
+                ctaConsultVia: t("hero.ctaConsultVia"),
+                filmAlt: t("hero.filmAlt"),
+                kicker: t("hero.kicker"),
+                labels: [t("hero.ember"), t("hero.light"), t("hero.hair")],
+                lead: t("hero.lead"),
+                lines: [t("hero.line1"), t("hero.line2"), t("hero.line3")],
+                pause: t("hero.pause"),
+                play: t("hero.play"),
+                replay: t("hero.replay"),
+                whatsappNote: t("common.newTab"),
+              }}
+              whatsapp={company.social.whatsapp}
+            />
+          </AtelierFilm>
         </div>
       </section>
 
