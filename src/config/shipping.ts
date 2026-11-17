@@ -29,9 +29,9 @@ export type ShippingZone = {
   transitDays: [number, number];
 };
 
-/** Lieferzeit ab Lager (Tage bis zur Kundin), laut Inhaberin. Einzige Quelle für alle Angaben. */
+/** Lieferzeit ab Lager in WERKTAGEN bis zur Kundin (vom Auftraggeber bestätigt). Einzige Quelle für alle Angaben. */
 export const DELIVERY_DAYS_IN_STOCK: [number, number] = [2, 5];
-/** Fertigungszeit Maßanfertigung in Tagen, laut Inhaberin. */
+/** Fertigungszeit Maßanfertigung in WERKTAGEN (vom Auftraggeber bestätigt). */
 export const MADE_TO_ORDER_DAYS: [number, number] = [15, 20];
 /** Für die Rechtstexte (Übergabe an den Versanddienstleister spätestens innerhalb dieser Spanne). */
 export const HANDLING_DAYS: [number, number] = DELIVERY_DAYS_IN_STOCK;
