@@ -196,7 +196,7 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
           <fieldset className="af-fieldset">
             <legend className="af-h3">{t("checkoutx.addressTitle")}</legend>
             <Field error={err("street")} label={t("checkout.street")} name="street" required requiredLabel={t("common.required")}>
-              {(p) => <input {...p} autoComplete="street-address" maxLength={160} onChange={set("street")} value={values.street} />}
+              {(p) => <input {...p} autoComplete="address-line1" maxLength={160} onChange={set("street")} value={values.street} />}
             </Field>
             <div className="af-form__two">
               <Field error={err("postalCode")} label={t("checkout.postalCode")} name="postalCode" required requiredLabel={t("common.required")}>
@@ -216,6 +216,7 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
             >
               {(p) => (
                 <select {...p} autoComplete="country" onChange={set("country")} value={values.country}>
+                  <option disabled hidden value="">–</option>
                   {countries.map((c) => (
                     <option key={c.code} value={c.code}>
                       {c.name}

@@ -80,7 +80,6 @@ export default async function CollectionPage({ params, searchParams }: PageProps
   const sort: Sort = SORTS.includes(query.sortierung as Sort) ? (query.sortierung as Sort) : "empfehlung";
   const sold = await soldSlugs();
   const list = sortProducts(category ? products.filter((p) => p.category === category) : products, sort, sold);
-  const open = list.filter((p) => !p.sold && !sold.has(p.slug)).length;
   const hrefFor = (id: string | null) => ({
     pathname: "/kollektion" as const,
     query: { ...(id ? { kategorie: id } : {}), ...(sort !== "empfehlung" ? { sortierung: sort } : {}) },
@@ -96,8 +95,7 @@ export default async function CollectionPage({ params, searchParams }: PageProps
         ])}
       />
       <div className="af-wrap">
-        {category && INQUIRY_ONLY_CATEGORIES.includes(category) ? null : <p className="af-mono">{t("collection.available", { count: open })}</p>}
-        <h1 className="af-h1" style={{ marginTop: 18 }}>
+        <h1 className="af-h1">
           {category ? t(`categories.${category}.label`) : t("collection.title")}
         </h1>
         <p className="af-lead" style={{ marginTop: 22 }}>

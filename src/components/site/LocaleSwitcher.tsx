@@ -47,7 +47,7 @@ export function LocaleSwitcher({ id }: { id: string }) {
 
   return (
     <details className="af-locale" ref={ref}>
-      <summary aria-label={`${t("choose")}. ${t("current", { language: LOCALE_NAMES[locale] })}`}>
+      <summary aria-label={`${locale.toUpperCase()} · ${t("choose")}. ${t("current", { language: LOCALE_NAMES[locale] })}`}>
         <svg aria-hidden="true" fill="none" height="16" viewBox="0 0 24 24" width="16">
           <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5" />
           <path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z" stroke="currentColor" strokeWidth="1.5" />

@@ -75,6 +75,7 @@ export function InquiryForm({ topic: initialTopic, product, ownerEmail, b2bNotic
       <Field label={t("inquiry.topicLabel")} name="topic" required requiredLabel={t("common.required")}>
         {(p) => (
           <select {...p} onChange={(event) => setTopic(event.target.value as InquiryTopic)} value={topic}>
+            <option disabled hidden value="">–</option>
             {INQUIRY_TOPICS.map((id) => (
               <option key={id} value={id}>
                 {t(`inquiry.topics.${id}`)}

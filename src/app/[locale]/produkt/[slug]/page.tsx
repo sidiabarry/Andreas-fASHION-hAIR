@@ -51,6 +51,7 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
   const unique = isUnique(product);
   const price = formatPrice(product.priceCents, locale);
   const images = product.restyled ? [product.image, ...product.originals] : product.originals.length ? product.originals : [product.image];
+  const original = product.restyled ? product.originals[0] : undefined;
   const shots = images.map((src, index) => ({
     alt:
       product.restyled && index === 0
@@ -125,14 +126,14 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
         <div className="af-pdp">
           <div className="af-pdp__gallery">
             <Gallery closeLabel={t("product.zoomClose")} hint={t("product.zoomHint")} shots={shots} zoomLabel={t("product.zoom")} />
-            {product.restyled && product.originals[0] ? (
-              <section aria-labelledby="compare-title" className="af-stack" style={{ "--gap": "12px" } as React.CSSProperties}>
+            {original ? (
+              <section aria-labelledby="compare-title" className="af-stack" id="bildvergleich" style={{ "--gap": "12px" } as React.CSSProperties}>
                 <h2 className="af-mono" id="compare-title">
                   {t("product.compareTitle")}
                 </h2>
                 <CompareSlider
                   label={t("product.compareLabel")}
-                  original={product.originals[0]}
+                  original={original}
                   originalLabel={t("product.compareOriginal")}
                   studio={product.image}
                   studioLabel={t("product.compareStudio")}
@@ -193,6 +194,7 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
               {t("product.ask")}
             </Link>
 
+            {original ? <a className="af-cta-line" href="#bildvergleich">{t("product.compareTitle")} <Arrow /></a> : null}
             <TrustFacts locale={locale} />
 
             <section aria-labelledby="specs-title">

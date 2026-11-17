@@ -305,8 +305,12 @@ async function motion() {
   const media = [];
   page.on("request", (r) => r.url().endsWith(".mp4") && media.push(r.url()));
   await page.goto(`${BASE}/de`, { waitUntil: "networkidle" });
+  check(await page.locator(".atelier-intro__photo img").isVisible(), "Mobiltaugliches Ateliermotiv sichtbar");
+  check(await page.locator("#atelierfilm video").count() === 0, "Film wird erst beim Öffnen bereitgestellt");
+  await page.locator("#atelierfilm summary").click();
+  await page.locator("#atelierfilm .hero").waitFor();
   const poster = page.locator(".hero__poster[data-on='true'] img");
-  check(await poster.isVisible(), "Hero zeigt ein Standbild");
+  check(await poster.isVisible(), "Atelierfilm zeigt ein Standbild bei reduzierter Bewegung");
   if (await poster.count()) {
     check(await poster.evaluate((img) => img.decode().then(() => true, () => false)), "Standbild lässt sich laden");
   }

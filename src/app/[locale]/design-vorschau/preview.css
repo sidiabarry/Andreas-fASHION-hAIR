@@ -81,23 +81,6 @@
 .af-preview__gallery .af-compare { aspect-ratio: 7 / 8; }
 .af-preview__gallery .af-compare__img { object-position: center 36%; }
 .af-preview__gallery .af-compare__line { box-shadow: 0 0 0 1px #2c241e4d; }
-.af-preview__gallery .af-compare__line::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 42px;
-  height: 42px;
-  transform: translate(-50%, -50%);
-  border: 1px solid #d7cabc;
-  border-radius: 50%;
-  background: var(--af-glass);
-  box-shadow: var(--af-glass-highlight), 0 4px 15px #2c241e40;
-  color: var(--af-ink);
-  content: "‹ ›";
-  display: grid;
-  place-items: center;
-  font: 600 1.1rem/1 var(--af-sans);
-}
 
 .af-preview__gallery figcaption { margin-top: 10px; color: var(--af-muted); font-size: 0.89rem; }
 .af-preview__still { width: 100%; height: auto; border: 1px solid var(--af-line); border-radius: var(--af-radius-l); }

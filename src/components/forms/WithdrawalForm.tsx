@@ -168,7 +168,7 @@ export function WithdrawalForm({ confirmLabel, initialOrder, ownerEmail, ownerAd
           {(p) => <input {...p} maxLength={60} onChange={set("orderNumber")} value={values.orderNumber} />}
         </Field>
         <Field error={err("orderDate")} label={t("withdrawal.orderDate")} name="orderDate" optionalLabel={t("common.optional")}>
-          {(p) => <input {...p} maxLength={40} onChange={set("orderDate")} type="date" value={values.orderDate} />}
+          {(p) => <input {...p} onChange={set("orderDate")} type="date" value={values.orderDate} />}
         </Field>
       </div>
       <Field error={err("items")} hint={t("withdrawal.itemsHint")} label={t("withdrawal.items")} name="items" optionalLabel={t("common.optional")}>

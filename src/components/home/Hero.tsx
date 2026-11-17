@@ -172,13 +172,13 @@ export function Hero({ texts, posters, videos, whatsapp }: { texts: HeroTexts; p
 
       <div className="af-wrap hero__in">
         <p className="hero__kicker">{texts.kicker}</p>
-        <h1 className="hero__title" id="hero-title">
+        <h2 className="hero__title" id="hero-title">
           {texts.lines.map((line, i) => (
             <span className="hero__line" data-on={i === chapter || undefined} key={i}>
               <Words text={line} />{" "}
             </span>
           ))}
-        </h1>
+        </h2>
         <p className="hero__lead">{texts.lead}</p>
         <div className="hero__actions">
           <Link className="af-cta-gold" href="/kollektion">
