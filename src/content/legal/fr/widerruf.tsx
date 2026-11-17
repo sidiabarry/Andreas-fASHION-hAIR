@@ -76,7 +76,7 @@ export default function Page({ company: c }: { company: Company }) {
         <h3 id="ausschluss">Exclusion ou extinction anticipée du droit de rétractation</h3>
         <p>Le droit de rétractation n'existe pas pour les contrats</p>
         <ul>
-          <li>de fourniture de biens qui ne sont pas préfabriqués et dont la fabrication dépend d'un choix ou d'une détermination individuels du consommateur, ou qui sont nettement personnalisés selon ses besoins. Chez nous, cela concerne tous les produits signalés comme fabriqués sur mesure, par exemple la prothèse capillaire sur mesure.</li>
+          <li>de fourniture de biens qui ne sont pas préfabriqués et dont la fabrication dépend d'un choix ou d'une détermination individuels du consommateur, ou qui sont nettement personnalisés selon ses besoins. Chez nous, cela concerne tous les produits signalés comme fabriqués sur mesure, par exemple la prothèse capillaire sur mesure. Il en va de même pour les extensions que nous colorons, coupons ou fabriquons selon vos indications.</li>
         </ul>
         <p>Le droit de rétractation s'éteint de manière anticipée pour les contrats</p>
         <ul>

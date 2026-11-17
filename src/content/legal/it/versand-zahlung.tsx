@@ -1,4 +1,4 @@
-import { type Company, anyPayment, countryNames, euro, madeToOrderDaysOf, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, anyPayment, countryNames, euro, madeToOrderDaysOf, deliveryDaysOf, shippingOf } from "../company-type";
 
 const Missing = ({ field, label }: { field: string; label: string }) => (
   <mark data-missing={field}>[Dato mancante: {label}]</mark>
@@ -52,7 +52,7 @@ export default function Page({ company: c }: { company: Company }) {
             Spediamo con {carrier}, in un imballaggio discreto e con tracciamento. Paesi di consegna:
             Germania{others.length > 0 ? <>, {countryNames(others, "it")}</> : null}; altri paesi previo accordo.
           </li>
-          <li>Consegniamo i pezzi disponibili al corriere entro {processingDaysOf(c)} giorni lavorativi – con pagamento anticipato e PayPal dal giorno successivo al ricevimento del pagamento, altrimenti dal giorno successivo alla conclusione del contratto. Si aggiunge il tempo di trasporto.</li>
+          <li>I pezzi disponibili arrivano in Germania in {deliveryDaysOf(c)} giorni – con pagamento anticipato e PayPal dal giorno successivo al ricevimento del pagamento, altrimenti dal giorno successivo alla conclusione del contratto. I tempi per l'estero Le vengono comunicati prima della conclusione del contratto.</li>
           <li>Realizziamo i pezzi su misura in circa {madeToOrderDaysOf(c)} giorni, una volta ricevuti tutti i dati e – con pagamento anticipato o PayPal – il pagamento.</li>
           <li>Per motivi di sicurezza non possiamo spedire alcuni prodotti per la cura, adesivi e solventi in tutti i paesi. Lo indichiamo nella pagina del prodotto.</li>
         </ul>
@@ -89,6 +89,7 @@ export default function Page({ company: c }: { company: Company }) {
                 ; da pagare entro 7 giorni. Spedizione dopo il ricevimento del pagamento.
               </li>
             ) : null}
+            {c.payments.paypalInstallments ? <li><strong>Pagamento rateale tramite PayPal</strong> – se PayPal Glielo offre; il finanziatore è PayPal, secondo la sua verifica del merito creditizio e le sue condizioni. Noi non concediamo credito.</li> : null}
             {c.payments.bankTransfer ? (
               <li>
                 <strong>Fattura</strong> – bonifico entro 14 giorni dal ricevimento della merce.

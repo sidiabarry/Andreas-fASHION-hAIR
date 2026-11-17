@@ -1,7 +1,7 @@
-import { type Company, euro, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, euro, deliveryDaysOf, shippingOf } from "../company-type";
 
 /** Traduction française de ../checkout-texts.ts (mêmes clés et marqueurs). Seule la version allemande fait foi. */
-function build(smallBusiness: boolean | null, domesticCents: number, freeFromCents: number | null, euCents: number | null, processing: string) {
+function build(smallBusiness: boolean | null, domesticCents: number, freeFromCents: number | null, euCents: number | null, delivery: string) {
   const eur = (n: number) => euro(n, "fr-FR");
   const vatNote =
     smallBusiness === true
@@ -29,7 +29,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
     summaryNotes: [
       vatNote,
       shipNote,
-      `Délai de livraison : nous remettons les pièces en stock à DHL sous ${processing} jours ouvrables (paiement anticipé/PayPal : à compter de la réception du paiement), plus la durée d'acheminement. Pièces sur mesure : voir la page produit.`,
+      `Délai de livraison : pièces en stock en Allemagne ${delivery} jours (paiement anticipé/PayPal : à compter de la réception du paiement) ; étranger : indiqué avant la conclusion du contrat. Pièces sur mesure : voir la page produit.`,
       "De nombreuses pièces sont uniques. Nous vérifions personnellement la disponibilité ; le contrat n'est conclu qu'avec notre confirmation de commande par e-mail. Vous ne payez qu'ensuite.",
       "Les pièces fabriquées sur mesure sont exclues du droit de rétractation.",
     ],
@@ -127,6 +127,8 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
         ].join("\n"),
       },
     },
+    /** Hinweis für Salons/Unternehmer (B2B): Shop richtet sich an Verbraucher. */
+    b2bNotice: "Vous commandez en tant que salon, coiffeur ou autre professionnel ? Notre boutique s'adresse aux consommateurs. Envoyez-nous une demande – vous recevrez une offre individuelle.",
     healthDataNotice:
       "Merci de ne pas indiquer ici d'informations sur votre santé (par exemple maladies ou traitements). Nous n'en avons pas besoin pour le conseil ou la fabrication.",
   };
@@ -136,7 +138,7 @@ export type CheckoutTexts = ReturnType<typeof build>;
 
 export function checkoutTextsFor(c: Company): CheckoutTexts {
   const s = shippingOf(c);
-  return build(c.smallBusiness, s.domesticCents, s.freeFromCents, s.euCents, processingDaysOf(c));
+  return build(c.smallBusiness, s.domesticCents, s.freeFromCents, s.euCents, deliveryDaysOf(c));
 }
 
-export const checkoutTexts: CheckoutTexts = build(true, 600, 15000, 1500, "3–5");
+export const checkoutTexts: CheckoutTexts = build(true, 600, 15000, 1500, "2–5");

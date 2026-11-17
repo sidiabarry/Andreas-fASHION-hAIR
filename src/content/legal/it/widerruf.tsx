@@ -47,7 +47,7 @@ export default function Page({ company: c }: { company: Company }) {
         <h3 id="ausschluss">Esclusione o estinzione anticipata del diritto di recesso</h3>
         <p>Il diritto di recesso è escluso per i contratti</p>
         <ul>
-          <li>di fornitura di beni non prefabbricati, per la cui realizzazione è determinante una scelta o una specificazione individuale del consumatore, o chiaramente personalizzati in base alle sue esigenze. Da noi ciò riguarda tutti i prodotti contrassegnati come realizzati su misura, ad esempio la protesi capillare su misura.</li>
+          <li>di fornitura di beni non prefabbricati, per la cui realizzazione è determinante una scelta o una specificazione individuale del consumatore, o chiaramente personalizzati in base alle sue esigenze. Da noi ciò riguarda tutti i prodotti contrassegnati come realizzati su misura, ad esempio la protesi capillare su misura. Lo stesso vale per le extension che tingiamo, tagliamo o realizziamo secondo le Sue indicazioni.</li>
         </ul>
         <p>Il diritto di recesso si estingue anticipatamente per i contratti</p>
         <ul>

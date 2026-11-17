@@ -1,4 +1,4 @@
-import { type Company, UNIVERSAL_ADR, addressLine, anyPayment, countryNames, euro, madeToOrderDaysOf, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, UNIVERSAL_ADR, addressLine, anyPayment, countryNames, euro, madeToOrderDaysOf, deliveryDaysOf, shippingOf } from "../company-type";
 
 const Missing = ({ field, label }: { field: string; label: string }) => (
   <mark data-missing={field}>[Information manquante : {label}]</mark>
@@ -25,6 +25,7 @@ export default function Page({ company: c }: { company: Company }) {
             {addressLine(c)}, téléphone {c.phone}, e-mail {c.email}.
           </li>
           <li>La langue du contrat est l'allemand. Les traductions ne servent qu'à la compréhension.</li>
+        <li>Les présentes CGV s'appliquent uniquement aux consommateurs. Les salons, coiffeurs et autres professionnels reçoivent sur demande une offre individuelle à des conditions distinctes.</li>
         </ol>
       </section>
 
@@ -107,6 +108,7 @@ export default function Page({ company: c }: { company: Company }) {
                   s'appliquent en outre. Expédition après réception du paiement.
                 </li>
               ) : null}
+              {c.payments.paypalInstallments ? <li><strong>Paiement échelonné via PayPal :</strong> si PayPal vous propose cette option, vous pouvez payer en plusieurs fois après une vérification de solvabilité par PayPal. Vous concluez le crédit directement avec PayPal en tant que prêteur ; ses conditions et informations précontractuelles s'appliquent. Nous n'accordons nous-mêmes aucun crédit. Votre contrat de vente avec nous n'en est pas affecté.</li> : null}
               {c.payments.bankTransfer ? (
                 <li>
                   <strong>Facture (virement après réception) :</strong> le montant est payable sans
@@ -129,13 +131,7 @@ export default function Page({ company: c }: { company: Company }) {
             livraisons vers d'autres pays sont possibles sur accord préalable. L'expédition est assurée
             par {carrier}.
           </li>
-          <li>
-            Nous remettons les articles en stock au transporteur dans un délai de {processingDaysOf(c)}{" "}
-            jours ouvrables. Ce délai court, pour le paiement anticipé ou PayPal, à partir du
-            lendemain de la réception du paiement, sinon à partir du lendemain de la conclusion du
-            contrat. S'y ajoute la durée d'acheminement. Le délai de livraison prévu est indiqué sur
-            la page produit et dans le récapitulatif de commande.
-          </li>
+          <li>Délai de livraison des articles en stock en Allemagne : {deliveryDaysOf(c)} jours. Pour le paiement anticipé ou PayPal, le délai court à partir du lendemain de la réception du paiement, sinon à partir du lendemain de la conclusion du contrat. Pour les envois à l'étranger, nous vous indiquons le délai avant la conclusion du contrat.</li>
           <li>
             Nous fabriquons les pièces sur mesure en {madeToOrderDaysOf(c)} jours environ, dès que
             nous disposons de toutes les informations nécessaires et – pour le paiement anticipé ou

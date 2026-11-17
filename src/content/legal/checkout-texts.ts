@@ -1,4 +1,4 @@
-import { type Company, euro, processingDaysOf, shippingOf } from "./company-type";
+import { type Company, euro, deliveryDaysOf, shippingOf } from "./company-type";
 
 /**
  * Texte für Warenkorb, Kasse, Bestätigungsseite, Widerrufsfunktion und E-Mails (Deutsch,
@@ -15,7 +15,7 @@ import { type Company, euro, processingDaysOf, shippingOf } from "./company-type
  * vorbelegt. Für andere Konstellationen `checkoutTextsFor(company)` verwenden.
  */
 
-function build(smallBusiness: boolean | null, domesticCents: number, freeFromCents: number | null, euCents: number | null, processing: string) {
+function build(smallBusiness: boolean | null, domesticCents: number, freeFromCents: number | null, euCents: number | null, delivery: string) {
   const vatNote =
     smallBusiness === true
       ? "Gemäß § 19 UStG wird keine Umsatzsteuer berechnet. Alle Preise sind Endpreise."
@@ -55,7 +55,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
     summaryNotes: [
       vatNote,
       shipNote,
-      `Lieferzeit: Lagernde Stücke übergeben wir innerhalb von ${processing} Werktagen an DHL (bei Vorkasse/PayPal ab Zahlungseingang), zuzüglich Versandlaufzeit. Maßanfertigungen: siehe Produktseite.`,
+      `Lieferzeit: lagernde Stücke innerhalb Deutschlands ${delivery} Tage (bei Vorkasse/PayPal ab Zahlungseingang); Ausland: Angabe vor Vertragsschluss. Maßanfertigungen: siehe Produktseite.`,
       "Viele Stücke sind Einzelstücke. Wir prüfen die Verfügbarkeit persönlich; der Vertrag kommt erst mit unserer Auftragsbestätigung per E-Mail zustande. Sie zahlen erst danach.",
       "Maßanfertigungen sind vom Widerrufsrecht ausgeschlossen.",
     ],
@@ -164,6 +164,8 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
       },
     },
 
+    /** Hinweis für Salons/Unternehmer (B2B): Shop richtet sich an Verbraucher. */
+    b2bNotice: "Sie bestellen als Salon, Friseurbetrieb oder anderes Unternehmen? Unser Onlineshop richtet sich an Verbraucher. Bitte stellen Sie eine Anfrage – Sie erhalten ein individuelles Angebot.",
     healthDataNotice:
       "Bitte machen Sie hier keine Angaben zu Ihrer Gesundheit (zum Beispiel Erkrankungen oder Behandlungen). Wir brauchen sie für Beratung und Anfertigung nicht.",
   };
@@ -173,8 +175,8 @@ export type CheckoutTexts = ReturnType<typeof build>;
 
 export function checkoutTextsFor(c: Company): CheckoutTexts {
   const s = shippingOf(c);
-  return build(c.smallBusiness, s.domesticCents, s.freeFromCents, s.euCents, processingDaysOf(c));
+  return build(c.smallBusiness, s.domesticCents, s.freeFromCents, s.euCents, deliveryDaysOf(c));
 }
 
 /** Vorbelegt: Kleinunternehmerin, DE 6,00 € (frei ab 150,00 €), EU 15,00 €, 3–5 Werktage. */
-export const checkoutTexts: CheckoutTexts = build(true, 600, 15000, 1500, "3–5");
+export const checkoutTexts: CheckoutTexts = build(true, 600, 15000, 1500, "2–5");

@@ -1,7 +1,7 @@
-import { type Company, euro, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, euro, deliveryDaysOf, shippingOf } from "../company-type";
 
 /** Nederlandse vertaling van ../checkout-texts.ts (zelfde sleutels en plaatshouders). Alleen de Duitse versie is bindend. */
-function build(smallBusiness: boolean | null, domesticCents: number, freeFromCents: number | null, euCents: number | null, processing: string) {
+function build(smallBusiness: boolean | null, domesticCents: number, freeFromCents: number | null, euCents: number | null, delivery: string) {
   const eur = (n: number) => euro(n, "nl-NL");
   const vatNote =
     smallBusiness === true
@@ -29,7 +29,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
     summaryNotes: [
       vatNote,
       shipNote,
-      `Levertijd: stukken op voorraad geven wij binnen ${processing} werkdagen af aan DHL (vooruitbetaling/PayPal: vanaf ontvangst van de betaling), plus transporttijd. Maatwerk: zie productpagina.`,
+      `Levertijd: stukken op voorraad binnen Duitsland ${delivery} dagen (vooruitbetaling/PayPal: vanaf ontvangst van de betaling); buitenland: vermeld vóór het sluiten van de overeenkomst. Maatwerk: zie productpagina.`,
       "Veel stukken zijn unica. Wij controleren de beschikbaarheid persoonlijk; de overeenkomst komt pas tot stand met onze orderbevestiging per e-mail. U betaalt pas daarna.",
       "Maatwerk is uitgesloten van het herroepingsrecht.",
     ],
@@ -127,6 +127,8 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
         ].join("\n"),
       },
     },
+    /** Hinweis für Salons/Unternehmer (B2B): Shop richtet sich an Verbraucher. */
+    b2bNotice: "Bestelt u als salon, kapper of ander bedrijf? Onze webwinkel richt zich op consumenten. Stuur ons een aanvraag – u ontvangt een individueel aanbod.",
     healthDataNotice:
       "Vermeld hier alstublieft geen gegevens over uw gezondheid (bijvoorbeeld ziekten of behandelingen). Wij hebben die niet nodig voor advies of vervaardiging.",
   };
@@ -136,7 +138,7 @@ export type CheckoutTexts = ReturnType<typeof build>;
 
 export function checkoutTextsFor(c: Company): CheckoutTexts {
   const s = shippingOf(c);
-  return build(c.smallBusiness, s.domesticCents, s.freeFromCents, s.euCents, processingDaysOf(c));
+  return build(c.smallBusiness, s.domesticCents, s.freeFromCents, s.euCents, deliveryDaysOf(c));
 }
 
-export const checkoutTexts: CheckoutTexts = build(true, 600, 15000, 1500, "3–5");
+export const checkoutTexts: CheckoutTexts = build(true, 600, 15000, 1500, "2–5");

@@ -1,4 +1,4 @@
-import { type Company, anyPayment, countryNames, euro, madeToOrderDaysOf, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, anyPayment, countryNames, euro, madeToOrderDaysOf, deliveryDaysOf, shippingOf } from "../company-type";
 
 const Missing = ({ field, label }: { field: string; label: string }) => (
   <mark data-missing={field}>[Information manquante : {label}]</mark>
@@ -52,12 +52,7 @@ export default function Page({ company: c }: { company: Company }) {
             Nous expédions avec {carrier}, dans un emballage discret et avec suivi. Pays de
             livraison : Allemagne{others.length > 0 ? <>, {countryNames(others, "fr")}</> : null} ; autres pays sur accord.
           </li>
-          <li>
-            Nous remettons les pièces en stock au transporteur dans un délai de {processingDaysOf(c)}{" "}
-            jours ouvrables – pour le paiement anticipé et PayPal à partir du lendemain de la
-            réception du paiement, sinon à partir du lendemain de la conclusion du contrat. S'y ajoute
-            la durée d'acheminement.
-          </li>
+          <li>Les pièces en stock vous parviennent en Allemagne en {deliveryDaysOf(c)} jours – pour le paiement anticipé et PayPal à partir du lendemain de la réception du paiement, sinon à partir du lendemain de la conclusion du contrat. Pour l'étranger, nous vous indiquons le délai avant la conclusion du contrat.</li>
           <li>Nous fabriquons les pièces sur mesure en {madeToOrderDaysOf(c)} jours environ, dès réception de toutes les informations et – pour le paiement anticipé ou PayPal – du paiement.</li>
           <li>Pour des raisons de sécurité, nous ne pouvons pas expédier certains produits d'entretien, adhésifs et solvants dans tous les pays. Nous le signalons sur la page produit.</li>
         </ul>
@@ -95,6 +90,7 @@ export default function Page({ company: c }: { company: Company }) {
                 ; payable dans les 7 jours. Expédition après réception du paiement.
               </li>
             ) : null}
+            {c.payments.paypalInstallments ? <li><strong>Paiement échelonné via PayPal</strong> – si PayPal vous le propose ; le prêteur est PayPal, sous réserve de sa vérification de solvabilité et de ses conditions. Nous n'accordons nous-mêmes aucun crédit.</li> : null}
             {c.payments.bankTransfer ? (
               <li>
                 <strong>Facture</strong> – virement dans les 14 jours suivant la réception de la

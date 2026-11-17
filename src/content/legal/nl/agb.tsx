@@ -1,4 +1,4 @@
-import { type Company, UNIVERSAL_ADR, addressLine, anyPayment, countryNames, euro, madeToOrderDaysOf, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, UNIVERSAL_ADR, addressLine, anyPayment, countryNames, euro, madeToOrderDaysOf, deliveryDaysOf, shippingOf } from "../company-type";
 
 const Missing = ({ field, label }: { field: string; label: string }) => (
   <mark data-missing={field}>[Gegeven ontbreekt: {label}]</mark>
@@ -25,6 +25,7 @@ export default function Page({ company: c }: { company: Company }) {
             {addressLine(c)}, telefoon {c.phone}, e-mail {c.email}.
           </li>
           <li>De taal van de overeenkomst is Duits. Vertalingen dienen alleen ter verduidelijking.</li>
+        <li>Deze voorwaarden gelden alleen voor consumenten. Salons, kappers en andere ondernemers ontvangen op aanvraag een individueel aanbod tegen afzonderlijke voorwaarden.</li>
         </ol>
       </section>
 
@@ -84,6 +85,7 @@ export default function Page({ company: c }: { company: Company }) {
               {c.payments.paypal ? (
                 <li><strong>PayPal:</strong> na de orderbevestiging ontvangt u een betaalverzoek van PayPal. Betaal binnen 7 dagen. Daarnaast gelden de voorwaarden van PayPal. Verzending na ontvangst van de betaling.</li>
               ) : null}
+              {c.payments.paypalInstallments ? <li><strong>Betalen in termijnen via PayPal:</strong> als PayPal u deze optie aanbiedt, kunt u na een kredietcontrole door PayPal in termijnen betalen. Het krediet sluit u rechtstreeks met PayPal als kredietgever; diens voorwaarden en precontractuele informatie gelden. Wij verlenen zelf geen krediet. Uw koopovereenkomst met ons blijft ongewijzigd.</li> : null}
               {c.payments.bankTransfer ? (
                 <li><strong>Factuur (overschrijving na ontvangst):</strong> het factuurbedrag moet binnen 14 dagen na ontvangst van de goederen zonder aftrek worden overgemaakt. Wij kunnen deze betaalwijze in afzonderlijke gevallen weigeren, met name bij hoge bedragen of levering in het buitenland, en u een andere beschikbare betaalwijze aanbieden.</li>
               ) : null}
@@ -100,7 +102,7 @@ export default function Page({ company: c }: { company: Company }) {
             {others.length > 0 ? <> en naar de volgende landen: {countryNames(others, "nl")}</> : null}. Levering
             naar andere landen is mogelijk na overleg. De verzending gebeurt met {carrier}.
           </li>
-          <li>Artikelen op voorraad geven wij binnen {processingDaysOf(c)} werkdagen af aan de vervoerder. Bij vooruitbetaling of PayPal begint de termijn op de dag na ontvangst van de betaling, anders op de dag na het sluiten van de overeenkomst. Daar komt de transporttijd bij. De verwachte levertijd vermelden wij op de productpagina en in het besteloverzicht.</li>
+          <li>Levertijd voor artikelen op voorraad binnen Duitsland: {deliveryDaysOf(c)} dagen. Bij vooruitbetaling of PayPal begint de termijn op de dag na ontvangst van de betaling, anders op de dag na het sluiten van de overeenkomst. De levertijd voor zendingen naar het buitenland delen wij u vóór het sluiten van de overeenkomst mee.</li>
           <li>Maatwerk vervaardigen wij binnen ongeveer {madeToOrderDaysOf(c)} dagen nadat alle benodigde gegevens en – bij vooruitbetaling of PayPal – de betaling bij ons zijn binnengekomen. Wij laten u de verwachte verzenddatum weten.</li>
           <li>Komen de goederen aan met zichtbare transportschade, meld dit dan bij de bezorger en laat het ons kort weten. Uw wettelijke rechten blijven onverlet; uw melding helpt ons aanspraken tegenover de vervoerder geldend te maken.</li>
         </ol>

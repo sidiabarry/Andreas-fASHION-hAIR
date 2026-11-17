@@ -1,4 +1,4 @@
-import { type Company, UNIVERSAL_ADR, addressLine, anyPayment, countryNames, euro, madeToOrderDaysOf, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, UNIVERSAL_ADR, addressLine, anyPayment, countryNames, euro, madeToOrderDaysOf, deliveryDaysOf, shippingOf } from "../company-type";
 
 const Missing = ({ field, label }: { field: string; label: string }) => (
   <mark data-missing={field}>[Eksik bilgi: {label}]</mark>
@@ -25,6 +25,7 @@ export default function Page({ company: c }: { company: Company }) {
             {addressLine(c)}, telefon {c.phone}, e-posta {c.email}.
           </li>
           <li>Sözleşme dili Almancadır. Çeviriler yalnızca anlamayı kolaylaştırmak içindir.</li>
+        <li>Bu koşullar yalnızca tüketiciler için geçerlidir. Salonlar, kuaförler ve diğer işletmeler talep üzerine ayrı koşullarla bireysel bir teklif alır.</li>
         </ol>
       </section>
 
@@ -84,6 +85,7 @@ export default function Page({ company: c }: { company: Company }) {
               {c.payments.paypal ? (
                 <li><strong>PayPal:</strong> sipariş onayından sonra PayPal üzerinden bir ödeme talebi alırsınız. Lütfen 7 gün içinde ödeyin. Ayrıca PayPal koşulları geçerlidir. Ödeme alındıktan sonra gönderim yapılır.</li>
               ) : null}
+              {c.payments.paypalInstallments ? <li><strong>PayPal ile taksitli ödeme:</strong> PayPal size bu seçeneği sunarsa, PayPal'ın kredi değerlendirmesinden sonra tutarı taksitle ödeyebilirsiniz. Kredi sözleşmesini doğrudan kredi veren PayPal ile yaparsınız; PayPal'ın koşulları ve sözleşme öncesi bilgileri geçerlidir. Biz kendimiz kredi vermiyoruz. Bizimle olan satış sözleşmeniz bundan etkilenmez.</li> : null}
               {c.payments.bankTransfer ? (
                 <li><strong>Fatura (teslimattan sonra havale):</strong> fatura tutarı, ürünün tesliminden itibaren 14 gün içinde kesintisiz havale edilmelidir. Bu yöntemi tekil durumlarda, özellikle yüksek tutarlarda veya yurt dışı teslimatlarda reddedebilir ve size mevcut başka bir yöntem önerebiliriz.</li>
               ) : null}
@@ -100,7 +102,7 @@ export default function Page({ company: c }: { company: Company }) {
             {others.length > 0 ? <> ve şu ülkelere: {countryNames(others, "tr")}</> : null} teslimat yapıyoruz.
             Diğer ülkelere teslimat önceden anlaşma ile mümkündür. Gönderim kargo şirketi ile yapılır: {carrier}.
           </li>
-          <li>Stoktaki ürünleri {processingDaysOf(c)} iş günü içinde kargo şirketine teslim ederiz. Ön ödeme veya PayPal'da süre ödemenin alındığı günü izleyen gün, diğer durumlarda sözleşmenin kurulduğu günü izleyen gün başlar. Buna taşıma süresi eklenir. Tahmini teslimat süresini ürün sayfasında ve sipariş özetinde belirtiriz.</li>
+          <li>Almanya içinde stoktaki ürünler için teslimat süresi: {deliveryDaysOf(c)} gün. Ön ödeme veya PayPal'da süre ödemenin alındığı günü izleyen gün, diğer durumlarda sözleşmenin kurulduğu günü izleyen gün başlar. Yurt dışı gönderimlerin teslimat süresini sözleşme kurulmadan önce bildiririz.</li>
           <li>Ölçüye göre ürünleri, gerekli tüm bilgiler ve – ön ödeme veya PayPal'da – ödeme bize ulaştıktan sonra yaklaşık {madeToOrderDaysOf(c)} gün içinde üretiriz. Tahmini gönderim tarihini size bildiririz.</li>
           <li>Ürün görünür taşıma hasarıyla gelirse lütfen bunu kuryeye bildirin ve bize kısaca haber verin. Yasal haklarınız etkilenmez; bildiriminiz kargo şirketine karşı taleplerimizi ileri sürmemize yardımcı olur.</li>
         </ol>

@@ -86,8 +86,7 @@ export default function Page({ company: c }: { company: Company }) {
             for the supply of goods which are not prefabricated and for whose production an
             individual selection or determination by the consumer is decisive, or which are clearly
             tailored to the consumer's personal needs. With us this concerns all products marked as
-            custom-made, for example the custom-made hair prosthesis.
-          </li>
+            custom-made, for example the custom-made hair prosthesis. The same applies to extensions that we dye, cut or make to your specifications.</li>
         </ul>
         <p>The right of withdrawal expires early for contracts</p>
         <ul>

@@ -47,7 +47,7 @@ export default function Page({ company: c }: { company: Company }) {
         <h3 id="ausschluss">Exclusão ou extinção antecipada do direito de livre resolução</h3>
         <p>Não existe direito de livre resolução nos contratos</p>
         <ul>
-          <li>de fornecimento de bens que não sejam pré-fabricados e cuja produção dependa de uma escolha ou especificação individual do consumidor, ou que sejam claramente personalizados de acordo com as suas necessidades. Connosco, trata-se de todos os produtos assinalados como feitos por medida, por exemplo a prótese capilar por medida.</li>
+          <li>de fornecimento de bens que não sejam pré-fabricados e cuja produção dependa de uma escolha ou especificação individual do consumidor, ou que sejam claramente personalizados de acordo com as suas necessidades. Connosco, trata-se de todos os produtos assinalados como feitos por medida, por exemplo a prótese capilar por medida. O mesmo se aplica às extensões que pintamos, cortamos ou fabricamos segundo as suas indicações.</li>
         </ul>
         <p>O direito de livre resolução extingue-se antecipadamente nos contratos</p>
         <ul>

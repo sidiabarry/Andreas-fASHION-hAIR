@@ -1,4 +1,4 @@
-import { type Company, countryNames, anyPayment, euro, madeToOrderDaysOf, processingDaysOf, shippingOf } from "./company-type";
+import { type Company, countryNames, anyPayment, euro, madeToOrderDaysOf, deliveryDaysOf, shippingOf } from "./company-type";
 
 const Missing = ({ field, label }: { field: string; label: string }) => (
   <mark data-missing={field}>[Angabe fehlt: {label}]</mark>
@@ -48,11 +48,7 @@ export default function Page({ company: c }: { company: Company }) {
             Deutschland{others.length > 0 ? <>, {countryNames(others)}</> : null}; weitere Länder nach
             Absprache.
           </li>
-          <li>
-            Lagernde Stücke übergeben wir innerhalb von {processingDaysOf(c)} Werktagen an den
-            Versanddienstleister – bei Vorkasse und PayPal ab dem Tag nach Zahlungseingang, sonst ab
-            dem Tag nach Vertragsschluss. Hinzu kommt die Laufzeit der Sendung.
-          </li>
+          <li>Lagernde Stücke sind innerhalb Deutschlands in {deliveryDaysOf(c)} Tagen bei Ihnen – bei Vorkasse und PayPal ab dem Tag nach Zahlungseingang, sonst ab dem Tag nach Vertragsschluss. Die Lieferzeit ins Ausland nennen wir Ihnen vor Vertragsschluss.</li>
           <li>
             Maßanfertigungen fertigen wir in etwa {madeToOrderDaysOf(c)} Tagen, sobald alle Angaben
             und – bei Vorkasse oder PayPal – die Zahlung vorliegen.
@@ -100,6 +96,7 @@ export default function Page({ company: c }: { company: Company }) {
                 ; zahlbar innerhalb von 7 Tagen. Versand nach Zahlungseingang.
               </li>
             ) : null}
+            {c.payments.paypalInstallments ? <li><strong>Ratenzahlung über PayPal</strong> – sofern PayPal sie Ihnen anbietet; Kreditgeber ist PayPal, nach dessen Bonitätsprüfung und Bedingungen. Wir selbst gewähren keinen Kredit.</li> : null}
             {c.payments.bankTransfer ? (
               <li>
                 <strong>Rechnung</strong> – Überweisung innerhalb von 14 Tagen nach Erhalt der

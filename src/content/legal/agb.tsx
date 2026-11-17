@@ -1,4 +1,4 @@
-import { type Company, countryNames, UNIVERSAL_ADR, addressLine, anyPayment, euro, madeToOrderDaysOf, processingDaysOf, shippingOf } from "./company-type";
+import { type Company, countryNames, UNIVERSAL_ADR, addressLine, anyPayment, euro, madeToOrderDaysOf, deliveryDaysOf, shippingOf } from "./company-type";
 
 const Missing = ({ field, label }: { field: string; label: string }) => (
   <mark data-missing={field}>[Angabe fehlt: {label}]</mark>
@@ -22,6 +22,7 @@ export default function Page({ company: c }: { company: Company }) {
             {addressLine(c)}, Telefon {c.phone}, E-Mail {c.email}.
           </li>
           <li>Vertragssprache ist Deutsch. Übersetzungen dienen nur dem Verständnis.</li>
+        <li>Diese AGB gelten nur für Verbraucherinnen und Verbraucher. Salons, Friseurbetriebe und andere Unternehmer erhalten auf Anfrage ein individuelles Angebot zu gesonderten Bedingungen.</li>
         </ol>
       </section>
 
@@ -131,6 +132,7 @@ export default function Page({ company: c }: { company: Company }) {
                   Zahlungseingang.
                 </li>
               ) : null}
+              {c.payments.paypalInstallments ? <li><strong>Ratenzahlung über PayPal:</strong> Wenn PayPal Ihnen diese Option anbietet, können Sie den Betrag nach einer Bonitätsprüfung durch PayPal in Raten zahlen. Den Ratenkredit schließen Sie direkt mit PayPal als Kreditgeber; es gelten dessen Bedingungen und vorvertragliche Informationen. Wir selbst gewähren keinen Kredit. Ihr Kaufvertrag mit uns bleibt davon unberührt.</li> : null}
               {c.payments.bankTransfer ? (
                 <li>
                   <strong>Rechnung (Überweisung nach Erhalt der Ware):</strong> Der Rechnungsbetrag
@@ -156,13 +158,7 @@ export default function Page({ company: c }: { company: Company }) {
             . Lieferungen in andere Länder sind nach vorheriger Absprache möglich. Der Versand
             erfolgt mit {carrier}.
           </li>
-          <li>
-            Lagernde Ware übergeben wir innerhalb von {processingDaysOf(c)} Werktagen an den
-            Versanddienstleister. Die Frist beginnt bei Zahlung per Vorkasse oder PayPal am Tag nach
-            Zahlungseingang, sonst am Tag nach Vertragsschluss. Hinzu kommt die Laufzeit der
-            Sendung. Die voraussichtliche Lieferzeit nennen wir Ihnen auf der Produktseite und in
-            der Bestellübersicht.
-          </li>
+          <li>Lieferzeit für lagernde Ware innerhalb Deutschlands: {deliveryDaysOf(c)} Tage. Die Frist beginnt bei Zahlung per Vorkasse oder PayPal am Tag nach Zahlungseingang, sonst am Tag nach Vertragsschluss. Die Lieferzeit für Sendungen ins Ausland teilen wir Ihnen vor Vertragsschluss mit.</li>
           <li>
             Maßanfertigungen fertigen wir innerhalb von etwa {madeToOrderDaysOf(c)} Tagen, nachdem alle
             für die Anfertigung nötigen Angaben bei uns vorliegen und – bei Vorkasse oder PayPal –

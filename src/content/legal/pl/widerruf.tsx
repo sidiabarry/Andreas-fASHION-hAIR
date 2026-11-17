@@ -47,7 +47,7 @@ export default function Page({ company: c }: { company: Company }) {
         <h3 id="ausschluss">Wyłączenie lub wcześniejsza utrata prawa odstąpienia od umowy</h3>
         <p>Prawo odstąpienia od umowy nie przysługuje w przypadku umów</p>
         <ul>
-          <li>dotyczących rzeczy nieprefabrykowanych, wyprodukowanych według specyfikacji konsumenta lub służących zaspokojeniu jego zindywidualizowanych potrzeb. U nas dotyczy to wszystkich produktów oznaczonych jako wykonywane na wymiar, np. protezy włosów na wymiar.</li>
+          <li>dotyczących rzeczy nieprefabrykowanych, wyprodukowanych według specyfikacji konsumenta lub służących zaspokojeniu jego zindywidualizowanych potrzeb. U nas dotyczy to wszystkich produktów oznaczonych jako wykonywane na wymiar, np. protezy włosów na wymiar. To samo dotyczy pasm do przedłużania włosów (extensions), które farbujemy, przycinamy lub wykonujemy według Państwa wskazań.</li>
         </ul>
         <p>Prawo odstąpienia od umowy wygasa wcześniej w przypadku umów</p>
         <ul>

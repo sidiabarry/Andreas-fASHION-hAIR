@@ -1,4 +1,4 @@
-import { type Company, UNIVERSAL_ADR, addressLine, anyPayment, countryNames, euro, madeToOrderDaysOf, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, UNIVERSAL_ADR, addressLine, anyPayment, countryNames, euro, madeToOrderDaysOf, deliveryDaysOf, shippingOf } from "../company-type";
 
 const Missing = ({ field, label }: { field: string; label: string }) => (
   <mark data-missing={field}>[Brak danych: {label}]</mark>
@@ -25,6 +25,7 @@ export default function Page({ company: c }: { company: Company }) {
             {addressLine(c)}, telefon {c.phone}, e-mail {c.email}.
           </li>
           <li>Językiem umowy jest język niemiecki. Tłumaczenia służą wyłącznie zrozumieniu.</li>
+        <li>Niniejsze OWH dotyczą wyłącznie konsumentów. Salony, fryzjerzy i inni przedsiębiorcy otrzymują na zapytanie indywidualną ofertę na odrębnych warunkach.</li>
         </ol>
       </section>
 
@@ -84,6 +85,7 @@ export default function Page({ company: c }: { company: Company }) {
               {c.payments.paypal ? (
                 <li><strong>PayPal:</strong> po potwierdzeniu zamówienia otrzymują Państwo żądanie zapłaty PayPal. Prosimy zapłacić w ciągu 7 dni. Dodatkowo obowiązują warunki PayPal. Wysyłka po otrzymaniu płatności.</li>
               ) : null}
+              {c.payments.paypalInstallments ? <li><strong>Płatność w ratach przez PayPal:</strong> jeżeli PayPal zaoferuje Państwu tę opcję, mogą Państwo zapłacić w ratach po ocenie zdolności kredytowej przez PayPal. Umowę kredytu zawierają Państwo bezpośrednio z PayPal jako kredytodawcą; obowiązują jego warunki i informacje przedumowne. Sami nie udzielamy kredytu. Umowa sprzedaży z nami pozostaje nienaruszona.</li> : null}
               {c.payments.bankTransfer ? (
                 <li><strong>Faktura (przelew po otrzymaniu towaru):</strong> kwotę należy przelać bez potrąceń w ciągu 14 dni od otrzymania towaru. W pojedynczych przypadkach, zwłaszcza przy wysokich kwotach lub dostawach za granicę, możemy odmówić tej metody i zaproponować inną dostępną metodę.</li>
               ) : null}
@@ -100,7 +102,7 @@ export default function Page({ company: c }: { company: Company }) {
             {others.length > 0 ? <> oraz do następujących krajów: {countryNames(others, "pl")}</> : null}. Dostawy
             do innych krajów są możliwe po wcześniejszym uzgodnieniu. Wysyłkę realizuje {carrier}.
           </li>
-          <li>Produkty dostępne w magazynie przekazujemy przewoźnikowi w ciągu {processingDaysOf(c)} dni roboczych. Przy przedpłacie lub PayPal termin biegnie od dnia następującego po otrzymaniu płatności, w pozostałych przypadkach od dnia następującego po zawarciu umowy. Do tego dochodzi czas transportu. Przewidywany czas dostawy podajemy na stronie produktu i w podsumowaniu zamówienia.</li>
+          <li>Czas dostawy produktów z magazynu na terenie Niemiec: {deliveryDaysOf(c)} dni. Przy przedpłacie lub PayPal termin biegnie od dnia następującego po otrzymaniu płatności, w pozostałych przypadkach od dnia następującego po zawarciu umowy. Czas dostawy za granicę podajemy przed zawarciem umowy.</li>
           <li>Produkty na wymiar wykonujemy w ciągu ok. {madeToOrderDaysOf(c)} dni od otrzymania wszystkich niezbędnych danych oraz – przy przedpłacie lub PayPal – płatności. Informujemy o przewidywanej dacie wysyłki.</li>
           <li>Jeżeli towar dotrze z widocznymi uszkodzeniami transportowymi, prosimy zgłosić to doręczycielowi i krótko nas poinformować. Państwa ustawowe prawa pozostają nienaruszone; zgłoszenie pomaga nam dochodzić roszczeń wobec przewoźnika.</li>
         </ol>
