@@ -76,7 +76,14 @@ export const inquirySchema = z.object({
   privacy: z.literal(true, "privacy"),
   product: optionalText(200),
   topic: z.enum(INQUIRY_TOPICS, "invalid"),
-});
+  // Extensions
+  method: z.enum(["", "butterfly", "genius", "invisible", "tape", "keratin", "clip", "unsure"], "invalid").optional().default(""),
+  length: optionalText(60),
+  color: optionalText(80),
+  amount: optionalText(80),
+  // Salon (B2B)
+  company: optionalText(120),
+}).refine((v) => v.topic !== "salon" || v.company.length >= 2, { message: "required", path: ["company"] });
 export type InquiryInput = z.infer<typeof inquirySchema>;
 
 export const withdrawalSchema = z.object({

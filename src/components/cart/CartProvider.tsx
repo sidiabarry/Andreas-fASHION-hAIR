@@ -23,6 +23,9 @@ type CartValue = {
   clear: () => void;
   dismiss: () => void;
   lookup: (slug: string) => ProductLite | undefined;
+  /** Pflege-/Befestigungsprodukte als „Passt dazu“ */
+  suggestions: ProductLite[];
+  checkoutOpen: boolean;
 };
 
 const CartContext = createContext<CartValue | null>(null);
@@ -31,7 +34,7 @@ const CartContext = createContext<CartValue | null>(null);
  * Warenkorb im localStorage des Geräts (technisch notwendig nach § 25 Abs. 2 Nr. 2 TDDDG,
  * keine Einwilligung nötig). Enthält nur Produktkennungen und Mengen, keine Preise.
  */
-export function CartProvider({ children, products }: { children: ReactNode; products: ProductLite[] }) {
+export function CartProvider({ children, products, checkoutOpen }: { children: ReactNode; products: ProductLite[]; checkoutOpen: boolean }) {
   const [state, dispatch] = useReducer(cartReducer, { lines: [] });
   const [ready, setReady] = useState(false);
   const [justAdded, setJustAdded] = useState<string | null>(null);
@@ -76,12 +79,6 @@ export function CartProvider({ children, products }: { children: ReactNode; prod
     }
   }, [state.lines, ready]);
 
-  useEffect(() => {
-    if (!justAdded) return;
-    const timer = window.setTimeout(() => setJustAdded(null), 6000);
-    return () => window.clearTimeout(timer);
-  }, [justAdded]);
-
   const add = useCallback(
     (slug: string) => {
       const product = bySlug.get(slug);
@@ -105,6 +102,7 @@ export function CartProvider({ children, products }: { children: ReactNode; prod
       .filter((item): item is CartItem => Boolean(item.product));
     return {
       add,
+      checkoutOpen,
       clear,
       count: cartCount(state),
       dismiss,
@@ -117,8 +115,9 @@ export function CartProvider({ children, products }: { children: ReactNode; prod
       remove,
       setQuantity,
       subtotalCents: items.reduce((sum, item) => sum + item.product.priceCents * item.quantity, 0),
+      suggestions: products.filter((p) => p.category === "pflege"),
     };
-  }, [add, bySlug, clear, dismiss, justAdded, ready, remove, setQuantity, state]);
+  }, [add, bySlug, checkoutOpen, clear, dismiss, justAdded, products, ready, remove, setQuantity, state]);
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 }

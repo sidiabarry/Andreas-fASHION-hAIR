@@ -53,7 +53,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
           {t("skip")}
         </a>
         <NextIntlClientProvider>
-          <CartProvider products={products.map((product) => toLite(product, locale))}>
+          <CartProvider checkoutOpen={mode.checkoutOpen} products={products.map((product) => toLite(product, locale))}>
             <Header />
             <div id="inhalt" tabIndex={-1}>
               {children}

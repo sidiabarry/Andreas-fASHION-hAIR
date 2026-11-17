@@ -53,7 +53,10 @@ export type Company = {
   editorialResponsible: string | null;
   /** Versanddienstleister */
   shippingCarrier: string | null;
-  /** Zahlungswege. Leer = noch nicht festgelegt (Kasse bestellt ohne Zahlung, Andrea meldet sich). */
+  /**
+   * Zahlungswege. Leer = noch nicht festgelegt (Kasse bestellt ohne Zahlung, Andrea meldet sich).
+   * Vorgemerkt laut Inhaberin: "paypal" (PayPal ist vorhanden), später Ratenzahlung über PayPal.
+   */
   paymentMethods: string[];
   /** Bankverbindung für Überweisung (erst nötig, wenn Überweisung angeboten wird). */
   bank: { holder: string; iban: string; bic: string; bankName: string } | null;

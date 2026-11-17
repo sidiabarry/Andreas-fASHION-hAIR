@@ -22,7 +22,9 @@
       "/assets/originals/421-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 420,
@@ -46,7 +48,9 @@
       "/assets/originals/420-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 419,
@@ -72,7 +76,9 @@
       "/assets/originals/419-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 417,
@@ -97,7 +103,9 @@
       "/assets/originals/417-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 416,
@@ -128,7 +136,9 @@
       "/assets/originals/416-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 415,
@@ -159,7 +169,9 @@
       "/assets/originals/415-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 414,
@@ -190,7 +202,9 @@
       "/assets/originals/414-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 413,
@@ -221,7 +235,9 @@
       "/assets/originals/413-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 408,
@@ -252,7 +268,9 @@
       "/assets/originals/408-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 407,
@@ -282,7 +300,9 @@
       "/assets/originals/407-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 405,
@@ -313,7 +333,9 @@
       "/assets/originals/405-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 287,
@@ -341,7 +363,9 @@
       "/assets/originals/287-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 263,
@@ -372,7 +396,9 @@
       "/assets/originals/263-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 256,
@@ -403,7 +429,9 @@
       "/assets/originals/256-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 246,
@@ -434,7 +462,9 @@
       "/assets/originals/246-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 241,
@@ -461,7 +491,9 @@
       "/assets/originals/241-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 238,
@@ -488,7 +520,9 @@
       "/assets/originals/238-0.jpg"
     ],
     "madeToOrder": true,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 234,
@@ -514,7 +548,9 @@
       "/assets/originals/234-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": null
   },
   {
     "id": 222,
@@ -540,7 +576,9 @@
       "/assets/originals/222-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": null
   },
   {
     "id": 228,
@@ -566,7 +604,9 @@
       "/assets/originals/228-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": null
   },
   {
     "id": 220,
@@ -592,7 +632,9 @@
       "/assets/originals/220-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": null
   },
   {
     "id": 206,
@@ -623,7 +665,9 @@
       "/assets/originals/206-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 200,
@@ -654,7 +698,9 @@
       "/assets/originals/200-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 191,
@@ -685,7 +731,9 @@
       "/assets/originals/191-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 186,
@@ -716,7 +764,9 @@
       "/assets/originals/186-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 180,
@@ -747,7 +797,9 @@
       "/assets/originals/180-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 175,
@@ -778,7 +830,9 @@
       "/assets/originals/175-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 169,
@@ -809,7 +863,9 @@
       "/assets/originals/169-0.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 164,
@@ -841,7 +897,9 @@
       "/assets/originals/164-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 110,
@@ -869,7 +927,9 @@
       "/assets/originals/110-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 105,
@@ -896,7 +956,9 @@
       "/assets/originals/105-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 99,
@@ -923,7 +985,9 @@
       "/assets/originals/99-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 93,
@@ -950,7 +1014,9 @@
       "/assets/originals/93-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 88,
@@ -976,7 +1042,9 @@
       "/assets/originals/88-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 83,
@@ -1003,7 +1071,9 @@
       "/assets/originals/83-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 78,
@@ -1030,7 +1100,9 @@
       "/assets/originals/78-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 73,
@@ -1057,7 +1129,9 @@
       "/assets/originals/73-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 68,
@@ -1084,7 +1158,9 @@
       "/assets/originals/68-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 63,
@@ -1111,7 +1187,9 @@
       "/assets/originals/63-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 58,
@@ -1138,7 +1216,9 @@
       "/assets/originals/58-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 53,
@@ -1165,7 +1245,9 @@
       "/assets/originals/53-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 48,
@@ -1192,7 +1274,9 @@
       "/assets/originals/48-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 43,
@@ -1219,7 +1303,9 @@
       "/assets/originals/43-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 38,
@@ -1246,7 +1332,9 @@
       "/assets/originals/38-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 33,
@@ -1273,7 +1361,9 @@
       "/assets/originals/33-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 29,
@@ -1300,7 +1390,9 @@
       "/assets/originals/29-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 21,
@@ -1327,7 +1419,9 @@
       "/assets/originals/21-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 17,
@@ -1354,7 +1448,9 @@
       "/assets/originals/17-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 12,
@@ -1381,7 +1477,9 @@
       "/assets/originals/12-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   },
   {
     "id": 11,
@@ -1408,6 +1506,8 @@
       "/assets/originals/11-1.jpg"
     ],
     "madeToOrder": false,
-    "safety": null
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Brasilien"
   }
 ]

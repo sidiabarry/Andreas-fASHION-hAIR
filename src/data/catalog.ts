@@ -2,7 +2,10 @@ import raw from "./catalog.json";
 import catalogEn from "../messages/catalog/en.json";
 import type { Locale } from "../i18n/locales";
 
-export const CATEGORY_IDS = ["topper", "peruecken", "pony", "maenner", "pflege"] as const;
+/** Reihenfolge = Reihenfolge in Menü und Filtern. Extensions zuerst (Wunsch der Inhaberin), noch ohne Produkte. */
+export const CATEGORY_IDS = ["extensions", "topper", "peruecken", "pony", "maenner", "pflege"] as const;
+/** Kategorien ohne Online-Produkte: nur Anfrage */
+export const INQUIRY_ONLY_CATEGORIES: readonly CategoryId[] = ["extensions"];
 export type CategoryId = (typeof CATEGORY_IDS)[number];
 
 export type Product = {
@@ -26,6 +29,10 @@ export type Product = {
   restyled: boolean;
   originals: string[];
   madeToOrder: boolean;
+  /** Bestand laut Abgleich mit der Inhaberin. "unknown" = noch nicht abgeglichen (Anzeige: Verfügbarkeit wird persönlich bestätigt). */
+  availability: "in_stock" | "made_to_order" | "unknown";
+  /** Herkunft des Haars (vom Auftraggeber bestätigt 11/2026: brasilianisches Echthaar). null bei Pflegeprodukten. */
+  origin: "Brasilien" | null;
   /** Sicherheits-/Gefahrstoffhinweise (GPSR, CLP). null = noch nicht geliefert. */
   safety: string | null;
 };

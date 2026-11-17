@@ -7,6 +7,10 @@
  * - Weltweit: 7 bis 14 Werktage, Versandkosten auf Anfrage
  * - Bearbeitung: in der Regel 3 bis 5 Werktage, individuelle/maßgefertigte Stücke können länger dauern
  *
+ * Gespräch mit der Inhaberin (11/2026, docs/ANDREA-GESCHICHTE.md): Lieferzeit ab Lager 2 bis 5 Tage,
+ * Maßanfertigung 15 bis 20 Tage; Versand weltweit mit DHL (Vertrag inkl. Ausland).
+ * Außerhalb der EU nennt Andrea die Versandkosten vor ihrer Bestätigung (keine Online-Kasse, Anfrage).
+ *
  * Die Live-Seite schreibt "ab 6 €" bzw. "ab 15 €". Solange keine Staffel bekannt ist,
  * gilt der genannte Betrag als fester Preis. Bitte mit Andrea bestätigen (docs/CHECKLISTE-LAUNCH.md).
  *
@@ -25,7 +29,12 @@ export type ShippingZone = {
   transitDays: [number, number];
 };
 
-export const HANDLING_DAYS: [number, number] = [3, 5];
+/** Lieferzeit ab Lager (Tage bis zur Kundin), laut Inhaberin. Einzige Quelle für alle Angaben. */
+export const DELIVERY_DAYS_IN_STOCK: [number, number] = [2, 5];
+/** Fertigungszeit Maßanfertigung in Tagen, laut Inhaberin. */
+export const MADE_TO_ORDER_DAYS: [number, number] = [15, 20];
+/** Für die Rechtstexte (Übergabe an den Versanddienstleister spätestens innerhalb dieser Spanne). */
+export const HANDLING_DAYS: [number, number] = DELIVERY_DAYS_IN_STOCK;
 
 export const SHIPPING_ZONES: Record<ShippingZoneId, ShippingZone> = {
   de: { id: "de", priceCents: 600, freeFromCents: 15000, transitDays: [2, 4] },
@@ -60,4 +69,14 @@ export function shippingCents(countryCode: string, subtotalCents: number): numbe
   if (zone.priceCents === null) return null;
   if (zone.freeFromCents !== null && subtotalCents >= zone.freeFromCents) return 0;
   return zone.priceCents;
+}
+
+/** Platzhalter für Texte zu Lieferzeiten (eine Quelle für alle Seiten). */
+export function deliveryParams() {
+  return {
+    from: DELIVERY_DAYS_IN_STOCK[0],
+    mFrom: MADE_TO_ORDER_DAYS[0],
+    mTo: MADE_TO_ORDER_DAYS[1],
+    to: DELIVERY_DAYS_IN_STOCK[1],
+  };
 }
