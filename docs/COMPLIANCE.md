@@ -1,6 +1,6 @@
 # Compliance-Grundlage – Andrea's Fashion Hair
 
-**Stand:** 17.11.2026 · **Arbeitsstand:** Deutsche Rechtstexte vollständig (`src/content/legal/*`). Übersetzungen (en, fr, es, pt, it, nl, pl, tr) siehe Abschnitt 9.
+**Stand:** 17.11.2026 · **Arbeitsstand:** Deutsche Rechtstexte vollständig (`src/content/legal/*`). Übersetzungen fertig: en, fr. In Arbeit: es, pt, it, nl, pl, tr (siehe Abschnitt 9).
 
 > **Wichtig – bitte zuerst lesen.** Die Texte sind sorgfältig nach der Rechtslage vom November 2026 erarbeitet und an den Gesetzestexten geprüft (Quellen: `docs/QUELLEN.md`). Sie sind aber **keine Rechtsberatung**. Vor dem Livegang muss eine Rechtsanwältin/ein Rechtsanwalt oder ein Rechtstexter-Dienst (z. B. Händlerbund, IT-Recht Kanzlei, Trusted Shops) die Texte und den Bestellprozess prüfen. Steuerfragen gehören zur Steuerberatung. Die Punkte unter „Von Anwalt prüfen lassen“ (Abschnitt 5) sind dabei besonders wichtig.
 
