@@ -60,8 +60,9 @@ export function Header() {
     <>
       <header className="af-nav">
         <div className="af-wrap af-nav__in">
-          <Link aria-label={t("logo.homeLabel")} href="/">
+          <Link className="af-homelink" href="/">
             <Logo claim priority size={40} />
+            <span className="af-sr"> – {t("common.home")}</span>
           </Link>
           <nav aria-label={t("nav.main")} className="af-nav__links">
             {links}

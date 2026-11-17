@@ -547,3 +547,6 @@ ol.af-steps { list-style: none; padding: 0; }
 .af-review__dl { display: grid; gap: 4px 0; margin: 0; }
 .af-review__dl dt { color: var(--af-muted); font-size: 0.86rem; margin-top: 8px; }
 .af-review__dl dd { margin: 0; font-size: 0.95rem; }
+/* Warenkorb und Kasse laden ihren Inhalt aus dem Gerät: Platz reservieren, damit nichts springt */
+.af-cartview { min-height: 75svh; }
+.af-homelink { display: inline-flex; align-items: center; }

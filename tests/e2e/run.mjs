@@ -123,7 +123,10 @@ async function pages() {
     });
     const page = await ctx.newPage();
     const problems = [];
-    page.on("console", (m) => m.type() === "error" && problems.push(`console: ${m.text().slice(0, 160)}`));
+    page.on("console", (m) => {
+      // Die 404-Seite meldet ihren eigenen Status als Konsolenfehler: erwartet
+      if (m.type() === "error" && !(page.url().includes("/gibt-es-nicht") && m.text().includes("404"))) problems.push(`console: ${m.text().slice(0, 160)}`);
+    });
     page.on("pageerror", (e) => problems.push(`pageerror: ${e.message}`));
     page.on("response", (r) => {
       if (r.status() >= 400 && !r.url().includes("/gibt-es-nicht")) problems.push(`${r.status()} ${r.url()}`);

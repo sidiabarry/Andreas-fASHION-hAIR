@@ -1,5 +1,7 @@
 import raw from "./catalog.json";
 import catalogEn from "../messages/catalog/en.json";
+import catalogEs from "../messages/catalog/es.json";
+import catalogFr from "../messages/catalog/fr.json";
 import type { Locale } from "../i18n/locales";
 
 /** Reihenfolge = Reihenfolge in Menü und Filtern. Extensions zuerst (Wunsch der Inhaberin), noch ohne Produkte. */
@@ -43,6 +45,8 @@ export const products: Product[] = raw as Product[];
 
 const translations: Partial<Record<Locale, Record<string, ProductText>>> = {
   en: catalogEn as Record<string, ProductText>,
+  es: catalogEs as Record<string, ProductText>,
+  fr: catalogFr as Record<string, ProductText>,
 };
 
 export function isCategoryId(value: unknown): value is CategoryId {

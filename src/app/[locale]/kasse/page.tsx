@@ -50,7 +50,9 @@ export default async function CheckoutPage({ params }: PageProps<"/[locale]/kass
       <div className="af-wrap">
         <h1 className="af-h1">{t("checkout.title")}</h1>
         {mode.checkoutOpen ? (
+          <div className="af-cartview">
           <Checkout carrier={company.shippingCarrier ?? ""} legal={checkoutLegal} whatsapp={company.social.whatsapp} />
+          </div>
         ) : (
           <div className="af-empty">
             <p className="af-lead">{t("checkout.closed")}</p>

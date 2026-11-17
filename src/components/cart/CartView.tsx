@@ -19,7 +19,7 @@ export function CartView({ checkoutOpen, contact }: { checkoutOpen: boolean; con
   const [announce, setAnnounce] = useState("");
 
   if (!cart.ready) {
-    return <p className="af-lead">{t("common.loading")}</p>;
+    return <p className="af-lead af-cartview">{t("common.loading")}</p>;
   }
   if (cart.items.length === 0) {
     return (

@@ -24,10 +24,12 @@ export default async function CartPage({ params }: PageProps<"/[locale]/warenkor
         <p className="af-lead" style={{ margin: "22px 0 0" }}>
           {t("lead")}
         </p>
+        <div className="af-cartview">
         <CartView
           checkoutOpen={siteMode().checkoutOpen}
           contact={{ email: company.email, phone: company.phone, phoneHref: company.phoneHref, whatsapp: company.social.whatsapp }}
         />
+        </div>
       </div>
     </main>
   );
