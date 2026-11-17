@@ -1,1363 +1,1413 @@
 [
- {
-  "id": 421,
-  "slug": "echthaar-topper-30-cm-421",
-  "name": "Echthaar-Topper 30 cm",
-  "subtitle": "Premium-Echthaar",
-  "category": "toppers",
-  "priceCents": 30000,
-  "sold": false,
-  "length": "30",
-  "base": "",
-  "color": "",
-  "texture": "",
-  "description": "Feines Echthaar, 30 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 30 cm"
-  ],
-  "image": "/assets/products/421.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/421-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 420,
-  "slug": "echthaar-topper-r-420",
-  "name": "Echthaar-Topper (R)",
-  "subtitle": "Premium-Echthaar",
-  "category": "toppers",
-  "priceCents": 25000,
-  "sold": false,
-  "length": "",
-  "base": "",
-  "color": "",
-  "texture": "",
-  "description": "Feines Echthaar. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar"
-  ],
-  "image": "/assets/products/420.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/420-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 419,
-  "slug": "front-lace-peruecke-30-cm-419",
-  "name": "Front-Lace-Perücke 30 cm",
-  "subtitle": "Premium-Echthaar",
-  "category": "peruecken",
-  "priceCents": 45000,
-  "sold": false,
-  "length": "30",
-  "base": "",
-  "color": "",
-  "texture": "",
-  "description": "Feines Echthaar, 30 cm lang. Die Front-Lace-Linie ist so fein gearbeitet, dass der Ansatz wie Ihr eigener Haarwuchs wirkt. Aufsetzen, ausrichten, und der Spiegel zeigt wieder Sie.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 30 cm",
-   "Front Lace mit natürlichem Haaransatz"
-  ],
-  "image": "/assets/products/419.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/419-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 417,
-  "slug": "front-lace-peruecke-417",
-  "name": "Front-Lace-Perücke",
-  "subtitle": "Premium-Echthaar",
-  "category": "peruecken",
-  "priceCents": 55000,
-  "sold": false,
-  "length": "",
-  "base": "",
-  "color": "",
-  "texture": "",
-  "description": "Feines Echthaar. Die Front-Lace-Linie ist so fein gearbeitet, dass der Ansatz wie Ihr eigener Haarwuchs wirkt. Aufsetzen, ausrichten, und der Spiegel zeigt wieder Sie.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Front Lace mit natürlichem Haaransatz"
-  ],
-  "image": "/assets/products/417.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/417-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 416,
-  "slug": "echthaar-topper-40-cm-dunkelbraun-416",
-  "name": "Echthaar-Topper 40 cm",
-  "subtitle": "Dunkelbraun",
-  "category": "toppers",
-  "priceCents": 45000,
-  "sold": false,
-  "length": "40",
-  "base": "11 x 9",
-  "color": "Dunkelbraun",
-  "texture": "Glatt",
-  "description": "Glattes Echthaar in Dunkelbraun, 40 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (11 x 9 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 40 cm",
-   "Basis 11 x 9 cm",
-   "Farbe: Dunkelbraun",
-   "Struktur: Glatt, gestylt",
-   "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
-   "Freier Scheitel, in jede Richtung zu legen",
-   "Befestigung mit Clips"
-  ],
-  "image": "/assets/products/416.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/416-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 415,
-  "slug": "echthaar-topper-33-cm-kupferbraun-415",
-  "name": "Echthaar-Topper 33 cm",
-  "subtitle": "Kupferbraun",
-  "category": "toppers",
-  "priceCents": 45000,
-  "sold": false,
-  "length": "33",
-  "base": "9 x 11",
-  "color": "Kupferbraun",
-  "texture": "Glatt",
-  "description": "Glattes Echthaar in Kupferbraun, 33 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (9 x 11 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 33 cm",
-   "Basis 9 x 11 cm",
-   "Farbe: Kupferbraun",
-   "Struktur: Glatt, gestylt",
-   "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
-   "Freier Scheitel, in jede Richtung zu legen",
-   "Befestigung mit Clips"
-  ],
-  "image": "/assets/products/415.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/415-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 414,
-  "slug": "echthaar-topper-45-cm-blond-mit-reflexen-und-dunklem-goldblond-414",
-  "name": "Echthaar-Topper 45 cm",
-  "subtitle": "Blond mit Reflexen und dunklem Goldblond",
-  "category": "toppers",
-  "priceCents": 59000,
-  "sold": false,
-  "length": "45",
-  "base": "9 x 11",
-  "color": "Blond mit Reflexen und dunklem Goldblond",
-  "texture": "Glatt",
-  "description": "Glattes Echthaar in Blond mit Reflexen und dunklem Goldblond, 45 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (9 x 11 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 45 cm",
-   "Basis 9 x 11 cm",
-   "Farbe: Blond mit Reflexen und dunklem Goldblond",
-   "Struktur: Glatt, gestylt",
-   "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
-   "Freier Scheitel, in jede Richtung zu legen",
-   "Befestigung mit Clips"
-  ],
-  "image": "/assets/products/414.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/414-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 413,
-  "slug": "echthaar-topper-35-cm-helles-aschblond-413",
-  "name": "Echthaar-Topper 35 cm",
-  "subtitle": "Helles Aschblond",
-  "category": "toppers",
-  "priceCents": 50000,
-  "sold": false,
-  "length": "35",
-  "base": "9 x 11",
-  "color": "Helles Aschblond",
-  "texture": "Leicht gewellt",
-  "description": "Leicht gewelltes Echthaar in Helles Aschblond, 35 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (9 x 11 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 35 cm",
-   "Basis 9 x 11 cm",
-   "Farbe: Helles Aschblond",
-   "Struktur: Leicht gewellt",
-   "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
-   "Freier Scheitel, in jede Richtung zu legen",
-   "Befestigung mit Clips"
-  ],
-  "image": "/assets/products/413.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/413-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 408,
-  "slug": "echthaar-topper-25-cm-helles-aschblond-408",
-  "name": "Echthaar-Topper 25 cm",
-  "subtitle": "Helles Aschblond",
-  "category": "toppers",
-  "priceCents": 40000,
-  "sold": false,
-  "length": "25",
-  "base": "9 x 11",
-  "color": "Helles Aschblond",
-  "texture": "Leicht gewellt",
-  "description": "Leicht gewelltes Echthaar in Helles Aschblond, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (9 x 11 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 25 cm",
-   "Basis 9 x 11 cm",
-   "Farbe: Helles Aschblond",
-   "Struktur: Leicht gewellt, gestylt",
-   "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
-   "Freier Scheitel, in jede Richtung zu legen",
-   "Befestigung mit Clips"
-  ],
-  "image": "/assets/products/408.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/408-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 407,
-  "slug": "vorhangpony-25-cm-407",
-  "name": "Vorhangpony 25 cm",
-  "subtitle": "Premium-Echthaar",
-  "category": "pony",
-  "priceCents": 12600,
-  "sold": false,
-  "length": "25",
-  "base": "7 x 5",
-  "color": "",
-  "texture": "Glatt",
-  "description": "Glattes Echthaar, 25 cm lang. Ein Pony, der Stirn und Ansatz in Sekunden füllt, ohne dass Sie Ihr eigenes Haar schneiden. Mit Clips befestigt und jederzeit wieder abgenommen.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 25 cm",
-   "Basis 7 x 5 cm",
-   "Struktur: Glatt",
-   "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
-   "Freier Scheitel, in jede Richtung zu legen",
-   "Befestigung mit Clips"
-  ],
-  "image": "/assets/products/407.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/407-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 405,
-  "slug": "topper-pony-25-cm-mittleres-kupferbraun-405",
-  "name": "Topper Pony 25 cm",
-  "subtitle": "Mittleres Kupferbraun",
-  "category": "pony",
-  "priceCents": 40000,
-  "sold": false,
-  "length": "25",
-  "base": "13 x 10",
-  "color": "Mittleres Kupferbraun",
-  "texture": "Glatt",
-  "description": "Glattes Echthaar in Mittleres Kupferbraun, 25 cm lang. Ein Pony, der Stirn und Ansatz in Sekunden füllt, ohne dass Sie Ihr eigenes Haar schneiden. Mit Clips befestigt und jederzeit wieder abgenommen.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 25 cm",
-   "Basis 13 x 10 cm",
-   "Farbe: Mittleres Kupferbraun",
-   "Struktur: Glatt, gestylt",
-   "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
-   "Freier Scheitel, in jede Richtung zu legen",
-   "Befestigung mit Clips"
-  ],
-  "image": "/assets/products/405.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/405-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 287,
-  "slug": "front-lace-peruecke-35-cm-goldblond-287",
-  "name": "Front-Lace-Perücke 35 cm",
-  "subtitle": "Goldblond",
-  "category": "peruecken",
-  "priceCents": 53000,
-  "sold": false,
-  "length": "35",
-  "base": "",
-  "color": "Goldblond",
-  "texture": "Leicht gewellt",
-  "description": "Leicht gewelltes Echthaar in Goldblond, 35 cm lang. Die Front-Lace-Linie ist so fein gearbeitet, dass der Ansatz wie Ihr eigener Haarwuchs wirkt. Aufsetzen, ausrichten, und der Spiegel zeigt wieder Sie.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 35 cm",
-   "Farbe: Goldblond",
-   "Struktur: Leicht gewellt",
-   "Front Lace mit natürlichem Haaransatz"
-  ],
-  "image": "/assets/products/287.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/287-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 263,
-  "slug": "vorhangpony-30-cm-schwarz-263",
-  "name": "Vorhangpony 30 cm",
-  "subtitle": "Schwarz",
-  "category": "pony",
-  "priceCents": 12600,
-  "sold": false,
-  "length": "30",
-  "base": "5 x 7",
-  "color": "Schwarz",
-  "texture": "Glatt",
-  "description": "Glattes Echthaar in Schwarz, 30 cm lang. Ein Pony, der Stirn und Ansatz in Sekunden füllt, ohne dass Sie Ihr eigenes Haar schneiden. Mit Clips befestigt und jederzeit wieder abgenommen.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 30 cm",
-   "Basis 5 x 7 cm",
-   "Farbe: Schwarz",
-   "Struktur: Glatt",
-   "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
-   "Freier Scheitel, in jede Richtung zu legen",
-   "Befestigung mit Clips"
-  ],
-  "image": "/assets/products/263.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/263-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 256,
-  "slug": "topper-pony-30-cm-schwarz-256",
-  "name": "Topper Pony 30 cm",
-  "subtitle": "Schwarz",
-  "category": "pony",
-  "priceCents": 25690,
-  "sold": false,
-  "length": "30",
-  "base": "10 x 10",
-  "color": "Schwarz",
-  "texture": "Glatt",
-  "description": "Glattes Echthaar in Schwarz, 30 cm lang. Ein Pony, der Stirn und Ansatz in Sekunden füllt, ohne dass Sie Ihr eigenes Haar schneiden. Mit Clips befestigt und jederzeit wieder abgenommen.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 30 cm",
-   "Basis 10 x 10 cm",
-   "Farbe: Schwarz",
-   "Struktur: Glatt",
-   "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
-   "Freier Scheitel, in jede Richtung zu legen",
-   "Befestigung mit Clips"
-  ],
-  "image": "/assets/products/256.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/256-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 246,
-  "slug": "echthaar-topper-50-cm-mittelbraun-ombre-246",
-  "name": "Echthaar-Topper 50 cm",
-  "subtitle": "Mittelbraun Ombré",
-  "category": "toppers",
-  "priceCents": 55000,
-  "sold": false,
-  "length": "50",
-  "base": "11 x 10",
-  "color": "Mittelbraun Ombré",
-  "texture": "Leicht gewellt",
-  "description": "Leicht gewelltes Echthaar in Mittelbraun Ombré, 50 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (11 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 50 cm",
-   "Basis 11 x 10 cm",
-   "Farbe: Mittelbraun Ombré",
-   "Struktur: Leicht gewellt",
-   "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
-   "Freier Scheitel, in jede Richtung zu legen",
-   "Befestigung mit Clips"
-  ],
-  "image": "/assets/products/246.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/246-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 241,
-  "slug": "skin-haarsystem-fuer-maenner-241",
-  "name": "Skin-Haarsystem für Männer",
-  "subtitle": "Haarsystem für Männer",
-  "category": "maenner",
-  "priceCents": 25560,
-  "sold": false,
-  "length": "",
-  "base": "",
-  "color": "",
-  "texture": "",
-  "description": "Haarsystem aus ultradünner Mikrohaut, die auf der Kopfhaut praktisch verschwindet. 100 % Echthaar, leicht, atmungsaktiv und so gearbeitet, dass der Ansatz wie eigener Haarwuchs aussieht.",
-  "specs": [
-   "100 % Echthaar",
-   "Ultradünne Mikrohaut-Basis",
-   "Leicht und atmungsaktiv",
-   "Haltbarkeit je nach Pflege 3 bis 6 Monate"
-  ],
-  "image": "/assets/originals/241-0.jpg",
-  "restyled": false,
-  "originals": [
-   "/assets/originals/241-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 238,
-  "slug": "massgefertigte-haarprothese-fuer-maenner-238",
-  "name": "Maßgefertigte Haarprothese für Männer",
-  "subtitle": "Haarsystem für Männer",
-  "category": "maenner",
-  "priceCents": 30700,
-  "sold": false,
-  "length": "",
-  "base": "",
-  "color": "",
-  "texture": "",
-  "description": "Nach Ihren Maßen gefertigt: Farbe, Dichte, Haarrichtung und Basis werden auf Sie abgestimmt. Das Ergebnis sitzt bequem, wirkt natürlich und bleibt diskret.",
-  "specs": [
-   "Anfertigung nach Maß",
-   "Farbe und Dichte nach Ihrem Haar",
-   "100 % Echthaar",
-   "Fertigung in 15 bis 20 Tagen"
-  ],
-  "image": "/assets/originals/238-0.jpg",
-  "restyled": false,
-  "originals": [
-   "/assets/originals/238-0.jpg"
-  ],
-  "madeToOrder": true
- },
- {
-  "id": 234,
-  "slug": "walker-tape-ultra-hold-fluessigkleber-234",
-  "name": "Walker Tape Ultra Hold Flüssigkleber",
-  "subtitle": "Befestigung und Pflege",
-  "category": "pflege",
-  "priceCents": 1860,
-  "sold": false,
-  "length": "",
-  "base": "",
-  "color": "",
-  "texture": "",
-  "description": "Professioneller Flüssigkleber mit starkem Halt für Haarteile, Perücken und Haarsysteme. Hält lange, widersteht Feuchtigkeit und bleibt dabei angenehm auf der Haut.",
-  "specs": [
-   "Starker, langanhaltender Halt",
-   "Feuchtigkeitsbeständig",
-   "Für Haarteile, Perücken und Haarsysteme"
-  ],
-  "image": "/assets/originals/234-0.jpg",
-  "restyled": false,
-  "originals": [
-   "/assets/originals/234-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 222,
-  "slug": "walker-tape-c-22-loesungsmittel-222",
-  "name": "Walker Tape C-22 Lösungsmittel",
-  "subtitle": "Befestigung und Pflege",
-  "category": "pflege",
-  "priceCents": 4248,
-  "sold": false,
-  "length": "",
-  "base": "",
-  "color": "",
-  "texture": "",
-  "description": "Löst Kleber- und Tape-Rückstände von Haarteilen, Perücken und Extensions schnell und schonend. Die Formel auf Zitrusbasis wirkt in wenigen Augenblicken.",
-  "specs": [
-   "Auf Zitrusbasis",
-   "Entfernt Kleber und Tape-Reste",
-   "Für Haarsysteme, Perücken und Extensions"
-  ],
-  "image": "/assets/originals/222-0.jpg",
-  "restyled": false,
-  "originals": [
-   "/assets/originals/222-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 228,
-  "slug": "walker-tape-ultra-hold-klebeband-3-4-x-12-yd-228",
-  "name": "Walker Tape Ultra Hold Klebeband 3/4\" x 12 yd",
-  "subtitle": "Befestigung und Pflege",
-  "category": "pflege",
-  "priceCents": 3580,
-  "sold": false,
-  "length": "",
-  "base": "",
-  "color": "",
-  "texture": "",
-  "description": "Doppelseitiges Klebeband mit starkem Halt für Haarersatzsysteme, Perücken und Extensions. Sitzt fest, bleibt unauffällig und hält Feuchtigkeit und Schweiß stand.",
-  "specs": [
-   "Doppelseitig, 3/4 Zoll x 12 Yards",
-   "Starker Halt, unauffälliger Abschluss",
-   "Beständig gegen Feuchtigkeit und Schweiß"
-  ],
-  "image": "/assets/originals/228-0.jpg",
-  "restyled": false,
-  "originals": [
-   "/assets/originals/228-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 220,
-  "slug": "walker-tape-ultra-hold-klebestreifen-220",
-  "name": "Walker Tape Ultra Hold Klebestreifen",
-  "subtitle": "Befestigung und Pflege",
-  "category": "pflege",
-  "priceCents": 1285,
-  "sold": false,
-  "length": "",
-  "base": "",
-  "color": "",
-  "texture": "",
-  "description": "Vorgeschnittene, geschwungene Klebestreifen für Haarsysteme. Extra starker Halt, schweiß- und feuchtigkeitsbeständig, einfach aufzutragen.",
-  "specs": [
-   "Vorgeschnittene Streifen",
-   "Extra starker Halt",
-   "Schweiß- und feuchtigkeitsbeständig"
-  ],
-  "image": "/assets/originals/220-0.jpg",
-  "restyled": false,
-  "originals": [
-   "/assets/originals/220-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 206,
-  "slug": "echthaar-topper-47-cm-grau-meliert-206",
-  "name": "Echthaar-Topper 47 cm",
-  "subtitle": "Grau meliert",
-  "category": "toppers",
-  "priceCents": 94300,
-  "sold": true,
-  "length": "47",
-  "base": "13 x 10",
-  "color": "Grau meliert",
-  "texture": "Leicht gewellt",
-  "description": "Leicht gewelltes Echthaar in Grau meliert, 47 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 47 cm",
-   "Basis 13 x 10 cm",
-   "Farbe: Grau meliert",
-   "Struktur: Leicht gewellt",
-   "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
-   "Freier Scheitel, in jede Richtung zu legen",
-   "Befestigung mit Clips"
-  ],
-  "image": "/assets/products/206.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/206-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 200,
-  "slug": "echthaar-topper-47-cm-dunkelbraun-200",
-  "name": "Echthaar-Topper 47 cm",
-  "subtitle": "Dunkelbraun",
-  "category": "toppers",
-  "priceCents": 59000,
-  "sold": false,
-  "length": "47",
-  "base": "13 x 10",
-  "color": "Dunkelbraun",
-  "texture": "Leicht gewellt",
-  "description": "Leicht gewelltes Echthaar in Dunkelbraun, 47 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 47 cm",
-   "Basis 13 x 10 cm",
-   "Farbe: Dunkelbraun",
-   "Struktur: Leicht gewellt",
-   "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
-   "Freier Scheitel, in jede Richtung zu legen",
-   "Befestigung mit Clips"
-  ],
-  "image": "/assets/products/200.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/200-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 191,
-  "slug": "echthaar-topper-47-cm-helles-kupferbraun-191",
-  "name": "Echthaar-Topper 47 cm",
-  "subtitle": "Helles Kupferbraun",
-  "category": "toppers",
-  "priceCents": 58000,
-  "sold": false,
-  "length": "47",
-  "base": "13 x 10",
-  "color": "Helles Kupferbraun",
-  "texture": "Leicht gewellt",
-  "description": "Leicht gewelltes Echthaar in Helles Kupferbraun, 47 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 47 cm",
-   "Basis 13 x 10 cm",
-   "Farbe: Helles Kupferbraun",
-   "Struktur: Leicht gewellt",
-   "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
-   "Freier Scheitel, in jede Richtung zu legen",
-   "Befestigung mit Clips"
-  ],
-  "image": "/assets/products/191.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/191-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 186,
-  "slug": "echthaar-topper-40-cm-dunkelbraun-186",
-  "name": "Echthaar-Topper 40 cm",
-  "subtitle": "Dunkelbraun",
-  "category": "toppers",
-  "priceCents": 45000,
-  "sold": false,
-  "length": "40",
-  "base": "13 x 10",
-  "color": "Dunkelbraun",
-  "texture": "Leicht gewellt",
-  "description": "Leicht gewelltes Echthaar in Dunkelbraun, 40 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 40 cm",
-   "Basis 13 x 10 cm",
-   "Farbe: Dunkelbraun",
-   "Struktur: Leicht gewellt, gestylt",
-   "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
-   "Freier Scheitel, in jede Richtung zu legen",
-   "Befestigung mit Clips"
-  ],
-  "image": "/assets/products/186.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/186-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 180,
-  "slug": "echthaar-topper-25-cm-helles-kupferbraun-180",
-  "name": "Echthaar-Topper 25 cm",
-  "subtitle": "Helles Kupferbraun",
-  "category": "toppers",
-  "priceCents": 60000,
-  "sold": false,
-  "length": "25",
-  "base": "13 x 10",
-  "color": "Helles Kupferbraun",
-  "texture": "Glatt",
-  "description": "Glattes Echthaar in Helles Kupferbraun, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 25 cm",
-   "Basis 13 x 10 cm",
-   "Farbe: Helles Kupferbraun",
-   "Struktur: Glatt",
-   "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
-   "Freier Scheitel, in jede Richtung zu legen",
-   "Befestigung mit Clips"
-  ],
-  "image": "/assets/products/180.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/180-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 175,
-  "slug": "echthaar-topper-25-cm-goldblond-mit-hellblonden-straehnen-175",
-  "name": "Echthaar-Topper 25 cm",
-  "subtitle": "Goldblond mit hellblonden Strähnen",
-  "category": "toppers",
-  "priceCents": 40000,
-  "sold": false,
-  "length": "25",
-  "base": "13 x 10",
-  "color": "Goldblond mit hellblonden Strähnen",
-  "texture": "Glatt",
-  "description": "Glattes Echthaar in Goldblond mit hellblonden Strähnen, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 25 cm",
-   "Basis 13 x 10 cm",
-   "Farbe: Goldblond mit hellblonden Strähnen",
-   "Struktur: Glatt",
-   "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
-   "Freier Scheitel, in jede Richtung zu legen",
-   "Befestigung mit Clips"
-  ],
-  "image": "/assets/products/175.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/175-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 169,
-  "slug": "echthaar-topper-25-cm-dunkelbraun-169",
-  "name": "Echthaar-Topper 25 cm",
-  "subtitle": "Dunkelbraun",
-  "category": "toppers",
-  "priceCents": 40000,
-  "sold": false,
-  "length": "25",
-  "base": "13 x 15",
-  "color": "Dunkelbraun",
-  "texture": "Lockig",
-  "description": "Lockiges Echthaar in Dunkelbraun, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 15 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 25 cm",
-   "Basis 13 x 15 cm",
-   "Farbe: Dunkelbraun",
-   "Struktur: Lockig",
-   "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
-   "Freier Scheitel, in jede Richtung zu legen",
-   "Befestigung mit Clips"
-  ],
-  "image": "/assets/products/169.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/169-0.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 164,
-  "slug": "echthaar-topper-43-cm-braun-mit-leichtem-kupferton-164",
-  "name": "Echthaar-Topper 43 cm",
-  "subtitle": "Braun mit leichtem Kupferton",
-  "category": "toppers",
-  "priceCents": 85700,
-  "sold": false,
-  "length": "43",
-  "base": "13 x 15",
-  "color": "Braun mit leichtem Kupferton",
-  "texture": "Leicht gewellt",
-  "description": "Leicht gewelltes Echthaar in Braun mit leichtem Kupferton, 43 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 15 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 43 cm",
-   "Basis 13 x 15 cm",
-   "Farbe: Braun mit leichtem Kupferton",
-   "Struktur: Leicht gewellt, gestylt",
-   "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
-   "Freier Scheitel, in jede Richtung zu legen",
-   "Befestigung mit Clips"
-  ],
-  "image": "/assets/products/164.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/164-0.jpg",
-   "/assets/originals/164-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 110,
-  "slug": "echthaar-topper-110",
-  "name": "Echthaar-Topper",
-  "subtitle": "Premium-Echthaar",
-  "category": "toppers",
-  "priceCents": 50000,
-  "sold": false,
-  "length": "",
-  "base": "",
-  "color": "",
-  "texture": "Glatt",
-  "description": "Glattes Echthaar. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Struktur: Glatt",
-   "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
-   "Freier Scheitel, in jede Richtung zu legen"
-  ],
-  "image": "/assets/products/110.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/110-0.jpg",
-   "/assets/originals/110-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 105,
-  "slug": "echthaar-topper-65-cm-natuerliches-dunkelbraun-105",
-  "name": "Echthaar-Topper 65 cm",
-  "subtitle": "Natürliches Dunkelbraun",
-  "category": "toppers",
-  "priceCents": 75000,
-  "sold": false,
-  "length": "65",
-  "base": "",
-  "color": "Natürliches Dunkelbraun",
-  "texture": "",
-  "description": "Feines Echthaar in Natürliches Dunkelbraun, 65 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 65 cm",
-   "Farbe: Natürliches Dunkelbraun"
-  ],
-  "image": "/assets/products/105.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/105-0.jpg",
-   "/assets/originals/105-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 99,
-  "slug": "echthaar-topper-56-cm-helles-aschblond-ombre-99",
-  "name": "Echthaar-Topper 56 cm",
-  "subtitle": "Helles Aschblond Ombré",
-  "category": "toppers",
-  "priceCents": 79000,
-  "sold": false,
-  "length": "56",
-  "base": "",
-  "color": "Helles Aschblond Ombré",
-  "texture": "",
-  "description": "Feines Echthaar in Helles Aschblond Ombré, 56 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 56 cm",
-   "Farbe: Helles Aschblond Ombré"
-  ],
-  "image": "/assets/products/99.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/99-0.jpg",
-   "/assets/originals/99-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 93,
-  "slug": "echthaar-topper-55-cm-helles-aschblond-ombre-93",
-  "name": "Echthaar-Topper 55 cm",
-  "subtitle": "Helles Aschblond Ombré",
-  "category": "toppers",
-  "priceCents": 82000,
-  "sold": false,
-  "length": "55",
-  "base": "",
-  "color": "Helles Aschblond Ombré",
-  "texture": "",
-  "description": "Feines Echthaar in Helles Aschblond Ombré, 55 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 55 cm",
-   "Farbe: Helles Aschblond Ombré"
-  ],
-  "image": "/assets/products/93.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/93-0.jpg",
-   "/assets/originals/93-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 88,
-  "slug": "echthaar-topper-53-cm-88",
-  "name": "Echthaar-Topper 53 cm",
-  "subtitle": "Premium-Echthaar",
-  "category": "toppers",
-  "priceCents": 59000,
-  "sold": false,
-  "length": "53",
-  "base": "",
-  "color": "",
-  "texture": "",
-  "description": "Feines Echthaar, 53 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 53 cm"
-  ],
-  "image": "/assets/products/88.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/88-0.jpg",
-   "/assets/originals/88-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 83,
-  "slug": "echthaar-topper-45-cm-mittelbraun-83",
-  "name": "Echthaar-Topper 45 cm",
-  "subtitle": "Mittelbraun",
-  "category": "toppers",
-  "priceCents": 49000,
-  "sold": false,
-  "length": "45",
-  "base": "",
-  "color": "Mittelbraun",
-  "texture": "",
-  "description": "Feines Echthaar in Mittelbraun, 45 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 45 cm",
-   "Farbe: Mittelbraun"
-  ],
-  "image": "/assets/products/83.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/83-0.jpg",
-   "/assets/originals/83-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 78,
-  "slug": "echthaar-topper-56-cm-mittelbraun-78",
-  "name": "Echthaar-Topper 56 cm",
-  "subtitle": "Mittelbraun",
-  "category": "toppers",
-  "priceCents": 61000,
-  "sold": false,
-  "length": "56",
-  "base": "",
-  "color": "Mittelbraun",
-  "texture": "",
-  "description": "Feines Echthaar in Mittelbraun, 56 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 56 cm",
-   "Farbe: Mittelbraun"
-  ],
-  "image": "/assets/products/78.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/78-0.jpg",
-   "/assets/originals/78-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 73,
-  "slug": "echthaar-topper-40-cm-blond-mit-beigen-highlights-und-sanft-goldenem-ansatz-73",
-  "name": "Echthaar-Topper 40 cm",
-  "subtitle": "Blond mit beigen Highlights und sanft goldenem Ansatz",
-  "category": "toppers",
-  "priceCents": 49000,
-  "sold": false,
-  "length": "40",
-  "base": "",
-  "color": "Blond mit beigen Highlights und sanft goldenem Ansatz",
-  "texture": "",
-  "description": "Feines Echthaar in Blond mit beigen Highlights und sanft goldenem Ansatz, 40 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 40 cm",
-   "Farbe: Blond mit beigen Highlights und sanft goldenem Ansatz"
-  ],
-  "image": "/assets/products/73.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/73-0.jpg",
-   "/assets/originals/73-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 68,
-  "slug": "echthaar-topper-40-cm-kupferbraun-mit-dunkelgoldblonden-reflexen-68",
-  "name": "Echthaar-Topper 40 cm",
-  "subtitle": "Kupferbraun mit dunkelgoldblonden Reflexen",
-  "category": "toppers",
-  "priceCents": 50000,
-  "sold": false,
-  "length": "40",
-  "base": "",
-  "color": "Kupferbraun mit dunkelgoldblonden Reflexen",
-  "texture": "",
-  "description": "Feines Echthaar in Kupferbraun mit dunkelgoldblonden Reflexen, 40 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 40 cm",
-   "Farbe: Kupferbraun mit dunkelgoldblonden Reflexen"
-  ],
-  "image": "/assets/products/68.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/68-0.jpg",
-   "/assets/originals/68-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 63,
-  "slug": "echthaar-topper-25-cm-natuerliches-dunkelbraun-63",
-  "name": "Echthaar-Topper 25 cm",
-  "subtitle": "Natürliches Dunkelbraun",
-  "category": "toppers",
-  "priceCents": 30000,
-  "sold": false,
-  "length": "25",
-  "base": "",
-  "color": "Natürliches Dunkelbraun",
-  "texture": "",
-  "description": "Feines Echthaar in Natürliches Dunkelbraun, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 25 cm",
-   "Farbe: Natürliches Dunkelbraun"
-  ],
-  "image": "/assets/products/63.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/63-0.jpg",
-   "/assets/originals/63-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 58,
-  "slug": "echthaar-topper-35-cm-grau-meliert-58",
-  "name": "Echthaar-Topper 35 cm",
-  "subtitle": "Grau meliert",
-  "category": "toppers",
-  "priceCents": 40000,
-  "sold": false,
-  "length": "35",
-  "base": "",
-  "color": "Grau meliert",
-  "texture": "",
-  "description": "Feines Echthaar in Grau meliert, 35 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 35 cm",
-   "Farbe: Grau meliert"
-  ],
-  "image": "/assets/products/58.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/58-0.jpg",
-   "/assets/originals/58-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 53,
-  "slug": "echthaar-topper-25-cm-natuerliches-dunkelbraun-53",
-  "name": "Echthaar-Topper 25 cm",
-  "subtitle": "Natürliches Dunkelbraun",
-  "category": "toppers",
-  "priceCents": 30000,
-  "sold": false,
-  "length": "25",
-  "base": "",
-  "color": "Natürliches Dunkelbraun",
-  "texture": "",
-  "description": "Feines Echthaar in Natürliches Dunkelbraun, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 25 cm",
-   "Farbe: Natürliches Dunkelbraun"
-  ],
-  "image": "/assets/products/53.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/53-0.jpg",
-   "/assets/originals/53-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 48,
-  "slug": "echthaar-topper-45-cm-kupferbraun-mit-sanften-goldhighlights-48",
-  "name": "Echthaar-Topper 45 cm",
-  "subtitle": "Kupferbraun mit sanften Goldhighlights",
-  "category": "toppers",
-  "priceCents": 50000,
-  "sold": false,
-  "length": "45",
-  "base": "",
-  "color": "Kupferbraun mit sanften Goldhighlights",
-  "texture": "",
-  "description": "Feines Echthaar in Kupferbraun mit sanften Goldhighlights, 45 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 45 cm",
-   "Farbe: Kupferbraun mit sanften Goldhighlights"
-  ],
-  "image": "/assets/products/48.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/48-0.jpg",
-   "/assets/originals/48-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 43,
-  "slug": "echthaar-topper-25-cm-natuerliches-dunkelbraun-mit-kupferhighlights-43",
-  "name": "Echthaar-Topper 25 cm",
-  "subtitle": "Natürliches Dunkelbraun mit Kupferhighlights",
-  "category": "toppers",
-  "priceCents": 35000,
-  "sold": false,
-  "length": "25",
-  "base": "",
-  "color": "Natürliches Dunkelbraun mit Kupferhighlights",
-  "texture": "",
-  "description": "Feines Echthaar in Natürliches Dunkelbraun mit Kupferhighlights, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 25 cm",
-   "Farbe: Natürliches Dunkelbraun mit Kupferhighlights"
-  ],
-  "image": "/assets/products/43.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/43-0.jpg",
-   "/assets/originals/43-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 38,
-  "slug": "echthaar-topper-25-cm-natuerliches-dunkelbraun-mit-violettroten-highlights-38",
-  "name": "Echthaar-Topper 25 cm",
-  "subtitle": "Natürliches Dunkelbraun mit violettroten Highlights",
-  "category": "toppers",
-  "priceCents": 35000,
-  "sold": false,
-  "length": "25",
-  "base": "",
-  "color": "Natürliches Dunkelbraun mit violettroten Highlights",
-  "texture": "",
-  "description": "Feines Echthaar in Natürliches Dunkelbraun mit violettroten Highlights, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 25 cm",
-   "Farbe: Natürliches Dunkelbraun mit violettroten Highlights"
-  ],
-  "image": "/assets/products/38.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/38-0.jpg",
-   "/assets/originals/38-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 33,
-  "slug": "echthaar-topper-20-cm-natuerliches-dunkelbraun-mit-sanften-graustraehnen-33",
-  "name": "Echthaar-Topper 20 cm",
-  "subtitle": "Natürliches Dunkelbraun mit sanften Grausträhnen",
-  "category": "toppers",
-  "priceCents": 35000,
-  "sold": false,
-  "length": "20",
-  "base": "",
-  "color": "Natürliches Dunkelbraun mit sanften Grausträhnen",
-  "texture": "",
-  "description": "Feines Echthaar in Natürliches Dunkelbraun mit sanften Grausträhnen, 20 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 20 cm",
-   "Farbe: Natürliches Dunkelbraun mit sanften Grausträhnen"
-  ],
-  "image": "/assets/products/33.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/33-0.jpg",
-   "/assets/originals/33-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 29,
-  "slug": "volumen-topper-14-cm-natuerliches-dunkelbraun-29",
-  "name": "Volumen-Topper 14 cm",
-  "subtitle": "Natürliches Dunkelbraun",
-  "category": "toppers",
-  "priceCents": 30000,
-  "sold": false,
-  "length": "14",
-  "base": "",
-  "color": "Natürliches Dunkelbraun",
-  "texture": "",
-  "description": "Feines Echthaar in Natürliches Dunkelbraun, 14 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 14 cm",
-   "Farbe: Natürliches Dunkelbraun"
-  ],
-  "image": "/assets/products/29.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/29-0.jpg",
-   "/assets/originals/29-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 21,
-  "slug": "echthaar-haarsystem-fuer-maenner-20-cm-21",
-  "name": "Echthaar-Haarsystem für Männer 20 cm",
-  "subtitle": "Haarsystem für Männer",
-  "category": "maenner",
-  "priceCents": 25000,
-  "sold": false,
-  "length": "20",
-  "base": "",
-  "color": "",
-  "texture": "",
-  "description": "Haarsystem aus Premium-Echthaar mit 20 cm Haarlänge. Wird im Atelier auf Ihren Ansatz und Ihre Farbe abgestimmt, damit niemand einen Übergang sieht.",
-  "specs": [
-   "100 % Echthaar",
-   "Haarlänge 20 cm",
-   "Anpassung im Atelier"
-  ],
-  "image": "/assets/products/21.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/21-0.jpg",
-   "/assets/originals/21-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 17,
-  "slug": "echthaar-topper-47-cm-dunkelbraun-17",
-  "name": "Echthaar-Topper 47 cm",
-  "subtitle": "Dunkelbraun",
-  "category": "toppers",
-  "priceCents": 50000,
-  "sold": false,
-  "length": "47",
-  "base": "",
-  "color": "Dunkelbraun",
-  "texture": "",
-  "description": "Feines Echthaar in Dunkelbraun, 47 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 47 cm",
-   "Farbe: Dunkelbraun"
-  ],
-  "image": "/assets/products/17.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/17-0.jpg",
-   "/assets/originals/17-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 12,
-  "slug": "echthaar-topper-20-cm-grau-meliert-12",
-  "name": "Echthaar-Topper 20 cm",
-  "subtitle": "Grau meliert",
-  "category": "toppers",
-  "priceCents": 35000,
-  "sold": false,
-  "length": "20",
-  "base": "",
-  "color": "Grau meliert",
-  "texture": "",
-  "description": "Feines Echthaar in Grau meliert, 20 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 20 cm",
-   "Farbe: Grau meliert"
-  ],
-  "image": "/assets/products/12.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/12-0.jpg",
-   "/assets/originals/12-1.jpg"
-  ],
-  "madeToOrder": false
- },
- {
-  "id": 11,
-  "slug": "echthaar-topper-20-cm-mittleres-goldblond-11",
-  "name": "Echthaar-Topper 20 cm",
-  "subtitle": "Mittleres Goldblond",
-  "category": "toppers",
-  "priceCents": 39000,
-  "sold": false,
-  "length": "20",
-  "base": "",
-  "color": "Mittleres Goldblond",
-  "texture": "",
-  "description": "Feines Echthaar in Mittleres Goldblond, 20 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
-  "specs": [
-   "100 % Premium-Echthaar",
-   "Haarlänge 20 cm",
-   "Farbe: Mittleres Goldblond"
-  ],
-  "image": "/assets/products/11.jpg",
-  "restyled": true,
-  "originals": [
-   "/assets/originals/11-0.jpg",
-   "/assets/originals/11-1.jpg"
-  ],
-  "madeToOrder": false
- }
+  {
+    "id": 421,
+    "slug": "echthaar-topper-30-cm-421",
+    "name": "Echthaar-Topper 30 cm",
+    "subtitle": "Premium-Echthaar",
+    "category": "topper",
+    "priceCents": 30000,
+    "sold": false,
+    "length": "30",
+    "base": "",
+    "color": "",
+    "texture": "",
+    "description": "Feines Echthaar, 30 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 30 cm"
+    ],
+    "image": "/assets/products/421.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/421-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 420,
+    "slug": "echthaar-topper-r-420",
+    "name": "Echthaar-Topper (R)",
+    "subtitle": "Premium-Echthaar",
+    "category": "topper",
+    "priceCents": 25000,
+    "sold": false,
+    "length": "",
+    "base": "",
+    "color": "",
+    "texture": "",
+    "description": "Feines Echthaar. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar"
+    ],
+    "image": "/assets/products/420.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/420-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 419,
+    "slug": "front-lace-peruecke-30-cm-419",
+    "name": "Front-Lace-Perücke 30 cm",
+    "subtitle": "Premium-Echthaar",
+    "category": "peruecken",
+    "priceCents": 45000,
+    "sold": false,
+    "length": "30",
+    "base": "",
+    "color": "",
+    "texture": "",
+    "description": "Feines Echthaar, 30 cm lang. Die Front-Lace-Linie ist so fein gearbeitet, dass der Ansatz wie Ihr eigener Haarwuchs wirkt. Aufsetzen, ausrichten, und der Spiegel zeigt wieder Sie.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 30 cm",
+      "Front Lace mit natürlichem Haaransatz"
+    ],
+    "image": "/assets/products/419.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/419-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 417,
+    "slug": "front-lace-peruecke-417",
+    "name": "Front-Lace-Perücke",
+    "subtitle": "Premium-Echthaar",
+    "category": "peruecken",
+    "priceCents": 55000,
+    "sold": false,
+    "length": "",
+    "base": "",
+    "color": "",
+    "texture": "",
+    "description": "Feines Echthaar. Die Front-Lace-Linie ist so fein gearbeitet, dass der Ansatz wie Ihr eigener Haarwuchs wirkt. Aufsetzen, ausrichten, und der Spiegel zeigt wieder Sie.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Front Lace mit natürlichem Haaransatz"
+    ],
+    "image": "/assets/products/417.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/417-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 416,
+    "slug": "echthaar-topper-40-cm-dunkelbraun-416",
+    "name": "Echthaar-Topper 40 cm",
+    "subtitle": "Dunkelbraun",
+    "category": "topper",
+    "priceCents": 45000,
+    "sold": false,
+    "length": "40",
+    "base": "11 x 9",
+    "color": "Dunkelbraun",
+    "texture": "Glatt",
+    "description": "Glattes Echthaar in Dunkelbraun, 40 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (11 x 9 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 40 cm",
+      "Basis 11 x 9 cm",
+      "Farbe: Dunkelbraun",
+      "Struktur: Glatt, gestylt",
+      "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
+      "Freier Scheitel, in jede Richtung zu legen",
+      "Befestigung mit Clips"
+    ],
+    "image": "/assets/products/416.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/416-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 415,
+    "slug": "echthaar-topper-33-cm-kupferbraun-415",
+    "name": "Echthaar-Topper 33 cm",
+    "subtitle": "Kupferbraun",
+    "category": "topper",
+    "priceCents": 45000,
+    "sold": false,
+    "length": "33",
+    "base": "9 x 11",
+    "color": "Kupferbraun",
+    "texture": "Glatt",
+    "description": "Glattes Echthaar in Kupferbraun, 33 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (9 x 11 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 33 cm",
+      "Basis 9 x 11 cm",
+      "Farbe: Kupferbraun",
+      "Struktur: Glatt, gestylt",
+      "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
+      "Freier Scheitel, in jede Richtung zu legen",
+      "Befestigung mit Clips"
+    ],
+    "image": "/assets/products/415.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/415-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 414,
+    "slug": "echthaar-topper-45-cm-blond-mit-reflexen-und-dunklem-goldblond-414",
+    "name": "Echthaar-Topper 45 cm",
+    "subtitle": "Blond mit Reflexen und dunklem Goldblond",
+    "category": "topper",
+    "priceCents": 59000,
+    "sold": false,
+    "length": "45",
+    "base": "9 x 11",
+    "color": "Blond mit Reflexen und dunklem Goldblond",
+    "texture": "Glatt",
+    "description": "Glattes Echthaar in Blond mit Reflexen und dunklem Goldblond, 45 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (9 x 11 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 45 cm",
+      "Basis 9 x 11 cm",
+      "Farbe: Blond mit Reflexen und dunklem Goldblond",
+      "Struktur: Glatt, gestylt",
+      "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
+      "Freier Scheitel, in jede Richtung zu legen",
+      "Befestigung mit Clips"
+    ],
+    "image": "/assets/products/414.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/414-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 413,
+    "slug": "echthaar-topper-35-cm-helles-aschblond-413",
+    "name": "Echthaar-Topper 35 cm",
+    "subtitle": "Helles Aschblond",
+    "category": "topper",
+    "priceCents": 50000,
+    "sold": false,
+    "length": "35",
+    "base": "9 x 11",
+    "color": "Helles Aschblond",
+    "texture": "Leicht gewellt",
+    "description": "Leicht gewelltes Echthaar in Helles Aschblond, 35 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (9 x 11 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 35 cm",
+      "Basis 9 x 11 cm",
+      "Farbe: Helles Aschblond",
+      "Struktur: Leicht gewellt",
+      "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
+      "Freier Scheitel, in jede Richtung zu legen",
+      "Befestigung mit Clips"
+    ],
+    "image": "/assets/products/413.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/413-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 408,
+    "slug": "echthaar-topper-25-cm-helles-aschblond-408",
+    "name": "Echthaar-Topper 25 cm",
+    "subtitle": "Helles Aschblond",
+    "category": "topper",
+    "priceCents": 40000,
+    "sold": false,
+    "length": "25",
+    "base": "9 x 11",
+    "color": "Helles Aschblond",
+    "texture": "Leicht gewellt",
+    "description": "Leicht gewelltes Echthaar in Helles Aschblond, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (9 x 11 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 25 cm",
+      "Basis 9 x 11 cm",
+      "Farbe: Helles Aschblond",
+      "Struktur: Leicht gewellt, gestylt",
+      "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
+      "Freier Scheitel, in jede Richtung zu legen",
+      "Befestigung mit Clips"
+    ],
+    "image": "/assets/products/408.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/408-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 407,
+    "slug": "vorhangpony-25-cm-407",
+    "name": "Vorhangpony 25 cm",
+    "subtitle": "Premium-Echthaar",
+    "category": "pony",
+    "priceCents": 12600,
+    "sold": false,
+    "length": "25",
+    "base": "7 x 5",
+    "color": "",
+    "texture": "Glatt",
+    "description": "Glattes Echthaar, 25 cm lang. Ein Pony, der Stirn und Ansatz in Sekunden füllt, ohne dass Sie Ihr eigenes Haar schneiden. Mit Clips befestigt und jederzeit wieder abgenommen.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 25 cm",
+      "Basis 7 x 5 cm",
+      "Struktur: Glatt",
+      "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
+      "Freier Scheitel, in jede Richtung zu legen",
+      "Befestigung mit Clips"
+    ],
+    "image": "/assets/products/407.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/407-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 405,
+    "slug": "topper-pony-25-cm-mittleres-kupferbraun-405",
+    "name": "Topper Pony 25 cm",
+    "subtitle": "Mittleres Kupferbraun",
+    "category": "pony",
+    "priceCents": 40000,
+    "sold": false,
+    "length": "25",
+    "base": "13 x 10",
+    "color": "Mittleres Kupferbraun",
+    "texture": "Glatt",
+    "description": "Glattes Echthaar in Mittleres Kupferbraun, 25 cm lang. Ein Pony, der Stirn und Ansatz in Sekunden füllt, ohne dass Sie Ihr eigenes Haar schneiden. Mit Clips befestigt und jederzeit wieder abgenommen.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 25 cm",
+      "Basis 13 x 10 cm",
+      "Farbe: Mittleres Kupferbraun",
+      "Struktur: Glatt, gestylt",
+      "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
+      "Freier Scheitel, in jede Richtung zu legen",
+      "Befestigung mit Clips"
+    ],
+    "image": "/assets/products/405.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/405-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 287,
+    "slug": "front-lace-peruecke-35-cm-goldblond-287",
+    "name": "Front-Lace-Perücke 35 cm",
+    "subtitle": "Goldblond",
+    "category": "peruecken",
+    "priceCents": 53000,
+    "sold": false,
+    "length": "35",
+    "base": "",
+    "color": "Goldblond",
+    "texture": "Leicht gewellt",
+    "description": "Leicht gewelltes Echthaar in Goldblond, 35 cm lang. Die Front-Lace-Linie ist so fein gearbeitet, dass der Ansatz wie Ihr eigener Haarwuchs wirkt. Aufsetzen, ausrichten, und der Spiegel zeigt wieder Sie.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 35 cm",
+      "Farbe: Goldblond",
+      "Struktur: Leicht gewellt",
+      "Front Lace mit natürlichem Haaransatz"
+    ],
+    "image": "/assets/products/287.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/287-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 263,
+    "slug": "vorhangpony-30-cm-schwarz-263",
+    "name": "Vorhangpony 30 cm",
+    "subtitle": "Schwarz",
+    "category": "pony",
+    "priceCents": 12600,
+    "sold": false,
+    "length": "30",
+    "base": "5 x 7",
+    "color": "Schwarz",
+    "texture": "Glatt",
+    "description": "Glattes Echthaar in Schwarz, 30 cm lang. Ein Pony, der Stirn und Ansatz in Sekunden füllt, ohne dass Sie Ihr eigenes Haar schneiden. Mit Clips befestigt und jederzeit wieder abgenommen.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 30 cm",
+      "Basis 5 x 7 cm",
+      "Farbe: Schwarz",
+      "Struktur: Glatt",
+      "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
+      "Freier Scheitel, in jede Richtung zu legen",
+      "Befestigung mit Clips"
+    ],
+    "image": "/assets/products/263.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/263-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 256,
+    "slug": "topper-pony-30-cm-schwarz-256",
+    "name": "Topper Pony 30 cm",
+    "subtitle": "Schwarz",
+    "category": "pony",
+    "priceCents": 25690,
+    "sold": false,
+    "length": "30",
+    "base": "10 x 10",
+    "color": "Schwarz",
+    "texture": "Glatt",
+    "description": "Glattes Echthaar in Schwarz, 30 cm lang. Ein Pony, der Stirn und Ansatz in Sekunden füllt, ohne dass Sie Ihr eigenes Haar schneiden. Mit Clips befestigt und jederzeit wieder abgenommen.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 30 cm",
+      "Basis 10 x 10 cm",
+      "Farbe: Schwarz",
+      "Struktur: Glatt",
+      "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
+      "Freier Scheitel, in jede Richtung zu legen",
+      "Befestigung mit Clips"
+    ],
+    "image": "/assets/products/256.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/256-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 246,
+    "slug": "echthaar-topper-50-cm-mittelbraun-ombre-246",
+    "name": "Echthaar-Topper 50 cm",
+    "subtitle": "Mittelbraun Ombré",
+    "category": "topper",
+    "priceCents": 55000,
+    "sold": false,
+    "length": "50",
+    "base": "11 x 10",
+    "color": "Mittelbraun Ombré",
+    "texture": "Leicht gewellt",
+    "description": "Leicht gewelltes Echthaar in Mittelbraun Ombré, 50 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (11 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 50 cm",
+      "Basis 11 x 10 cm",
+      "Farbe: Mittelbraun Ombré",
+      "Struktur: Leicht gewellt",
+      "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
+      "Freier Scheitel, in jede Richtung zu legen",
+      "Befestigung mit Clips"
+    ],
+    "image": "/assets/products/246.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/246-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 241,
+    "slug": "skin-haarsystem-fuer-maenner-241",
+    "name": "Skin-Haarsystem für Männer",
+    "subtitle": "Haarsystem für Männer",
+    "category": "maenner",
+    "priceCents": 25560,
+    "sold": false,
+    "length": "",
+    "base": "",
+    "color": "",
+    "texture": "",
+    "description": "Haarsystem aus ultradünner Mikrohaut, die auf der Kopfhaut praktisch verschwindet. 100 % Echthaar, leicht, atmungsaktiv und so gearbeitet, dass der Ansatz wie eigener Haarwuchs aussieht.",
+    "specs": [
+      "100 % Echthaar",
+      "Ultradünne Mikrohaut-Basis",
+      "Leicht und atmungsaktiv",
+      "Haltbarkeit je nach Pflege 3 bis 6 Monate"
+    ],
+    "image": "/assets/originals/241-0.jpg",
+    "restyled": false,
+    "originals": [
+      "/assets/originals/241-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 238,
+    "slug": "massgefertigte-haarprothese-fuer-maenner-238",
+    "name": "Maßgefertigte Haarprothese für Männer",
+    "subtitle": "Haarsystem für Männer",
+    "category": "maenner",
+    "priceCents": 30700,
+    "sold": false,
+    "length": "",
+    "base": "",
+    "color": "",
+    "texture": "",
+    "description": "Nach Ihren Maßen gefertigt: Farbe, Dichte, Haarrichtung und Basis werden auf Sie abgestimmt. Das Ergebnis sitzt bequem, wirkt natürlich und bleibt diskret.",
+    "specs": [
+      "Anfertigung nach Maß",
+      "Farbe und Dichte nach Ihrem Haar",
+      "100 % Echthaar",
+      "Fertigung in 15 bis 20 Tagen"
+    ],
+    "image": "/assets/originals/238-0.jpg",
+    "restyled": false,
+    "originals": [
+      "/assets/originals/238-0.jpg"
+    ],
+    "madeToOrder": true,
+    "safety": null
+  },
+  {
+    "id": 234,
+    "slug": "walker-tape-ultra-hold-fluessigkleber-234",
+    "name": "Walker Tape Ultra Hold Flüssigkleber",
+    "subtitle": "Befestigung und Pflege",
+    "category": "pflege",
+    "priceCents": 1860,
+    "sold": false,
+    "length": "",
+    "base": "",
+    "color": "",
+    "texture": "",
+    "description": "Professioneller Flüssigkleber mit starkem Halt für Haarteile, Perücken und Haarsysteme. Hält lange, widersteht Feuchtigkeit und bleibt dabei angenehm auf der Haut.",
+    "specs": [
+      "Starker, langanhaltender Halt",
+      "Feuchtigkeitsbeständig",
+      "Für Haarteile, Perücken und Haarsysteme"
+    ],
+    "image": "/assets/originals/234-0.jpg",
+    "restyled": false,
+    "originals": [
+      "/assets/originals/234-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 222,
+    "slug": "walker-tape-c-22-loesungsmittel-222",
+    "name": "Walker Tape C-22 Lösungsmittel",
+    "subtitle": "Befestigung und Pflege",
+    "category": "pflege",
+    "priceCents": 4248,
+    "sold": false,
+    "length": "",
+    "base": "",
+    "color": "",
+    "texture": "",
+    "description": "Löst Kleber- und Tape-Rückstände von Haarteilen, Perücken und Extensions schnell und schonend. Die Formel auf Zitrusbasis wirkt in wenigen Augenblicken.",
+    "specs": [
+      "Auf Zitrusbasis",
+      "Entfernt Kleber und Tape-Reste",
+      "Für Haarsysteme, Perücken und Extensions"
+    ],
+    "image": "/assets/originals/222-0.jpg",
+    "restyled": false,
+    "originals": [
+      "/assets/originals/222-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 228,
+    "slug": "walker-tape-ultra-hold-klebeband-3-4-x-12-yd-228",
+    "name": "Walker Tape Ultra Hold Klebeband 3/4\" x 12 yd",
+    "subtitle": "Befestigung und Pflege",
+    "category": "pflege",
+    "priceCents": 3580,
+    "sold": false,
+    "length": "",
+    "base": "",
+    "color": "",
+    "texture": "",
+    "description": "Doppelseitiges Klebeband mit starkem Halt für Haarersatzsysteme, Perücken und Extensions. Sitzt fest, bleibt unauffällig und hält Feuchtigkeit und Schweiß stand.",
+    "specs": [
+      "Doppelseitig, 3/4 Zoll x 12 Yards",
+      "Starker Halt, unauffälliger Abschluss",
+      "Beständig gegen Feuchtigkeit und Schweiß"
+    ],
+    "image": "/assets/originals/228-0.jpg",
+    "restyled": false,
+    "originals": [
+      "/assets/originals/228-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 220,
+    "slug": "walker-tape-ultra-hold-klebestreifen-220",
+    "name": "Walker Tape Ultra Hold Klebestreifen",
+    "subtitle": "Befestigung und Pflege",
+    "category": "pflege",
+    "priceCents": 1285,
+    "sold": false,
+    "length": "",
+    "base": "",
+    "color": "",
+    "texture": "",
+    "description": "Vorgeschnittene, geschwungene Klebestreifen für Haarsysteme. Extra starker Halt, schweiß- und feuchtigkeitsbeständig, einfach aufzutragen.",
+    "specs": [
+      "Vorgeschnittene Streifen",
+      "Extra starker Halt",
+      "Schweiß- und feuchtigkeitsbeständig"
+    ],
+    "image": "/assets/originals/220-0.jpg",
+    "restyled": false,
+    "originals": [
+      "/assets/originals/220-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 206,
+    "slug": "echthaar-topper-47-cm-grau-meliert-206",
+    "name": "Echthaar-Topper 47 cm",
+    "subtitle": "Grau meliert",
+    "category": "topper",
+    "priceCents": 94300,
+    "sold": true,
+    "length": "47",
+    "base": "13 x 10",
+    "color": "Grau meliert",
+    "texture": "Leicht gewellt",
+    "description": "Leicht gewelltes Echthaar in Grau meliert, 47 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 47 cm",
+      "Basis 13 x 10 cm",
+      "Farbe: Grau meliert",
+      "Struktur: Leicht gewellt",
+      "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
+      "Freier Scheitel, in jede Richtung zu legen",
+      "Befestigung mit Clips"
+    ],
+    "image": "/assets/products/206.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/206-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 200,
+    "slug": "echthaar-topper-47-cm-dunkelbraun-200",
+    "name": "Echthaar-Topper 47 cm",
+    "subtitle": "Dunkelbraun",
+    "category": "topper",
+    "priceCents": 59000,
+    "sold": false,
+    "length": "47",
+    "base": "13 x 10",
+    "color": "Dunkelbraun",
+    "texture": "Leicht gewellt",
+    "description": "Leicht gewelltes Echthaar in Dunkelbraun, 47 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 47 cm",
+      "Basis 13 x 10 cm",
+      "Farbe: Dunkelbraun",
+      "Struktur: Leicht gewellt",
+      "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
+      "Freier Scheitel, in jede Richtung zu legen",
+      "Befestigung mit Clips"
+    ],
+    "image": "/assets/products/200.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/200-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 191,
+    "slug": "echthaar-topper-47-cm-helles-kupferbraun-191",
+    "name": "Echthaar-Topper 47 cm",
+    "subtitle": "Helles Kupferbraun",
+    "category": "topper",
+    "priceCents": 58000,
+    "sold": false,
+    "length": "47",
+    "base": "13 x 10",
+    "color": "Helles Kupferbraun",
+    "texture": "Leicht gewellt",
+    "description": "Leicht gewelltes Echthaar in Helles Kupferbraun, 47 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 47 cm",
+      "Basis 13 x 10 cm",
+      "Farbe: Helles Kupferbraun",
+      "Struktur: Leicht gewellt",
+      "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
+      "Freier Scheitel, in jede Richtung zu legen",
+      "Befestigung mit Clips"
+    ],
+    "image": "/assets/products/191.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/191-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 186,
+    "slug": "echthaar-topper-40-cm-dunkelbraun-186",
+    "name": "Echthaar-Topper 40 cm",
+    "subtitle": "Dunkelbraun",
+    "category": "topper",
+    "priceCents": 45000,
+    "sold": false,
+    "length": "40",
+    "base": "13 x 10",
+    "color": "Dunkelbraun",
+    "texture": "Leicht gewellt",
+    "description": "Leicht gewelltes Echthaar in Dunkelbraun, 40 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 40 cm",
+      "Basis 13 x 10 cm",
+      "Farbe: Dunkelbraun",
+      "Struktur: Leicht gewellt, gestylt",
+      "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
+      "Freier Scheitel, in jede Richtung zu legen",
+      "Befestigung mit Clips"
+    ],
+    "image": "/assets/products/186.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/186-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 180,
+    "slug": "echthaar-topper-25-cm-helles-kupferbraun-180",
+    "name": "Echthaar-Topper 25 cm",
+    "subtitle": "Helles Kupferbraun",
+    "category": "topper",
+    "priceCents": 60000,
+    "sold": false,
+    "length": "25",
+    "base": "13 x 10",
+    "color": "Helles Kupferbraun",
+    "texture": "Glatt",
+    "description": "Glattes Echthaar in Helles Kupferbraun, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 25 cm",
+      "Basis 13 x 10 cm",
+      "Farbe: Helles Kupferbraun",
+      "Struktur: Glatt",
+      "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
+      "Freier Scheitel, in jede Richtung zu legen",
+      "Befestigung mit Clips"
+    ],
+    "image": "/assets/products/180.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/180-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 175,
+    "slug": "echthaar-topper-25-cm-goldblond-mit-hellblonden-straehnen-175",
+    "name": "Echthaar-Topper 25 cm",
+    "subtitle": "Goldblond mit hellblonden Strähnen",
+    "category": "topper",
+    "priceCents": 40000,
+    "sold": false,
+    "length": "25",
+    "base": "13 x 10",
+    "color": "Goldblond mit hellblonden Strähnen",
+    "texture": "Glatt",
+    "description": "Glattes Echthaar in Goldblond mit hellblonden Strähnen, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 25 cm",
+      "Basis 13 x 10 cm",
+      "Farbe: Goldblond mit hellblonden Strähnen",
+      "Struktur: Glatt",
+      "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
+      "Freier Scheitel, in jede Richtung zu legen",
+      "Befestigung mit Clips"
+    ],
+    "image": "/assets/products/175.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/175-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 169,
+    "slug": "echthaar-topper-25-cm-dunkelbraun-169",
+    "name": "Echthaar-Topper 25 cm",
+    "subtitle": "Dunkelbraun",
+    "category": "topper",
+    "priceCents": 40000,
+    "sold": false,
+    "length": "25",
+    "base": "13 x 15",
+    "color": "Dunkelbraun",
+    "texture": "Lockig",
+    "description": "Lockiges Echthaar in Dunkelbraun, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 15 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 25 cm",
+      "Basis 13 x 15 cm",
+      "Farbe: Dunkelbraun",
+      "Struktur: Lockig",
+      "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
+      "Freier Scheitel, in jede Richtung zu legen",
+      "Befestigung mit Clips"
+    ],
+    "image": "/assets/products/169.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/169-0.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 164,
+    "slug": "echthaar-topper-43-cm-braun-mit-leichtem-kupferton-164",
+    "name": "Echthaar-Topper 43 cm",
+    "subtitle": "Braun mit leichtem Kupferton",
+    "category": "topper",
+    "priceCents": 85700,
+    "sold": false,
+    "length": "43",
+    "base": "13 x 15",
+    "color": "Braun mit leichtem Kupferton",
+    "texture": "Leicht gewellt",
+    "description": "Leicht gewelltes Echthaar in Braun mit leichtem Kupferton, 43 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 15 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 43 cm",
+      "Basis 13 x 15 cm",
+      "Farbe: Braun mit leichtem Kupferton",
+      "Struktur: Leicht gewellt, gestylt",
+      "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
+      "Freier Scheitel, in jede Richtung zu legen",
+      "Befestigung mit Clips"
+    ],
+    "image": "/assets/products/164.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/164-0.jpg",
+      "/assets/originals/164-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 110,
+    "slug": "echthaar-topper-110",
+    "name": "Echthaar-Topper",
+    "subtitle": "Premium-Echthaar",
+    "category": "topper",
+    "priceCents": 50000,
+    "sold": false,
+    "length": "",
+    "base": "",
+    "color": "",
+    "texture": "Glatt",
+    "description": "Glattes Echthaar. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Struktur: Glatt",
+      "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
+      "Freier Scheitel, in jede Richtung zu legen"
+    ],
+    "image": "/assets/products/110.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/110-0.jpg",
+      "/assets/originals/110-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 105,
+    "slug": "echthaar-topper-65-cm-natuerliches-dunkelbraun-105",
+    "name": "Echthaar-Topper 65 cm",
+    "subtitle": "Natürliches Dunkelbraun",
+    "category": "topper",
+    "priceCents": 75000,
+    "sold": false,
+    "length": "65",
+    "base": "",
+    "color": "Natürliches Dunkelbraun",
+    "texture": "",
+    "description": "Feines Echthaar in Natürliches Dunkelbraun, 65 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 65 cm",
+      "Farbe: Natürliches Dunkelbraun"
+    ],
+    "image": "/assets/products/105.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/105-0.jpg",
+      "/assets/originals/105-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 99,
+    "slug": "echthaar-topper-56-cm-helles-aschblond-ombre-99",
+    "name": "Echthaar-Topper 56 cm",
+    "subtitle": "Helles Aschblond Ombré",
+    "category": "topper",
+    "priceCents": 79000,
+    "sold": false,
+    "length": "56",
+    "base": "",
+    "color": "Helles Aschblond Ombré",
+    "texture": "",
+    "description": "Feines Echthaar in Helles Aschblond Ombré, 56 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 56 cm",
+      "Farbe: Helles Aschblond Ombré"
+    ],
+    "image": "/assets/products/99.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/99-0.jpg",
+      "/assets/originals/99-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 93,
+    "slug": "echthaar-topper-55-cm-helles-aschblond-ombre-93",
+    "name": "Echthaar-Topper 55 cm",
+    "subtitle": "Helles Aschblond Ombré",
+    "category": "topper",
+    "priceCents": 82000,
+    "sold": false,
+    "length": "55",
+    "base": "",
+    "color": "Helles Aschblond Ombré",
+    "texture": "",
+    "description": "Feines Echthaar in Helles Aschblond Ombré, 55 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 55 cm",
+      "Farbe: Helles Aschblond Ombré"
+    ],
+    "image": "/assets/products/93.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/93-0.jpg",
+      "/assets/originals/93-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 88,
+    "slug": "echthaar-topper-53-cm-88",
+    "name": "Echthaar-Topper 53 cm",
+    "subtitle": "Premium-Echthaar",
+    "category": "topper",
+    "priceCents": 59000,
+    "sold": false,
+    "length": "53",
+    "base": "",
+    "color": "",
+    "texture": "",
+    "description": "Feines Echthaar, 53 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 53 cm"
+    ],
+    "image": "/assets/products/88.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/88-0.jpg",
+      "/assets/originals/88-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 83,
+    "slug": "echthaar-topper-45-cm-mittelbraun-83",
+    "name": "Echthaar-Topper 45 cm",
+    "subtitle": "Mittelbraun",
+    "category": "topper",
+    "priceCents": 49000,
+    "sold": false,
+    "length": "45",
+    "base": "",
+    "color": "Mittelbraun",
+    "texture": "",
+    "description": "Feines Echthaar in Mittelbraun, 45 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 45 cm",
+      "Farbe: Mittelbraun"
+    ],
+    "image": "/assets/products/83.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/83-0.jpg",
+      "/assets/originals/83-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 78,
+    "slug": "echthaar-topper-56-cm-mittelbraun-78",
+    "name": "Echthaar-Topper 56 cm",
+    "subtitle": "Mittelbraun",
+    "category": "topper",
+    "priceCents": 61000,
+    "sold": false,
+    "length": "56",
+    "base": "",
+    "color": "Mittelbraun",
+    "texture": "",
+    "description": "Feines Echthaar in Mittelbraun, 56 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 56 cm",
+      "Farbe: Mittelbraun"
+    ],
+    "image": "/assets/products/78.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/78-0.jpg",
+      "/assets/originals/78-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 73,
+    "slug": "echthaar-topper-40-cm-blond-mit-beigen-highlights-und-sanft-goldenem-ansatz-73",
+    "name": "Echthaar-Topper 40 cm",
+    "subtitle": "Blond mit beigen Highlights und sanft goldenem Ansatz",
+    "category": "topper",
+    "priceCents": 49000,
+    "sold": false,
+    "length": "40",
+    "base": "",
+    "color": "Blond mit beigen Highlights und sanft goldenem Ansatz",
+    "texture": "",
+    "description": "Feines Echthaar in Blond mit beigen Highlights und sanft goldenem Ansatz, 40 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 40 cm",
+      "Farbe: Blond mit beigen Highlights und sanft goldenem Ansatz"
+    ],
+    "image": "/assets/products/73.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/73-0.jpg",
+      "/assets/originals/73-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 68,
+    "slug": "echthaar-topper-40-cm-kupferbraun-mit-dunkelgoldblonden-reflexen-68",
+    "name": "Echthaar-Topper 40 cm",
+    "subtitle": "Kupferbraun mit dunkelgoldblonden Reflexen",
+    "category": "topper",
+    "priceCents": 50000,
+    "sold": false,
+    "length": "40",
+    "base": "",
+    "color": "Kupferbraun mit dunkelgoldblonden Reflexen",
+    "texture": "",
+    "description": "Feines Echthaar in Kupferbraun mit dunkelgoldblonden Reflexen, 40 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 40 cm",
+      "Farbe: Kupferbraun mit dunkelgoldblonden Reflexen"
+    ],
+    "image": "/assets/products/68.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/68-0.jpg",
+      "/assets/originals/68-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 63,
+    "slug": "echthaar-topper-25-cm-natuerliches-dunkelbraun-63",
+    "name": "Echthaar-Topper 25 cm",
+    "subtitle": "Natürliches Dunkelbraun",
+    "category": "topper",
+    "priceCents": 30000,
+    "sold": false,
+    "length": "25",
+    "base": "",
+    "color": "Natürliches Dunkelbraun",
+    "texture": "",
+    "description": "Feines Echthaar in Natürliches Dunkelbraun, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 25 cm",
+      "Farbe: Natürliches Dunkelbraun"
+    ],
+    "image": "/assets/products/63.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/63-0.jpg",
+      "/assets/originals/63-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 58,
+    "slug": "echthaar-topper-35-cm-grau-meliert-58",
+    "name": "Echthaar-Topper 35 cm",
+    "subtitle": "Grau meliert",
+    "category": "topper",
+    "priceCents": 40000,
+    "sold": false,
+    "length": "35",
+    "base": "",
+    "color": "Grau meliert",
+    "texture": "",
+    "description": "Feines Echthaar in Grau meliert, 35 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 35 cm",
+      "Farbe: Grau meliert"
+    ],
+    "image": "/assets/products/58.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/58-0.jpg",
+      "/assets/originals/58-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 53,
+    "slug": "echthaar-topper-25-cm-natuerliches-dunkelbraun-53",
+    "name": "Echthaar-Topper 25 cm",
+    "subtitle": "Natürliches Dunkelbraun",
+    "category": "topper",
+    "priceCents": 30000,
+    "sold": false,
+    "length": "25",
+    "base": "",
+    "color": "Natürliches Dunkelbraun",
+    "texture": "",
+    "description": "Feines Echthaar in Natürliches Dunkelbraun, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 25 cm",
+      "Farbe: Natürliches Dunkelbraun"
+    ],
+    "image": "/assets/products/53.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/53-0.jpg",
+      "/assets/originals/53-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 48,
+    "slug": "echthaar-topper-45-cm-kupferbraun-mit-sanften-goldhighlights-48",
+    "name": "Echthaar-Topper 45 cm",
+    "subtitle": "Kupferbraun mit sanften Goldhighlights",
+    "category": "topper",
+    "priceCents": 50000,
+    "sold": false,
+    "length": "45",
+    "base": "",
+    "color": "Kupferbraun mit sanften Goldhighlights",
+    "texture": "",
+    "description": "Feines Echthaar in Kupferbraun mit sanften Goldhighlights, 45 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 45 cm",
+      "Farbe: Kupferbraun mit sanften Goldhighlights"
+    ],
+    "image": "/assets/products/48.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/48-0.jpg",
+      "/assets/originals/48-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 43,
+    "slug": "echthaar-topper-25-cm-natuerliches-dunkelbraun-mit-kupferhighlights-43",
+    "name": "Echthaar-Topper 25 cm",
+    "subtitle": "Natürliches Dunkelbraun mit Kupferhighlights",
+    "category": "topper",
+    "priceCents": 35000,
+    "sold": false,
+    "length": "25",
+    "base": "",
+    "color": "Natürliches Dunkelbraun mit Kupferhighlights",
+    "texture": "",
+    "description": "Feines Echthaar in Natürliches Dunkelbraun mit Kupferhighlights, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 25 cm",
+      "Farbe: Natürliches Dunkelbraun mit Kupferhighlights"
+    ],
+    "image": "/assets/products/43.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/43-0.jpg",
+      "/assets/originals/43-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 38,
+    "slug": "echthaar-topper-25-cm-natuerliches-dunkelbraun-mit-violettroten-highlights-38",
+    "name": "Echthaar-Topper 25 cm",
+    "subtitle": "Natürliches Dunkelbraun mit violettroten Highlights",
+    "category": "topper",
+    "priceCents": 35000,
+    "sold": false,
+    "length": "25",
+    "base": "",
+    "color": "Natürliches Dunkelbraun mit violettroten Highlights",
+    "texture": "",
+    "description": "Feines Echthaar in Natürliches Dunkelbraun mit violettroten Highlights, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 25 cm",
+      "Farbe: Natürliches Dunkelbraun mit violettroten Highlights"
+    ],
+    "image": "/assets/products/38.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/38-0.jpg",
+      "/assets/originals/38-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 33,
+    "slug": "echthaar-topper-20-cm-natuerliches-dunkelbraun-mit-sanften-graustraehnen-33",
+    "name": "Echthaar-Topper 20 cm",
+    "subtitle": "Natürliches Dunkelbraun mit sanften Grausträhnen",
+    "category": "topper",
+    "priceCents": 35000,
+    "sold": false,
+    "length": "20",
+    "base": "",
+    "color": "Natürliches Dunkelbraun mit sanften Grausträhnen",
+    "texture": "",
+    "description": "Feines Echthaar in Natürliches Dunkelbraun mit sanften Grausträhnen, 20 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 20 cm",
+      "Farbe: Natürliches Dunkelbraun mit sanften Grausträhnen"
+    ],
+    "image": "/assets/products/33.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/33-0.jpg",
+      "/assets/originals/33-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 29,
+    "slug": "volumen-topper-14-cm-natuerliches-dunkelbraun-29",
+    "name": "Volumen-Topper 14 cm",
+    "subtitle": "Natürliches Dunkelbraun",
+    "category": "topper",
+    "priceCents": 30000,
+    "sold": false,
+    "length": "14",
+    "base": "",
+    "color": "Natürliches Dunkelbraun",
+    "texture": "",
+    "description": "Feines Echthaar in Natürliches Dunkelbraun, 14 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 14 cm",
+      "Farbe: Natürliches Dunkelbraun"
+    ],
+    "image": "/assets/products/29.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/29-0.jpg",
+      "/assets/originals/29-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 21,
+    "slug": "echthaar-haarsystem-fuer-maenner-20-cm-21",
+    "name": "Echthaar-Haarsystem für Männer 20 cm",
+    "subtitle": "Haarsystem für Männer",
+    "category": "maenner",
+    "priceCents": 25000,
+    "sold": false,
+    "length": "20",
+    "base": "",
+    "color": "",
+    "texture": "",
+    "description": "Haarsystem aus Premium-Echthaar mit 20 cm Haarlänge. Wird im Atelier auf Ihren Ansatz und Ihre Farbe abgestimmt, damit niemand einen Übergang sieht.",
+    "specs": [
+      "100 % Echthaar",
+      "Haarlänge 20 cm",
+      "Anpassung im Atelier"
+    ],
+    "image": "/assets/products/21.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/21-0.jpg",
+      "/assets/originals/21-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 17,
+    "slug": "echthaar-topper-47-cm-dunkelbraun-17",
+    "name": "Echthaar-Topper 47 cm",
+    "subtitle": "Dunkelbraun",
+    "category": "topper",
+    "priceCents": 50000,
+    "sold": false,
+    "length": "47",
+    "base": "",
+    "color": "Dunkelbraun",
+    "texture": "",
+    "description": "Feines Echthaar in Dunkelbraun, 47 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 47 cm",
+      "Farbe: Dunkelbraun"
+    ],
+    "image": "/assets/products/17.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/17-0.jpg",
+      "/assets/originals/17-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 12,
+    "slug": "echthaar-topper-20-cm-grau-meliert-12",
+    "name": "Echthaar-Topper 20 cm",
+    "subtitle": "Grau meliert",
+    "category": "topper",
+    "priceCents": 35000,
+    "sold": false,
+    "length": "20",
+    "base": "",
+    "color": "Grau meliert",
+    "texture": "",
+    "description": "Feines Echthaar in Grau meliert, 20 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 20 cm",
+      "Farbe: Grau meliert"
+    ],
+    "image": "/assets/products/12.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/12-0.jpg",
+      "/assets/originals/12-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  },
+  {
+    "id": 11,
+    "slug": "echthaar-topper-20-cm-mittleres-goldblond-11",
+    "name": "Echthaar-Topper 20 cm",
+    "subtitle": "Mittleres Goldblond",
+    "category": "topper",
+    "priceCents": 39000,
+    "sold": false,
+    "length": "20",
+    "base": "",
+    "color": "Mittleres Goldblond",
+    "texture": "",
+    "description": "Feines Echthaar in Mittleres Goldblond, 20 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
+    "specs": [
+      "100 % Premium-Echthaar",
+      "Haarlänge 20 cm",
+      "Farbe: Mittleres Goldblond"
+    ],
+    "image": "/assets/products/11.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/11-0.jpg",
+      "/assets/originals/11-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null
+  }
 ]

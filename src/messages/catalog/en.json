@@ -1,0 +1,591 @@
+{
+  "11": {
+    "description": "Fine human hair in medium golden blonde, 20 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 20 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 20 cm",
+      "Colour: Medium golden blonde"
+    ],
+    "subtitle": "Medium golden blonde"
+  },
+  "12": {
+    "description": "Fine human hair in grey blend, 20 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 20 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 20 cm",
+      "Colour: Grey blend"
+    ],
+    "subtitle": "Grey blend"
+  },
+  "17": {
+    "description": "Fine human hair in dark brown, 47 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 47 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 47 cm",
+      "Colour: Dark brown"
+    ],
+    "subtitle": "Dark brown"
+  },
+  "21": {
+    "description": "Hair system made of premium human hair with a hair length of 20 cm. Matched in the atelier to your hairline and your colour, so that no one sees a transition.",
+    "name": "Human hair system for men 20 cm",
+    "specs": [
+      "100 % human hair",
+      "Hair length 20 cm",
+      "Fitted in the atelier"
+    ],
+    "subtitle": "Hair system for men"
+  },
+  "29": {
+    "description": "Fine human hair in natural dark brown, 14 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Volume topper 14 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 14 cm",
+      "Colour: Natural dark brown"
+    ],
+    "subtitle": "Natural dark brown"
+  },
+  "33": {
+    "description": "Fine human hair in natural dark brown with soft grey streaks, 20 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 20 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 20 cm",
+      "Colour: Natural dark brown with soft grey streaks"
+    ],
+    "subtitle": "Natural dark brown with soft grey streaks"
+  },
+  "38": {
+    "description": "Fine human hair in natural dark brown with violet-red highlights, 25 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 25 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 25 cm",
+      "Colour: Natural dark brown with violet-red highlights"
+    ],
+    "subtitle": "Natural dark brown with violet-red highlights"
+  },
+  "43": {
+    "description": "Fine human hair in natural dark brown with copper highlights, 25 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 25 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 25 cm",
+      "Colour: Natural dark brown with copper highlights"
+    ],
+    "subtitle": "Natural dark brown with copper highlights"
+  },
+  "48": {
+    "description": "Fine human hair in copper brown with soft golden highlights, 45 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 45 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 45 cm",
+      "Colour: Copper brown with soft golden highlights"
+    ],
+    "subtitle": "Copper brown with soft golden highlights"
+  },
+  "53": {
+    "description": "Fine human hair in natural dark brown, 25 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 25 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 25 cm",
+      "Colour: Natural dark brown"
+    ],
+    "subtitle": "Natural dark brown"
+  },
+  "58": {
+    "description": "Fine human hair in grey blend, 35 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 35 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 35 cm",
+      "Colour: Grey blend"
+    ],
+    "subtitle": "Grey blend"
+  },
+  "63": {
+    "description": "Fine human hair in natural dark brown, 25 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 25 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 25 cm",
+      "Colour: Natural dark brown"
+    ],
+    "subtitle": "Natural dark brown"
+  },
+  "68": {
+    "description": "Fine human hair in copper brown with dark golden blonde reflections, 40 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 40 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 40 cm",
+      "Colour: Copper brown with dark golden blonde reflections"
+    ],
+    "subtitle": "Copper brown with dark golden blonde reflections"
+  },
+  "73": {
+    "description": "Fine human hair in blonde with beige highlights and a soft golden root, 40 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 40 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 40 cm",
+      "Colour: Blonde with beige highlights and a soft golden root"
+    ],
+    "subtitle": "Blonde with beige highlights and a soft golden root"
+  },
+  "78": {
+    "description": "Fine human hair in medium brown, 56 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 56 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 56 cm",
+      "Colour: Medium brown"
+    ],
+    "subtitle": "Medium brown"
+  },
+  "83": {
+    "description": "Fine human hair in medium brown, 45 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 45 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 45 cm",
+      "Colour: Medium brown"
+    ],
+    "subtitle": "Medium brown"
+  },
+  "88": {
+    "description": "Fine human hair, 53 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 53 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 53 cm"
+    ],
+    "subtitle": "Premium human hair"
+  },
+  "93": {
+    "description": "Fine human hair in light ash blonde ombré, 55 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 55 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 55 cm",
+      "Colour: Light ash blonde ombré"
+    ],
+    "subtitle": "Light ash blonde ombré"
+  },
+  "99": {
+    "description": "Fine human hair in light ash blonde ombré, 56 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 56 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 56 cm",
+      "Colour: Light ash blonde ombré"
+    ],
+    "subtitle": "Light ash blonde ombré"
+  },
+  "105": {
+    "description": "Fine human hair in natural dark brown, 65 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 65 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 65 cm",
+      "Colour: Natural dark brown"
+    ],
+    "subtitle": "Natural dark brown"
+  },
+  "110": {
+    "description": "Straight human hair. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper",
+    "specs": [
+      "100 % premium human hair",
+      "Texture: Straight",
+      "Nano skin base, hand-injected hair by hair (3D)",
+      "Free parting, can be styled in any direction"
+    ],
+    "subtitle": "Premium human hair"
+  },
+  "164": {
+    "description": "Slightly wavy human hair in brown with a light copper tone, 43 cm long. Every single hair is injected by hand into a wafer-thin nano skin base (13 x 15 cm), so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 43 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 43 cm",
+      "Base 13 x 15 cm",
+      "Colour: Brown with a light copper tone",
+      "Texture: Slightly wavy, styled",
+      "Nano skin base, hand-injected hair by hair (3D)",
+      "Free parting, can be styled in any direction",
+      "Fastened with clips"
+    ],
+    "subtitle": "Brown with a light copper tone"
+  },
+  "169": {
+    "description": "Curly human hair in dark brown, 25 cm long. Every single hair is injected by hand into a wafer-thin nano skin base (13 x 15 cm), so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 25 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 25 cm",
+      "Base 13 x 15 cm",
+      "Colour: Dark brown",
+      "Texture: Curly",
+      "Nano skin base, hand-injected hair by hair (3D)",
+      "Free parting, can be styled in any direction",
+      "Fastened with clips"
+    ],
+    "subtitle": "Dark brown"
+  },
+  "175": {
+    "description": "Straight human hair in golden blonde with light blonde streaks, 25 cm long. Every single hair is injected by hand into a wafer-thin nano skin base (13 x 10 cm), so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 25 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 25 cm",
+      "Base 13 x 10 cm",
+      "Colour: Golden blonde with light blonde streaks",
+      "Texture: Straight",
+      "Nano skin base, hand-injected hair by hair (3D)",
+      "Free parting, can be styled in any direction",
+      "Fastened with clips"
+    ],
+    "subtitle": "Golden blonde with light blonde streaks"
+  },
+  "180": {
+    "description": "Straight human hair in light copper brown, 25 cm long. Every single hair is injected by hand into a wafer-thin nano skin base (13 x 10 cm), so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 25 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 25 cm",
+      "Base 13 x 10 cm",
+      "Colour: Light copper brown",
+      "Texture: Straight",
+      "Nano skin base, hand-injected hair by hair (3D)",
+      "Free parting, can be styled in any direction",
+      "Fastened with clips"
+    ],
+    "subtitle": "Light copper brown"
+  },
+  "186": {
+    "description": "Slightly wavy human hair in dark brown, 40 cm long. Every single hair is injected by hand into a wafer-thin nano skin base (13 x 10 cm), so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 40 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 40 cm",
+      "Base 13 x 10 cm",
+      "Colour: Dark brown",
+      "Texture: Slightly wavy, styled",
+      "Nano skin base, hand-injected hair by hair (3D)",
+      "Free parting, can be styled in any direction",
+      "Fastened with clips"
+    ],
+    "subtitle": "Dark brown"
+  },
+  "191": {
+    "description": "Slightly wavy human hair in light copper brown, 47 cm long. Every single hair is injected by hand into a wafer-thin nano skin base (13 x 10 cm), so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 47 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 47 cm",
+      "Base 13 x 10 cm",
+      "Colour: Light copper brown",
+      "Texture: Slightly wavy",
+      "Nano skin base, hand-injected hair by hair (3D)",
+      "Free parting, can be styled in any direction",
+      "Fastened with clips"
+    ],
+    "subtitle": "Light copper brown"
+  },
+  "200": {
+    "description": "Slightly wavy human hair in dark brown, 47 cm long. Every single hair is injected by hand into a wafer-thin nano skin base (13 x 10 cm), so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 47 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 47 cm",
+      "Base 13 x 10 cm",
+      "Colour: Dark brown",
+      "Texture: Slightly wavy",
+      "Nano skin base, hand-injected hair by hair (3D)",
+      "Free parting, can be styled in any direction",
+      "Fastened with clips"
+    ],
+    "subtitle": "Dark brown"
+  },
+  "206": {
+    "description": "Slightly wavy human hair in grey blend, 47 cm long. Every single hair is injected by hand into a wafer-thin nano skin base (13 x 10 cm), so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 47 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 47 cm",
+      "Base 13 x 10 cm",
+      "Colour: Grey blend",
+      "Texture: Slightly wavy",
+      "Nano skin base, hand-injected hair by hair (3D)",
+      "Free parting, can be styled in any direction",
+      "Fastened with clips"
+    ],
+    "subtitle": "Grey blend"
+  },
+  "220": {
+    "description": "Pre-cut, curved tape strips for hair systems. Extra strong hold, resistant to sweat and moisture, easy to apply.",
+    "name": "Walker Tape Ultra Hold tape strips",
+    "specs": [
+      "Pre-cut strips",
+      "Extra strong hold",
+      "Resistant to sweat and moisture"
+    ],
+    "subtitle": "Fixing and care"
+  },
+  "222": {
+    "description": "Removes adhesive and tape residue from hair pieces, wigs and extensions quickly and gently. The citrus-based formula works within moments.",
+    "name": "Walker Tape C-22 solvent",
+    "specs": [
+      "Citrus-based",
+      "Removes adhesive and tape residue",
+      "For hair systems, wigs and extensions"
+    ],
+    "subtitle": "Fixing and care"
+  },
+  "228": {
+    "description": "Double-sided tape with a strong hold for hair replacement systems, wigs and extensions. Holds firmly, stays inconspicuous and withstands moisture and sweat.",
+    "name": "Walker Tape Ultra Hold tape 3/4\" x 12 yd",
+    "specs": [
+      "Double-sided, 3/4 inch x 12 yards",
+      "Strong hold, inconspicuous finish",
+      "Resistant to moisture and sweat"
+    ],
+    "subtitle": "Fixing and care"
+  },
+  "234": {
+    "description": "Professional liquid adhesive with a strong hold for hair pieces, wigs and hair systems. Lasts a long time, resists moisture and stays comfortable on the skin.",
+    "name": "Walker Tape Ultra Hold liquid adhesive",
+    "specs": [
+      "Strong, long-lasting hold",
+      "Moisture-resistant",
+      "For hair pieces, wigs and hair systems"
+    ],
+    "subtitle": "Fixing and care"
+  },
+  "238": {
+    "description": "Made to your measurements: colour, density, hair direction and base are matched to you. The result fits comfortably, looks natural and stays discreet.",
+    "name": "Custom-made hair prosthesis for men",
+    "specs": [
+      "Made to measure",
+      "Colour and density matched to your hair",
+      "100 % human hair",
+      "Made within 15 to 20 days"
+    ],
+    "subtitle": "Hair system for men"
+  },
+  "241": {
+    "description": "Hair system made of ultra-thin micro skin that practically disappears on the scalp. 100 % human hair, light, breathable and made so that the hairline looks like your own hair growth.",
+    "name": "Skin hair system for men",
+    "specs": [
+      "100 % human hair",
+      "Ultra-thin micro skin base",
+      "Light and breathable",
+      "Lasts 3 to 6 months depending on care"
+    ],
+    "subtitle": "Hair system for men"
+  },
+  "246": {
+    "description": "Slightly wavy human hair in medium brown ombré, 50 cm long. Every single hair is injected by hand into a wafer-thin nano skin base (11 x 10 cm), so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 50 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 50 cm",
+      "Base 11 x 10 cm",
+      "Colour: Medium brown ombré",
+      "Texture: Slightly wavy",
+      "Nano skin base, hand-injected hair by hair (3D)",
+      "Free parting, can be styled in any direction",
+      "Fastened with clips"
+    ],
+    "subtitle": "Medium brown ombré"
+  },
+  "256": {
+    "description": "Straight human hair in black, 30 cm long. A fringe that fills your forehead and hairline in seconds, without cutting your own hair. Fastened with clips and removable at any time.",
+    "name": "Fringe topper 30 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 30 cm",
+      "Base 10 x 10 cm",
+      "Colour: Black",
+      "Texture: Straight",
+      "Nano skin base, hand-injected hair by hair (3D)",
+      "Free parting, can be styled in any direction",
+      "Fastened with clips"
+    ],
+    "subtitle": "Black"
+  },
+  "263": {
+    "description": "Straight human hair in black, 30 cm long. A fringe that fills your forehead and hairline in seconds, without cutting your own hair. Fastened with clips and removable at any time.",
+    "name": "Curtain bangs 30 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 30 cm",
+      "Base 5 x 7 cm",
+      "Colour: Black",
+      "Texture: Straight",
+      "Nano skin base, hand-injected hair by hair (3D)",
+      "Free parting, can be styled in any direction",
+      "Fastened with clips"
+    ],
+    "subtitle": "Black"
+  },
+  "287": {
+    "description": "Slightly wavy human hair in golden blonde, 35 cm long. The front lace line is worked so finely that the hairline looks like your own hair growth. Put it on, adjust it, and the mirror shows you again.",
+    "name": "Front lace wig 35 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 35 cm",
+      "Colour: Golden blonde",
+      "Texture: Slightly wavy",
+      "Front lace with a natural hairline"
+    ],
+    "subtitle": "Golden blonde"
+  },
+  "405": {
+    "description": "Straight human hair in medium copper brown, 25 cm long. A fringe that fills your forehead and hairline in seconds, without cutting your own hair. Fastened with clips and removable at any time.",
+    "name": "Fringe topper 25 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 25 cm",
+      "Base 13 x 10 cm",
+      "Colour: Medium copper brown",
+      "Texture: Straight, styled",
+      "Nano skin base, hand-injected hair by hair (3D)",
+      "Free parting, can be styled in any direction",
+      "Fastened with clips"
+    ],
+    "subtitle": "Medium copper brown"
+  },
+  "407": {
+    "description": "Straight human hair, 25 cm long. A fringe that fills your forehead and hairline in seconds, without cutting your own hair. Fastened with clips and removable at any time.",
+    "name": "Curtain bangs 25 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 25 cm",
+      "Base 7 x 5 cm",
+      "Texture: Straight",
+      "Nano skin base, hand-injected hair by hair (3D)",
+      "Free parting, can be styled in any direction",
+      "Fastened with clips"
+    ],
+    "subtitle": "Premium human hair"
+  },
+  "408": {
+    "description": "Slightly wavy human hair in light ash blonde, 25 cm long. Every single hair is injected by hand into a wafer-thin nano skin base (9 x 11 cm), so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 25 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 25 cm",
+      "Base 9 x 11 cm",
+      "Colour: Light ash blonde",
+      "Texture: Slightly wavy, styled",
+      "Nano skin base, hand-injected hair by hair (3D)",
+      "Free parting, can be styled in any direction",
+      "Fastened with clips"
+    ],
+    "subtitle": "Light ash blonde"
+  },
+  "413": {
+    "description": "Slightly wavy human hair in light ash blonde, 35 cm long. Every single hair is injected by hand into a wafer-thin nano skin base (9 x 11 cm), so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 35 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 35 cm",
+      "Base 9 x 11 cm",
+      "Colour: Light ash blonde",
+      "Texture: Slightly wavy",
+      "Nano skin base, hand-injected hair by hair (3D)",
+      "Free parting, can be styled in any direction",
+      "Fastened with clips"
+    ],
+    "subtitle": "Light ash blonde"
+  },
+  "414": {
+    "description": "Straight human hair in blonde with highlights and dark golden blonde, 45 cm long. Every single hair is injected by hand into a wafer-thin nano skin base (9 x 11 cm), so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 45 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 45 cm",
+      "Base 9 x 11 cm",
+      "Colour: Blonde with highlights and dark golden blonde",
+      "Texture: Straight, styled",
+      "Nano skin base, hand-injected hair by hair (3D)",
+      "Free parting, can be styled in any direction",
+      "Fastened with clips"
+    ],
+    "subtitle": "Blonde with highlights and dark golden blonde"
+  },
+  "415": {
+    "description": "Straight human hair in copper brown, 33 cm long. Every single hair is injected by hand into a wafer-thin nano skin base (9 x 11 cm), so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 33 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 33 cm",
+      "Base 9 x 11 cm",
+      "Colour: Copper brown",
+      "Texture: Straight, styled",
+      "Nano skin base, hand-injected hair by hair (3D)",
+      "Free parting, can be styled in any direction",
+      "Fastened with clips"
+    ],
+    "subtitle": "Copper brown"
+  },
+  "416": {
+    "description": "Straight human hair in dark brown, 40 cm long. Every single hair is injected by hand into a wafer-thin nano skin base (11 x 9 cm), so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 40 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 40 cm",
+      "Base 11 x 9 cm",
+      "Colour: Dark brown",
+      "Texture: Straight, styled",
+      "Nano skin base, hand-injected hair by hair (3D)",
+      "Free parting, can be styled in any direction",
+      "Fastened with clips"
+    ],
+    "subtitle": "Dark brown"
+  },
+  "417": {
+    "description": "Fine human hair. The front lace line is worked so finely that the hairline looks like your own hair growth. Put it on, adjust it, and the mirror shows you again.",
+    "name": "Front lace wig",
+    "specs": [
+      "100 % premium human hair",
+      "Front lace with a natural hairline"
+    ],
+    "subtitle": "Premium human hair"
+  },
+  "419": {
+    "description": "Fine human hair, 30 cm long. The front lace line is worked so finely that the hairline looks like your own hair growth. Put it on, adjust it, and the mirror shows you again.",
+    "name": "Front lace wig 30 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 30 cm",
+      "Front lace with a natural hairline"
+    ],
+    "subtitle": "Premium human hair"
+  },
+  "420": {
+    "description": "Fine human hair. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper (R)",
+    "specs": [
+      "100 % premium human hair"
+    ],
+    "subtitle": "Premium human hair"
+  },
+  "421": {
+    "description": "Fine human hair, 30 cm long. Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
+    "name": "Human hair topper 30 cm",
+    "specs": [
+      "100 % premium human hair",
+      "Hair length 30 cm"
+    ],
+    "subtitle": "Premium human hair"
+  }
+}
