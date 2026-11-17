@@ -1,4 +1,4 @@
-import { type Company, anyPayment, countryNames, euro, madeToOrderDaysOf, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, anyPayment, countryNames, euro, madeToOrderDaysOf, deliveryDaysOf, shippingOf } from "../company-type";
 
 const Missing = ({ field, label }: { field: string; label: string }) => (
   <mark data-missing={field}>[Gegeven ontbreekt: {label}]</mark>
@@ -52,7 +52,7 @@ export default function Page({ company: c }: { company: Company }) {
             Wij verzenden met {carrier}, discreet verpakt en met track-and-trace. Leverlanden:
             Duitsland{others.length > 0 ? <>, {countryNames(others, "nl")}</> : null}; andere landen na overleg.
           </li>
-          <li>Stukken op voorraad geven wij binnen {processingDaysOf(c)} werkdagen af aan de vervoerder – bij vooruitbetaling en PayPal vanaf de dag na ontvangst van de betaling, anders vanaf de dag na het sluiten van de overeenkomst. Daar komt de transporttijd bij.</li>
+          <li>Stukken op voorraad zijn binnen Duitsland in {deliveryDaysOf(c)} dagen bij u – bij vooruitbetaling en PayPal vanaf de dag na ontvangst van de betaling, anders vanaf de dag na het sluiten van de overeenkomst. De levertijd naar het buitenland noemen wij u vóór het sluiten van de overeenkomst.</li>
           <li>Maatwerk vervaardigen wij in ongeveer {madeToOrderDaysOf(c)} dagen zodra alle gegevens en – bij vooruitbetaling of PayPal – de betaling binnen zijn.</li>
           <li>Om veiligheidsredenen kunnen wij sommige verzorgings-, lijm- en oplosmiddelproducten niet naar elk land verzenden. Wij vermelden dit op de productpagina.</li>
         </ul>
@@ -88,6 +88,7 @@ export default function Page({ company: c }: { company: Company }) {
                 ; te betalen binnen 7 dagen. Verzending na ontvangst van de betaling.
               </li>
             ) : null}
+            {c.payments.paypalInstallments ? <li><strong>Betalen in termijnen via PayPal</strong> – als PayPal dit aanbiedt; kredietgever is PayPal, na diens kredietcontrole en volgens diens voorwaarden. Wij verlenen zelf geen krediet.</li> : null}
             {c.payments.bankTransfer ? (
               <li>
                 <strong>Factuur</strong> – overschrijving binnen 14 dagen na ontvangst van de goederen.

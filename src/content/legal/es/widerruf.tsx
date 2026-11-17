@@ -47,7 +47,7 @@ export default function Page({ company: c }: { company: Company }) {
         <h3 id="ausschluss">Exclusión o extinción anticipada del derecho de desistimiento</h3>
         <p>No existe derecho de desistimiento en los contratos</p>
         <ul>
-          <li>de suministro de bienes no prefabricados para cuya elaboración sea determinante una selección o especificación individual del consumidor, o que estén claramente personalizados según sus necesidades. En nuestro caso, se trata de todos los productos marcados como fabricación a medida, por ejemplo la prótesis capilar a medida.</li>
+          <li>de suministro de bienes no prefabricados para cuya elaboración sea determinante una selección o especificación individual del consumidor, o que estén claramente personalizados según sus necesidades. En nuestro caso, se trata de todos los productos marcados como fabricación a medida, por ejemplo la prótesis capilar a medida. Lo mismo se aplica a las extensiones que teñimos, cortamos o fabricamos según sus indicaciones.</li>
         </ul>
         <p>El derecho de desistimiento se extingue anticipadamente en los contratos</p>
         <ul>

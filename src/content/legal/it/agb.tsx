@@ -1,4 +1,4 @@
-import { type Company, UNIVERSAL_ADR, addressLine, anyPayment, countryNames, euro, madeToOrderDaysOf, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, UNIVERSAL_ADR, addressLine, anyPayment, countryNames, euro, madeToOrderDaysOf, deliveryDaysOf, shippingOf } from "../company-type";
 
 const Missing = ({ field, label }: { field: string; label: string }) => (
   <mark data-missing={field}>[Dato mancante: {label}]</mark>
@@ -25,6 +25,7 @@ export default function Page({ company: c }: { company: Company }) {
             {addressLine(c)}, telefono {c.phone}, e-mail {c.email}.
           </li>
           <li>La lingua del contratto è il tedesco. Le traduzioni servono solo alla comprensione.</li>
+        <li>Le presenti CGV si applicano solo ai consumatori. Saloni, parrucchieri e altri professionisti ricevono su richiesta un'offerta individuale a condizioni separate.</li>
         </ol>
       </section>
 
@@ -84,6 +85,7 @@ export default function Page({ company: c }: { company: Company }) {
               {c.payments.paypal ? (
                 <li><strong>PayPal:</strong> dopo la conferma d'ordine riceve una richiesta di pagamento PayPal. Paghi entro 7 giorni. Si applicano inoltre le condizioni di PayPal. Spediamo dopo il ricevimento del pagamento.</li>
               ) : null}
+              {c.payments.paypalInstallments ? <li><strong>Pagamento rateale tramite PayPal:</strong> se PayPal Le offre questa opzione, può pagare a rate previa verifica del merito creditizio da parte di PayPal. Il credito è concluso direttamente con PayPal in qualità di finanziatore; si applicano le sue condizioni e informazioni precontrattuali. Noi non concediamo credito. Il Suo contratto di vendita con noi non ne è influenzato.</li> : null}
               {c.payments.bankTransfer ? (
                 <li><strong>Fattura (bonifico dopo la consegna):</strong> l'importo va bonificato senza detrazioni entro 14 giorni dal ricevimento della merce. Possiamo rifiutare questo metodo in singoli casi, in particolare per importi elevati o spedizioni all'estero, e proporLe un altro metodo disponibile.</li>
               ) : null}
@@ -100,7 +102,7 @@ export default function Page({ company: c }: { company: Company }) {
             {others.length > 0 ? <> e nei seguenti paesi: {countryNames(others, "it")}</> : null}. Le
             consegne verso altri paesi sono possibili previo accordo. La spedizione è effettuata da {carrier}.
           </li>
-          <li>Consegniamo gli articoli disponibili al corriere entro {processingDaysOf(c)} giorni lavorativi. Con pagamento anticipato o PayPal il termine decorre dal giorno successivo al ricevimento del pagamento, altrimenti dal giorno successivo alla conclusione del contratto. Si aggiunge il tempo di trasporto. Indichiamo il tempo di consegna previsto nella pagina del prodotto e nel riepilogo dell'ordine.</li>
+          <li>Tempi di consegna degli articoli disponibili in Germania: {deliveryDaysOf(c)} giorni. Con pagamento anticipato o PayPal il termine decorre dal giorno successivo al ricevimento del pagamento, altrimenti dal giorno successivo alla conclusione del contratto. I tempi per le spedizioni all'estero Le vengono comunicati prima della conclusione del contratto.</li>
           <li>Realizziamo i pezzi su misura in circa {madeToOrderDaysOf(c)} giorni, una volta ricevuti tutti i dati necessari e – con pagamento anticipato o PayPal – il pagamento. Le comunichiamo la data di spedizione prevista.</li>
           <li>Se la merce arriva con danni di trasporto visibili, La preghiamo di contestarli al corriere e di informarci brevemente. I Suoi diritti di legge restano invariati; la segnalazione ci aiuta a far valere i nostri diritti nei confronti del corriere.</li>
         </ol>

@@ -47,7 +47,7 @@ export default function Page({ company: c }: { company: Company }) {
         <h3 id="ausschluss">Uitsluiting of vroegtijdig vervallen van het herroepingsrecht</h3>
         <p>Er bestaat geen herroepingsrecht bij overeenkomsten</p>
         <ul>
-          <li>voor de levering van niet-geprefabriceerde goederen die volgens specificaties van de consument zijn vervaardigd of duidelijk voor een specifieke persoon bestemd zijn. Bij ons betreft dit alle producten die als maatwerk zijn gemarkeerd, bijvoorbeeld de op maat gemaakte haarprothese.</li>
+          <li>voor de levering van niet-geprefabriceerde goederen die volgens specificaties van de consument zijn vervaardigd of duidelijk voor een specifieke persoon bestemd zijn. Bij ons betreft dit alle producten die als maatwerk zijn gemarkeerd, bijvoorbeeld de op maat gemaakte haarprothese. Hetzelfde geldt voor extensions die wij volgens uw wensen verven, op maat knippen of vervaardigen.</li>
         </ul>
         <p>Het herroepingsrecht vervalt vroegtijdig bij overeenkomsten</p>
         <ul>

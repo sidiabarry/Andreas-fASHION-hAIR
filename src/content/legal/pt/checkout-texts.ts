@@ -1,7 +1,7 @@
-import { type Company, euro, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, euro, deliveryDaysOf, shippingOf } from "../company-type";
 
 /** Tradução portuguesa de ../checkout-texts.ts (mesmas chaves e marcadores). Apenas a versão alemã é vinculativa. */
-function build(smallBusiness: boolean | null, domesticCents: number, freeFromCents: number | null, euCents: number | null, processing: string) {
+function build(smallBusiness: boolean | null, domesticCents: number, freeFromCents: number | null, euCents: number | null, delivery: string) {
   const eur = (n: number) => euro(n, "pt-PT");
   const vatNote =
     smallBusiness === true
@@ -29,7 +29,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
     summaryNotes: [
       vatNote,
       shipNote,
-      `Prazo de entrega: entregamos as peças em stock à DHL em ${processing} dias úteis (pagamento antecipado/PayPal: a partir da receção do pagamento), mais o tempo de transporte. Peças por medida: ver página do produto.`,
+      `Prazo de entrega: peças em stock na Alemanha ${delivery} dias (pagamento antecipado/PayPal: a partir da receção do pagamento); estrangeiro: indicado antes da celebração do contrato. Peças por medida: ver página do produto.`,
       "Muitas peças são únicas. Verificamos pessoalmente a disponibilidade; o contrato só é celebrado com a nossa confirmação da encomenda por e-mail. Só paga depois.",
       "As peças feitas por medida estão excluídas do direito de livre resolução.",
     ],
@@ -127,6 +127,8 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
         ].join("\n"),
       },
     },
+    /** Hinweis für Salons/Unternehmer (B2B): Shop richtet sich an Verbraucher. */
+    b2bNotice: "Encomenda como salão, cabeleireiro ou outra empresa? A nossa loja destina-se a consumidores. Envie-nos um pedido – receberá uma proposta individual.",
     healthDataNotice:
       "Por favor, não indique aqui dados sobre a sua saúde (por exemplo, doenças ou tratamentos). Não precisamos deles para o aconselhamento nem para o fabrico.",
   };
@@ -136,7 +138,7 @@ export type CheckoutTexts = ReturnType<typeof build>;
 
 export function checkoutTextsFor(c: Company): CheckoutTexts {
   const s = shippingOf(c);
-  return build(c.smallBusiness, s.domesticCents, s.freeFromCents, s.euCents, processingDaysOf(c));
+  return build(c.smallBusiness, s.domesticCents, s.freeFromCents, s.euCents, deliveryDaysOf(c));
 }
 
-export const checkoutTexts: CheckoutTexts = build(true, 600, 15000, 1500, "3–5");
+export const checkoutTexts: CheckoutTexts = build(true, 600, 15000, 1500, "2–5");

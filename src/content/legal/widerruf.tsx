@@ -88,8 +88,7 @@ export default function Page({ company: c }: { company: Company }) {
             individuelle Auswahl oder Bestimmung durch den Verbraucher maßgeblich ist oder die
             eindeutig auf die persönlichen Bedürfnisse des Verbrauchers zugeschnitten sind. Das
             betrifft bei uns alle als Maßanfertigung gekennzeichneten Produkte, zum Beispiel die
-            maßgefertigte Haarprothese.
-          </li>
+            maßgefertigte Haarprothese. Gleiches gilt für Extensions, die wir nach Ihren Vorgaben färben, zuschneiden oder anfertigen.</li>
         </ul>
         <p>Das Widerrufsrecht erlischt vorzeitig bei Verträgen</p>
         <ul>

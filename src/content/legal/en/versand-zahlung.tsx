@@ -1,4 +1,4 @@
-import { type Company, anyPayment, countryNames, euro, madeToOrderDaysOf, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, anyPayment, countryNames, euro, madeToOrderDaysOf, deliveryDaysOf, shippingOf } from "../company-type";
 
 const Missing = ({ field, label }: { field: string; label: string }) => (
   <mark data-missing={field}>[Missing: {label}]</mark>
@@ -52,11 +52,7 @@ export default function Page({ company: c }: { company: Company }) {
             We ship with {carrier}, discreetly packed and with tracking. Delivery countries: Germany
             {others.length > 0 ? <>, {countryNames(others, "en")}</> : null}; other countries by arrangement.
           </li>
-          <li>
-            We hand over pieces in stock to the carrier within {processingDaysOf(c)} working days –
-            for advance payment and PayPal from the day after receipt of payment, otherwise from the
-            day after conclusion of the contract. The transit time of the parcel is added.
-          </li>
+          <li>Pieces in stock reach you within Germany in {deliveryDaysOf(c)} days – for advance payment and PayPal from the day after receipt of payment, otherwise from the day after conclusion of the contract. We will tell you the delivery time abroad before the contract is concluded.</li>
           <li>
             We produce custom-made pieces in about {madeToOrderDaysOf(c)} days once all details and –
             for advance payment or PayPal – payment have been received.
@@ -100,6 +96,7 @@ export default function Page({ company: c }: { company: Company }) {
                 ; payable within 7 days. Shipping after receipt of payment.
               </li>
             ) : null}
+            {c.payments.paypalInstallments ? <li><strong>PayPal instalments</strong> – if PayPal offers them to you; the lender is PayPal, subject to its credit check and terms. We do not grant credit ourselves.</li> : null}
             {c.payments.bankTransfer ? (
               <li>
                 <strong>Invoice</strong> – bank transfer within 14 days of receiving the goods. We

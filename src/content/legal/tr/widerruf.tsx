@@ -47,7 +47,7 @@ export default function Page({ company: c }: { company: Company }) {
         <h3 id="ausschluss">Cayma hakkının bulunmaması veya erken sona ermesi</h3>
         <p>Şu sözleşmelerde cayma hakkı yoktur:</p>
         <ul>
-          <li>önceden üretilmemiş olan ve üretimi için tüketicinin bireysel seçimi veya belirlemesi belirleyici olan ya da açıkça tüketicinin kişisel ihtiyaçlarına göre hazırlanan malların teslimine ilişkin sözleşmeler. Bizde bu, ölçüye göre üretim olarak işaretlenen tüm ürünleri kapsar; örneğin ölçüye göre üretilen saç protezi.</li>
+          <li>önceden üretilmemiş olan ve üretimi için tüketicinin bireysel seçimi veya belirlemesi belirleyici olan ya da açıkça tüketicinin kişisel ihtiyaçlarına göre hazırlanan malların teslimine ilişkin sözleşmeler. Bizde bu, ölçüye göre üretim olarak işaretlenen tüm ürünleri kapsar; örneğin ölçüye göre üretilen saç protezi. Aynı durum, isteğinize göre boyadığımız, kestiğimiz veya ürettiğimiz saç uzatma ürünleri (extensions) için de geçerlidir.</li>
         </ul>
         <p>Şu sözleşmelerde cayma hakkı erken sona erer:</p>
         <ul>

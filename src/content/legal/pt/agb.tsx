@@ -1,4 +1,4 @@
-import { type Company, UNIVERSAL_ADR, addressLine, anyPayment, countryNames, euro, madeToOrderDaysOf, processingDaysOf, shippingOf } from "../company-type";
+import { type Company, UNIVERSAL_ADR, addressLine, anyPayment, countryNames, euro, madeToOrderDaysOf, deliveryDaysOf, shippingOf } from "../company-type";
 
 const Missing = ({ field, label }: { field: string; label: string }) => (
   <mark data-missing={field}>[Dado em falta: {label}]</mark>
@@ -25,6 +25,7 @@ export default function Page({ company: c }: { company: Company }) {
             {addressLine(c)}, telefone {c.phone}, e-mail {c.email}.
           </li>
           <li>A língua do contrato é o alemão. As traduções servem apenas para compreensão.</li>
+        <li>Estes TCG aplicam-se apenas a consumidores. Salões, cabeleireiros e outras empresas recebem, a pedido, uma proposta individual em condições próprias.</li>
         </ol>
       </section>
 
@@ -84,6 +85,7 @@ export default function Page({ company: c }: { company: Company }) {
               {c.payments.paypal ? (
                 <li><strong>PayPal:</strong> após a confirmação da encomenda recebe um pedido de pagamento PayPal. Pague no prazo de 7 dias. Aplicam-se também as condições da PayPal. Envio após a receção do pagamento.</li>
               ) : null}
+              {c.payments.paypalInstallments ? <li><strong>Pagamento em prestações via PayPal:</strong> se a PayPal lhe oferecer esta opção, pode pagar em prestações após uma verificação de solvabilidade pela PayPal. Celebra o crédito diretamente com a PayPal como mutuante; aplicam-se as suas condições e informações pré-contratuais. Nós não concedemos crédito. O seu contrato de compra e venda connosco não é afetado.</li> : null}
               {c.payments.bankTransfer ? (
                 <li><strong>Fatura (transferência após a receção):</strong> o montante deve ser transferido sem desconto no prazo de 14 dias após a receção da mercadoria. Podemos recusar este meio em casos concretos, em especial para montantes elevados ou entregas no estrangeiro, e propor-lhe outro meio disponível.</li>
               ) : null}
@@ -100,7 +102,7 @@ export default function Page({ company: c }: { company: Company }) {
             {others.length > 0 ? <> e nos seguintes países: {countryNames(others, "pt")}</> : null}. As
             entregas para outros países são possíveis mediante acordo prévio. O envio é feito pela {carrier}.
           </li>
-          <li>Entregamos os artigos em stock à transportadora no prazo de {processingDaysOf(c)} dias úteis. Com pagamento antecipado ou PayPal, o prazo começa no dia seguinte à receção do pagamento; nos restantes casos, no dia seguinte à celebração do contrato. Acresce o tempo de transporte. Indicamos o prazo de entrega previsto na página do produto e no resumo da encomenda.</li>
+          <li>Prazo de entrega de artigos em stock na Alemanha: {deliveryDaysOf(c)} dias. Com pagamento antecipado ou PayPal, o prazo começa no dia seguinte à receção do pagamento; nos restantes casos, no dia seguinte à celebração do contrato. O prazo para envios para o estrangeiro é-lhe comunicado antes da celebração do contrato.</li>
           <li>Fabricamos as peças por medida em cerca de {madeToOrderDaysOf(c)} dias, depois de recebermos todos os dados necessários e – com pagamento antecipado ou PayPal – o pagamento. Comunicamos-lhe a data de envio prevista.</li>
           <li>Se a mercadoria chegar com danos de transporte visíveis, reclame junto do estafeta e informe-nos brevemente. Os seus direitos legais mantêm-se; a sua comunicação ajuda-nos a reclamar junto da transportadora.</li>
         </ol>
