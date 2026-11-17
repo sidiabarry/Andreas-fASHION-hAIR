@@ -45,26 +45,19 @@
   },
   "hero": {
     "chapters": "Kapitel des Films",
-    "filmAlt": "Ein Film ohne Ton begleitet das Scrollen: Glut steigt in der Dunkelheit auf, öffnet sich zu Phönixflügeln aus Licht und wird zu echtem, honigfarbenem Haar auf einer hellen Kopfform. Die Kamera kommt am Scheitel zur Ruhe.",
-    "scene1": {
-      "label": "Neubeginn",
-      "kicker": "Andrea's Fashion Hair",
-      "title": "Wie neu geboren.",
-      "body": "Echthaar, Haar für Haar von Hand gearbeitet. Für den Morgen, an dem Sie sich im Spiegel wiedererkennen."
-    },
-    "scene2": {
-      "label": "Identität",
-      "title": "Es ist nicht nur Haar.",
-      "body": "Es ist, wer Sie sind. Wer sein Haar verliert, verliert ein Stück Sicherheit. Der Phönix in unserem Zeichen steht für den Tag, an dem sie zurückkommt."
-    },
-    "scene3": {
-      "label": "Unsichtbar",
-      "title": "Niemand sieht einen Übergang.",
-      "body": "Hauchdünne Nano-Skin-Basis, jedes Haar einzeln injiziert, freier Scheitel. Sie spüren Ihr Stück kaum. Andere sehen es gar nicht.",
-      "tag1": "100 % Echthaar",
-      "tag2": "Freier Scheitel",
-      "tag3": "In Sekunden aufgesetzt"
-    },
+    "filmAlt": "Stummer Film: Glut steigt im Dunkeln auf, öffnet sich zu Phönixflügeln aus Licht und wird zu honigfarbenem Haar.",
+    "kicker": "HaarManufaktur · Iserlohn",
+    "line1": "Wie neu *geboren.*",
+    "line2": "Mehr Länge. *Mehr Fülle.*",
+    "line3": "Und niemand sieht *den Übergang.*",
+    "lead": "Brasilianisches Echthaar, von Hand gefertigt in Iserlohn: Extensions, Topper und Perücken, abgestimmt auf Ihre Haarfarbe und Ihre Struktur.",
+    "ember": "Glut",
+    "light": "Licht",
+    "hair": "Haar",
+    "pause": "Bewegung pausieren",
+    "play": "Bewegung fortsetzen",
+    "replay": "Noch einmal ansehen",
+    "ctaConsultVia": "per WhatsApp",
     "ctaCollection": "Kollektion ansehen",
     "ctaConsult": "Persönlich beraten lassen",
     "ctaFind": "Mein Stück finden"
@@ -133,7 +126,14 @@
     "faq6A": "Ja. Länge, Farbe, Dichte und Basis werden auf Sie abgestimmt. Beschreiben Sie Andrea, was Sie sich wünschen, und sie meldet sich mit einem Vorschlag.",
     "closeTitle": "Der Spiegel wartet.",
     "closeLead": "Ihr Stück ist vielleicht schon fertig. Sehen Sie nach, bevor es jemand anderes trägt.",
-    "closeImageAlt": "Eine Frau vor dem Atelierspiegel, die ihr Haar berührt"
+    "closeImageAlt": "Eine Frau vor dem Atelierspiegel, die ihr Haar berührt",
+    "ribbon": {
+      "label": "Auf einen Blick",
+      "hair": "Brasilianisches Echthaar",
+      "atelier": "Von Hand gefertigt in Iserlohn",
+      "unique": "Jedes Haarteil ein Unikat",
+      "consultation": "Persönliche Beratung"
+    }
   },
   "categories": {
     "topper": {

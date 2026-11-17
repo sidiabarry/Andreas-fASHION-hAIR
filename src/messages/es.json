@@ -44,27 +44,20 @@
     "current": "Idioma actual: {language}"
   },
   "hero": {
-    "chapters": "Capítulos de la película",
-    "filmAlt": "Una película sin sonido acompaña la página: brasas que se elevan en la oscuridad, se abren en alas de fénix hechas de luz y se convierten en cabello real color miel sobre una cabeza de exposición clara. La cámara se detiene en la raya.",
-    "scene1": {
-      "label": "Nuevo comienzo",
-      "kicker": "Andrea's Fashion Hair",
-      "title": "Como volver a nacer.",
-      "body": "Cabello natural, trabajado a mano, pelo a pelo. Para la mañana en que vuelve a reconocerse en el espejo."
-    },
-    "scene2": {
-      "label": "Identidad",
-      "title": "No es solo cabello.",
-      "body": "Es quien usted es. Quien pierde el cabello pierde un poco de seguridad. El fénix de nuestro emblema representa el día en que vuelve."
-    },
-    "scene3": {
-      "label": "Invisible",
-      "title": "Nadie ve una transición.",
-      "body": "Base nano skin finísima, cada pelo implantado uno a uno, raya libre. Apenas siente su pieza. Los demás no la ven en absoluto.",
-      "tag1": "100 % cabello natural",
-      "tag2": "Raya libre",
-      "tag3": "Colocado en segundos"
-    },
+    "chapters": "Capítulos del vídeo",
+    "filmAlt": "Vídeo sin sonido: las brasas se elevan en la oscuridad, dibujan las alas luminosas de un fénix y se convierten en cabello color miel.",
+    "kicker": "HaarManufaktur · Iserlohn",
+    "line1": "Como volver a *nacer.*",
+    "line2": "Más longitud. *Más volumen.*",
+    "line3": "Un acabado *imperceptible.*",
+    "lead": "Cabello natural brasileño trabajado a mano en Iserlohn: extensiones, toppers y pelucas adaptados a su color y textura.",
+    "ember": "Brasas",
+    "light": "Luz",
+    "hair": "Cabello",
+    "pause": "Pausar animaciones",
+    "play": "Reanudar animaciones",
+    "replay": "Volver a ver",
+    "ctaConsultVia": "por WhatsApp",
     "ctaCollection": "Ver la colección",
     "ctaConsult": "Pedir asesoramiento personal",
     "ctaFind": "Encontrar mi pieza"
@@ -133,7 +126,14 @@
     "faq6A": "Sí. Largo, color, densidad y base se adaptan a usted. Describa a Andrea lo que desea y ella le responderá con una propuesta.",
     "closeTitle": "El espejo le espera.",
     "closeLead": "Quizá su pieza ya esté terminada. Mírela antes de que la lleve otra persona.",
-    "closeImageAlt": "Una mujer ante el espejo del taller, tocándose el cabello"
+    "closeImageAlt": "Una mujer ante el espejo del taller, tocándose el cabello",
+    "ribbon": {
+      "label": "De un vistazo",
+      "hair": "Cabello natural brasileño",
+      "atelier": "Hecho a mano en Iserlohn",
+      "unique": "Cada pieza es única",
+      "consultation": "Asesoramiento personalizado"
+    }
   },
   "categories": {
     "topper": {

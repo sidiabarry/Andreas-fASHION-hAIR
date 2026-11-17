@@ -45,26 +45,19 @@
   },
   "hero": {
     "chapters": "Chapitres du film",
-    "filmAlt": "Un film muet accompagne la page : des braises s'élèvent dans l'obscurité, s'ouvrent en ailes de phénix faites de lumière et deviennent de vrais cheveux couleur miel sur une tête de présentation claire. La caméra s'arrête sur la raie.",
-    "scene1": {
-      "label": "Renouveau",
-      "kicker": "Andrea's Fashion Hair",
-      "title": "Comme une renaissance.",
-      "body": "Des cheveux naturels, travaillés à la main, cheveu par cheveu. Pour le matin où vous vous reconnaissez à nouveau dans le miroir."
-    },
-    "scene2": {
-      "label": "Identité",
-      "title": "Ce ne sont pas que des cheveux.",
-      "body": "C'est qui vous êtes. Perdre ses cheveux, c'est perdre une part d'assurance. Le phénix de notre emblème représente le jour où elle revient."
-    },
-    "scene3": {
-      "label": "Invisible",
-      "title": "Personne ne voit de transition.",
-      "body": "Base nano skin ultrafine, chaque cheveu implanté un à un, raie libre. Vous sentez à peine votre pièce. Les autres ne la voient pas du tout.",
-      "tag1": "100 % cheveux naturels",
-      "tag2": "Raie libre",
-      "tag3": "Posé en quelques secondes"
-    },
+    "filmAlt": "Film muet : des braises montent dans le noir, dessinent les ailes lumineuses d’un phénix, puis se changent en cheveux couleur miel.",
+    "kicker": "HaarManufaktur · Iserlohn",
+    "line1": "Comme une *renaissance.*",
+    "line2": "Plus de longueur. *Plus de volume.*",
+    "line3": "Un résultat *imperceptible.*",
+    "lead": "Des cheveux naturels brésiliens travaillés à la main à Iserlohn : extensions, volumateurs et perruques adaptés à votre couleur et à votre texture.",
+    "ember": "Braises",
+    "light": "Lumière",
+    "hair": "Cheveux",
+    "pause": "Mettre les animations en pause",
+    "play": "Reprendre les animations",
+    "replay": "Revoir le film",
+    "ctaConsultVia": "sur WhatsApp",
     "ctaCollection": "Voir la collection",
     "ctaConsult": "Demander un conseil personnel",
     "ctaFind": "Trouver ma pièce"
@@ -133,7 +126,14 @@
     "faq6A": "Oui. Longueur, couleur, densité et base sont adaptées à vous. Décrivez à Andrea ce que vous souhaitez, elle revient vers vous avec une proposition.",
     "closeTitle": "Le miroir vous attend.",
     "closeLead": "Votre pièce est peut-être déjà prête. Regardez avant que quelqu'un d'autre ne la porte.",
-    "closeImageAlt": "Une femme devant le miroir de l'atelier, qui touche ses cheveux"
+    "closeImageAlt": "Une femme devant le miroir de l'atelier, qui touche ses cheveux",
+    "ribbon": {
+      "label": "En bref",
+      "hair": "Cheveux naturels brésiliens",
+      "atelier": "Fabrication à la main à Iserlohn",
+      "unique": "Chaque complément capillaire est unique",
+      "consultation": "Conseils personnalisés"
+    }
   },
   "categories": {
     "topper": {

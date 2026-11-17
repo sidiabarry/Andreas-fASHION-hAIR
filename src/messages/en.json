@@ -45,26 +45,19 @@
   },
   "hero": {
     "chapters": "Film chapters",
-    "filmAlt": "A silent film accompanies scrolling: embers rise in the dark, open into phoenix wings made of light and become real, honey-coloured hair on a pale head form. The camera comes to rest on the parting.",
-    "scene1": {
-      "label": "New beginning",
-      "kicker": "Andrea's Fashion Hair",
-      "title": "Reborn.",
-      "body": "Human hair, worked by hand, hair by hair. For the morning you recognise yourself in the mirror again."
-    },
-    "scene2": {
-      "label": "Identity",
-      "title": "It is not just hair.",
-      "body": "It is who you are. Losing your hair means losing a piece of confidence. The phoenix in our emblem stands for the day it comes back."
-    },
-    "scene3": {
-      "label": "Invisible",
-      "title": "No one sees a transition.",
-      "body": "Wafer-thin nano skin base, every hair injected individually, free parting. You barely feel your piece. Others do not see it at all.",
-      "tag1": "100 % human hair",
-      "tag2": "Free parting",
-      "tag3": "On in seconds"
-    },
+    "filmAlt": "Silent film: embers rise in the dark, open into phoenix wings of light and become honey-coloured hair.",
+    "kicker": "HaarManufaktur · Iserlohn",
+    "line1": "As if *reborn.*",
+    "line2": "More length. *More volume.*",
+    "line3": "And no one sees *where it begins.*",
+    "lead": "Brazilian human hair, handmade in Iserlohn, Germany: extensions, toppers and wigs, matched to your hair colour and texture.",
+    "ember": "Embers",
+    "light": "Light",
+    "hair": "Hair",
+    "pause": "Pause motion",
+    "play": "Resume motion",
+    "replay": "Watch again",
+    "ctaConsultVia": "via WhatsApp",
     "ctaCollection": "View the collection",
     "ctaConsult": "Get personal advice",
     "ctaFind": "Find my piece"
@@ -133,7 +126,14 @@
     "faq6A": "Yes. Length, colour, density and base are matched to you. Describe to Andrea what you would like, and she will get back to you with a proposal.",
     "closeTitle": "The mirror is waiting.",
     "closeLead": "Your piece may already be finished. Take a look before someone else wears it.",
-    "closeImageAlt": "A woman in front of the atelier mirror, touching her hair"
+    "closeImageAlt": "A woman in front of the atelier mirror, touching her hair",
+    "ribbon": {
+      "label": "At a glance",
+      "hair": "Brazilian human hair",
+      "atelier": "Handmade in Iserlohn",
+      "unique": "Every hairpiece is one of a kind",
+      "consultation": "Personal advice"
+    }
   },
   "categories": {
     "topper": {

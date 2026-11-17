@@ -305,6 +305,11 @@ async function motion() {
   const media = [];
   page.on("request", (r) => r.url().endsWith(".mp4") && media.push(r.url()));
   await page.goto(`${BASE}/de`, { waitUntil: "networkidle" });
+  const poster = page.locator(".hero__poster[data-on='true'] img");
+  check(await poster.isVisible(), "Hero zeigt ein Standbild");
+  if (await poster.count()) {
+    check(await poster.evaluate((img) => img.decode().then(() => true, () => false)), "Standbild lässt sich laden");
+  }
   for (let i = 0; i < 8; i++) {
     await page.mouse.wheel(0, 900);
     await page.waitForTimeout(150);
@@ -313,6 +318,7 @@ async function motion() {
   check(media.length === 0, `keine Videos bei prefers-reduced-motion (${media.length})`);
   check((await page.locator("video").count()) === 0, "kein <video> im DOM");
   check(await page.locator("main img").first().isVisible(), "Standbild sichtbar");
+  check(await page.locator(".hero__ctrl").count() === 0, "keine Bewegungsschalter im reduzierten Modus");
   await browser.close();
 }
 

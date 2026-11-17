@@ -1,13 +1,15 @@
-import Image from "next/image";
+import Image, { getImageProps } from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 
 import { Arrow } from "@/components/Arrow";
+import { FieldMount } from "@/components/fx/FieldMount";
 import { Finder } from "@/components/home/Finder";
+import { Hero } from "@/components/home/Hero";
+import { Ribbon } from "@/components/home/scenes/Ribbon";
 import { JsonLd } from "@/components/JsonLd";
 import { Logo } from "@/components/Logo";
 import { ProductCard } from "@/components/product/ProductCard";
-import { HeroPlaceholder } from "@/components/home/HeroPlaceholder";
 import { company } from "@/config/company";
 import { byCategory, CATEGORY_IDS, featured, INQUIRY_ONLY_CATEGORIES } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
@@ -16,6 +18,8 @@ import { organizationJsonLd } from "@/lib/jsonld";
 import { pageMetadata } from "@/lib/seo";
 import { soldSlugs } from "@/server/sold";
 
+import "@/styles/home.css";
+
 export async function generateMetadata({ params }: PageProps<"/[locale]">): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
@@ -23,6 +27,23 @@ export async function generateMetadata({ params }: PageProps<"/[locale]">): Prom
 }
 
 const methods = ["Butterfly Weft", "Genius Weft", "Invisible Tape", "Tape-In", "Keratin Bondings", "Clip-In"];
+
+const chapters = ["01", "02", "03"].map((chapter, index) => {
+  const base = `/assets/world/scene-${chapter}`;
+  const common = { alt: "", sizes: "100vw" };
+  const img = getImageProps({
+    ...common,
+    fetchPriority: index === 0 ? "high" : "low",
+    height: 1080,
+    src: `${base}-poster.jpg`,
+    width: 1920,
+  }).props;
+  const mobile = getImageProps({ ...common, height: 720, src: `${base}-mobile-poster.jpg`, width: 1280 }).props;
+  return {
+    poster: { img, mobileSrcSet: mobile.srcSet ?? mobile.src },
+    video: { desktop: `${base}.mp4`, mobile: `${base}-mobile.mp4` },
+  };
+});
 
 export default async function Home({ params }: PageProps<"/[locale]">) {
   const { locale: raw } = await params;
@@ -78,12 +99,30 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
     <main>
       <JsonLd data={organizationJsonLd(locale)} />
       <JsonLd data={faqJson} />
-      <HeroPlaceholder
-        body={t("hero.scene1.body")}
-        kicker={t("hero.scene1.kicker")}
-        primary={t("hero.ctaCollection")}
-        secondary={t("hero.ctaConsult")}
-        title={t("hero.scene1.title")}
+      <FieldMount />
+      <Hero
+        posters={chapters.map(({ poster }) => poster)}
+        videos={chapters.map(({ video }) => video)}
+        texts={{
+          chapters: t("hero.chapters"),
+          ctaCollection: t("hero.ctaCollection"),
+          ctaConsult: t("hero.ctaConsult"),
+          ctaConsultVia: t("hero.ctaConsultVia"),
+          filmAlt: t("hero.filmAlt"),
+          kicker: t("hero.kicker"),
+          labels: [t("hero.ember"), t("hero.light"), t("hero.hair")],
+          lead: t("hero.lead"),
+          lines: [t("hero.line1"), t("hero.line2"), t("hero.line3")],
+          pause: t("hero.pause"),
+          play: t("hero.play"),
+          replay: t("hero.replay"),
+          whatsappNote: t("common.newTab"),
+        }}
+        whatsapp={company.social.whatsapp}
+      />
+      <Ribbon
+        items={[t("home.ribbon.hair"), t("home.ribbon.atelier"), t("home.ribbon.unique"), t("home.ribbon.consultation")]}
+        label={t("home.ribbon.label")}
       />
 
       <section aria-label={t("home.factsLabel")} className="af-section--tight">
