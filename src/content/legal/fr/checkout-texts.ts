@@ -29,7 +29,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
     summaryNotes: [
       vatNote,
       shipNote,
-      `Délai de livraison : pièces en stock en Allemagne ${delivery} jours (paiement anticipé/PayPal : à compter de la réception du paiement) ; étranger : indiqué avant la conclusion du contrat. Pièces sur mesure : voir la page produit.`,
+      `Délai de livraison : pièces en stock en Allemagne ${delivery} jours ouvrables (paiement anticipé/PayPal : à compter de la réception du paiement) ; étranger : indiqué avant la conclusion du contrat. Pièces sur mesure : voir la page produit.`,
       "De nombreuses pièces sont uniques. Nous vérifions personnellement la disponibilité ; le contrat n'est conclu qu'avec notre confirmation de commande par e-mail. Vous ne payez qu'ensuite.",
       "Les pièces fabriquées sur mesure sont exclues du droit de rétractation.",
     ],

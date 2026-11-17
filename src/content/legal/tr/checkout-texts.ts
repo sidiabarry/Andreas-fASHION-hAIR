@@ -29,7 +29,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
     summaryNotes: [
       vatNote,
       shipNote,
-      `Teslimat süresi: stoktaki ürünler Almanya içinde ${delivery} gün (ön ödeme/PayPal: ödemenin alınmasından itibaren); yurt dışı: sözleşme öncesinde bildirilir. Ölçüye göre ürünler: ürün sayfasına bakın.`,
+      `Teslimat süresi: stoktaki ürünler Almanya içinde ${delivery} iş günü (ön ödeme/PayPal: ödemenin alınmasından itibaren); yurt dışı: sözleşme öncesinde bildirilir. Ölçüye göre ürünler: ürün sayfasına bakın.`,
       "Ürünlerin birçoğu tektir. Stok durumunu kişisel olarak kontrol ederiz; sözleşme ancak e-posta ile göndereceğimiz sipariş onayıyla kurulur. Ödemeyi ondan sonra yaparsınız.",
       "Ölçüye göre üretilen ürünlerde cayma hakkı yoktur.",
     ],

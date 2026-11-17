@@ -29,7 +29,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
     summaryNotes: [
       vatNote,
       shipNote,
-      `Prazo de entrega: peças em stock na Alemanha ${delivery} dias (pagamento antecipado/PayPal: a partir da receção do pagamento); estrangeiro: indicado antes da celebração do contrato. Peças por medida: ver página do produto.`,
+      `Prazo de entrega: peças em stock na Alemanha ${delivery} dias úteis (pagamento antecipado/PayPal: a partir da receção do pagamento); estrangeiro: indicado antes da celebração do contrato. Peças por medida: ver página do produto.`,
       "Muitas peças são únicas. Verificamos pessoalmente a disponibilidade; o contrato só é celebrado com a nossa confirmação da encomenda por e-mail. Só paga depois.",
       "As peças feitas por medida estão excluídas do direito de livre resolução.",
     ],

@@ -102,8 +102,8 @@ export default function Page({ company: c }: { company: Company }) {
             {others.length > 0 ? <> oraz do następujących krajów: {countryNames(others, "pl")}</> : null}. Dostawy
             do innych krajów są możliwe po wcześniejszym uzgodnieniu. Wysyłkę realizuje {carrier}.
           </li>
-          <li>Czas dostawy produktów z magazynu na terenie Niemiec: {deliveryDaysOf(c)} dni. Przy przedpłacie lub PayPal termin biegnie od dnia następującego po otrzymaniu płatności, w pozostałych przypadkach od dnia następującego po zawarciu umowy. Czas dostawy za granicę podajemy przed zawarciem umowy.</li>
-          <li>Produkty na wymiar wykonujemy w ciągu ok. {madeToOrderDaysOf(c)} dni od otrzymania wszystkich niezbędnych danych oraz – przy przedpłacie lub PayPal – płatności. Informujemy o przewidywanej dacie wysyłki.</li>
+          <li>Czas dostawy produktów z magazynu na terenie Niemiec: {deliveryDaysOf(c)} dni roboczych. Przy przedpłacie lub PayPal termin biegnie od dnia następującego po otrzymaniu płatności, w pozostałych przypadkach od dnia następującego po zawarciu umowy. Czas dostawy za granicę podajemy przed zawarciem umowy.</li>
+          <li>Produkty na wymiar wykonujemy w ciągu ok. {madeToOrderDaysOf(c)} dni roboczych od otrzymania wszystkich niezbędnych danych oraz – przy przedpłacie lub PayPal – płatności. Informujemy o przewidywanej dacie wysyłki.</li>
           <li>Jeżeli towar dotrze z widocznymi uszkodzeniami transportowymi, prosimy zgłosić to doręczycielowi i krótko nas poinformować. Państwa ustawowe prawa pozostają nienaruszone; zgłoszenie pomaga nam dochodzić roszczeń wobec przewoźnika.</li>
         </ol>
       </section>

@@ -52,8 +52,8 @@ export default function Page({ company: c }: { company: Company }) {
             Enviamos pela {carrier}, em embalagem discreta e com seguimento. Países de entrega:
             Alemanha{others.length > 0 ? <>, {countryNames(others, "pt")}</> : null}; outros países mediante acordo.
           </li>
-          <li>As peças em stock chegam-lhe na Alemanha em {deliveryDaysOf(c)} dias – com pagamento antecipado e PayPal a partir do dia seguinte à receção do pagamento; caso contrário, a partir do dia seguinte à celebração do contrato. O prazo para o estrangeiro é indicado antes da celebração do contrato.</li>
-          <li>Fabricamos as peças por medida em cerca de {madeToOrderDaysOf(c)} dias, depois de recebermos todos os dados e – com pagamento antecipado ou PayPal – o pagamento.</li>
+          <li>As peças em stock chegam-lhe na Alemanha em {deliveryDaysOf(c)} dias úteis – com pagamento antecipado e PayPal a partir do dia seguinte à receção do pagamento; caso contrário, a partir do dia seguinte à celebração do contrato. O prazo para o estrangeiro é indicado antes da celebração do contrato.</li>
+          <li>Fabricamos as peças por medida em cerca de {madeToOrderDaysOf(c)} dias úteis, depois de recebermos todos os dados e – com pagamento antecipado ou PayPal – o pagamento.</li>
           <li>Por razões de segurança, não podemos enviar alguns produtos de cuidado, adesivos e solventes para todos os países. Indicamo-lo na página do produto.</li>
         </ul>
       </section>

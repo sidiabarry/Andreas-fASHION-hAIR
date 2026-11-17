@@ -55,7 +55,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
     summaryNotes: [
       vatNote,
       shipNote,
-      `Lieferzeit: lagernde Stücke innerhalb Deutschlands ${delivery} Tage (bei Vorkasse/PayPal ab Zahlungseingang); Ausland: Angabe vor Vertragsschluss. Maßanfertigungen: siehe Produktseite.`,
+      `Lieferzeit: lagernde Stücke innerhalb Deutschlands ${delivery} Werktage (bei Vorkasse/PayPal ab Zahlungseingang); Ausland: Angabe vor Vertragsschluss. Maßanfertigungen: siehe Produktseite.`,
       "Viele Stücke sind Einzelstücke. Wir prüfen die Verfügbarkeit persönlich; der Vertrag kommt erst mit unserer Auftragsbestätigung per E-Mail zustande. Sie zahlen erst danach.",
       "Maßanfertigungen sind vom Widerrufsrecht ausgeschlossen.",
     ],

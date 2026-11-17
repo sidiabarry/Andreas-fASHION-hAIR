@@ -102,8 +102,8 @@ export default function Page({ company: c }: { company: Company }) {
             {others.length > 0 ? <> ve şu ülkelere: {countryNames(others, "tr")}</> : null} teslimat yapıyoruz.
             Diğer ülkelere teslimat önceden anlaşma ile mümkündür. Gönderim kargo şirketi ile yapılır: {carrier}.
           </li>
-          <li>Almanya içinde stoktaki ürünler için teslimat süresi: {deliveryDaysOf(c)} gün. Ön ödeme veya PayPal'da süre ödemenin alındığı günü izleyen gün, diğer durumlarda sözleşmenin kurulduğu günü izleyen gün başlar. Yurt dışı gönderimlerin teslimat süresini sözleşme kurulmadan önce bildiririz.</li>
-          <li>Ölçüye göre ürünleri, gerekli tüm bilgiler ve – ön ödeme veya PayPal'da – ödeme bize ulaştıktan sonra yaklaşık {madeToOrderDaysOf(c)} gün içinde üretiriz. Tahmini gönderim tarihini size bildiririz.</li>
+          <li>Almanya içinde stoktaki ürünler için teslimat süresi: {deliveryDaysOf(c)} iş günü. Ön ödeme veya PayPal'da süre ödemenin alındığı günü izleyen gün, diğer durumlarda sözleşmenin kurulduğu günü izleyen gün başlar. Yurt dışı gönderimlerin teslimat süresini sözleşme kurulmadan önce bildiririz.</li>
+          <li>Ölçüye göre ürünleri, gerekli tüm bilgiler ve – ön ödeme veya PayPal'da – ödeme bize ulaştıktan sonra yaklaşık {madeToOrderDaysOf(c)} iş günü içinde üretiriz. Tahmini gönderim tarihini size bildiririz.</li>
           <li>Ürün görünür taşıma hasarıyla gelirse lütfen bunu kuryeye bildirin ve bize kısaca haber verin. Yasal haklarınız etkilenmez; bildiriminiz kargo şirketine karşı taleplerimizi ileri sürmemize yardımcı olur.</li>
         </ol>
       </section>

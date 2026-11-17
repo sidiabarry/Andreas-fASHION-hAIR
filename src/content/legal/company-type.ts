@@ -72,11 +72,11 @@ export type Company = {
   withdrawalUrl?: string | null;
   /** Versandkosten in Cent. Standard: DE 600, versandkostenfrei ab 15000, EU 1500. */
   shippingRates?: { domesticCents: number; freeFromCents: number | null; euCents: number | null };
-  /** Gesamtlieferzeit lagernder Ware bis zur Zustellung in Deutschland, in Tagen (nur Zahlen). Standard "2–5". */
+  /** Gesamtlieferzeit lagernder Ware bis zur Zustellung in Deutschland, in Werktagen (nur Zahlen). Standard "2–5". */
   deliveryDays?: string;
   /** @deprecated Nicht mehr verwendet; ersetzt durch `deliveryDays`. */
   processingDays?: string;
-  /** Fertigungszeit bei Maßanfertigung in Tagen (nur Zahlen). Standard "15–20". */
+  /** Fertigungszeit bei Maßanfertigung in Werktagen (nur Zahlen). Standard "15–20". */
   madeToOrderDays?: string;
   /** Datum, ab dem die Texte gelten (Stand-Angabe), z. B. "1. Dezember 2026". */
   effectiveDate?: string | null;

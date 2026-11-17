@@ -29,7 +29,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
     summaryNotes: [
       vatNote,
       shipNote,
-      `Levertijd: stukken op voorraad binnen Duitsland ${delivery} dagen (vooruitbetaling/PayPal: vanaf ontvangst van de betaling); buitenland: vermeld vóór het sluiten van de overeenkomst. Maatwerk: zie productpagina.`,
+      `Levertijd: stukken op voorraad binnen Duitsland ${delivery} werkdagen (vooruitbetaling/PayPal: vanaf ontvangst van de betaling); buitenland: vermeld vóór het sluiten van de overeenkomst. Maatwerk: zie productpagina.`,
       "Veel stukken zijn unica. Wij controleren de beschikbaarheid persoonlijk; de overeenkomst komt pas tot stand met onze orderbevestiging per e-mail. U betaalt pas daarna.",
       "Maatwerk is uitgesloten van het herroepingsrecht.",
     ],

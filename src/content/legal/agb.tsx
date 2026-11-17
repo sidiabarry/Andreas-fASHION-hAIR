@@ -158,9 +158,9 @@ export default function Page({ company: c }: { company: Company }) {
             . Lieferungen in andere Länder sind nach vorheriger Absprache möglich. Der Versand
             erfolgt mit {carrier}.
           </li>
-          <li>Lieferzeit für lagernde Ware innerhalb Deutschlands: {deliveryDaysOf(c)} Tage. Die Frist beginnt bei Zahlung per Vorkasse oder PayPal am Tag nach Zahlungseingang, sonst am Tag nach Vertragsschluss. Die Lieferzeit für Sendungen ins Ausland teilen wir Ihnen vor Vertragsschluss mit.</li>
+          <li>Lieferzeit für lagernde Ware innerhalb Deutschlands: {deliveryDaysOf(c)} Werktage. Die Frist beginnt bei Zahlung per Vorkasse oder PayPal am Tag nach Zahlungseingang, sonst am Tag nach Vertragsschluss. Die Lieferzeit für Sendungen ins Ausland teilen wir Ihnen vor Vertragsschluss mit.</li>
           <li>
-            Maßanfertigungen fertigen wir innerhalb von etwa {madeToOrderDaysOf(c)} Tagen, nachdem alle
+            Maßanfertigungen fertigen wir innerhalb von etwa {madeToOrderDaysOf(c)} Werktagen, nachdem alle
             für die Anfertigung nötigen Angaben bei uns vorliegen und – bei Vorkasse oder PayPal –
             die Zahlung eingegangen ist. Den voraussichtlichen Versandtag teilen wir Ihnen mit.
           </li>

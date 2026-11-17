@@ -52,8 +52,8 @@ export default function Page({ company: c }: { company: Company }) {
             Spediamo con {carrier}, in un imballaggio discreto e con tracciamento. Paesi di consegna:
             Germania{others.length > 0 ? <>, {countryNames(others, "it")}</> : null}; altri paesi previo accordo.
           </li>
-          <li>I pezzi disponibili arrivano in Germania in {deliveryDaysOf(c)} giorni – con pagamento anticipato e PayPal dal giorno successivo al ricevimento del pagamento, altrimenti dal giorno successivo alla conclusione del contratto. I tempi per l'estero Le vengono comunicati prima della conclusione del contratto.</li>
-          <li>Realizziamo i pezzi su misura in circa {madeToOrderDaysOf(c)} giorni, una volta ricevuti tutti i dati e – con pagamento anticipato o PayPal – il pagamento.</li>
+          <li>I pezzi disponibili arrivano in Germania in {deliveryDaysOf(c)} giorni lavorativi – con pagamento anticipato e PayPal dal giorno successivo al ricevimento del pagamento, altrimenti dal giorno successivo alla conclusione del contratto. I tempi per l'estero Le vengono comunicati prima della conclusione del contratto.</li>
+          <li>Realizziamo i pezzi su misura in circa {madeToOrderDaysOf(c)} giorni lavorativi, una volta ricevuti tutti i dati e – con pagamento anticipato o PayPal – il pagamento.</li>
           <li>Per motivi di sicurezza non possiamo spedire alcuni prodotti per la cura, adesivi e solventi in tutti i paesi. Lo indichiamo nella pagina del prodotto.</li>
         </ul>
       </section>

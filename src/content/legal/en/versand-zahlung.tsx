@@ -52,9 +52,9 @@ export default function Page({ company: c }: { company: Company }) {
             We ship with {carrier}, discreetly packed and with tracking. Delivery countries: Germany
             {others.length > 0 ? <>, {countryNames(others, "en")}</> : null}; other countries by arrangement.
           </li>
-          <li>Pieces in stock reach you within Germany in {deliveryDaysOf(c)} days – for advance payment and PayPal from the day after receipt of payment, otherwise from the day after conclusion of the contract. We will tell you the delivery time abroad before the contract is concluded.</li>
+          <li>Pieces in stock reach you within Germany in {deliveryDaysOf(c)} business days – for advance payment and PayPal from the day after receipt of payment, otherwise from the day after conclusion of the contract. We will tell you the delivery time abroad before the contract is concluded.</li>
           <li>
-            We produce custom-made pieces in about {madeToOrderDaysOf(c)} days once all details and –
+            We produce custom-made pieces in about {madeToOrderDaysOf(c)} business days once all details and –
             for advance payment or PayPal – payment have been received.
           </li>
           <li>For safety reasons we cannot ship some care, adhesive and solvent products to every country. We point this out on the product page.</li>
