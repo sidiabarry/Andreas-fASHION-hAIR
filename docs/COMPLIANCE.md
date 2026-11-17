@@ -1,6 +1,6 @@
 # Compliance-Grundlage – Andrea's Fashion Hair
 
-**Stand:** 17.11.2026 · **Arbeitsstand:** Deutsche Rechtstexte vollständig (`src/content/legal/*`). Übersetzungen fertig: en, fr. In Arbeit: es, pt, it, nl, pl, tr (siehe Abschnitt 9).
+**Stand:** 17.11.2026 · **Arbeitsstand:** Deutsche Rechtstexte vollständig (`src/content/legal/*`). Übersetzungen vollständig: en, fr, es, pt, it, nl, pl, tr (siehe Abschnitt 9).
 
 > **Wichtig – bitte zuerst lesen.** Die Texte sind sorgfältig nach der Rechtslage vom November 2026 erarbeitet und an den Gesetzestexten geprüft (Quellen: `docs/QUELLEN.md`). Sie sind aber **keine Rechtsberatung**. Vor dem Livegang muss eine Rechtsanwältin/ein Rechtsanwalt oder ein Rechtstexter-Dienst (z. B. Händlerbund, IT-Recht Kanzlei, Trusted Shops) die Texte und den Bestellprozess prüfen. Steuerfragen gehören zur Steuerberatung. Die Punkte unter „Von Anwalt prüfen lassen“ (Abschnitt 5) sind dabei besonders wichtig.
 
@@ -134,4 +134,8 @@ Inhaberin: **Andreia Pereira Da Costa**, Einzelunternehmen, Geschäftsbezeichnun
 
 ## 9. Übersetzungen
 
-Übersetzungen liegen unter `src/content/legal/<lang>/` mit derselben Schnittstelle und beginnen mit dem Hinweis, dass die deutsche Fassung rechtsverbindlich ist. Stand der Übersetzungen siehe Commit-Historie; nicht übersetzte Sprachen sind unten vermerkt.
+- Vollständige Komfortübersetzungen aller fünf Rechtsseiten, des Widerrufsformulars und der Checkout-Texte liegen in `src/content/legal/<lang>/` (en, fr, es, pt, it, nl, pl, tr) mit identischer Schnittstelle. Jede Seite beginnt mit dem Hinweis, dass die deutsche Fassung rechtsverbindlich ist.
+- Die Widerrufsbelehrungen und Formulare folgen dem Wortlaut des Anhangs I der Verbraucherrechte-Richtlinie 2011/83/EU in der jeweiligen Amtssprache, soweit bekannt; Fachbegriffe: EN „right of withdrawal“, FR „droit de rétractation“, ES „derecho de desistimiento“, PT „direito de livre resolução“, IT „diritto di recesso“, NL „herroepingsrecht“, PL „prawo odstąpienia od umowy“, TR „cayma hakkı“ (für Türkisch gibt es keine EU-Amtsfassung).
+- **Von Anwalt/Übersetzer prüfen lassen:** Die Übersetzungen sind sorgfältig, aber nicht von muttersprachlichen Juristen geprüft. Vor gezielter Vermarktung in einem Land die jeweilige Fassung prüfen lassen – insbesondere Widerrufsbelehrung und Button-Beschriftungen.
+- **Button-Beschriftungen in Fremdsprachen:** § 312j Abs. 3 BGB verlangt „zahlungspflichtig bestellen“ oder eine **entsprechend eindeutige** Formulierung. Für die Sprachfassungen wurden die Formulierungen der Richtlinie (Art. 8 Abs. 2 RL 2011/83/EU, z. B. „Order with obligation to pay“, „Commande avec obligation de paiement“) verwendet. Für die Widerrufsfunktion (§ 356a BGB) entsprechend „Withdraw from contract“/„Confirm withdrawal“ usw.
+- Platzhalter `{agb}`, `{widerruf}`, `{datenschutz}` in den Checkout-Texten: Die Website setzt den Link mit dem Seitentitel der jeweiligen Sprache ein; die Sätze sind darauf ausgelegt.
