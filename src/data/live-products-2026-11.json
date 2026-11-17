@@ -1,0 +1,602 @@
+[
+ {
+  "id": 421,
+  "slug": "premium-hair-human-topper-30cm",
+  "name": "Premium Hair Human Topper 30cm",
+  "price": "300",
+  "regular": "300",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 420,
+  "slug": "premium-hair-human-topper-r",
+  "name": "Premium Hair Human Topper (R)",
+  "price": "250",
+  "regular": "250",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 419,
+  "slug": "front-lace-30cm",
+  "name": "Perücke Premium Front lace 30cm",
+  "price": "450",
+  "regular": "450",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 417,
+  "slug": "perucke-front-lace-premium-hair-human",
+  "name": "Perücke Front Lace Premium Hair Human",
+  "price": "550",
+  "regular": "550",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 416,
+  "slug": "premium-hair-human-topper-40cm",
+  "name": "Premium Hair Human Topper 40cm",
+  "price": "450",
+  "regular": "450",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 415,
+  "slug": "premium-hair-human-topper-33cm",
+  "name": "Premium Hair Human Topper 33cm",
+  "price": "450",
+  "regular": "450",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 414,
+  "slug": "premium-hair-human-topper",
+  "name": "Premium Hair Human Topper 45cm",
+  "price": "590",
+  "regular": "590",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 413,
+  "slug": "413",
+  "name": "Premium Hair Human Topper 35cm",
+  "price": "500",
+  "regular": "500",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 408,
+  "slug": "toppers-premium",
+  "name": "Premium Hair Human Topper 25cm",
+  "price": "400",
+  "regular": "400",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 407,
+  "slug": "vorhangpony",
+  "name": "Vorhangpony",
+  "price": "126",
+  "regular": "126",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "curtain-bangs"
+  ]
+ },
+ {
+  "id": 405,
+  "slug": "405",
+  "name": "Premium Hair Human Topper Pony 25cm",
+  "price": "400",
+  "regular": "400",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 287,
+  "slug": "287",
+  "name": "Peruca front lace",
+  "price": "530",
+  "regular": "530",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 263,
+  "slug": "vorhangpony-curtain-bangs",
+  "name": "Vorhangpony (Curtain Bangs)",
+  "price": "126",
+  "regular": "126",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "curtain-bangs"
+  ]
+ },
+ {
+  "id": 256,
+  "slug": "premium-hair-human-30-cm",
+  "name": "Vorhangpony (Curtain Bangs 30 cm",
+  "price": "256.90",
+  "regular": "256.90",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "curtain-bangs"
+  ]
+ },
+ {
+  "id": 246,
+  "slug": "topper",
+  "name": "Premium hair human Topper 50 cm",
+  "price": "550",
+  "regular": "550",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 241,
+  "slug": "skin-haarsystem",
+  "name": "Skin-Haarsystem",
+  "price": "255.60",
+  "regular": "255.60",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "mannerhaarsysteme"
+  ]
+ },
+ {
+  "id": 238,
+  "slug": "masgefertigte-haarprothese-fur-manner",
+  "name": "Maßgefertigte Haarprothese für Männer",
+  "price": "307.00",
+  "regular": "307.00",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "mannerhaarsysteme"
+  ]
+ },
+ {
+  "id": 234,
+  "slug": "walker-tape-ultra-hold-flussigkleber-und-klebeband-fur-haarteile",
+  "name": "Walker Tape Ultra Hold Flüssigkleber und Klebeband für Haarteile",
+  "price": "18.60",
+  "regular": "18.60",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "wartungsprodukte"
+  ]
+ },
+ {
+  "id": 222,
+  "slug": "c-22-losungsmittel",
+  "name": "C-22 Lösungsmittel",
+  "price": "42.48",
+  "regular": "42.48",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "wartungsprodukte"
+  ]
+ },
+ {
+  "id": 228,
+  "slug": "walker-tape-ultra-hold-doppelseitiges-klebeband-fur-haarersatzsysteme-3-4-x-12-yd",
+  "name": "Walker Tape Ultra Hold Doppelseitiges Klebeband für Haarersatzsysteme (3/4\" × 12 YD)",
+  "price": "35.80",
+  "regular": "35.80",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "wartungsprodukte"
+  ]
+ },
+ {
+  "id": 220,
+  "slug": "ultra-old-walker-tape",
+  "name": "Ultra Old  Walker tape",
+  "price": "12.85",
+  "regular": "12.85",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "wartungsprodukte"
+  ]
+ },
+ {
+  "id": 206,
+  "slug": "premium-human-hair-topper-47-cm%e2%9a%a0%ef%b8%8f-peca-vendida",
+  "name": "Premium Human Hair Topper 47 cm⚠️ PEÇA VENDIDA",
+  "price": "943.00",
+  "regular": "943.00",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 200,
+  "slug": "premium-human-hair-topper-47-cm",
+  "name": "Premium Human Hair Topper 47 cm",
+  "price": "590",
+  "regular": "590",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 191,
+  "slug": "premium-human-hair-topper-13x10-47-cm",
+  "name": "Premium Human Hair Topper 13x10 47 cm",
+  "price": "580",
+  "regular": "580",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 186,
+  "slug": "premium-human-hair-topper-13x10-40-cm",
+  "name": "Premium Human Hair Topper 13x10 40 cm",
+  "price": "450",
+  "regular": "450",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 180,
+  "slug": "180",
+  "name": "Premium Human Hair Topper 13x10 25 cm",
+  "price": "600.00",
+  "regular": "600.00",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 175,
+  "slug": "premium-human-hair-topper-13x-10-25-cm",
+  "name": "Premium Human Hair Topper 13x 10  25 cm",
+  "price": "400",
+  "regular": "400",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 169,
+  "slug": "premium-human-hair-topper-13x-15-25-cm",
+  "name": "Premium human hair Topper  13x 15  25 cm",
+  "price": "400",
+  "regular": "400",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 164,
+  "slug": "topper-feminino",
+  "name": "Premium Human Hair Topper 43 cm",
+  "price": "857.00",
+  "regular": "857.00",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 110,
+  "slug": "prod021-top-feminino-em-cabelo-humano-premium",
+  "name": "Women's Nano Skin Hair Topper",
+  "price": "500",
+  "regular": "500",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 105,
+  "slug": "prod020-top-feminino-em-cabelo-humano-premium",
+  "name": "Premium Human Hair Topper - 65 cm - Natural Dark Brown",
+  "price": "750",
+  "regular": "750",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 99,
+  "slug": "prod019-top-feminino-em-cabelo-humano-premium",
+  "name": "Premium Human Hair Topper - 56 cm - Ash Light Blonde Ombre",
+  "price": "790",
+  "regular": "790",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 93,
+  "slug": "prod018-top-feminino-em-cabelo-humano-premium",
+  "name": "Premium Human Hair Topper - 55 cm - Ash Light Blonde Ombre",
+  "price": "820",
+  "regular": "820",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 88,
+  "slug": "prod017-top-feminino-em-cabelo-humano-premium",
+  "name": "Premium Human Hair Topper - 53 cm",
+  "price": "590",
+  "regular": "590",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 83,
+  "slug": "prod016-top-feminino-em-cabelo-humano-premium",
+  "name": "Premium Human Hair Topper - 45 cm - Medium Brown",
+  "price": "490",
+  "regular": "490",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 78,
+  "slug": "prod015-top-feminino-em-cabelo-humano-premium",
+  "name": "Premium Human Hair Topper - 56 cm - Medium Brown",
+  "price": "610",
+  "regular": "610",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 73,
+  "slug": "prod014-top-feminino-em-cabelo-humano-premium",
+  "name": "Premium Human Hair Topper - 40 cm - Blonde With Beige Highlights And A Softly Golden Root",
+  "price": "490",
+  "regular": "490",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 68,
+  "slug": "prod013-top-feminino-em-cabelo-humano-premium",
+  "name": "Premium Human Hair Topper - 40 cm - Copper Brown With Reflective Dark Golden Blonde Tones",
+  "price": "500",
+  "regular": "500",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 63,
+  "slug": "prod012-top-feminino-em-cabelo-humano-premium",
+  "name": "Premium Human Hair Topper - 25 cm - Natural Dark Brown",
+  "price": "300",
+  "regular": "300",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 58,
+  "slug": "prod011-top-feminino-em-cabelo-humano-premium",
+  "name": "Premium Human Hair Topper - 35 cm - Grey Blend",
+  "price": "400",
+  "regular": "400",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 53,
+  "slug": "prod010-top-feminino-em-cabelo-humano-premium",
+  "name": "Premium Human Hair Topper - 25 cm - Natural Dark Brown",
+  "price": "300",
+  "regular": "300",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 48,
+  "slug": "prod09-top-feminino-em-cabelo-humano-premium",
+  "name": "Premium Human Hair Topper - 45 cm - Copper Brown With Soft Golden Highlights",
+  "price": "500",
+  "regular": "500",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 43,
+  "slug": "prod08-top-feminino-em-cabelo-humano-premium",
+  "name": "Premium Human Hair Topper - 25 cm - Natural Dark Brown With Copper Highlights",
+  "price": "350",
+  "regular": "350",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 38,
+  "slug": "prod07-top-feminino-em-cabelo-humano-premium",
+  "name": "Premium Human Hair Topper - 25 cm - Natural Dark Brown With Violet-Red Highlights",
+  "price": "350",
+  "regular": "350",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 33,
+  "slug": "prod06-top-feminino-em-cabelo-humano-premium",
+  "name": "Premium Human Hair Topper - 20 cm - Natural Dark Brown With Soft Grey Highlights",
+  "price": "350",
+  "regular": "350",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 29,
+  "slug": "prod05-top-feminino-em-cabelo-humano-premium-com-volume",
+  "name": "Premium Human Hair Volume Topper - 14 cm - Natural Dark Brown",
+  "price": "300",
+  "regular": "300",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 21,
+  "slug": "prod04-protese-masculina-em-cabelo-humano-premium",
+  "name": "Premium Men's Hair Prosthetic - 20 cm",
+  "price": "250",
+  "regular": "250",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "prosthetics"
+  ]
+ },
+ {
+  "id": 17,
+  "slug": "prod03-top-feminino-em-cabelo-humano-premium",
+  "name": "Premium Human Hair Topper - 47 cm - Dark Brown",
+  "price": "500",
+  "regular": "500",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 12,
+  "slug": "prod02-top-feminino-em-cabelo-humano-premium",
+  "name": "Premium Human Hair Topper - 20 cm - Grey Blend",
+  "price": "350",
+  "regular": "350",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ },
+ {
+  "id": 11,
+  "slug": "prod01-top-feminino-em-cabelo-humano-premium",
+  "name": "Premium Human Hair Topper - 20 cm - Medium Golden Blonde",
+  "price": "390",
+  "regular": "390",
+  "sale": null,
+  "stock": "IN_STOCK",
+  "cats": [
+   "toppers"
+  ]
+ }
+]
