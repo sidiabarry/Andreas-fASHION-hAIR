@@ -161,7 +161,7 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
             {isSold ? (
               <p className="af-msg">{t("product.soldMsg")}</p>
             ) : unique ? (
-              <p className="af-only">{t("product.uniqueMsg")}</p>
+              <p className="af-only af-only--unique">{t("product.uniqueMsg")}</p>
             ) : product.madeToOrder ? (
               <p className="af-only">{t("product.customMsg", delivery)}</p>
             ) : null}
