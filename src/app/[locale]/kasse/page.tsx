@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { checkoutTextsFor } from "@legal/checkout-texts";
 
 import { Arrow } from "@/components/Arrow";
 import { Checkout } from "@/components/cart/Checkout";
 import type { CheckoutLegal } from "@/components/cart/Checkout";
 import { company } from "@/config/company";
 import { toLegalCompany } from "@/config/legal-company";
+import { legalFor } from "@/content/legal-registry";
 import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
 import { pageMetadata } from "@/lib/seo";
@@ -24,41 +24,31 @@ export default async function CheckoutPage({ params }: PageProps<"/[locale]/kass
   setRequestLocale(locale);
   const t = await getTranslations({ locale });
   const mode = siteMode();
-  const texts = checkoutTextsFor(toLegalCompany());
 
-  // Deutsch: Wortlaut ausschließlich aus den Rechtstexten (checkout-texts.ts). Andere Sprachen:
-  // übersetzte Beschriftungen, die Hinweise vor dem Kauf bleiben in der verbindlichen deutschen Fassung.
-  const legal: CheckoutLegal =
-    locale === "de"
-      ? {
-          agbConsent: texts.consents.agb,
-          buyButton: texts.buyButton,
-          links: { agb: "AGB", datenschutz: "Datenschutzerklärung", widerruf: "Widerrufsbelehrung" },
-          notes: texts.summaryNotes,
-          notesLang: "de",
-          notesPreface: null,
-          notesTitle: t("checkoutLegal.notesTitle"),
-          privacyNote: texts.consents.datenschutz,
-          withdrawalNote: texts.consents.widerruf,
-        }
-      : {
-          agbConsent: t.raw("checkoutLegal.agbConsent") as string,
-          buyButton: t("checkoutLegal.buyButton"),
-          links: { agb: t("checkoutLegal.linkAgb"), datenschutz: t("checkoutLegal.linkDatenschutz"), widerruf: t("checkoutLegal.linkWiderruf") },
-          notes: texts.summaryNotes,
-          notesLang: "de",
-          notesPreface: t("checkoutLegal.germanNotes"),
-          notesTitle: t("checkoutLegal.notesTitle"),
-          privacyNote: t.raw("checkoutLegal.privacyNote") as string,
-          withdrawalNote: t.raw("checkoutLegal.withdrawalNote") as string,
-        };
+  // Wortlaut ausschließlich aus den Rechtstexten (checkout-texts.ts bzw. deren Übersetzung).
+  // Fehlt eine Übersetzung, werden die Beschriftungen übersetzt und die Hinweise auf Deutsch gezeigt.
+  const legal = legalFor(locale);
+  const texts = legal.checkoutTextsFor(toLegalCompany());
+  const own = legal.lang === locale;
+  const checkoutLegal: CheckoutLegal = {
+    agbConsent: own ? texts.consents.agb : (t.raw("checkoutLegal.agbConsent") as string),
+    buyButton: own ? texts.buyButton : t("checkoutLegal.buyButton"),
+    links: { agb: t("checkoutLegal.linkAgb"), datenschutz: t("checkoutLegal.linkDatenschutz"), widerruf: t("checkoutLegal.linkWiderruf") },
+    notes: texts.summaryNotes,
+    notesLang: legal.lang,
+    notesPreface: own ? null : t("checkoutLegal.germanNotes"),
+    notesTitle: t("checkoutLegal.notesTitle"),
+    privacyNote: own ? texts.consents.datenschutz : (t.raw("checkoutLegal.privacyNote") as string),
+    warranty: texts.warrantyLabelAlt,
+    withdrawalNote: own ? texts.consents.widerruf : (t.raw("checkoutLegal.withdrawalNote") as string),
+  };
 
   return (
     <main className="af-page">
       <div className="af-wrap" style={{ maxWidth: 880 }}>
         <h1 className="af-h1">{t("checkout.title")}</h1>
         {mode.checkoutOpen ? (
-          <Checkout carrier={company.shippingCarrier ?? ""} legal={legal} />
+          <Checkout carrier={company.shippingCarrier ?? ""} legal={checkoutLegal} />
         ) : (
           <div className="af-empty">
             <p className="af-lead">{t("checkout.closed")}</p>

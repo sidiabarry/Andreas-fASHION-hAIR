@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { checkoutTextsFor } from "@legal/checkout-texts";
+import { legalFor } from "@/content/legal-registry";
 
 import { Arrow } from "@/components/Arrow";
 import { Logo } from "@/components/Logo";
@@ -46,7 +46,8 @@ export default async function OrderPage({ params, searchParams }: PageProps<"/[l
     );
   }
 
-  const texts = checkoutTextsFor(toLegalCompany());
+  const legal = legalFor(locale);
+  const texts = legal.checkoutTextsFor(toLegalCompany());
   const first = order.customer.name.split(" ")[0];
   const countryName = new Intl.DisplayNames([locale], { type: "region" }).of(order.customer.country) ?? order.customer.country;
 
@@ -61,7 +62,7 @@ export default async function OrderPage({ params, searchParams }: PageProps<"/[l
           {t("order.thanks", { name: first })}
         </h1>
         <p className="af-lead" style={{ marginTop: 24 }}>
-          {locale === "de" ? fillTemplate(texts.confirmationNotice, { name: first, orderNo: order.id }) : t("order.lead", { email: order.customer.email })}
+          {legal.lang === locale ? fillTemplate(texts.confirmationNotice, { name: first, orderNo: order.id }) : t("order.lead", { email: order.customer.email })}
         </p>
         <p className="af-msg" data-kind={order.mailCustomer === "gesendet" ? "ok" : "info"} role="status" style={{ marginTop: 22 }}>
           {order.mailCustomer === "gesendet" ? t("order.mailSent") : t("order.mailNotSent")}
@@ -100,7 +101,7 @@ export default async function OrderPage({ params, searchParams }: PageProps<"/[l
           </h2>
           <p className="af-note">{t("order.withdrawText")}</p>
           <Link className="af-cta-line" href={{ pathname: "/widerruf/erklaeren", query: { bestellung: order.id } }} style={{ justifySelf: "start" }}>
-            {locale === "de" ? texts.withdrawalButtonLabel : t("footer.withdraw")}
+            {legal.lang === locale ? texts.withdrawalButtonLabel : t("footer.withdraw")}
           </Link>
         </section>
 

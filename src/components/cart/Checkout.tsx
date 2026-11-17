@@ -23,6 +23,8 @@ export type CheckoutLegal = {
   notes: string[];
   notesLang: string;
   notesPreface: string | null;
+  /** Hinweis auf die gesetzliche Gewährleistung (bis die amtliche Grafik vorliegt als Text) */
+  warranty: string;
   links: { agb: string; widerruf: string; datenschutz: string };
 };
 
@@ -322,6 +324,12 @@ export function Checkout({ legal, carrier }: { legal: CheckoutLegal; carrier: st
               ))}
             </ul>
           </section>
+        ) : null}
+
+        {legal.warranty ? (
+          <p className="af-msg" data-kind="info" lang={legal.notesLang}>
+            {legal.warranty}
+          </p>
         ) : null}
 
         <fieldset className="af-fieldset">

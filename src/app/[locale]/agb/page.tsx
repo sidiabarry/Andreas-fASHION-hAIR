@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import * as legal from "@legal/agb";
 
 import { LegalPage } from "@/components/site/LegalPage";
 import type { Locale } from "@/i18n/locales";
@@ -18,10 +17,9 @@ export default async function AgbPage({ params }: PageProps<"/[locale]/agb">) {
   const t = await getTranslations({ locale, namespace: "legal" });
   return (
     <LegalPage
-      Content={legal.default}
+      page="agb"
       fields={["ownerFullName", "register"]}
       locale={locale as Locale}
-      stub={"isStub" in legal}
       title={t("terms")}
     />
   );

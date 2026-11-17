@@ -2,10 +2,10 @@
 
 import { headers } from "next/headers";
 import { getTranslations } from "next-intl/server";
-import { checkoutTextsFor } from "@legal/checkout-texts";
 
 import { company } from "@/config/company";
 import { toLegalCompany } from "@/config/legal-company";
+import { germanLegal, legalFor } from "@/content/legal-registry";
 import { getProduct, productText } from "@/data/catalog";
 import { isLocale } from "@/i18n/locales";
 import type { Locale } from "@/i18n/locales";
@@ -78,7 +78,9 @@ export async function placeOrder(rawLocale: string, raw: unknown): Promise<Place
   const input = parsed.data;
   if (input.website || isTooFast(input.startedAt)) return { error: "bot", ok: false };
 
-  const texts = checkoutTextsFor(toLegalCompany());
+  const texts = germanLegal.checkoutTextsFor(toLegalCompany());
+  const localLegal = legalFor(locale);
+  const localTexts = localLegal.translated ? localLegal.checkoutTextsFor(toLegalCompany()) : null;
   // Pflicht-Checkboxen laut Rechtstexten: nur die AGB (siehe checkout-texts.ts).
   if (input.consents.agb !== true) return { error: "invalid", fields: { agb: "consent" }, ok: false };
 
@@ -148,7 +150,9 @@ export async function placeOrder(rawLocale: string, raw: unknown): Promise<Place
   const localized =
     locale === "de"
       ? ""
-      : [
+      : localTexts
+        ? `${fillTemplate(localTexts.mail.orderReceived.body, { ...values, total: formatPrice(order.totalCents, locale) })}\n\n—— Deutsche Fassung (rechtsverbindlich) ——\n\n`
+        : [
           t("greeting", { name: order.customer.name }),
           "",
           t("orderIntro", when),
@@ -315,7 +319,9 @@ export async function sendWithdrawal(_prev: FormState, data: FormData): Promise<
 
   const receivedAt = new Date();
   const de = berlinDateTime(receivedAt, "de");
-  const texts = checkoutTextsFor(toLegalCompany());
+  const texts = germanLegal.checkoutTextsFor(toLegalCompany());
+  const localLegal = legalFor(locale);
+  const localTexts = localLegal.translated ? localLegal.checkoutTextsFor(toLegalCompany()) : null;
   const t = await getTranslations({ locale, namespace: "withdrawal" });
   const content = [
     `${t("statement")} ${input.items || t("wholeOrder")}`,
@@ -356,7 +362,9 @@ export async function sendWithdrawal(_prev: FormState, data: FormData): Promise<
     const localized =
       locale === "de"
         ? ""
-        : [tm("greeting", { name: input.name }), "", tm("withdrawalIntro", local), "", content, "", tm("withdrawalOutro"), "", "—— Deutsche Fassung (rechtsverbindlich) ——", "", ""].join("\n");
+        : localTexts
+          ? `${fillTemplate(localTexts.mail.withdrawalReceived.body, { ...values, receivedDate: local.date, receivedTime: local.time })}\n\n—— Deutsche Fassung (rechtsverbindlich) ——\n\n`
+          : [tm("greeting", { name: input.name }), "", tm("withdrawalIntro", local), "", content, "", tm("withdrawalOutro"), "", "—— Deutsche Fassung (rechtsverbindlich) ——", "", ""].join("\n");
     mail = await sendMail({
       replyTo: company.email,
       subject: fillTemplate(texts.mail.withdrawalReceived.subject, values),

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import * as legal from "@legal/versand-zahlung";
 
 import { LegalPage } from "@/components/site/LegalPage";
 import type { Locale } from "@/i18n/locales";
@@ -18,10 +17,9 @@ export default async function VersandUndZahlungPage({ params }: PageProps<"/[loc
   const t = await getTranslations({ locale, namespace: "legal" });
   return (
     <LegalPage
-      Content={legal.default}
+      page="versand-zahlung"
       fields={[]}
       locale={locale as Locale}
-      stub={"isStub" in legal}
       title={t("shipping")}
     />
   );

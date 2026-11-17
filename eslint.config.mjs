@@ -13,6 +13,11 @@ const config = [
     },
   },
   {
+    // Rechtstexte (Rechtsagent): Apostrophe im Fließtext sind gewollt und werden korrekt dargestellt.
+    files: ["src/content/legal/**"],
+    rules: { "react/no-unescaped-entities": "off" },
+  },
+  {
     files: ["scripts/**", "tests/**"],
     rules: { "no-console": "off" },
   },

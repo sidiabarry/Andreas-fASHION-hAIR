@@ -104,3 +104,14 @@ export function toLite(product: Product, locale: Locale): ProductLite {
     unique: isUnique(product),
   };
 }
+
+/** Produktliste für Abschnitte (z. B. Startseite). Verkaufte Stücke nur auf Wunsch. */
+export function getProducts(options: { category?: CategoryId; limit?: number; includeSold?: boolean; exclude?: ReadonlySet<string> } = {}): Product[] {
+  const list = products.filter(
+    (product) =>
+      (!options.category || product.category === options.category) &&
+      (options.includeSold || !product.sold) &&
+      !options.exclude?.has(product.slug),
+  );
+  return options.limit ? list.slice(0, options.limit) : list;
+}

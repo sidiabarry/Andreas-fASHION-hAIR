@@ -63,6 +63,12 @@ export type Company = {
   paypal: string | null;
   /** "Made in Germany" darf verwendet werden. */
   madeInGermany: boolean;
+  /** Wer trägt die unmittelbaren Kosten der Rücksendung bei Widerruf? */
+  returnCosts: "customer" | "merchant" | null;
+  /** Teilnahme an Verbraucherschlichtung (§ 36 VSBG) */
+  disputeResolution: "not_willing" | "willing" | null;
+  /** Datum, ab dem die Rechtstexte gelten (z. B. "1. Dezember 2026"); beim Livegang setzen */
+  legalEffectiveDate: string | null;
   /** Öffentliche Website (kanonische Domain nach dem Umzug). */
   siteUrl: string;
 };
@@ -117,6 +123,12 @@ export const company: Company = {
   paypal: null,
   // Vom Auftraggeber als belegbar bestätigt (11/2026); die Live-Seite führt die Zeile im Footer.
   madeInGermany: true,
+  // Unbekannt: Entscheidung der Inhaberin (Empfehlung in docs/COMPLIANCE.md).
+  returnCosts: null,
+  // Unbekannt: Entscheidung der Inhaberin (Empfehlung in docs/COMPLIANCE.md).
+  disputeResolution: null,
+  // Wird beim Livegang gesetzt.
+  legalEffectiveDate: null,
   siteUrl: "https://www.andreasfashionhair.de",
 };
 
@@ -127,7 +139,8 @@ export function vatNoteKey(c: Company): "smallBusiness" | "inclVat" | null {
   return null;
 }
 
-export type MissingField = { field: string; why: string; blocking: boolean };
+/** legal=true: erscheint in den Rechtstexten als Marker <mark data-missing>, solange es fehlt. */
+export type MissingField = { field: string; why: string; blocking: boolean; legal?: boolean };
 
 /** Liste der fehlenden Pflichtangaben. Wird von check:launch und den Hinweis-Blöcken genutzt. */
 export function missingCompanyFields(c: Company): MissingField[] {
@@ -138,12 +151,18 @@ export function missingCompanyFields(c: Company): MissingField[] {
     missing.push({ field: "legalForm", why: "Rechtsform (z. B. Einzelunternehmen) für Impressum und AGB", blocking: true });
   if (c.register === null)
     missing.push({ field: "register", why: "Handelsregister: Eintrag nennen oder `false` setzen, wenn keiner besteht", blocking: true });
+  if (c.returnCosts === null)
+    missing.push({ field: "returnCosts", why: "Wer trägt die Rücksendekosten bei Widerruf? (Widerrufsbelehrung)", blocking: true, legal: true });
+  if (c.disputeResolution === null)
+    missing.push({ field: "disputeResolution", why: "Teilnahme an Verbraucherschlichtung ja/nein (§ 36 VSBG; Impressum/AGB)", blocking: true, legal: true });
+  if (c.legalEffectiveDate === null)
+    missing.push({ field: "legalEffectiveDate", why: "Stand-Datum der Rechtstexte beim Livegang setzen", blocking: true, legal: true });
   if (c.smallBusiness === null)
     missing.push({ field: "smallBusiness", why: "Kleinunternehmerstatus § 19 UStG (Preisangaben)", blocking: true });
   if (!c.vatId && !c.taxNumber)
     missing.push({ field: "vatId", why: "USt-IdNr. bzw. Wirtschafts-IdNr. nur angeben, falls vorhanden (§ 5 DDG) – bitte bestätigen, ob eine besteht", blocking: false });
   if (c.paymentMethods.length === 0)
-    missing.push({ field: "paymentMethods", why: "Zahlungswege sind nicht festgelegt – Online-Kasse bleibt in Production deaktiviert", blocking: false });
+    missing.push({ field: "paymentMethods", why: "Zahlungswege sind nicht festgelegt – Online-Kasse bleibt in Production deaktiviert; AGB zeigen Marker", blocking: false, legal: true });
   if (c.paymentMethods.includes("ueberweisung") && !c.bank)
     missing.push({ field: "bank", why: "Bankverbindung für Überweisung", blocking: true });
   if (c.paymentMethods.includes("paypal") && !c.paypal)

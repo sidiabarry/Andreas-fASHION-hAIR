@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import * as legal from "@legal/widerruf";
-import * as form from "@legal/widerrufsformular";
+import { legalFor } from "@/content/legal-registry";
 
 import { Arrow } from "@/components/Arrow";
 import { LegalPage } from "@/components/site/LegalPage";
@@ -20,16 +19,17 @@ export default async function WithdrawalPolicyPage({ params }: PageProps<"/[loca
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "legal" });
-  const muster = form.fillWiderrufsformular(toLegalCompany());
+  const legal = legalFor(locale);
+  const muster = legal.fillWiderrufsformular(toLegalCompany());
   return (
-    <LegalPage Content={legal.default} fields={["ownerFullName"]} locale={locale as Locale} stub={"isStub" in legal || "isStub" in form} title={t("withdrawal")}>
+    <LegalPage fields={["ownerFullName"]} locale={locale as Locale} page="widerruf" title={t("withdrawal")}>
       <div className="af-hero-actions" style={{ marginTop: 36 }}>
         <Link className="af-cta-gold" href="/widerruf/erklaeren">
           {t("withdrawCta")} <Arrow />
         </Link>
       </div>
       {muster.lines.length ? (
-        <section aria-labelledby="muster-title" className="af-prose af-review" lang="de" style={{ marginTop: 44 }}>
+        <section aria-labelledby="muster-title" className="af-prose af-review" lang={legal.lang} style={{ marginTop: 44 }}>
           <h2 id="muster-title" style={{ marginTop: 0 }}>
             {muster.title}
           </h2>

@@ -17,8 +17,7 @@
     "noFallthroughCasesInSwitch": true,
     "plugins": [{ "name": "next" }],
     "paths": {
-      "@/*": ["./src/*"],
-      "@legal/*": ["./src/content/legal/*", "./src/content/legal-stubs/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/dev/types/**/*.ts"],

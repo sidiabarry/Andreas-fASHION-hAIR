@@ -3,7 +3,7 @@
  * src/content/legal/company-type.ts). Hier wird nichts ergänzt, was nicht in company.ts steht;
  * unbekannte Werte bleiben null und erscheinen in den Texten als Marker.
  */
-import type { Company as LegalCompany } from "@legal/company-type";
+import type { Company as LegalCompany } from "@/content/legal/company-type";
 
 import { company } from "./company";
 import type { Company } from "./company";
@@ -42,8 +42,8 @@ export function toLegalCompany(c: Company = company): LegalCompany {
     carrier: c.shippingCarrier,
     city: c.address.city,
     country: c.address.country,
-    disputeResolution: null,
-    effectiveDate: null,
+    disputeResolution: c.disputeResolution,
+    effectiveDate: c.legalEffectiveDate,
     email: c.email,
     hostingProvider: HOSTING,
     hours: hoursText(c),
@@ -59,7 +59,7 @@ export function toLegalCompany(c: Company = company): LegalCompany {
     phone: c.phone,
     processingDays: `${HANDLING_DAYS[0]}–${HANDLING_DAYS[1]}`,
     processors: PROCESSORS,
-    returnCosts: null,
+    returnCosts: c.returnCosts,
     shippingCountries: ["DE", ...EU_COUNTRIES],
     shippingRates: {
       domesticCents: SHIPPING_ZONES.de.priceCents ?? 0,

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { checkoutTextsFor } from "@legal/checkout-texts";
+import { legalFor } from "@/content/legal-registry";
 
 import { WithdrawalForm } from "@/components/forms/WithdrawalForm";
 import { company } from "@/config/company";
@@ -21,7 +21,8 @@ export default async function WithdrawalFunctionPage({ params, searchParams }: P
   setRequestLocale(locale);
   const query = await searchParams;
   const t = await getTranslations({ locale, namespace: "withdrawal" });
-  const texts = checkoutTextsFor(toLegalCompany());
+  const legal = legalFor(locale);
+  const texts = legal.checkoutTextsFor(toLegalCompany());
   const mode = siteMode();
   const address = `${company.brandName}, ${company.address.street}, ${company.address.postalCode} ${company.address.city}`;
   const initialOrder = typeof query.bestellung === "string" && /^[A-Z0-9-]{1,40}$/.test(query.bestellung) ? query.bestellung : "";
@@ -31,14 +32,14 @@ export default async function WithdrawalFunctionPage({ params, searchParams }: P
       <div className="af-wrap af-pdp">
         <div className="af-stack af-inquiry-intro">
           <p className="af-mono">{t("kicker")}</p>
-          <h1 className="af-h2">{locale === "de" ? texts.withdrawalButtonLabel : t("title")}</h1>
+          <h1 className="af-h2">{legal.lang === locale ? texts.withdrawalButtonLabel : t("title")}</h1>
           <p className="af-lead">{t("lead")}</p>
-          {locale === "de" && texts.withdrawalFormIntro ? <p className="af-text">{texts.withdrawalFormIntro}</p> : null}
+          {legal.lang === locale && texts.withdrawalFormIntro ? <p className="af-text">{texts.withdrawalFormIntro}</p> : null}
           <p className="af-note">{t.rich("otherWays", { link: (chunks) => <Link className="af-link" href="/widerruf">{chunks}</Link> })}</p>
         </div>
         {mode.demo || mode.mail ? (
           <WithdrawalForm
-            confirmLabel={locale === "de" ? texts.withdrawalConfirmLabel : t("confirm")}
+            confirmLabel={legal.lang === locale ? texts.withdrawalConfirmLabel : t("confirm")}
             initialOrder={initialOrder}
             ownerAddress={address}
             ownerEmail={company.email}

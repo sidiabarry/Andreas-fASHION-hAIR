@@ -7,8 +7,7 @@ import { Finder } from "@/components/home/Finder";
 import { JsonLd } from "@/components/JsonLd";
 import { Logo } from "@/components/Logo";
 import { ProductCard } from "@/components/product/ProductCard";
-import { ScrollScrub } from "@/components/scroll-scrub/ScrollScrub";
-import type { ScrollScrubScene } from "@/components/scroll-scrub/ScrollScrub";
+import { HeroPlaceholder } from "@/components/home/HeroPlaceholder";
 import { company } from "@/config/company";
 import { byCategory, CATEGORY_IDS, featured } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
@@ -23,7 +22,6 @@ export async function generateMetadata({ params }: PageProps<"/[locale]">): Prom
   return pageMetadata({ description: t("defaultDescription"), locale: locale as Locale, path: "/", title: t("defaultTitle") });
 }
 
-const theme = { accent: "#e0a526", background: "#100e0d", ink: "#f4efe8", muted: "#b7ada3" };
 const methods = ["Butterfly Weft", "Genius Weft", "Invisible Tape", "Tape-In", "Keratin Bondings", "Clip-In"];
 
 export default async function Home({ params }: PageProps<"/[locale]">) {
@@ -33,61 +31,6 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
   const t = await getTranslations({ locale });
   const sold = await soldSlugs();
   const carrier = company.shippingCarrier ?? "";
-
-  const scenes: ScrollScrubScene[] = [
-    {
-      actions: (
-        <div className="af-hero-actions">
-          <Link className="af-cta-gold" href="/kollektion">
-            {t("hero.ctaCollection")} <Arrow />
-          </Link>
-          <Link className="af-cta-line" href="/anfrage">
-            {t("hero.ctaConsult")}
-          </Link>
-        </div>
-      ),
-      body: t("hero.scene1.body"),
-      clip: "/assets/world/scene-01.mp4",
-      id: "neubeginn",
-      kicker: t("hero.scene1.kicker"),
-      label: t("hero.scene1.label"),
-      mobileClip: "/assets/world/scene-01-mobile.mp4",
-      mobilePoster: "/assets/world/scene-01-mobile-poster.jpg",
-      poster: "/assets/world/scene-01-poster.jpg",
-      scroll: 1.5,
-      title: t("hero.scene1.title"),
-    },
-    {
-      body: t("hero.scene2.body"),
-      clip: "/assets/world/scene-02.mp4",
-      id: "identitaet",
-      label: t("hero.scene2.label"),
-      mobileClip: "/assets/world/scene-02-mobile.mp4",
-      mobilePoster: "/assets/world/scene-02-mobile-poster.jpg",
-      poster: "/assets/world/scene-02-poster.jpg",
-      scroll: 1.5,
-      title: t("hero.scene2.title"),
-    },
-    {
-      actions: (
-        <div className="af-hero-actions">
-          <a className="af-cta-frame" href="#finden">
-            {t("hero.ctaFind")}
-          </a>
-        </div>
-      ),
-      body: t("hero.scene3.body"),
-      clip: "/assets/world/scene-03.mp4",
-      id: "unsichtbar",
-      label: t("hero.scene3.label"),
-      mobileClip: "/assets/world/scene-03-mobile.mp4",
-      mobilePoster: "/assets/world/scene-03-mobile-poster.jpg",
-      poster: "/assets/world/scene-03-poster.jpg",
-      scroll: 1.5,
-      tags: [t("hero.scene3.tag1"), t("hero.scene3.tag2"), t("hero.scene3.tag3")],
-      title: t("hero.scene3.title"),
-    },
-  ];
 
   const facts = [1, 2, 3, 4].map((n) => ({ big: t(`home.fact${n}Big`), text: t(`home.fact${n}`) }));
   const craft = [1, 2, 3, 4].map((n) => ({ key: t(`home.craft${n}Key`), text: t(`home.craft${n}`) }));
@@ -135,7 +78,13 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
     <main>
       <JsonLd data={organizationJsonLd(locale)} />
       <JsonLd data={faqJson} />
-      <ScrollScrub chaptersLabel={t("hero.chapters")} filmAlt={t("hero.filmAlt")} scenes={scenes} theme={theme} />
+      <HeroPlaceholder
+        body={t("hero.scene1.body")}
+        kicker={t("hero.scene1.kicker")}
+        primary={t("hero.ctaCollection")}
+        secondary={t("hero.ctaConsult")}
+        title={t("hero.scene1.title")}
+      />
 
       <section aria-label={t("home.factsLabel")} className="af-section--tight">
         <div className="af-wrap af-facts">

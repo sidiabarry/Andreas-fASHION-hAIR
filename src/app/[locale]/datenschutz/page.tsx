@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import * as legal from "@legal/datenschutz";
 
 import { LegalPage } from "@/components/site/LegalPage";
 import type { Locale } from "@/i18n/locales";
@@ -18,10 +17,9 @@ export default async function DatenschutzPage({ params }: PageProps<"/[locale]/d
   const t = await getTranslations({ locale, namespace: "legal" });
   return (
     <LegalPage
-      Content={legal.default}
+      page="datenschutz"
       fields={["ownerFullName"]}
       locale={locale as Locale}
-      stub={"isStub" in legal}
       title={t("privacy")}
     />
   );
