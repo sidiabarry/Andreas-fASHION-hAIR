@@ -7,12 +7,17 @@
  *                                 Dann bricht der Build (und damit der Production-Deploy) ab.
  *
  * Wird direkt mit Node (Type Stripping, Node ≥ 22.18) ausgeführt, ohne Bundler.
+ *
+ * Marker <mark data-missing> in den Rechtstexten: Jede Angabe, die dort einen Marker auslöst, ist in
+ * missingCompanyFields() als blockierend erfasst (legal: true). Zusätzlich prüft
+ * `npm run test:e2e -- --production`, dass keine Seite einen Marker rendert.
  */
 import { existsSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { company, missingCompanyFields } from "../src/config/company.ts";
+import { WARRANTY_LABEL } from "../src/config/legal-assets.ts";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const ci = process.argv.includes("--ci");
@@ -43,6 +48,15 @@ for (const file of ["impressum.tsx", "datenschutz.tsx", "agb.tsx", "widerruf.tsx
   if (!existsSync(join(root, "src/content/legal", file))) {
     findings.push({ area: "Rechtstexte", blocking: true, text: `src/content/legal/${file} fehlt (es wird nur ein Platzhalter angezeigt)` });
   }
+}
+
+// Harmonisierte Gewährleistungsmitteilung (DVO (EU) 2025/1960), amtliche Grafik
+if (!WARRANTY_LABEL || !existsSync(join(root, "public", WARRANTY_LABEL.src))) {
+  findings.push({
+    area: "Rechtstexte",
+    blocking: true,
+    text: "Gewährleistungsgrafik fehlt (src/config/legal-assets.ts, public/assets/legal/): amtliche Grafik nach DVO (EU) 2025/1960 Anhang I von EUR-Lex herunterladen (bis dahin steht der Hinweis nur als Text über dem Bestellknopf)",
+  });
 }
 
 // Betrieb: E-Mail-Versand

@@ -463,3 +463,4 @@ ol.af-steps { list-style: none; padding: 0; }
 .af-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(to top, var(--af-bg) 6%, color-mix(in srgb, var(--af-bg) 70%, transparent) 46%, color-mix(in srgb, var(--af-bg) 20%, transparent) 100%); }
 .af-hero__in { display: grid; gap: 22px; padding-block: 140px clamp(56px, 9vw, 110px); }
 .af-hero__in .af-h1 { max-width: 14ch; }
+.af-warranty { width: 100%; max-width: 520px; height: auto; background: #fff; border-radius: 8px; }

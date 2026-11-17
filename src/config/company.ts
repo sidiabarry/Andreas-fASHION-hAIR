@@ -28,8 +28,6 @@ export type Company = {
   ownerFullName: string | null;
   /** Rechtsform, z. B. "Einzelunternehmen". */
   legalForm: string | null;
-  /** Rechtsform ausdrücklich nennen? Erst nach Bestätigung; bis dahin genügt "Inhaberin". */
-  showLegalForm: boolean;
   address: {
     street: string;
     postalCode: string;
@@ -77,10 +75,8 @@ export const company: Company = {
   brandName: "Andrea's Fashion Hair",
   // Vom Auftraggeber bestätigt (11/2026), Schreibweise exakt so.
   ownerFullName: "Andreia Pereira Da Costa",
-  // Vom Auftraggeber angegeben (Einzelperson, Kleinunternehmerin). Im Impressum wird die Rechtsform
-  // erst genannt, wenn sie ausdrücklich bestätigt ist (showLegalForm); bis dahin "Inhaberin: …".
+  // Vom Auftraggeber angegeben (Einzelperson, Kleinunternehmerin, 11/2026).
   legalForm: "Einzelunternehmen",
-  showLegalForm: false,
   address: {
     street: "Flehmestr. 2",
     postalCode: "58642",
@@ -146,7 +142,9 @@ export type MissingField = { field: string; why: string; blocking: boolean; lega
 export function missingCompanyFields(c: Company): MissingField[] {
   const missing: MissingField[] = [];
   if (!c.ownerFullName)
-    missing.push({ field: "ownerFullName", why: "Vollständiger Name der Inhaberin (Impressum § 5 DDG, AGB, Widerrufsbelehrung)", blocking: true });
+    missing.push({ field: "ownerFullName", why: "Vollständiger Name der Inhaberin (Impressum § 5 DDG, AGB, Widerrufsbelehrung)", blocking: true, legal: true });
+  if (!c.shippingCarrier)
+    missing.push({ field: "shippingCarrier", why: "Versanddienstleister (AGB, Versandseite)", blocking: true, legal: true });
   if (!c.legalForm)
     missing.push({ field: "legalForm", why: "Rechtsform (z. B. Einzelunternehmen) für Impressum und AGB", blocking: true });
   if (c.register === null)
@@ -159,10 +157,12 @@ export function missingCompanyFields(c: Company): MissingField[] {
     missing.push({ field: "legalEffectiveDate", why: "Stand-Datum der Rechtstexte beim Livegang setzen", blocking: true, legal: true });
   if (c.smallBusiness === null)
     missing.push({ field: "smallBusiness", why: "Kleinunternehmerstatus § 19 UStG (Preisangaben)", blocking: true });
-  if (!c.vatId && !c.taxNumber)
+  if (!c.vatId && c.smallBusiness !== true)
+    missing.push({ field: "vatId", why: "USt-IdNr. (Impressum zeigt sonst einen Marker)", blocking: true, legal: true });
+  if (!c.vatId && !c.taxNumber && c.smallBusiness === true)
     missing.push({ field: "vatId", why: "USt-IdNr. bzw. Wirtschafts-IdNr. nur angeben, falls vorhanden (§ 5 DDG) – bitte bestätigen, ob eine besteht", blocking: false });
   if (c.paymentMethods.length === 0)
-    missing.push({ field: "paymentMethods", why: "Zahlungswege sind nicht festgelegt – Online-Kasse bleibt in Production deaktiviert; AGB zeigen Marker", blocking: false, legal: true });
+    missing.push({ field: "paymentMethods", why: "Zahlungswege sind nicht festgelegt – AGB/Versandseite zeigen sonst den Marker „Zahlungsart noch festzulegen“", blocking: true, legal: true });
   if (c.paymentMethods.includes("ueberweisung") && !c.bank)
     missing.push({ field: "bank", why: "Bankverbindung für Überweisung", blocking: true });
   if (c.paymentMethods.includes("paypal") && !c.paypal)

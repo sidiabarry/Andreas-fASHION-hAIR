@@ -23,8 +23,9 @@ export type CheckoutLegal = {
   notes: string[];
   notesLang: string;
   notesPreface: string | null;
-  /** Hinweis auf die gesetzliche Gewährleistung (bis die amtliche Grafik vorliegt als Text) */
+  /** Hinweis auf die gesetzliche Gewährleistung (Alt-Text bzw. Text, solange die amtliche Grafik fehlt) */
   warranty: string;
+  warrantyImage: { src: string; width: number; height: number } | null;
   links: { agb: string; widerruf: string; datenschutz: string };
 };
 
@@ -326,7 +327,10 @@ export function Checkout({ legal, carrier }: { legal: CheckoutLegal; carrier: st
           </section>
         ) : null}
 
-        {legal.warranty ? (
+        {legal.warrantyImage ? (
+          // eslint-disable-next-line @next/next/no-img-element -- amtliche Grafik unverändert ausliefern
+          <img alt={legal.warranty} className="af-warranty" height={legal.warrantyImage.height} src={legal.warrantyImage.src} width={legal.warrantyImage.width} />
+        ) : legal.warranty ? (
           <p className="af-msg" data-kind="info" lang={legal.notesLang}>
             {legal.warranty}
           </p>

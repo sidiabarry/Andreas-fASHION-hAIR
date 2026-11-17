@@ -5,6 +5,7 @@ import { Arrow } from "@/components/Arrow";
 import { Checkout } from "@/components/cart/Checkout";
 import type { CheckoutLegal } from "@/components/cart/Checkout";
 import { company } from "@/config/company";
+import { WARRANTY_LABEL } from "@/config/legal-assets";
 import { toLegalCompany } from "@/config/legal-company";
 import { legalFor } from "@/content/legal-registry";
 import type { Locale } from "@/i18n/locales";
@@ -40,6 +41,7 @@ export default async function CheckoutPage({ params }: PageProps<"/[locale]/kass
     notesTitle: t("checkoutLegal.notesTitle"),
     privacyNote: own ? texts.consents.datenschutz : (t.raw("checkoutLegal.privacyNote") as string),
     warranty: texts.warrantyLabelAlt,
+    warrantyImage: WARRANTY_LABEL,
     withdrawalNote: own ? texts.consents.widerruf : (t.raw("checkoutLegal.withdrawalNote") as string),
   };
 

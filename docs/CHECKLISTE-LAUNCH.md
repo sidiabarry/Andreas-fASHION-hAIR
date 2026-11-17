@@ -5,7 +5,7 @@
 ## Von Andreia / dem Betreiber zu liefern oder zu entscheiden
 
 - [ ] **Handelsregister**: Gibt es einen Eintrag? Wenn nein, `register: false` in `src/config/company.ts`.
-- [ ] **Rechtsform** ausdrücklich nennen? (`showLegalForm`, derzeit nur „Inhaberin: Andreia Pereira Da Costa“)
+- [ ] **Rechtsform** „Einzelunternehmen“ (vom Auftraggeber angegeben) im Impressum so bestätigen
 - [ ] **USt-IdNr./Wirtschafts-IdNr.** vorhanden? (bei Kleinunternehmerin nicht zwingend)
 - [ ] **Rücksendekosten** bei Widerruf: Kundin oder Händlerin? (`returnCosts`)
 - [ ] **Verbraucherschlichtung**: bereit oder nicht bereit? (`disputeResolution`)

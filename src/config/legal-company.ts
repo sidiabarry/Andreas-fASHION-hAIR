@@ -47,7 +47,7 @@ export function toLegalCompany(c: Company = company): LegalCompany {
     email: c.email,
     hostingProvider: HOSTING,
     hours: hoursText(c),
-    legalForm: c.showLegalForm ? c.legalForm : null,
+    legalForm: c.legalForm,
     madeToOrderDays: "15–20",
     ownerFullName: c.ownerFullName,
     paypalEmail: c.paypal,
