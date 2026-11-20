@@ -1514,24 +1514,24 @@
     "id": 422,
     "slug": "v-toupet-46-cm-natuerliches-dunkelblond-422",
     "name": "V-Toupet 46 cm",
-    "subtitle": "Natürliches Dunkelblond",
+    "subtitle": "Dunkelblond mit hellen Reflexen",
     "category": "topper",
     "priceCents": 49000,
     "sold": false,
     "length": "46",
     "base": "",
-    "color": "Natürliches Dunkelblond",
+    "color": "Dunkelblond mit hellen Reflexen",
     "texture": "",
-    "description": "Damen-Topper mit V-förmiger Basis aus Echthaar, in Natürlichem Dunkelblond. 46 cm lang, Gewicht 117 g. Dieses Stück gibt es nur einmal.",
+    "description": "Damen-Topper mit V-förmiger Basis aus Echthaar, in Dunkelblond mit hellen Reflexen. 46 cm lang, Gewicht 117 g. Dieses Stück gibt es nur einmal.",
     "specs": [
       "Echthaar",
       "Haarlänge 46 cm",
-      "Farbe: Natürliches Dunkelblond",
+      "Farbe: Dunkelblond mit hellen Reflexen",
       "V-förmige Basis (Damen-Topper)",
       "Gewicht 117 g"
     ],
-    "image": "/assets/originals/422-0.jpg",
-    "restyled": false,
+    "image": "/assets/products/422.jpg",
+    "restyled": true,
     "originals": [
       "/assets/originals/422-0.jpg",
       "/assets/originals/422-1.jpg",
@@ -1545,7 +1545,9 @@
     "safety": null,
     "availability": "unknown",
     "origin": "Brasilien",
-    "netWeightGrams": null
+    "netWeightGrams": null,
+    "imageKind": "staged",
+    "secondImage": "/assets/products/422-2.jpg"
   },
   {
     "id": 423,
@@ -1567,8 +1569,8 @@
       "Set aus 3 Tressen mit Clips",
       "Gewicht 194 g (Set)"
     ],
-    "image": "/assets/originals/423-0.jpg",
-    "restyled": false,
+    "image": "/assets/products/423.jpg",
+    "restyled": true,
     "originals": [
       "/assets/originals/423-0.jpg",
       "/assets/originals/423-1.jpg",
@@ -1583,7 +1585,9 @@
     "netWeightGrams": 194,
     "priceUnit": "set",
     "weightGrams": 194,
-    "setParts": 3
+    "setParts": 3,
+    "imageKind": "staged",
+    "secondImage": "/assets/products/423-2.jpg"
   },
   {
     "id": 424,
@@ -1604,8 +1608,8 @@
       "Farbe: Naturdunkelbraun",
       "50 g je Packung"
     ],
-    "image": "/assets/originals/424-0.jpg",
-    "restyled": false,
+    "image": "/assets/products/424.jpg",
+    "restyled": true,
     "originals": [
       "/assets/originals/424-0.jpg",
       "/assets/originals/424-1.jpg",
@@ -1618,29 +1622,31 @@
     "origin": "Brasilien",
     "netWeightGrams": 50,
     "priceUnit": "pack",
-    "weightGrams": 50
+    "weightGrams": 50,
+    "imageKind": "staged",
+    "secondImage": "/assets/products/424-2.jpg"
   },
   {
     "id": 425,
     "slug": "genius-weft-55-cm-blond-ombre-425",
     "name": "Genius Weft 55 cm",
-    "subtitle": "Blond Ombré",
+    "subtitle": "Goldblond Ombré",
     "category": "extensions",
     "priceCents": 13500,
     "sold": false,
     "length": "55",
     "base": "",
-    "color": "Blond Ombré",
+    "color": "Goldblond Ombré",
     "texture": "",
-    "description": "Genius Weft aus Premium-Echthaar in Blond Ombré, 55 cm lang. Eine Packung enthält 50 g.",
+    "description": "Genius Weft aus Premium-Echthaar in Goldblond Ombré, 55 cm lang. Eine Packung enthält 50 g.",
     "specs": [
       "Premium-Echthaar",
       "Haarlänge 55 cm",
-      "Farbe: Blond Ombré",
+      "Farbe: Goldblond Ombré",
       "50 g je Packung"
     ],
-    "image": "/assets/originals/425-0.jpg",
-    "restyled": false,
+    "image": "/assets/products/425.jpg",
+    "restyled": true,
     "originals": [
       "/assets/originals/425-0.jpg",
       "/assets/originals/425-1.jpg",
@@ -1652,30 +1658,32 @@
     "origin": "Brasilien",
     "netWeightGrams": 50,
     "priceUnit": "pack",
-    "weightGrams": 50
+    "weightGrams": 50,
+    "imageKind": "staged",
+    "secondImage": "/assets/products/425-2.jpg"
   },
   {
     "id": 426,
     "slug": "genius-weft-45-cm-kaffeebraun-ombre-426",
     "name": "Genius Weft 45 cm",
-    "subtitle": "Kaffeebraun Ombré",
+    "subtitle": "Kaffeebraun mit Kupfer-Ombré, naturlockig",
     "category": "extensions",
     "priceCents": 11500,
     "sold": false,
     "length": "45",
     "base": "",
-    "color": "Kaffeebraun Ombré",
+    "color": "Kaffeebraun mit Kupfer-Ombré",
     "texture": "Lockig",
-    "description": "Genius Weft aus Premium-Echthaar in Kaffeebraun Ombré, 45 cm lang, naturlockig. Eine Packung enthält 50 g.",
+    "description": "Genius Weft aus Premium-Echthaar in Kaffeebraun mit Kupfer-Ombré, 45 cm lang, naturlockig. Eine Packung enthält 50 g.",
     "specs": [
       "Premium-Echthaar",
       "Haarlänge 45 cm",
-      "Farbe: Kaffeebraun Ombré",
+      "Farbe: Kaffeebraun mit Kupfer-Ombré",
       "Struktur: Naturlockig",
       "50 g je Packung"
     ],
-    "image": "/assets/originals/426-0.jpg",
-    "restyled": false,
+    "image": "/assets/products/426.jpg",
+    "restyled": true,
     "originals": [
       "/assets/originals/426-0.jpg",
       "/assets/originals/426-1.jpg"
@@ -1686,29 +1694,31 @@
     "origin": "Brasilien",
     "netWeightGrams": 50,
     "priceUnit": "pack",
-    "weightGrams": 50
+    "weightGrams": 50,
+    "imageKind": "staged",
+    "secondImage": "/assets/products/426-2.jpg"
   },
   {
     "id": 427,
     "slug": "invisible-tape-55-cm-blond-ombre-mit-dunklem-ansatz-427",
     "name": "Invisible Tape 55 cm",
-    "subtitle": "Blond Ombré mit dunklem Ansatz",
+    "subtitle": "Hellblond Ombré mit dunklem Ansatz",
     "category": "extensions",
     "priceCents": 6000,
     "sold": false,
     "length": "55",
     "base": "",
-    "color": "Blond Ombré mit dunklem Ansatz",
+    "color": "Hellblond Ombré mit dunklem Ansatz",
     "texture": "",
-    "description": "Invisible-Tape-Extensions aus Premium-Echthaar in Blond Ombré mit dunklem Ansatz, 55 cm lang. Die Tapes fügen sich bei fachgerechter Einarbeitung unauffällig ins eigene Haar ein. Eine Packung enthält 25 g.",
+    "description": "Invisible-Tape-Extensions aus Premium-Echthaar in Hellblond Ombré mit dunklem Ansatz, 55 cm lang. Die Tapes fügen sich bei fachgerechter Einarbeitung unauffällig ins eigene Haar ein. Eine Packung enthält 25 g.",
     "specs": [
       "Premium-Echthaar",
       "Haarlänge 55 cm",
-      "Farbe: Blond Ombré mit dunklem Ansatz",
+      "Farbe: Hellblond Ombré mit dunklem Ansatz",
       "25 g je Packung"
     ],
-    "image": "/assets/originals/427-0.jpg",
-    "restyled": false,
+    "image": "/assets/products/427.jpg",
+    "restyled": true,
     "originals": [
       "/assets/originals/427-0.jpg",
       "/assets/originals/427-1.jpg",
@@ -1728,30 +1738,32 @@
     "origin": "Brasilien",
     "netWeightGrams": 25,
     "priceUnit": "pack",
-    "weightGrams": 25
+    "weightGrams": 25,
+    "imageKind": "staged",
+    "secondImage": "/assets/products/427-2.jpg"
   },
   {
     "id": 428,
     "slug": "butterfly-weft-55-cm-dunkelbraun-naturfarben-428",
     "name": "Butterfly Weft 55 cm",
-    "subtitle": "Dunkelbraun naturfarben",
+    "subtitle": "Naturdunkelbraun",
     "category": "extensions",
     "priceCents": 13000,
     "sold": false,
     "length": "55",
     "base": "",
-    "color": "Dunkelbraun naturfarben",
+    "color": "Naturdunkelbraun",
     "texture": "",
-    "description": "Butterfly Weft aus Premium-Echthaar in Dunkelbraun naturfarben, 55 cm lang. Die Tressenbreite beträgt 30 cm je Reihe. Eine Packung enthält 50 g.",
+    "description": "Butterfly Weft aus Premium-Echthaar in Naturdunkelbraun, 55 cm lang. Die Tressenbreite beträgt 30 cm je Reihe. Eine Packung enthält 50 g.",
     "specs": [
       "Premium-Echthaar",
       "Haarlänge 55 cm",
-      "Farbe: Dunkelbraun naturfarben",
+      "Farbe: Naturdunkelbraun",
       "Tressenbreite 30 cm je Reihe",
       "50 g je Packung"
     ],
-    "image": "/assets/originals/428-0.jpg",
-    "restyled": false,
+    "image": "/assets/products/428.jpg",
+    "restyled": true,
     "originals": [
       "/assets/originals/428-0.jpg",
       "/assets/originals/428-1.jpg",
@@ -1763,6 +1775,8 @@
     "origin": "Brasilien",
     "netWeightGrams": 50,
     "priceUnit": "pack",
-    "weightGrams": 50
+    "weightGrams": 50,
+    "imageKind": "staged",
+    "secondImage": "/assets/products/428-2.jpg"
   }
 ]

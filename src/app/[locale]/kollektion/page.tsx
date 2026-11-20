@@ -19,7 +19,6 @@ import {
   lengthBandOf,
   METHOD_IDS,
   methodOf,
-  orderByCategory,
   parseColorGroup,
   parseLengthBand,
   parseMethod,
@@ -71,6 +70,13 @@ function interleave(list: Product[]): Product[] {
   return out;
 }
 
+/** Nur gesetzte Parameter. */
+function compact(values: Record<string, string | null>): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const [key, value] of Object.entries(values)) if (value !== null) out[key] = value;
+  return out;
+}
+
 function sortProducts(list: Product[], sort: Sort, sold: Set<string>): Product[] {
   const isSold = (p: Product) => (p.sold || sold.has(p.slug) ? 1 : 0);
   // Empfehlung: Extensions zuerst, dann Haarteile; innerhalb jeder Kategorie die Farben gemischt
@@ -112,10 +118,10 @@ export default async function CollectionPage({ params, searchParams }: PageProps
     if (next.kategorie && next.kategorie !== "extensions") next.methode = null;
     return {
       pathname: "/kollektion" as const,
-      query: Object.fromEntries(Object.entries(next).filter((entry): entry is [string, string] => entry[1] !== null)),
+      query: compact(next),
     };
   };
-  const hidden = Object.fromEntries(Object.entries({ farbe: color, kategorie: category, laenge: length, methode: method }).filter((entry): entry is [string, string] => entry[1] !== null));
+  const hidden = compact({ farbe: color, kategorie: category, laenge: length, methode: method });
   const showMethod = !category || category === "extensions";
   const groups = [
     ...(showMethod ? [{ key: "methode" as const, label: t("collection.byMethod"), options: facetCounts(inCategory, METHOD_IDS, methodOf).map((o) => ({ ...o, label: t(`extensions.${o.id}`) })), value: method }] : []),
