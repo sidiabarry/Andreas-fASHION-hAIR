@@ -15,6 +15,7 @@
 - [ ] **Gewährleistungsgrafik** (amtliche Farb-PNG nach DVO (EU) 2025/1960) für die Bestellübersicht; bis dahin steht dort der Hinweis als Text.
 - [ ] **Versandkosten „ab 6 €“ / „ab 15 €“**: Die Live-Seite schreibt „ab“. Die Seite rechnet mit festen 6,00 € (DE, frei ab 150 €) und 15,00 € (EU). Bitte bestätigen oder Staffel nennen (`src/config/shipping.ts`).
 - [ ] **Anrede „Andrea“**: Die Inhaberin heißt Andreia. Soll die Seite weiter „Andrea“ (Rufname/Markenname) verwenden, z. B. „Andrea bestätigt persönlich“, „Treffen Sie Andrea im Atelier“?
+- [ ] **Extensions im Onlineverkauf (IDs 423–428):** Füllgewicht und Farbe je Packung bestätigen (Grundpreis je 1 kg, `check:launch` blockiert sonst); Belege für „Double Drawn“, „ungefärbt“, „Premium“ (Lieferantenangaben); Anzahl vorrätiger Packungen (dann kein Hinweis „Einzelstück“); Siegel ja/nein. Farbe des V-Toupets (422).
 - [ ] **E-Mail-Adresse** öffentlich: andreasfashionhair5@gmail.com (gesetzt). Für den Versand eine Absenderadresse an der eigenen Domain (Resend).
 
 ## Von Andreia zu bestätigen (Aussagen auf der Seite, die aus dem Export stammen)

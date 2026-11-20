@@ -1,6 +1,6 @@
 # Quellen der Rechtstexte
 
-Alle Quellen wurden am **17.11.2026** abgerufen. Primärquellen (Gesetzestexte, Bundesgesetzblatt, Amtsblatt) haben Vorrang; Kanzlei- und Verbandsseiten dienten nur zur Einordnung.
+Alle Quellen wurden am **17.11.2026** abgerufen, sofern kein anderes Datum vermerkt ist. Primärquellen (Gesetzestexte, Bundesgesetzblatt, Amtsblatt) haben Vorrang; Kanzlei- und Verbandsseiten dienten nur zur Einordnung.
 
 ## Gesetze und amtliche Texte
 
@@ -15,7 +15,11 @@ Alle Quellen wurden am **17.11.2026** abgerufen. Primärquellen (Gesetzestexte, 
 | Verbraucherschlichtung | § 36 VSBG – https://www.gesetze-im-internet.de/vsbg/__36.html | Informationspflicht; Ausnahme bis 10 Beschäftigte (Abs. 3) |
 | Endgerätezugriff (Warenkorb im localStorage) | § 25 TDDDG – https://www.gesetze-im-internet.de/ttdsg/__25.html | Abs. 2 Nr. 2 |
 | E-Mail-Werbung | § 7 UWG – https://www.gesetze-im-internet.de/uwg_2004/__7.html | Einwilligung (Abs. 2 Nr. 2), Bestandskundenausnahme (Abs. 3) |
-| Grundpreis | § 4 PAngV – https://www.gesetze-im-internet.de/pangv_2022/__4.html | Pflicht bei Verkauf nach Volumen/Länge; Ausnahmen |
+| Grundpreis | § 4 PAngV – https://www.gesetze-im-internet.de/pangv_2022/__4.html (erneut abgerufen 20.11.2026) | Pflicht bei Angebot und Preiswerbung nach Gewicht, Volumen, Länge oder Fläche („unmissverständlich, klar erkennbar und gut lesbar“); Ausnahmen Abs. 3 (u. a. Nr. 2 verschiedenartige Erzeugnisse, Nr. 7 kosmetische Mittel) |
+| Mengeneinheit Grundpreis | § 5 PAngV – https://www.gesetze-im-internet.de/pangv_2022/__5.html (abgerufen 20.11.2026) | Abs. 1: 1 kg / 1 l / 1 m; 100 g nur bei loser Ware (Abs. 2) → Extensions-Packungen je 1 kg |
+| Begriffe Fertigpackung, Grundpreis | § 2 PAngV – https://www.gesetze-im-internet.de/pangv_2022/__2.html ; § 42 MessEG – https://www.gesetze-im-internet.de/messeg/__42.html (abgerufen 20.11.2026) | Fertigpackung = in Abwesenheit der Käuferin abgepackt und verschlossen; Grundpreis enthält alle Preisbestandteile |
+| Irreführende Werbung | § 5 UWG – https://www.gesetze-im-internet.de/uwg_2004/__5.html (abgerufen 20.11.2026) | Abs. 2 Nr. 1: Beschaffenheit, Zusammensetzung, Verfahren der Herstellung, zu erwartende Ergebnisse |
+| Widerrufsausschlüsse (Extensions) | § 312g Abs. 2 Nr. 1 und 3 BGB – https://www.gesetze-im-internet.de/bgb/__312g.html (erneut abgerufen 20.11.2026) | unverändert; Hygiene-Ausschluss nur bei tatsächlich versiegelter Ware |
 | Kleinunternehmer | § 19 UStG – https://www.gesetze-im-internet.de/ustg_1980/__19.html | Grenzen 25.000 € (Vorjahr) / 100.000 € (laufendes Jahr) |
 | Handwerk | HwO Anlage A und B – https://www.gesetze-im-internet.de/hwo/anlage_a.html, https://www.gesetze-im-internet.de/hwo/anlage_b.html | Friseure = Anlage A Nr. 38; „Perückenmacher“ nicht gesondert gelistet |
 
@@ -44,4 +48,5 @@ Alle Quellen wurden am **17.11.2026** abgerufen. Primärquellen (Gesetzestexte, 
 | GPSR Art. 19 – Pflichtangaben im Online-Angebot | IT-Recht Kanzlei: https://www.it-recht-kanzlei.de/gpsr-produktsicherheitsverordnung-pflichtinformationen-qr-code-links.html ; IHK: https://www.ihk.de/blueprint/servlet/resource/blob/6815768/53c73df2f78254613923c3b9f24d274a/pdf-produktrecht-im-online-handel-data.pdf |
 | Verpackungsrecht, LUCID, PPWR ab 12.8.2026 | ZSVR: https://verpackungsregister.org/themen/versand-und-onlinehandel ; Onwalt: https://www.onwalt.de/akademie/verpackungsgesetz |
 | Kleinunternehmer und EU-Fernverkauf (10.000-€-Schwelle, OSS, § 19a UStG) | IHK München: https://www.ihk-muenchen.de/ratgeber/steuern/umsatzsteuer/kleinunternehmerregelung/ |
+| Grundpreis: „nach Gewicht anbieten“ (herausgehobene Mengenangabe als Bewertungskriterium), 1 kg seit 28.5.2022, Grundpreis überall dort, wo der Preis steht (auch Übersichten/Suche), Mouseover genügt nicht (abgerufen 20.11.2026) | IT-Recht Kanzlei: https://www.it-recht-kanzlei.de/grundpreise-preisangabenverordnung.html |
 | Hygiene-Ausschluss vom Widerruf (eng auszulegen; BGH VIII ZR 194/16 Matratze) | https://www.beck-aktuell.de/daily/meldung/detail/bgh-online-kauf-einer-matratze-trotz-entfernens-der-schutzfolie-widerrufbar ; https://www.it-recht-kanzlei.de/hygieneartikel-ausschluss-widerrufsrecht.html |

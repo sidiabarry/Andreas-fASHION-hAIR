@@ -12,7 +12,7 @@
  * missingCompanyFields() als blockierend erfasst (legal: true). Zusätzlich prüft
  * `npm run test:e2e -- --production`, dass keine Seite einen Marker rendert.
  */
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -41,6 +41,59 @@ for (const product of catalog) {
       text: `${product.name} (id ${product.id}): Sicherheitsangaben fehlen (GPSR${solvent ? ", CLP-Kennzeichnung/Gefahrenhinweise des Lösungsmittels" : ""})`,
     });
   }
+}
+
+// Gewichtsware (Extensions in Packungen nach Gramm): Grundpreis § 4 PAngV, Bezugsgröße 1 kg (§ 5 Abs. 1 PAngV).
+// Erkennung über Kategorie oder Methode im Namen, damit die Prüfung unabhängig vom Katalogschema greift.
+type CatalogEntry = (typeof catalog)[number] & { color?: string; description?: string; subtitle?: string; specs?: string[]; netWeightGrams?: unknown };
+const EXTENSION = /genius weft|butterfly weft|invisible tape|tape-?in|clip-?in|bonding|extension/i;
+const isWeightGood = (p: CatalogEntry) => p.category === "extensions" || EXTENSION.test(p.name);
+for (const product of catalog as CatalogEntry[]) {
+  if (!isWeightGood(product)) continue;
+  const grams = product.netWeightGrams;
+  if (typeof grams !== "number" || !Number.isFinite(grams) || grams <= 0) {
+    findings.push({
+      area: "catalog.json",
+      blocking: true,
+      text: `${product.name} (id ${product.id}): Füllgewicht (netWeightGrams) fehlt – ohne Gewicht kein Grundpreis je 1 kg (§ 4 Abs. 1, § 5 Abs. 1 PAngV)`,
+    });
+  }
+  if (!product.color?.trim()) {
+    findings.push({
+      area: "catalog.json",
+      blocking: true,
+      text: `${product.name} (id ${product.id}): Farbe fehlt – wesentliche Eigenschaft bei Packungsware (Art. 246a § 1 Abs. 1 Nr. 1 EGBGB)`,
+    });
+  }
+}
+
+// Grundpreis darf bei Fertigpackungen nur je 1 kg angegeben werden (100 g nur bei loser Ware, § 5 Abs. 2 PAngV).
+const per100g = /(€|EUR)\s*(\/|pro|je|per|par|por)\s*100\s*g\b|\/\s*100\s*g\b/i;
+const listFiles = (dir: string): string[] =>
+  existsSync(join(root, dir))
+    ? readdirSync(join(root, dir), { recursive: true, encoding: "utf8" })
+        .filter((f) => /\.(json|ts|tsx)$/.test(f))
+        .map((f) => `${dir}/${f}`)
+    : [];
+const unitPriceFiles = [...listFiles("src/messages").filter((f) => !f.includes("/catalog/")), ...listFiles("src/components"), ...listFiles("src/lib")];
+for (const file of unitPriceFiles) {
+  const path = join(root, file);
+  if (existsSync(path) && per100g.test(readFileSync(path, "utf8"))) {
+    findings.push({ area: "Preisangaben", blocking: true, text: `${file}: Grundpreis „/ 100 g“ gefunden – bei verpackter Ware nur „/ 1 kg“ zulässig (§ 5 Abs. 1 PAngV)` });
+  }
+}
+
+// Absolute Werbeaussagen (§ 5 UWG): nur mit Beleg bzw. abgeschwächt verwenden.
+const CLAIMS = /man sieht nichts|unsichtbar|niemand sieht|nicht zu sehen|naturbelassen|ungefärbt|double drawn/i;
+const claimIds = (catalog as CatalogEntry[])
+  .filter((p) => CLAIMS.test([p.name, p.subtitle, p.description, ...(p.specs ?? [])].join(" ")))
+  .map((p) => p.id);
+if (claimIds.length) {
+  findings.push({
+    area: "catalog.json",
+    blocking: false,
+    text: `Werbeaussagen prüfen (§ 5 UWG; „niemand sieht“, „naturbelassen“, „Double Drawn“ o. Ä.) bei ${claimIds.length} Produkten: ${claimIds.join(", ")} – siehe docs/COMPLIANCE.md Abschnitt 4b`,
+  });
 }
 
 // Rechtstexte des Rechtsagenten vorhanden?
