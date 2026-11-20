@@ -5,6 +5,7 @@ import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 
 import { CartProvider } from "@/components/cart/CartProvider";
+import { FxUi } from "@/components/fx/FxUi";
 import { DemoBanner } from "@/components/site/DemoBanner";
 import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";
@@ -61,6 +62,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
             <Footer demo={mode.demo} />
             <Rise />
           </CartProvider>
+          <FxUi />
         </NextIntlClientProvider>
         {mode.demo ? <DemoBanner /> : null}
       </body>

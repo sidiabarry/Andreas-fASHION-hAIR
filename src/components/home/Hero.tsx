@@ -171,7 +171,7 @@ export function Hero({ texts, posters, videos }: { texts: HeroTexts; posters: Po
         </h1>
         <p className="hero__lead">{texts.lead}</p>
         <div className="hero__actions">
-          <Link className="h-btn h-btn--gold" href="/extensions">
+          <Link className="h-btn h-btn--gold" data-magnetic="" href="/extensions">
             <span>{texts.ctaExtensions}</span> <Arrow />
           </Link>
           <Link className="h-link" href="/massanfertigung">

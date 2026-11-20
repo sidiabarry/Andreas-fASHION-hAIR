@@ -80,12 +80,12 @@ export function Concerns({ t, whatsapp, whatsappNote }: { t: ConcernTexts; whats
         </dl>
         <div className="concerns__cta h-in">
           {whatsapp ? (
-            <a className="h-btn h-btn--gold" href={whatsapp} rel="noopener noreferrer" target="_blank">
+            <a className="h-btn h-btn--gold" data-magnetic="" href={whatsapp} rel="noopener noreferrer" target="_blank">
               <span>{t.cta}</span> <Arrow />
               <span className="af-sr"> ({whatsappNote})</span>
             </a>
           ) : (
-            <Link className="h-btn h-btn--gold" href="/anfrage">
+            <Link className="h-btn h-btn--gold" data-magnetic="" href="/anfrage">
               <span>{t.cta}</span> <Arrow />
             </Link>
           )}
@@ -126,7 +126,7 @@ export function Steps({ t }: { t: { title: string; items: { title: string; text:
           ))}
         </ol>
         <p className="steps__cta h-in">
-          <Link className="h-btn h-btn--gold" href="/extensions">
+          <Link className="h-btn h-btn--gold" data-magnetic="" href="/extensions">
             <span>{t.cta}</span> <Arrow />
           </Link>
         </p>

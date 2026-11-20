@@ -47,7 +47,7 @@ export function Bespoke({ t, symbolImage }: { t: BespokeTexts; symbolImage: stri
             ))}
           </ol>
           <div className="bs__cta h-in">
-            <Link className="h-btn h-btn--gold" href="/massanfertigung">
+            <Link className="h-btn h-btn--gold" data-magnetic="" href="/massanfertigung">
               <span>{t.cta}</span> <Arrow />
             </Link>
             <p className="h-note">{t.time}</p>

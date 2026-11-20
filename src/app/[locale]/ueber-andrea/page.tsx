@@ -227,7 +227,7 @@ export default async function AboutPage({ params }: PageProps<"/[locale]/ueber-a
             <p className="h-lead h-in">{t("visitLead")}</p>
             <div className="aa-actions h-in">
               {wa ? (
-                <a className="h-btn h-btn--gold" href={wa} rel="noopener noreferrer" target="_blank">
+                <a className="h-btn h-btn--gold" data-magnetic="" href={wa} rel="noopener noreferrer" target="_blank">
                   <span>{t("visitCta")}</span> <Arrow />
                   <span className="af-sr"> ({waNote})</span>
                 </a>
@@ -255,7 +255,7 @@ export default async function AboutPage({ params }: PageProps<"/[locale]/ueber-a
             <Words text={t("nextTitle")} />
           </h2>
           <div className="aa-actions aa-actions--center h-in">
-            <Link className="h-btn h-btn--gold" href="/extensions">
+            <Link className="h-btn h-btn--gold" data-magnetic="" href="/extensions">
               <span>{t("nextExtensions")}</span> <Arrow />
             </Link>
             <Link className="h-link" href="/massanfertigung">

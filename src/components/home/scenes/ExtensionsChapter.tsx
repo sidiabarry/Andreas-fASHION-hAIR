@@ -62,7 +62,7 @@ export function ExtensionsChapter({ t, pieces, priceNote }: { t: ExtTexts; piece
             <p className="h-note">{t.methodsNote}</p>
           </div>
           <div className="xc__cta h-in">
-            <Link className="h-btn h-btn--gold" href="/extensions">
+            <Link className="h-btn h-btn--gold" data-magnetic="" href="/extensions">
               <span>{t.cta}</span> <Arrow />
             </Link>
             <Link className="h-link" href={{ pathname: "/anfrage", query: { thema: "salon" } }}>
@@ -75,10 +75,15 @@ export function ExtensionsChapter({ t, pieces, priceNote }: { t: ExtTexts; piece
           <ul aria-label={t.galleryLabel} className="xc__gallery">
             {pieces.map((p, i) => (
               <li className="xp h-in" key={p.slug} style={{ "--k": i } as CSSProperties}>
-                <Link aria-label={p.label} className="xp__media" href={`/produkt/${p.slug}`}>
-                  <Image alt="" height={1600} sizes="(max-width: 900px) 72vw, (max-width: 1240px) 30vw, 380px" src={p.image} width={1200} />
-                  <span aria-hidden="true" className="xp__cone" />
-                </Link>
+                <div className="xp__stage" data-tilt="">
+                  <Link aria-label={p.label} className="xp__media" data-lens="" href={`/produkt/${p.slug}`}>
+                    <Image alt="" height={1600} sizes="(max-width: 900px) 72vw, (max-width: 1240px) 30vw, 380px" src={p.image} width={1200} />
+                    <span aria-hidden="true" className="xp__cone" />
+                  </Link>
+                  <div aria-hidden="true" className="xp__floor">
+                    <Image alt="" height={1600} sizes="(max-width: 900px) 72vw, (max-width: 1240px) 30vw, 380px" src={p.image} width={1200} />
+                  </div>
+                </div>
                 <div className="xp__body">
                   <h3 className="xp__name">
                     <Link href={`/produkt/${p.slug}`}>{p.name}</Link>
