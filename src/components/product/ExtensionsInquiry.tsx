@@ -9,36 +9,18 @@ import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
 import { siteMode } from "@/server/mode";
 
-const METHODS = ["butterfly", "genius", "invisible", "tape", "keratin", "clip"] as const;
-
-/** Extensions: Methoden erklären, dann anfragen. Mit `hasProducts` steht der Abschnitt unter den kaufbaren Packungen (Salon/B2B, andere Methoden). */
-export async function ExtensionsSection({ locale, hasProducts = false }: { locale: Locale; hasProducts?: boolean }) {
+/** Anfrage für alles, was nicht als Packung im Shop liegt, plus Einstieg für Salons. */
+export async function ExtensionsInquiry({ locale }: { locale: Locale }) {
   const t = await getTranslations({ locale });
   const mode = siteMode();
   return (
     <div className="af-ext">
-      {hasProducts ? (
-        <section aria-labelledby="ext-other-title">
-          <h2 className="af-h3" id="ext-other-title">
-            {t("extensions.otherTitle")}
-          </h2>
-          <p className="af-text">{t("extensions.otherText")}</p>
-        </section>
-      ) : null}
-      <section aria-labelledby="methods-title">
-        <h2 className="af-h3" id="methods-title">
-          {t("extensions.methodsTitle")}
+      <section aria-labelledby="ext-salon-title" className="af-stack">
+        <h2 className="af-h3" id="ext-salon-title">
+          {t("extensions.otherTitle")}
         </h2>
-        <dl className="af-ext__methods">
-          {METHODS.map((m) => (
-            <div key={m}>
-              <dt>{t(`extensions.${m}`)}</dt>
-              <dd>{t(`extensions.${m}Text`)}</dd>
-            </div>
-          ))}
-        </dl>
-        <p className="af-note">{t("extensions.which")}</p>
-        <div className="af-review" style={{ marginTop: 28 }}>
+        <p className="af-text">{t("extensions.otherText")}</p>
+        <div className="af-review" style={{ marginTop: 12 }}>
           <h3 className="af-h3">{t("extensions.salonTitle")}</h3>
           <p className="af-text">{t("extensions.salonText")}</p>
           <Link className="af-cta-line" href={{ pathname: "/anfrage", query: { thema: "salon" } }} style={{ justifySelf: "start" }}>

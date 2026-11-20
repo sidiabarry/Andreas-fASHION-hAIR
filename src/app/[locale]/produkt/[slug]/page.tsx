@@ -5,6 +5,9 @@ import { notFound } from "next/navigation";
 import { Arrow } from "@/components/Arrow";
 import { JsonLd } from "@/components/JsonLd";
 import { AddToCart } from "@/components/product/AddToCart";
+import { CustomStrip } from "@/components/product/CustomStrip";
+import { ProductCopyBlock } from "@/components/product/ProductCopyBlock";
+import { SpecChips } from "@/components/product/SpecChips";
 import { CompareSlider } from "@/components/product/CompareSlider";
 import { Gallery } from "@/components/product/Gallery";
 import { RecentlyViewed } from "@/components/product/RecentlyViewed";
@@ -16,7 +19,7 @@ import { PriceNote } from "@/components/product/PriceNote";
 import { ProductCard } from "@/components/product/ProductCard";
 import { company } from "@/config/company";
 import { deliveryParams } from "@/config/shipping";
-import { byCategory, getProduct, isUnique, productText, unitInfo } from "@/data/catalog";
+import { byCategory, galleryImages, getProduct, imageKindOf, isUnique, productCopy, productText, unitInfo } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
 import { breadcrumbJsonLd } from "@/lib/jsonld";
@@ -50,28 +53,38 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
   const isSold = product.sold || sold.has(product.slug);
   const unique = isUnique(product);
   const price = formatPrice(product.priceCents, locale);
-  const images = product.restyled ? [product.image, ...product.originals] : product.originals.length ? product.originals : [product.image];
-  const shots = images.map((src, index) => ({
-    alt:
-      product.restyled && index === 0
-        ? t("product.imageAlt", { name: text.name, subtitle: text.subtitle })
-        : t("product.originalAlt", { index: product.restyled ? index : index + 1, name: text.name, subtitle: text.subtitle }),
-    label: t("product.showImage", { index: index + 1, total: images.length }),
-    src,
-  }));
+  const kind = imageKindOf(product);
+  const gallery = galleryImages(product);
+  const images = gallery.map((shot) => shot.src);
+  let originalIndex = 0;
+  let studioIndex = 0;
+  const shots = gallery.map((shot, index) => {
+    const name = { name: text.name, subtitle: text.subtitle };
+    let alt: string;
+    if (shot.kind === "original") alt = t("product.originalAlt", { index: ++originalIndex, ...name });
+    else alt = t(kind === "staged" ? "product.imageAltStaged" : "product.imageAlt", { ...name, index: ++studioIndex });
+    return { alt, label: t("product.showImage", { index: index + 1, total: gallery.length }), src: shot.src };
+  });
+  const copy = productCopy(product, locale);
+  const available = (item: { slug: string; sold: boolean }) => !item.sold && !sold.has(item.slug);
+  const isExtension = product.category === "extensions";
   const more = byCategory(product.category)
-    .filter((item) => item.slug !== product.slug && !item.sold && !sold.has(item.slug))
+    .filter((item) => item.slug !== product.slug && available(item))
     .slice(0, 4);
+  // Zubehör: nur vorhandene Katalogprodukte der Kategorie Pflege
+  const accessories = isExtension ? byCategory("pflege").filter(available).slice(0, 4) : [];
   const delivery = deliveryParams();
   const hasNano = product.specs.some((spec) => spec.startsWith("Nano-Skin"));
   const hasClips = product.specs.includes("Befestigung mit Clips");
   const hair = product.category !== "pflege";
   const objections = [
+    ...(copy?.faq ?? []),
     ...(hasNano ? [{ a: t("objections.visibleA"), q: t("objections.visibleQ") }] : []),
     ...(hair ? [{ a: t("objections.colorA"), q: t("objections.colorQ") }] : []),
     ...(hair ? [{ a: hasClips ? t("objections.holdClips") : t("objections.holdOther"), q: t("objections.holdQ") }] : []),
     ...(hair ? [{ a: product.base ? t("objections.fitBase", { base: product.base }) : t("objections.fitNoBase"), q: t("objections.fitQ") }] : []),
     ...(hair ? [{ a: t("objections.careA"), q: t("objections.careQ") }] : []),
+    ...(isExtension ? [{ a: t("objections.packA"), q: t("objections.packQ") }] : []),
     { a: t("objections.returnA"), q: t("objections.returnQ") },
     { a: t("objections.payA"), q: t("objections.payQ") },
   ];
@@ -125,6 +138,11 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
         <div className="af-pdp">
           <div className="af-pdp__gallery">
             <Gallery closeLabel={t("product.zoomClose")} hint={t("product.zoomHint")} shots={shots} zoomLabel={t("product.zoom")} />
+            {kind ? (
+              <p className="af-note af-imgnote" data-kind={kind}>
+                {t(kind === "staged" ? "product.imageNoteStaged" : "product.imageNoteRelit")}
+              </p>
+            ) : null}
             {product.restyled && product.originals[0] ? (
               <section aria-labelledby="compare-title" className="af-stack" style={{ "--gap": "12px" } as React.CSSProperties}>
                 <h2 className="af-mono" id="compare-title">
@@ -137,7 +155,7 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
                   studio={product.image}
                   studioLabel={t("product.compareStudio")}
                 />
-                <p className="af-note">{t("product.compareNote")}</p>
+                <p className="af-note">{t(kind === "staged" ? "product.compareNoteStaged" : "product.compareNote")}</p>
               </section>
             ) : null}
           </div>
@@ -151,7 +169,9 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
               <p className="af-lead" style={{ marginTop: 10 }}>
                 {text.subtitle}
               </p>
+              {copy?.headline ? <p className="af-headline">{copy.headline}</p> : null}
             </div>
+            <SpecChips locale={locale} product={product} />
 
             <div className="af-pdp__price">
               {price}
@@ -168,7 +188,8 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
             {!isSold && product.availability === "unknown" ? <p className="af-note">{t("product.availabilityUnknown")}</p> : null}
             {product.origin === "Brasilien" ? <p className="af-note af-gold">{t("product.originBrazil")}</p> : null}
 
-            <p className="af-text">{text.description}</p>
+            <p className="af-text">{copy?.story ?? text.description}</p>
+            {isExtension ? <p className="af-note">{t("product.packQuestion")}</p> : null}
             {product.category === "extensions" ? <p className="af-note">{t("product.extWithdrawal")}</p> : null}
 
             {isSold ? (
@@ -180,19 +201,22 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
                 <AddToCart price={price} slug={product.slug} unique={unique} />
               </div>
             )}
-            <div className="af-pdp__secondary">
-              <WishlistButton slug={product.slug} />
-              {company.social.whatsapp ? (
-                <a className="af-chip" href={company.social.whatsapp} rel="noopener noreferrer" target="_blank">
-                  <span>{t("product.askWhatsapp")}</span>
-                  <span className="af-sr"> {t("common.newTab")}</span>
-                </a>
-              ) : null}
+            <div className="af-consult">
+              <h2 className="af-mono">{t("product.consultTitle")}</h2>
+              <p className="af-text">{t(isExtension ? "product.consultExtensions" : "product.consultText")}</p>
+              <div className="af-pdp__secondary">
+                <WishlistButton slug={product.slug} />
+                {company.social.whatsapp ? (
+                  <a className="af-chip" href={company.social.whatsapp} rel="noopener noreferrer" target="_blank">
+                    <span>{t("product.askWhatsapp")}</span>
+                    <span className="af-sr"> {t("common.newTab")}</span>
+                  </a>
+                ) : null}
+              </div>
+              <Link className="af-cta-line" href={{ pathname: "/anfrage", query: { produkt: `${text.name}, ${text.subtitle}`, thema: "beratung" } }} style={{ justifySelf: "start" }}>
+                {t("product.ask")}
+              </Link>
             </div>
-
-            <Link className="af-cta-line" href={{ pathname: "/anfrage", query: { produkt: `${text.name}, ${text.subtitle}`, thema: "beratung" } }} style={{ justifySelf: "start" }}>
-              {t("product.ask")}
-            </Link>
 
             <TrustFacts locale={locale} />
 
@@ -231,14 +255,31 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
           </div>
         </div>
 
+        {copy ? <ProductCopyBlock copy={copy} locale={locale} /> : null}
+        {hair ? <CustomStrip product={`${text.name}, ${text.subtitle}`} /> : null}
         <RecentlyViewed exclude={product.slug} />
         {more.length > 0 ? (
-          <section aria-labelledby="more-title" className="af-section" style={{ paddingBottom: 0 }}>
+          <section aria-labelledby="more-title" className="af-section af-section--tight" style={{ paddingBottom: 0 }}>
             <h2 className="af-h2" id="more-title">
-              {t("product.more")}
+              {t(isExtension ? "product.moreExtensions" : "product.more")}
             </h2>
             <div className="af-grid">
               {more.map((item) => (
+                <ProductCard key={item.slug} locale={locale} product={item} />
+              ))}
+            </div>
+          </section>
+        ) : null}
+        {accessories.length > 0 ? (
+          <section aria-labelledby="acc-title" className="af-section af-section--tight" style={{ paddingBottom: 0 }}>
+            <h2 className="af-h2" id="acc-title">
+              {t("product.accessories")}
+            </h2>
+            <p className="af-note" style={{ marginTop: 12 }}>
+              {t("product.accessoriesNote")}
+            </p>
+            <div className="af-grid">
+              {accessories.map((item) => (
                 <ProductCard key={item.slug} locale={locale} product={item} />
               ))}
             </div>

@@ -9,6 +9,8 @@ import { useLocalList, WISHLIST_KEY } from "@/components/cart/useLocalList";
 import { Logo } from "@/components/Logo";
 import { Link, usePathname } from "@/i18n/navigation";
 
+import "../shop.css";
+
 import { LocaleSwitcher } from "./LocaleSwitcher";
 
 export function Header() {
@@ -40,17 +42,21 @@ export function Header() {
   }, [open]);
 
   const current = (href: string) => (pathname === href ? "page" : undefined);
+  // Reihenfolge laut Rangfolge: Extensions, Perücken und Topper, Maßanfertigung (immer sichtbar), Pflege, Andrea, Beratung
   const links = (
     <>
-      <Link href={{ pathname: "/kollektion", query: { kategorie: "extensions" } }}>{t("nav.extensions")}</Link>
-      <Link aria-current={current("/kollektion")} href="/kollektion">
-        {t("nav.collection")}
+      <Link aria-current={current("/extensions")} href="/extensions">
+        {t("nav.extensions")}
       </Link>
-      <Link href={{ hash: "handwerk", pathname: "/" }}>{t("nav.craft")}</Link>
+      <Link href={{ pathname: "/kollektion", query: { kategorie: "topper" } }}>{t("nav.wigs")}</Link>
+      <Link aria-current={current("/massanfertigung")} href="/massanfertigung">
+        {t("nav.custom")}
+      </Link>
+      <Link href={{ pathname: "/kollektion", query: { kategorie: "pflege" } }}>{t("nav.care")}</Link>
       <Link aria-current={current("/ueber-andrea")} href="/ueber-andrea">
         {t("nav.about")}
       </Link>
-      <Link aria-current={current("/anfrage")} href="/anfrage">
+      <Link aria-current={current("/anfrage")} className="af-nav__consult" href="/anfrage">
         {t("nav.consultation")}
       </Link>
     </>

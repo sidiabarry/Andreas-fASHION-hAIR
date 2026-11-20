@@ -2,13 +2,43 @@ import raw from "./catalog.json";
 import catalogEn from "../messages/catalog/en.json";
 import catalogEs from "../messages/catalog/es.json";
 import catalogFr from "../messages/catalog/fr.json";
+import copyEn from "../messages/catalog-copy/en.json";
+import copyEs from "../messages/catalog-copy/es.json";
+import copyFr from "../messages/catalog-copy/fr.json";
 import type { Locale } from "../i18n/locales";
 
 /** Reihenfolge = Reihenfolge in Menü und Filtern. Extensions zuerst (Wunsch der Inhaberin). */
 export const CATEGORY_IDS = ["extensions", "topper", "peruecken", "pony", "maenner", "pflege"] as const;
 export type CategoryId = (typeof CATEGORY_IDS)[number];
 
-export type Product = {
+/**
+ * Optionale Verkaufstexte je Produkt (Deutsch = Quelle, in catalog.json am Produkt).
+ * Fehlt ein Feld, gilt die bisherige Darstellung. Übersetzungen je Produkt-ID in
+ * src/messages/catalog-copy/<lang>.json (nur die Felder, die überschrieben werden; der Rest fällt auf Deutsch zurück).
+ * Bewusst getrennt von messages/catalog/<lang>.json, weil scripts/catalog-i18n diese Dateien neu erzeugt.
+ */
+export type ProductCopy = {
+  /** Eine Zeile unter dem Namen. */
+  headline?: string;
+  /** 2–3 Sätze: Ergebnis und Vorstellungskraft, ohne Heilversprechen. */
+  story?: string;
+  /** 3–5 Punkte. */
+  benefits?: string[];
+  /** 2–4 Sätze zur Methode. */
+  howItWorks?: string;
+  /** Für wen das Stück passt, 1–2 Sätze. */
+  goodFor?: string;
+  /** Pflegehinweise als Liste. */
+  care?: string[];
+  /** Zusätzliche Fragen und Antworten, stehen vor den allgemeinen Einwänden. */
+  faq?: { q: string; a: string }[];
+};
+export const COPY_FIELDS = ["headline", "story", "benefits", "howItWorks", "goodFor", "care", "faq"] as const satisfies readonly (keyof ProductCopy)[];
+
+/** Bildart des Hauptbilds: "relit" = nur neu ausgeleuchtet, "staged" = inszenierte Studioaufnahme (Farbe am Original gemessen). */
+export type ImageKind = "relit" | "staged";
+
+export type Product = ProductCopy & {
   id: number;
   slug: string;
   /** Deutscher Produktname (Quelle: Export, übersetzt von der Live-Seite) */
@@ -27,6 +57,10 @@ export type Product = {
   specs: string[];
   image: string;
   restyled: boolean;
+  /** Art des Studiobilds (nur bei restyled). Fehlt das Feld, gilt "relit". */
+  imageKind?: ImageKind | null;
+  /** Zweites Studiobild, steht in der Galerie direkt hinter dem Hauptbild. */
+  secondImage?: string | null;
   originals: string[];
   madeToOrder: boolean;
   /** Bestand laut Abgleich mit der Inhaberin. "unknown" = noch nicht abgeglichen (Anzeige: Verfügbarkeit wird persönlich bestätigt). */
@@ -49,6 +83,23 @@ export type Product = {
 };
 
 export type ProductText = Pick<Product, "name" | "subtitle" | "description" | "specs">;
+
+export function imageKindOf(product: Pick<Product, "restyled" | "imageKind">): ImageKind | null {
+  return product.restyled ? (product.imageKind ?? "relit") : null;
+}
+
+/** Bilder in Galerie-Reihenfolge: Studio-Hauptbild, Zweitbild, dann die unbearbeiteten Originalfotos. */
+export function galleryImages(product: Product): { src: string; kind: "studio" | "original" }[] {
+  if (!product.restyled) {
+    const list = product.originals.length ? product.originals : [product.image];
+    return list.map((src) => ({ kind: "original", src }));
+  }
+  return [
+    { kind: "studio", src: product.image },
+    ...(product.secondImage ? [{ kind: "studio" as const, src: product.secondImage }] : []),
+    ...product.originals.map((src) => ({ kind: "original" as const, src })),
+  ];
+}
 
 export const products: Product[] = raw as Product[];
 
@@ -75,6 +126,23 @@ const translations: Partial<Record<Locale, Record<string, ProductText>>> = {
   es: catalogEs as Record<string, ProductText>,
   fr: catalogFr as Record<string, ProductText>,
 };
+
+const copyTranslations: Partial<Record<Locale, Record<string, ProductCopy>>> = {
+  en: copyEn as Record<string, ProductCopy>,
+  es: copyEs as Record<string, ProductCopy>,
+  fr: copyFr as Record<string, ProductCopy>,
+};
+
+/** Verkaufstexte in der Sprache: je Feld die Übersetzung, sonst der deutsche Text; null, wenn nichts hinterlegt ist. */
+export function productCopy(product: Product, locale: Locale): ProductCopy | null {
+  const merged: ProductCopy = {};
+  const override = locale === "de" ? undefined : copyTranslations[locale]?.[String(product.id)];
+  for (const field of COPY_FIELDS) {
+    const value = override?.[field] ?? product[field];
+    if (Array.isArray(value) ? value.length : value) (merged as Record<string, unknown>)[field] = value;
+  }
+  return Object.keys(merged).length ? merged : null;
+}
 
 export function isCategoryId(value: unknown): value is CategoryId {
   return typeof value === "string" && (CATEGORY_IDS as readonly string[]).includes(value);

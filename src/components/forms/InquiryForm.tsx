@@ -6,6 +6,7 @@ import { useActionState, useEffect, useRef, useState } from "react";
 import { useCart } from "@/components/cart/CartProvider";
 import { Field } from "@/components/forms/Field";
 import { Honeypot } from "@/components/forms/Honeypot";
+import { CustomWizard } from "@/components/forms/CustomWizard";
 import { StartedAt } from "@/components/forms/StartedAt";
 import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
@@ -15,7 +16,7 @@ import type { InquiryTopic } from "@/lib/validation";
 import { sendInquiry } from "@/server/actions";
 import type { FormState } from "@/server/actions";
 
-export function InquiryForm({ topic: initialTopic, product, ownerEmail, b2bNotice, fixedTopic = false }: { topic: InquiryTopic; product: string; ownerEmail: string; b2bNotice: string; fixedTopic?: boolean }) {
+export function InquiryForm({ topic: initialTopic, product, ownerEmail, b2bNotice, fixedTopic = false, wizard = false }: { topic: InquiryTopic; product: string; ownerEmail: string; b2bNotice: string; fixedTopic?: boolean; wizard?: boolean }) {
   const t = useTranslations();
   const locale = useLocale() as Locale;
   const cart = useCart();
@@ -56,6 +57,43 @@ export function InquiryForm({ topic: initialTopic, product, ownerEmail, b2bNotic
               ? t("inquiry.unavailable")
               : t("inquiry.failed", { email: ownerEmail })
       : null;
+
+  const contact = (
+    <>
+      <div className="af-form__two">
+      <Field error={err("name")} label={topic === "salon" ? t("inquiry.contactPerson") : t("inquiry.name")} name="name" required requiredLabel={t("common.required")}>
+        {(p) => <input {...p} autoComplete="name" maxLength={120} />}
+      </Field>
+      <Field error={err("email")} label={t("inquiry.email")} name="email" required requiredLabel={t("common.required")}>
+        {(p) => <input {...p} autoComplete="email" inputMode="email" maxLength={160} type="email" />}
+      </Field>
+    </div>
+    <Field error={err("phone")} label={t("inquiry.phone")} name="phone" optionalLabel={t("common.optional")}>
+      {(p) => <input {...p} autoComplete="tel" inputMode="tel" maxLength={40} type="tel" />}
+    </Field>
+    <Field error={err("message")} hint={t("inquiry.healthNote")} label={t("inquiry.message")} name="message" required requiredLabel={t("common.required")}>
+      {(p) => <textarea {...p} maxLength={1600} placeholder={t(`inquiry.intro.${topic}.hint`)} />}
+    </Field>
+    <div className="af-check">
+      <input aria-describedby={fields.privacy ? "privacy-error" : undefined} aria-invalid={fields.privacy ? true : undefined} id="privacy" name="privacy" required type="checkbox" />
+      <label htmlFor="privacy">
+        {t.rich("inquiry.privacy", { link: (chunks) => <Link href="/datenschutz" target="_blank">{chunks}</Link> })}
+      </label>
+    </div>
+    {fields.privacy ? (
+      <p className="af-field__error" id="privacy-error">
+        {t("errors.privacy")}
+      </p>
+    ) : null}
+    <button aria-busy={pending} className="af-cta-band" disabled={pending} type="submit">
+      {pending ? t("common.sending") : t("inquiry.submit")}
+    </button>
+    </>
+  );
+
+  if (wizard) {
+    return <CustomWizard action={action} alertRef={alertRef} contact={contact} errorText={errorText} initialProduct={product} pending={pending} locale={locale} />;
+  }
 
   return (
     <form action={action} className="af-form" noValidate>
@@ -143,34 +181,7 @@ export function InquiryForm({ topic: initialTopic, product, ownerEmail, b2bNotic
           </ul>
         </section>
       ) : null}
-      <div className="af-form__two">
-        <Field error={err("name")} label={topic === "salon" ? t("inquiry.contactPerson") : t("inquiry.name")} name="name" required requiredLabel={t("common.required")}>
-          {(p) => <input {...p} autoComplete="name" maxLength={120} />}
-        </Field>
-        <Field error={err("email")} label={t("inquiry.email")} name="email" required requiredLabel={t("common.required")}>
-          {(p) => <input {...p} autoComplete="email" inputMode="email" maxLength={160} type="email" />}
-        </Field>
-      </div>
-      <Field error={err("phone")} label={t("inquiry.phone")} name="phone" optionalLabel={t("common.optional")}>
-        {(p) => <input {...p} autoComplete="tel" inputMode="tel" maxLength={40} type="tel" />}
-      </Field>
-      <Field error={err("message")} hint={t("inquiry.healthNote")} label={t("inquiry.message")} name="message" required requiredLabel={t("common.required")}>
-        {(p) => <textarea {...p} maxLength={1600} placeholder={t(`inquiry.intro.${topic}.hint`)} />}
-      </Field>
-      <div className="af-check">
-        <input aria-describedby={fields.privacy ? "privacy-error" : undefined} aria-invalid={fields.privacy ? true : undefined} id="privacy" name="privacy" required type="checkbox" />
-        <label htmlFor="privacy">
-          {t.rich("inquiry.privacy", { link: (chunks) => <Link href="/datenschutz" target="_blank">{chunks}</Link> })}
-        </label>
-      </div>
-      {fields.privacy ? (
-        <p className="af-field__error" id="privacy-error">
-          {t("errors.privacy")}
-        </p>
-      ) : null}
-      <button aria-busy={pending} className="af-cta-band" disabled={pending} type="submit">
-        {pending ? t("common.sending") : t("inquiry.submit")}
-      </button>
+      {contact}
     </form>
   );
 }
