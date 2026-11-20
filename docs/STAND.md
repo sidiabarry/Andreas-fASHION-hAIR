@@ -16,6 +16,6 @@ Branch `nextjs`. Zuletzt aktualisiert beim jeweiligen Push.
 3. Übrige Sprachen (fr, es, pt, it, nl, pl, tr).
 4. Vollständiger Playwright-Lauf (alle Seiten × 4 Viewports, axe, CLS).
 
-## Grenze zum Design-Agenten
+## Grenze zum Design-Agenten (überholt: Zuständigkeiten jetzt in CLAUDE.md und docs/AGENTEN.md)
 
 Startseite: `src/app/[locale]/page.tsx`, `src/components/home/**`, `src/components/fx/**`, `src/styles/home.css`, Nachrichten `home.*`/`hero.*`. Schnittstellen in `docs/ARCHITEKTUR.md`, Tokens in `docs/DESIGN-TOKENS.md`.
