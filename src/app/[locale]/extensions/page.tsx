@@ -63,11 +63,11 @@ export default async function ExtensionsPage({ params }: PageProps<"/[locale]/ex
             {t("extensions.methodsTitle")}
           </h2>
           <p className="af-lead">{t("extensions.methodsLead")}</p>
-          <ul className="af-methods">
+          <ul className="af-hubmethods">
             {METHOD_IDS.map((m) => {
               const count = packs.filter((p) => methodOf(p) === m).length;
               return (
-                <li className="af-method" key={m}>
+                <li className="af-hubmethod" key={m}>
                   <h3 className="af-h3">{t(`extensions.${m}`)}</h3>
                   <p className="af-text">{t(`extensions.${m}Text`)}</p>
                   {count > 0 ? (
@@ -104,14 +104,14 @@ export default async function ExtensionsPage({ params }: PageProps<"/[locale]/ex
               </ul>
             ) : null}
           </div>
-          <ol className="af-steps">
+          <ol className="af-hubsteps">
             {(["light", "photo", "answer"] as const).map((step) => (
               <li key={step}>
                 <b>{t(`extensions.colorSteps.${step}.title`)}</b>
                 <span>{t(`extensions.colorSteps.${step}.text`)}</span>
               </li>
             ))}
-            <li className="af-steps__note">{t("extensions.colorNote")}</li>
+            <li className="af-hubsteps__note">{t("extensions.colorNote")}</li>
           </ol>
         </section>
 

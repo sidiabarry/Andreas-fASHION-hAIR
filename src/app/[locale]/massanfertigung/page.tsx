@@ -44,7 +44,7 @@ export default async function CustomPage({ params, searchParams }: PageProps<"/[
           <p className="af-lead">{t("custom.lead")}</p>
           {product ? <p className="af-only">{t("inquiry.about", { product })}</p> : null}
           <p className="af-note">{t("custom.timing", deliveryParams())}</p>
-          <ol className="af-steps af-steps--plain">
+          <ol className="af-hubsteps af-hubsteps--plain">
             {(["system", "length", "color", "structure", "amount", "contact"] as const).map((step) => (
               <li key={step}>
                 <b>{t(`custom.steps.${step}.title`)}</b>
