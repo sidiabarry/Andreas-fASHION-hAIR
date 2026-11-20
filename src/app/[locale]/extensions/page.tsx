@@ -52,7 +52,6 @@ export default async function ExtensionsPage({ params }: PageProps<"/[locale]/ex
             </Link>
           </div>
           <ul className="af-hub__facts">
-            <li>{t("product.originBrazil")}</li>
             <li>{t("trust.atelier", { city: company.address.city })}</li>
             <li>{t("trust.payLater")}</li>
           </ul>

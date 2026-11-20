@@ -24,7 +24,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 420,
@@ -50,7 +50,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 419,
@@ -78,7 +78,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 417,
@@ -105,7 +105,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 416,
@@ -138,7 +138,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 415,
@@ -171,7 +171,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 414,
@@ -204,7 +204,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 413,
@@ -237,7 +237,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 408,
@@ -270,7 +270,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 407,
@@ -302,7 +302,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 405,
@@ -335,7 +335,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 287,
@@ -365,7 +365,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 263,
@@ -398,7 +398,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 256,
@@ -431,7 +431,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 246,
@@ -464,7 +464,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 241,
@@ -493,7 +493,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 238,
@@ -522,7 +522,7 @@
     "madeToOrder": true,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 234,
@@ -667,7 +667,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 200,
@@ -700,7 +700,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 191,
@@ -733,7 +733,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 186,
@@ -766,7 +766,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 180,
@@ -799,7 +799,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 175,
@@ -832,7 +832,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 169,
@@ -865,7 +865,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 164,
@@ -899,7 +899,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 110,
@@ -929,7 +929,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 105,
@@ -958,7 +958,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 99,
@@ -987,7 +987,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 93,
@@ -1016,7 +1016,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 88,
@@ -1044,7 +1044,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 83,
@@ -1073,7 +1073,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 78,
@@ -1102,7 +1102,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 73,
@@ -1131,7 +1131,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 68,
@@ -1160,7 +1160,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 63,
@@ -1189,7 +1189,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 58,
@@ -1218,7 +1218,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 53,
@@ -1247,7 +1247,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 48,
@@ -1276,7 +1276,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 43,
@@ -1305,7 +1305,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 38,
@@ -1334,7 +1334,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 33,
@@ -1363,7 +1363,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 29,
@@ -1392,7 +1392,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 21,
@@ -1421,7 +1421,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 17,
@@ -1450,7 +1450,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 12,
@@ -1479,7 +1479,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 11,
@@ -1508,7 +1508,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": null
   },
   {
     "id": 422,
@@ -1544,7 +1544,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien",
+    "origin": null,
     "netWeightGrams": null,
     "imageKind": "staged",
     "secondImage": "/assets/products/422-2.jpg",
@@ -1611,7 +1611,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien",
+    "origin": null,
     "netWeightGrams": 194,
     "priceUnit": "set",
     "weightGrams": 194,
@@ -1680,7 +1680,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien",
+    "origin": null,
     "netWeightGrams": 50,
     "priceUnit": "pack",
     "weightGrams": 50,
@@ -1746,7 +1746,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien",
+    "origin": null,
     "netWeightGrams": 50,
     "priceUnit": "pack",
     "weightGrams": 50,
@@ -1811,7 +1811,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien",
+    "origin": null,
     "netWeightGrams": 50,
     "priceUnit": "pack",
     "weightGrams": 50,
@@ -1884,7 +1884,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien",
+    "origin": null,
     "netWeightGrams": 25,
     "priceUnit": "pack",
     "weightGrams": 25,
@@ -1951,7 +1951,7 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien",
+    "origin": null,
     "netWeightGrams": 50,
     "priceUnit": "pack",
     "weightGrams": 50,

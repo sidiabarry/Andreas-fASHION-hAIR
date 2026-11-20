@@ -186,7 +186,6 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
               <p className="af-only">{t("product.customMsg", delivery)}</p>
             ) : null}
             {!isSold && product.availability === "unknown" ? <p className="af-note">{t("product.availabilityUnknown")}</p> : null}
-            {product.origin === "Brasilien" ? <p className="af-note af-gold">{t("product.originBrazil")}</p> : null}
 
             <p className="af-text">{copy?.story ?? text.description}</p>
             {isExtension ? <p className="af-note">{t("product.packQuestion")}</p> : null}

@@ -65,7 +65,7 @@ export type Product = ProductCopy & {
   madeToOrder: boolean;
   /** Bestand laut Abgleich mit der Inhaberin. "unknown" = noch nicht abgeglichen (Anzeige: Verfügbarkeit wird persönlich bestätigt). */
   availability: "in_stock" | "made_to_order" | "unknown";
-  /** Herkunft des Haars (vom Auftraggeber bestätigt 11/2026: brasilianisches Echthaar). null bei Pflegeprodukten. */
+  /** Herkunft des Haars. Korrektur des Auftraggebers 11/2026: nicht aus Brasilien; ohne belegte Herkunft immer null. */
   origin: "Brasilien" | null;
   /** Sicherheits-/Gefahrstoffhinweise (GPSR, CLP). null = noch nicht geliefert. */
   safety: string | null;
