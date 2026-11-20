@@ -40,7 +40,7 @@ Gemeinsam genutzt (nur ergänzen, nie umbenennen): Tokens in `globals.css` (`doc
 
 - **Orchestrator** (Hauptsitzung) plant, verteilt, merged, pusht. Er liest keine großen Dateien selbst, sondern fragt `scout`.
 - Schreibende Agenten arbeiten **im eigenen Worktree** (`isolation: worktree`), committen dort und nennen am Ende den Branch. Der Orchestrator merged in den Arbeitsbranch; nur er pusht.
-- **Übergaben über Dateien, nicht über den Chat:** ausführliche Ergebnisse nach `$COORD/findings/<agent>-<thema>.md` (`$COORD` gibt `wt:prepare` aus). Antwort an den Orchestrator: höchstens 10 Zeilen – Ergebnis, Branch, Pfad zur Notiz, offene Fragen.
+- **Übergaben über Dateien, nicht über den Chat:** ausführliche Ergebnisse nach `$COORD/findings/<agent>-<thema>.md` im eigenen Worktree (`$COORD` gibt `wt:prepare` aus; Agenten dürfen nicht außerhalb ihres Worktrees schreiben). Antwort an den Orchestrator: höchstens 10 Zeilen – Ergebnis, Branch, Pfad zur Notiz, offene Fragen.
 - Gezielt lesen: erst `Grep`/`Glob`, dann `Read` mit `offset/limit`. Nie lesen: `package-lock.json`, `.next/`, Fotos in `public/assets/originals/`, übersetzte Rechtstexte, wenn Deutsch reicht.
 - Befehlsausgaben kürzen (`| tail -20`, `grep -E "error|fail"`). Screenshots für eigene Prüfung mit `deviceScaleFactor: 1`.
 - Unabhängige Aufgaben parallel starten; nie zwei Agenten auf dieselben Dateien.

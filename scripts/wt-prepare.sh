@@ -20,8 +20,8 @@ if [ ! -d node_modules ]; then
 fi
 [ -f "$main/.env.local" ] && [ ! -f .env.local ] && cp "$main/.env.local" .env.local && echo ".env.local kopiert"
 npx next typegen >/dev/null 2>&1 || true
-mkdir -p "$main/.coordination/findings"
+mkdir -p "$here/.coordination/findings"
 
 port=$(( 3600 + $(printf '%s' "$here" | cksum | cut -d' ' -f1) % 300 ))
 echo "PORT=$port  (Start: AFH_DEMO=1 npx next dev -p $port)"
-echo "COORD=$main/.coordination"
+echo "COORD=$here/.coordination  (im eigenen Worktree; Orchestrator liest von dort)"
