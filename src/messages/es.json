@@ -164,7 +164,7 @@
     "extensions": {
       "label": "Extensiones",
       "need": "Más largo y volumen",
-      "caption": "Extensiones de cabello natural en seis métodos, preparadas personalmente para usted. Andrea le indica el precio bajo consulta."
+      "caption": "Extensiones de cabello natural en varios métodos. Los paquetes listados se pueden pedir directamente; todo lo demás lo prepara Andrea personalmente para usted."
     }
   },
   "product": {
@@ -207,7 +207,10 @@
     "smallBusiness": "No se aplica IVA conforme al § 19 de la ley alemana del IVA (pequeña empresa).",
     "inclVat": "IVA legal incluido",
     "unknownVat": "Precio final",
-    "plusShipping": "más <link>gastos de envío</link>"
+    "plusShipping": "más <link>gastos de envío</link>",
+    "basePrice": "Precio base: {amount} / 100 g",
+    "perPack": "por paquete ({grams} g)",
+    "perSet": "Set, {parts} piezas, {grams} g"
   },
   "collection": {
     "title": "La colección",
@@ -609,7 +612,7 @@
   },
   "extensions": {
     "title": "Extensiones",
-    "lead": "Más largo, más volumen, más usted. Andrea prepara personalmente método, color, largo y cantidad y le indica un precio fijo.",
+    "lead": "Más largo, más volumen, más usted. Los paquetes de abajo se piden directamente. Para otros métodos, largos y cantidades, Andrea lo prepara todo personalmente y le indica un precio fijo.",
     "methodsTitle": "Seis métodos",
     "butterfly": "Butterfly Weft",
     "butterflyText": "Una cortina (weft) especialmente fina y flexible que queda plana sobre la cabeza.",
@@ -627,6 +630,8 @@
     "formTitle": "Consultar extensiones",
     "salonTitle": "Para salones y peluqueras",
     "salonText": "¿Quiere adquirir extensiones de cabello natural en cantidad para su salón? Andrea le hará una oferta individual.",
-    "salonCta": "Consultar como salón"
+    "salonCta": "Consultar como salón",
+    "otherTitle": "¿Otro método, largo o cantidad?",
+    "otherText": "Lo que no encuentre aquí, Andrea se lo prepara bajo consulta. Los salones y peluqueras también reciben una oferta personal."
   }
 }

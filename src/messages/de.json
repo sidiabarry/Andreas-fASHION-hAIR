@@ -164,7 +164,7 @@
     "extensions": {
       "label": "Extensions",
       "need": "Mehr Länge und Fülle",
-      "caption": "Echthaar-Extensions in sechs Methoden, persönlich für Sie zusammengestellt. Preise nennt Andrea Ihnen auf Anfrage."
+      "caption": "Echthaar-Extensions in mehreren Methoden. Die gelisteten Packungen können Sie direkt bestellen, alles andere stellt Andrea persönlich für Sie zusammen."
     }
   },
   "product": {
@@ -207,7 +207,10 @@
     "smallBusiness": "Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.",
     "inclVat": "inkl. gesetzlicher MwSt.",
     "unknownVat": "Endpreis",
-    "plusShipping": "zzgl. <link>Versandkosten</link>"
+    "plusShipping": "zzgl. <link>Versandkosten</link>",
+    "basePrice": "Grundpreis: {amount} / 100 g",
+    "perPack": "je Packung ({grams} g)",
+    "perSet": "Set, {parts} Teile, {grams} g"
   },
   "collection": {
     "title": "Die Kollektion",
@@ -609,7 +612,7 @@
   },
   "extensions": {
     "title": "Extensions",
-    "lead": "Mehr Länge, mehr Fülle, mehr Sie selbst. Andrea stellt Ihnen Methode, Farbe, Länge und Menge persönlich zusammen und nennt Ihnen einen festen Preis.",
+    "lead": "Mehr Länge, mehr Fülle, mehr Sie selbst. Die Packungen unten bestellen Sie direkt. Für andere Methoden, Längen und Mengen stellt Andrea Ihnen alles persönlich zusammen und nennt Ihnen einen festen Preis.",
     "methodsTitle": "Sechs Methoden",
     "butterfly": "Butterfly Weft",
     "butterflyText": "Eine besonders feine, flexible Tresse (Weft), die flach am Kopf anliegt.",
@@ -627,6 +630,8 @@
     "formTitle": "Extensions anfragen",
     "salonTitle": "Für Salons und Friseurinnen",
     "salonText": "Sie möchten Echthaar-Extensions in Mengen für Ihren Salon beziehen? Andrea macht Ihnen ein individuelles Angebot.",
-    "salonCta": "Als Salon anfragen"
+    "salonCta": "Als Salon anfragen",
+    "otherTitle": "Andere Methode, Länge oder Menge?",
+    "otherText": "Was Sie hier nicht finden, stellt Andrea auf Anfrage für Sie zusammen. Auch Salons und Friseurinnen erhalten ein persönliches Angebot."
   }
 }

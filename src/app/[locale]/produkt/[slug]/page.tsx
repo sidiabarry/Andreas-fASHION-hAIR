@@ -16,7 +16,7 @@ import { PriceNote } from "@/components/product/PriceNote";
 import { ProductCard } from "@/components/product/ProductCard";
 import { company } from "@/config/company";
 import { deliveryParams } from "@/config/shipping";
-import { byCategory, getProduct, isUnique, productText } from "@/data/catalog";
+import { basePricePer100gCents, byCategory, getProduct, isUnique, productText } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
 import { breadcrumbJsonLd } from "@/lib/jsonld";
@@ -50,6 +50,12 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
   const isSold = product.sold || sold.has(product.slug);
   const unique = isUnique(product);
   const price = formatPrice(product.priceCents, locale);
+  const unitLabel =
+    product.priceUnit && product.weightGrams
+      ? product.priceUnit === "set"
+        ? t("price.perSet", { grams: product.weightGrams, parts: product.setParts ?? 0 })
+        : t("price.perPack", { grams: product.weightGrams })
+      : null;
   const images = product.restyled ? [product.image, ...product.originals] : product.originals.length ? product.originals : [product.image];
   const shots = images.map((src, index) => ({
     alt:
@@ -155,7 +161,7 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
 
             <div className="af-pdp__price">
               {price}
-              <PriceNote locale={locale} />
+              <PriceNote basePriceCents={basePricePer100gCents(product)} locale={locale} unitLabel={unitLabel} />
             </div>
 
             {isSold ? (

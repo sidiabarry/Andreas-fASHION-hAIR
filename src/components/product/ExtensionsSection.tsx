@@ -11,12 +11,20 @@ import { siteMode } from "@/server/mode";
 
 const METHODS = ["butterfly", "genius", "invisible", "tape", "keratin", "clip"] as const;
 
-/** Extensions: noch ohne Produkte und Preise – Methoden erklären, dann anfragen. */
-export async function ExtensionsSection({ locale }: { locale: Locale }) {
+/** Extensions: Methoden erklären, dann anfragen. Mit `hasProducts` steht der Abschnitt unter den kaufbaren Packungen (Salon/B2B, andere Methoden). */
+export async function ExtensionsSection({ locale, hasProducts = false }: { locale: Locale; hasProducts?: boolean }) {
   const t = await getTranslations({ locale });
   const mode = siteMode();
   return (
     <div className="af-ext">
+      {hasProducts ? (
+        <section aria-labelledby="ext-other-title">
+          <h2 className="af-h3" id="ext-other-title">
+            {t("extensions.otherTitle")}
+          </h2>
+          <p className="af-text">{t("extensions.otherText")}</p>
+        </section>
+      ) : null}
       <section aria-labelledby="methods-title">
         <h2 className="af-h3" id="methods-title">
           {t("extensions.methodsTitle")}

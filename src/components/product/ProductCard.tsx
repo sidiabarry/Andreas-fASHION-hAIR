@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
-import { isUnique, productText } from "@/data/catalog";
+import { basePricePer100gCents, isUnique, productText } from "@/data/catalog";
 import type { Product } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
@@ -9,8 +9,10 @@ import { formatPrice } from "@/lib/money";
 
 export async function ProductCard({ product, locale, sold, priority }: { product: Product; locale: Locale; sold?: boolean; priority?: boolean }) {
   const t = await getTranslations({ locale, namespace: "product" });
+  const tp = await getTranslations({ locale, namespace: "price" });
   const text = productText(product, locale);
   const isSold = product.sold || Boolean(sold);
+  const basePrice = basePricePer100gCents(product);
   const flag = isSold ? t("flagSold") : product.madeToOrder ? t("flagCustom") : isUnique(product) ? t("flagUnique") : null;
   return (
     <Link className="af-card af-rise" data-sold={isSold} href={`/produkt/${product.slug}`}>
@@ -34,6 +36,7 @@ export async function ProductCard({ product, locale, sold, priority }: { product
         <span className="af-card__price">{formatPrice(product.priceCents, locale)}</span>
       </div>
       <p className="af-card__sub">{text.subtitle}</p>
+      {basePrice ? <p className="af-card__sub">{tp("basePrice", { amount: formatPrice(basePrice, locale) })}</p> : null}
     </Link>
   );
 }
