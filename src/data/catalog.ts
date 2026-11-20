@@ -37,7 +37,7 @@ export type Product = {
   safety: string | null;
   /**
    * Nettofüllmenge in Gramm für Ware, die nach Gewicht angeboten wird (Extensions-Packungen).
-   * Gesetzt = Grundpreis „€ / 100 g“ wird neben dem Preis gezeigt. null/fehlt = kein Grundpreis (Schalter).
+   * Gesetzt = Grundpreis „€ / 1 kg“ wird neben dem Preis gezeigt. null/fehlt = kein Grundpreis (Schalter).
    */
   netWeightGrams?: number | null;
   /** Verkaufseinheit, auf die sich der Preis bezieht (Extensions): "pack" = je Packung, "set" = Set. Anzeige direkt am Preis. */
@@ -55,11 +55,19 @@ export const products: Product[] = raw as Product[];
 /** Kategorien ohne Online-Produkte: nur Anfrage. Folgt den Daten: sobald eine Kategorie Produkte hat, ist sie kaufbar. */
 export const INQUIRY_ONLY_CATEGORIES: readonly CategoryId[] = CATEGORY_IDS.filter((id) => !products.some((product) => product.category === id));
 
-/** Grundpreis je 100 g in Cent (gerundet) oder null, wenn keine Nettofüllmenge hinterlegt ist. */
-export function basePricePer100gCents(product: Pick<Product, "priceCents" | "netWeightGrams">): number | null {
+/** Grundpreis je 1 kg in Cent (gerundet; § 5 Abs. 1 PAngV, Fertigpackungen) oder null, wenn keine Nettofüllmenge hinterlegt ist. */
+export function basePricePerKgCents(product: Pick<Product, "priceCents" | "netWeightGrams">): number | null {
   const grams = product.netWeightGrams;
   if (!grams || grams <= 0 || !Number.isFinite(grams)) return null;
-  return Math.round((product.priceCents * 100) / grams);
+  return Math.round((product.priceCents * 1000) / grams);
+}
+
+/** Angaben neben dem Preis: Verkaufseinheit mit Gewicht und Grundpreis je 1 kg. null = keine Angabe. */
+export type UnitInfo = { kind: "pack" | "set"; grams: number; parts: number; baseCents: number | null };
+
+export function unitInfo(product: Product): UnitInfo | null {
+  if (!product.priceUnit || !product.weightGrams) return null;
+  return { baseCents: basePricePerKgCents(product), grams: product.weightGrams, kind: product.priceUnit, parts: product.setParts ?? 0 };
 }
 
 const translations: Partial<Record<Locale, Record<string, ProductText>>> = {
@@ -120,6 +128,7 @@ export type ProductLite = {
   priceCents: number;
   unique: boolean;
   category: CategoryId;
+  unit: UnitInfo | null;
 };
 
 export function toLite(product: Product, locale: Locale): ProductLite {
@@ -132,6 +141,7 @@ export function toLite(product: Product, locale: Locale): ProductLite {
     slug: product.slug,
     subtitle: text.subtitle,
     unique: isUnique(product),
+    unit: unitInfo(product),
   };
 }
 

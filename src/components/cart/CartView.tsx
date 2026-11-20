@@ -6,6 +6,7 @@ import { useState } from "react";
 
 import { Arrow } from "@/components/Arrow";
 import { useCart } from "@/components/cart/CartProvider";
+import { unitText } from "@/components/cart/unitText";
 import { shippingCents } from "@/config/shipping";
 import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
@@ -48,6 +49,7 @@ export function CartView({ checkoutOpen, contact }: { checkoutOpen: boolean; con
                   <b>{product.name}</b>
                 </Link>
                 <p className="af-note">{product.subtitle}</p>
+                {product.unit ? <p className="af-note">{unitText(t, product.unit, locale)}</p> : null}
                 {product.unique ? (
                   <p className="af-note af-gold">{t("cart.unique")}</p>
                 ) : (

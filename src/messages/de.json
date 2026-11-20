@@ -201,16 +201,17 @@
     "askWhatsappShort": "Per WhatsApp fragen",
     "stickyLabel": "Schnellkauf",
     "availabilityUnknown": "Verfügbarkeit bestätigen wir persönlich, bevor Sie bezahlen.",
-    "originBrazil": "Brasilianisches Echthaar"
+    "originBrazil": "Brasilianisches Echthaar",
+    "unitPrice": "{amount} / 1 kg",
+    "packSize": "je Packung {grams} g",
+    "setSize": "Set ({pieces} Tressen) {grams} g",
+    "extWithdrawal": "Sie können Ihre Bestellung innerhalb von 14 Tagen widerrufen. Bitte prüfen Sie Farbe und Länge, bevor Sie Tressen kürzen, einarbeiten oder Schutzfolien abziehen – für einen Wertverlust durch eine Nutzung, die über die Prüfung hinausgeht, kommen Sie nach der Widerrufsbelehrung auf."
   },
   "price": {
     "smallBusiness": "Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.",
     "inclVat": "inkl. gesetzlicher MwSt.",
     "unknownVat": "Endpreis",
-    "plusShipping": "zzgl. <link>Versandkosten</link>",
-    "basePrice": "Grundpreis: {amount} / 100 g",
-    "perPack": "je Packung ({grams} g)",
-    "perSet": "Set, {parts} Teile, {grams} g"
+    "plusShipping": "zzgl. <link>Versandkosten</link>"
   },
   "collection": {
     "title": "Die Kollektion",

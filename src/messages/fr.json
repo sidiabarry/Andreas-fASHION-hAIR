@@ -201,16 +201,17 @@
     "askWhatsappShort": "Demander sur WhatsApp",
     "stickyLabel": "Achat rapide",
     "availabilityUnknown": "Nous confirmons personnellement la disponibilité avant votre paiement.",
-    "originBrazil": "Cheveux naturels brésiliens"
+    "originBrazil": "Cheveux naturels brésiliens",
+    "unitPrice": "{amount} / 1 kg",
+    "packSize": "par paquet {grams} g",
+    "setSize": "lot ({pieces} trames) {grams} g",
+    "extWithdrawal": "Vous pouvez révoquer votre commande dans un délai de 14 jours. Veuillez vérifier la couleur et la longueur avant de raccourcir les trames, de les poser ou de retirer les films de protection. Vous répondez d'une perte de valeur due à une utilisation allant au-delà de ce contrôle, conformément à l'information sur la rétractation."
   },
   "price": {
     "smallBusiness": "TVA non applicable selon le § 19 de la loi allemande sur la TVA (petite entreprise).",
     "inclVat": "TVA légale incluse",
     "unknownVat": "Prix final",
-    "plusShipping": "plus <link>frais de port</link>",
-    "basePrice": "Prix de base : {amount} / 100 g",
-    "perPack": "par paquet ({grams} g)",
-    "perSet": "Set, {parts} pièces, {grams} g"
+    "plusShipping": "plus <link>frais de port</link>"
   },
   "collection": {
     "title": "La collection",

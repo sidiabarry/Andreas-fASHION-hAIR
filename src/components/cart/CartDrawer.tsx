@@ -6,6 +6,7 @@ import { useEffect, useRef } from "react";
 
 import { Arrow } from "@/components/Arrow";
 import { useCart } from "@/components/cart/CartProvider";
+import { unitText } from "@/components/cart/unitText";
 import { SHIPPING_ZONES } from "@/config/shipping";
 import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
@@ -69,6 +70,7 @@ export function CartDrawer({ checkoutOpen }: { checkoutOpen: boolean }) {
                   {product.subtitle}
                   {quantity > 1 ? ` · ${quantity} ×` : ""}
                 </p>
+                {product.unit ? <p className="af-note">{unitText(t, product.unit, locale)}</p> : null}
               </div>
               <span className="af-card__price">{formatPrice(product.priceCents * quantity, locale)}</span>
             </li>

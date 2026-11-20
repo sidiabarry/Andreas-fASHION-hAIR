@@ -201,16 +201,17 @@
     "askWhatsappShort": "Preguntar por WhatsApp",
     "stickyLabel": "Compra rápida",
     "availabilityUnknown": "Confirmamos personalmente la disponibilidad antes de que pague.",
-    "originBrazil": "Cabello natural brasileño"
+    "originBrazil": "Cabello natural brasileño",
+    "unitPrice": "{amount} / 1 kg",
+    "packSize": "por paquete {grams} g",
+    "setSize": "set ({pieces} cortinas) {grams} g",
+    "extWithdrawal": "Puede desistir de su pedido en un plazo de 14 días. Compruebe el color y el largo antes de acortar las cortinas, colocarlas o retirar las láminas protectoras. Responde de la pérdida de valor causada por un uso que vaya más allá de esa comprobación, según la información sobre el desistimiento."
   },
   "price": {
     "smallBusiness": "No se aplica IVA conforme al § 19 de la ley alemana del IVA (pequeña empresa).",
     "inclVat": "IVA legal incluido",
     "unknownVat": "Precio final",
-    "plusShipping": "más <link>gastos de envío</link>",
-    "basePrice": "Precio base: {amount} / 100 g",
-    "perPack": "por paquete ({grams} g)",
-    "perSet": "Set, {parts} piezas, {grams} g"
+    "plusShipping": "más <link>gastos de envío</link>"
   },
   "collection": {
     "title": "La colección",
