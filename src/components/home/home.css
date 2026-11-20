@@ -255,7 +255,8 @@ html[data-motion="paused"] .fx-canvas { opacity: 0.55; }
 .hand__media img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%; }
 .hand__copy { display: grid; gap: 24px; justify-items: start; }
 .hand__quote { display: grid; grid-template-columns: 34px minmax(0, 1fr); align-items: start; gap: 6px 18px; margin: 8px 0; padding: 24px 0; border-block: 1px solid var(--af-line); }
-.hand__quote img { grid-row: span 2; filter: drop-shadow(0 0 14px rgba(224, 165, 38, 0.45)); }
+.hand__quote > :first-child { grid-column: 1; grid-row: 1 / span 2; filter: drop-shadow(0 0 14px rgba(224, 165, 38, 0.45)); }
+.hand__quote blockquote, .hand__quote figcaption { grid-column: 2; }
 .hand__quote blockquote { margin: 0; font-family: var(--af-display); font-style: italic; font-size: clamp(1.35rem, 2vw, 1.75rem); line-height: 1.25; color: var(--h-champagne); }
 .hand__quote figcaption { font-family: var(--af-mono); font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--af-muted); }
 .hand__visit { display: grid; gap: 8px; justify-items: start; padding-top: 12px; }
@@ -313,6 +314,7 @@ html[data-motion="paused"] .home *, html[data-motion="paused"] .home *::before, 
   .ribbon__row { flex-wrap: wrap; justify-content: center; row-gap: 12px; }
   .ribbon::before, .ribbon::after { display: none; }
   .hero__poster img { transform: none; transition: none; }
+  .hero__ctrls { display: none; }
   .real__shot img { animation: none !important; transform: scale(1.04); }
   .h-in, .w__i { transition: none !important; }
 }

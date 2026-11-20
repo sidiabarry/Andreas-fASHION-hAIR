@@ -53,10 +53,12 @@
 .aa-band .aa-copy { max-width: 520px; }
 
 /* 6 Phönix */
-.aa-phoenix { display: grid; gap: 26px; justify-items: center; text-align: center; max-width: 900px; }
+.aa-ch--phoenix { min-height: max(760px, 112svh); display: grid; align-items: end; isolation: isolate; overflow: hidden; background: radial-gradient(50% 45% at 50% 36%, rgba(200, 100, 42, 0.14), transparent 70%); }
+.aa-phoenix { position: relative; display: grid; gap: 26px; justify-items: center; text-align: center; max-width: 900px; padding-top: 34svh; }
+.aa-ch--phoenix .af-fx-hair { z-index: -1; }
+.aa-ch--phoenix .af-fx-hair[data-live] + .aa-phoenix .aa-phoenix__mark { opacity: 0; }
 .aa-phoenix .aa-label::after { display: none; }
 .aa-phoenix__mark { filter: drop-shadow(0 0 40px rgba(224, 165, 38, 0.45)); }
-.fx-live .aa-phoenix__mark { opacity: 0.35; }
 .aa-phoenix .h-lead { max-width: 56ch; }
 
 /* 7 Farben */

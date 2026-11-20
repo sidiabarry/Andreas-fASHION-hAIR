@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { Arrow } from "@/components/Arrow";
 import { FieldMount } from "@/components/fx/FieldMount";
+import { HairStage } from "@/components/fx/HairStage";
 import { Reveal } from "@/components/home/Reveal";
 import { homeValues, openingHours, whatsappHref } from "@/components/home/values";
 import { Words } from "@/components/home/Words";
@@ -157,20 +158,8 @@ export default async function AboutPage({ params }: PageProps<"/[locale]/ueber-a
       </section>
 
       {/* 6 Der Phönix: Zeichen in der Mitte, Partikel formen ihn nach */}
-      <section
-        aria-labelledby="kapitel-6-title"
-        className="aa-ch aa-ch--phoenix"
-        data-fx="phoenix"
-        data-fx-a="0.85"
-        data-fx-heat="0.25"
-        data-fx-ma="0.6"
-        data-fx-ms="0.62"
-        data-fx-my="0.42"
-        data-fx-s="0.5"
-        data-fx-x="0"
-        data-fx-y="0.32"
-        id="kapitel-6"
-      >
+      <section aria-labelledby="kapitel-6-title" className="aa-ch aa-ch--phoenix" data-fx="embers" data-fx-a="0.4" data-fx-heat="1" data-fx-loose="0.6" data-fx-s="1" data-fx-y="-0.8" id="kapitel-6">
+        <HairStage mscale={0.9} my={0.26} scale={0.62} x={0.5} y={0.36} />
         <div className="af-wrap aa-phoenix">
           <div className="aa-phoenix__mark h-in">
             <Logo label="" size={148} variant="mark" />
