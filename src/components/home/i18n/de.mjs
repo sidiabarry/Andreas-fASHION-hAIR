@@ -8,7 +8,7 @@ export const hero = {
   line1: "Wie neu *geboren.*",
   line2: "Mehr Länge. *Mehr Fülle.*",
   line3: "Mehr *Sie selbst.*",
-  lead: "Extensions aus brasilianischem Echthaar, von Andrea ausgewählt und persönlich auf Ihr Haar abgestimmt. Dazu Topper, Perücken und Maßanfertigungen aus ihrem Atelier in Iserlohn.",
+  lead: "Extensions aus Echthaar, von Andrea ausgewählt und persönlich auf Ihr Haar abgestimmt. Dazu Topper, Perücken und Maßanfertigungen aus ihrem Atelier in Iserlohn.",
   chapters: "Kapitel des Films",
   ch1: "Glut",
   ch2: "Phönix",
@@ -16,7 +16,7 @@ export const hero = {
   pause: "Bewegung pausieren",
   play: "Bewegung fortsetzen",
   replay: "Noch einmal ansehen",
-  trust: ["Brasilianisches Echthaar", "Persönliche Beratung durch Andrea", "Bezahlung erst nach ihrer Bestätigung", "Versand mit {carrier}, auch international"],
+  trust: ["Echthaar, persönlich ausgewählt", "Persönliche Beratung durch Andrea", "Bezahlung erst nach ihrer Bestätigung", "Versand mit {carrier}, auch international"],
   trustLabel: "Auf einen Blick",
   filmAlt:
     "Stummer Film, der von selbst abläuft: Glut glimmt in der Dunkelheit, aus ihr steigen Phönixflügel aus Licht auf und werden zu langem, kupferfarbenem Haar auf einer hellen Kopfform.",
@@ -34,7 +34,7 @@ export const home = {
   ribbonLabel: "Was Sie erwarten können",
   ribbon: [
     "Atelier in Iserlohn",
-    "Brasilianisches Echthaar",
+    "Echthaar",
     "Handwerk aus Rio de Janeiro",
     "Sechs Extension-Methoden",
     "Persönliche Beratung",
@@ -46,7 +46,7 @@ export const home = {
   ext: {
     kicker: "Extensions",
     title: "Mehr Länge. *Mehr Fülle.*",
-    lead: "Brasilianisches Echthaar in sechs Methoden, vom Clip-in zum Selbst-Einsetzen bis zur feinen Tresse. Die Packungen hier bestellen Sie direkt. Welche Methode und wie viel Haar zu Ihnen passen, sagt Andrea Ihnen persönlich.",
+    lead: "Echthaar in sechs Methoden, vom Clip-in zum Selbst-Einsetzen bis zur feinen Tresse. Die Packungen hier bestellen Sie direkt. Welche Methode und wie viel Haar zu Ihnen passen, sagt Andrea Ihnen persönlich.",
     methodsLabel: "Sechs Methoden",
     methods: ["Clip-in", "Genius Weft", "Butterfly Weft", "Invisible Tape", "Tape-In", "Keratin-Bondings"],
     methodsNote: "Weitere Methoden, Längen und Mengen stellt Andrea auf Anfrage zusammen.",
@@ -164,7 +164,7 @@ export const home = {
 export const about = {
   metaTitle: "Über Andrea",
   metaDescription:
-    "Andrea arbeitet seit ihrem 19. Lebensjahr mit Haar, angefangen in Rio de Janeiro. Heute führt sie ihr Atelier in Iserlohn: Extensions, Topper, Perücken und Haarsysteme aus brasilianischem Echthaar, auch nach Maß.",
+    "Andrea arbeitet seit ihrem 19. Lebensjahr mit Haar, angefangen in Rio de Janeiro. Heute führt sie ihr Atelier in Iserlohn: Extensions, Topper, Perücken und Haarsysteme aus Echthaar, auch nach Maß.",
   kicker: "Über Andrea",
   title: "Es ist nicht nur Haar. *Es ist viel mehr.*",
   lead: "Die Geschichte von Andreia Pereira Da Costa, die alle Andrea nennen: von Rio de Janeiro in ein Atelier in Iserlohn.",
@@ -197,7 +197,7 @@ export const about = {
     {
       label: "Das Atelier",
       title: "Zurück *zum Haar.*",
-      text: "Vor rund drei Jahren gründet Andrea ihr eigenes Atelier in Iserlohn und kehrt zu ihrem Handwerk zurück: Extensions, Topper, Perücken und Haarsysteme aus brasilianischem Echthaar, auch nach Maß.",
+      text: "Vor rund drei Jahren gründet Andrea ihr eigenes Atelier in Iserlohn und kehrt zu ihrem Handwerk zurück: Extensions, Topper, Perücken und Haarsysteme aus Echthaar, auch nach Maß.",
       quote: "„Am glücklichsten bin ich in meinem Atelier, wenn ich meine Stücke fertige.“",
     },
     {
@@ -217,7 +217,7 @@ export const about = {
   colorsLabel: "Haar in allen Tönen, aus dem Atelier",
   trustTitle: "Worauf Sie sich *verlassen können.*",
   trust: [
-    { title: "Brasilianisches Echthaar", text: "Ausgewählt von einer Frau, die seit ihrem 19. Lebensjahr mit Haar arbeitet." },
+    { title: "Echthaar, sorgfältig ausgewählt", text: "Ausgewählt von einer Frau, die seit ihrem 19. Lebensjahr mit Haar arbeitet." },
     { title: "Persönlich bestätigt", text: "Sie bezahlen erst, wenn Andrea Ihre Bestellung geprüft und bestätigt hat." },
     { title: "Nach Maß, wenn nötig", text: "Was es nicht fertig gibt, entsteht im Atelier in {custom} Werktagen." },
     { title: "Versand mit {carrier}", text: "In Deutschland, in die EU und auf Anfrage weltweit." },

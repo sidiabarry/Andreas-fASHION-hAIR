@@ -75,7 +75,7 @@ html[data-motion="paused"] .fx-canvas { opacity: 0.55; }
   linear-gradient(0deg, var(--af-bg) 0%, rgba(16, 14, 13, 0) 34%); }
 .hero__in { align-self: end; display: grid; gap: 26px; padding-block: 48px 40px; }
 .hero__kicker { margin: 0; font-family: var(--af-script); font-size: clamp(1.6rem, 2.4vw, 2.2rem); color: var(--h-champagne); line-height: 1; text-shadow: 0 0 24px rgba(224, 165, 38, 0.35); }
-.hero__title { margin: 0; font-family: var(--af-display); font-weight: 500; font-size: clamp(3.1rem, 7.2vw, 7.4rem); line-height: 0.9; letter-spacing: -0.03em; max-width: 12ch; }
+.hero__title { margin: 0; font-family: var(--af-display); font-weight: 500; font-size: clamp(2.9rem, 5.6vw, 5.9rem); line-height: 0.94; letter-spacing: -0.028em; }
 .hero__line { display: block; opacity: 0.3; transition: opacity 1.2s var(--af-ease); }
 .hero__line[data-on], .hero[data-done] .hero__line { opacity: 1; }
 .hero__line:not([data-on]) .w__i { transition-delay: 0ms; }

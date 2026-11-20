@@ -48,7 +48,7 @@
     "line1": "Wie neu *geboren.*",
     "line2": "Mehr Länge. *Mehr Fülle.*",
     "line3": "Mehr *Sie selbst.*",
-    "lead": "Extensions aus brasilianischem Echthaar, von Andrea ausgewählt und persönlich auf Ihr Haar abgestimmt. Dazu Topper, Perücken und Maßanfertigungen aus ihrem Atelier in Iserlohn.",
+    "lead": "Extensions aus Echthaar, von Andrea ausgewählt und persönlich auf Ihr Haar abgestimmt. Dazu Topper, Perücken und Maßanfertigungen aus ihrem Atelier in Iserlohn.",
     "chapters": "Kapitel des Films",
     "ch1": "Glut",
     "ch2": "Phönix",
@@ -57,7 +57,7 @@
     "play": "Bewegung fortsetzen",
     "replay": "Noch einmal ansehen",
     "trust": [
-      "Brasilianisches Echthaar",
+      "Echthaar, persönlich ausgewählt",
       "Persönliche Beratung durch Andrea",
       "Bezahlung erst nach ihrer Bestätigung",
       "Versand mit {carrier}, auch international"
@@ -77,7 +77,7 @@
     "ribbonLabel": "Was Sie erwarten können",
     "ribbon": [
       "Atelier in Iserlohn",
-      "Brasilianisches Echthaar",
+      "Echthaar",
       "Handwerk aus Rio de Janeiro",
       "Sechs Extension-Methoden",
       "Persönliche Beratung",
@@ -89,7 +89,7 @@
     "ext": {
       "kicker": "Extensions",
       "title": "Mehr Länge. *Mehr Fülle.*",
-      "lead": "Brasilianisches Echthaar in sechs Methoden, vom Clip-in zum Selbst-Einsetzen bis zur feinen Tresse. Die Packungen hier bestellen Sie direkt. Welche Methode und wie viel Haar zu Ihnen passen, sagt Andrea Ihnen persönlich.",
+      "lead": "Echthaar in sechs Methoden, vom Clip-in zum Selbst-Einsetzen bis zur feinen Tresse. Die Packungen hier bestellen Sie direkt. Welche Methode und wie viel Haar zu Ihnen passen, sagt Andrea Ihnen persönlich.",
       "methodsLabel": "Sechs Methoden",
       "methods": [
         "Clip-in",
@@ -511,7 +511,7 @@
   },
   "about": {
     "metaTitle": "Über Andrea",
-    "metaDescription": "Andrea arbeitet seit ihrem 19. Lebensjahr mit Haar, angefangen in Rio de Janeiro. Heute führt sie ihr Atelier in Iserlohn: Extensions, Topper, Perücken und Haarsysteme aus brasilianischem Echthaar, auch nach Maß.",
+    "metaDescription": "Andrea arbeitet seit ihrem 19. Lebensjahr mit Haar, angefangen in Rio de Janeiro. Heute führt sie ihr Atelier in Iserlohn: Extensions, Topper, Perücken und Haarsysteme aus Echthaar, auch nach Maß.",
     "kicker": "Über Andrea",
     "title": "Es ist nicht nur Haar. *Es ist viel mehr.*",
     "lead": "Die Geschichte von Andreia Pereira Da Costa, die alle Andrea nennen: von Rio de Janeiro in ein Atelier in Iserlohn.",
@@ -544,7 +544,7 @@
       {
         "label": "Das Atelier",
         "title": "Zurück *zum Haar.*",
-        "text": "Vor rund drei Jahren gründet Andrea ihr eigenes Atelier in Iserlohn und kehrt zu ihrem Handwerk zurück: Extensions, Topper, Perücken und Haarsysteme aus brasilianischem Echthaar, auch nach Maß.",
+        "text": "Vor rund drei Jahren gründet Andrea ihr eigenes Atelier in Iserlohn und kehrt zu ihrem Handwerk zurück: Extensions, Topper, Perücken und Haarsysteme aus Echthaar, auch nach Maß.",
         "quote": "„Am glücklichsten bin ich in meinem Atelier, wenn ich meine Stücke fertige.“"
       },
       {
@@ -565,7 +565,7 @@
     "trustTitle": "Worauf Sie sich *verlassen können.*",
     "trust": [
       {
-        "title": "Brasilianisches Echthaar",
+        "title": "Echthaar, sorgfältig ausgewählt",
         "text": "Ausgewählt von einer Frau, die seit ihrem 19. Lebensjahr mit Haar arbeitet."
       },
       {

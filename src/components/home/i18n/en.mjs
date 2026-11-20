@@ -4,7 +4,7 @@ export const hero = {
   line1: "As if *reborn.*",
   line2: "More length. *More fullness.*",
   line3: "More *you.*",
-  lead: "Extensions in Brazilian human hair, chosen by Andrea and matched to your hair in person. Plus toppers, wigs and made-to-measure pieces from her atelier in Iserlohn.",
+  lead: "Extensions in human hair, chosen by Andrea and matched to your hair in person. Plus toppers, wigs and made-to-measure pieces from her atelier in Iserlohn.",
   chapters: "Chapters of the film",
   ch1: "Embers",
   ch2: "Phoenix",
@@ -12,7 +12,7 @@ export const hero = {
   pause: "Pause motion",
   play: "Resume motion",
   replay: "Watch again",
-  trust: ["Brazilian human hair", "Personal advice from Andrea", "Payment only after her confirmation", "Shipping with {carrier}, also international"],
+  trust: ["Human hair, chosen in person", "Personal advice from Andrea", "Payment only after her confirmation", "Shipping with {carrier}, also international"],
   trustLabel: "At a glance",
   filmAlt:
     "Silent film that plays by itself: embers glow in the dark, phoenix wings of light rise from them and turn into long, copper-coloured hair on a pale mannequin head.",
@@ -30,7 +30,7 @@ export const home = {
   ribbonLabel: "What you can expect",
   ribbon: [
     "Atelier in Iserlohn",
-    "Brazilian human hair",
+    "Human hair",
     "Craft from Rio de Janeiro",
     "Six extension methods",
     "Personal advice",
@@ -42,7 +42,7 @@ export const home = {
   ext: {
     kicker: "Extensions",
     title: "More length. *More fullness.*",
-    lead: "Brazilian human hair in six methods, from clip-ins you put in yourself to fine wefts. You can order the packs shown here directly. Andrea will tell you in person which method and how much hair suit you.",
+    lead: "Human hair in six methods, from clip-ins you put in yourself to fine wefts. You can order the packs shown here directly. Andrea will tell you in person which method and how much hair suit you.",
     methodsLabel: "Six methods",
     methods: ["Clip-in", "Genius Weft", "Butterfly Weft", "Invisible Tape", "Tape-in", "Keratin bonds"],
     methodsNote: "Andrea puts together other methods, lengths and quantities on request.",
@@ -160,7 +160,7 @@ export const home = {
 export const about = {
   metaTitle: "About Andrea",
   metaDescription:
-    "Andrea has worked with hair since she was 19, starting in Rio de Janeiro. Today she runs her atelier in Iserlohn: extensions, toppers, wigs and hair systems in Brazilian human hair, also made to measure.",
+    "Andrea has worked with hair since she was 19, starting in Rio de Janeiro. Today she runs her atelier in Iserlohn: extensions, toppers, wigs and hair systems in human hair, also made to measure.",
   kicker: "About Andrea",
   title: "It's not just hair. *It's so much more.*",
   lead: "The story of Andreia Pereira Da Costa, whom everyone calls Andrea: from Rio de Janeiro to an atelier in Iserlohn.",
@@ -193,7 +193,7 @@ export const about = {
     {
       label: "The atelier",
       title: "Back *to hair.*",
-      text: "About three years ago, Andrea founded her own atelier in Iserlohn and returned to her craft: extensions, toppers, wigs and hair systems in Brazilian human hair, also made to measure.",
+      text: "About three years ago, Andrea founded her own atelier in Iserlohn and returned to her craft: extensions, toppers, wigs and hair systems in human hair, also made to measure.",
       quote: "“I am happiest in my atelier, when I am making my pieces.”",
     },
     {
@@ -213,7 +213,7 @@ export const about = {
   colorsLabel: "Hair in every shade, from the atelier",
   trustTitle: "What you can *rely on.*",
   trust: [
-    { title: "Brazilian human hair", text: "Chosen by a woman who has worked with hair since she was 19." },
+    { title: "Human hair, carefully chosen", text: "Chosen by a woman who has worked with hair since she was 19." },
     { title: "Confirmed in person", text: "You only pay once Andrea has checked and confirmed your order." },
     { title: "Made to measure if needed", text: "What doesn't exist yet is made in the atelier in {custom} working days." },
     { title: "Shipping with {carrier}", text: "Within Germany, to the EU and worldwide on request." },

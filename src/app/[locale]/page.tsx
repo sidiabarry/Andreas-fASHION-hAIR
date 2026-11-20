@@ -67,7 +67,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
   const v = homeValues(locale);
   const count = (key: string) => (t.raw(key) as unknown[]).length;
   const items = <T extends string>(key: string, fields: T[], values: Record<string, string> = {}) =>
-    Array.from({ length: count(key) }, (_, i) => Object.fromEntries(fields.map((f) => [f, t(`${key}.${i}.${f}`, values)])) as Record<T, string>);
+    Array.from({ length: count(key) }, (_, i) => Object.fromEntries(fields.map((f) => [f, t(`${key}.${i}.${f as string}`, values)])) as Record<T, string>);
   const strings = (key: string, values: Record<string, string> = {}) => Array.from({ length: count(key) }, (_, i) => t(`${key}.${i}`, values));
   const whatsappNote = t("home.whatsappNote");
   const symbolImage = t("home.symbolImage");
