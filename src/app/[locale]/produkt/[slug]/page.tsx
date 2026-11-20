@@ -16,7 +16,7 @@ import { PriceNote } from "@/components/product/PriceNote";
 import { ProductCard } from "@/components/product/ProductCard";
 import { company } from "@/config/company";
 import { deliveryParams } from "@/config/shipping";
-import { byCategory, getProduct, isUnique, productText } from "@/data/catalog";
+import { byCategory, getProduct, isUnique, productText, unitInfo } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
 import { breadcrumbJsonLd } from "@/lib/jsonld";
@@ -155,7 +155,7 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
 
             <div className="af-pdp__price">
               {price}
-              <PriceNote locale={locale} />
+              <PriceNote locale={locale} unit={unitInfo(product)} />
             </div>
 
             {isSold ? (
@@ -169,6 +169,7 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
             {product.origin === "Brasilien" ? <p className="af-note af-gold">{t("product.originBrazil")}</p> : null}
 
             <p className="af-text">{text.description}</p>
+            {product.category === "extensions" ? <p className="af-note">{t("product.extWithdrawal")}</p> : null}
 
             {isSold ? (
               <Link className="af-cta-band" href={{ pathname: "/anfrage", query: { produkt: `${text.name}, ${text.subtitle}`, thema: "massanfertigung" } }}>

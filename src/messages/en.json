@@ -164,7 +164,7 @@
     "extensions": {
       "label": "Extensions",
       "need": "More length and volume",
-      "caption": "Human hair extensions in six methods, put together personally for you. Andrea will tell you the price on request."
+      "caption": "Human hair extensions in several methods. You can order the packs listed here directly; anything else Andrea puts together personally for you."
     }
   },
   "product": {
@@ -201,7 +201,11 @@
     "askWhatsappShort": "Ask on WhatsApp",
     "stickyLabel": "Quick purchase",
     "availabilityUnknown": "We confirm availability personally before you pay.",
-    "originBrazil": "Brazilian human hair"
+    "originBrazil": "Brazilian human hair",
+    "unitPrice": "{amount} / 1 kg",
+    "packSize": "per pack {grams} g",
+    "setSize": "set ({pieces} wefts) {grams} g",
+    "extWithdrawal": "You can withdraw from your order within 14 days. Please check colour and length before you shorten wefts, work them in or peel off protective films. For a loss in value caused by use beyond that check, you are liable as set out in the withdrawal information."
   },
   "price": {
     "smallBusiness": "No VAT is charged in accordance with § 19 of the German VAT Act (small business).",
@@ -609,7 +613,7 @@
   },
   "extensions": {
     "title": "Extensions",
-    "lead": "More length, more volume, more you. Andrea personally puts together method, colour, length and amount for you and gives you a fixed price.",
+    "lead": "More length, more volume, more you. You can order the packs below directly. For other methods, lengths and amounts, Andrea puts everything together personally and gives you a fixed price.",
     "methodsTitle": "Six methods",
     "butterfly": "Butterfly Weft",
     "butterflyText": "A particularly fine, flexible weft that lies flat against the head.",
@@ -627,6 +631,8 @@
     "formTitle": "Enquire about extensions",
     "salonTitle": "For salons and hairdressers",
     "salonText": "Would you like to source human hair extensions in quantity for your salon? Andrea will make you an individual offer.",
-    "salonCta": "Enquire as a salon"
+    "salonCta": "Enquire as a salon",
+    "otherTitle": "Another method, length or amount?",
+    "otherText": "If you do not find it here, Andrea will put it together for you on request. Salons and hairdressers also receive a personal offer."
   }
 }

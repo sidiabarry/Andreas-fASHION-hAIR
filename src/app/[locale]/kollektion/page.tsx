@@ -141,6 +141,11 @@ export default async function CollectionPage({ params, searchParams }: PageProps
             <ProductCard key={product.slug} locale={locale} priority={index < 2} product={product} sold={sold.has(product.slug)} />
           ))}
         </div>
+        {category === "extensions" ? (
+          <div style={{ marginTop: 64 }}>
+            <ExtensionsSection hasProducts locale={locale} />
+          </div>
+        ) : null}
           </>
         )}
       </div>

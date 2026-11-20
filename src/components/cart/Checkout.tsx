@@ -6,6 +6,7 @@ import type { FormEvent, ReactNode } from "react";
 
 import { Arrow } from "@/components/Arrow";
 import { useCart } from "@/components/cart/CartProvider";
+import { unitText } from "@/components/cart/unitText";
 import { Field } from "@/components/forms/Field";
 import { Honeypot } from "@/components/forms/Honeypot";
 import { deliveryParams, ORDER_COUNTRIES, shippingCents, zoneForCountry } from "@/config/shipping";
@@ -255,6 +256,7 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
                 <span>
                   {quantity > 1 ? `${quantity} × ` : ""}
                   {product.name}, {product.subtitle}
+                  {product.unit ? <small className="af-note" style={{ display: "block" }}>{unitText(t, product.unit, locale)}</small> : null}
                 </span>
                 <span>{formatPrice(product.priceCents * quantity, locale)}</span>
               </li>
