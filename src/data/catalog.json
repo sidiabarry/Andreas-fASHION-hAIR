@@ -1548,17 +1548,17 @@
     "netWeightGrams": null,
     "imageKind": "staged",
     "secondImage": "/assets/products/422-2.jpg",
-    "headline": "Wieder Fülle am Scheitel – über Ihrem eigenen Haar",
-    "story": "Morgens vor dem Spiegel ziehen Sie den Scheitel, und dort, wo das Haar lichter geworden ist, liegt jetzt Dunkelblond mit hellen Reflexen. Sie fahren mit der Hand hindurch und spüren das Gewicht von echtem Haar, das Ihnen bis über die Schultern fällt. Möglich macht das ein Topper mit V-förmiger Basis: Er sitzt auf dem Oberkopf, Ihr eigenes Haar ringsum bleibt. 46 cm Echthaar – und dieses Stück gibt es ein einziges Mal.",
+    "headline": "Ein Scheitel, der aussieht, als wäre er immer Ihrer gewesen",
+    "story": "Sie streichen das Haar zur Seite, und es fällt, wie Haar eben fällt: weich, ein wenig schwer, mit hellen Reflexen dort, wo das Licht es trifft. Andrea arbeitet seit ihrem neunzehnten Lebensjahr mit Haar, angefangen in Rio de Janeiro. Eines hat sie dabei nie losgelassen: Es muss echt sein. Dieses V-Toupet ist in ihrem Atelier in Iserlohn entstanden, 46 cm natürliches Dunkelblond, und es gibt dieses eine Stück nur ein einziges Mal.",
     "benefits": [
-      "Topper statt Perücke → Sie bleiben Sie selbst: Ihr Haar an Seiten und Hinterkopf bleibt, nur der Oberkopf bekommt Fülle dazu.",
-      "Echthaar → Sie föhnen, glätten und locken es wie Ihr eigenes Haar, mit Hitzeschutz, und tragen die Frisur, die Sie mögen.",
-      "Viel Länge → Ihre Friseurin schneidet es auf Ihre Länge, damit Topper und eigenes Haar zu einer Frisur werden.",
-      "Einzelstück → Was Sie auf den Originalfotos sehen, ist genau das Stück, das zu Ihnen kommt.",
-      "Bezahlung erst nach Bestätigung → Sie entscheiden in Ruhe: Andrea bestätigt Ihnen das Stück persönlich, bevor Sie bezahlen."
+      "Hauchdünne, hautfarbene Basis → das Haar sitzt dicht bis an ihren Rand, ohne sichtbare Kante, die sich abzeichnet.",
+      "Vorne öffnet sich die Basis zu einem schmalen V → von dort fällt das Haar zu beiden Seiten, so wie sich ein Scheitel von selbst bildet.",
+      "Echthaar in natürlichem Dunkelblond mit hellen Reflexen → Sie föhnen, glätten und stylen es wie Ihr eigenes Haar, mit Hitzeschutz.",
+      "46 cm Länge → genug, damit Ihre Friseurin es genau auf Ihre Frisur abstimmen kann.",
+      "Ein Einzelstück, persönlich bestätigt → Sie bezahlen erst, wenn Andrea Ihnen das Stück bestätigt hat."
     ],
-    "howItWorks": "Ein Topper ist ein Haarteil für den Oberkopf. Er wird auf das eigene Haar gesetzt und dort befestigt; seine Längen verbinden sich mit dem Haar darunter und daneben. Bei diesem Stück hat die Basis eine V-Form. Wie es befestigt wird und welche Maße die Basis hat, bespricht Andrea vor der Zahlung mit Ihnen.",
-    "goodFor": "Für Frauen, deren Haar am Oberkopf lichter geworden ist, mit den Jahren oder aus anderen Gründen, und die dort wieder Fülle möchten, ohne ihr eigenes Haar aufzugeben. Die Farbe passt zu dunkelblondem Haar mit hellen Partien.",
+    "howItWorks": "Ein Topper ist ein Haarteil für den Oberkopf: Er wird auf das eigene Haar gesetzt, und seine Längen verbinden sich mit dem Haar darunter und daneben. Bei diesem Stück ist die Basis vorne V-förmig ausgespart; das Haar ist ringsum bis an den Rand eingearbeitet und fällt von dort aus zu beiden Seiten.",
+    "goodFor": "Für Frauen, deren Haar am Oberkopf lichter geworden ist und die dort wieder Fülle möchten, ohne ihr eigenes Haar aufzugeben. Die Farbe passt zu dunkelblondem Haar mit helleren Partien.",
     "care": [
       "Vor dem Waschen sanft von den Spitzen zum Ansatz hin entwirren.",
       "Mit mildem, sulfatfreiem Shampoo waschen; Pflege nur in die Längen geben und die Basis schonend behandeln.",
@@ -1667,7 +1667,8 @@
       "Premium-Echthaar",
       "Haarlänge 55 cm",
       "Farbe: Naturdunkelbraun",
-      "50 g je Packung"
+      "50 g je Packung",
+      "1 Tresse je Packung"
     ],
     "image": "/assets/products/424.jpg",
     "restyled": true,
@@ -1734,7 +1735,8 @@
       "Premium-Echthaar",
       "Haarlänge 55 cm",
       "Farbe: Goldblond Ombré",
-      "50 g je Packung"
+      "50 g je Packung",
+      "1 Tresse je Packung"
     ],
     "image": "/assets/products/425.jpg",
     "restyled": true,
@@ -1800,7 +1802,8 @@
       "Haarlänge 45 cm",
       "Farbe: Kaffeebraun mit Kupfer-Ombré",
       "Struktur: Naturlockig",
-      "50 g je Packung"
+      "50 g je Packung",
+      "1 Tresse je Packung"
     ],
     "image": "/assets/products/426.jpg",
     "restyled": true,
@@ -1864,7 +1867,8 @@
       "Premium-Echthaar",
       "Haarlänge 55 cm",
       "Farbe: Hellblond Ombré mit dunklem Ansatz",
-      "25 g je Packung"
+      "25 g je Packung",
+      "3 Tapes je Packung"
     ],
     "image": "/assets/products/427.jpg",
     "restyled": true,
