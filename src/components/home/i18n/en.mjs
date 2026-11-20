@@ -123,7 +123,7 @@ export const home = {
     cta: "Read Andrea's story",
     visitTitle: "Meet Andrea in the atelier",
     visitCta: "Book a visit via WhatsApp",
-    imageAlt: "Phoenix wings made of golden strands of hair against a dark background",
+    imageAlt: "A woman in front of a gold-framed mirror, touching her hair",
   },
   concerns: {
     title: "Your questions. *Honestly answered.*",
@@ -153,7 +153,7 @@ export const home = {
   close: {
     title: "As if *reborn.*",
     lead: "More length, more fullness, more you. Your piece may already be waiting. And if not, Andrea will make it for you.",
-    imageAlt: "A woman in front of a gold-framed mirror, smiling as she touches her hair",
+    imageAlt: "Phoenix wings of golden strands of hair rising from embers",
   },
 };
 

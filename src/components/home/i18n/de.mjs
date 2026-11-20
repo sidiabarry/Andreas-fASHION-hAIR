@@ -127,7 +127,7 @@ export const home = {
     cta: "Andreas Geschichte lesen",
     visitTitle: "Treffen Sie Andrea im Atelier",
     visitCta: "Termin per WhatsApp vereinbaren",
-    imageAlt: "Phönixflügel aus goldenen Haarsträhnen vor dunklem Grund",
+    imageAlt: "Eine Frau vor einem goldgerahmten Spiegel, die ihr Haar berührt",
   },
   concerns: {
     title: "Ihre Fragen. *Ehrlich beantwortet.*",
@@ -157,7 +157,7 @@ export const home = {
   close: {
     title: "Wie neu *geboren.*",
     lead: "Mehr Länge, mehr Fülle, mehr Sie selbst. Ihr Stück liegt vielleicht schon bereit. Und wenn nicht, fertigt Andrea es für Sie an.",
-    imageAlt: "Eine Frau vor einem goldgerahmten Spiegel, die lächelnd ihr Haar berührt",
+    imageAlt: "Phönixflügel aus goldenen Haarsträhnen, die aus Glut aufsteigen",
   },
 };
 

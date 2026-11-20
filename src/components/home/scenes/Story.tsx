@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { Arrow } from "@/components/Arrow";
+import { HairStage } from "@/components/fx/HairStage";
 import { Logo } from "@/components/Logo";
 import { company } from "@/config/company";
 import { Link } from "@/i18n/navigation";
@@ -16,7 +17,7 @@ export function Hand({ t, hours, whatsapp, whatsappNote, symbolImage }: { t: Han
     <section aria-labelledby="hand-title" className="hand" data-fx="phoenix" data-fx-a="0.4" data-fx-ma="0.22" data-fx-ms="0.4" data-fx-my="0.55" data-fx-s="0.34" data-fx-x="-0.5" data-fx-y="0.05">
       <div className="af-wrap hand__grid">
         <figure className="hand__media h-in h-lightedge">
-          <Image alt={t.imageAlt} height={1158} sizes="(max-width: 900px) 100vw, 50vw" src="/assets/content/phoenix.jpg" width={2048} />
+          <Image alt={t.imageAlt} height={1194} sizes="(max-width: 900px) 100vw, 50vw" src="/assets/content/mirror.jpg" width={1600} />
           <figcaption>{symbolImage}</figcaption>
         </figure>
         <div className="hand__copy">
@@ -134,12 +135,16 @@ export function Steps({ t }: { t: { title: string; items: { title: string; text:
   );
 }
 
-/** Abschluss: der Spiegel, „Wie neu geboren.“, Hauptknopf Extensions und die Maßanfertigung daneben. */
+/**
+ * Abschluss „Wie neu geboren“: Haar fällt als Vorhang und ordnet sich zum Phönix (WebGL-Simulation,
+ * reagiert auf Zeiger und Scroll). Ohne WebGL oder bei reduzierter Bewegung: Phönix aus Haar als Bild.
+ */
 export function Close({ t, ctaExtensions, ctaCustom, symbolImage }: { t: { title: string; lead: string; imageAlt: string }; ctaExtensions: string; ctaCustom: string; symbolImage: string }) {
   return (
-    <section aria-labelledby="close-title" className="close" data-fx="ring" data-fx-a="0.7" data-fx-heat="0.35" data-fx-ma="0.45" data-fx-ms="0.5" data-fx-mx="0" data-fx-my="0.5" data-fx-s="0.46" data-fx-x="0.45" data-fx-y="0.1">
+    <section aria-labelledby="close-title" className="close" data-fx="embers" data-fx-a="0.45" data-fx-heat="1" data-fx-loose="0.6" data-fx-ma="0.3" data-fx-s="1.1" data-fx-x="0.3" data-fx-y="-0.75">
+      <HairStage my={0.3} mscale={0.95} scale={0.7} x={0.7} y={0.56} />
       <div className="close__media">
-        <Image alt={t.imageAlt} fill sizes="100vw" src="/assets/content/mirror.jpg" />
+        <Image alt={t.imageAlt} fill sizes="100vw" src="/assets/content/phoenix.jpg" />
         <span className="close__note">{symbolImage}</span>
       </div>
       <div className="af-wrap close__in">
@@ -149,7 +154,7 @@ export function Close({ t, ctaExtensions, ctaCustom, symbolImage }: { t: { title
         </h2>
         <p className="h-lead h-in">{t.lead}</p>
         <div className="hero__actions h-in">
-          <Link className="h-btn h-btn--gold" href="/extensions">
+          <Link className="h-btn h-btn--gold" data-magnetic="" href="/extensions">
             <span>{ctaExtensions}</span> <Arrow />
           </Link>
           <Link className="h-link" href="/massanfertigung">
