@@ -1622,7 +1622,7 @@
     "story": "Sie öffnen das Haar, schütteln den Kopf, und es fällt Ihnen lang und schwer über den Rücken. Am nächsten Morgen ist es wieder schulterlang, so wie Sie es kennen. Clip-ins machen beides möglich: drei Tressen aus Echthaar in Naturdunkelbraun, die Sie selbst einsetzen und abends wieder herausnehmen. Ohne Termin, ohne Kleber.",
     "benefits": [
       "Clips statt Kleber → Sie entscheiden jeden Tag neu, ob Sie heute Länge tragen möchten.",
-      "Drei Tressen → Sie verteilen die Länge auf mehrere Reihen, und sie fällt rundum.",
+      "Drei Tressen mit zusammen 8 Clips (zwei breitere mit je 3, eine schmalere mit 2) → Sie verteilen die Länge auf mehrere Reihen, und sie fällt rundum.",
       "Echthaar → Sie stylen es wie Ihr eigenes: föhnen, glätten, locken, mit Hitzeschutz.",
       "194 g im Set → Sie wissen genau, wie viel Haar Sie in der Hand halten.",
       "Keine feste Methode → Sie probieren lange Haare aus, bevor Sie sich für etwas Dauerhaftes entscheiden."
@@ -1689,8 +1689,8 @@
     "headline": "Das lange, dunkle Haar, das bei Ihnen nie wachsen wollte",
     "story": "Sie binden morgens einen Zopf, und er reicht weiter, als Ihr Haar es je getan hat. Sie lassen ihn durch die Hand gleiten und spüren das Gewicht von echtem Haar. Dahinter steckt eine Tresse mit besonders flacher Naht: Genius Weft liegt dicht am Kopf, und daran hängen 55 cm Echthaar in Naturdunkelbraun.",
     "benefits": [
-      "Flache Naht ohne Rückhaar → Die Reihe liegt dicht am Kopf und trägt wenig auf, auch wenn Sie das Haar offen tragen.",
-      "An jeder Stelle zuschneidbar → Die Tresse wird an Ihre Kopfform angepasst, nicht umgekehrt.",
+      "Genius Weft hat eine flache Naht ohne Rückhaar → Die Reihe liegt dicht am Kopf und trägt wenig auf, auch wenn Sie das Haar offen tragen.",
+      "Genius Weft lässt sich an jeder Stelle zuschneiden → Die Tresse wird an Ihre Kopfform angepasst, nicht umgekehrt.",
       "Echthaar → Sie föhnen, glätten und locken es wie Ihr eigenes Haar, mit Hitzeschutz.",
       "50 g je Packung → Sie bekommen so viel Haar, wie Sie sich wünschen; wie viele Packungen das sind, sagt Andrea Ihnen persönlich."
     ],
@@ -1756,8 +1756,8 @@
     "story": "Sie stehen am Fenster, drehen den Kopf, und das Licht wandert durch Ihr Haar, von einem Blond ins nächste. So wirkt ein Ombré: Die Farbe verläuft über die Länge, statt an einer Stelle zu wechseln. Dieses Genius Weft trägt Goldblond im Verlauf auf einer besonders flachen Naht, die dicht am Kopf liegt, damit Sie das Haar offen tragen können.",
     "benefits": [
       "Goldblond Ombré → Ihr Haar wirkt nicht wie ein einziger Ton, sondern wie viele, die ineinander übergehen.",
-      "Flache Naht ohne Rückhaar → Die Reihe liegt dicht am Kopf und trägt wenig auf, auch wenn Sie das Haar offen tragen.",
-      "An jeder Stelle zuschneidbar → Die Tresse wird an Ihre Kopfform angepasst, nicht umgekehrt.",
+      "Genius Weft hat eine flache Naht ohne Rückhaar → Die Reihe liegt dicht am Kopf und trägt wenig auf, auch wenn Sie das Haar offen tragen.",
+      "Genius Weft lässt sich an jeder Stelle zuschneiden → Die Tresse wird an Ihre Kopfform angepasst, nicht umgekehrt.",
       "50 g je Packung → Sie bekommen so viel Haar, wie Sie sich wünschen; wie viele Packungen das sind, sagt Andrea Ihnen persönlich."
     ],
     "howItWorks": "Genius Weft wird von einer Friseurin oder Extension-Fachfrau an einer Reihe kleiner Ringe im eigenen Haar befestigt, meist durch Einnähen. Die flache Naht lässt die Reihe dicht am Kopf liegen. Mit dem Nachwachsen Ihres Haares wird die Tresse nachgesetzt; den Zeitpunkt bestimmt Ihre Friseurin.",
@@ -1822,10 +1822,10 @@
     "benefits": [
       "Naturlockige Struktur → Ihre Locken bekommen Länge dazu und bleiben, was sie sind.",
       "Kaffeebraun mit Kupfer-Ombré → ein warmer Verlauf, der in den Locken spielt.",
-      "Flache Naht ohne Rückhaar → Die Reihe liegt dicht am Kopf und trägt wenig auf.",
+      "Genius Weft hat eine flache Naht ohne Rückhaar → Die Reihe liegt dicht am Kopf und trägt wenig auf.",
       "50 g je Packung → Sie bekommen so viel Haar, wie Sie sich wünschen; wie viele Packungen das sind, sagt Andrea Ihnen persönlich."
     ],
-    "howItWorks": "Genius Weft wird von einer Friseurin oder Extension-Fachfrau an einer Reihe kleiner Ringe im eigenen Haar befestigt, meist durch Einnähen. Die Naht ist flach und lässt sich an jeder Stelle zuschneiden, sodass die Breite zu Ihrer Kopfform passt. Wächst Ihr Haar nach, wird die Tresse nachgesetzt.",
+    "howItWorks": "Genius Weft wird von einer Friseurin oder Extension-Fachfrau an einer Reihe kleiner Ringe im eigenen Haar befestigt, meist durch Einnähen. Die Naht einer Genius-Weft-Tresse ist flach und lässt sich an jeder Stelle zuschneiden, sodass die Breite zu Ihrer Kopfform passt. Wächst Ihr Haar nach, wird die Tresse nachgesetzt.",
     "goodFor": "Für lockiges Haar, das länger oder voller werden soll, ohne die eigene Struktur aufzugeben. Die Farbe passt zu braunem Haar mit warmen, kupfernen Tönen.",
     "care": [
       "Shampoo an Ansatz und Kopfhaut, Spülung und Kur nur in die Längen, nicht an die Naht.",
@@ -1901,6 +1901,7 @@
     "howItWorks": "Invisible Tape ist eine Variante der Tape-In-Methode. Das Haar sitzt auf einem Klebestreifen, der nah am Ansatz an feinen Strähnen Ihres eigenen Haares befestigt wird. Bei Invisible Tape ist dieser Streifen dünner und flacher als beim klassischen Tape, und das Haar ist bis an seine Kante eingesetzt. Einarbeiten, Nachsetzen und Entfernen übernimmt eine Friseurin oder Extension-Fachfrau.",
     "goodFor": "Für blondes Haar mit dunklerem Ansatz, das mehr Länge oder Dichte bekommen soll. Invisible Tape wird oft bei feinem Haar gewählt und dann, wenn der Scheitel gewechselt oder das Haar gern hochgesteckt wird.",
     "care": [
+      "Viele Hersteller empfehlen, frühestens 48 Stunden nach dem Anbringen zu waschen und keine Spülung oder Öl an die Tapes zu geben.",
       "Die ersten 48 Stunden nach dem Einsetzen nicht waschen.",
       "Sulfatfreies Shampoo verwenden; keine Spülung und kein Öl an die Tapes geben.",
       "Den Ansatz nach dem Waschen gleich trocken föhnen und nicht mit nassem Haar schlafen.",
@@ -1965,7 +1966,7 @@
       "Echthaar → Sie föhnen, glätten und locken es wie Ihr eigenes Haar, mit Hitzeschutz.",
       "50 g je Packung → Sie bekommen so viel Haar, wie Sie sich wünschen; wie viele Packungen das sind, sagt Andrea Ihnen persönlich."
     ],
-    "howItWorks": "Butterfly Weft wird von einer Friseurin oder Extension-Fachfrau eingearbeitet. Sie setzt eine Reihe kleiner Ringe in Ihr eigenes Haar, meist von Ohr zu Ohr, und befestigt die Tresse daran. Die Reihe muss so sitzen, dass Ihr eigenes Haar sie von oben abdeckt. Wächst Ihr Haar nach, wird die Tresse nachgesetzt.",
+    "howItWorks": "Butterfly Weft wird von einer Friseurin oder Extension-Fachfrau eingearbeitet. Sie setzt eine Reihe kleiner Ringe in Ihr eigenes Haar, meist von Ohr zu Ohr, und befestigt die Tresse daran. Die Reihe muss so sitzen, dass Ihr eigenes Haar sie von oben abdeckt. Wächst Ihr Haar nach, wird die Tresse nachgesetzt. An der Leiste dieser Tresse sehen Sie eine Reihe kleiner Löcher; bei Butterfly Weft dienen sie laut Herstellern dazu, die Tresse mit dem eigenen Haar zu verbinden.",
     "goodFor": "Für alle, die dauerhaft mehr Länge und Fülle möchten und dafür einen Termin bei einer Fachfrau einplanen. Die Farbe passt zu natürlich dunkelbraunem Haar.",
     "care": [
       "Sulfatfreies Shampoo an der Tresse entlang waschen, nicht an den Ringen reiben.",
