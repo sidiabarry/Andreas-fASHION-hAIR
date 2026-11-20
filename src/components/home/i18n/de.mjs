@@ -180,7 +180,6 @@ export const about = {
       label: "Neuanfang",
       title: "Ein neues Land. *Eine neue Sprache.*",
       text: "Andrea zieht nach Deutschland. Weil sie anfangs kaum Deutsch spricht, arbeitet sie viele Jahre in der Pflege, mit Menschen mit Behinderung. Dort lernt sie, Menschen mit Geduld und Würde zu begegnen. Das prägt bis heute, wie sie berät.",
-      quote: "",
     },
     {
       label: "Selbst betroffen",
@@ -192,7 +191,6 @@ export const about = {
       label: "Es muss echt sein",
       title: "Echt. *Und alltagstauglich.*",
       text: "Ein Haarteil aus anderem Haar hat sie einmal ausprobiert. Es hat sie im Alltag enttäuscht, zum Beispiel in der Sauna. Seitdem steht für sie fest: Es muss echtes Haar sein, und es muss sich im Leben bewähren, nicht nur im Spiegel.",
-      quote: "",
     },
     {
       label: "Das Atelier",

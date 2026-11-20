@@ -613,3 +613,11 @@ html::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, #e0a52
 @keyframes af-ui-ember { 0%, 100% { transform: scale(0.75); opacity: 0.6; } 50% { transform: scale(1.1); opacity: 1; } }
 @media (prefers-reduced-motion: reduce) { .af-ui-loading { animation: none; } [data-tilt] { transform: none; } }
 html[data-motion="paused"] .af-ui-loading { animation-play-state: paused; }
+
+/* Seitenübergang (View Transitions API): alte Seite verglüht warm, neue steigt auf.
+ * Greift, sobald die Plattform Übergänge aktiviert (siehe Übergabenotiz home-overhaul). */
+::view-transition-old(root) { animation: af-fx-vt-out 0.45s var(--af-ease-in-out) both; }
+::view-transition-new(root) { animation: af-fx-vt-in 0.7s var(--af-ease) both; }
+@keyframes af-fx-vt-out { to { opacity: 0; filter: blur(6px) brightness(1.3) sepia(0.5); transform: scale(1.01); } }
+@keyframes af-fx-vt-in { from { opacity: 0; transform: translateY(14px); } }
+@media (prefers-reduced-motion: reduce) { ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; } }

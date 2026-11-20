@@ -176,7 +176,6 @@ export const about = {
       label: "A new start",
       title: "A new country. *A new language.*",
       text: "Andrea moves to Germany. Because she hardly speaks German at first, she works in care for many years, with people with disabilities. There she learns to meet people with patience and dignity. It still shapes how she advises today.",
-      quote: "",
     },
     {
       label: "Her own experience",
@@ -188,7 +187,6 @@ export const about = {
       label: "It has to be real",
       title: "Real. *And made for everyday life.*",
       text: "She once tried a hairpiece made from other hair. It let her down in everyday life, in the sauna for example. Since then she has been certain: it has to be real hair, and it has to hold up in life, not just in the mirror.",
-      quote: "",
     },
     {
       label: "The atelier",
