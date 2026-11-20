@@ -4,7 +4,7 @@ import { CATEGORY_IDS, products } from "@/data/catalog";
 import { LOCALES } from "@/i18n/locales";
 import { siteUrl } from "@/lib/seo";
 
-const STATIC = ["", "/kollektion", "/anfrage", "/ueber-andrea", "/kontakt", "/versand-und-zahlung", "/impressum", "/datenschutz", "/agb", "/widerruf", "/widerruf/erklaeren"];
+const STATIC = ["", "/extensions", "/massanfertigung", "/kollektion", "/anfrage", "/ueber-andrea", "/kontakt", "/versand-und-zahlung", "/impressum", "/datenschutz", "/agb", "/widerruf", "/widerruf/erklaeren"];
 
 /** Sitemap mit allen Sprachfassungen und hreflang-Alternativen je Eintrag. */
 export default function sitemap(): MetadataRoute.Sitemap {

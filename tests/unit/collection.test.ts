@@ -75,11 +75,11 @@ test("Farbnamen laut Briefing", () => {
 });
 
 test("Verkaufstexte: ohne Felder null, mit Feldern je Sprache überschreibbar, Rest Deutsch", () => {
-  assert.equal(productCopy(p(424), "de"), null);
-  const base = { ...p(424), headline: "Zeile", story: "Geschichte", benefits: ["a", "b", "c"], faq: [] } as Product;
+  assert.equal(productCopy(p(421), "de"), null);
+  const base = { ...p(421), headline: "Zeile", story: "Geschichte", benefits: ["a", "b", "c"], faq: [] } as Product;
   const de = productCopy(base, "de");
   assert.deepEqual(de, { benefits: ["a", "b", "c"], headline: "Zeile", story: "Geschichte" });
-  assert.equal(productCopy(p(424), "en"), null);
+  assert.equal(productCopy(p(421), "en"), null);
   assert.deepEqual([...COPY_FIELDS], ["headline", "story", "benefits", "howItWorks", "goodFor", "care", "faq"]);
 });
 
