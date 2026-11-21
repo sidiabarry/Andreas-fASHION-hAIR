@@ -121,8 +121,8 @@ export const company: Company = {
   // Vom Auftraggeber angegeben (21.11.2026): Konto der Inhaberin. Prüfziffer geprüft (ISO 13616, mod 97).
   // BIC wird für SEPA-Überweisungen im Inland/EWR nicht benötigt und bleibt deshalb leer.
   bank: { bankName: "", bic: "", holder: "Andreia Pereira Da Costa", iban: "DE22370605900002436798" },
-  // Unbekannt; erst nötig, wenn PayPal angeboten wird.
-  paypal: null,
+  // Vom Auftraggeber angegeben (21.11.2026): PayPal-Konto der Inhaberin.
+  paypal: "a.da.costa@gmx.de",
   // Vom Auftraggeber als belegbar bestätigt (11/2026); die Live-Seite führt die Zeile im Footer.
   madeInGermany: true,
   // Unbekannt: Entscheidung der Inhaberin (Empfehlung in docs/COMPLIANCE.md).

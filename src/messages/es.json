@@ -1027,7 +1027,7 @@
     "copyLabel": "Copiar {label}",
     "instant": "Con una transferencia inmediata el dinero suele llegar a Andrea en segundos.",
     "when": "Puede pagar ahora o tras la confirmación de Andrea. Si una pieza no está disponible, le devolvemos el dinero sin demora.",
-    "paypal": "¿Prefiere PayPal? Responda sin más al correo de Andrea.",
+    "paypal": "¿Prefiere PayPal? Andrea le enviará una solicitud de pago desde {email}.",
     "mailTitle": "Cómo pagar (ahora o tras la confirmación de Andrea):",
     "mailQr": "Código QR para su app bancaria: {url}"
   }

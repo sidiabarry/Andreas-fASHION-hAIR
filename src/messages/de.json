@@ -1027,7 +1027,7 @@
     "copyLabel": "{label} kopieren",
     "instant": "Mit Echtzeitüberweisung ist das Geld meist in Sekunden bei Andrea.",
     "when": "Sie können jetzt bezahlen oder nach Andreas Bestätigung. Ist ein Stück wider Erwarten nicht verfügbar, bekommen Sie Ihr Geld umgehend zurück.",
-    "paypal": "Lieber mit PayPal? Antworten Sie einfach auf Andreas E-Mail.",
+    "paypal": "Lieber mit PayPal? Andrea schickt Ihnen eine Zahlungsaufforderung von {email}.",
     "mailTitle": "So bezahlen Sie (gleich oder nach Andreas Bestätigung):",
     "mailQr": "QR-Code für Ihre Banking-App: {url}"
   }

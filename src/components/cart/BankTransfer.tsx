@@ -53,7 +53,7 @@ export async function BankTransfer({ locale, orderId, totalCents }: { locale: Lo
       <ul className="af-pay__notes">
         <li>{t("instant")}</li>
         <li>{t("when")}</li>
-        {company.paymentMethods.includes("paypal") ? <li>{t("paypal")}</li> : null}
+        {company.paymentMethods.includes("paypal") && company.paypal ? <li>{t("paypal", { email: company.paypal })}</li> : null}
       </ul>
     </section>
   );
