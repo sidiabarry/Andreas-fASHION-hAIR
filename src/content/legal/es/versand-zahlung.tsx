@@ -79,7 +79,7 @@ export default function Page({ company: c }: { company: Company }) {
                     {c.bank.bic ? <>, BIC: {c.bank.bic}</> : null}. Indique su número de pedido como concepto.
                   </>
                 ) : (
-                  <> <Missing field="bank" label="datos bancarios" /></>
+                  <>{" "}Recibirá los datos bancarios con la confirmación del pedido.</>
                 )}
               </li>
             ) : null}
@@ -87,7 +87,7 @@ export default function Page({ company: c }: { company: Company }) {
               <li>
                 <strong>PayPal</strong> – tras la confirmación del pedido recibe una solicitud de pago
                 por PayPal
-                {c.paypalEmail ? <> de {c.paypalEmail}</> : <> <Missing field="paypalEmail" label="cuenta de PayPal" /></>}
+                {c.paypalEmail ? <> de {c.paypalEmail}</> : null}
                 ; pagadera en 7 días. Envío tras recibir el pago.
               </li>
             ) : null}

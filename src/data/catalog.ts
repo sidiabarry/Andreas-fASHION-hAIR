@@ -61,6 +61,8 @@ export type Product = ProductCopy & {
   imageKind?: ImageKind | null;
   /** Zweites Studiobild, steht in der Galerie direkt hinter dem Hauptbild. */
   secondImage?: string | null;
+  /** Aus dem Shop genommen (Daten bleiben erhalten). Auftraggeber 21.11.2026: Walker-Tape-Produkte. */
+  hidden?: boolean;
   /** GPSR Art. 19: "atelier" = von Andrea selbst gefertigt (Angaben aus company.ts; vom Auftraggeber bestätigt 21.11.2026). */
   manufacturer?: "atelier" | null;
   originals: string[];
@@ -103,7 +105,10 @@ export function galleryImages(product: Product): { src: string; kind: "studio" |
   ];
 }
 
-export const products: Product[] = raw as Product[];
+export const products: Product[] = (raw as Product[]).filter((product) => !product.hidden);
+
+/** Kategorien, in denen es sichtbare Produkte gibt (Filter, Footer, Sitemap). */
+export const VISIBLE_CATEGORY_IDS = CATEGORY_IDS.filter((id) => products.some((product) => product.category === id));
 
 /** Kategorien ohne Online-Produkte: nur Anfrage. Folgt den Daten: sobald eine Kategorie Produkte hat, ist sie kaufbar. */
 export const INQUIRY_ONLY_CATEGORIES: readonly CategoryId[] = CATEGORY_IDS.filter((id) => !products.some((product) => product.category === id));

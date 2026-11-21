@@ -80,7 +80,7 @@ export default function Page({ company: c }: { company: Company }) {
                     commande comme référence.
                   </>
                 ) : (
-                  <> <Missing field="bank" label="coordonnées bancaires" /></>
+                  <>{" "}Vous recevrez les coordonnées bancaires avec la confirmation de commande.</>
                 )}
               </li>
             ) : null}
@@ -88,7 +88,7 @@ export default function Page({ company: c }: { company: Company }) {
               <li>
                 <strong>PayPal</strong> – après la confirmation de commande, vous recevez une demande
                 de paiement via PayPal
-                {c.paypalEmail ? <> de {c.paypalEmail}</> : <> <Missing field="paypalEmail" label="compte PayPal" /></>}
+                {c.paypalEmail ? <> de {c.paypalEmail}</> : null}
                 ; payable dans les 7 jours. Expédition après réception du paiement.
               </li>
             ) : null}

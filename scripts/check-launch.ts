@@ -31,7 +31,7 @@ for (const missing of missingCompanyFields(company)) {
 }
 
 // Sicherheitsangaben für Gefahrstoffe / GPSR
-const catalog = JSON.parse(readFileSync(join(root, "src/data/catalog.json"), "utf8")) as { id: number; name: string; category: string; safety: string | null }[];
+const catalog = (JSON.parse(readFileSync(join(root, "src/data/catalog.json"), "utf8")) as { id: number; name: string; category: string; safety: string | null; hidden?: boolean }[]).filter((p) => !p.hidden); // ausgeblendete Produkte stehen nicht im Shop
 for (const product of catalog) {
   if (product.category === "pflege" && !product.safety) {
     const solvent = /lösungsmittel/i.test(product.name);

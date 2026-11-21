@@ -79,14 +79,14 @@ export default function Page({ company: c }: { company: Company }) {
                     {c.bank.bic ? <>, BIC: {c.bank.bic}</> : null}. Lütfen açıklamaya sipariş numaranızı yazın.
                   </>
                 ) : (
-                  <> <Missing field="bank" label="banka bilgileri" /></>
+                  <>{" "}Banka bilgilerini sipariş onayıyla birlikte alırsınız.</>
                 )}
               </li>
             ) : null}
             {c.payments.paypal ? (
               <li>
                 <strong>PayPal</strong> – sipariş onayından sonra PayPal üzerinden bir ödeme talebi alırsınız
-                {c.paypalEmail ? <> (gönderen: {c.paypalEmail})</> : <> <Missing field="paypalEmail" label="PayPal hesabı" /></>}
+                {c.paypalEmail ? <> (gönderen: {c.paypalEmail})</> : null}
                 ; 7 gün içinde ödenir. Ödeme alındıktan sonra gönderim.
               </li>
             ) : null}

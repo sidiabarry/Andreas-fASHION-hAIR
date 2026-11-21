@@ -79,14 +79,14 @@ export default function Page({ company: c }: { company: Company }) {
                     {c.bank.bic ? <>, BIC: {c.bank.bic}</> : null}. W tytule przelewu prosimy podać numer zamówienia.
                   </>
                 ) : (
-                  <> <Missing field="bank" label="dane bankowe" /></>
+                  <>{" "}Dane bankowe otrzymają Państwo wraz z potwierdzeniem zamówienia.</>
                 )}
               </li>
             ) : null}
             {c.payments.paypal ? (
               <li>
                 <strong>PayPal</strong> – po potwierdzeniu zamówienia otrzymują Państwo żądanie zapłaty przez PayPal
-                {c.paypalEmail ? <> od {c.paypalEmail}</> : <> <Missing field="paypalEmail" label="konto PayPal" /></>}
+                {c.paypalEmail ? <> od {c.paypalEmail}</> : null}
                 ; płatne w ciągu 7 dni. Wysyłka po otrzymaniu płatności.
               </li>
             ) : null}

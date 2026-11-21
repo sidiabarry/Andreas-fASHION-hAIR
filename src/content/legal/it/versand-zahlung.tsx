@@ -79,7 +79,7 @@ export default function Page({ company: c }: { company: Company }) {
                     {c.bank.bic ? <>, BIC: {c.bank.bic}</> : null}. Indichi il numero d'ordine come causale.
                   </>
                 ) : (
-                  <> <Missing field="bank" label="coordinate bancarie" /></>
+                  <>{" "}Riceverà le coordinate bancarie con la conferma dell'ordine.</>
                 )}
               </li>
             ) : null}
@@ -87,7 +87,7 @@ export default function Page({ company: c }: { company: Company }) {
               <li>
                 <strong>PayPal</strong> – dopo la conferma d'ordine riceve una richiesta di pagamento
                 tramite PayPal
-                {c.paypalEmail ? <> da {c.paypalEmail}</> : <> <Missing field="paypalEmail" label="conto PayPal" /></>}
+                {c.paypalEmail ? <> da {c.paypalEmail}</> : null}
                 ; da pagare entro 7 giorni. Spedizione dopo il ricevimento del pagamento.
               </li>
             ) : null}

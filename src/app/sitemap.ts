@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-import { CATEGORY_IDS, products } from "@/data/catalog";
+import { products, VISIBLE_CATEGORY_IDS } from "@/data/catalog";
 import { LOCALES } from "@/i18n/locales";
 import { siteUrl } from "@/lib/seo";
 
@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteUrl();
   const paths = [
     ...STATIC,
-    ...CATEGORY_IDS.map((id) => `/kollektion?kategorie=${id}`),
+    ...VISIBLE_CATEGORY_IDS.map((id) => `/kollektion?kategorie=${id}`),
     ...products.map((p) => `/produkt/${p.slug}`),
   ];
   return paths.flatMap((path) => {

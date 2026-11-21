@@ -79,14 +79,14 @@ export default function Page({ company: c }: { company: Company }) {
                     {c.bank.bic ? <>, BIC: {c.bank.bic}</> : null}. Vermeld uw bestelnummer als omschrijving.
                   </>
                 ) : (
-                  <> <Missing field="bank" label="bankgegevens" /></>
+                  <>{" "}De bankgegevens ontvangt u bij de orderbevestiging.</>
                 )}
               </li>
             ) : null}
             {c.payments.paypal ? (
               <li>
                 <strong>PayPal</strong> – na de orderbevestiging ontvangt u een betaalverzoek via PayPal
-                {c.paypalEmail ? <> van {c.paypalEmail}</> : <> <Missing field="paypalEmail" label="PayPal-account" /></>}
+                {c.paypalEmail ? <> van {c.paypalEmail}</> : null}
                 ; te betalen binnen 7 dagen. Verzending na ontvangst van de betaling.
               </li>
             ) : null}

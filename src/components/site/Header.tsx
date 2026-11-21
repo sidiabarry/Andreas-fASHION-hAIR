@@ -52,7 +52,6 @@ export function Header() {
       <Link aria-current={current("/massanfertigung")} href="/massanfertigung">
         {t("nav.custom")}
       </Link>
-      <Link href={{ pathname: "/kollektion", query: { kategorie: "pflege" } }}>{t("nav.care")}</Link>
       <Link aria-current={current("/ueber-andrea")} href="/ueber-andrea">
         {t("nav.about")}
       </Link>

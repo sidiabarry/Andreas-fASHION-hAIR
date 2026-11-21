@@ -83,7 +83,7 @@ export default function Page({ company: c }: { company: Company }) {
                     Bestellnummer als Verwendungszweck an.
                   </>
                 ) : (
-                  <> <Missing field="bank" label="Bankverbindung" /></>
+                  <>{" "}Die Bankverbindung erhalten Sie mit der Auftragsbestätigung.</>
                 )}
               </li>
             ) : null}
@@ -91,7 +91,7 @@ export default function Page({ company: c }: { company: Company }) {
               <li>
                 <strong>PayPal</strong> – Sie erhalten nach der Auftragsbestätigung eine
                 Zahlungsaufforderung über PayPal
-                {c.paypalEmail ? <> von {c.paypalEmail}</> : <> <Missing field="paypalEmail" label="PayPal-Konto" /></>}
+                {c.paypalEmail ? <> von {c.paypalEmail}</> : null}
                 ; zahlbar innerhalb von 7 Tagen. Versand nach Zahlungseingang.
               </li>
             ) : null}

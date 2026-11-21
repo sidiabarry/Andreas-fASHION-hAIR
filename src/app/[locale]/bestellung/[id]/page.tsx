@@ -109,7 +109,7 @@ export default async function OrderPage({ params, searchParams }: PageProps<"/[l
           {t("order.print")}
         </p>
         <div className="af-hero-actions" style={{ marginTop: 28 }}>
-          <Link className="af-cta-line" href={{ pathname: "/kollektion", query: { kategorie: "pflege" } }}>
+          <Link className="af-cta-line" href="/kollektion">
             {t("order.careCta")} <Arrow />
           </Link>
         </div>

@@ -4,7 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { JsonLd } from "@/components/JsonLd";
 import { ProductCard } from "@/components/product/ProductCard";
 import { SortSelect } from "@/components/product/SortSelect";
-import { CATEGORY_IDS, isCategoryId, products } from "@/data/catalog";
+import { CATEGORY_IDS, isCategoryId, products, VISIBLE_CATEGORY_IDS } from "@/data/catalog";
 import { CustomStrip } from "@/components/product/CustomStrip";
 import type { Product } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
@@ -159,7 +159,7 @@ export default async function CollectionPage({ params, searchParams }: PageProps
             <Link aria-current={category === null ? "page" : undefined} className="af-tab" href={hrefFor({ kategorie: null })}>
               {t("collection.all")}
             </Link>
-            {CATEGORY_IDS.map((id) => (
+            {VISIBLE_CATEGORY_IDS.map((id) => (
               <Link aria-current={category === id ? "page" : undefined} className="af-tab" href={hrefFor({ kategorie: id })} key={id}>
                 {t(`categories.${id}.label`)}
               </Link>

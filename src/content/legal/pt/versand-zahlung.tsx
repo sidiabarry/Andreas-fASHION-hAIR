@@ -79,14 +79,14 @@ export default function Page({ company: c }: { company: Company }) {
                     {c.bank.bic ? <>, BIC: {c.bank.bic}</> : null}. Indique o número da encomenda no descritivo.
                   </>
                 ) : (
-                  <> <Missing field="bank" label="dados bancários" /></>
+                  <>{" "}Receberá os dados bancários com a confirmação da encomenda.</>
                 )}
               </li>
             ) : null}
             {c.payments.paypal ? (
               <li>
                 <strong>PayPal</strong> – após a confirmação recebe um pedido de pagamento através da PayPal
-                {c.paypalEmail ? <> de {c.paypalEmail}</> : <> <Missing field="paypalEmail" label="conta PayPal" /></>}
+                {c.paypalEmail ? <> de {c.paypalEmail}</> : null}
                 ; a pagar no prazo de 7 dias. Envio após a receção do pagamento.
               </li>
             ) : null}

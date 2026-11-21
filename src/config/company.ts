@@ -109,13 +109,15 @@ export const company: Company = {
   // Vom Auftraggeber bestätigt (11/2026): Kleinunternehmerin nach § 19 UStG.
   smallBusiness: true,
   // Unbekannt, ob ein Registereintrag besteht.
-  register: null,
+  // Vom Auftraggeber bestätigt (21.11.2026): kein Handelsregistereintrag.
+  register: false,
   // Unbekannt; nur nötig, falls journalistisch-redaktionelle Inhalte angeboten werden.
   editorialResponsible: null,
   // Vom Auftraggeber bestätigt (11/2026). Steht nicht auf der Live-Seite.
   shippingCarrier: "DHL",
   // Zahlungswege werden erst nach Abnahme der Seite festgelegt.
-  paymentMethods: [],
+  // Vom Auftraggeber bestätigt (21.11.2026): PayPal und Vorkasse per Überweisung. Zahlungsdaten kommen mit der Auftragsbestätigung.
+  paymentMethods: ["paypal", "ueberweisung"],
   // Unbekannt; erst nötig, wenn Überweisung angeboten wird.
   bank: null,
   // Unbekannt; erst nötig, wenn PayPal angeboten wird.
@@ -126,7 +128,8 @@ export const company: Company = {
   // Vom Auftraggeber bestätigt (21.11.2026): Kundin trägt die Rücksendekosten.
   returnCosts: "customer",
   // Unbekannt: Entscheidung der Inhaberin (Empfehlung in docs/COMPLIANCE.md).
-  disputeResolution: null,
+  // Vom Auftraggeber bestätigt (21.11.2026): keine Teilnahme an Verbraucherschlichtung.
+  disputeResolution: "not_willing",
   // Wird beim Livegang gesetzt.
   // Stand der Rechtstexte (vom Auftraggeber festgelegt, 21.11.2026).
   legalEffectiveDate: "21. November 2026",
@@ -169,8 +172,8 @@ export function missingCompanyFields(c: Company): MissingField[] {
   if (c.paymentMethods.length === 0)
     missing.push({ field: "paymentMethods", why: "Zahlungswege sind nicht festgelegt – AGB/Versandseite zeigen sonst den Marker „Zahlungsart noch festzulegen“", blocking: true, legal: true });
   if (c.paymentMethods.includes("ueberweisung") && !c.bank)
-    missing.push({ field: "bank", why: "Bankverbindung für Überweisung", blocking: true });
+    missing.push({ field: "bank", why: "Bankverbindung für Überweisung", blocking: false });
   if (c.paymentMethods.includes("paypal") && !c.paypal)
-    missing.push({ field: "paypal", why: "PayPal-Konto", blocking: true });
+    missing.push({ field: "paypal", why: "PayPal-Konto", blocking: false });
   return missing;
 }

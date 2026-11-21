@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 
 import { Logo } from "@/components/Logo";
 import { company } from "@/config/company";
-import { CATEGORY_IDS } from "@/data/catalog";
+import { VISIBLE_CATEGORY_IDS } from "@/data/catalog";
 import { Link } from "@/i18n/navigation";
 
 import "../shop.css";
@@ -74,7 +74,7 @@ export async function Footer({ demo }: { demo: boolean }) {
               <li>
                 <Link href="/extensions">{t("footer.extensionsHub")}</Link>
               </li>
-              {CATEGORY_IDS.map((id) => (
+              {VISIBLE_CATEGORY_IDS.map((id) => (
                 <li key={id}>
                   <Link href={{ pathname: "/kollektion", query: { kategorie: id } }}>{t(`categories.${id}.label`)}</Link>
                 </li>

@@ -567,7 +567,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "hidden": true
   },
   {
     "id": 222,
@@ -595,7 +596,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "hidden": true
   },
   {
     "id": 228,
@@ -623,7 +625,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "hidden": true
   },
   {
     "id": 220,
@@ -651,7 +654,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "hidden": true
   },
   {
     "id": 206,
