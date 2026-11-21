@@ -50,7 +50,7 @@ for (const locale of LOCALES) {
 }
 
 /** Neue Produkte, deren Übersetzung noch aussteht (Fallback: Deutsch). Nach `npm run i18n:catalog` leeren. */
-const TRANSLATION_PENDING = new Set([422, 423, 424, 425, 426, 427, 428]);
+const TRANSLATION_PENDING = new Set<number>();
 
 test("Produkttexte: jede freigeschaltete Sprache außer Deutsch hat alle Produkte vollständig (außer ausstehende)", () => {
   const catalog = JSON.parse(readFileSync(join(dir, "../data/catalog.json"), "utf8")) as { id: number; specs: string[] }[];
