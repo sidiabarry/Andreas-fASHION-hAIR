@@ -175,7 +175,7 @@ html[data-motion="paused"] .fx-canvas { opacity: 0.55; }
 /* ---------- 5 Farbe und Menge: Fächer ---------- */
 .cf { position: relative; padding-block: var(--h-section); background: linear-gradient(180deg, var(--af-bg), var(--af-surface) 50%, var(--af-bg)); }
 .cf__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(40px, 6vw, 96px); align-items: center; }
-.cf__fan { display: grid; gap: 22px; justify-items: center; }
+.cf__fan { display: grid; gap: 22px; justify-items: center; padding-left: clamp(0px, 5vw, 72px); }
 .cf__fan ul { display: flex; justify-content: center; align-items: flex-end; height: clamp(420px, 40vw, 560px); margin: 0; padding: 0 0 40px; list-style: none; }
 .cf__fan li { --w: clamp(96px, 8.4vw, 128px); position: relative; width: var(--w); height: 88%; margin-inline: calc(var(--w) * -0.08); transform: rotate(calc(var(--i) * 4deg)) translateY(calc(var(--i) * var(--i) * 7px)); transform-origin: 50% 220%; transition: transform 0.8s var(--af-ease); z-index: 1; }
 .cf__fan li:hover, .cf__fan li:focus-within { transform: rotate(calc(var(--i) * 3deg)) translateY(-18px); z-index: 2; }
