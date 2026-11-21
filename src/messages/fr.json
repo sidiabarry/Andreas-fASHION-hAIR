@@ -391,7 +391,11 @@
       "how": "Comment cela fonctionne",
       "good": "À qui cela convient",
       "care": "Entretien"
-    }
+    },
+    "flagStaged": "Mise en scène IA",
+    "compareStudioStaged": "Mise en scène IA",
+    "compareTitleStaged": "Mise en scène IA et photo originale comparées",
+    "compareLabelStaged": "Déplacer la comparaison : à gauche la mise en scène IA, à droite la photo originale non retouchée"
   },
   "price": {
     "smallBusiness": "TVA non applicable selon le § 19 de la loi allemande sur la TVA (petite entreprise).",

@@ -29,6 +29,7 @@ export async function ProductCard({ product, locale, sold, priority }: { product
             {flag}
           </span>
         ) : null}
+        {imageKindOf(product) === "staged" ? <span className="af-card__ai">{t("flagStaged")}</span> : null}
       </div>
       <div className="af-card__row">
         <span className="af-card__name">{text.name}</span>

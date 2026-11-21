@@ -19,6 +19,7 @@ import { PriceNote } from "@/components/product/PriceNote";
 import { ProductCard } from "@/components/product/ProductCard";
 import { company } from "@/config/company";
 import { deliveryParams } from "@/config/shipping";
+import { unitText } from "@/components/cart/unitText";
 import { byCategory, galleryImages, getProduct, imageKindOf, isUnique, productCopy, productText, unitInfo } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
@@ -146,14 +147,14 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
             {product.restyled && product.originals[0] ? (
               <section aria-labelledby="compare-title" className="af-stack" style={{ "--gap": "12px" } as React.CSSProperties}>
                 <h2 className="af-mono" id="compare-title">
-                  {t("product.compareTitle")}
+                  {t(kind === "staged" ? "product.compareTitleStaged" : "product.compareTitle")}
                 </h2>
                 <CompareSlider
-                  label={t("product.compareLabel")}
+                  label={t(kind === "staged" ? "product.compareLabelStaged" : "product.compareLabel")}
                   original={product.originals[0]}
                   originalLabel={t("product.compareOriginal")}
                   studio={product.image}
-                  studioLabel={t("product.compareStudio")}
+                  studioLabel={t(kind === "staged" ? "product.compareStudioStaged" : "product.compareStudio")}
                 />
                 <p className="af-note">{t(kind === "staged" ? "product.compareNoteStaged" : "product.compareNote")}</p>
               </section>
@@ -285,7 +286,7 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
           </section>
         ) : null}
       </div>
-      {!isSold ? <StickyBuyBar available name={text.name} price={price} slug={product.slug} unique={unique} /> : null}
+      {!isSold ? <StickyBuyBar available name={text.name} price={price} slug={product.slug} unique={unique} unitLine={unitInfo(product) ? unitText(t, unitInfo(product)!, locale) : undefined} /> : null}
     </main>
   );
 }

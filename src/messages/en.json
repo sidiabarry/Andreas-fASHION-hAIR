@@ -391,7 +391,11 @@
       "how": "How it works",
       "good": "Who it is for",
       "care": "Care"
-    }
+    },
+    "flagStaged": "AI staging",
+    "compareStudioStaged": "AI staging",
+    "compareTitleStaged": "AI staging and original photo compared",
+    "compareLabelStaged": "Move the comparison: AI staging on the left, unedited original photo on the right"
   },
   "price": {
     "smallBusiness": "No VAT is charged in accordance with § 19 of the German VAT Act (small business).",

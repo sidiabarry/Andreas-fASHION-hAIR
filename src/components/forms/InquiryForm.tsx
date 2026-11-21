@@ -11,6 +11,7 @@ import { StartedAt } from "@/components/forms/StartedAt";
 import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
 import { formatPrice } from "@/lib/money";
+import { unitText } from "@/components/cart/unitText";
 import { INQUIRY_TOPICS } from "@/lib/validation";
 import type { InquiryTopic } from "@/lib/validation";
 import { sendInquiry } from "@/server/actions";
@@ -175,6 +176,7 @@ export function InquiryForm({ topic: initialTopic, product, ownerEmail, b2bNotic
                 <span>
                   {quantity > 1 ? `${quantity} × ` : ""}
                   {item.name}, {item.subtitle}
+                  {item.unit ? <small className="af-note" style={{ display: "block" }}>{unitText(t, item.unit, locale)}</small> : null}
                 </span>
                 <span>{formatPrice(item.priceCents * quantity, locale)}</span>
               </li>

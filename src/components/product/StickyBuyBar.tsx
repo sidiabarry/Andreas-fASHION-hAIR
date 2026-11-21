@@ -10,7 +10,7 @@ import { Link } from "@/i18n/navigation";
  * Feste Kaufleiste am Handy: erscheint, sobald der Hauptknopf aus dem Bild scrollt.
  * Beobachtet das Element mit der Kennung `buy-anchor`.
  */
-export function StickyBuyBar({ slug, unique, price, name, available }: { slug: string; unique: boolean; price: string; name: string; available: boolean }) {
+export function StickyBuyBar({ slug, unique, price, unitLine, name, available }: { slug: string; unique: boolean; price: string; unitLine?: string; name: string; available: boolean }) {
   const t = useTranslations("product");
   const cart = useCart();
   const [visible, setVisible] = useState(false);
@@ -27,6 +27,7 @@ export function StickyBuyBar({ slug, unique, price, name, available }: { slug: s
       <div className="af-sticky__info">
         <span className="af-sticky__name">{name}</span>
         <span className="af-card__price">{price}</span>
+        {unitLine ? <span className="af-note af-sticky__unit">{unitLine}</span> : null}
       </div>
       {!available ? null : inCart ? (
         <Link className="af-sticky__btn" href="/warenkorb">

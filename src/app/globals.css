@@ -221,6 +221,7 @@ body.af-body {
 .af-card:hover .af-card__media img { transform: scale(1.045); }
 .af-card__flag { position: absolute; left: 12px; top: 12px; padding: 6px 10px; border-radius: 999px; font-family: var(--af-mono); font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; background: color-mix(in srgb, var(--af-bg) 78%, transparent); backdrop-filter: blur(8px); color: var(--af-gold); }
 .af-card__flag[data-sold="true"] { color: var(--af-muted); }
+.af-card__ai { position: absolute; left: 12px; bottom: 12px; padding: 4px 8px; border-radius: 999px; font-family: var(--af-mono); font-size: 0.56rem; letter-spacing: 0.12em; text-transform: uppercase; background: color-mix(in srgb, var(--af-bg) 78%, transparent); backdrop-filter: blur(8px); color: var(--af-ink); }
 .af-card[data-sold="true"] .af-card__media img { filter: grayscale(0.85) brightness(0.7); }
 .af-card__row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-top: 16px; }
 .af-card__name { font-weight: 550; letter-spacing: -0.015em; }

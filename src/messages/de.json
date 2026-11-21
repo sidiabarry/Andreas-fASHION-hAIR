@@ -391,7 +391,11 @@
       "how": "So funktioniert es",
       "good": "Für wen es passt",
       "care": "Pflege"
-    }
+    },
+    "flagStaged": "KI-Inszenierung",
+    "compareStudioStaged": "KI-Inszenierung",
+    "compareTitleStaged": "KI-Inszenierung und Originalfoto im Vergleich",
+    "compareLabelStaged": "Vergleich verschieben: links KI-Inszenierung, rechts unbearbeitetes Originalfoto"
   },
   "price": {
     "smallBusiness": "Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.",

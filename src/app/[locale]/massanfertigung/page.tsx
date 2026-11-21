@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { JsonLd } from "@/components/JsonLd";
+import { Link } from "@/i18n/navigation";
 import { InquiryForm } from "@/components/forms/InquiryForm";
 import { ContactLinks } from "@/components/site/ContactLinks";
 import { company } from "@/config/company";
@@ -43,7 +44,12 @@ export default async function CustomPage({ params, searchParams }: PageProps<"/[
           <h1 className="af-h2">{t("custom.title")}</h1>
           <p className="af-lead">{t("custom.lead")}</p>
           {product ? <p className="af-only">{t("inquiry.about", { product })}</p> : null}
-          <p className="af-note">{t("custom.timing", deliveryParams())}</p>
+          <p className="af-note">
+            {t("custom.timing", deliveryParams())}{" "}
+            <Link className="af-link" href="/widerruf">
+              {t("home.concerns.returnsLink")}
+            </Link>
+          </p>
           <ol className="af-hubsteps af-hubsteps--plain">
             {(["system", "length", "color", "structure", "amount", "contact"] as const).map((step) => (
               <li key={step}>
