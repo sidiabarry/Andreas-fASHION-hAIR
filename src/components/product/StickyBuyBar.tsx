@@ -33,7 +33,7 @@ export function StickyBuyBar({ slug, unique, price, name, available }: { slug: s
           {t("toCart")}
         </Link>
       ) : (
-        <button className="af-sticky__btn" onClick={() => cart.add(slug)} type="button">
+        <button className="af-sticky__btn" data-magnetic="" onClick={() => cart.add(slug)} type="button">
           {t("addToCart")}
         </button>
       )}

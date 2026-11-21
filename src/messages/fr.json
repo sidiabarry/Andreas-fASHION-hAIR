@@ -771,7 +771,8 @@
     "kicker": "Page introuvable",
     "title": "Il n'y a plus rien ici.",
     "lead": "La pièce a peut-être été vendue. Dans la collection, vous trouverez toutes celles qui sont encore disponibles.",
-    "cta": "Vers la collection"
+    "cta": "Vers la collection",
+    "extensions": "Ou : extensions sur demande"
   },
   "error": {
     "kicker": "Une erreur s'est produite",

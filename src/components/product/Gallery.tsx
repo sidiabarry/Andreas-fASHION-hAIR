@@ -13,7 +13,7 @@ export function Gallery({ shots, zoomLabel, closeLabel, hint }: { shots: Shot[];
   const current = shots[Math.min(index, shots.length - 1)];
   return (
     <>
-      <div className="af-pdp__main">
+      <div className="af-pdp__main" data-lens="">
         <Image alt={current.alt} height={1600} key={current.src} priority={index === 0} sizes="(max-width: 900px) 100vw, 640px" src={current.src} width={1200} />
         <button
           aria-label={zoomLabel}

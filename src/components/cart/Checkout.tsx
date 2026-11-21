@@ -184,27 +184,27 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
             <legend className="af-h3">{t("checkoutx.contactTitle")}</legend>
             <div className="af-form__two">
               <Field error={err("name")} label={t("checkout.name")} name="name" required requiredLabel={t("common.required")}>
-                {(p) => <input {...p} autoComplete="name" maxLength={120} onChange={set("name")} value={values.name} />}
+                {(p) => <input {...p} className="af-ui-field" autoComplete="name" maxLength={120} onChange={set("name")} value={values.name} />}
               </Field>
               <Field error={err("email")} hint={t("checkout.emailHint")} label={t("checkout.email")} name="email" required requiredLabel={t("common.required")}>
-                {(p) => <input {...p} autoComplete="email" inputMode="email" maxLength={160} onChange={set("email")} type="email" value={values.email} />}
+                {(p) => <input {...p} className="af-ui-field" autoComplete="email" inputMode="email" maxLength={160} onChange={set("email")} type="email" value={values.email} />}
               </Field>
             </div>
             <Field error={err("phone")} label={t("checkout.phone")} name="phone" optionalLabel={t("common.optional")}>
-              {(p) => <input {...p} autoComplete="tel" inputMode="tel" maxLength={40} onChange={set("phone")} type="tel" value={values.phone} />}
+              {(p) => <input {...p} className="af-ui-field" autoComplete="tel" inputMode="tel" maxLength={40} onChange={set("phone")} type="tel" value={values.phone} />}
             </Field>
           </fieldset>
           <fieldset className="af-fieldset">
             <legend className="af-h3">{t("checkoutx.addressTitle")}</legend>
             <Field error={err("street")} label={t("checkout.street")} name="street" required requiredLabel={t("common.required")}>
-              {(p) => <input {...p} autoComplete="street-address" maxLength={160} onChange={set("street")} value={values.street} />}
+              {(p) => <input {...p} className="af-ui-field" autoComplete="street-address" maxLength={160} onChange={set("street")} value={values.street} />}
             </Field>
             <div className="af-form__two">
               <Field error={err("postalCode")} label={t("checkout.postalCode")} name="postalCode" required requiredLabel={t("common.required")}>
-                {(p) => <input {...p} autoComplete="postal-code" maxLength={12} onChange={set("postalCode")} value={values.postalCode} />}
+                {(p) => <input {...p} className="af-ui-field" autoComplete="postal-code" maxLength={12} onChange={set("postalCode")} value={values.postalCode} />}
               </Field>
               <Field error={err("city")} label={t("checkout.city")} name="city" required requiredLabel={t("common.required")}>
-                {(p) => <input {...p} autoComplete="address-level2" maxLength={120} onChange={set("city")} value={values.city} />}
+                {(p) => <input {...p} className="af-ui-field" autoComplete="address-level2" maxLength={120} onChange={set("city")} value={values.city} />}
               </Field>
             </div>
             <Field
@@ -216,7 +216,7 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
               requiredLabel={t("common.required")}
             >
               {(p) => (
-                <select {...p} autoComplete="country" onChange={set("country")} value={values.country}>
+                <select {...p} className="af-ui-field af-ui-select" autoComplete="country" onChange={set("country")} value={values.country}>
                   {countries.map((c) => (
                     <option key={c.code} value={c.code}>
                       {c.name}
@@ -226,7 +226,7 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
               )}
             </Field>
             <Field error={err("note")} hint={t("checkout.noteHint")} label={t("checkout.note")} name="note" optionalLabel={t("common.optional")}>
-              {(p) => <textarea {...p} maxLength={800} onChange={set("note")} value={values.note} />}
+              {(p) => <textarea {...p} className="af-ui-field" maxLength={800} onChange={set("note")} value={values.note} />}
             </Field>
           </fieldset>
           <aside aria-labelledby="undecided-title" className="af-review">
@@ -305,6 +305,7 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
                 aria-describedby={errors.agb ? "agb-error" : undefined}
                 aria-invalid={errors.agb ? true : undefined}
                 checked={agb}
+                className="af-ui-check"
                 id="agb"
                 name="agb"
                 onChange={(event) => {
@@ -324,7 +325,8 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
             <p className="af-note">{linked(legal.withdrawalNote, legal.links)}</p>
             <p className="af-note">{linked(legal.privacyNote, legal.links)}</p>
           </fieldset>
-          <button aria-busy={pending} className="af-cta-band" disabled={pending || !meta} type="submit">
+          <button aria-busy={pending} className="af-cta-band" data-magnetic disabled={pending || !meta} type="submit">
+            {pending ? <span aria-hidden="true" className="af-ui-loading" /> : null}
             {pending ? t("common.sending") : legal.buyButton}
           </button>
         </div>

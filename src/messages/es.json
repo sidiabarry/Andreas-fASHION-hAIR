@@ -771,7 +771,8 @@
     "kicker": "Página no encontrada",
     "title": "Aquí ya no hay nada.",
     "lead": "Quizá la pieza se haya vendido. En la colección encontrará todas las que siguen disponibles.",
-    "cta": "A la colección"
+    "cta": "A la colección",
+    "extensions": "O: extensiones bajo consulta"
   },
   "error": {
     "kicker": "Algo ha salido mal",

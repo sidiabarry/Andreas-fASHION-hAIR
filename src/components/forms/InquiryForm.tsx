@@ -62,20 +62,20 @@ export function InquiryForm({ topic: initialTopic, product, ownerEmail, b2bNotic
     <>
       <div className="af-form__two">
       <Field error={err("name")} label={topic === "salon" ? t("inquiry.contactPerson") : t("inquiry.name")} name="name" required requiredLabel={t("common.required")}>
-        {(p) => <input {...p} autoComplete="name" maxLength={120} />}
+        {(p) => <input {...p} className="af-ui-field" autoComplete="name" maxLength={120} />}
       </Field>
       <Field error={err("email")} label={t("inquiry.email")} name="email" required requiredLabel={t("common.required")}>
-        {(p) => <input {...p} autoComplete="email" inputMode="email" maxLength={160} type="email" />}
+        {(p) => <input {...p} className="af-ui-field" autoComplete="email" inputMode="email" maxLength={160} type="email" />}
       </Field>
     </div>
     <Field error={err("phone")} label={t("inquiry.phone")} name="phone" optionalLabel={t("common.optional")}>
-      {(p) => <input {...p} autoComplete="tel" inputMode="tel" maxLength={40} type="tel" />}
+      {(p) => <input {...p} className="af-ui-field" autoComplete="tel" inputMode="tel" maxLength={40} type="tel" />}
     </Field>
     <Field error={err("message")} hint={t("inquiry.healthNote")} label={t("inquiry.message")} name="message" required requiredLabel={t("common.required")}>
-      {(p) => <textarea {...p} maxLength={1600} placeholder={t(`inquiry.intro.${topic}.hint`)} />}
+      {(p) => <textarea {...p} className="af-ui-field" maxLength={1600} placeholder={t(`inquiry.intro.${topic}.hint`)} />}
     </Field>
     <div className="af-check">
-      <input aria-describedby={fields.privacy ? "privacy-error" : undefined} aria-invalid={fields.privacy ? true : undefined} id="privacy" name="privacy" required type="checkbox" />
+      <input aria-describedby={fields.privacy ? "privacy-error" : undefined} className="af-ui-check" aria-invalid={fields.privacy ? true : undefined} id="privacy" name="privacy" required type="checkbox" />
       <label htmlFor="privacy">
         {t.rich("inquiry.privacy", { link: (chunks) => <Link href="/datenschutz" target="_blank">{chunks}</Link> })}
       </label>
@@ -86,6 +86,7 @@ export function InquiryForm({ topic: initialTopic, product, ownerEmail, b2bNotic
       </p>
     ) : null}
     <button aria-busy={pending} className="af-cta-band" disabled={pending} type="submit">
+      {pending ? <span aria-hidden="true" className="af-ui-loading" /> : null}
       {pending ? t("common.sending") : t("inquiry.submit")}
     </button>
     </>
@@ -112,7 +113,7 @@ export function InquiryForm({ topic: initialTopic, product, ownerEmail, b2bNotic
       ) : (
       <Field label={t("inquiry.topicLabel")} name="topic" required requiredLabel={t("common.required")}>
         {(p) => (
-          <select {...p} onChange={(event) => setTopic(event.target.value as InquiryTopic)} value={topic}>
+          <select {...p} className="af-ui-field af-ui-select" onChange={(event) => setTopic(event.target.value as InquiryTopic)} value={topic}>
             {INQUIRY_TOPICS.map((id) => (
               <option key={id} value={id}>
                 {t(`inquiry.topics.${id}`)}
@@ -128,7 +129,7 @@ export function InquiryForm({ topic: initialTopic, product, ownerEmail, b2bNotic
             {b2bNotice}
           </p>
           <Field error={err("company")} label={t("inquiry.company")} name="company" required requiredLabel={t("common.required")}>
-            {(p) => <input {...p} autoComplete="organization" maxLength={120} />}
+            {(p) => <input {...p} className="af-ui-field" autoComplete="organization" maxLength={120} />}
           </Field>
         </>
       ) : null}
@@ -136,7 +137,7 @@ export function InquiryForm({ topic: initialTopic, product, ownerEmail, b2bNotic
         <>
           <Field error={err("method")} label={t("inquiry.method")} name="method" optionalLabel={t("common.optional")}>
             {(p) => (
-              <select {...p} defaultValue="">
+              <select {...p} className="af-ui-field af-ui-select" defaultValue="">
                 <option value="">–</option>
                 {(["butterfly", "genius", "invisible", "tape", "keratin", "clip"] as const).map((m) => (
                   <option key={m} value={m}>
@@ -149,20 +150,20 @@ export function InquiryForm({ topic: initialTopic, product, ownerEmail, b2bNotic
           </Field>
           <div className="af-form__two">
             <Field error={err("length")} label={t("inquiry.length")} name="length" optionalLabel={t("common.optional")}>
-              {(p) => <input {...p} maxLength={60} />}
+              {(p) => <input {...p} className="af-ui-field" maxLength={60} />}
             </Field>
             <Field error={err("color")} label={t("inquiry.color")} name="color" optionalLabel={t("common.optional")}>
-              {(p) => <input {...p} maxLength={80} />}
+              {(p) => <input {...p} className="af-ui-field" maxLength={80} />}
             </Field>
           </div>
           <Field error={err("amount")} hint={t("inquiry.amountHint")} label={t("inquiry.amount")} name="amount" optionalLabel={t("common.optional")}>
-            {(p) => <input {...p} maxLength={80} />}
+            {(p) => <input {...p} className="af-ui-field" maxLength={80} />}
           </Field>
         </>
       ) : null}
       {topic === "bestellung" ? (
         <Field error={err("country")} hint={t("inquiry.countryHint")} label={t("inquiry.country")} name="country" optionalLabel={t("common.optional")}>
-          {(p) => <input {...p} autoComplete="country-name" maxLength={80} />}
+          {(p) => <input {...p} className="af-ui-field" autoComplete="country-name" maxLength={80} />}
         </Field>
       ) : null}
       {selection.length ? (

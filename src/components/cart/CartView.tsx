@@ -57,7 +57,7 @@ export function CartView({ checkoutOpen, contact }: { checkoutOpen: boolean; con
                     <label className="af-note" htmlFor={`qty-${product.slug}`}>
                       {t("cart.quantity")}
                     </label>
-                    <select id={`qty-${product.slug}`} onChange={(event) => cart.setQuantity(product.slug, Number(event.target.value))} value={quantity}>
+                    <select className="af-ui-field af-ui-select" id={`qty-${product.slug}`} onChange={(event) => cart.setQuantity(product.slug, Number(event.target.value))} value={quantity}>
                       {Array.from({ length: MAX_QUANTITY }, (_, i) => i + 1).map((value) => (
                         <option key={value} value={value}>
                           {value}

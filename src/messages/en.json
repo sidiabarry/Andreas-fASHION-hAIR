@@ -771,7 +771,8 @@
     "kicker": "Page not found",
     "title": "Nothing here any more.",
     "lead": "Perhaps the piece has been sold. In the collection you will find all those that are still available.",
-    "cta": "To the collection"
+    "cta": "To the collection",
+    "extensions": "Or: extensions on request"
   },
   "error": {
     "kicker": "Something went wrong",

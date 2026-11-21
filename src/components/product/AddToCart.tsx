@@ -17,7 +17,7 @@ export function AddToCart({ slug, unique, price }: { slug: string; unique: boole
     );
   }
   return (
-    <button className="af-cta-add" onClick={() => cart.add(slug)} type="button">
+    <button className="af-cta-add" data-magnetic="" onClick={() => cart.add(slug)} type="button">
       <span>{t("addToCart")}</span>
       <span>{price}</span>
     </button>

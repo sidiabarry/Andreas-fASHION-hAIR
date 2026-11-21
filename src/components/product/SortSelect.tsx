@@ -27,7 +27,7 @@ export function SortSelect({
         <input key={name} name={name} type="hidden" value={value} />
       ))}
       <label htmlFor="sortierung">{label}</label>
-      <select defaultValue={value} id="sortierung" name="sortierung" onChange={() => form.current?.requestSubmit()}>
+      <select className="af-ui-field af-ui-select" defaultValue={value} id="sortierung" name="sortierung" onChange={() => form.current?.requestSubmit()}>
         {options.map((option) => (
           <option key={option.value} value={option.value}>
             {option.label}

@@ -52,7 +52,7 @@ export function CustomWizard({
     <div aria-labelledby={`${id}-title`} className="af-choices" role="radiogroup">
       {ids.map((option) => (
         <label className="af-choice" data-on={value === option} key={option}>
-          <input checked={value === option} name={name} onChange={() => set(option)} type="radio" value={option} />
+          <input checked={value === option} className="af-ui-check" name={name} onChange={() => set(option)} type="radio" value={option} />
           <span>{label(option)}</span>
         </label>
       ))}
@@ -100,18 +100,18 @@ export function CustomWizard({
       <div hidden={step !== 0}>{choice("system", CUSTOM_SYSTEMS, system, setSystem, (v) => (v === "topper" || v === "peruecke" || v === "pony" || v === "haarsystem" || v === "unsure" ? t(`systems.${v}`) : t(`methods.${v}`)))}</div>
       <div hidden={step !== 1}>
         <Field label={t("steps.length.label")} name="length" optionalLabel={t("optional")}>
-          {(p) => <input {...p} maxLength={60} />}
+          {(p) => <input {...p} className="af-ui-field" maxLength={60} />}
         </Field>
       </div>
       <div hidden={step !== 2}>
         <Field label={t("steps.color.label")} name="color" optionalLabel={t("optional")}>
-          {(p) => <input {...p} maxLength={80} />}
+          {(p) => <input {...p} className="af-ui-field" maxLength={80} />}
         </Field>
       </div>
       <div hidden={step !== 3}>{choice("structure", CUSTOM_STRUCTURES, structure, setStructure, (v) => t(`structures.${v}`))}</div>
       <div hidden={step !== 4}>
         <Field label={t("steps.amount.label")} name="amount" optionalLabel={t("optional")}>
-          {(p) => <input {...p} maxLength={80} />}
+          {(p) => <input {...p} className="af-ui-field" maxLength={80} />}
         </Field>
       </div>
       <div className="af-form" hidden={!last}>

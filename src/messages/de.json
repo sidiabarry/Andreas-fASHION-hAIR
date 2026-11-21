@@ -771,7 +771,8 @@
     "kicker": "Seite nicht gefunden",
     "title": "Hier ist nichts mehr.",
     "lead": "Vielleicht wurde das Stück verkauft. In der Kollektion finden Sie alle, die noch da sind.",
-    "cta": "Zur Kollektion"
+    "cta": "Zur Kollektion",
+    "extensions": "Oder: Extensions auf Anfrage"
   },
   "error": {
     "kicker": "Etwas ist schiefgelaufen",

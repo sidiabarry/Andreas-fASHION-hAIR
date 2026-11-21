@@ -15,7 +15,7 @@ export async function ProductCard({ product, locale, sold, priority }: { product
   const flag = isSold ? t("flagSold") : product.madeToOrder ? t("flagCustom") : isUnique(product) ? t("flagUnique") : null;
   return (
     <Link className="af-card af-rise" data-sold={isSold} href={`/produkt/${product.slug}`}>
-      <div className="af-card__media">
+      <div className="af-card__media" data-tilt="">
         <Image
           alt={t(imageKindOf(product) === "staged" ? "imageAltStaged" : "imageAlt", { name: text.name, subtitle: text.subtitle })}
           height={800}
