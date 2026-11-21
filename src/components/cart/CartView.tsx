@@ -26,7 +26,7 @@ export function CartView({ checkoutOpen, contact }: { checkoutOpen: boolean; con
     return (
       <div className="af-empty">
         <p className="af-lead">{t("cart.empty")}</p>
-        <Link className="af-cta-gold" href="/kollektion">
+        <Link className="af-cta-gold af-glass af-glass--gold" href="/kollektion">
           {t("hero.ctaCollection")} <Arrow />
         </Link>
         <p aria-live="polite" className="af-sr">
@@ -101,14 +101,14 @@ export function CartView({ checkoutOpen, contact }: { checkoutOpen: boolean; con
         </div>
         <p className="af-note">{t("cart.shippingFrom")}</p>
         {checkoutOpen ? (
-          <Link className="af-cta-band" href="/kasse">
+          <Link className="af-cta-band af-glass af-glass--gold" href="/kasse">
             {t("cart.toCheckout")} <Arrow />
           </Link>
         ) : (
           <div className="af-stack" style={{ "--gap": "14px" } as React.CSSProperties}>
             <h2 className="af-h3">{t("cart.inquiryTitle")}</h2>
             <p className="af-note">{t("cart.inquiryLead")}</p>
-            <Link className="af-cta-band" href={{ pathname: "/anfrage", query: { thema: "bestellung" } }}>
+            <Link className="af-cta-band af-glass af-glass--gold" href={{ pathname: "/anfrage", query: { thema: "bestellung" } }}>
               {t("cart.inquiryCta")} <Arrow />
             </Link>
             <p className="af-note">

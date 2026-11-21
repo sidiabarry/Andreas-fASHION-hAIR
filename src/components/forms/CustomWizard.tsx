@@ -127,7 +127,7 @@ export function CustomWizard({
           ) : (
             <span />
           )}
-          <button className="af-cta-gold" onClick={() => go(step + 1)} type="button">
+          <button className="af-cta-gold af-glass af-glass--gold" onClick={() => go(step + 1)} type="button">
             {t("next")}
           </button>
         </div>

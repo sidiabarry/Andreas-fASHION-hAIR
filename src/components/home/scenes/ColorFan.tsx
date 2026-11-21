@@ -71,12 +71,12 @@ export function ColorFan({ t, swatches, whatsapp, whatsappNote }: { t: ColorText
           </ol>
           <div className="cf__cta h-in">
             {whatsapp ? (
-              <a className="h-btn h-btn--gold" data-magnetic="" href={whatsapp} rel="noopener noreferrer" target="_blank">
+              <a className="h-btn h-btn--gold af-glass af-glass--gold" data-magnetic="" href={whatsapp} rel="noopener noreferrer" target="_blank">
                 <span>{t.cta}</span> <Arrow />
                 <span className="af-sr"> ({whatsappNote})</span>
               </a>
             ) : null}
-            <Link className={whatsapp ? "h-link" : "h-btn h-btn--gold"} href={{ pathname: "/anfrage", query: { thema: "extensions" } }}>
+            <Link className={whatsapp ? "h-link" : "h-btn h-btn--gold af-glass af-glass--gold"} href={{ pathname: "/anfrage", query: { thema: "extensions" } }}>
               {whatsapp ? t.ctaForm : <span>{t.ctaForm}</span>}
             </Link>
           </div>

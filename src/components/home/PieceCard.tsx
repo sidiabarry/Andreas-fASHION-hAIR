@@ -24,7 +24,7 @@ export function PieceCard({ product, locale, sold, t, size = "m", index = 0, siz
       <Link aria-label={`${flag ? `${flag}: ` : ""}${t.view.replace("{name}", `${text.name}, ${text.subtitle}`)}`} className="piece__media" data-lens="" data-tilt="" href={`/produkt/${product.slug}`}>
         <Image alt="" height={1604} sizes={sizes} src={product.image} width={1200} />
         <span aria-hidden="true" className="piece__glare" />
-        {flag ? <span className="piece__flag">{flag}</span> : null}
+        {flag ? <span className="piece__flag af-glass af-glass--badge">{flag}</span> : null}
       </Link>
       <div className="piece__body">
         <h3 className="piece__name">

@@ -62,7 +62,7 @@ export function ExtensionsChapter({ t, pieces, priceNote }: { t: ExtTexts; piece
             <p className="h-note">{t.methodsNote}</p>
           </div>
           <div className="xc__cta h-in">
-            <Link className="h-btn h-btn--gold" data-magnetic="" href="/extensions">
+            <Link className="h-btn h-btn--gold af-glass af-glass--gold" data-magnetic="" href="/extensions">
               <span>{t.cta}</span> <Arrow />
             </Link>
             <Link className="h-link" href={{ pathname: "/anfrage", query: { thema: "salon" } }}>

@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 
 import { CartProvider } from "@/components/cart/CartProvider";
 import { FxUi } from "@/components/fx/FxUi";
+import { GlassDefs } from "@/components/fx/GlassDefs";
 import { DemoBanner } from "@/components/site/DemoBanner";
 import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";
@@ -51,6 +52,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
   return (
     <html className={fontVariables} data-scroll-behavior="smooth" lang={locale}>
       <body className="af-body">
+        <GlassDefs />
         <a className="af-skip" href="#inhalt">
           {t("skip")}
         </a>

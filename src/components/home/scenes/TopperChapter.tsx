@@ -42,7 +42,7 @@ export function TopperChapter({ t, cards, needs }: { t: TopperTexts; cards: Reac
           </ul>
         </nav>
         <div className="tc__cta h-in">
-          <Link className="h-btn h-btn--gold" data-magnetic="" href={{ pathname: "/kollektion", query: { kategorie: "topper" } }}>
+          <Link className="h-btn h-btn--gold af-glass af-glass--gold" data-magnetic="" href={{ pathname: "/kollektion", query: { kategorie: "topper" } }}>
             <span>{t.cta}</span> <Arrow />
           </Link>
           <p className="h-note">{t.consult}</p>

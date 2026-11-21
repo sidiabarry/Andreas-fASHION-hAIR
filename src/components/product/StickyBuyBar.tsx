@@ -30,11 +30,11 @@ export function StickyBuyBar({ slug, unique, price, unitLine, name, available }:
         {unitLine ? <span className="af-note af-sticky__unit">{unitLine}</span> : null}
       </div>
       {!available ? null : inCart ? (
-        <Link className="af-sticky__btn" href="/warenkorb">
+        <Link className="af-sticky__btn af-glass af-glass--gold af-glass--lens af-glass--caps" href="/warenkorb">
           {t("toCart")}
         </Link>
       ) : (
-        <button className="af-sticky__btn" data-magnetic="" onClick={() => cart.add(slug)} type="button">
+        <button className="af-sticky__btn af-glass af-glass--gold af-glass--lens af-glass--caps" data-magnetic="" onClick={() => cart.add(slug)} type="button">
           {t("addToCart")}
         </button>
       )}

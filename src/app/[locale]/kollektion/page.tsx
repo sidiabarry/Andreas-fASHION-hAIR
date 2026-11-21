@@ -159,11 +159,11 @@ export default async function CollectionPage({ params, searchParams }: PageProps
         <div className="af-wrap">
           <div className="af-toolbar">
             <nav aria-label={t("collection.filterLabel")} className="af-filters">
-              <Link aria-current={category === null ? "page" : undefined} className="af-tab" href={hrefFor({ kategorie: null })}>
+              <Link aria-current={category === null ? "page" : undefined} className="af-tab af-glass" href={hrefFor({ kategorie: null })}>
                 {t("collection.all")}
               </Link>
               {VISIBLE_CATEGORY_IDS.map((id) => (
-                <Link aria-current={category === id ? "page" : undefined} className="af-tab" href={hrefFor({ kategorie: id })} key={id}>
+                <Link aria-current={category === id ? "page" : undefined} className="af-tab af-glass" href={hrefFor({ kategorie: id })} key={id}>
                   {t(`categories.${id}.label`)}
                 </Link>
               ))}
@@ -187,11 +187,11 @@ export default async function CollectionPage({ params, searchParams }: PageProps
                 <div className="af-facet" key={group.key}>
                   <span className="af-facet__label">{group.label}</span>
                   <div className="af-facet__opts">
-                    <Link aria-current={group.value === null ? "true" : undefined} className="af-pill" href={hrefFor({ [group.key]: null })}>
+                    <Link aria-current={group.value === null ? "true" : undefined} className="af-pill af-glass" href={hrefFor({ [group.key]: null })}>
                       {t("collection.any")}
                     </Link>
                     {group.options.map((option) => (
-                      <Link aria-current={group.value === option.id ? "true" : undefined} className="af-pill" href={hrefFor({ [group.key]: option.id })} key={option.id}>
+                      <Link aria-current={group.value === option.id ? "true" : undefined} className="af-pill af-glass" href={hrefFor({ [group.key]: option.id })} key={option.id}>
                         {option.label} <i>{option.count}</i>
                       </Link>
                     ))}

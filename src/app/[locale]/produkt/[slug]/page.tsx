@@ -191,7 +191,7 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
             <p className="af-text">{copy?.story ?? text.description}</p>
 
             {isSold ? (
-              <Link className="af-cta-band" href={{ pathname: "/anfrage", query: { produkt: `${text.name}, ${text.subtitle}`, thema: "massanfertigung" } }}>
+              <Link className="af-cta-band af-glass af-glass--gold" href={{ pathname: "/anfrage", query: { produkt: `${text.name}, ${text.subtitle}`, thema: "massanfertigung" } }}>
                 {t("product.similar")} <Arrow />
               </Link>
             ) : (

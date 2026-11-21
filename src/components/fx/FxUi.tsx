@@ -16,6 +16,13 @@ import { isPaused, onMotionChange, prefersReducedMotion } from "./motion";
 const LENS = 2.4;
 
 export function FxUi() {
+  // Echte Lichtbrechung im Glas nur, wo backdrop-filter mit SVG-Filter läuft (Chromium)
+  useEffect(() => {
+    const root = document.documentElement;
+    if ("userAgentData" in navigator && CSS.supports("backdrop-filter", "url(#af-glass-lens)")) root.classList.add("af-lens");
+    return () => root.classList.remove("af-lens");
+  }, []);
+
   useEffect(() => {
     const fine = window.matchMedia("(pointer: fine)");
     if (!fine.matches) return;
@@ -37,6 +44,7 @@ export function FxUi() {
     let lensImg: HTMLImageElement | null = null;
     let tiltEl: HTMLElement | null = null;
     let magEl: HTMLElement | null = null;
+    let glassEl: HTMLElement | null = null;
 
     const frame = () => {
       raf = 0;
@@ -68,6 +76,12 @@ export function FxUi() {
       tiltEl.style.setProperty("--ry", "0");
       delete tiltEl.dataset.tilting;
       tiltEl = null;
+    };
+    const resetGlass = () => {
+      if (!glassEl) return;
+      glassEl.style.removeProperty("--mx");
+      glassEl.style.removeProperty("--my");
+      glassEl = null;
     };
     const resetMag = () => {
       if (!magEl) return;
@@ -108,6 +122,15 @@ export function FxUi() {
         tilt.style.setProperty("--rx", (((p.x - b.left) / b.width) * 2 - 1).toFixed(3));
         tilt.style.setProperty("--ry", (((p.y - b.top) / b.height) * 2 - 1).toFixed(3));
       }
+      // Glanzlicht im Glas folgt dem Zeiger (bei reduzierter Bewegung bleibt es stehen)
+      const glass = calm() ? null : (target?.closest<HTMLElement>(".af-glass") ?? null);
+      if (glass !== glassEl) resetGlass();
+      if (glass) {
+        glassEl = glass;
+        const b = glass.getBoundingClientRect();
+        glass.style.setProperty("--mx", `${(((p.x - b.left) / b.width) * 100).toFixed(1)}%`);
+        glass.style.setProperty("--my", `${(((p.y - b.top) / b.height) * 100).toFixed(1)}%`);
+      }
       // Magnet
       const mag = calm() ? null : (target?.closest<HTMLElement>("[data-magnetic]") ?? null);
       if (mag !== magEl) resetMag();
@@ -124,6 +147,7 @@ export function FxUi() {
       delete cursor.dataset.shown;
       resetTilt();
       resetMag();
+      resetGlass();
     };
     const onDown = () => (cursor.dataset.down = "");
     const onUp = () => delete cursor.dataset.down;
@@ -131,6 +155,7 @@ export function FxUi() {
       if (calm()) {
         resetTilt();
         resetMag();
+        resetGlass();
       }
     };
 
@@ -151,6 +176,7 @@ export function FxUi() {
       offMotion();
       resetTilt();
       resetMag();
+      resetGlass();
       cursor.remove();
       root.classList.remove("af-fx-cursor-on");
     };

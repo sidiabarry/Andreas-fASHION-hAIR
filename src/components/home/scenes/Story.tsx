@@ -31,7 +31,7 @@ export function Hand({ t, hours, whatsapp, whatsappNote, symbolImage }: { t: Han
             <blockquote>{t.quote}</blockquote>
             <figcaption>{t.by}</figcaption>
           </figure>
-          <Link className="h-btn h-btn--gold h-in" href="/ueber-andrea">
+          <Link className="h-btn h-btn--gold af-glass af-glass--gold h-in" href="/ueber-andrea">
             <span>{t.cta}</span> <Arrow />
           </Link>
           <div className="hand__visit h-in">
@@ -80,12 +80,12 @@ export function Concerns({ t, whatsapp, whatsappNote }: { t: ConcernTexts; whats
         </dl>
         <div className="concerns__cta h-in">
           {whatsapp ? (
-            <a className="h-btn h-btn--gold" data-magnetic="" href={whatsapp} rel="noopener noreferrer" target="_blank">
+            <a className="h-btn h-btn--gold af-glass af-glass--gold" data-magnetic="" href={whatsapp} rel="noopener noreferrer" target="_blank">
               <span>{t.cta}</span> <Arrow />
               <span className="af-sr"> ({whatsappNote})</span>
             </a>
           ) : (
-            <Link className="h-btn h-btn--gold" data-magnetic="" href="/anfrage">
+            <Link className="h-btn h-btn--gold af-glass af-glass--gold" data-magnetic="" href="/anfrage">
               <span>{t.cta}</span> <Arrow />
             </Link>
           )}
@@ -126,7 +126,7 @@ export function Steps({ t }: { t: { title: string; items: { title: string; text:
           ))}
         </ol>
         <p className="steps__cta h-in">
-          <Link className="h-btn h-btn--gold" data-magnetic="" href="/extensions">
+          <Link className="h-btn h-btn--gold af-glass af-glass--gold" data-magnetic="" href="/extensions">
             <span>{t.cta}</span> <Arrow />
           </Link>
         </p>
@@ -154,7 +154,7 @@ export function Close({ t, ctaExtensions, ctaCustom, symbolImage }: { t: { title
         </h2>
         <p className="h-lead h-in">{t.lead}</p>
         <div className="hero__actions h-in">
-          <Link className="h-btn h-btn--gold" data-magnetic="" href="/extensions">
+          <Link className="h-btn h-btn--gold af-glass af-glass--gold" data-magnetic="" href="/extensions">
             <span>{ctaExtensions}</span> <Arrow />
           </Link>
           <Link className="h-link" href="/massanfertigung">

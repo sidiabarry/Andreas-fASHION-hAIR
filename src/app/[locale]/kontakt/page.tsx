@@ -83,7 +83,7 @@ export default async function ContactPage({ params }: PageProps<"/[locale]/konta
             {t("contact.formTitle")}
           </h2>
           <p className="af-text">{t("contact.formLead")}</p>
-          <Link className="af-cta-gold" href="/anfrage" style={{ justifySelf: "start" }}>
+          <Link className="af-cta-gold af-glass af-glass--gold" href="/anfrage" style={{ justifySelf: "start" }}>
             {t("contact.formCta")} <Arrow />
           </Link>
         </section>

@@ -40,16 +40,21 @@
 /* ---------- Knöpfe und Links ---------- */
 .h-btn { position: relative; display: inline-flex; align-items: center; gap: 14px; min-height: 56px; padding: 0 28px; border-radius: 999px; font-weight: 600; font-size: 1rem; letter-spacing: -0.005em; overflow: hidden; isolation: isolate; transition: transform 0.5s var(--af-ease), box-shadow 0.5s var(--af-ease), background 0.4s var(--af-ease); }
 .h-btn small { font-weight: 400; opacity: 0.75; }
-.h-btn--gold { background: linear-gradient(180deg, #ecb53c, var(--af-gold) 55%, #cf961f); color: var(--af-bg); box-shadow: 0 1px 0 rgba(255, 240, 200, 0.55) inset, 0 18px 40px -22px rgba(224, 165, 38, 0.9); }
-.h-btn--gold::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(105deg, transparent 32%, rgba(255, 248, 225, 0.55) 50%, transparent 68%); transform: translateX(-130%); transition: transform 1s var(--af-ease); }
-.h-btn--gold:hover { transform: translateY(-2px); box-shadow: 0 1px 0 rgba(255, 240, 200, 0.55) inset, 0 24px 50px -20px rgba(224, 165, 38, 0.95); }
-.h-btn--gold:hover::before { transform: translateX(130%); }
+/* Goldknopf = Glas mit Gold-Licht (af-glass--gold in globals.css); hier nur Bewegung des Pfeils */
+.h-btn--gold:not(.af-glass) { background: var(--af-gold); color: var(--af-bg); }
+.h-btn--gold:hover { transform: translateY(-1px); }
 .h-btn--gold svg { transition: transform 0.5s var(--af-ease); }
 .h-btn--gold:hover svg { transform: translateX(5px); }
 .h-btn--line { border: 1px solid color-mix(in srgb, var(--af-ink) 34%, transparent); color: var(--af-ink); background: color-mix(in srgb, var(--af-bg) 30%, transparent); backdrop-filter: blur(10px); }
 .h-btn--line:hover { border-color: var(--af-gold); }
 .h-link { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; color: var(--af-ink); background: linear-gradient(var(--af-gold), var(--af-gold)) left calc(100% - 8px) / 100% 1px no-repeat, linear-gradient(color-mix(in srgb, var(--af-ink) 30%, transparent), color-mix(in srgb, var(--af-ink) 30%, transparent)) left calc(100% - 8px) / 100% 1px no-repeat; background-size: 0 1px, 100% 1px; transition: background-size 0.6s var(--af-ease), gap 0.4s var(--af-ease), color 0.3s; }
 .h-link:hover { background-size: 100% 1px, 100% 1px; gap: 14px; color: var(--h-champagne); }
+
+/* Zweitknopf im Hero: Text mit Glas-Unterstrich (ein schmaler Glasstab mit Lichtkante statt Linie) */
+.h-link--glass { position: relative; background: none; padding-bottom: 2px; }
+.h-link--glass::after { content: ""; position: absolute; left: 0; right: 0; bottom: 6px; height: 3px; border-radius: 2px / 1.5px; background: linear-gradient(180deg, rgba(255, 246, 228, 0.55), rgba(255, 246, 228, 0.08) 55%, rgba(224, 165, 38, 0.5)); box-shadow: inset 0 0 0 0.5px rgba(255, 240, 214, 0.25); transform-origin: left; transition: transform 0.6s var(--af-spring, ease), background 0.4s; }
+.h-link--glass:hover { background: none; color: var(--af-ink); }
+.h-link--glass:hover::after { background: linear-gradient(180deg, rgba(255, 246, 228, 0.8), rgba(240, 196, 90, 0.3) 55%, rgba(224, 165, 38, 0.85)); transform: scaleY(1.25); }
 
 /* ---------- Kapitelmarke ---------- */
 .h-chapter { display: flex; align-items: center; gap: 16px; margin: 0 0 28px; }
@@ -92,8 +97,7 @@ html[data-motion="paused"] .fx-canvas { opacity: 0.55; }
 .hero__bar { display: block; height: 1px; background: color-mix(in srgb, var(--af-ink) 18%, transparent); overflow: hidden; }
 .hero__bar > span { display: block; height: 100%; background: var(--h-edge); background: linear-gradient(90deg, var(--af-gold), var(--h-champagne)); transform: scaleX(0); transform-origin: left; }
 .hero__ctrls { display: flex; gap: 8px; }
-.hero__ctrl { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 16px; border: 1px solid color-mix(in srgb, var(--af-ink) 22%, transparent); border-radius: 999px; background: color-mix(in srgb, var(--af-bg) 40%, transparent); font-size: 0.84rem; color: var(--af-ink); backdrop-filter: blur(8px); transition: border-color 0.3s; }
-.hero__ctrl:hover { border-color: var(--af-gold); }
+.hero__ctrl { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 16px; font-size: 0.84rem; color: var(--af-ink); }
 .hero .w__i { animation: h-word 1.2s var(--af-ease) both; animation-delay: calc(140ms + var(--i, 0) * 70ms); }
 @keyframes h-word { from { transform: translateY(108%); } }
 
@@ -222,7 +226,7 @@ html[data-motion="paused"] .fx-canvas { opacity: 0.55; }
 .piece__media:hover img { transform: scale(1.05); }
 .piece__glare { position: absolute; inset: 0; background: linear-gradient(115deg, transparent 38%, rgba(243, 223, 179, 0.16) 50%, transparent 62%); transform: translateX(-100%); transition: transform 1.4s var(--af-ease); pointer-events: none; }
 .piece__media:hover .piece__glare { transform: translateX(100%); }
-.piece__flag { position: absolute; left: 14px; top: 14px; padding: 6px 12px; border-radius: 999px; background: rgba(16, 14, 13, 0.72); backdrop-filter: blur(6px); font-family: var(--af-mono); font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--h-champagne); border: 1px solid rgba(224, 165, 38, 0.4); }
+.piece__flag { position: absolute; left: 14px; top: 14px; padding: 6px 12px; font-family: var(--af-mono); font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--h-champagne); }
 .piece__body { display: grid; gap: 4px; }
 .piece__name { margin: 0; font-family: var(--af-display); font-weight: 500; font-size: 1.35rem; line-height: 1.1; }
 .piece[data-size="l"] .piece__name { font-size: clamp(1.5rem, 2vw, 1.9rem); }
@@ -302,11 +306,10 @@ html[data-motion="paused"] .fx-canvas { opacity: 0.55; }
 /* ---------- Dock (WhatsApp + Bewegung) ---------- */
 .dock { position: fixed; right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); z-index: 55; display: flex; align-items: center; gap: 8px; opacity: 0; transform: translateY(16px); pointer-events: none; transition: opacity 0.6s var(--af-ease), transform 0.6s var(--af-ease); }
 .dock[data-shown] { opacity: 1; transform: none; pointer-events: auto; }
-.dock__wa, .dock__motion { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; border: 1px solid color-mix(in srgb, var(--af-gold) 45%, var(--af-line)); border-radius: 999px; background: color-mix(in srgb, var(--af-raise) 88%, transparent); backdrop-filter: blur(14px); color: var(--af-ink); box-shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.9); }
+.dock__wa, .dock__motion { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; color: var(--af-ink); }
 .dock__wa { padding: 0 18px 0 16px; font-size: 0.9rem; }
 .dock__wa svg { color: var(--af-gold); }
 .dock__motion { width: 48px; padding: 0; }
-.dock__wa:hover, .dock__motion:hover { border-color: var(--af-gold); }
 
 /* ---------- Bewegung anhalten ---------- */
 html[data-motion="paused"] .home *, html[data-motion="paused"] .home *::before, html[data-motion="paused"] .home *::after { animation-play-state: paused !important; }

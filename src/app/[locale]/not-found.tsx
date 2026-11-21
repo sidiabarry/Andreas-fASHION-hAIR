@@ -18,7 +18,7 @@ export default async function NotFound() {
           <h1 className="af-h1">{t("title")}</h1>
           <p className="af-lead">{t("lead")}</p>
           <div className="af-lost__links">
-            <Link className="af-cta-gold" data-magnetic="" href="/kollektion">
+            <Link className="af-cta-gold af-glass af-glass--gold" data-magnetic="" href="/kollektion">
               {t("cta")} <Arrow />
             </Link>
             <Link href="/extensions">{t("extensions")}</Link>

@@ -55,7 +55,7 @@ export function Header() {
       <Link aria-current={current("/ueber-andrea")} href="/ueber-andrea">
         {t("nav.about")}
       </Link>
-      <Link aria-current={current("/anfrage")} className="af-nav__consult" href="/anfrage">
+      <Link aria-current={current("/anfrage")} className="af-nav__consult af-glass" href="/anfrage">
         {t("nav.consultation")}
       </Link>
     </>
@@ -74,18 +74,18 @@ export function Header() {
           </nav>
           <div className="af-nav__right">
             <LocaleSwitcher id="locale-head" />
-            <Link aria-label={t("wishlist.nav", { count: wishlist.items.length })} className="af-iconbtn" href="/merkliste">
+            <Link aria-label={t("wishlist.nav", { count: wishlist.items.length })} className="af-iconbtn af-glass" href="/merkliste">
               <svg aria-hidden="true" fill={wishlist.items.length ? "currentColor" : "none"} height="18" viewBox="0 0 24 24" width="18">
                 <path d="M12 20.5s-7.5-4.6-9.2-9.4C1.7 7.9 3.8 4.5 7.2 4.5c2 0 3.4 1.1 4.8 2.9 1.4-1.8 2.8-2.9 4.8-2.9 3.4 0 5.5 3.4 4.4 6.6-1.7 4.8-9.2 9.4-9.2 9.4Z" stroke="currentColor" strokeWidth="1.6" />
               </svg>
             </Link>
-            <Link aria-label={t("common.cartWithCount", { count })} className="af-bag" href="/warenkorb">
+            <Link aria-label={t("common.cartWithCount", { count })} className="af-bag af-glass af-glass--lens" href="/warenkorb">
               <span aria-hidden="true">{t("common.cart")}</span> <b aria-hidden="true">{count}</b>
             </Link>
             <button
               aria-controls="af-sheet"
               aria-expanded={open}
-              className="af-menu"
+              className="af-menu af-glass"
               onClick={() => setOpen((value) => !value)}
               ref={menuButton}
               type="button"

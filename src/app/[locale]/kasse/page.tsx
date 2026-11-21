@@ -56,7 +56,7 @@ export default async function CheckoutPage({ params }: PageProps<"/[locale]/kass
         ) : (
           <div className="af-empty">
             <p className="af-lead">{t("checkout.closed")}</p>
-            <Link className="af-cta-gold" href={{ pathname: "/anfrage", query: { thema: "bestellung" } }}>
+            <Link className="af-cta-gold af-glass af-glass--gold" href={{ pathname: "/anfrage", query: { thema: "bestellung" } }}>
               {t("cart.inquiryCta")} <Arrow />
             </Link>
           </div>

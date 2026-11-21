@@ -44,7 +44,7 @@ export default async function ExtensionsPage({ params }: PageProps<"/[locale]/ex
           <h1 className="af-h1">{t("extensions.heroTitle")}</h1>
           <p className="af-lead">{t("extensions.heroLead")}</p>
           <div className="af-hub__cta">
-            <a className="af-cta-gold" href="#packungen">
+            <a className="af-cta-gold af-glass af-glass--gold" href="#packungen">
               {t("extensions.shopCta")} <Arrow />
             </a>
             <Link className="af-cta-line" href={{ pathname: "/anfrage", query: { thema: "extensions" } }}>
@@ -123,7 +123,7 @@ export default async function ExtensionsPage({ params }: PageProps<"/[locale]/ex
             </div>
             <div className="af-consultcard__cta">
               {company.social.whatsapp ? (
-                <a className="af-cta-gold" href={company.social.whatsapp} rel="noopener noreferrer" target="_blank">
+                <a className="af-cta-gold af-glass af-glass--gold" href={company.social.whatsapp} rel="noopener noreferrer" target="_blank">
                   {t("extensions.packWhatsapp")} <span className="af-sr">{t("common.newTab")}</span>
                 </a>
               ) : null}

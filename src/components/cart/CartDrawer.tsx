@@ -83,11 +83,11 @@ export function CartDrawer({ checkoutOpen }: { checkoutOpen: boolean }) {
         <p className="af-note">{left > 0 ? t("drawer.freeLeft", { amount: formatPrice(left, locale) }) : t("drawer.freeReached")}</p>
         <div className="af-drawer__actions">
           {checkoutOpen ? (
-            <Link className="af-cta-band" href="/kasse" onClick={() => cart.dismiss()}>
+            <Link className="af-cta-band af-glass af-glass--gold" href="/kasse" onClick={() => cart.dismiss()}>
               {t("drawer.toCheckout")} <Arrow />
             </Link>
           ) : (
-            <Link className="af-cta-band" href={{ pathname: "/anfrage", query: { thema: "bestellung" } }} onClick={() => cart.dismiss()}>
+            <Link className="af-cta-band af-glass af-glass--gold" href={{ pathname: "/anfrage", query: { thema: "bestellung" } }} onClick={() => cart.dismiss()}>
               {t("drawer.toInquiry")} <Arrow />
             </Link>
           )}

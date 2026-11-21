@@ -782,3 +782,107 @@ html:has(main[data-zone="light"])::-webkit-scrollbar-thumb:hover { background: #
 .af-drawer.af-zone-light { border-left: 1px solid var(--af-line); }
 .af-sticky.af-zone-light { background: color-mix(in srgb, var(--af-bg) 96%, transparent); border-top: 1px solid var(--af-line); box-shadow: 0 -18px 40px -30px rgba(28, 24, 21, 0.45); }
 @media (forced-colors: active) { .af-zone-light :is(.af-cta-gold, .af-cta-band, .af-cta-add, .af-sticky__btn, .h-btn--gold) { border: 2px solid ButtonText; } }
+
+/* ======================================================================
+ * Glas (af-glass): eigenes Material statt Verlaufs-Pillen. Getöntes Glas mit drei Kanten
+ * (Lichtkante oben, dunkle Kante unten, Haarlinie), Glanzlicht folgt dem Zeiger (--mx/--my aus FxUi),
+ * Linsenkompression beim Drücken, Lichtring als Fokus. Tönung folgt der Zone.
+ *   .af-glass          rauchiges Glas (Bühne) bzw. milchiges Elfenbein-Glas (in .af-zone-light)
+ *   .af-glass--gold    Gold-Licht in der Kante; in der hellen Zone dunkles Rauchglas (Kaufknopf)
+ *   .af-glass--ivory   Elfenbein-Glas auch auf dunklem Grund
+ *   .af-glass--lens    echte Lichtbrechung (SVG-Filter #af-glass-lens), nur kleine Flächen, nur Chromium
+ *   .af-glass--badge   kleine Plakette auf Bildern
+ *   .af-glass--caps    gesperrte Versalien, optisch zentriert
+ * Form: eigene Krümmung (Superellipse, wo `corner-shape` geht; sonst elliptische Radien).
+ * ====================================================================== */
+:root { --af-spring: cubic-bezier(0.34, 1.56, 0.64, 1); }
+.af-glass-defs { position: absolute; width: 0; height: 0; overflow: hidden; pointer-events: none; }
+.af-body .af-glass {
+  --g-tint: rgba(20, 16, 13, 0.46);
+  --g-sheen: rgba(255, 244, 222, 0.1);
+  --g-edge: rgba(255, 240, 214, 0.16);
+  --g-spec: rgba(255, 246, 228, 0.42);
+  --g-low: rgba(0, 0, 0, 0.55);
+  --g-hot: rgba(255, 244, 222, 0.2);
+  --g-line: transparent;
+  --g-drop: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 24px -16px rgba(0, 0, 0, 0.7);
+  --g-ring: var(--af-gold-stage);
+  --g-gap: var(--af-stage);
+  --g-r: 15px / 19px;
+  position: relative;
+  isolation: isolate;
+  border: 0;
+  border-radius: var(--g-r);
+  color: var(--af-ink);
+  background:
+    linear-gradient(90deg, transparent 14%, var(--g-line) 50%, transparent 86%) bottom / 100% 1px no-repeat,
+    linear-gradient(180deg, var(--g-sheen), transparent 58%),
+    var(--g-tint);
+  box-shadow: inset 0 1px 0 var(--g-spec), inset 0 -1px 0 var(--g-low), inset 0 0 0 1px var(--g-edge), var(--g-drop);
+  -webkit-backdrop-filter: blur(14px) saturate(165%);
+  backdrop-filter: blur(14px) saturate(165%);
+  transition: transform 0.6s var(--af-spring), box-shadow 0.35s var(--af-ease), color 0.35s var(--af-ease), background-color 0.35s var(--af-ease);
+}
+@supports (corner-shape: squircle) { .af-body .af-glass { --g-r: 22px; corner-shape: squircle; } }
+.af-body .af-glass::after { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: inherit; corner-shape: inherit; pointer-events: none; background: radial-gradient(110% 120% at var(--mx, 26%) var(--my, -10%), var(--g-hot), transparent 56%); transition: opacity 0.4s var(--af-ease); }
+.af-body .af-glass:hover { --g-edge: color-mix(in srgb, var(--g-ring) 55%, transparent); }
+.af-body .af-glass:active { transform: scale(0.975, 0.95); box-shadow: inset 0 2px 7px rgba(0, 0, 0, 0.38), inset 0 -1px 0 var(--g-spec), inset 0 0 0 1px var(--g-edge); transition-duration: 0.12s; }
+.af-body .af-glass:focus-visible { outline: 0; box-shadow: inset 0 1px 0 var(--g-spec), inset 0 -1px 0 var(--g-low), inset 0 0 0 1px var(--g-edge), 0 0 0 2px var(--g-gap), 0 0 0 4px var(--g-ring), 0 0 22px 2px color-mix(in srgb, var(--g-ring) 30%, transparent); }
+html.af-lens .af-body .af-glass--lens { -webkit-backdrop-filter: url(#af-glass-lens) saturate(150%); backdrop-filter: url(#af-glass-lens) saturate(150%); }
+/* Gold-Licht: Kante und Unterlicht golden, Schrift Champagner */
+.af-body .af-glass--gold { --g-tint: rgba(26, 19, 9, 0.52); --g-sheen: rgba(243, 223, 179, 0.15); --g-edge: rgba(224, 165, 38, 0.4); --g-spec: rgba(243, 223, 179, 0.72); --g-hot: rgba(240, 196, 90, 0.28); --g-line: rgba(240, 196, 90, 0.85); color: #f7ead0; font-weight: 600; }
+.af-body .af-glass--gold:hover { --g-tint: rgba(40, 28, 10, 0.58); --g-edge: rgba(224, 165, 38, 0.75); color: #fff6e4; }
+/* Typo im Knopf: gesperrte Versalien, Kappenhöhe optisch mittig, Pfeil leicht angehoben */
+.af-body .af-glass--caps { font-family: var(--af-sans); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.17em; text-transform: uppercase; hyphens: none; }
+.af-glass--caps > span:first-child { text-box: trim-both cap alphabetic; padding-top: 0.06em; }
+@supports (text-box: trim-both cap alphabetic) { .af-glass--caps > span:first-child { padding-top: 0; } }
+.af-body .af-glass > svg { translate: 0 -0.5px; flex: none; }
+.af-body .af-glass--caps:has(> svg:last-child) { padding-right: 22px; padding-left: 28px; gap: 16px; }
+/* Plakette auf Bildern */
+.af-body .af-glass--badge { --g-r: 8px / 10px; --g-tint: rgba(16, 14, 13, 0.58); --g-drop: 0 2px 8px -4px rgba(0, 0, 0, 0.6); -webkit-backdrop-filter: blur(10px) saturate(150%); backdrop-filter: blur(10px) saturate(150%); }
+@supports (corner-shape: squircle) { .af-body .af-glass--badge { --g-r: 12px; } }
+.af-body .af-card__flag.af-glass--badge, .af-body .piece__flag.af-glass--badge { color: #f3dfb3; --g-edge: rgba(224, 165, 38, 0.34); }
+.af-body .af-card__flag.af-glass--badge[data-sold="true"] { color: #d6ccc0; --g-edge: rgba(255, 240, 214, 0.18); }
+/* Elfenbein-Glas: in hellen Zonen automatisch; dunkle Schrift, Bronze-Kante */
+.af-body .af-glass--ivory, .af-body .af-zone-light .af-glass:not(.af-glass--gold) {
+  --g-tint: rgba(255, 253, 249, 0.66);
+  --g-sheen: rgba(255, 255, 255, 0.9);
+  --g-edge: #8f8272;
+  --g-spec: #ffffff;
+  --g-low: rgba(92, 82, 73, 0.2);
+  --g-hot: rgba(255, 255, 255, 0.95);
+  --g-line: rgba(122, 86, 0, 0.35);
+  --g-drop: 0 1px 1px rgba(28, 24, 21, 0.06), 0 8px 18px -14px rgba(28, 24, 21, 0.45);
+  --g-ring: var(--af-paper-ink);
+  --g-gap: var(--af-paper);
+  color: var(--af-paper-ink);
+}
+.af-body .af-zone-light .af-glass:not(.af-glass--gold):hover { --g-edge: var(--af-paper-ink); }
+.af-body .af-zone-light .af-glass:not(.af-glass--gold):active { box-shadow: inset 0 2px 6px rgba(92, 82, 73, 0.28), inset 0 0 0 1px var(--g-edge); }
+/* Gewählter Filter: dunkles Rauchglas mit heller Schrift */
+.af-body .af-zone-light .af-glass:is([aria-current="true"], [aria-current="page"]) { --g-tint: rgba(28, 24, 21, 0.94); --g-sheen: rgba(243, 223, 179, 0.12); --g-edge: rgba(224, 165, 38, 0.35); --g-spec: rgba(243, 223, 179, 0.4); --g-hot: rgba(240, 196, 90, 0.14); --g-line: transparent; color: var(--af-paper); }
+/* Auf Elfenbein ist Weichzeichnen unnötig (fester Grund): kein backdrop-filter für viele kleine Chips */
+.af-body .af-zone-light :is(.af-pill, .af-tab).af-glass { -webkit-backdrop-filter: none; backdrop-filter: none; }
+/* Kaufknopf auf Hell: bleibt das dunkelste Element (Rauchglas 95 %), Schrift Licht-Gold, Hover Bronze/Weiß */
+.af-body .af-zone-light .af-glass--gold { --g-tint: rgba(28, 24, 21, 0.95); --g-sheen: rgba(243, 223, 179, 0.1); --g-edge: rgba(224, 165, 38, 0.36); --g-spec: rgba(243, 223, 179, 0.5); --g-low: rgba(0, 0, 0, 0.6); --g-hot: rgba(240, 196, 90, 0.16); --g-line: rgba(240, 196, 90, 0.6); --g-drop: 0 1px 1px rgba(28, 24, 21, 0.2), 0 14px 28px -18px rgba(28, 24, 21, 0.7); --g-ring: var(--af-paper-ink); --g-gap: var(--af-paper); color: var(--af-gold-stage); }
+.af-body .af-zone-light .af-glass--gold:hover { --g-tint: rgba(122, 86, 0, 0.97); --g-sheen: rgba(255, 236, 190, 0.18); --g-edge: rgba(255, 236, 190, 0.4); --g-line: rgba(255, 236, 190, 0.7); color: #fff; }
+.af-body .af-zone-light .af-cta-add.af-glass--gold::before { display: none; }
+.af-body :is(.af-cta-gold, .h-btn--gold).af-glass::before { display: none; }
+/* Kopfzeile: Glasleiste mit Lichtkante oben und weicher Kante unten (nur Weichzeichnen, große Fläche) */
+.af-nav { background: linear-gradient(180deg, rgba(255, 244, 222, 0.045), rgba(255, 244, 222, 0) 60%), color-mix(in srgb, var(--af-bg) 72%, transparent); -webkit-backdrop-filter: blur(20px) saturate(170%); backdrop-filter: blur(20px) saturate(170%); box-shadow: inset 0 1px 0 rgba(255, 246, 228, 0.07), inset 0 -1px 0 rgba(0, 0, 0, 0.35); }
+body:has(main[data-zone="light"]) .af-nav { background: linear-gradient(180deg, rgba(255, 244, 222, 0.045), rgba(255, 244, 222, 0) 60%), color-mix(in srgb, var(--af-bg) 94%, transparent); }
+.af-body .af-nav .af-glass { --g-tint: rgba(255, 244, 222, 0.035); --g-drop: none; -webkit-backdrop-filter: none; backdrop-filter: none; }
+html.af-lens .af-body .af-nav .af-glass--lens { -webkit-backdrop-filter: url(#af-glass-lens) saturate(140%); backdrop-filter: url(#af-glass-lens) saturate(140%); }
+.af-body .af-nav__links a.af-nav__consult.af-glass { border: 0; color: var(--af-ink); }
+.af-body .af-nav__links a.af-nav__consult.af-glass:hover { color: #f3dfb3; }
+/* Kaufleiste am Handy und Schublade: Elfenbein-Glas */
+.af-sticky.af-zone-light { background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(250, 246, 240, 0.86)); -webkit-backdrop-filter: blur(22px) saturate(160%); backdrop-filter: blur(22px) saturate(160%); border-top: 0; box-shadow: inset 0 1px 0 #fff, 0 -1px 0 rgba(133, 120, 104, 0.45), 0 -20px 44px -30px rgba(28, 24, 21, 0.5); }
+.af-body .af-sticky__btn.af-glass--caps { padding-inline: 22px; }
+.af-drawer.af-zone-light { background: linear-gradient(90deg, rgba(255, 255, 255, 0.55), rgba(250, 246, 240, 0) 18%), rgba(250, 246, 240, 0.94); -webkit-backdrop-filter: blur(26px) saturate(150%); backdrop-filter: blur(26px) saturate(150%); border-left: 0; box-shadow: inset 1px 0 0 #fff, -1px 0 0 rgba(133, 120, 104, 0.45), -30px 0 60px -40px rgba(0, 0, 0, 0.8); }
+/* Reduzierte Bewegung: Glanzlicht steht, keine Federn, keine Kompression */
+@media (prefers-reduced-motion: reduce) {
+  .af-body .af-glass { transition: none; }
+  .af-body .af-glass:active { transform: none; }
+}
+html[data-motion="paused"] .af-body .af-glass:active { transform: none; }
+@media (forced-colors: active) { .af-body .af-glass { border: 1px solid ButtonText; } .af-body .af-glass::after { display: none; } }

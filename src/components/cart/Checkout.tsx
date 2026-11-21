@@ -89,7 +89,7 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
     return (
       <div className="af-empty">
         <p className="af-lead">{t("checkout.emptyCart")}</p>
-        <Link className="af-cta-gold" href="/kollektion">
+        <Link className="af-cta-gold af-glass af-glass--gold" href="/kollektion">
           {t("hero.ctaCollection")} <Arrow />
         </Link>
       </div>
@@ -325,7 +325,7 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
             <p className="af-note">{linked(legal.withdrawalNote, legal.links)}</p>
             <p className="af-note">{linked(legal.privacyNote, legal.links)}</p>
           </fieldset>
-          <button aria-busy={pending} className="af-cta-band" data-magnetic disabled={pending || !meta} type="submit">
+          <button aria-busy={pending} className="af-cta-band af-glass af-glass--gold" data-magnetic disabled={pending || !meta} type="submit">
             {pending ? <span aria-hidden="true" className="af-ui-loading" /> : null}
             {pending ? t("common.sending") : legal.buyButton}
           </button>
