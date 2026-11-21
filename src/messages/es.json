@@ -51,7 +51,7 @@
     "line1": "Como *volver a nacer.*",
     "line2": "Más largo. *Más volumen.*",
     "line3": "Más *usted.*",
-    "lead": "Extensiones de cabello natural, elegidas por Andrea, con asesoramiento personal sobre color y cantidad. Además, toppers, pelucas y piezas a medida de su taller en Iserlohn.",
+    "lead": "Hechos a mano por Andrea en Iserlohn: extensiones de cabello natural, toppers, pelucas y piezas a medida. Con asesoramiento personal sobre color y cantidad.",
     "chapters": "Capítulos de la película",
     "ch1": "Brasa",
     "ch2": "Fénix",
@@ -60,7 +60,7 @@
     "play": "Reanudar el movimiento",
     "replay": "Volver a verlo",
     "trust": [
-      "Cabello natural, elegido personalmente",
+      "Cabello natural, hecho a mano por Andrea",
       "Asesoramiento personal de Andrea",
       "Pago solo tras su confirmación",
       "Envío con {carrier}, también al extranjero"
@@ -79,7 +79,7 @@
     "dock": "Preguntar a Andrea",
     "ribbonLabel": "Lo que puede esperar",
     "ribbon": [
-      "Atelier in Iserlohn",
+      "Hecho a mano en Iserlohn",
       "Cabello natural",
       "Oficio aprendido en Río de Janeiro",
       "Seis métodos de extensiones",
@@ -106,7 +106,7 @@
       "cta": "Ver todas las extensiones",
       "salon": "Para salones y peluqueros: consultar cantidades",
       "view": "Ver {name}, {color}",
-      "imageNote": "Imágenes de estudio escenificadas con ayuda de IA: el color del cabello está medido y ajustado según la foto original; la forma, el volumen y la disposición están escenificados. Las fotos originales en la página de cada producto muestran cómo son realmente las piezas.",
+      "imageNote": "Puesta en escena con IA: el color del cabello se ajusta a la foto original. Las fotos originales en las páginas de producto muestran las piezas sin editar.",
       "galleryLabel": "Extensiones en el taller"
     },
     "near": {
@@ -124,7 +124,7 @@
         },
         {
           "label": "Invisible Tape",
-          "text": "Cintas estrechas y finas que, bien colocadas por una profesional, se integran de forma discreta en su propio cabello."
+          "text": "Tapes finas y estrechas que se integran con discreción en su propio cabello."
         },
         {
           "label": "Butterfly Weft",
@@ -138,7 +138,7 @@
     "color": {
       "kicker": "Color y cantidad",
       "title": "Su color. *Su cantidad.*",
-      "lead": "Ninguna pantalla muestra los colores del cabello con total exactitud. Por eso Andrea compara su color personalmente y le dice cuántos paquetes necesita para lograr lo que busca.",
+      "lead": "Andrea ajusta su color personalmente y le dice cuántos paquetes necesita para su objetivo.",
       "fanLabel": "Colores en el taller",
       "customTitle": "¿No encuentra su color?",
       "customText": "Andrea lo prepara a medida.",
@@ -158,8 +158,7 @@
         }
       ],
       "cta": "Enviar una foto a Andrea",
-      "ctaForm": "Prefiero consultar por formulario",
-      "screenNote": "Los colores en pantalla pueden variar."
+      "ctaForm": "Prefiero consultar por formulario"
     },
     "topper": {
       "kicker": "Toppers y pelucas",
@@ -239,7 +238,7 @@
         },
         {
           "q": "¿Se nota?",
-          "a": "Las cintas y las cortinas son planas y estrechas. Lo discretas que resulten depende de su cabello y de la colocación. Andrea le dice con sinceridad qué es posible en su caso."
+          "a": "Las tapes y las tiras son planas y estrechas y quedan pegadas a la cabeza. Andrea le dice con sinceridad qué es posible en su caso."
         },
         {
           "q": "¿Cuánto tarda en llegar?",
@@ -251,7 +250,7 @@
         },
         {
           "q": "¿Y si no me convence?",
-          "a": "Rige el derecho legal de desistimiento de 14 días. Compruebe el color y el largo antes de acortar o colocar las cortinas o de retirar las láminas protectoras. Las piezas a medida quedan excluidas, porque se elaboran solo para usted."
+          "a": "Rige el derecho legal de desistimiento de 14 días desde la recepción. Las piezas a medida quedan excluidas, porque se hacen solo para usted."
         },
         {
           "q": "¿Envían al extranjero?",
@@ -346,25 +345,22 @@
     "compareLabel": "Mover la comparación: luz de estudio a la izquierda, foto original sin retocar a la derecha",
     "compareStudio": "Luz de estudio",
     "compareOriginal": "Foto original del taller",
-    "compareNote": "La foto de estudio se tomó con nueva iluminación; no se modificó nada del cabello. La foto original muestra la pieza tal como Andrea la fotografió en el taller.",
+    "compareNote": "A la derecha, la foto original sin editar del taller.",
     "askWhatsapp": "¿Preguntas sobre esta pieza? Escriba a Andrea directamente por WhatsApp",
     "askWhatsappShort": "Preguntar por WhatsApp",
     "stickyLabel": "Compra rápida",
-    "availabilityUnknown": "Confirmamos personalmente la disponibilidad antes de que pague.",
     "unitPrice": "{amount} / 1 kg",
     "packSize": "por paquete {grams} g",
     "setSize": "set ({pieces} cortinas) {grams} g",
-    "extWithdrawal": "Puede desistir de su pedido en un plazo de 14 días desde la recepción de la mercancía. Compruebe el color y el largo antes de acortar las cortinas, colocarlas o retirar las láminas protectoras. Responde de la pérdida de valor causada por un uso que vaya más allá de esa comprobación, según la información sobre el desistimiento.",
     "imageAltStaged": "{name}, {subtitle}: imagen de estudio escenificada con ayuda de IA",
-    "imageNoteRelit": "Fotografía de estudio, iluminada de nuevo. No se ha modificado nada en el cabello. La foto original muestra la pieza sin retocar.",
-    "imageNoteStaged": "Imagen de estudio escenificada con ayuda de IA: el color del cabello está medido y ajustado según la foto original; la forma, el volumen y la disposición están escenificados y pueden diferir de la pieza. Las fotos originales de la galería muestran la pieza sin retocar.",
-    "compareNoteStaged": "A la izquierda, la imagen de estudio escenificada con ayuda de IA; a la derecha, la foto original del taller. Solo el color del cabello está medido y ajustado según la foto original; la forma, el volumen y la disposición están escenificados.",
-    "packQuestion": "Cuántos paquetes necesita depende de su cabello y de su deseo. Andrea se lo dice personalmente.",
+    "imageNoteRelit": "Foto de estudio, reiluminada. No se ha modificado nada del cabello.",
+    "imageNoteStaged": "Puesta en escena con IA: la forma y el volumen están escenificados. Las fotos originales muestran la pieza sin editar.",
+    "compareNoteStaged": "A la izquierda la puesta en escena con IA, a la derecha la foto original del taller.",
     "consultTitle": "Asesoramiento",
     "consultText": "¿Dudas sobre el color, la talla o el ajuste? Andrea le responde personalmente.",
     "consultExtensions": "¿Duda con el color o la cantidad? Envíe a Andrea una foto de su cabello con luz natural. Ella le dice con honestidad qué le va bien.",
     "accessories": "Cuidado y accesorios del taller",
-    "accessoriesNote": "Es lo que Andrea usa ella misma en el taller. Si un producto encaja con su método, se lo dice con gusto de antemano.",
+    "accessoriesNote": "Andrea los usa ella misma en el taller.",
     "moreExtensions": "Más paquetes",
     "spec": {
       "title": "Características de un vistazo",
@@ -396,7 +392,8 @@
     "compareStudioStaged": "Escenificación IA",
     "compareTitleStaged": "Escenificación IA y foto original comparadas",
     "compareLabelStaged": "Mover la comparación: a la izquierda la escenificación IA, a la derecha la foto original sin retocar",
-    "manufacturer": "Fabricado por {name}, {address}, {email}"
+    "manufacturer": "Fabricado por {name}, {address}, {email}",
+    "handmade": "Hecho a mano por Andrea en {city}"
   },
   "price": {
     "smallBusiness": "No se aplica IVA conforme al § 19 de la ley alemana del IVA (pequeña empresa).",
@@ -406,7 +403,7 @@
   },
   "collection": {
     "title": "La colección",
-    "lead": "Extensiones en paquetes y piezas capilares del taller. Cada pieza capilar existe solo una vez; las extensiones, en paquetes.",
+    "lead": "Hecho a mano por Andrea en Iserlohn. Cada pieza existe una sola vez, las extensiones vienen en paquetes.",
     "available": "{count, plural, =0 {Ninguna pieza disponible} one {# pieza disponible} other {# piezas disponibles}}",
     "all": "Todo",
     "filterLabel": "Filtrar por categoría",
@@ -417,7 +414,7 @@
     "sortLength": "Largo del cabello",
     "apply": "Aplicar",
     "results": "{count, plural, one {# pieza} other {# piezas}} en esta selección",
-    "soldHint": "Las piezas vendidas siguen visibles y están marcadas. Andrea hará con gusto una pieza similar a medida.",
+    "soldHint": "¿Vendida? Andrea le confecciona con gusto una pieza similar a medida.",
     "leadExtensions": "Más largo, más volumen, más usted. Los paquetes se piden directamente. Para otros métodos, largos y cantidades, Andrea lo prepara todo personalmente.",
     "hubLink": "Métodos, ayuda con el color y asesoramiento sobre extensiones",
     "byMethod": "Método",
@@ -835,23 +832,21 @@
   "objections": {
     "title": "Lo que querrá saber antes de comprar",
     "visibleQ": "¿Se nota que llevo un postizo?",
-    "visibleA": "Para eso está hecha la base nano skin: cada pelo se implanta por separado, por eso la raya se parece a un cuero cabelludo natural. Lo discreta que resulte la pieza en usted depende también del color, la densidad y el ajuste. Andrea le dice con sinceridad de antemano qué puede esperar.",
+    "visibleA": "Para eso está hecha la base nano skin: cada pelo se implanta por separado, así la raya se parece a su propio cuero cabelludo.",
     "colorQ": "¿El color combina con mi cabello?",
-    "colorA": "Envíe a Andrea una foto de su cabello con luz natural, lo más sencillo es por WhatsApp. Ella la compara con la pieza y le dice con sinceridad si encaja.",
+    "colorA": "Envíe a Andrea una foto de su cabello a la luz del día, lo más fácil por WhatsApp. Ella le dirá con sinceridad si le va bien.",
     "holdQ": "¿Cómo se sujeta la pieza?",
     "holdClips": "Con pequeños clips en su propio cabello. Usted misma coloca la pieza y la retira, sin pegamento ni cita en la peluquería.",
-    "holdOther": "La sujeción depende de la pieza. Andrea le explica personalmente qué método le conviene.",
-    "careQ": "¿Cómo cuido la pieza?",
-    "careA": "Andrea le da personalmente las indicaciones de cuidado de su pieza. Pregunte con antelación por WhatsApp, teléfono o consulta.",
+    "holdOther": "Andrea le explica personalmente qué sujeción le conviene.",
     "fitQ": "¿Se adapta a la forma de mi cabeza?",
-    "fitBase": "La base de esta pieza mide {base} cm. Si no está segura, mida la zona que quiere cubrir y envíe las medidas a Andrea.",
-    "fitNoBase": "Para esta pieza no se indica el tamaño de la base. Andrea le dirá con gusto si le conviene.",
+    "fitBase": "La base mide {base} cm. ¿Duda? Envíe a Andrea las medidas de la zona que quiere cubrir.",
+    "fitNoBase": "Andrea le dice con gusto si le sienta bien.",
     "returnQ": "¿Y si no me queda bien?",
-    "returnA": "Tiene un derecho legal de desistimiento de 14 días desde la recepción de la mercancía. Los detalles y excepciones figuran en la información sobre el desistimiento.",
+    "returnA": "Tiene 14 días de desistimiento desde la recepción. Lo demás figura en la información sobre desistimiento.",
     "payQ": "¿Cuándo pago?",
     "payA": "No al enviar el pedido. Andrea confirma primero su pieza personalmente y después le indica cómo pagar.",
     "packQ": "¿Cuántos paquetes necesito?",
-    "packA": "Depende de su cabello, del método y del largo que desee. Andrea le dice personalmente cuántos paquetes necesita; lo más sencillo es por WhatsApp o mediante una consulta."
+    "packA": "Andrea le dice personalmente cuántos paquetes encajan con su cabello y su deseo, lo más fácil por WhatsApp."
   },
   "drawer": {
     "title": "En su cesta",
@@ -915,14 +910,14 @@
     "otherText": "Lo que no encuentre aquí, Andrea se lo prepara bajo consulta. Los salones y peluqueras también reciben una oferta personal.",
     "metaTitle": "Extensiones de cabello natural: métodos, color, asesoramiento",
     "heroTitle": "Más largo, más volumen, más usted.",
-    "heroLead": "Extensiones de cabello natural del taller de Andrea en Iserlohn. Los paquetes se piden directamente; todo lo demás lo prepara Andrea personalmente para usted.",
+    "heroLead": "Extensiones de cabello natural, hechas a mano por Andrea en Iserlohn. Los paquetes se piden directamente, todo lo demás lo prepara ella personalmente para usted.",
     "shopCta": "Ver los paquetes",
     "adviceCta": "Solicitar asesoramiento",
     "methodsLead": "Seis métodos. Cuál encaja con su cabello y su día a día, lo aclara con Andrea.",
     "inShop": "{count, plural, one {# paquete en la tienda} other {# paquetes en la tienda}}",
     "onRequest": "Bajo petición",
     "colorTitle": "Encontrar el color adecuado",
-    "colorLead": "La luz y la pantalla cambian el aspecto de un tono. Por eso Andrea compara personalmente su cabello con la pieza.",
+    "colorLead": "Andrea compara personalmente su cabello con la pieza.",
     "colorSteps": {
       "light": {
         "title": "Aproveche la luz natural",
@@ -937,10 +932,9 @@
         "text": "Ella le dice con honestidad qué tono le va bien, aunque no sea ninguno de la tienda."
       }
     },
-    "colorNote": "El color en su pantalla puede diferir del cabello real.",
     "packKicker": "Asesoramiento",
     "packTitle": "¿Cuántos paquetes necesito?",
-    "packText": "Depende de su cabello, del método y de su deseo. Andrea le dice personalmente cuántos paquetes necesita. Pregúntele brevemente antes de pedir.",
+    "packText": "Andrea le dice personalmente cuántos paquetes necesita. Pregúntele antes de pedir.",
     "packWhatsapp": "Preguntar por WhatsApp",
     "packAsk": "O enviar una consulta",
     "productsTitle": "Extensiones en la tienda",
@@ -960,7 +954,7 @@
     "strip": {
       "kicker": "A medida",
       "title": "¿No encuentra su color o su largo?",
-      "text": "Andrea trabaja a medida. Usted elige sistema, largo, color, estructura y cantidad, y ella se pone en contacto con usted personalmente.",
+      "text": "Andrea lo confecciona a medida: sistema, longitud, color, textura y cantidad a su gusto.",
       "cta": "Solicitar una pieza a medida"
     },
     "steps": {

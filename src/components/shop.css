@@ -22,6 +22,7 @@
 
 /* Produktseite */
 .af-headline { margin: 14px 0 0; font-size: 1.1rem; color: var(--af-gold-light); letter-spacing: -0.01em; }
+.af-handmade { margin: 12px 0 0; font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--af-gold-light); }
 .af-chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .af-chips li { display: grid; gap: 2px; padding: 8px 14px; border: 1px solid var(--af-line); border-radius: var(--af-radius-s); background: var(--af-surface); min-height: 44px; }
 .af-chips span { font-family: var(--af-mono); font-size: 0.64rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--af-muted); }

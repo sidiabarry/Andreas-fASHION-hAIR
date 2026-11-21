@@ -196,7 +196,6 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
           fanLabel: t("home.color.fanLabel"),
           kicker: t("home.color.kicker"),
           lead: t("home.color.lead"),
-          screenNote: t("home.color.screenNote"),
           steps: items("home.color.steps", ["title", "text"]),
           stepsLabel: t("home.color.stepsLabel"),
           title: t("home.color.title"),

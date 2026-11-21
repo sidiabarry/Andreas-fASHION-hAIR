@@ -51,7 +51,7 @@
     "line1": "Comme *une renaissance.*",
     "line2": "Plus de longueur. *Plus de volume.*",
     "line3": "Plus *vous-même.*",
-    "lead": "Des extensions en cheveux naturels, choisies par Andrea, avec un conseil personnel sur la couleur et la quantité. Ainsi que des toppers, des perruques et des pièces sur mesure, issus de son atelier d'Iserlohn.",
+    "lead": "Faits main par Andrea à Iserlohn : extensions en cheveux naturels, toppers, perruques et pièces sur mesure. Avec des conseils personnels sur la couleur et la quantité.",
     "chapters": "Chapitres du film",
     "ch1": "Braise",
     "ch2": "Phénix",
@@ -60,7 +60,7 @@
     "play": "Reprendre l'animation",
     "replay": "Revoir le film",
     "trust": [
-      "Cheveux naturels, choisis personnellement",
+      "Cheveux naturels, faits main par Andrea",
       "Conseil personnel d'Andrea",
       "Paiement seulement après sa confirmation",
       "Expédition avec {carrier}, également à l'international"
@@ -79,7 +79,7 @@
     "dock": "Demander à Andrea",
     "ribbonLabel": "Ce que vous pouvez attendre",
     "ribbon": [
-      "Atelier in Iserlohn",
+      "Fait main à Iserlohn",
       "Cheveux naturels",
       "Un savoir-faire appris à Rio de Janeiro",
       "Six méthodes d'extensions",
@@ -106,7 +106,7 @@
       "cta": "Voir toutes les extensions",
       "salon": "Pour les salons et les coiffeurs : demander des quantités",
       "view": "Voir {name}, {color}",
-      "imageNote": "Images de studio mises en scène à l'aide de l'IA : la couleur des cheveux est mesurée et ajustée d'après la photo originale ; la forme, le volume et la disposition sont mis en scène. Les photos originales sur la page de chaque produit montrent les pièces telles qu'elles sont.",
+      "imageNote": "Mise en scène par IA : la couleur est alignée sur la photo originale. Les photos originales sur les pages produit montrent les pièces sans retouche.",
       "galleryLabel": "Extensions à l'atelier"
     },
     "near": {
@@ -124,7 +124,7 @@
         },
         {
           "label": "Invisible Tape",
-          "text": "Des tapes étroits et fins qui, posés dans les règles de l'art, se fondent discrètement dans vos propres cheveux."
+          "text": "Des tapes fins et étroits qui se fondent discrètement dans vos cheveux."
         },
         {
           "label": "Butterfly Weft",
@@ -138,7 +138,7 @@
     "color": {
       "kicker": "Couleur et quantité",
       "title": "Votre couleur. *Votre quantité.*",
-      "lead": "Aucun écran ne restitue exactement les couleurs de cheveux. C'est pourquoi Andrea ajuste personnellement votre couleur et vous dit combien de paquets il vous faut pour atteindre votre objectif.",
+      "lead": "Andrea harmonise votre couleur personnellement et vous dit combien de paquets il vous faut pour votre objectif.",
       "fanLabel": "Couleurs à l'atelier",
       "customTitle": "Votre couleur n'y est pas ?",
       "customText": "Andrea la réalise sur mesure.",
@@ -158,8 +158,7 @@
         }
       ],
       "cta": "Envoyer une photo à Andrea",
-      "ctaForm": "Plutôt demander par formulaire",
-      "screenNote": "Les couleurs à l'écran peuvent différer."
+      "ctaForm": "Plutôt demander par formulaire"
     },
     "topper": {
       "kicker": "Toppers et perruques",
@@ -238,8 +237,8 @@
           "a": "Les clip-ins, vous les posez vous-même et vous les retirez le soir. Les tapes, les trames et les bondings sont posés dans les règles de l'art. Andrea voit avec vous ce qui convient à vos cheveux et à votre quotidien."
         },
         {
-          "q": "Cela se remarque-t-il ?",
-          "a": "Les tapes et les trames sont fabriqués plats et étroits. Leur discrétion dépend de vos cheveux et de la pose. Andrea vous dit honnêtement ce qui est possible dans votre cas."
+          "q": "Est-ce que ça se voit ?",
+          "a": "Les tapes et les tresses sont fines et plates et se posent près de la tête. Andrea vous dit honnêtement ce qui est possible pour vous."
         },
         {
           "q": "En combien de temps l'ai-je ?",
@@ -251,7 +250,7 @@
         },
         {
           "q": "Et si cela ne convient pas ?",
-          "a": "Le droit légal de rétractation de 14 jours s'applique. Veuillez vérifier la couleur et la longueur avant de raccourcir ou de poser les trames, ou de retirer les films de protection. Les pièces sur mesure sont exclues, car elles ne sont réalisées que pour vous."
+          "a": "Le droit de rétractation légal de 14 jours à compter de la réception s'applique. Les pièces sur mesure en sont exclues, car elles sont faites rien que pour vous."
         },
         {
           "q": "Expédiez-vous à l'étranger ?",
@@ -346,25 +345,22 @@
     "compareLabel": "Déplacer la comparaison : lumière de studio à gauche, photo originale non retouchée à droite",
     "compareStudio": "Lumière de studio",
     "compareOriginal": "Photo originale de l'atelier",
-    "compareNote": "La photo studio a été réalisée avec un nouvel éclairage ; rien n'a été modifié sur les cheveux. La photo originale montre la pièce telle qu'Andrea l'a photographiée à l'atelier.",
+    "compareNote": "À droite, la photo originale non retouchée de l'atelier.",
     "askWhatsapp": "Des questions sur cette pièce ? Écrivez directement à Andrea sur WhatsApp",
     "askWhatsappShort": "Demander sur WhatsApp",
     "stickyLabel": "Achat rapide",
-    "availabilityUnknown": "Nous confirmons personnellement la disponibilité avant votre paiement.",
     "unitPrice": "{amount} / 1 kg",
     "packSize": "par paquet {grams} g",
     "setSize": "lot ({pieces} trames) {grams} g",
-    "extWithdrawal": "Vous pouvez vous rétracter de votre commande dans un délai de 14 jours à compter de la réception de la marchandise. Veuillez vérifier la couleur et la longueur avant de raccourcir les trames, de les poser ou de retirer les films de protection. Vous répondez d'une perte de valeur due à une utilisation allant au-delà de ce contrôle, conformément à l'information sur la rétractation.",
     "imageAltStaged": "{name}, {subtitle} : image de studio mise en scène à l'aide de l'IA",
-    "imageNoteRelit": "Photo de studio, éclairée à nouveau. Rien n'a été modifié sur les cheveux. La photo originale montre la pièce non retouchée.",
-    "imageNoteStaged": "Image de studio mise en scène à l'aide de l'IA : la couleur des cheveux est mesurée et ajustée d'après la photo originale ; la forme, le volume et la disposition sont mis en scène et peuvent différer de la pièce. Les photos originales de la galerie montrent la pièce non retouchée.",
-    "compareNoteStaged": "À gauche l'image de studio mise en scène à l'aide de l'IA, à droite la photo originale de l'atelier. Seule la couleur des cheveux est mesurée et ajustée d'après la photo originale ; la forme, le volume et la disposition sont mis en scène.",
-    "packQuestion": "Le nombre de paquets dont vous avez besoin dépend de vos cheveux et de votre souhait. Andrea vous le dit personnellement.",
+    "imageNoteRelit": "Photo de studio, rééclairée. Rien n'a été modifié sur les cheveux.",
+    "imageNoteStaged": "Mise en scène par IA : forme et volume sont mis en scène. Les photos originales montrent la pièce sans retouche.",
+    "compareNoteStaged": "À gauche la mise en scène par IA, à droite la photo originale de l'atelier.",
     "consultTitle": "Conseil",
     "consultText": "Des questions sur la couleur, la taille ou l'ajustement ? Andrea vous répond personnellement.",
     "consultExtensions": "Un doute sur la couleur ou la quantité ? Envoyez à Andrea une photo de vos cheveux à la lumière du jour. Elle vous dit honnêtement ce qui convient.",
     "accessories": "Soin et accessoires de l'atelier",
-    "accessoriesNote": "Andrea les utilise elle-même à l'atelier. Si un produit convient à votre méthode, elle vous le dit volontiers à l'avance.",
+    "accessoriesNote": "Andrea les utilise elle-même à l'atelier.",
     "moreExtensions": "Autres paquets",
     "spec": {
       "title": "Caractéristiques en un coup d'œil",
@@ -396,7 +392,8 @@
     "compareStudioStaged": "Mise en scène IA",
     "compareTitleStaged": "Mise en scène IA et photo originale comparées",
     "compareLabelStaged": "Déplacer la comparaison : à gauche la mise en scène IA, à droite la photo originale non retouchée",
-    "manufacturer": "Fabriqué par {name}, {address}, {email}"
+    "manufacturer": "Fabriqué par {name}, {address}, {email}",
+    "handmade": "Fait main par Andrea à {city}"
   },
   "price": {
     "smallBusiness": "TVA non applicable selon le § 19 de la loi allemande sur la TVA (petite entreprise).",
@@ -406,7 +403,7 @@
   },
   "collection": {
     "title": "La collection",
-    "lead": "Extensions en paquets et pièces capillaires de l'atelier. Chaque pièce capillaire n'existe qu'une fois, les extensions en paquets.",
+    "lead": "Fait main par Andrea à Iserlohn. Chaque pièce n'existe qu'une fois, les extensions se vendent en paquets.",
     "available": "{count, plural, =0 {Aucune pièce disponible} one {# pièce disponible} other {# pièces disponibles}}",
     "all": "Tout",
     "filterLabel": "Filtrer par catégorie",
@@ -417,7 +414,7 @@
     "sortLength": "Longueur des cheveux",
     "apply": "Appliquer",
     "results": "{count, plural, one {# pièce} other {# pièces}} dans cette sélection",
-    "soldHint": "Les pièces vendues restent visibles et sont signalées. Andrea réalise volontiers une pièce similaire sur mesure.",
+    "soldHint": "Vendu ? Andrea vous fabrique volontiers une pièce similaire sur mesure.",
     "leadExtensions": "Plus de longueur, plus de volume, plus vous-même. Vous commandez directement les paquets. Pour d'autres méthodes, longueurs et quantités, Andrea compose tout personnellement.",
     "hubLink": "Méthodes, aide au choix de la couleur et conseil sur les extensions",
     "byMethod": "Méthode",
@@ -835,23 +832,21 @@
   "objections": {
     "title": "Ce que vous aimeriez savoir avant d'acheter",
     "visibleQ": "Voit-on que je porte un complément capillaire ?",
-    "visibleA": "C'est le rôle de la base nano skin : chaque cheveu est implanté individuellement, la raie ressemble donc à un cuir chevelu naturel. La discrétion de la pièce sur vous dépend aussi de la couleur, de la densité et de la tenue. Andrea vous dit honnêtement à l'avance à quoi vous attendre.",
+    "visibleA": "C'est le rôle de la base nano skin : chaque cheveu est implanté individuellement, la raie ressemble ainsi à votre propre cuir chevelu.",
     "colorQ": "La couleur correspond-elle à mes cheveux ?",
-    "colorA": "Envoyez à Andrea une photo de vos cheveux à la lumière du jour, le plus simple étant par WhatsApp. Elle la compare à la pièce et vous dit honnêtement si elle convient.",
+    "colorA": "Envoyez à Andrea une photo de vos cheveux à la lumière du jour, le plus simple par WhatsApp. Elle vous dira honnêtement si cela vous va.",
     "holdQ": "Comment la pièce se fixe-t-elle ?",
     "holdClips": "Avec de petits clips sur vos propres cheveux. Vous posez la pièce vous-même et la retirez, sans colle ni rendez-vous chez le coiffeur.",
-    "holdOther": "La fixation dépend de la pièce. Andrea vous explique personnellement quelle méthode vous convient.",
-    "careQ": "Comment entretenir la pièce ?",
-    "careA": "Andrea vous donne personnellement les conseils d'entretien pour votre pièce. N'hésitez pas à demander à l'avance par WhatsApp, téléphone ou demande.",
+    "holdOther": "Andrea vous explique personnellement quelle fixation vous convient.",
     "fitQ": "Convient-elle à la forme de ma tête ?",
-    "fitBase": "La base de cette pièce mesure {base} cm. Si vous hésitez, mesurez la zone à couvrir et envoyez les mesures à Andrea.",
-    "fitNoBase": "Aucune taille de base n'est indiquée pour cette pièce. Andrea vous dira volontiers si elle vous convient.",
+    "fitBase": "La base mesure {base} cm. Un doute ? Envoyez à Andrea les mesures de la zone à couvrir.",
+    "fitNoBase": "Andrea vous dit volontiers si cela vous convient.",
     "returnQ": "Et si elle ne convient pas ?",
-    "returnA": "Vous disposez d'un droit de rétractation légal de 14 jours à compter de la réception de la marchandise. Les détails et exceptions figurent dans les informations sur le droit de rétractation.",
+    "returnA": "Vous disposez de 14 jours de rétractation à compter de la réception. Le reste figure dans les informations sur la rétractation.",
     "payQ": "Quand est-ce que je paie ?",
     "payA": "Pas au moment d'envoyer la commande. Andrea confirme d'abord personnellement votre pièce, puis vous indique comment payer.",
     "packQ": "De combien de paquets ai-je besoin ?",
-    "packA": "Cela dépend de vos cheveux, de la méthode et de la longueur souhaitée. Andrea vous dit personnellement de combien de paquets vous avez besoin, le plus simple étant par WhatsApp ou par une demande."
+    "packA": "Andrea vous dit personnellement combien de paquets conviennent à vos cheveux et à votre souhait, le plus simple par WhatsApp."
   },
   "drawer": {
     "title": "Dans votre panier",
@@ -915,14 +910,14 @@
     "otherText": "Ce que vous ne trouvez pas ici, Andrea le compose pour vous sur demande. Les salons et coiffeuses reçoivent aussi une offre personnelle.",
     "metaTitle": "Extensions en cheveux naturels : méthodes, couleur, conseil",
     "heroTitle": "Plus de longueur, plus de volume, plus vous-même.",
-    "heroLead": "Des extensions en cheveux naturels de l'atelier d'Andrea à Iserlohn. Vous commandez directement les paquets, tout le reste, Andrea le compose personnellement pour vous.",
+    "heroLead": "Extensions en cheveux naturels, faites main par Andrea à Iserlohn. Les paquets se commandent directement, tout le reste, elle le prépare personnellement pour vous.",
     "shopCta": "Voir les paquets",
     "adviceCta": "Demander conseil",
     "methodsLead": "Six méthodes. Celle qui convient à vos cheveux et à votre quotidien, vous la déterminez avec Andrea.",
     "inShop": "{count, plural, one {# paquet dans la boutique} other {# paquets dans la boutique}}",
     "onRequest": "Sur demande",
     "colorTitle": "Trouver la bonne couleur",
-    "colorLead": "La lumière et l'écran modifient l'effet d'une teinte. C'est pourquoi Andrea compare personnellement vos cheveux avec la pièce.",
+    "colorLead": "Andrea compare personnellement vos cheveux avec la pièce.",
     "colorSteps": {
       "light": {
         "title": "Utiliser la lumière du jour",
@@ -937,10 +932,9 @@
         "text": "Elle vous dit honnêtement quelle teinte convient, même si ce n'en est aucune de la boutique."
       }
     },
-    "colorNote": "La couleur affichée sur votre écran peut différer des vrais cheveux.",
     "packKicker": "Conseil",
     "packTitle": "De combien de paquets ai-je besoin ?",
-    "packText": "Cela dépend de vos cheveux, de la méthode et de votre souhait. Andrea vous dit personnellement de combien de paquets vous avez besoin. Posez-lui brièvement la question avant de commander.",
+    "packText": "Andrea vous dit personnellement combien de paquets il vous faut. Posez-lui la question avant de commander.",
     "packWhatsapp": "Demander par WhatsApp",
     "packAsk": "Ou envoyer une demande",
     "productsTitle": "Extensions dans la boutique",
@@ -960,7 +954,7 @@
     "strip": {
       "kicker": "Sur mesure",
       "title": "Votre couleur ou votre longueur n'y est pas ?",
-      "text": "Andrea réalise sur mesure. Vous choisissez le système, la longueur, la couleur, la texture et la quantité, et elle vous contacte personnellement.",
+      "text": "Andrea fabrique sur mesure : système, longueur, couleur, texture et quantité selon votre souhait.",
       "cta": "Demander une pièce sur mesure"
     },
     "steps": {

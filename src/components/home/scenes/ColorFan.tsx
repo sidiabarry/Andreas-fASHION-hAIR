@@ -19,7 +19,6 @@ type ColorTexts = {
   steps: { title: string; text: string }[];
   cta: string;
   ctaForm: string;
-  screenNote: string;
 };
 
 /**
@@ -51,7 +50,6 @@ export function ColorFan({ t, swatches, whatsapp, whatsappNote }: { t: ColorText
               </Link>
             </li>
           </ul>
-          <p className="h-note">{t.screenNote}</p>
         </div>
 
         <div className="cf__copy">

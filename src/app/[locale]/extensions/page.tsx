@@ -110,7 +110,6 @@ export default async function ExtensionsPage({ params }: PageProps<"/[locale]/ex
                 <span>{t(`extensions.colorSteps.${step}.text`)}</span>
               </li>
             ))}
-            <li className="af-hubsteps__note">{t("extensions.colorNote")}</li>
           </ol>
         </section>
 

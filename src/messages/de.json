@@ -51,7 +51,7 @@
     "line1": "Wie neu *geboren.*",
     "line2": "Mehr Länge. *Mehr Fülle.*",
     "line3": "Mehr *Sie selbst.*",
-    "lead": "Extensions aus Echthaar, von Andrea ausgewählt, mit persönlicher Beratung zu Farbe und Menge. Dazu Topper, Perücken und Maßanfertigungen aus ihrem Atelier in Iserlohn.",
+    "lead": "Handgefertigt von Andrea in Iserlohn: Echthaar-Extensions, Topper, Perücken und Maßanfertigungen. Mit persönlicher Beratung zu Farbe und Menge.",
     "chapters": "Kapitel des Films",
     "ch1": "Glut",
     "ch2": "Phönix",
@@ -60,7 +60,7 @@
     "play": "Bewegung fortsetzen",
     "replay": "Noch einmal ansehen",
     "trust": [
-      "Echthaar, persönlich ausgewählt",
+      "Echthaar, handgefertigt von Andrea",
       "Persönliche Beratung durch Andrea",
       "Bezahlung erst nach ihrer Bestätigung",
       "Versand mit {carrier}, auch international"
@@ -79,7 +79,7 @@
     "dock": "Andrea fragen",
     "ribbonLabel": "Was Sie erwarten können",
     "ribbon": [
-      "Atelier in Iserlohn",
+      "Handgefertigt in Iserlohn",
       "Echthaar",
       "Handwerk gelernt in Rio de Janeiro",
       "Sechs Extension-Methoden",
@@ -106,7 +106,7 @@
       "cta": "Alle Extensions ansehen",
       "salon": "Für Salons und Friseure: Mengen anfragen",
       "view": "{name}, {color} ansehen",
-      "imageNote": "KI-gestützt inszenierte Studiobilder: Die Haarfarbe ist am Originalfoto gemessen und angeglichen, Form, Fülle und Anordnung sind inszeniert. Wie die Stücke wirklich aussehen, zeigen die Originalfotos auf der jeweiligen Produktseite.",
+      "imageNote": "KI-Inszenierung: Die Haarfarbe ist am Originalfoto angeglichen. Die Originalfotos auf den Produktseiten zeigen die Stücke unbearbeitet.",
       "galleryLabel": "Extensions im Atelier"
     },
     "near": {
@@ -124,7 +124,7 @@
         },
         {
           "label": "Invisible Tape",
-          "text": "Schmale, dünne Tapes, die sich bei fachgerechter Einarbeitung unauffällig ins eigene Haar einfügen."
+          "text": "Schmale, dünne Tapes, die sich unauffällig ins eigene Haar einfügen."
         },
         {
           "label": "Butterfly Weft",
@@ -138,7 +138,7 @@
     "color": {
       "kicker": "Farbe und Menge",
       "title": "Ihre Farbe. *Ihre Menge.*",
-      "lead": "Kein Bildschirm zeigt Haarfarben ganz genau. Deshalb gleicht Andrea Ihre Farbe persönlich ab und sagt Ihnen, wie viele Packungen Sie für Ihr Ziel brauchen.",
+      "lead": "Andrea gleicht Ihre Farbe persönlich ab und sagt Ihnen, wie viele Packungen Sie für Ihr Ziel brauchen.",
       "fanLabel": "Farben im Atelier",
       "customTitle": "Ihre Farbe nicht dabei?",
       "customText": "Andrea fertigt sie nach Maß.",
@@ -158,8 +158,7 @@
         }
       ],
       "cta": "Foto an Andrea senden",
-      "ctaForm": "Lieber per Formular anfragen",
-      "screenNote": "Farben am Bildschirm können abweichen."
+      "ctaForm": "Lieber per Formular anfragen"
     },
     "topper": {
       "kicker": "Topper und Perücken",
@@ -238,8 +237,8 @@
           "a": "Clip-ins setzen Sie selbst ein und nehmen sie abends wieder heraus. Tapes, Tressen und Bondings werden fachgerecht eingearbeitet. Andrea bespricht mit Ihnen, was zu Ihrem Haar und Ihrem Alltag passt."
         },
         {
-          "q": "Fällt das auf?",
-          "a": "Tapes und Tressen sind flach und schmal gearbeitet. Wie unauffällig sie sitzen, hängt von Ihrem Haar und der Einarbeitung ab. Andrea sagt Ihnen ehrlich, was bei Ihnen möglich ist."
+          "q": "Sieht man das?",
+          "a": "Tapes und Tressen sind flach und schmal gearbeitet und liegen dicht am Kopf. Andrea sagt Ihnen ehrlich, was bei Ihnen möglich ist."
         },
         {
           "q": "Wie schnell ist es bei mir?",
@@ -251,7 +250,7 @@
         },
         {
           "q": "Und wenn es nicht passt?",
-          "a": "Es gilt das gesetzliche Widerrufsrecht von 14 Tagen. Prüfen Sie Farbe und Länge bitte, bevor Sie Tressen kürzen, einarbeiten oder Schutzfolien abziehen. Maßanfertigungen sind ausgenommen, weil sie nur für Sie entstehen."
+          "a": "Es gilt das gesetzliche Widerrufsrecht von 14 Tagen ab Erhalt der Ware. Maßanfertigungen sind ausgenommen, weil sie nur für Sie entstehen."
         },
         {
           "q": "Versenden Sie ins Ausland?",
@@ -346,25 +345,22 @@
     "compareLabel": "Vergleich verschieben: links Studiolicht, rechts unbearbeitetes Originalfoto",
     "compareStudio": "Studiolicht",
     "compareOriginal": "Originalfoto aus dem Atelier",
-    "compareNote": "Das Studiofoto wurde neu ausgeleuchtet, am Haar wurde nichts verändert. Das Originalfoto zeigt das Stück so, wie Andrea es im Atelier fotografiert hat.",
+    "compareNote": "Rechts das unbearbeitete Originalfoto aus dem Atelier.",
     "askWhatsapp": "Fragen zu diesem Stück? Schreiben Sie Andrea direkt per WhatsApp",
     "askWhatsappShort": "Per WhatsApp fragen",
     "stickyLabel": "Schnellkauf",
-    "availabilityUnknown": "Verfügbarkeit bestätigen wir persönlich, bevor Sie bezahlen.",
     "unitPrice": "{amount} / 1 kg",
     "packSize": "je Packung {grams} g",
     "setSize": "Set ({pieces} Tressen) {grams} g",
-    "extWithdrawal": "Sie können Ihre Bestellung innerhalb von 14 Tagen ab Erhalt der Ware widerrufen. Bitte prüfen Sie Farbe und Länge, bevor Sie Tressen kürzen, einarbeiten oder Schutzfolien abziehen – für einen Wertverlust durch eine Nutzung, die über die Prüfung hinausgeht, kommen Sie nach der Widerrufsbelehrung auf.",
     "imageAltStaged": "{name}, {subtitle}: KI-gestützt inszeniertes Studiobild",
-    "imageNoteRelit": "Studioaufnahme, neu ausgeleuchtet. Am Haar wurde nichts verändert. Das Originalfoto zeigt das Stück unbearbeitet.",
-    "imageNoteStaged": "KI-gestützt inszeniertes Studiobild: Die Haarfarbe ist am Originalfoto gemessen und angeglichen, Form, Fülle und Anordnung sind inszeniert und können vom Stück abweichen. Die Originalfotos in der Galerie zeigen das Stück unbearbeitet.",
-    "compareNoteStaged": "Links das KI-gestützt inszenierte Studiobild, rechts das Originalfoto aus dem Atelier. Nur die Haarfarbe ist am Originalfoto gemessen und angeglichen; Form, Fülle und Anordnung sind inszeniert.",
-    "packQuestion": "Wie viele Packungen Sie brauchen, hängt von Ihrem Haar und Ihrem Wunsch ab. Andrea sagt es Ihnen persönlich.",
+    "imageNoteRelit": "Studioaufnahme, neu ausgeleuchtet. Am Haar wurde nichts verändert.",
+    "imageNoteStaged": "KI-Inszenierung: Form und Fülle sind inszeniert. Die Originalfotos zeigen das Stück unbearbeitet.",
+    "compareNoteStaged": "Links die KI-Inszenierung, rechts das Originalfoto aus dem Atelier.",
     "consultTitle": "Beratung",
     "consultText": "Fragen zu Farbe, Größe oder Passform? Andrea antwortet persönlich.",
     "consultExtensions": "Unsicher bei Farbe oder Menge? Schicken Sie Andrea ein Foto Ihres Haars bei Tageslicht. Sie sagt Ihnen ehrlich, was passt.",
     "accessories": "Pflege und Zubehör aus dem Atelier",
-    "accessoriesNote": "Das verwendet Andrea im Atelier selbst. Ob ein Produkt zu Ihrer Methode passt, sagt sie Ihnen gern vorab.",
+    "accessoriesNote": "Das verwendet Andrea im Atelier selbst.",
     "moreExtensions": "Weitere Packungen",
     "spec": {
       "title": "Eigenschaften auf einen Blick",
@@ -396,7 +392,8 @@
     "compareStudioStaged": "KI-Inszenierung",
     "compareTitleStaged": "KI-Inszenierung und Originalfoto im Vergleich",
     "compareLabelStaged": "Vergleich verschieben: links KI-Inszenierung, rechts unbearbeitetes Originalfoto",
-    "manufacturer": "Hergestellt von {name}, {address}, {email}"
+    "manufacturer": "Hergestellt von {name}, {address}, {email}",
+    "handmade": "Handgefertigt von Andrea in {city}"
   },
   "price": {
     "smallBusiness": "Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.",
@@ -406,7 +403,7 @@
   },
   "collection": {
     "title": "Die Kollektion",
-    "lead": "Extensions in Packungen und Haarteile aus dem Atelier. Jedes Haarteil gibt es nur einmal, Extensions in Packungen.",
+    "lead": "Handgefertigt von Andrea in Iserlohn. Jedes Haarteil gibt es nur einmal, Extensions in Packungen.",
     "available": "{count, plural, =0 {Kein Stück verfügbar} one {# Stück verfügbar} other {# Stücke verfügbar}}",
     "all": "Alle",
     "filterLabel": "Nach Kategorie filtern",
@@ -417,7 +414,7 @@
     "sortLength": "Haarlänge",
     "apply": "Anwenden",
     "results": "{count, plural, one {# Stück} other {# Stücke}} in dieser Auswahl",
-    "soldHint": "Verkaufte Stücke bleiben sichtbar und sind markiert. Ein ähnliches Stück fertigt Andrea gern nach Maß.",
+    "soldHint": "Verkauft? Ein ähnliches Stück fertigt Andrea gern nach Maß.",
     "leadExtensions": "Mehr Länge, mehr Fülle, mehr Sie selbst. Die Packungen bestellen Sie direkt. Für andere Methoden, Längen und Mengen stellt Andrea alles persönlich zusammen.",
     "hubLink": "Methoden, Farbhilfe und Beratung zu Extensions",
     "byMethod": "Methode",
@@ -835,23 +832,21 @@
   "objections": {
     "title": "Was Sie vor dem Kauf wissen möchten",
     "visibleQ": "Sieht man, dass ich ein Haarteil trage?",
-    "visibleA": "Dafür ist die Nano-Skin-Basis gemacht: Jedes Haar ist einzeln injiziert, deshalb wirkt der Scheitel ähnlich wie eigene Kopfhaut. Wie unauffällig das Stück bei Ihnen aussieht, hängt auch von Farbe, Dichte und Sitz ab. Andrea sagt Ihnen vorher ehrlich, was zu erwarten ist.",
+    "visibleA": "Dafür ist die Nano-Skin-Basis gemacht: Jedes Haar ist einzeln injiziert, deshalb wirkt der Scheitel ähnlich wie eigene Kopfhaut.",
     "colorQ": "Passt die Farbe zu meinem Haar?",
-    "colorA": "Schicken Sie Andrea ein Foto Ihres Haars bei Tageslicht, am einfachsten per WhatsApp. Sie vergleicht es mit dem Stück und sagt Ihnen ehrlich, ob es passt.",
+    "colorA": "Schicken Sie Andrea ein Foto Ihres Haars bei Tageslicht, am einfachsten per WhatsApp. Sie sagt Ihnen ehrlich, ob es passt.",
     "holdQ": "Wie wird das Stück befestigt?",
     "holdClips": "Mit kleinen Clips an Ihrem eigenen Haar. Sie setzen das Stück selbst ein und nehmen es wieder heraus, ohne Kleber und ohne Friseurtermin.",
-    "holdOther": "Die Befestigung hängt vom Stück ab. Andrea erklärt Ihnen persönlich, welche Methode zu Ihnen passt.",
-    "careQ": "Wie pflege ich das Stück?",
-    "careA": "Andrea gibt Ihnen die Pflegehinweise für Ihr Stück persönlich mit. Fragen Sie gern vorab per WhatsApp, Telefon oder Anfrage.",
+    "holdOther": "Andrea erklärt Ihnen persönlich, welche Befestigung zu Ihnen passt.",
     "fitQ": "Passt es zu meiner Kopfform?",
-    "fitBase": "Die Basis dieses Stücks misst {base} cm. Wenn Sie unsicher sind, messen Sie die Stelle, die bedeckt werden soll, und schicken Sie Andrea die Maße.",
-    "fitNoBase": "Für dieses Stück ist keine Basisgröße angegeben. Andrea sagt Ihnen gern, ob es zu Ihnen passt.",
+    "fitBase": "Die Basis misst {base} cm. Unsicher? Schicken Sie Andrea die Maße der Stelle, die bedeckt werden soll.",
+    "fitNoBase": "Andrea sagt Ihnen gern, ob es zu Ihnen passt.",
     "returnQ": "Was, wenn es nicht passt?",
-    "returnA": "Sie haben ein gesetzliches Widerrufsrecht von 14 Tagen ab Erhalt der Ware. Die Einzelheiten und Ausnahmen stehen in der Widerrufsbelehrung.",
+    "returnA": "14 Tage Widerrufsrecht ab Erhalt der Ware. Alles Weitere steht in der Widerrufsbelehrung.",
     "payQ": "Wann bezahle ich?",
     "payA": "Nicht beim Absenden der Bestellung. Andrea bestätigt Ihr Stück zuerst persönlich und schreibt Ihnen dann, wie Sie bezahlen.",
     "packQ": "Wie viele Packungen brauche ich?",
-    "packA": "Das hängt von Ihrem Haar, der Methode und der gewünschten Länge ab. Andrea sagt Ihnen persönlich, wie viele Packungen Sie brauchen, am einfachsten per WhatsApp oder Anfrage."
+    "packA": "Andrea sagt Ihnen persönlich, wie viele Packungen zu Ihrem Haar und Ihrem Wunsch passen, am einfachsten per WhatsApp."
   },
   "drawer": {
     "title": "Im Warenkorb",
@@ -915,14 +910,14 @@
     "otherText": "Was Sie hier nicht finden, stellt Andrea auf Anfrage für Sie zusammen. Auch Salons und Friseurinnen erhalten ein persönliches Angebot.",
     "metaTitle": "Echthaar-Extensions: Methoden, Farbe, Beratung",
     "heroTitle": "Mehr Länge, mehr Fülle, mehr Sie selbst.",
-    "heroLead": "Echthaar-Extensions aus Andreas Atelier in Iserlohn. Die Packungen bestellen Sie direkt, alles andere stellt Andrea persönlich für Sie zusammen.",
+    "heroLead": "Echthaar-Extensions, handgefertigt von Andrea in Iserlohn. Die Packungen bestellen Sie direkt, alles andere stellt sie persönlich für Sie zusammen.",
     "shopCta": "Packungen ansehen",
     "adviceCta": "Beratung anfragen",
     "methodsLead": "Sechs Methoden. Welche zu Ihrem Haar und Ihrem Alltag passt, klären Sie mit Andrea.",
     "inShop": "{count, plural, one {# Packung im Shop} other {# Packungen im Shop}}",
     "onRequest": "Auf Anfrage",
     "colorTitle": "Die richtige Farbe finden",
-    "colorLead": "Licht und Bildschirm verändern, wie ein Farbton wirkt. Deshalb vergleicht Andrea Ihr Haar persönlich mit dem Stück.",
+    "colorLead": "Andrea vergleicht Ihr Haar persönlich mit dem Stück.",
     "colorSteps": {
       "light": {
         "title": "Tageslicht nutzen",
@@ -937,10 +932,9 @@
         "text": "Sie sagt Ihnen ehrlich, welcher Ton passt, auch wenn es keiner aus dem Shop ist."
       }
     },
-    "colorNote": "Die Farbe auf Ihrem Bildschirm kann vom echten Haar abweichen.",
     "packKicker": "Beratung",
     "packTitle": "Wie viele Packungen brauche ich?",
-    "packText": "Das hängt von Ihrem Haar, der Methode und Ihrem Wunsch ab. Andrea sagt Ihnen persönlich, wie viele Packungen Sie brauchen. Fragen Sie kurz, bevor Sie bestellen.",
+    "packText": "Andrea sagt Ihnen persönlich, wie viele Packungen Sie brauchen. Fragen Sie kurz, bevor Sie bestellen.",
     "packWhatsapp": "Per WhatsApp fragen",
     "packAsk": "Oder als Anfrage senden",
     "productsTitle": "Extensions im Shop",
@@ -960,7 +954,7 @@
     "strip": {
       "kicker": "Maßanfertigung",
       "title": "Ihre Farbe oder Länge ist nicht dabei?",
-      "text": "Andrea fertigt nach Maß. Sie wählen System, Länge, Farbe, Struktur und Menge, sie meldet sich persönlich bei Ihnen.",
+      "text": "Andrea fertigt nach Maß: System, Länge, Farbe, Struktur und Menge ganz nach Ihrem Wunsch.",
       "cta": "Maßanfertigung anfragen"
     },
     "steps": {

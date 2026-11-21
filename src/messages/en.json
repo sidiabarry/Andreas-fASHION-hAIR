@@ -51,7 +51,7 @@
     "line1": "As if *reborn.*",
     "line2": "More length. *More fullness.*",
     "line3": "More *you.*",
-    "lead": "Extensions in human hair, chosen by Andrea, with personal advice on colour and amount. Plus toppers, wigs and made-to-measure pieces from her atelier in Iserlohn.",
+    "lead": "Handmade by Andrea in Iserlohn: human-hair extensions, toppers, wigs and made-to-measure pieces. With personal advice on colour and quantity.",
     "chapters": "Chapters of the film",
     "ch1": "Embers",
     "ch2": "Phoenix",
@@ -60,7 +60,7 @@
     "play": "Resume motion",
     "replay": "Watch again",
     "trust": [
-      "Human hair, chosen in person",
+      "Human hair, handmade by Andrea",
       "Personal advice from Andrea",
       "Payment only after her confirmation",
       "Shipping with {carrier}, also international"
@@ -79,7 +79,7 @@
     "dock": "Ask Andrea",
     "ribbonLabel": "What you can expect",
     "ribbon": [
-      "Atelier in Iserlohn",
+      "Handmade in Iserlohn",
       "Human hair",
       "Craft learned in Rio de Janeiro",
       "Six extension methods",
@@ -106,7 +106,7 @@
       "cta": "View all extensions",
       "salon": "For salons and hairdressers: request quantities",
       "view": "View {name}, {color}",
-      "imageNote": "AI-assisted staged studio images: the hair colour was measured on the original photo and matched; shape, volume and arrangement are staged. The original photos on each product page show what the pieces really look like.",
+      "imageNote": "AI staging: the hair colour is matched to the original photo. The original photos on the product pages show the pieces unedited.",
       "galleryLabel": "Extensions in the atelier"
     },
     "near": {
@@ -124,7 +124,7 @@
         },
         {
           "label": "Invisible Tape",
-          "text": "Narrow, thin tapes that blend discreetly into your own hair when fitted professionally."
+          "text": "Narrow, thin tapes that blend discreetly into your own hair."
         },
         {
           "label": "Butterfly Weft",
@@ -138,7 +138,7 @@
     "color": {
       "kicker": "Colour and quantity",
       "title": "Your colour. *Your amount.*",
-      "lead": "No screen shows hair colour exactly. That is why Andrea matches your colour in person and tells you how many packs you need for your goal.",
+      "lead": "Andrea matches your colour personally and tells you how many packs you need for your goal.",
       "fanLabel": "Colours in the atelier",
       "customTitle": "Your colour isn't here?",
       "customText": "Andrea makes it to measure.",
@@ -158,8 +158,7 @@
         }
       ],
       "cta": "Send Andrea a photo",
-      "ctaForm": "Prefer the form",
-      "screenNote": "Colours on screen may differ."
+      "ctaForm": "Prefer the form"
     },
     "topper": {
       "kicker": "Toppers and wigs",
@@ -239,7 +238,7 @@
         },
         {
           "q": "Will it show?",
-          "a": "Tapes and wefts are made flat and narrow. How discreetly they sit depends on your hair and the fitting. Andrea tells you honestly what is possible for you."
+          "a": "Tapes and wefts are made flat and narrow and sit close to the head. Andrea tells you honestly what is possible for you."
         },
         {
           "q": "How soon will it arrive?",
@@ -251,7 +250,7 @@
         },
         {
           "q": "And if it doesn't suit me?",
-          "a": "The statutory 14-day right of withdrawal applies. Please check colour and length before you trim wefts, fit them or remove protective films. Made-to-measure pieces are excluded, because they are made only for you."
+          "a": "The statutory 14-day right of withdrawal applies from receipt of the goods. Made-to-measure pieces are excluded because they are made only for you."
         },
         {
           "q": "Do you ship abroad?",
@@ -346,25 +345,22 @@
     "compareLabel": "Move the comparison: studio light on the left, unedited original photo on the right",
     "compareStudio": "Studio light",
     "compareOriginal": "Original photo from the atelier",
-    "compareNote": "The studio photo was relit; nothing about the hair was changed. The original photo shows the piece as Andrea photographed it in the atelier.",
+    "compareNote": "On the right, the unedited original photo from the atelier.",
     "askWhatsapp": "Questions about this piece? Message Andrea directly on WhatsApp",
     "askWhatsappShort": "Ask on WhatsApp",
     "stickyLabel": "Quick purchase",
-    "availabilityUnknown": "We confirm availability personally before you pay.",
     "unitPrice": "{amount} / 1 kg",
     "packSize": "per pack {grams} g",
     "setSize": "set ({pieces} wefts) {grams} g",
-    "extWithdrawal": "You can withdraw from your order within 14 days of receiving the goods. Please check colour and length before you shorten wefts, work them in or peel off protective films. For a loss in value caused by use beyond that check, you are liable as set out in the withdrawal information.",
     "imageAltStaged": "{name}, {subtitle}: AI-assisted staged studio image",
-    "imageNoteRelit": "Studio photograph, relit. The hair itself was not altered. The original photo shows the piece unedited.",
-    "imageNoteStaged": "AI-assisted staged studio image: the hair colour was measured on the original photo and matched; shape, volume and arrangement are staged and may differ from the piece. The original photos in the gallery show the piece unedited.",
-    "compareNoteStaged": "On the left the AI-assisted staged studio image, on the right the original atelier photo. Only the hair colour was measured on the original photo and matched; shape, volume and arrangement are staged.",
-    "packQuestion": "How many packs you need depends on your hair and what you want. Andrea tells you personally.",
+    "imageNoteRelit": "Studio shot, relit. Nothing about the hair was altered.",
+    "imageNoteStaged": "AI staging: shape and fullness are staged. The original photos show the piece unedited.",
+    "compareNoteStaged": "On the left the AI staging, on the right the original photo from the atelier.",
     "consultTitle": "Advice",
     "consultText": "Questions about colour, size or fit? Andrea replies personally.",
     "consultExtensions": "Unsure about colour or amount? Send Andrea a photo of your hair in daylight. She will tell you honestly what suits.",
     "accessories": "Care and accessories from the atelier",
-    "accessoriesNote": "This is what Andrea uses in the atelier herself. Whether a product suits your method, she is happy to tell you beforehand.",
+    "accessoriesNote": "Andrea uses these herself in the atelier.",
     "moreExtensions": "More packs",
     "spec": {
       "title": "Properties at a glance",
@@ -396,7 +392,8 @@
     "compareStudioStaged": "AI staging",
     "compareTitleStaged": "AI staging and original photo compared",
     "compareLabelStaged": "Move the comparison: AI staging on the left, unedited original photo on the right",
-    "manufacturer": "Made by {name}, {address}, {email}"
+    "manufacturer": "Made by {name}, {address}, {email}",
+    "handmade": "Handmade by Andrea in {city}"
   },
   "price": {
     "smallBusiness": "No VAT is charged in accordance with § 19 of the German VAT Act (small business).",
@@ -406,7 +403,7 @@
   },
   "collection": {
     "title": "The collection",
-    "lead": "Extensions in packs and hairpieces from the atelier. Every hairpiece exists once, extensions come in packs.",
+    "lead": "Handmade by Andrea in Iserlohn. Every hairpiece exists only once, extensions come in packs.",
     "available": "{count, plural, =0 {No piece available} one {# piece available} other {# pieces available}}",
     "all": "All",
     "filterLabel": "Filter by category",
@@ -417,7 +414,7 @@
     "sortLength": "Hair length",
     "apply": "Apply",
     "results": "{count, plural, one {# piece} other {# pieces}} in this selection",
-    "soldHint": "Sold pieces stay visible and are marked. Andrea will gladly make a similar piece to measure.",
+    "soldHint": "Sold? Andrea will gladly make a similar piece to measure.",
     "leadExtensions": "More length, more fullness, more of you. You can order the packs directly. For other methods, lengths and amounts Andrea puts everything together personally.",
     "hubLink": "Methods, colour help and advice for extensions",
     "byMethod": "Method",
@@ -835,23 +832,21 @@
   "objections": {
     "title": "What you would like to know before buying",
     "visibleQ": "Can people tell that I am wearing a hair piece?",
-    "visibleA": "That is what the nano skin base is made for: every hair is injected individually, so the parting looks similar to your own scalp. How discreet the piece looks on you also depends on colour, density and fit. Andrea will tell you honestly beforehand what to expect.",
+    "visibleA": "That is what the nano skin base is made for: every hair is injected individually, so the parting looks much like your own scalp.",
     "colorQ": "Does the colour match my hair?",
-    "colorA": "Send Andrea a photo of your hair in daylight, most easily via WhatsApp. She compares it with the piece and tells you honestly whether it matches.",
+    "colorA": "Send Andrea a photo of your hair in daylight, most easily by WhatsApp. She will tell you honestly whether it suits you.",
     "holdQ": "How is the piece attached?",
     "holdClips": "With small clips on your own hair. You put the piece in yourself and take it out again, without glue and without a hairdresser’s appointment.",
-    "holdOther": "The attachment depends on the piece. Andrea will explain personally which method suits you.",
-    "careQ": "How do I care for the piece?",
-    "careA": "Andrea gives you the care instructions for your piece personally. Feel free to ask beforehand via WhatsApp, phone or enquiry.",
+    "holdOther": "Andrea will show you personally which method suits you.",
     "fitQ": "Will it fit my head shape?",
-    "fitBase": "The base of this piece measures {base} cm. If you are unsure, measure the area to be covered and send Andrea the measurements.",
-    "fitNoBase": "No base size is given for this piece. Andrea will gladly tell you whether it suits you.",
+    "fitBase": "The base measures {base} cm. Not sure? Send Andrea the measurements of the area to be covered.",
+    "fitNoBase": "Andrea will gladly tell you whether it suits you.",
     "returnQ": "What if it does not fit?",
-    "returnA": "You have a statutory right of withdrawal of 14 days from receipt of the goods. Details and exceptions are in the cancellation policy.",
+    "returnA": "You have a 14-day right of withdrawal from receipt of the goods. Everything else is in the withdrawal information.",
     "payQ": "When do I pay?",
     "payA": "Not when you send the order. Andrea first confirms your piece personally and then tells you how to pay.",
     "packQ": "How many packs do I need?",
-    "packA": "That depends on your hair, the method and the length you want. Andrea tells you personally how many packs you need, easiest via WhatsApp or an enquiry."
+    "packA": "Andrea will tell you personally how many packs suit your hair and your goal, most easily by WhatsApp."
   },
   "drawer": {
     "title": "In your bag",
@@ -915,14 +910,14 @@
     "otherText": "If you do not find it here, Andrea will put it together for you on request. Salons and hairdressers also receive a personal offer.",
     "metaTitle": "Human-hair extensions: methods, colour, advice",
     "heroTitle": "More length, more fullness, more of you.",
-    "heroLead": "Human-hair extensions from Andrea’s atelier in Iserlohn. You can order the packs directly; everything else Andrea puts together for you personally.",
+    "heroLead": "Human-hair extensions, handmade by Andrea in Iserlohn. You order the packs directly, everything else she puts together for you personally.",
     "shopCta": "View the packs",
     "adviceCta": "Ask for advice",
     "methodsLead": "Six methods. Which one suits your hair and your daily life, you clarify with Andrea.",
     "inShop": "{count, plural, one {# pack in the shop} other {# packs in the shop}}",
     "onRequest": "On request",
     "colorTitle": "Finding the right colour",
-    "colorLead": "Light and screens change how a shade looks. That is why Andrea compares your hair with the piece personally.",
+    "colorLead": "Andrea compares your hair with the piece personally.",
     "colorSteps": {
       "light": {
         "title": "Use daylight",
@@ -937,10 +932,9 @@
         "text": "She tells you honestly which shade suits, even if it is not one from the shop."
       }
     },
-    "colorNote": "The colour on your screen can differ from the real hair.",
     "packKicker": "Advice",
     "packTitle": "How many packs do I need?",
-    "packText": "That depends on your hair, the method and what you want. Andrea tells you personally how many packs you need. Ask briefly before you order.",
+    "packText": "Andrea will tell you personally how many packs you need. Just ask before you order.",
     "packWhatsapp": "Ask on WhatsApp",
     "packAsk": "Or send an enquiry",
     "productsTitle": "Extensions in the shop",
@@ -960,7 +954,7 @@
     "strip": {
       "kicker": "Made to measure",
       "title": "Your colour or length is not here?",
-      "text": "Andrea makes pieces to measure. You choose system, length, colour, texture and amount, and she gets back to you personally.",
+      "text": "Andrea makes it to measure: system, length, colour, texture and quantity just as you wish.",
       "cta": "Request made-to-measure"
     },
     "steps": {

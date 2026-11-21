@@ -78,13 +78,14 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
   const hasNano = product.specs.some((spec) => spec.startsWith("Nano-Skin"));
   const hasClips = product.specs.includes("Befestigung mit Clips");
   const hair = product.category !== "pflege";
+  // Eigene Fragen zum Stück ersetzen die allgemeinen; Widerruf und Zahlung stehen immer dabei.
+  const ownFaq = copy?.faq ?? [];
   const objections = [
-    ...(copy?.faq ?? []),
-    ...(hasNano ? [{ a: t("objections.visibleA"), q: t("objections.visibleQ") }] : []),
-    ...(hair ? [{ a: t("objections.colorA"), q: t("objections.colorQ") }] : []),
-    ...(hair ? [{ a: hasClips ? t("objections.holdClips") : t("objections.holdOther"), q: t("objections.holdQ") }] : []),
-    ...(hair ? [{ a: product.base ? t("objections.fitBase", { base: product.base }) : t("objections.fitNoBase"), q: t("objections.fitQ") }] : []),
-    ...(hair ? [{ a: t("objections.careA"), q: t("objections.careQ") }] : []),
+    ...ownFaq,
+    ...(ownFaq.length === 0 && hasNano ? [{ a: t("objections.visibleA"), q: t("objections.visibleQ") }] : []),
+    ...(ownFaq.length === 0 && hair ? [{ a: t("objections.colorA"), q: t("objections.colorQ") }] : []),
+    ...(ownFaq.length === 0 && hair ? [{ a: hasClips ? t("objections.holdClips") : t("objections.holdOther"), q: t("objections.holdQ") }] : []),
+    ...(ownFaq.length === 0 && hair ? [{ a: product.base ? t("objections.fitBase", { base: product.base }) : t("objections.fitNoBase"), q: t("objections.fitQ") }] : []),
     ...(isExtension ? [{ a: t("objections.packA"), q: t("objections.packQ") }] : []),
     { a: t("objections.returnA"), q: t("objections.returnQ") },
     { a: t("objections.payA"), q: t("objections.payQ") },
@@ -170,6 +171,7 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
               <p className="af-lead" style={{ marginTop: 10 }}>
                 {text.subtitle}
               </p>
+              {product.manufacturer === "atelier" ? <p className="af-handmade">{t("product.handmade", { city: company.address.city })}</p> : null}
               {copy?.headline ? <p className="af-headline">{copy.headline}</p> : null}
             </div>
             <SpecChips locale={locale} product={product} />
@@ -186,11 +188,8 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
             ) : product.madeToOrder ? (
               <p className="af-only">{t("product.customMsg", delivery)}</p>
             ) : null}
-            {!isSold && product.availability === "unknown" ? <p className="af-note">{t("product.availabilityUnknown")}</p> : null}
 
             <p className="af-text">{copy?.story ?? text.description}</p>
-            {isExtension ? <p className="af-note">{t("product.packQuestion")}</p> : null}
-            {product.category === "extensions" ? <p className="af-note">{t("product.extWithdrawal")}</p> : null}
 
             {isSold ? (
               <Link className="af-cta-band" href={{ pathname: "/anfrage", query: { produkt: `${text.name}, ${text.subtitle}`, thema: "massanfertigung" } }}>
@@ -213,12 +212,14 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
                   </a>
                 ) : null}
               </div>
-              <Link className="af-cta-line" href={{ pathname: "/anfrage", query: { produkt: `${text.name}, ${text.subtitle}`, thema: "beratung" } }} style={{ justifySelf: "start" }}>
-                {t("product.ask")}
-              </Link>
+              {company.social.whatsapp ? null : (
+                <Link className="af-cta-line" href={{ pathname: "/anfrage", query: { produkt: `${text.name}, ${text.subtitle}`, thema: "beratung" } }} style={{ justifySelf: "start" }}>
+                  {t("product.ask")}
+                </Link>
+              )}
             </div>
 
-            <TrustFacts locale={locale} />
+            <TrustFacts compact locale={locale} />
 
             <section aria-labelledby="specs-title">
               <h2 className="af-sr" id="specs-title">
