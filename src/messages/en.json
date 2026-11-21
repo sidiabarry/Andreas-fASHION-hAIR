@@ -71,7 +71,12 @@
     "ctaCustom": "Request made-to-measure",
     "ctaCollection": "View the collection",
     "ctaConsult": "Get personal advice",
-    "ctaConsultVia": "via WhatsApp"
+    "ctaConsultVia": "via WhatsApp",
+    "liveCount": "{count, plural, one {# one-of-a-kind piece} other {# one-of-a-kind pieces}} in the atelier",
+    "needsLabel": "What are you looking for?",
+    "spotlightPrev": "Previous piece",
+    "spotlightNext": "Next piece",
+    "spotlightShow": "Show piece {index} of {total}"
   },
   "home": {
     "whatsappNote": "opens WhatsApp",

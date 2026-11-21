@@ -71,7 +71,12 @@
     "ctaCustom": "Demander une pièce sur mesure",
     "ctaCollection": "Voir la collection",
     "ctaConsult": "Être conseillé personnellement",
-    "ctaConsultVia": "par WhatsApp"
+    "ctaConsultVia": "par WhatsApp",
+    "liveCount": "{count, plural, one {# pièce unique} other {# pièces uniques}} à l’atelier",
+    "needsLabel": "Que recherchez-vous ?",
+    "spotlightPrev": "Pièce précédente",
+    "spotlightNext": "Pièce suivante",
+    "spotlightShow": "Afficher la pièce {index} sur {total}"
   },
   "home": {
     "whatsappNote": "ouvre WhatsApp",

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { getImageProps } from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { FieldMount } from "@/components/fx/FieldMount";
 import { Dock } from "@/components/home/Dock";
-import { Hero, type HeroTexts } from "@/components/home/Hero";
+import { HeroShowcase, type ShowcaseTexts } from "@/components/home/HeroShowcase";
+import type { SpotlightPiece } from "@/components/home/HeroSpotlight";
 import { PieceCard, type CardTexts } from "@/components/home/PieceCard";
 import { Reveal } from "@/components/home/Reveal";
 import { Bespoke } from "@/components/home/scenes/Bespoke";
@@ -17,7 +17,7 @@ import { TopperChapter } from "@/components/home/scenes/TopperChapter";
 import { homeValues, openingHours, whatsappHref } from "@/components/home/values";
 import { JsonLd } from "@/components/JsonLd";
 import { PriceNote } from "@/components/product/PriceNote";
-import { getProductById, productText, unitInfo, type CategoryId, type Product } from "@/data/catalog";
+import { getProductById, isUnique, productText, products, unitInfo, VISIBLE_CATEGORY_IDS, type CategoryId, type Product } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
 import { organizationJsonLd } from "@/lib/jsonld";
 import { formatPrice } from "@/lib/money";
@@ -72,30 +72,6 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
   const whatsappNote = t("home.whatsappNote");
   const symbolImage = t("home.symbolImage");
 
-  // Hero: drei Kapitel (Glut · Phönix · Haar), Poster zuerst (LCP), Filme erst nach dem Hydrieren
-  const posters = [1, 2, 3].map((n, i) => {
-    const desk = getImageProps({ alt: "", height: 1080, priority: i === 0, quality: 70, sizes: "100vw", src: `/assets/world/scene-0${n}-poster.jpg`, width: 1920 }).props;
-    const mobile = getImageProps({ alt: "", height: 720, priority: i === 0, quality: 70, sizes: "100vw", src: `/assets/world/scene-0${n}-mobile-poster.jpg`, width: 1280 }).props;
-    if (i > 0) desk.fetchPriority = "low";
-    return { img: desk, mobileSrcSet: mobile.srcSet ?? "" };
-  });
-  const videos = [1, 2, 3].map((n) => ({ desktop: `/assets/world/scene-0${n}.mp4`, mobile: `/assets/world/scene-0${n}-mobile.mp4` }));
-  const heroTexts: HeroTexts = {
-    chapters: t("hero.chapters"),
-    ctaCustom: t("hero.ctaCustom"),
-    ctaExtensions: t("hero.ctaExtensions"),
-    filmAlt: t("hero.filmAlt"),
-    kicker: t("hero.kicker"),
-    labels: [t("hero.ch1"), t("hero.ch2"), t("hero.ch3")],
-    lead: t("hero.lead"),
-    lines: [t("hero.line1"), t("hero.line2"), t("hero.line3")],
-    pause: t("hero.pause"),
-    play: t("hero.play"),
-    replay: t("hero.replay"),
-    trust: strings("hero.trust", v),
-    trustLabel: t("hero.trustLabel"),
-  };
-
   // Kapitel I: Extensions mit Preis und Grundpreis (PAngV) direkt am Stück
   const pieces: ExtPiece[] = byIds(EXT_IDS).map((p) => {
     const text = productText(p, locale);
@@ -108,6 +84,29 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
     const color = text.subtitle;
     return { color, image: studio(p.id), label: t("home.ext.view", { color, name: text.name }), name: text.name, price: formatPrice(p.priceCents, locale), slug: p.slug, unit: unitLine };
   });
+
+  // Hero (Schaufenster): Extensions mit Preis im Wechsel, Live-Zahl echter Einzelstücke, Film in drei Kapiteln
+  const spotlight: SpotlightPiece[] = pieces.map((p) => ({ flag: tp("flagStaged"), image: p.image, name: p.name, price: p.price, slug: p.slug, subtitle: p.color, unit: p.unit }));
+  const uniqueOpen = products.filter((p) => isUnique(p) && !p.sold && !sold.has(p.slug)).length;
+  const showcase: ShowcaseTexts = {
+    chapters: [1, 2, 3].map((n) => ({ label: t(`hero.ch${n}`), title: t(`hero.line${n}`) })),
+    ctaCustom: t("hero.ctaCustom"),
+    ctaExtensions: t("hero.ctaExtensions"),
+    customKicker: t("home.custom.kicker"),
+    customTitle: t("home.custom.title"),
+    lead: t("hero.lead"),
+    live: t("hero.liveCount", { count: uniqueOpen }),
+    needs: VISIBLE_CATEGORY_IDS.map((id) => ({ id, label: t(`categories.${id}.need`) })),
+    needsLabel: t("hero.needsLabel"),
+    pause: t("hero.pause"),
+    play: t("hero.play"),
+    spotlightNext: t("hero.spotlightNext"),
+    spotlightPrev: t("hero.spotlightPrev"),
+    spotlightShow: t.raw("hero.spotlightShow") as string,
+    spotlightTitle: t("home.ext.galleryLabel"),
+    symbolImage,
+    title: t("hero.line1"),
+  };
 
   const shots = byIds(NEAR.map((n) => n.id)).map((p, i) => {
     const text = productText(p, locale);
@@ -162,7 +161,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
       <FieldMount />
       <Reveal />
 
-      <Hero posters={posters} texts={heroTexts} videos={videos} />
+      <HeroShowcase pieces={spotlight} t={showcase} />
 
       <Ribbon items={strings("home.ribbon", v)} label={t("home.ribbonLabel")} />
 

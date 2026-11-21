@@ -71,7 +71,12 @@
     "ctaCustom": "Maßanfertigung anfragen",
     "ctaCollection": "Kollektion ansehen",
     "ctaConsult": "Persönlich beraten lassen",
-    "ctaConsultVia": "per WhatsApp"
+    "ctaConsultVia": "per WhatsApp",
+    "liveCount": "{count, plural, one {# Einzelstück} other {# Einzelstücke}} im Atelier",
+    "needsLabel": "Wonach suchen Sie?",
+    "spotlightPrev": "Vorheriges Stück",
+    "spotlightNext": "Nächstes Stück",
+    "spotlightShow": "Stück {index} von {total} zeigen"
   },
   "home": {
     "whatsappNote": "öffnet WhatsApp",

@@ -44,3 +44,21 @@ Alle mit `latin-ext` (Polnisch, Türkisch).
 ## Maße
 
 `--af-radius-s|…|xl` (12/16/22/28 px), `--af-space-1…9` (4–96 px), `--af-section` (Abschnittsabstand), `--af-nav-h` (72 px, fixierte Kopfleiste), `--af-touch` (44 px Mindestzielgröße), `--af-wrap` (Inhaltsbreite).
+
+## Lichtatelier (hell, seit 21.11.2026)
+
+Der Auftraggeber wollte die Seite durchgehend hell („hell ist fröhlicher und hebt die Kauflaune“). Die frühere Hybrid-Lösung (dunkle Bühnen, helle Zonen) ist damit aufgehoben: `:root` und `.af-zone-light` tragen dieselben hellen Werte.
+
+| Token | Wert | Verwendung |
+| --- | --- | --- |
+| `--af-bg` / `--af-surface` / `--af-raise` | `#fbf7f1` / `#f5ede3` / `#ffffff` | Elfenbein, Sand, Karten |
+| `--af-ink` / `--af-muted` | `#1e1813` / `#685b50` | Text 16,5:1 / Nebentext 6,2:1 |
+| `--af-gold` | `#8c5e06` | Gold als **Text und Linie** (5,3:1) |
+| `--af-gold-fill` + `--af-on-gold` | `#e8ae23` + `#1e1813` | Gold als **Fläche**, Schrift immer dunkel (8,8:1) |
+| `--af-cream` / `--af-blush` | `#f8eed9` / `#f7e4d8` | warme Lichtschimmer |
+| `--af-shadow-s/-/-l` | warme Schatten | Karten, Kacheln, Bilder |
+| `--af-focus` | `#1e1813` | Fokusring |
+
+- **Glas:** `.af-glass` ist Elfenbein-Glas, `.af-glass--gold` goldgetöntes Glas mit leuchtender Lichtkante und dunkler Schrift (Hauptknöpfe), gewählte Filter dunkles Glas. Plaketten auf Bildern sind Elfenbein-Glas.
+- **Dunkle Inseln** nur, wo Text auf einem Foto steht: `.af-ondark` (Film-Kachel, Maßanfertigungs-Kachel im Hero) und die gerahmte Abschlusskarte `.close` der Startseite.
+- **Hero „Schaufenster“** (`HeroShowcase.tsx`, `.af-hx*`): Versprechen mit Live-Zahl echter Einzelstücke und Einstiegen nach Bedarf, der Film „Wie neu geboren“ als eine 15-s-Datei (`public/assets/world/journey*.mp4`, quadratisch zugeschnitten) mit Kapitelstrichen und Pause-Knopf, Extensions mit Preis und Grundpreis im Wechsel, Kachel Maßanfertigung.
