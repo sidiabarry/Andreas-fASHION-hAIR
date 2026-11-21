@@ -21,7 +21,7 @@ export default async function ContactPage({ params }: PageProps<"/[locale]/konta
   const t = await getTranslations({ locale });
   const day = (d: number) => t(`days.${d}` as "days.1");
   return (
-    <main className="af-page">
+    <main className="af-page af-zone-light" data-zone="light">
       <JsonLd data={organizationJsonLd(locale as Locale)} />
       <div className="af-wrap">
         <p className="af-mono">{t("contact.kicker")}</p>

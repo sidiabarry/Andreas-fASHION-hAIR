@@ -59,7 +59,7 @@ type ConcernTexts = { title: string; lead: string; items: { q: string; a: string
 /** Alle Bedenken, offen sichtbar (kein Akkordeon). */
 export function Concerns({ t, whatsapp, whatsappNote }: { t: ConcernTexts; whatsapp: string | null; whatsappNote: string }) {
   return (
-    <section aria-labelledby="concerns-title" className="concerns" id="fragen">
+    <section aria-labelledby="concerns-title" className="concerns af-zone-light af-zone-fade-top af-zone-fade-bottom" id="fragen">
       <div className="af-wrap">
         <header className="h-head h-in">
           <h2 className="h-title" id="concerns-title">

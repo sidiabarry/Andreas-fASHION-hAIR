@@ -29,7 +29,7 @@ export async function LegalPage({ locale, title, page, fields = [], children }: 
   const Content = legal.pages[page];
   const missing = missingCompanyFields(company).filter((m) => m.blocking && (fields.includes(m.field) || m.legal));
   return (
-    <main className="af-page">
+    <main className="af-page af-zone-light" data-zone="light">
       <div className="af-wrap">
         <h1 className="af-h1">{title}</h1>
         {locale !== "de" && !legal.translated ? (

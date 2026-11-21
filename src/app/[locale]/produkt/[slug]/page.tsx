@@ -113,7 +113,7 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
   };
 
   return (
-    <main className="af-page">
+    <main className="af-page af-page--zoned" data-zone="light">
       <JsonLd data={productJson} />
       <JsonLd
         data={breadcrumbJsonLd([
@@ -161,7 +161,7 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
             ) : null}
           </div>
 
-          <div className="af-pdp__info">
+          <div className="af-pdp__info af-zone-light">
             <div>
               <p className="af-mono">{t(`categories.${product.category}.label`)}</p>
               <h1 className="af-h2" style={{ marginTop: 14 }}>
@@ -265,37 +265,40 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
             ) : null}
           </div>
         </div>
-
-        {copy ? <ProductCopyBlock copy={copy} locale={locale} /> : null}
-        {hair ? <CustomStrip product={`${text.name}, ${text.subtitle}`} /> : null}
-        <RecentlyViewed exclude={product.slug} />
-        {more.length > 0 ? (
-          <section aria-labelledby="more-title" className="af-section af-section--tight" style={{ paddingBottom: 0 }}>
-            <h2 className="af-h2" id="more-title">
-              {t(isExtension ? "product.moreExtensions" : "product.more")}
-            </h2>
-            <div className="af-grid">
-              {more.map((item) => (
-                <ProductCard key={item.slug} locale={locale} product={item} />
-              ))}
-            </div>
-          </section>
-        ) : null}
-        {accessories.length > 0 ? (
-          <section aria-labelledby="acc-title" className="af-section af-section--tight" style={{ paddingBottom: 0 }}>
-            <h2 className="af-h2" id="acc-title">
-              {t("product.accessories")}
-            </h2>
-            <p className="af-note" style={{ marginTop: 12 }}>
-              {t("product.accessoriesNote")}
-            </p>
-            <div className="af-grid">
-              {accessories.map((item) => (
-                <ProductCard key={item.slug} locale={locale} product={item} />
-              ))}
-            </div>
-          </section>
-        ) : null}
+      </div>
+      <div className="af-zone-light af-zone-fade-top af-zone-band af-pdp__after">
+        <div className="af-wrap">
+          {copy ? <ProductCopyBlock copy={copy} locale={locale} /> : null}
+          {hair ? <CustomStrip product={`${text.name}, ${text.subtitle}`} /> : null}
+          <RecentlyViewed exclude={product.slug} />
+          {more.length > 0 ? (
+            <section aria-labelledby="more-title" className="af-section af-section--tight" style={{ paddingBottom: 0 }}>
+              <h2 className="af-h2" id="more-title">
+                {t(isExtension ? "product.moreExtensions" : "product.more")}
+              </h2>
+              <div className="af-grid">
+                {more.map((item) => (
+                  <ProductCard key={item.slug} locale={locale} product={item} />
+                ))}
+              </div>
+            </section>
+          ) : null}
+          {accessories.length > 0 ? (
+            <section aria-labelledby="acc-title" className="af-section af-section--tight" style={{ paddingBottom: 0 }}>
+              <h2 className="af-h2" id="acc-title">
+                {t("product.accessories")}
+              </h2>
+              <p className="af-note" style={{ marginTop: 12 }}>
+                {t("product.accessoriesNote")}
+              </p>
+              <div className="af-grid">
+                {accessories.map((item) => (
+                  <ProductCard key={item.slug} locale={locale} product={item} />
+                ))}
+              </div>
+            </section>
+          ) : null}
+        </div>
       </div>
       {!isSold ? <StickyBuyBar available name={text.name} price={price} slug={product.slug} unique={unique} unitLine={unitInfo(product) ? unitText(t, unitInfo(product)!, locale) : undefined} /> : null}
     </main>

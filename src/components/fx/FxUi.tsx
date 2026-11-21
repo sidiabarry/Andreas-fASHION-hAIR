@@ -94,6 +94,10 @@ export function FxUi() {
       const field = target?.closest("input, textarea, select, [contenteditable='true']");
       const link = target?.closest("a, button, [role='button'], label, summary");
       cursor.dataset.state = lensImg ? "lens" : field ? "text" : link ? "link" : "";
+      // Farbzone unter dem Zeiger: auf Hell wird der Cursor dunkel (Bildflächen bleiben Bühne)
+      const zone = target?.closest(".af-zone-light, .af-zone-dark, .af-card__media, .af-pdp__gallery");
+      if (zone?.classList.contains("af-zone-light")) cursor.dataset.zone = "light";
+      else delete cursor.dataset.zone;
       // Neigung
       const tilt = calm() ? null : (target?.closest<HTMLElement>("[data-tilt]") ?? null);
       if (tilt !== tiltEl) resetTilt();

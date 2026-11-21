@@ -131,7 +131,7 @@ export default async function CollectionPage({ params, searchParams }: PageProps
   const filtered = Boolean(method || color || length);
 
   return (
-    <main className="af-page">
+    <main className="af-page af-page--zoned" data-zone="light">
       <JsonLd
         data={breadcrumbJsonLd([
           { name: t("common.home"), path: `/${locale}` },
@@ -154,79 +154,83 @@ export default async function CollectionPage({ params, searchParams }: PageProps
             </Link>
           </p>
         ) : null}
-        <div className="af-toolbar">
-          <nav aria-label={t("collection.filterLabel")} className="af-filters">
-            <Link aria-current={category === null ? "page" : undefined} className="af-tab" href={hrefFor({ kategorie: null })}>
-              {t("collection.all")}
-            </Link>
-            {VISIBLE_CATEGORY_IDS.map((id) => (
-              <Link aria-current={category === id ? "page" : undefined} className="af-tab" href={hrefFor({ kategorie: id })} key={id}>
-                {t(`categories.${id}.label`)}
+      </div>
+      <div className="af-zone-light af-zone-fade-top af-zone-band">
+        <div className="af-wrap">
+          <div className="af-toolbar">
+            <nav aria-label={t("collection.filterLabel")} className="af-filters">
+              <Link aria-current={category === null ? "page" : undefined} className="af-tab" href={hrefFor({ kategorie: null })}>
+                {t("collection.all")}
               </Link>
-            ))}
-          </nav>
-          <SortSelect
-            apply={t("collection.apply")}
-            hidden={hidden}
-            label={t("collection.sortLabel")}
-            options={[
-              { label: t("collection.sortFeatured"), value: "empfehlung" },
-              { label: t("collection.sortPriceAsc"), value: "preis-auf" },
-              { label: t("collection.sortPriceDesc"), value: "preis-ab" },
-              { label: t("collection.sortLength"), value: "laenge" },
-            ]}
-            value={sort}
-          />
-        </div>
-        {groups.length ? (
-          <div aria-label={t("collection.filterGroups")} className="af-facets" role="group">
-            {groups.map((group) => (
-              <div className="af-facet" key={group.key}>
-                <span className="af-facet__label">{group.label}</span>
-                <div className="af-facet__opts">
-                  <Link aria-current={group.value === null ? "true" : undefined} className="af-pill" href={hrefFor({ [group.key]: null })}>
-                    {t("collection.any")}
-                  </Link>
-                  {group.options.map((option) => (
-                    <Link aria-current={group.value === option.id ? "true" : undefined} className="af-pill" href={hrefFor({ [group.key]: option.id })} key={option.id}>
-                      {option.label} <i>{option.count}</i>
+              {VISIBLE_CATEGORY_IDS.map((id) => (
+                <Link aria-current={category === id ? "page" : undefined} className="af-tab" href={hrefFor({ kategorie: id })} key={id}>
+                  {t(`categories.${id}.label`)}
+                </Link>
+              ))}
+            </nav>
+            <SortSelect
+              apply={t("collection.apply")}
+              hidden={hidden}
+              label={t("collection.sortLabel")}
+              options={[
+                { label: t("collection.sortFeatured"), value: "empfehlung" },
+                { label: t("collection.sortPriceAsc"), value: "preis-auf" },
+                { label: t("collection.sortPriceDesc"), value: "preis-ab" },
+                { label: t("collection.sortLength"), value: "laenge" },
+              ]}
+              value={sort}
+            />
+          </div>
+          {groups.length ? (
+            <div aria-label={t("collection.filterGroups")} className="af-facets" role="group">
+              {groups.map((group) => (
+                <div className="af-facet" key={group.key}>
+                  <span className="af-facet__label">{group.label}</span>
+                  <div className="af-facet__opts">
+                    <Link aria-current={group.value === null ? "true" : undefined} className="af-pill" href={hrefFor({ [group.key]: null })}>
+                      {t("collection.any")}
                     </Link>
-                  ))}
+                    {group.options.map((option) => (
+                      <Link aria-current={group.value === option.id ? "true" : undefined} className="af-pill" href={hrefFor({ [group.key]: option.id })} key={option.id}>
+                        {option.label} <i>{option.count}</i>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
-            {filtered ? (
-              <Link className="af-facet__reset" href={hrefFor({ farbe: null, laenge: null, methode: null })}>
-                {t("collection.reset")}
-              </Link>
-            ) : null}
+              ))}
+              {filtered ? (
+                <Link className="af-facet__reset" href={hrefFor({ farbe: null, laenge: null, methode: null })}>
+                  {t("collection.reset")}
+                </Link>
+              ) : null}
+            </div>
+          ) : null}
+          <p aria-live="polite" className="af-note" style={{ marginTop: 18 }}>
+            {t("collection.results", { count: list.length })}. {t("collection.soldHint")}
+          </p>
+          {list.length ? (
+            <div className="af-grid">
+              {list.map((product, index) => (
+                <ProductCard key={product.slug} locale={locale} priority={index < 2} product={product} sold={sold.has(product.slug)} />
+              ))}
+            </div>
+          ) : (
+            <div className="af-msg" data-kind="info" style={{ marginTop: 32 }}>
+              <p>{t("collection.empty")}</p>
+              <p>
+                <Link className="af-link" href={hrefFor({ farbe: null, laenge: null, methode: null })}>
+                  {t("collection.reset")}
+                </Link>{" "}
+                ·{" "}
+                <Link className="af-link" href="/massanfertigung">
+                  {t("custom.strip.cta")}
+                </Link>
+              </p>
+            </div>
+          )}
+          <div style={{ marginTop: 72 }}>
+            <CustomStrip />
           </div>
-        ) : null}
-        <p aria-live="polite" className="af-note" style={{ marginTop: 18 }}>
-          {t("collection.results", { count: list.length })}. {t("collection.soldHint")}
-        </p>
-        {list.length ? (
-          <div className="af-grid">
-            {list.map((product, index) => (
-              <ProductCard key={product.slug} locale={locale} priority={index < 2} product={product} sold={sold.has(product.slug)} />
-            ))}
-          </div>
-        ) : (
-          <div className="af-msg" data-kind="info" style={{ marginTop: 32 }}>
-            <p>{t("collection.empty")}</p>
-            <p>
-              <Link className="af-link" href={hrefFor({ farbe: null, laenge: null, methode: null })}>
-                {t("collection.reset")}
-              </Link>{" "}
-              ·{" "}
-              <Link className="af-link" href="/massanfertigung">
-                {t("custom.strip.cta")}
-              </Link>
-            </p>
-          </div>
-        )}
-        <div style={{ marginTop: 72 }}>
-          <CustomStrip />
         </div>
       </div>
     </main>

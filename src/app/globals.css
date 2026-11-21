@@ -1,6 +1,7 @@
 /*
  * Andrea's Fashion Hair – Gestaltung (portiert aus dem Export: src/site.css).
- * Palette und Typografie laut docs/design-brief.md. Ein Thema: dunkel.
+ * Palette und Typografie laut docs/design-brief.md. Grundthema dunkel; helle Lesezonen über `.af-zone-light`
+ * (Hybrid, siehe Abschnitt „Farbzonen“ am Ende und .coordination/findings/farbpsychologie.md).
  * Design-Tokens (--af-*) sind in docs/DESIGN-TOKENS.md beschrieben: ergänzen ja, umbenennen nein.
  */
 :root {
@@ -44,6 +45,16 @@
   --af-nav-h: 72px;
   --af-touch: 44px;
   --af-wrap: min(1240px, calc(100% - 48px));
+  /* Farbzonen (Hybrid): feste Werte beider Bühnen, damit Zonen sie unabhängig vom Kontext setzen können */
+  --af-stage: #100e0d;
+  --af-gold-stage: #e0a526;
+  --af-paper: #faf6f0;
+  --af-paper-surface: #f2ebe0;
+  --af-paper-card: #ffffff;
+  --af-paper-ink: #1c1815;
+  --af-gold-paper: #7a5600;
+  --af-focus: #e0a526;
+  --af-fade: clamp(80px, 8vw, 120px);
   color-scheme: dark;
 }
 
@@ -66,7 +77,7 @@ body.af-body {
 :where(.af-body) img { display: block; max-width: 100%; }
 :where(.af-body) button { font: inherit; color: inherit; cursor: pointer; }
 .af-body ::selection { background: var(--af-gold); color: var(--af-bg); }
-.af-body :focus-visible { outline: 2px solid var(--af-gold); outline-offset: 3px; }
+.af-body :focus-visible { outline: 2px solid var(--af-focus, var(--af-gold)); outline-offset: 3px; }
 .af-body main:focus { outline: none; }
 
 .af-skip { position: fixed; left: 12px; top: 12px; z-index: 100; padding: 12px 18px; border-radius: 12px; background: var(--af-gold); color: var(--af-bg); font-weight: 600; transform: translateY(-160%); transition: transform 0.2s var(--af-ease); }
@@ -641,3 +652,133 @@ html[data-motion="paused"] .af-ui-loading { animation-play-state: paused; }
 .af-body input.af-ui-check { width: 22px; height: 22px; min-height: 22px; padding: 0; margin: 2px 0 0; }
 .af-body input.af-ui-check:checked { background: var(--af-gold); }
 .af-body .af-ui-field:focus { box-shadow: 0 0 0 4px rgba(224, 165, 38, 0.16); }
+
+/* ======================================================================
+ * Farbzonen (Hybrid): dunkle Bühne für Marke, warm-helle Zone für Lesen, Vergleichen, Eingeben, Bezahlen.
+ * `.af-zone-light` setzt die bestehenden Tokens neu, alle Bausteine darin erben sie. Kontraste laut
+ * .coordination/findings/farbpsychologie.md (Text 16,4:1, gedämpft 7,1:1, Gold-auf-Hell 6,2:1).
+ * `.af-zone-dark` (und Bildflächen in hellen Zonen) stellt die Bühne wieder her.
+ * Übergänge: `.af-zone-fade-top`/`-bottom` (weicher Verlauf, Breite --af-fade) oder Gold-Haarlinie.
+ * ====================================================================== */
+.af-zone-light {
+  --af-bg: #faf6f0;
+  --af-surface: #f2ebe0;
+  --af-raise: #ffffff;
+  --af-card: #ffffff;
+  --af-line: #e3d8c8;
+  --af-field-line: #857868;
+  --af-ink: #1c1815;
+  --af-muted: #5c5249;
+  --af-gold: #7a5600;
+  --af-gold-light: #7a5600;
+  --af-gold-deep: #5e4300;
+  --af-ok: #2f6b3a;
+  --af-err: #a4281f;
+  --af-focus: #1c1815;
+  --af-champagne: #7a5600;
+  --h-champagne: #7a5600;
+  --h-ember: #7a5600;
+  color-scheme: light;
+  background-color: var(--af-zone-ground, var(--af-bg));
+  color: var(--af-ink);
+  scrollbar-color: #857868 transparent;
+}
+.af-zone-dark,
+.af-zone-light .af-card__media,
+.af-zone-light .af-zoom {
+  --af-bg: #100e0d;
+  --af-surface: #181513;
+  --af-raise: #201c19;
+  --af-card: #181513;
+  --af-line: #2c2622;
+  --af-field-line: #857a70;
+  --af-ink: #f4efe8;
+  --af-muted: #a89e94;
+  --af-gold: #e0a526;
+  --af-gold-light: #f0c45a;
+  --af-gold-deep: #b9851a;
+  --af-ok: #9fc5a2;
+  --af-err: #e79a8c;
+  --af-focus: #e0a526;
+  --af-champagne: #f3dfb3;
+  --h-champagne: #f3dfb3;
+  --h-ember: #c8642a;
+  color-scheme: dark;
+}
+.af-zone-dark { background-color: var(--af-bg); color: var(--af-ink); }
+
+/* Übergänge: kein harter Blitz. Der Verlauf liegt im Innenabstand, Text steht nie darauf. */
+.af-zone-fade-top, .af-zone-fade-bottom { --af-fade-ramp: var(--af-stage) 0%, #2e2217 20%, #9b7f5a 54%, #ecdfca 84%, var(--af-zone-ground, var(--af-bg)) 100%; background-repeat: no-repeat; }
+.af-zone-fade-top { padding-top: calc(var(--af-fade) + var(--af-zone-pad, 24px)); background-image: linear-gradient(180deg, var(--af-fade-ramp)); background-position: top; background-size: 100% var(--af-fade); }
+.af-zone-fade-bottom { padding-bottom: calc(var(--af-fade) + var(--af-zone-pad, 24px)); background-image: linear-gradient(0deg, var(--af-fade-ramp)); background-position: bottom; background-size: 100% var(--af-fade); }
+.af-zone-fade-top.af-zone-fade-bottom { background-image: linear-gradient(180deg, var(--af-fade-ramp)), linear-gradient(0deg, var(--af-fade-ramp)); background-position: top, bottom; background-size: 100% var(--af-fade), 100% var(--af-fade); }
+.af-zone-band > .af-wrap > :first-child { margin-top: 0; }
+.af-pdp__after { margin-top: clamp(56px, 8vw, 112px); }
+@media (min-width: 901px) { .af-pdp__after .af-copy:first-child { padding-top: 0; border-top: 0; } }
+/* Seiten, deren Inhalt ganz hell ist: Kopf und Fuß bleiben Bühne, die Kante ist eine Gold-Haarlinie */
+.af-page--zoned { padding-bottom: 0; }
+.af-zone-band { padding-bottom: clamp(80px, 10vw, 140px); }
+body:has(main[data-zone="light"]) .af-nav { background: color-mix(in srgb, var(--af-bg) 94%, transparent); }
+body:has(main.af-zone-light) .af-nav { border-bottom: 1px solid transparent; border-image: linear-gradient(90deg, transparent, color-mix(in srgb, var(--af-gold-stage) 70%, transparent) 18%, color-mix(in srgb, var(--af-gold-stage) 70%, transparent) 82%, transparent) 1; }
+body:has(main[data-zone="light"]) .af-foot { border-top: 1px solid transparent; border-image: linear-gradient(90deg, transparent, color-mix(in srgb, var(--af-gold-stage) 70%, transparent) 18%, color-mix(in srgb, var(--af-gold-stage) 70%, transparent) 82%, transparent) 1; }
+html:has(main[data-zone="light"]) { scrollbar-color: #857868 #f2ebe0; }
+html:has(main[data-zone="light"])::-webkit-scrollbar-track { background: #f2ebe0; }
+html:has(main[data-zone="light"])::-webkit-scrollbar-thumb { border-color: #f2ebe0; background: #857868; }
+html:has(main[data-zone="light"])::-webkit-scrollbar-thumb:hover { background: #7a5600; }
+
+/* Fokus auf Hell: dunkler Ring 2 px mit 2 px Abstand, ohne goldenen Lichthof */
+.af-zone-light :focus-visible { outline-color: var(--af-focus); outline-offset: 2px; box-shadow: none; }
+.af-zone-light .af-choice:focus-within { outline-color: var(--af-focus); }
+
+/* Primärer Knopf auf Hell (Variante A): dunkle Fläche, Licht-Gold als Schrift, Hover Bronze mit Weiß */
+.af-zone-light :is(.af-cta-gold, .af-cta-band, .af-sticky__btn, .h-btn--gold) { background: var(--af-paper-ink); color: var(--af-gold-stage); border: 0; box-shadow: none; }
+.af-zone-light :is(.af-cta-gold, .af-cta-band, .af-sticky__btn, .h-btn--gold):hover { background: var(--af-gold-paper); color: #fff; box-shadow: 0 16px 36px -22px rgba(28, 24, 21, 0.55); }
+.af-zone-light :is(.af-cta-gold, .h-btn--gold)::before { background: linear-gradient(105deg, transparent 32%, rgba(255, 236, 190, 0.16) 50%, transparent 68%); }
+.af-zone-light .af-cta-add { border: 0; background: var(--af-paper-ink); color: var(--af-gold-stage); }
+.af-zone-light .af-cta-add::before { background: var(--af-gold-paper); }
+.af-zone-light .af-cta-add:hover, .af-zone-light .af-cta-add[data-done="true"] { color: #fff; }
+.af-zone-light .af-cta-add[disabled] { background: var(--af-surface); border: 1px solid var(--af-line); color: var(--af-muted); }
+.af-zone-light :is(.af-cta-gold, .af-cta-band, .af-cta-add, .af-sticky__btn) .af-ui-loading { background: radial-gradient(circle, #f3dfb3 0 18%, #e0a526 32%, rgba(200, 100, 42, 0.4) 55%, transparent 70%); }
+/* Auswahlzustände ruhig in Tinte statt Gold (Gold bleibt Licht) */
+.af-zone-light .af-pill[aria-current="true"], .af-zone-light .af-choice[data-on="true"] { background: var(--af-ink); border-color: var(--af-ink); color: var(--af-bg); }
+.af-zone-light .af-pill { border-color: var(--af-field-line); }
+.af-zone-light .af-drawer__add { border-color: var(--af-field-line); color: var(--af-ink); }
+.af-zone-light .af-drawer__add:hover { background: var(--af-ink); border-color: var(--af-ink); color: var(--af-bg); }
+
+/* Formulare auf Hell: weiße Felder, Rahmen 4:1, ruhiger Fokus */
+.af-zone-light :is(input, textarea, select):not([type="checkbox"], [type="radio"], [type="range"], [type="hidden"]),
+.af-zone-light .af-ui-field,
+.af-body .af-zone-light select.af-ui-select { background-color: var(--af-card); border-color: var(--af-field-line); color: var(--af-ink); }
+.af-zone-light .af-ui-field:hover { border-color: var(--af-ink); }
+.af-zone-light .af-ui-field:focus, .af-body .af-zone-light .af-ui-field:focus { background-color: var(--af-card); border-color: var(--af-ink); box-shadow: 0 0 0 3px rgba(122, 86, 0, 0.18); }
+.af-zone-light :is(input, textarea, select)[aria-invalid="true"] { border-color: var(--af-err); }
+.af-zone-light .af-ui-check { background: var(--af-card); border-color: var(--af-field-line); }
+.af-zone-light .af-ui-check:checked, .af-body .af-zone-light input.af-ui-check:checked { background: var(--af-ink); border-color: var(--af-ink); box-shadow: none; }
+.af-zone-light .af-ui-check::after { border-color: var(--af-bg); }
+.af-zone-light .af-ui-check[type="radio"]::after { background: var(--af-bg); }
+.af-zone-light .af-ui-select option { background: #fff; color: var(--af-ink); }
+.af-zone-light .af-ui-loading { background: radial-gradient(circle, var(--af-gold-paper) 0 20%, rgba(122, 86, 0, 0.45) 40%, transparent 70%); }
+.af-zone-light .af-devnote { background: #fbece9; }
+
+/* Karten und Flächen: Weiß für Karten mit Rahmen, Elfenbein-Fläche für Bänder */
+.af-zone-light :is(.af-sum, .af-review) { background: var(--af-card); border: 1px solid var(--af-line); }
+.af-zone-light .af-card__media { box-shadow: 0 22px 44px -30px rgba(28, 24, 21, 0.55); }
+.af-zone-light .af-strip { background: linear-gradient(135deg, var(--af-surface), color-mix(in srgb, var(--af-gold) 6%, var(--af-surface))); }
+
+/* Eigener Cursor über hellen Zonen (FxUi setzt data-zone) */
+.af-fx-cursor[data-zone="light"] .af-fx-cursor__dot { background: var(--af-gold-paper); box-shadow: none; }
+.af-fx-cursor[data-zone="light"] .af-fx-cursor__ring { border-color: rgba(28, 24, 21, 0.45); }
+.af-fx-cursor[data-zone="light"][data-state="link"] .af-fx-cursor__ring { border-color: var(--af-paper-ink); background-color: rgba(122, 86, 0, 0.08); }
+
+/* Produktseite: Infospalte als helles Blatt neben der dunklen Galerie, darunter ein helles Band */
+.af-pdp__info.af-zone-light { padding: clamp(24px, 3vw, 40px); border-radius: var(--af-radius-xl); box-shadow: 0 0 0 1px rgba(224, 165, 38, 0.18), 0 40px 90px -50px rgba(0, 0, 0, 0.9); }
+@media (max-width: 900px) {
+  .af-pdp { gap: 28px; }
+  .af-pdp__info.af-zone-light { margin-inline: calc((100vw - 100%) / -2); padding: 32px max(24px, calc((100vw - 100%) / 2)) 8px; border-radius: var(--af-radius-xl) var(--af-radius-xl) 0 0; box-shadow: 0 -1px 0 rgba(224, 165, 38, 0.35); }
+  .af-pdp__after.af-zone-fade-top { margin-top: 0; padding-top: 24px; background-image: none; }
+}
+
+/* Warenkorb-Schublade hell */
+.af-drawer.af-zone-light { border-left: 1px solid var(--af-line); }
+.af-sticky.af-zone-light { background: color-mix(in srgb, var(--af-bg) 96%, transparent); border-top: 1px solid var(--af-line); box-shadow: 0 -18px 40px -30px rgba(28, 24, 21, 0.45); }
+@media (forced-colors: active) { .af-zone-light :is(.af-cta-gold, .af-cta-band, .af-cta-add, .af-sticky__btn, .h-btn--gold) { border: 2px solid ButtonText; } }

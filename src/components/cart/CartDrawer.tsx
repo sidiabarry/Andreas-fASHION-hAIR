@@ -37,7 +37,7 @@ export function CartDrawer({ checkoutOpen }: { checkoutOpen: boolean }) {
   return (
     <dialog
       aria-labelledby="drawer-title"
-      className="af-drawer"
+      className="af-drawer af-zone-light"
       onClick={(event) => {
         if (event.target === event.currentTarget) cart.dismiss();
       }}

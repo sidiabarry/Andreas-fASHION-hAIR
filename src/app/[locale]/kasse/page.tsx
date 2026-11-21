@@ -46,7 +46,7 @@ export default async function CheckoutPage({ params }: PageProps<"/[locale]/kass
   };
 
   return (
-    <main className="af-page">
+    <main className="af-page af-zone-light" data-zone="light">
       <div className="af-wrap">
         <h1 className="af-h1">{t("checkout.title")}</h1>
         {mode.checkoutOpen ? (

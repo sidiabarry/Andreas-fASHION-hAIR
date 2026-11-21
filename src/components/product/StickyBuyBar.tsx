@@ -23,7 +23,7 @@ export function StickyBuyBar({ slug, unique, price, unitLine, name, available }:
   }, []);
   const inCart = cart.ready && unique && cart.has(slug);
   return (
-    <div aria-hidden={!visible} aria-label={t("stickyLabel")} className="af-sticky" data-visible={visible} inert={!visible} role="region">
+    <div aria-hidden={!visible} aria-label={t("stickyLabel")} className="af-sticky af-zone-light" data-visible={visible} inert={!visible} role="region">
       <div className="af-sticky__info">
         <span className="af-sticky__name">{name}</span>
         <span className="af-card__price">{price}</span>

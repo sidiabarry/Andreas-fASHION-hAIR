@@ -263,7 +263,9 @@ html[data-motion="paused"] .fx-canvas { opacity: 0.55; }
 .hand__visit address { font-style: normal; color: var(--af-muted); line-height: 1.6; }
 
 /* ---------- 9 Fragen, offen beantwortet ---------- */
-.concerns { position: relative; padding-block: var(--h-section); background: var(--af-surface); border-top: 1px solid var(--af-line); }
+.concerns { position: relative; padding-block: var(--h-section); background-color: var(--af-surface); border-top: 1px solid var(--af-line); }
+/* Helles Leseband (Farbzone): Verlauf oben und unten im Innenabstand, Grund = Fläche #F2EBE0 */
+.concerns.af-zone-light { --af-zone-ground: var(--af-surface); --af-zone-pad: clamp(48px, 7vw, 112px); padding-block: calc(var(--af-fade) + var(--af-zone-pad)); border-top: 0; z-index: 4; }
 .h-head { display: grid; gap: 22px; max-width: 760px; margin-bottom: clamp(44px, 5vw, 72px); }
 .h-head--center { justify-items: center; text-align: center; margin-inline: auto; }
 .concerns__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(32px, 5vw, 80px); margin: 0; }
