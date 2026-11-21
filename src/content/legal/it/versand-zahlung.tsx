@@ -53,7 +53,9 @@ export default function Page({ company: c }: { company: Company }) {
             Germania{others.length > 0 ? <>, {countryNames(others, "it")}</> : null}; altri paesi previo accordo.
           </li>
           <li>I pezzi disponibili arrivano in Germania in {deliveryDaysOf(c)} giorni lavorativi – con pagamento anticipato e PayPal dal giorno successivo al ricevimento del pagamento, altrimenti dal giorno successivo alla conclusione del contratto. I tempi per l'estero Le vengono comunicati prima della conclusione del contratto.</li>
-          <li>Realizziamo i pezzi su misura in circa {madeToOrderDaysOf(c)} giorni lavorativi, una volta ricevuti tutti i dati e – con pagamento anticipato o PayPal – il pagamento.</li>
+          <li>
+            I pezzi su misura Le vengono consegnati in Germania entro {madeToOrderDaysOf(c)} giorni lavorativi, a partire dal giorno successivo al ricevimento di tutti i dati e – con pagamento anticipato o PayPal – del pagamento.
+          </li>
           <li>Per motivi di sicurezza non possiamo spedire alcuni prodotti per la cura, adesivi e solventi in tutti i paesi. Lo indichiamo nella pagina del prodotto.</li>
         </ul>
       </section>

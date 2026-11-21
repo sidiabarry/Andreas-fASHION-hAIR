@@ -53,7 +53,9 @@ export default function Page({ company: c }: { company: Company }) {
             Teslimat ülkeleri: Almanya{others.length > 0 ? <>, {countryNames(others, "tr")}</> : null}; diğer ülkeler anlaşma ile.
           </li>
           <li>Stoktaki ürünler Almanya içinde {deliveryDaysOf(c)} iş günü içinde size ulaşır – ön ödeme ve PayPal'da ödemenin alındığı günü izleyen günden, diğer durumlarda sözleşmenin kurulduğu günü izleyen günden itibaren. Yurt dışı teslimat süresini sözleşme kurulmadan önce bildiririz.</li>
-          <li>Ölçüye göre ürünleri, tüm bilgiler ve – ön ödeme veya PayPal'da – ödeme alındıktan sonra yaklaşık {madeToOrderDaysOf(c)} iş gününde üretiriz.</li>
+          <li>
+            Ölçüye göre ürünler, tüm bilgiler ve – ön ödeme veya PayPal'da – ödeme alındıktan sonraki günden itibaren Almanya içinde {madeToOrderDaysOf(c)} iş günü içinde size ulaşır.
+          </li>
           <li>Güvenlik nedeniyle bazı bakım, yapıştırıcı ve çözücü ürünlerini her ülkeye gönderemiyoruz. Bunu ürün sayfasında belirtiriz.</li>
         </ul>
       </section>

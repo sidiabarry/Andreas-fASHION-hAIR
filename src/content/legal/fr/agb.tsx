@@ -133,9 +133,7 @@ export default function Page({ company: c }: { company: Company }) {
           </li>
           <li>Délai de livraison des articles en stock en Allemagne : {deliveryDaysOf(c)} jours ouvrables. Pour le paiement anticipé ou PayPal, le délai court à partir du lendemain de la réception du paiement, sinon à partir du lendemain de la conclusion du contrat. Pour les envois à l'étranger, nous vous indiquons le délai avant la conclusion du contrat.</li>
           <li>
-            Nous fabriquons les pièces sur mesure en {madeToOrderDaysOf(c)} jours ouvrables environ, dès que
-            nous disposons de toutes les informations nécessaires et – pour le paiement anticipé ou
-            PayPal – du paiement. Nous vous indiquons la date d'expédition prévue.
+            Les pièces sur mesure vous parviennent en Allemagne en {madeToOrderDaysOf(c)} jours ouvrables. Le délai commence le lendemain du jour où nous disposons de toutes les informations nécessaires et – pour le paiement anticipé ou PayPal – du paiement. Pour les envois à l'étranger, nous vous indiquons le délai de livraison avant la conclusion du contrat.
           </li>
           <li>En cas de dommages de transport visibles, veuillez faire une réclamation auprès du livreur et nous en informer brièvement. Vos droits légaux n'en sont pas affectés ; votre signalement nous aide à faire valoir nos droits envers le transporteur.</li>
         </ol>

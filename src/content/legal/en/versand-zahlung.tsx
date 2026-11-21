@@ -54,8 +54,7 @@ export default function Page({ company: c }: { company: Company }) {
           </li>
           <li>Pieces in stock reach you within Germany in {deliveryDaysOf(c)} business days – for advance payment and PayPal from the day after receipt of payment, otherwise from the day after conclusion of the contract. We will tell you the delivery time abroad before the contract is concluded.</li>
           <li>
-            We produce custom-made pieces in about {madeToOrderDaysOf(c)} business days once all details and –
-            for advance payment or PayPal – payment have been received.
+            Custom-made pieces reach you within Germany in {madeToOrderDaysOf(c)} business days, counting from the day after all details and – for advance payment or PayPal – payment have been received.
           </li>
           <li>For safety reasons we cannot ship some care, adhesive and solvent products to every country. We point this out on the product page.</li>
         </ul>
