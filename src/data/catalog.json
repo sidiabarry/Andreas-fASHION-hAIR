@@ -24,7 +24,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 420,
@@ -50,7 +51,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 419,
@@ -78,7 +80,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 417,
@@ -105,7 +108,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 416,
@@ -138,7 +142,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 415,
@@ -171,7 +176,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 414,
@@ -204,7 +210,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 413,
@@ -237,7 +244,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 408,
@@ -270,7 +278,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 407,
@@ -302,7 +311,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 405,
@@ -335,7 +345,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 287,
@@ -365,7 +376,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 263,
@@ -398,7 +410,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 256,
@@ -431,7 +444,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 246,
@@ -464,7 +478,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 241,
@@ -493,7 +508,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 238,
@@ -522,7 +538,8 @@
     "madeToOrder": true,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 234,
@@ -667,7 +684,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 200,
@@ -700,7 +718,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 191,
@@ -733,7 +752,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 186,
@@ -766,7 +786,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 180,
@@ -799,7 +820,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 175,
@@ -832,7 +854,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 169,
@@ -865,7 +888,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 164,
@@ -899,7 +923,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 110,
@@ -929,7 +954,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 105,
@@ -958,7 +984,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 99,
@@ -987,7 +1014,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 93,
@@ -1016,7 +1044,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 88,
@@ -1044,7 +1073,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 83,
@@ -1073,7 +1103,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 78,
@@ -1102,7 +1133,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 73,
@@ -1131,7 +1163,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 68,
@@ -1160,7 +1193,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 63,
@@ -1189,7 +1223,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 58,
@@ -1218,7 +1253,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 53,
@@ -1247,7 +1283,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 48,
@@ -1276,7 +1313,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 43,
@@ -1305,7 +1343,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 38,
@@ -1334,7 +1373,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 33,
@@ -1363,7 +1403,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 29,
@@ -1392,7 +1433,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 21,
@@ -1421,7 +1463,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 17,
@@ -1450,7 +1493,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 12,
@@ -1479,7 +1523,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 11,
@@ -1508,7 +1553,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "manufacturer": "atelier"
   },
   {
     "id": 422,
@@ -1577,7 +1623,8 @@
         "q": "Hält das?",
         "a": "Wie der Topper befestigt wird, bespricht Andrea vor der Zahlung mit Ihnen, passend zu Ihrem eigenen Haar. Sind Sie unsicher, ob Ihr Haar die Befestigung gut trägt, sagen Sie es ihr. Dafür ist das Gespräch da."
       }
-    ]
+    ],
+    "manufacturer": "atelier"
   },
   {
     "id": 423,
@@ -1648,7 +1695,8 @@
         "q": "Schaffe ich das allein?",
         "a": "Clip-ins sind zum Selbst-Einsetzen gemacht. Die ersten Male dauern etwas länger; am Hinterkopf hilft anfangs ein Handspiegel oder ein zweites Paar Augen."
       }
-    ]
+    ],
+    "manufacturer": "atelier"
   },
   {
     "id": 424,
@@ -1716,7 +1764,8 @@
         "q": "Passt Naturdunkelbraun zu mir?",
         "a": "Schicken Sie Andrea ein Foto Ihres Haares bei Tageslicht, ohne Blitz. Sie sagt Ihnen vor der Zahlung, ob der Ton passt und wie viele Packungen Sie für Ihr Ziel brauchen."
       }
-    ]
+    ],
+    "manufacturer": "atelier"
   },
   {
     "id": 425,
@@ -1782,7 +1831,8 @@
         "q": "Hält das?",
         "a": "Der Halt kommt aus der Einarbeitung an einer Reihe kleiner Ringe in Ihrem eigenen Haar. Genius Weft ist eine feste Methode für den Alltag. Wächst Ihr Haar nach, setzt Ihre Friseurin die Reihe nach."
       }
-    ]
+    ],
+    "manufacturer": "atelier"
   },
   {
     "id": 426,
@@ -1848,7 +1898,8 @@
         "q": "Hält das?",
         "a": "Der Halt kommt aus der Einarbeitung an einer Reihe kleiner Ringe in Ihrem eigenen Haar. Genius Weft ist eine feste Methode für den Alltag. Wächst Ihr Haar nach, setzt Ihre Friseurin die Reihe nach."
       }
-    ]
+    ],
+    "manufacturer": "atelier"
   },
   {
     "id": 427,
@@ -1924,7 +1975,8 @@
         "q": "Hält das?",
         "a": "Die Tapes werden nah am Ansatz an feinen Strähnen Ihres eigenen Haares befestigt. Für guten Halt kommt es auf die Pflege an: die ersten 48 Stunden nicht waschen, keine Spülung und kein Öl an die Tapes. Wächst Ihr Haar nach, setzt Ihre Friseurin die Tapes nach."
       }
-    ]
+    ],
+    "manufacturer": "atelier"
   },
   {
     "id": 428,
@@ -1991,6 +2043,7 @@
         "q": "Was ist der Unterschied zu Genius Weft?",
         "a": "Beide sind flache Tressen an einer Ringreihe. Bei Butterfly Weft liegt die Tresse so über der Befestigung, dass ihr Haar die Ringe abdeckt; Genius Weft wird meist eingenäht und lässt sich an jeder Stelle zuschneiden. Welche Methode zu Ihrem Haar passt, bespricht Andrea gern mit Ihnen."
       }
-    ]
+    ],
+    "manufacturer": "atelier"
   }
 ]

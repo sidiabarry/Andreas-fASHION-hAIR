@@ -229,6 +229,15 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
                   <li key={spec}>{spec}</li>
                 ))}
               </ul>
+              {product.manufacturer === "atelier" ? (
+                <p className="af-note">
+                  {t("product.manufacturer", {
+                    address: `${company.address.street}, ${company.address.postalCode} ${company.address.city}`,
+                    email: company.email,
+                    name: company.ownerFullName ?? company.brandName,
+                  })}
+                </p>
+              ) : null}
             </section>
 
             <section aria-labelledby="faq-title" className="af-faq af-faq--compact">

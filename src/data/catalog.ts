@@ -61,6 +61,8 @@ export type Product = ProductCopy & {
   imageKind?: ImageKind | null;
   /** Zweites Studiobild, steht in der Galerie direkt hinter dem Hauptbild. */
   secondImage?: string | null;
+  /** GPSR Art. 19: "atelier" = von Andrea selbst gefertigt (Angaben aus company.ts; vom Auftraggeber bestätigt 21.11.2026). */
+  manufacturer?: "atelier" | null;
   originals: string[];
   madeToOrder: boolean;
   /** Bestand laut Abgleich mit der Inhaberin. "unknown" = noch nicht abgeglichen (Anzeige: Verfügbarkeit wird persönlich bestätigt). */

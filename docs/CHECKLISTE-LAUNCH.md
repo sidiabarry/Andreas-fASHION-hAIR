@@ -54,3 +54,5 @@ Diese Aussagen standen im Export bzw. auf der Live-Seite. Sie werden nur verwend
 - Übersetzungen „Comme une renaissance“ (fr), „Como volver a nacer“ (es), „Toupet en V“ / „Tupé en V“: passen.
 - Echtes Foto von Andrea/Atelier: vorerst nicht nötig, Symbolbilder bleiben.
 - Herkunft des Haars: **nicht** Brasilien; keine Herkunftsangabe verwenden.
+- Rücksendekosten trägt die Kundin (`returnCosts: "customer"`); Stand der Rechtstexte 21. November 2026.
+- **Alle Haarprodukte sind von Andrea selbst gefertigt** (GPSR-Herstellerin: Andreia Pereira Da Costa, Atelier Iserlohn; `manufacturer: "atelier"`). Ausnahme: Walker-Tape-Pflegeprodukte (220, 222, 228, 234) – Hersteller und EU-Verantwortliche noch nötig.

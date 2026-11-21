@@ -123,11 +123,13 @@ export const company: Company = {
   // Vom Auftraggeber als belegbar bestätigt (11/2026); die Live-Seite führt die Zeile im Footer.
   madeInGermany: true,
   // Unbekannt: Entscheidung der Inhaberin (Empfehlung in docs/COMPLIANCE.md).
-  returnCosts: null,
+  // Vom Auftraggeber bestätigt (21.11.2026): Kundin trägt die Rücksendekosten.
+  returnCosts: "customer",
   // Unbekannt: Entscheidung der Inhaberin (Empfehlung in docs/COMPLIANCE.md).
   disputeResolution: null,
   // Wird beim Livegang gesetzt.
-  legalEffectiveDate: null,
+  // Stand der Rechtstexte (vom Auftraggeber festgelegt, 21.11.2026).
+  legalEffectiveDate: "21. November 2026",
   siteUrl: "https://www.andreasfashionhair.de",
 };
 

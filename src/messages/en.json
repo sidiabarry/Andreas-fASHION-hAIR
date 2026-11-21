@@ -395,7 +395,8 @@
     "flagStaged": "AI staging",
     "compareStudioStaged": "AI staging",
     "compareTitleStaged": "AI staging and original photo compared",
-    "compareLabelStaged": "Move the comparison: AI staging on the left, unedited original photo on the right"
+    "compareLabelStaged": "Move the comparison: AI staging on the left, unedited original photo on the right",
+    "manufacturer": "Made by {name}, {address}, {email}"
   },
   "price": {
     "smallBusiness": "No VAT is charged in accordance with § 19 of the German VAT Act (small business).",

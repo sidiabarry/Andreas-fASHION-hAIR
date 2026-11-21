@@ -395,7 +395,8 @@
     "flagStaged": "Escenificación IA",
     "compareStudioStaged": "Escenificación IA",
     "compareTitleStaged": "Escenificación IA y foto original comparadas",
-    "compareLabelStaged": "Mover la comparación: a la izquierda la escenificación IA, a la derecha la foto original sin retocar"
+    "compareLabelStaged": "Mover la comparación: a la izquierda la escenificación IA, a la derecha la foto original sin retocar",
+    "manufacturer": "Fabricado por {name}, {address}, {email}"
   },
   "price": {
     "smallBusiness": "No se aplica IVA conforme al § 19 de la ley alemana del IVA (pequeña empresa).",
