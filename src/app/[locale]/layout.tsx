@@ -18,8 +18,8 @@ import { fontVariables } from "../fonts";
 import "../globals.css";
 
 export const viewport: Viewport = {
-  colorScheme: "dark",
-  themeColor: "#100e0d",
+  colorScheme: "light",
+  themeColor: "#fbf7f1",
   width: "device-width",
   initialScale: 1,
 };

@@ -79,6 +79,8 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
       <JsonLd data={organizationJsonLd(locale)} />
       <JsonLd data={faqJson} />
       <HeroPlaceholder
+        badgeBig={t("home.fact2Big")}
+        badgeText={t("home.fact2")}
         body={t("hero.scene1.body")}
         kicker={t("hero.scene1.kicker")}
         primary={t("hero.ctaCollection")}
@@ -156,22 +158,28 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
       </section>
 
       <section aria-labelledby="geschichte-title" className="af-phoenix" id="geschichte">
-        <div aria-hidden="true" className="af-phoenix__bg">
-          <Image alt="" height={1158} sizes="100vw" src="/assets/content/phoenix.jpg" width={2048} />
-        </div>
-        <div className="af-wrap af-phoenix__in">
-          <Logo label={t("logo.markAlt")} size={84} variant="mark" />
-          <h2 className="af-h2" id="geschichte-title">
-            {t("home.phoenixTitle")}
-          </h2>
-          <p className="af-lead">{t("home.phoenixLead")}</p>
-          <figure style={{ margin: 0 }}>
-            <blockquote className="af-quote">{t("home.phoenixQuote")}</blockquote>
-            <figcaption className="af-quote-by" style={{ marginTop: 18 }}>
-              {t("home.phoenixBy")}
-            </figcaption>
-          </figure>
-          <p className="af-lead">{t("home.phoenixOutro")}</p>
+        <div className="af-wrap af-phoenix__grid">
+          <div className="af-phoenix__art af-rise">
+            <div className="af-arch-frame">
+              <div className="af-arch">
+                <Image alt="" height={1158} sizes="(max-width: 900px) 78vw, 460px" src="/assets/content/phoenix.jpg" width={2048} />
+              </div>
+            </div>
+            <Logo label={t("logo.markAlt")} size={56} variant="mark" />
+          </div>
+          <div className="af-phoenix__in af-rise">
+            <h2 className="af-h2" id="geschichte-title">
+              {t("home.phoenixTitle")}
+            </h2>
+            <p className="af-lead">{t("home.phoenixLead")}</p>
+            <figure>
+              <blockquote className="af-quote">{t("home.phoenixQuote")}</blockquote>
+              <figcaption className="af-quote-by" style={{ marginTop: 18 }}>
+                {t("home.phoenixBy")}
+              </figcaption>
+            </figure>
+            <p className="af-lead">{t("home.phoenixOutro")}</p>
+          </div>
         </div>
       </section>
 
@@ -242,7 +250,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
 
       <section aria-labelledby="spiegel-title" className="af-section">
         <div className="af-wrap">
-          <div className="af-close af-rise">
+          <div className="af-close af-ondark af-rise">
             <Image alt={t("home.closeImageAlt")} height={1194} sizes="(max-width: 1240px) 100vw, 1240px" src="/assets/content/mirror.jpg" width={1600} />
             <div className="af-close__in">
               <h2 className="af-h1" id="spiegel-title">

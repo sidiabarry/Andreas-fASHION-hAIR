@@ -2,22 +2,33 @@
 
 Alle Tokens stehen als CSS-Variablen in `src/app/globals.css` unter `:root`. **Ergänzen ist erlaubt, umbenennen nicht** (andere Bereiche hängen daran).
 
-## Farben (Palette aus dem design-brief, Kontrast geprüft)
+## Farben: „Lichtatelier“ (hell, seit Nov. 2026; Kontrast geprüft)
+
+Hell, weil es fröhlicher wirkt und die Kauflaune hebt. Warmes Elfenbein statt Weiß, Gold bleibt der einzige Akzent.
 
 | Token | Wert | Verwendung | Kontrast auf `--af-bg` |
 | --- | --- | --- | --- |
-| `--af-bg` | `#100e0d` | Grund | – |
-| `--af-surface` | `#181513` | Flächen | – |
-| `--af-raise` | `#201c19` | erhöhte Flächen (Menüs) | – |
-| `--af-line` | `#2c2622` | Haarlinien (dekorativ) | – |
-| `--af-field-line` | `#857a70` | Rahmen von Eingabefeldern, Pillen | 4,6:1 (≥ 3:1, WCAG 1.4.11) |
-| `--af-ink` | `#f4efe8` | Text | 16,8:1 |
-| `--af-muted` | `#a89e94` | Nebentext | 7,3:1 (AA ✓, keine Anpassung nötig) |
-| `--af-gold` | `#e0a526` | einziger Akzent | 8,8:1 (AA ✓) |
-| `--af-gold-light` / `--af-gold-deep` | `#f0c45a` / `#b9851a` | Verlauf im Namenszug | – |
-| `--af-ok` / `--af-err` | `#9fc5a2` / `#e79a8c` | Status | 10,1:1 / 8,6:1 |
+| `--af-bg` | `#fbf7f1` | Grund (Elfenbein) | – |
+| `--af-surface` | `#f5ede3` | Flächen (Sand) | – |
+| `--af-raise` | `#ffffff` | Karten, Felder, Menüs | – |
+| `--af-line` | `#e8ddd0` | Haarlinien (dekorativ) | – |
+| `--af-field-line` | `#8f7f70` | Rahmen von Eingabefeldern, Pillen | 3,6:1 (≥ 3:1, WCAG 1.4.11) |
+| `--af-ink` | `#1e1813` | Text | 16,5:1 |
+| `--af-muted` | `#685b50` | Nebentext | 6,2:1 (5,2:1 auf Sand) |
+| `--af-gold` | `#8c5e06` | Gold als **Text und Linie** (Preise, Kicker, Hover) | 5,3:1 (4,5:1 auf Champagner) |
+| `--af-gold-fill` | `#e8ae23` | Gold als **Fläche** (Buttons, Zähler, Punkte), Logo-Gold | nur mit `--af-on-gold` darauf |
+| `--af-on-gold` | `#1e1813` | Schrift auf Gold | 8,8:1 auf `--af-gold-fill` |
+| `--af-gold-light` / `--af-gold-deep` | `#f4cf72` / `#a8740f` | Verläufe, Auswahl | – |
+| `--af-champagne` / `--af-blush` | `#f8eed9` / `#f7e4d8` | warme Lichtschimmer, Flächenverläufe | – |
+| `--af-night` | `#16110d` | Hintergrund hinter den (dunkel fotografierten) Bildern | – |
+| `--af-ok` / `--af-err` | `#2e6b3c` / `#b0392a` | Status | 6,0:1 / 5,7:1 |
+| `--af-shadow-s` / `--af-shadow` / `--af-shadow-l` | warme Schatten | Karten, Panels, Bilder | – |
 
-Gold-Button: dunkle Schrift `#100e0d` auf Gold = 8,8:1. Das Logo-SVG nutzt `#E8AE23`.
+**Regel:** Gold-Fläche immer mit dunkler Schrift (`--af-on-gold`), nie helle Schrift auf Gold. Gold als Text nur über `--af-gold`.
+
+**Dunkle Inseln:** Wo Text auf einem dunklen Foto steht (Schlussbild „Der Spiegel wartet“), setzt die Klasse `.af-ondark` die Tokens lokal auf hell um (`--af-ink`, `--af-muted`, `--af-gold`, `--af-line`).
+
+**Motiv Bogen:** `.af-arch` (+ `.af-arch-frame` für die goldene Kontur) ist die Spiegelform im Hero und in der Phönix-Geschichte.
 
 ## Schrift (`src/app/fonts.ts`, selbst gehostet über next/font, OFL)
 

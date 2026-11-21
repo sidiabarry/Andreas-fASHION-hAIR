@@ -11,11 +11,14 @@ For women (and men) in Germany who are losing hair or have lost it, of every hai
 ## Delivery tier
 `cinema`. The scroll-scrubbed film is the Tier-1 mechanic. Surrounding motion is transform-only and reduced-motion gated. No smooth-scroll library: native scrolling keeps input latency at zero.
 
-## Locked palette (derived from the owner's logo, which names the gold)
+## Palette (revision 3, Nov. 2026: light “Lichtatelier”, see docs/DESIGN-TOKENS.md)
+The owner asked for a light site because it feels happier and lifts the mood to buy. Ivory ground, sand and champagne surfaces, the logo gold as the only accent (filled with dark type; deep amber `#8c5e06` when gold is text). The dark-shot photos sit in frames and arches as warm windows. The values below are the original dark palette, kept as a record.
+
+## Former palette (revision 2, dark)
 - ground `#100e0d`, surface `#181513`, raised `#201c19`, hairline `#2c2622`
 - type `#f4efe8`, muted `#a89e94`
 - single accent: phoenix gold `#e0a526` (the logo's own colour)
-The gold is the brand's existing colour, so it overrides the default palette bans. One theme: every section is dark.
+The gold is the brand's existing colour, so it overrides the default palette bans. (Revision 2: every section dark. Superseded by revision 3: light.)
 
 ## Locked type
 Geist (400 to 700, tight tracking) with Geist Mono for prices and micro labels. No serif.
