@@ -8,6 +8,7 @@ import type { Company as LegalCompany } from "@/content/legal/company-type";
 import { company } from "./company";
 import type { Company } from "./company";
 import { DELIVERY_DAYS_IN_STOCK, EU_COUNTRIES, MADE_TO_ORDER_DAYS, SHIPPING_ZONES } from "./shipping";
+import { formatIban } from "@/lib/payment";
 
 /** Hosting und Auftragsverarbeiter (für die Datenschutzerklärung). Vor dem Launch mit den AV-Verträgen abgleichen. */
 export const HOSTING = {
@@ -37,7 +38,7 @@ function hoursText(c: Company): string {
 
 export function toLegalCompany(c: Company = company): LegalCompany {
   return {
-    bank: c.bank ? { bic: c.bank.bic, holder: c.bank.holder, iban: c.bank.iban } : null,
+    bank: c.bank ? { bic: c.bank.bic, holder: c.bank.holder, iban: formatIban(c.bank.iban) } : null,
     brandName: c.brandName,
     carrier: c.shippingCarrier,
     city: c.address.city,

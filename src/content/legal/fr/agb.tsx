@@ -91,12 +91,12 @@ export default function Page({ company: c }: { company: Company }) {
           </p>
         ) : (
           <>
-            <p>Vous pouvez payer avec les modes de paiement suivants. Nous vous envoyons les informations de paiement avec la confirmation de commande.</p>
+            <p>Vous pouvez payer avec les modes de paiement suivants. Vous trouvez les informations de paiement sur la page de confirmation juste après votre commande ; nous les envoyons aussi avec la confirmation de commande.</p>
             <ul>
               {c.payments.prepayment ? (
                 <li>
-                  <strong>Paiement anticipé par virement :</strong> veuillez virer le montant total
-                  dans les 7 jours suivant la réception de la confirmation de commande. Nous expédions
+                  <strong>Paiement anticipé par virement :</strong> vous pouvez virer le montant total
+                  dès votre commande, au plus tard dans les 7 jours suivant la réception de la confirmation de commande. Nous expédions
                   après réception du paiement. À défaut de paiement malgré un rappel, nous pouvons
                   résoudre le contrat.
                 </li>

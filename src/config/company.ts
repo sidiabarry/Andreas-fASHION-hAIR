@@ -118,8 +118,9 @@ export const company: Company = {
   // Zahlungswege werden erst nach Abnahme der Seite festgelegt.
   // Vom Auftraggeber bestätigt (21.11.2026): PayPal und Vorkasse per Überweisung. Zahlungsdaten kommen mit der Auftragsbestätigung.
   paymentMethods: ["paypal", "ueberweisung"],
-  // Unbekannt; erst nötig, wenn Überweisung angeboten wird.
-  bank: null,
+  // Vom Auftraggeber angegeben (21.11.2026): Konto der Inhaberin. Prüfziffer geprüft (ISO 13616, mod 97).
+  // BIC wird für SEPA-Überweisungen im Inland/EWR nicht benötigt und bleibt deshalb leer.
+  bank: { bankName: "", bic: "", holder: "Andreia Pereira Da Costa", iban: "DE22370605900002436798" },
   // Unbekannt; erst nötig, wenn PayPal angeboten wird.
   paypal: null,
   // Vom Auftraggeber als belegbar bestätigt (11/2026); die Live-Seite führt die Zeile im Footer.

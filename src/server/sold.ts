@@ -1,10 +1,15 @@
 import "server-only";
 
+import { store } from "./db";
 import { siteMode } from "./mode";
-import { memoryStore } from "./store-memory";
 
-/** Verkaufte/reservierte Einzelstücke. Production ohne Datenbank: nur der Katalog-Status. */
+/** Verkaufte/reservierte Einzelstücke. Livebetrieb ohne Datenbank: nur der Katalog-Status. */
 export async function soldSlugs(): Promise<Set<string>> {
-  if (!siteMode().demo) return new Set();
-  return memoryStore().soldSlugs();
+  const mode = siteMode();
+  if (!mode.demo && !mode.checkoutOpen) return new Set();
+  try {
+    return await store().soldSlugs();
+  } catch {
+    return new Set();
+  }
 }

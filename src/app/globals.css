@@ -642,8 +642,19 @@ html[data-motion="paused"] .af-ui-loading { animation-play-state: paused; }
 
 /* Seitenübergang (View Transitions API): alte Seite verglüht warm, neue steigt auf.
  * Greift, sobald die Plattform Übergänge aktiviert (siehe Übergabenotiz home-overhaul). */
-::view-transition-old(.af-page) { animation: af-fx-vt-out 0.45s var(--af-ease-in-out) both; }
-::view-transition-new(.af-page) { animation: af-fx-vt-in 0.7s var(--af-ease) both; }
+/* Seitenwechsel „Lichtöffnung“: Die neue Seite öffnet sich als weicher Lichtkreis vom Klickpunkt aus
+ * (--vt-x/--vt-y setzt VtOrigin.tsx), die alte verglüht warm. Weiche Kante über eine animierte Maske. */
+@property --vt-r { syntax: "<length>"; inherits: false; initial-value: 0px; }
+::view-transition-group(.af-page) { animation-duration: 0.8s; }
+::view-transition-old(.af-page) { animation: af-vt-glow-out 0.8s var(--af-ease-in-out) both; }
+::view-transition-new(.af-page) {
+  --vt-edge: 140px;
+  -webkit-mask-image: radial-gradient(circle at var(--vt-x, 50%) var(--vt-y, 40%), #000 calc(var(--vt-r) - var(--vt-edge)), rgba(0, 0, 0, 0.6) calc(var(--vt-r) - var(--vt-edge) * 0.5), transparent var(--vt-r));
+  mask-image: radial-gradient(circle at var(--vt-x, 50%) var(--vt-y, 40%), #000 calc(var(--vt-r) - var(--vt-edge)), rgba(0, 0, 0, 0.6) calc(var(--vt-r) - var(--vt-edge) * 0.5), transparent var(--vt-r));
+  animation: af-vt-bloom 0.8s var(--af-ease-in-out) both;
+}
+@keyframes af-vt-bloom { from { --vt-r: 0px; filter: brightness(1.12) saturate(1.08); } to { --vt-r: 160vmax; filter: none; } }
+@keyframes af-vt-glow-out { to { opacity: 0; transform: scale(0.985); filter: blur(6px) brightness(1.1) sepia(0.35); } }
 @keyframes af-fx-vt-out { to { opacity: 0; filter: blur(6px) brightness(1.3) sepia(0.5); transform: scale(1.01); } }
 @keyframes af-fx-vt-in { from { opacity: 0; transform: translateY(14px); } }
 @media (prefers-reduced-motion: reduce) { ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; } }
@@ -1084,3 +1095,35 @@ html[data-motion="paused"] .af-hx__dot { animation: none; }
 /* ---------- WhatsApp- und Merk-Knopf: auch zweizeilig sauber ---------- */
 .af-wish, .af-chip { background: var(--af-raise); line-height: 1.35; }
 .af-chip { border-radius: 18px; padding-block: 10px; }
+
+/* ---------- Überweisung per GiroCode (Bestellbestätigung) ---------- */
+.af-pay { position: relative; margin-top: 36px; padding: clamp(22px, 4vw, 44px); border-radius: var(--af-radius-xl); background: radial-gradient(90% 70% at 100% 0%, rgba(244, 207, 114, 0.35), transparent 60%), linear-gradient(165deg, #fffdf9, var(--af-cream)); border: 1px solid var(--af-line); box-shadow: var(--af-shadow); overflow: hidden; isolation: isolate; }
+.af-pay__head { display: grid; gap: 12px; max-width: 56ch; }
+.af-pay__head .af-mono { color: var(--af-gold); }
+.af-pay__head .af-h2 { font-size: clamp(1.7rem, 3.4vw, 2.6rem); }
+.af-pay__grid { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(20px, 4vw, 48px); align-items: start; margin-top: 28px; }
+.af-pay__qr { margin: 0; display: grid; gap: 16px; justify-items: center; text-align: center; }
+.af-pay__code { position: relative; width: min(100%, 248px); aspect-ratio: 1; padding: 18px; border-radius: 22px; background: #fff; box-shadow: 0 0 0 1px var(--af-line), 0 24px 50px -28px rgba(74, 52, 28, 0.55); }
+.af-pay__code::before, .af-pay__code::after { content: ""; position: absolute; width: 26px; height: 26px; border: 2px solid var(--af-gold-fill); pointer-events: none; }
+.af-pay__code::before { left: 8px; top: 8px; border-right: 0; border-bottom: 0; border-top-left-radius: 10px; }
+.af-pay__code::after { right: 8px; bottom: 8px; border-left: 0; border-top: 0; border-bottom-right-radius: 10px; }
+.af-pay__code svg { display: block; width: 100%; height: 100%; }
+.af-pay__qr figcaption { display: grid; gap: 8px; justify-items: center; }
+.af-pay__amount { font-family: var(--af-mono); font-size: 1.25rem; font-weight: 600; color: var(--af-ink); letter-spacing: 0.02em; }
+.af-pay__fields { display: grid; gap: 10px; margin: 0; }
+.af-pay__field { display: grid; grid-template-columns: minmax(0, 1fr); gap: 4px; padding: 12px 12px 12px 16px; border-radius: 14px; background: var(--af-raise); border: 1px solid var(--af-line); }
+.af-pay__field dt { font-family: var(--af-mono); font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--af-muted); }
+.af-pay__field dd { margin: 0; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.af-pay__value { font-size: 1.02rem; font-weight: 550; letter-spacing: 0.01em; word-break: break-word; user-select: all; }
+.af-pay__copy { flex: none; display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--af-field-line); background: var(--af-raise); color: var(--af-ink); font-size: 0.84rem; font-weight: 550; transition: background 0.3s var(--af-ease), border-color 0.3s var(--af-ease), color 0.3s var(--af-ease), transform 0.3s var(--af-ease); }
+.af-pay__copy:hover { border-color: var(--af-ink); }
+.af-pay__copy:active { transform: scale(0.96); }
+.af-pay__copy[data-done="true"] { background: var(--af-gold-fill); border-color: var(--af-gold-fill); color: var(--af-on-gold); }
+.af-pay__notes { display: grid; gap: 8px; margin: 26px 0 0; padding: 18px 0 0; list-style: none; border-top: 1px solid var(--af-line); color: var(--af-muted); font-size: 0.92rem; }
+.af-pay__notes li { position: relative; padding-left: 20px; }
+.af-pay__notes li::before { content: ""; position: absolute; left: 2px; top: 0.6em; width: 8px; height: 8px; border-radius: 50%; background: var(--af-gold-fill); }
+@media (max-width: 720px) {
+  .af-pay__grid { grid-template-columns: 1fr; }
+  .af-pay__code { width: min(78%, 240px); }
+}
+@media print { .af-pay { box-shadow: none; background: #fff; } .af-pay__copy, .af-pay__qr a { display: none; } }

@@ -62,7 +62,7 @@ export default function Page({ company: c }: { company: Company }) {
 
       <section>
         <h2 id="zahlungsarten">3. Formas de pago</h2>
-        <p>Tras su pedido comprobamos personalmente la disponibilidad y le enviamos una confirmación del pedido con los datos de pago. Solo paga después de que hayamos aceptado su pedido.</p>
+        <p>Tras su pedido comprobamos personalmente la disponibilidad y le enviamos una confirmación del pedido con los datos de pago. Puede pagar justo después del pedido o tras nuestra confirmación. Si una pieza no está disponible, le reembolsamos sin demora cualquier pago ya realizado.</p>
         {!anyPayment(c) ? (
           <p>
             <Missing field="payments" label="forma de pago pendiente de definir" />
@@ -71,7 +71,7 @@ export default function Page({ company: c }: { company: Company }) {
           <ul>
             {c.payments.prepayment ? (
               <li>
-                <strong>Pago anticipado por transferencia</strong> – en un plazo de 7 días desde la
+                <strong>Pago anticipado por transferencia</strong> – justo después del pedido, a más tardar 7 días tras la
                 confirmación del pedido; envío tras recibir el pago.
                 {c.bank ? (
                   <>

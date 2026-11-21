@@ -4,10 +4,10 @@ import type { PricedLine } from "@/lib/order";
 import type { InquiryTopic } from "@/lib/validation";
 
 /**
- * Persistenz-Schnittstelle. Derzeit gibt es nur den In-Memory-Demo-Store (store-memory.ts).
- * Eine Postgres/Supabase-Umsetzung ist vorbereitet (supabase/migrations/0001_init.sql), aber
- * bewusst nicht verdrahtet. Wer sie anschließt, implementiert genau diese Schnittstelle; der
- * Doppelverkauf-Schutz muss dann in der Datenbank atomar sein (Unique-Constraint auf dem Stück).
+ * Persistenz-Schnittstelle. Demo/Entwicklung: In-Memory-Store (store-memory.ts). Livebetrieb:
+ * Supabase/Postgres (store-supabase.ts, Schema supabase/migrations/0001_init.sql), sobald
+ * SUPABASE_URL und SUPABASE_SERVICE_ROLE_KEY gesetzt sind. Auswahl: store() in db.ts.
+ * Der Doppelverkauf-Schutz ist in beiden atomar (in der Datenbank: Primärschlüssel auf dem Stück).
  */
 
 export type OrderStatus = "eingegangen" | "bestaetigt" | "versendet" | "storniert";
@@ -68,7 +68,7 @@ export type WithdrawalRecord = {
 };
 
 export interface Store {
-  readonly kind: "memory";
+  readonly kind: "memory" | "supabase";
   /** Alle reservierten/verkauften Einzelstücke (Slugs). */
   soldSlugs(): Promise<Set<string>>;
   /**

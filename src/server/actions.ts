@@ -10,6 +10,7 @@ import { getProduct, productText } from "@/data/catalog";
 import { isLocale } from "@/i18n/locales";
 import type { Locale } from "@/i18n/locales";
 import { formatPrice } from "@/lib/money";
+import { formatIban } from "@/lib/payment";
 import { priceOrder } from "@/lib/order";
 import {
   checkoutSchema,
@@ -24,7 +25,7 @@ import { fillTemplate, ownerAddress, sendMail } from "./mail";
 import { siteMode } from "./mode";
 import { clientIp, hashIp, hashToken, newOrderId, newToken } from "./security";
 import type { MailStatus } from "./store";
-import { memoryStore } from "./store-memory";
+import { store as getStore } from "./db";
 
 const WINDOW = 10 * 60 * 1000;
 
@@ -37,7 +38,7 @@ async function requestInfo() {
 }
 
 async function allowed(scope: string, ipHash: string, limit = 5): Promise<boolean> {
-  return memoryStore().hit(`${scope}:${ipHash}`, limit, WINDOW);
+  return getStore().hit(`${scope}:${ipHash}`, limit, WINDOW);
 }
 
 const safeLocale = (value: unknown): Locale => (isLocale(value) ? value : "de");
@@ -81,14 +82,16 @@ export async function placeOrder(rawLocale: string, raw: unknown): Promise<Place
   const texts = germanLegal.checkoutTextsFor(toLegalCompany());
   const localLegal = legalFor(locale);
   const localTexts = localLegal.translated ? localLegal.checkoutTextsFor(toLegalCompany()) : null;
-  // Pflicht-Checkboxen laut Rechtstexten: nur die AGB (siehe checkout-texts.ts).
-  if (input.consents.agb !== true) return { error: "invalid", fields: { agb: "consent" }, ok: false };
+  // AGB: Einbeziehung durch deutlichen Hinweis direkt über dem Bestellknopf (§ 305 Abs. 2 BGB); kein Pflicht-Häkchen,
+  // damit der Kauf keinen unnötigen Schritt hat.
 
   const { ipHash, origin } = await requestInfo();
   if (!(await allowed("order", ipHash))) return { error: "rate", ok: false };
 
-  const store = memoryStore();
-  const priced = priceOrder(input.items, input.country, await store.soldSlugs());
+  const store = getStore();
+  const taken = await store.soldSlugs().catch(() => null);
+  if (!taken) return { error: "failed", ok: false };
+  const priced = priceOrder(input.items, input.country, taken);
   if (!priced.ok) {
     if (priced.error.code === "sold") return { error: "sold", ok: false, soldSlugs: priced.error.slugs };
     if (priced.error.code === "country") return { error: "country", fields: { country: "country" }, ok: false };
@@ -96,7 +99,8 @@ export async function placeOrder(rawLocale: string, raw: unknown): Promise<Place
   }
 
   const token = newToken();
-  const result = await store.placeOrder({
+  const result = await store
+    .placeOrder({
     customer: {
       city: input.city,
       country: input.country,
@@ -115,7 +119,9 @@ export async function placeOrder(rawLocale: string, raw: unknown): Promise<Place
     subtotalCents: priced.order.subtotalCents,
     tokenHash: hashToken(token),
     totalCents: priced.order.totalCents,
-  });
+    })
+    .catch(() => null);
+  if (!result) return { error: "failed", ok: false };
   if (!result.ok) return { error: "sold", ok: false, soldSlugs: result.slugs };
   if (result.duplicate) {
     // Doppelte Absendung: Der ursprüngliche Zugriffsschlüssel ist nur dem ersten Aufruf bekannt.
@@ -169,13 +175,25 @@ export async function placeOrder(rawLocale: string, raw: unknown): Promise<Place
           "",
         ].join("\n");
 
+  // Zahlungsangaben direkt in die Eingangsbestätigung: gleich bezahlen oder nach Andreas Bestätigung
+  const tp = await getTranslations({ locale, namespace: "pay" });
+  const payBlock = company.bank
+    ? [
+        tp("mailTitle"),
+        `${tp("holder")}: ${company.bank.holder}`,
+        `${tp("iban")}: ${formatIban(company.bank.iban)}`,
+        `${tp("amount")}: ${formatPrice(order.totalCents, locale)}`,
+        `${tp("reference")}: ${order.id}`,
+        tp("mailQr", { url: link }),
+      ].join("\n")
+    : "";
   let mailCustomer: MailStatus = "nicht_konfiguriert";
   let mailOwner: MailStatus = "nicht_konfiguriert";
   if (mode.mail) {
     mailCustomer = await sendMail({
       replyTo: company.email,
       subject: fillTemplate(texts.mail.orderReceived.subject, values),
-      text: `${localized}${german}\n\n${t("orderLink", { url: link })}\n${t("orderWithdraw", { url: withdrawLink })}`,
+      text: `${localized}${german}\n\n${payBlock}\n\n${t("orderLink", { url: link })}\n${t("orderWithdraw", { url: withdrawLink })}`,
       to: order.customer.email,
     });
     const owner = ownerAddress();
@@ -261,8 +279,9 @@ export async function sendInquiry(_prev: FormState, data: FormData): Promise<For
     .map((product) => `- ${product.name}, ${product.subtitle} (${product.slug}): ${formatPrice(product.priceCents)}`);
 
   const now = new Date();
-  if (mode.demo) {
-    await memoryStore().saveInquiry({
+  // Demo: im Speicher; Livebetrieb mit Datenbank: dauerhaft (Fehler dort blockieren den Mailversand nie)
+  if (mode.demo || getStore().kind === "supabase") {
+    await getStore().saveInquiry({
       createdAt: now.toISOString(),
       email: input.email,
       id: newOrderId("AN"),
@@ -271,7 +290,7 @@ export async function sendInquiry(_prev: FormState, data: FormData): Promise<For
       phone: input.phone,
       product: input.product,
       topic: input.topic,
-    });
+    }).catch(() => undefined);
   }
   const owner = ownerAddress();
   if (mode.mail && owner) {
@@ -345,8 +364,8 @@ export async function sendWithdrawal(_prev: FormState, data: FormData): Promise<
     .filter(Boolean)
     .join("\n");
 
-  if (mode.demo) {
-    await memoryStore().saveWithdrawal({
+  if (mode.demo || getStore().kind === "supabase") {
+    await getStore().saveWithdrawal({
       email: input.email,
       id: newOrderId("WI"),
       items: input.items,
@@ -354,7 +373,7 @@ export async function sendWithdrawal(_prev: FormState, data: FormData): Promise<
       orderDate: input.orderDate,
       orderNumber: input.orderNumber,
       receivedAt: receivedAt.toISOString(),
-    });
+    }).catch(() => undefined);
   }
 
   let mail: MailStatus = "nicht_konfiguriert";
@@ -419,6 +438,6 @@ export async function subscribeNewsletter(_prev: FormState, data: FormData): Pro
   }
   const { ipHash } = await requestInfo();
   if (!(await allowed("newsletter", ipHash))) return { error: "rate", status: "error" };
-  await memoryStore().saveSubscriber(parsed.data.email);
+  await getStore().saveSubscriber(parsed.data.email);
   return { demo: true, status: "ok" };
 }

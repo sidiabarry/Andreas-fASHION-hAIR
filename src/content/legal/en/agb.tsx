@@ -93,12 +93,12 @@ export default function Page({ company: c }: { company: Company }) {
           </p>
         ) : (
           <>
-            <p>You can pay with the following payment methods. We send you the payment details with the order confirmation.</p>
+            <p>You can pay with the following payment methods. You will find the payment details on the order confirmation page right after ordering; we also send them with the order confirmation.</p>
             <ul>
               {c.payments.prepayment ? (
                 <li>
-                  <strong>Advance payment by bank transfer:</strong> Please transfer the total amount
-                  within 7 days of receiving the order confirmation. We ship the goods once payment
+                  <strong>Advance payment by bank transfer:</strong> You can transfer the total amount right after
+                  ordering, at the latest within 7 days of receiving the order confirmation. We ship the goods once payment
                   has been received. If payment is not received despite a reminder, we may withdraw
                   from the contract.
                 </li>

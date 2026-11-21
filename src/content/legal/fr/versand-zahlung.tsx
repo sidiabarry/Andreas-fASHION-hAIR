@@ -62,7 +62,7 @@ export default function Page({ company: c }: { company: Company }) {
 
       <section>
         <h2 id="zahlungsarten">3. Modes de paiement</h2>
-        <p>Après votre commande, nous vérifions personnellement la disponibilité et vous envoyons une confirmation de commande avec les informations de paiement. Vous ne payez qu'après acceptation de votre commande.</p>
+        <p>Après votre commande, nous vérifions personnellement la disponibilité et vous envoyons une confirmation de commande avec les informations de paiement. Vous pouvez payer dès votre commande ou après notre confirmation. Si une pièce n'est pas disponible, nous remboursons sans délai tout paiement déjà effectué.</p>
         {!anyPayment(c) ? (
           <p>
             <Missing field="payments" label="mode de paiement à définir" />
@@ -71,7 +71,7 @@ export default function Page({ company: c }: { company: Company }) {
           <ul>
             {c.payments.prepayment ? (
               <li>
-                <strong>Paiement anticipé par virement</strong> – payable dans les 7 jours suivant la
+                <strong>Paiement anticipé par virement</strong> – payable dès la commande, au plus tard 7 jours après la
                 confirmation de commande ; expédition après réception du paiement.
                 {c.bank ? (
                   <>

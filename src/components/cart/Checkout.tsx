@@ -69,7 +69,6 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
   const cart = useCart();
   const [values, setValues] = useState<Values>(EMPTY);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [agb, setAgb] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
   const [pending, startTransition] = useTransition();
   const [meta, setMeta] = useState<{ key: string; startedAt: number } | null>(() => ({ key: crypto.randomUUID(), startedAt: Date.now() }));
@@ -111,7 +110,6 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
   const submit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const found = validate(values);
-    if (!agb) found.agb = "consent";
     setErrors(found);
     if (Object.keys(found).length) {
       setMessage(t("errors.summary", { count: Object.keys(found).length }));
@@ -124,7 +122,7 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
     startTransition(async () => {
       const result = await placeOrder(locale, {
         ...values,
-        consents: { agb },
+        consents: {},
         idempotencyKey: meta.key,
         items: cart.lines,
         startedAt: meta.startedAt,
@@ -300,28 +298,7 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
           ) : null}
           <fieldset className="af-fieldset">
             <legend className="af-sr">{t("checkout.consentsLegend")}</legend>
-            <div className="af-check">
-              <input
-                aria-describedby={errors.agb ? "agb-error" : undefined}
-                aria-invalid={errors.agb ? true : undefined}
-                checked={agb}
-                className="af-ui-check"
-                id="agb"
-                name="agb"
-                onChange={(event) => {
-                  setAgb(event.target.checked);
-                  if (event.target.checked && errors.agb) setErrors((current) => Object.fromEntries(Object.entries(current).filter(([k]) => k !== "agb")));
-                }}
-                required
-                type="checkbox"
-              />
-              <label htmlFor="agb">{linked(legal.agbConsent, legal.links)}</label>
-            </div>
-            {errors.agb ? (
-              <p className="af-field__error" id="agb-error">
-                {t(`errors.${errors.agb}`)}
-              </p>
-            ) : null}
+            <p className="af-note">{linked(t.raw("checkout.agbNotice") as string, legal.links)}</p>
             <p className="af-note">{linked(legal.withdrawalNote, legal.links)}</p>
             <p className="af-note">{linked(legal.privacyNote, legal.links)}</p>
           </fieldset>

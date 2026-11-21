@@ -33,7 +33,8 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
     buyButton: "Zahlungspflichtig bestellen",
 
     /**
-     * Empfehlung: nur `agb` als Pflicht-Checkbox. `widerruf` und `datenschutz` als Hinweistext
+     * Stand 21.11.2026: keine Pflicht-Checkbox mehr; AGB per Hinweis über dem Bestellknopf (checkout.agbNotice).
+     * Früher: nur `agb` als Pflicht-Checkbox. `widerruf` und `datenschutz` als Hinweistext
      * ohne Checkbox direkt über der Schaltfläche (eine Pflicht-„Einwilligung“ in die
      * Datenschutzerklärung ist rechtlich nicht nötig und kann irreführen) – siehe COMPLIANCE.md.
      */
@@ -56,12 +57,12 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
       vatNote,
       shipNote,
       `Lieferzeit: lagernde Stücke innerhalb Deutschlands ${delivery} Werktage (bei Vorkasse/PayPal ab Zahlungseingang); Ausland: Angabe vor Vertragsschluss. Maßanfertigungen: siehe Produktseite.`,
-      "Viele Stücke sind Einzelstücke. Wir prüfen die Verfügbarkeit persönlich; der Vertrag kommt erst mit unserer Auftragsbestätigung per E-Mail zustande. Sie zahlen erst danach.",
+      "Viele Stücke sind Einzelstücke. Wir prüfen die Verfügbarkeit persönlich; der Vertrag kommt erst mit unserer Auftragsbestätigung per E-Mail zustande. Bezahlen können Sie gleich nach dem Absenden oder nach der Auftragsbestätigung.",
       "Maßanfertigungen sind vom Widerrufsrecht ausgeschlossen.",
     ],
 
     confirmationNotice:
-      "Vielen Dank, {name}! Ihre Bestellung {orderNo} ist bei uns eingegangen. Mit dem Absenden haben Sie ein verbindliches Kaufangebot abgegeben. Wir prüfen jetzt persönlich, ob Ihr Stück verfügbar ist, und melden uns innerhalb von drei Werktagen per E-Mail. Der Kaufvertrag kommt zustande, sobald wir Ihre Bestellung mit dieser Auftragsbestätigung annehmen; darin erhalten Sie auch die Zahlungsdaten. Bitte zahlen Sie erst danach. Eine Eingangsbestätigung haben wir Ihnen soeben per E-Mail geschickt.",
+      "Vielen Dank, {name}! Ihre Bestellung {orderNo} ist bei uns eingegangen. Mit dem Absenden haben Sie ein verbindliches Kaufangebot abgegeben. Wir prüfen jetzt persönlich, ob Ihr Stück verfügbar ist, und melden uns innerhalb von drei Werktagen per E-Mail. Der Kaufvertrag kommt zustande, sobald wir Ihre Bestellung mit unserer Auftragsbestätigung annehmen. Sie können gleich hier bezahlen oder nach der Auftragsbestätigung; ist Ihr Stück wider Erwarten nicht verfügbar, erstatten wir bereits gezahlte Beträge unverzüglich. Eine Eingangsbestätigung haben wir Ihnen soeben per E-Mail geschickt.",
 
     /** § 356a Abs. 1 BGB */
     withdrawalButtonLabel: "Vertrag widerrufen",
@@ -87,7 +88,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
           "Gesamtbetrag: {total}",
           "Lieferanschrift: {shippingAddress}",
           "",
-          "Wir prüfen persönlich, ob Ihr Stück verfügbar ist, und melden uns innerhalb von drei Werktagen. Mit unserer Auftragsbestätigung kommt der Kaufvertrag zustande; darin finden Sie auch die Zahlungsdaten. Bitte zahlen Sie erst danach.",
+          "Wir prüfen persönlich, ob Ihr Stück verfügbar ist, und melden uns innerhalb von drei Werktagen. Mit unserer Auftragsbestätigung kommt der Kaufvertrag zustande. Sie können schon jetzt per Überweisung bezahlen (Zahlungsdaten und QR-Code auf Ihrer Bestellbestätigung) oder nach unserer Auftragsbestätigung. Ist Ihr Stück wider Erwarten nicht verfügbar, erstatten wir bereits gezahlte Beträge unverzüglich.",
           "",
           "Herzliche Grüße",
           "{brand}",

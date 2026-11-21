@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { legalFor } from "@/content/legal-registry";
 
 import { Arrow } from "@/components/Arrow";
+import { BankTransfer } from "@/components/cart/BankTransfer";
 import { Logo } from "@/components/Logo";
 import { toLegalCompany } from "@/config/legal-company";
 import { getProduct, productText } from "@/data/catalog";
@@ -13,7 +14,7 @@ import { pageMetadata } from "@/lib/seo";
 import { fillTemplate } from "@/server/mail";
 import { siteMode } from "@/server/mode";
 import { tokenMatches } from "@/server/security";
-import { memoryStore } from "@/server/store-memory";
+import { store } from "@/server/db";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/bestellung/[id]">): Promise<Metadata> {
   const { locale, id } = await params;
@@ -29,7 +30,7 @@ export default async function OrderPage({ params, searchParams }: PageProps<"/[l
   const t = await getTranslations({ locale });
   const mode = siteMode();
 
-  const order = mode.demo && /^AF-[A-Z0-9]{6}$/.test(id) ? await memoryStore().getOrder(id) : null;
+  const order = (mode.demo || mode.checkoutOpen) && /^AF-[A-Z0-9]{6}$/.test(id) ? await store().getOrder(id).catch(() => null) : null;
   const valid = order && typeof code === "string" && code.length > 20 && tokenMatches(code, order.tokenHash);
 
   if (!order || !valid) {
@@ -67,6 +68,8 @@ export default async function OrderPage({ params, searchParams }: PageProps<"/[l
         <p className="af-msg" data-kind={order.mailCustomer === "gesendet" ? "ok" : "info"} role="status" style={{ marginTop: 22 }}>
           {order.mailCustomer === "gesendet" ? t("order.mailSent") : t("order.mailNotSent")}
         </p>
+
+        <BankTransfer locale={locale} orderId={order.id} totalCents={order.totalCents} />
 
         <section aria-label={t("checkout.items")} className="af-sum" style={{ marginTop: 36, position: "static" }}>
           {order.lines.map((line) => {

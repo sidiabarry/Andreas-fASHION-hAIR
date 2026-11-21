@@ -51,7 +51,7 @@
     "line1": "Como *volver a nacer.*",
     "line2": "Más largo. *Más volumen.*",
     "line3": "Más *usted.*",
-    "lead": "Hechos a mano por Andrea en Iserlohn: extensiones de cabello natural, toppers, pelucas y piezas a medida. Con asesoramiento personal sobre color y cantidad.",
+    "lead": "Hechos a mano por Andrea en Iserlohn con cabello natural fino de Vietnam: extensiones, toppers, pelucas y piezas a medida. Con asesoramiento personal sobre color y cantidad.",
     "chapters": "Capítulos de la película",
     "ch1": "Brasa",
     "ch2": "Fénix",
@@ -85,11 +85,11 @@
     "ribbonLabel": "Lo que puede esperar",
     "ribbon": [
       "Hecho a mano en Iserlohn",
-      "Cabello natural",
+      "Cabello natural fino de Vietnam",
       "Oficio aprendido en Río de Janeiro",
       "Seis métodos de extensiones",
       "Asesoramiento personal",
-      "Pago solo tras la confirmación",
+      "Pago con código QR en su app bancaria",
       "Envío con {carrier}, también al extranjero",
       "Pieza a medida en {custom} días laborables"
     ],
@@ -274,7 +274,7 @@
         },
         {
           "title": "Andrea confirma personalmente",
-          "text": "Ella revisa su pedido una vez más y se pone en contacto con usted. Solo después paga."
+          "text": "Ella revisa su pedido una vez más y se pone en contacto con usted. Puede pagar enseguida con código QR o tras su confirmación."
         },
         {
           "title": "La llegada",
@@ -482,7 +482,7 @@
     "deliveryTimeEu": "Normalmente de {from} a {to} días laborables tras la confirmación de Andrea, envío con {carrier}. A otros países de la UE puede tardar unos días más.",
     "deliveryCustom": "Las piezas a medida necesitan de {mFrom} a {mTo} días laborables.",
     "payment": "Pago",
-    "paymentText": "Ahora no se cobra nada. Andrea confirma su pedido personalmente por correo electrónico y le indica en él cómo pagar.",
+    "paymentText": "No se carga nada automáticamente. Tras enviar, paga por transferencia con un código QR en su app bancaria, enseguida o tras la confirmación de Andrea. PayPal si lo desea.",
     "total": "Total",
     "shippingFree": "gratis",
     "consentsLegend": "Conformidad",
@@ -491,13 +491,14 @@
     "failed": "No se ha podido enviar su pedido. Inténtelo de nuevo o contáctenos por teléfono o correo electrónico.",
     "rateLimited": "Demasiados intentos en poco tiempo. Espere unos minutos.",
     "closed": "La caja en línea está cerrada por el momento. Envíe su selección como consulta.",
-    "emptyCart": "Su cesta está vacía."
+    "emptyCart": "Su cesta está vacía.",
+    "agbNotice": "A su pedido se aplican nuestras {agb}."
   },
   "order": {
     "metaTitle": "Su pedido",
     "number": "Número de pedido {id}",
     "thanks": "Gracias, {name}. Hemos recibido su pedido.",
-    "lead": "Andrea revisará ahora su pieza a mano una vez más y le escribirá a {email}. Hasta entonces, no tiene que hacer ni pagar nada.",
+    "lead": "Andrea revisa ahora su pieza una vez más a mano y le escribirá a {email}. Puede pagar aquí mismo o tras su confirmación.",
     "mailSent": "El acuse de recibo va de camino a su correo electrónico.",
     "mailNotSent": "No se ha podido enviar el acuse de recibo por correo electrónico en este momento. Su pedido está guardado igualmente; Andrea se pondrá en contacto con usted.",
     "notFound": "No encontramos este pedido.",
@@ -634,7 +635,7 @@
       },
       {
         "title": "Confirmado personalmente",
-        "text": "Usted paga solo cuando Andrea ha revisado y confirmado su pedido."
+        "text": "Paga enseguida con código QR o solo cuando Andrea haya revisado y confirmado su pedido."
       },
       {
         "title": "A medida, cuando hace falta",
@@ -829,7 +830,7 @@
     "delivery": "Plazo de entrega de piezas en stock: de {from} a {to} días laborables con {carrier}; piezas a medida, de {mFrom} a {mTo} días laborables.",
     "contact": "Su persona de contacto: Andrea, teléfono <tel>{phone}</tel>",
     "atelier": "Taller en {city}, asesoramiento con cita previa",
-    "payLater": "Solo paga cuando Andrea ha confirmado personalmente su pedido.",
+    "payLater": "Usted decide cuándo pagar: enseguida con código QR o tras la confirmación personal de Andrea. Si una pieza no está disponible, le devolvemos el dinero sin demora.",
     "world": "Envíos a todo el mundo: para países fuera de la UE le indicamos los gastos de envío antes de confirmar. Allí pueden aplicarse aranceles e impuestos de importación."
   },
   "objections": {
@@ -847,7 +848,7 @@
     "returnQ": "¿Y si no me queda bien?",
     "returnA": "Tiene 14 días de desistimiento desde la recepción. Lo demás figura en la información sobre desistimiento.",
     "payQ": "¿Cuándo pago?",
-    "payA": "No al enviar el pedido. Andrea confirma primero su pieza personalmente y después le indica cómo pagar.",
+    "payA": "Cuando quiera: justo después del pedido con código QR en su app bancaria, o tras la confirmación personal de Andrea. No se carga nada automáticamente. Si una pieza no está disponible, le devolvemos el dinero sin demora.",
     "packQ": "¿Cuántos paquetes necesito?",
     "packA": "Andrea le dice personalmente cuántos paquetes encajan con su cabello y su deseo, lo más fácil por WhatsApp."
   },
@@ -1009,5 +1010,25 @@
       "lockig": "Rizado",
       "unsure": "Todavía no lo sé"
     }
+  },
+  "pay": {
+    "kicker": "Pago por transferencia",
+    "title": "Pague sin teclear nada.",
+    "lead": "Abra su app bancaria, escanee el código y confirme. Beneficiaria, importe y concepto ya están rellenados.",
+    "scanLabel": "GiroCode para su app bancaria, importe {amount}",
+    "save": "Guardar código",
+    "saveHint": "En el móvil: guarde el código y ábralo en su app bancaria (transferencia por foto).",
+    "holder": "Beneficiaria",
+    "iban": "IBAN",
+    "amount": "Importe",
+    "reference": "Concepto",
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "copyLabel": "Copiar {label}",
+    "instant": "Con una transferencia inmediata el dinero suele llegar a Andrea en segundos.",
+    "when": "Puede pagar ahora o tras la confirmación de Andrea. Si una pieza no está disponible, le devolvemos el dinero sin demora.",
+    "paypal": "¿Prefiere PayPal? Responda sin más al correo de Andrea.",
+    "mailTitle": "Cómo pagar (ahora o tras la confirmación de Andrea):",
+    "mailQr": "Código QR para su app bancaria: {url}"
   }
 }

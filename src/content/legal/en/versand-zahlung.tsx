@@ -64,7 +64,7 @@ export default function Page({ company: c }: { company: Company }) {
         <h2 id="zahlungsarten">3. Payment methods</h2>
         <p>
           After your order we personally check availability and send you an order confirmation with
-          the payment details. You only pay after we have accepted your order.
+          the payment details. You can pay right after ordering or after our order confirmation. If a piece is not available, we refund any payment without delay.
         </p>
         {!anyPayment(c) ? (
           <p>
@@ -74,7 +74,7 @@ export default function Page({ company: c }: { company: Company }) {
           <ul>
             {c.payments.prepayment ? (
               <li>
-                <strong>Advance payment by bank transfer</strong> – payable within 7 days of the order
+                <strong>Advance payment by bank transfer</strong> – payable right after ordering, at the latest 7 days after the order
                 confirmation; shipping after receipt of payment.
                 {c.bank ? (
                   <>

@@ -77,10 +77,10 @@ export default function Page({ company: c }: { company: Company }) {
           </p>
         ) : (
           <>
-            <p>Puede pagar con las siguientes formas de pago. Le enviamos los datos de pago con la confirmación del pedido.</p>
+            <p>Puede pagar con las siguientes formas de pago. Encontrará los datos de pago en la página de confirmación justo después de su pedido; también se los enviamos con la confirmación del pedido.</p>
             <ul>
               {c.payments.prepayment ? (
-                <li><strong>Pago anticipado por transferencia:</strong> transfiera el importe total en un plazo de 7 días desde la recepción de la confirmación del pedido. Enviamos la mercancía tras recibir el pago. Si el pago no se recibe pese a un recordatorio, podemos resolver el contrato.</li>
+                <li><strong>Pago anticipado por transferencia:</strong> puede transferir el importe total justo después de su pedido, a más tardar en un plazo de 7 días desde la recepción de la confirmación del pedido. Enviamos la mercancía tras recibir el pago. Si el pago no se recibe pese a un recordatorio, podemos resolver el contrato.</li>
               ) : null}
               {c.payments.paypal ? (
                 <li><strong>PayPal:</strong> tras la confirmación del pedido recibe una solicitud de pago de PayPal. Pague en un plazo de 7 días. Se aplican además las condiciones de PayPal. Enviamos tras recibir el pago.</li>

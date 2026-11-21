@@ -51,7 +51,7 @@
     "line1": "Wie neu *geboren.*",
     "line2": "Mehr Länge. *Mehr Fülle.*",
     "line3": "Mehr *Sie selbst.*",
-    "lead": "Handgefertigt von Andrea in Iserlohn: Echthaar-Extensions, Topper, Perücken und Maßanfertigungen. Mit persönlicher Beratung zu Farbe und Menge.",
+    "lead": "Handgefertigt von Andrea in Iserlohn, aus feinem Echthaar aus Vietnam: Extensions, Topper, Perücken und Maßanfertigungen. Mit persönlicher Beratung zu Farbe und Menge.",
     "chapters": "Kapitel des Films",
     "ch1": "Glut",
     "ch2": "Phönix",
@@ -85,11 +85,11 @@
     "ribbonLabel": "Was Sie erwarten können",
     "ribbon": [
       "Handgefertigt in Iserlohn",
-      "Echthaar",
+      "Feines Echthaar aus Vietnam",
       "Handwerk gelernt in Rio de Janeiro",
       "Sechs Extension-Methoden",
       "Persönliche Beratung",
-      "Bezahlung erst nach Bestätigung",
+      "Bezahlen per QR-Code in der Banking-App",
       "Versand mit {carrier}, auch international",
       "Maßanfertigung in {custom} Werktagen"
     ],
@@ -274,7 +274,7 @@
         },
         {
           "title": "Andrea bestätigt persönlich",
-          "text": "Sie prüft Ihre Bestellung noch einmal und meldet sich bei Ihnen. Erst danach bezahlen Sie."
+          "text": "Sie prüft Ihre Bestellung noch einmal und meldet sich bei Ihnen. Bezahlen können Sie gleich per QR-Code oder nach ihrer Bestätigung."
         },
         {
           "title": "Ankommen",
@@ -482,7 +482,7 @@
     "deliveryTimeEu": "In der Regel {from} bis {to} Werktage nach Andreas Bestätigung, Versand mit {carrier}. In andere EU-Länder kann es einige Tage länger dauern.",
     "deliveryCustom": "Maßanfertigungen brauchen {mFrom} bis {mTo} Werktage.",
     "payment": "Zahlung",
-    "paymentText": "Es wird jetzt nichts abgebucht. Andrea bestätigt Ihre Bestellung persönlich per E-Mail und teilt Ihnen darin mit, wie Sie bezahlen.",
+    "paymentText": "Nichts wird automatisch abgebucht. Nach dem Absenden überweisen Sie bequem per QR-Code in Ihrer Banking-App, gleich oder nach Andreas Bestätigung. Auf Wunsch auch per PayPal.",
     "total": "Gesamtsumme",
     "shippingFree": "kostenlos",
     "consentsLegend": "Zustimmung",
@@ -491,13 +491,14 @@
     "failed": "Die Bestellung konnte nicht gesendet werden. Bitte versuchen Sie es noch einmal oder melden Sie sich per Telefon oder E-Mail.",
     "rateLimited": "Zu viele Versuche in kurzer Zeit. Bitte warten Sie ein paar Minuten.",
     "closed": "Die Online-Kasse ist gerade geschlossen. Bitte senden Sie Ihre Auswahl als Anfrage.",
-    "emptyCart": "Ihr Warenkorb ist leer."
+    "emptyCart": "Ihr Warenkorb ist leer.",
+    "agbNotice": "Mit Ihrer Bestellung gelten unsere {agb}."
   },
   "order": {
     "metaTitle": "Ihre Bestellung",
     "number": "Bestellnummer {id}",
     "thanks": "Danke, {name}. Ihre Bestellung ist eingegangen.",
-    "lead": "Andrea prüft Ihr Stück jetzt noch einmal von Hand und schreibt Ihnen an {email}. Bis dahin müssen Sie nichts tun und nichts bezahlen.",
+    "lead": "Andrea prüft Ihr Stück jetzt noch einmal von Hand und schreibt Ihnen an {email}. Bezahlen können Sie gleich hier oder nach ihrer Bestätigung.",
     "mailSent": "Eine Eingangsbestätigung ist an Ihre E-Mail-Adresse unterwegs.",
     "mailNotSent": "Die Eingangsbestätigung per E-Mail konnte gerade nicht versendet werden. Ihre Bestellung ist trotzdem gespeichert; Andrea meldet sich bei Ihnen.",
     "notFound": "Diese Bestellung finden wir nicht.",
@@ -634,7 +635,7 @@
       },
       {
         "title": "Persönlich bestätigt",
-        "text": "Sie bezahlen erst, wenn Andrea Ihre Bestellung geprüft und bestätigt hat."
+        "text": "Sie bezahlen gleich per QR-Code oder erst, wenn Andrea Ihre Bestellung geprüft und bestätigt hat."
       },
       {
         "title": "Nach Maß, wenn nötig",
@@ -829,7 +830,7 @@
     "delivery": "Lieferzeit ab Lager {from} bis {to} Werktage mit {carrier}, Maßanfertigungen {mFrom} bis {mTo} Werktage.",
     "contact": "Persönliche Ansprechpartnerin: Andrea, Telefon <tel>{phone}</tel>",
     "atelier": "Atelier in {city}, Beratung nach Terminabsprache",
-    "payLater": "Sie bezahlen erst, wenn Andrea Ihre Bestellung persönlich bestätigt hat.",
+    "payLater": "Sie entscheiden, wann Sie bezahlen: gleich per QR-Code oder nach Andreas persönlicher Bestätigung. Ist ein Stück nicht verfügbar, gibt es Ihr Geld umgehend zurück.",
     "world": "Versand weltweit: Für Länder außerhalb der EU nennen wir Ihnen die Versandkosten vor der Bestätigung. Dort können Zoll und Einfuhrabgaben anfallen."
   },
   "objections": {
@@ -847,7 +848,7 @@
     "returnQ": "Was, wenn es nicht passt?",
     "returnA": "14 Tage Widerrufsrecht ab Erhalt der Ware. Alles Weitere steht in der Widerrufsbelehrung.",
     "payQ": "Wann bezahle ich?",
-    "payA": "Nicht beim Absenden der Bestellung. Andrea bestätigt Ihr Stück zuerst persönlich und schreibt Ihnen dann, wie Sie bezahlen.",
+    "payA": "Wann Sie möchten: gleich nach der Bestellung per QR-Code in Ihrer Banking-App oder nach Andreas persönlicher Bestätigung. Abgebucht wird nichts automatisch. Ist ein Stück wider Erwarten nicht verfügbar, bekommen Sie Ihr Geld umgehend zurück.",
     "packQ": "Wie viele Packungen brauche ich?",
     "packA": "Andrea sagt Ihnen persönlich, wie viele Packungen zu Ihrem Haar und Ihrem Wunsch passen, am einfachsten per WhatsApp."
   },
@@ -1009,5 +1010,25 @@
       "lockig": "Lockig",
       "unsure": "Ich weiß es noch nicht"
     }
+  },
+  "pay": {
+    "kicker": "Bezahlen per Überweisung",
+    "title": "Bezahlen, ohne etwas abzutippen.",
+    "lead": "Öffnen Sie Ihre Banking-App, scannen Sie den Code und bestätigen Sie. Empfängerin, Betrag und Verwendungszweck sind schon ausgefüllt.",
+    "scanLabel": "GiroCode für Ihre Banking-App, Betrag {amount}",
+    "save": "Code speichern",
+    "saveHint": "Am Handy: Code speichern und in der Banking-App unter „Foto-Überweisung“ öffnen.",
+    "holder": "Empfängerin",
+    "iban": "IBAN",
+    "amount": "Betrag",
+    "reference": "Verwendungszweck",
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "copyLabel": "{label} kopieren",
+    "instant": "Mit Echtzeitüberweisung ist das Geld meist in Sekunden bei Andrea.",
+    "when": "Sie können jetzt bezahlen oder nach Andreas Bestätigung. Ist ein Stück wider Erwarten nicht verfügbar, bekommen Sie Ihr Geld umgehend zurück.",
+    "paypal": "Lieber mit PayPal? Antworten Sie einfach auf Andreas E-Mail.",
+    "mailTitle": "So bezahlen Sie (gleich oder nach Andreas Bestätigung):",
+    "mailQr": "QR-Code für Ihre Banking-App: {url}"
   }
 }

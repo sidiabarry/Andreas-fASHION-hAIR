@@ -98,7 +98,7 @@ if (claimIds.length) {
   });
 }
 
-// Heil-/Wirkversprechen (HWG-Nähe) und Herkunft des Haars: Das Haar stammt nicht aus Brasilien, Herkunft ist unbelegt.
+// Heil-/Wirkversprechen (HWG-Nähe) und Herkunft des Haars: Das Haar stammt aus Vietnam (vom Auftraggeber bestätigt 21.11.2026), eine Angabe „Brasilien“ wäre irreführend.
 const HEALTH = /\bheil(t|en|ung)\b|(förder|anreg|regt)\S*.{0,20}haarwuchs|haarwuchs.{0,20}(förder|anreg)|wächst nach|gegen haarausfall|therapie|krankenkass|kassenzuschuss/i;
 const ORIGIN = /brasilianische[sn]? (echt)?haar|haar aus brasilien|brazilian hair|cabello brasileño|cheveux brésiliens/i;
 const deMessages = readFileSync(join(root, "src/messages/de.json"), "utf8");
@@ -151,6 +151,11 @@ if (!WARRANTY_LABEL || !existsSync(join(root, "public", WARRANTY_LABEL.src))) {
 }
 
 // Betrieb: E-Mail-Versand
+for (const key of ["SUPABASE_URL", "SUPABASE_SERVICE_ROLE_KEY"]) {
+  if (!process.env[key]) {
+    findings.push({ area: "Umgebung", blocking: false, text: `${key} ist nicht gesetzt: Die Online-Kasse bleibt in Production geschlossen (Bestellung dann per Anfrage). Schema: supabase/migrations/0001_init.sql` });
+  }
+}
 for (const key of ["RESEND_API_KEY", "MAIL_FROM", "MAIL_TO_OWNER"]) {
   if (!process.env[key]) {
     findings.push({ area: "Umgebung", blocking: production, text: `${key} ist nicht gesetzt: Anfrage- und Widerrufsformular sind in Production dann nicht nutzbar (es werden Telefon/E-Mail angezeigt)` });

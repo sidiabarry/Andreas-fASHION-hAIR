@@ -114,12 +114,12 @@ export default function Page({ company: c }: { company: Company }) {
           </p>
         ) : (
           <>
-            <p>Sie können mit den folgenden Zahlungsarten bezahlen. Die Zahlungsdaten senden wir Ihnen mit der Auftragsbestätigung.</p>
+            <p>Sie können mit den folgenden Zahlungsarten bezahlen. Die Zahlungsdaten finden Sie direkt nach Ihrer Bestellung auf der Bestellbestätigung; außerdem senden wir sie mit der Auftragsbestätigung.</p>
             <ul>
               {c.payments.prepayment ? (
                 <li>
-                  <strong>Vorkasse per Überweisung:</strong> Bitte überweisen Sie den Gesamtbetrag
-                  innerhalb von 7 Tagen nach Erhalt der Auftragsbestätigung. Wir versenden die Ware
+                  <strong>Vorkasse per Überweisung:</strong> Sie können den Gesamtbetrag sofort nach Ihrer
+                  Bestellung überweisen, spätestens innerhalb von 7 Tagen nach Erhalt der Auftragsbestätigung. Wir versenden die Ware
                   nach Zahlungseingang. Geht die Zahlung trotz Erinnerung nicht ein, können wir vom
                   Vertrag zurücktreten.
                 </li>

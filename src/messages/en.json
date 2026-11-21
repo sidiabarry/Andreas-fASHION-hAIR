@@ -51,7 +51,7 @@
     "line1": "As if *reborn.*",
     "line2": "More length. *More fullness.*",
     "line3": "More *you.*",
-    "lead": "Handmade by Andrea in Iserlohn: human-hair extensions, toppers, wigs and made-to-measure pieces. With personal advice on colour and quantity.",
+    "lead": "Handmade by Andrea in Iserlohn from fine Vietnamese human hair: extensions, toppers, wigs and made-to-measure pieces. With personal advice on colour and quantity.",
     "chapters": "Chapters of the film",
     "ch1": "Embers",
     "ch2": "Phoenix",
@@ -85,11 +85,11 @@
     "ribbonLabel": "What you can expect",
     "ribbon": [
       "Handmade in Iserlohn",
-      "Human hair",
+      "Fine Vietnamese human hair",
       "Craft learned in Rio de Janeiro",
       "Six extension methods",
       "Personal advice",
-      "Payment only after confirmation",
+      "Pay by QR code in your banking app",
       "Shipping with {carrier}, also international",
       "Made to measure in {custom} working days"
     ],
@@ -274,7 +274,7 @@
         },
         {
           "title": "Andrea confirms in person",
-          "text": "She checks your order once more and gets in touch. Only then do you pay."
+          "text": "She checks your order once more and gets in touch. You can pay straight away by QR code or after her confirmation."
         },
         {
           "title": "Arrival",
@@ -482,7 +482,7 @@
     "deliveryTimeEu": "Usually {from} to {to} working days after Andrea’s confirmation, shipped with {carrier}. Other EU countries may take a few days longer.",
     "deliveryCustom": "Made-to-measure pieces need {mFrom} to {mTo} working days.",
     "payment": "Payment",
-    "paymentText": "Nothing is charged now. Andrea confirms your order personally by e-mail and tells you there how to pay.",
+    "paymentText": "Nothing is charged automatically. After sending, you pay by bank transfer with a QR code in your banking app, straight away or after Andrea’s confirmation. PayPal on request.",
     "total": "Total",
     "shippingFree": "free",
     "consentsLegend": "Agreement",
@@ -491,13 +491,14 @@
     "failed": "Your order could not be sent. Please try again or contact us by phone or e-mail.",
     "rateLimited": "Too many attempts in a short time. Please wait a few minutes.",
     "closed": "The online checkout is closed at the moment. Please send your selection as an enquiry.",
-    "emptyCart": "Your bag is empty."
+    "emptyCart": "Your bag is empty.",
+    "agbNotice": "Our {agb} apply to your order."
   },
   "order": {
     "metaTitle": "Your order",
     "number": "Order number {id}",
     "thanks": "Thank you, {name}. Your order has been received.",
-    "lead": "Andrea will now check your piece by hand once more and write to you at {email}. Until then you do not need to do or pay anything.",
+    "lead": "Andrea is now checking your piece once more by hand and will write to you at {email}. You can pay right here or after her confirmation.",
     "mailSent": "A confirmation of receipt is on its way to your e-mail address.",
     "mailNotSent": "The confirmation of receipt could not be sent by e-mail just now. Your order has still been saved; Andrea will get in touch with you.",
     "notFound": "We cannot find this order.",
@@ -634,7 +635,7 @@
       },
       {
         "title": "Confirmed in person",
-        "text": "You only pay once Andrea has checked and confirmed your order."
+        "text": "You pay straight away by QR code or only once Andrea has checked and confirmed your order."
       },
       {
         "title": "Made to measure if needed",
@@ -829,7 +830,7 @@
     "delivery": "Delivery time for in-stock pieces {from} to {to} working days with {carrier}, made-to-measure pieces {mFrom} to {mTo} working days.",
     "contact": "Your personal contact: Andrea, phone <tel>{phone}</tel>",
     "atelier": "Atelier in {city}, consultations by appointment",
-    "payLater": "You only pay once Andrea has personally confirmed your order.",
+    "payLater": "You decide when to pay: straight away by QR code or after Andrea’s personal confirmation. If a piece is not available, you get your money back without delay.",
     "world": "Worldwide shipping: for countries outside the EU we tell you the shipping costs before confirming. Customs duties and import taxes may apply there."
   },
   "objections": {
@@ -847,7 +848,7 @@
     "returnQ": "What if it does not fit?",
     "returnA": "You have a 14-day right of withdrawal from receipt of the goods. Everything else is in the withdrawal information.",
     "payQ": "When do I pay?",
-    "payA": "Not when you send the order. Andrea first confirms your piece personally and then tells you how to pay.",
+    "payA": "Whenever you like: right after ordering by QR code in your banking app, or after Andrea’s personal confirmation. Nothing is charged automatically. If a piece is unexpectedly not available, you get your money back without delay.",
     "packQ": "How many packs do I need?",
     "packA": "Andrea will tell you personally how many packs suit your hair and your goal, most easily by WhatsApp."
   },
@@ -1009,5 +1010,25 @@
       "lockig": "Curly",
       "unsure": "I do not know yet"
     }
+  },
+  "pay": {
+    "kicker": "Pay by bank transfer",
+    "title": "Pay without typing a thing.",
+    "lead": "Open your banking app, scan the code and confirm. Recipient, amount and reference are already filled in.",
+    "scanLabel": "GiroCode for your banking app, amount {amount}",
+    "save": "Save code",
+    "saveHint": "On your phone: save the code and open it in your banking app under “photo transfer”.",
+    "holder": "Recipient",
+    "iban": "IBAN",
+    "amount": "Amount",
+    "reference": "Reference",
+    "copy": "Copy",
+    "copied": "Copied",
+    "copyLabel": "Copy {label}",
+    "instant": "With an instant transfer the money usually reaches Andrea within seconds.",
+    "when": "You can pay now or after Andrea’s confirmation. If a piece is unexpectedly not available, you get your money back without delay.",
+    "paypal": "Prefer PayPal? Simply reply to Andrea’s email.",
+    "mailTitle": "How to pay (now or after Andrea’s confirmation):",
+    "mailQr": "QR code for your banking app: {url}"
   }
 }

@@ -63,8 +63,8 @@ export default function Page({ company: c }: { company: Company }) {
         <h2 id="zahlungsarten">3. Zahlungsarten</h2>
         <p>
           Nach Ihrer Bestellung prüfen wir die Verfügbarkeit persönlich und senden Ihnen eine
-          Auftragsbestätigung mit den Zahlungsdaten. Sie zahlen erst, nachdem wir Ihre Bestellung
-          angenommen haben.
+          Auftragsbestätigung. Sie können sofort nach der Bestellung bezahlen oder nach unserer
+          Auftragsbestätigung. Ist ein Stück nicht verfügbar, erstatten wir bereits gezahlte Beträge unverzüglich.
         </p>
         {!anyPayment(c) ? (
           <p>
@@ -74,7 +74,7 @@ export default function Page({ company: c }: { company: Company }) {
           <ul>
             {c.payments.prepayment ? (
               <li>
-                <strong>Vorkasse per Überweisung</strong> – zahlbar innerhalb von 7 Tagen nach der
+                <strong>Vorkasse per Überweisung</strong> – zahlbar sofort nach der Bestellung, spätestens 7 Tage nach der
                 Auftragsbestätigung; Versand nach Zahlungseingang.
                 {c.bank ? (
                   <>
