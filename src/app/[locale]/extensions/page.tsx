@@ -82,7 +82,6 @@ export default async function ExtensionsPage({ params }: PageProps<"/[locale]/ex
               );
             })}
           </ul>
-          <p className="af-note">{t("extensions.which")}</p>
         </section>
 
         <section aria-labelledby="color-title" className="af-hub__section af-hub__split">

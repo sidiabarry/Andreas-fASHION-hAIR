@@ -157,7 +157,6 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
                   studio={product.image}
                   studioLabel={t(kind === "staged" ? "product.compareStudioStaged" : "product.compareStudio")}
                 />
-                <p className="af-note">{t(kind === "staged" ? "product.compareNoteStaged" : "product.compareNote")}</p>
               </section>
             ) : null}
           </div>
@@ -225,11 +224,13 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
               <h2 className="af-sr" id="specs-title">
                 {t("product.specs")}
               </h2>
-              <ul className="af-specs">
-                {text.specs.map((spec) => (
-                  <li key={spec}>{spec}</li>
-                ))}
-              </ul>
+              {isExtension ? null : (
+                <ul className="af-specs">
+                  {text.specs.map((spec) => (
+                    <li key={spec}>{spec}</li>
+                  ))}
+                </ul>
+              )}
               {product.manufacturer === "atelier" ? (
                 <p className="af-note">
                   {t("product.manufacturer", {
