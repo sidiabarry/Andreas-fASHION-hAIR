@@ -137,6 +137,7 @@
     "weftPerPack": "{n} trame par paquet",
     "tapesPerPack": "{n} tapes par paquet",
     "weftWidth": "Largeur de trame {width} cm par rangée",
-    "humanPlain": "Cheveux naturels"
+    "humanPlain": "Cheveux naturels",
+    "tapesSealed": "{n} tapes, scellés ensemble dans un seul paquet"
   }
 }

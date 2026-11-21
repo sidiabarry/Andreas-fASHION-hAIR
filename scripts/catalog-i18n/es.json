@@ -137,6 +137,7 @@
     "weftPerPack": "{n} cortina por paquete",
     "tapesPerPack": "{n} cintas por paquete",
     "weftWidth": "Ancho de cortina {width} cm por fila",
-    "humanPlain": "Cabello natural"
+    "humanPlain": "Cabello natural",
+    "tapesSealed": "{n} cintas, selladas juntas en un solo paquete"
   }
 }

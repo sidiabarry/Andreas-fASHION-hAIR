@@ -45,3 +45,12 @@ Diese Aussagen standen im Export bzw. auf der Live-Seite. Sie werden nur verwend
 2. Domain `andreasfashionhair.de` (und `www`) in Vercel hinzufügen, DNS umstellen.
 3. Die alten Adressen werden automatisch mit 308 weitergeleitet (alle 50 Produkt-URLs, Kategorien, `/about`, `/contact`, `/shipping-returns`, `/privacy`, `/terms`, `/products`, `/categories`, `/my-account`, `/wishlist`). Geprüft in `tests/e2e/run.mjs`.
 4. In der Google Search Console die neue Sitemap `/sitemap.xml` einreichen.
+
+## Von Andrea bestätigt (21.11.2026, über den Auftraggeber)
+
+- Maßanfertigung: **15–20 Werktage bis zur Zustellung** (entspricht „Gesamtlieferzeit“ in allen Rechtstexten).
+- Invisible Tape: alle Tapes einer Extension kommen **gemeinsam versiegelt in einer Packung** (Produkt 427: 3 Tapes). Extensions werden je Packung verkauft; Genius Weft: 1 Tresse je Packung.
+  Rechtlich bleibt es bei der Empfehlung aus `docs/COMPLIANCE.md`: kein pauschaler Widerrufsausschluss über § 312g Abs. 2 Nr. 3 BGB (eng auszulegen), sondern Hinweis auf Wertersatz. Ein Ausschluss für versiegelte Ware wäre jetzt möglich, sollte aber vor Nutzung anwaltlich geprüft werden.
+- Übersetzungen „Comme une renaissance“ (fr), „Como volver a nacer“ (es), „Toupet en V“ / „Tupé en V“: passen.
+- Echtes Foto von Andrea/Atelier: vorerst nicht nötig, Symbolbilder bleiben.
+- Herkunft des Haars: **nicht** Brasilien; keine Herkunftsangabe verwenden.

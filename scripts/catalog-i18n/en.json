@@ -137,6 +137,7 @@
     "weftPerPack": "{n} weft per pack",
     "tapesPerPack": "{n} tapes per pack",
     "weftWidth": "Weft width {width} cm per row",
-    "humanPlain": "Human hair"
+    "humanPlain": "Human hair",
+    "tapesSealed": "{n} tapes, sealed together in one pack"
   }
 }

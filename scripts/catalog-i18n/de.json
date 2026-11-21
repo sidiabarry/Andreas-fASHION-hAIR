@@ -135,6 +135,7 @@
     "weftPerPack": "{n} Tresse je Packung",
     "tapesPerPack": "{n} Tapes je Packung",
     "weftWidth": "Tressenbreite {width} cm je Reihe",
-    "humanPlain": "Echthaar"
+    "humanPlain": "Echthaar",
+    "tapesSealed": "{n} Tapes, gemeinsam versiegelt in einer Packung"
   }
 }
