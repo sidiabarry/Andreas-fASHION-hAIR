@@ -37,9 +37,9 @@
     "consultation": "Asesoramiento",
     "about": "Sobre Andrea",
     "contact": "Contacto",
-    "wigs": "Perücken & Topper",
-    "custom": "Maßanfertigung",
-    "care": "Pflege & Zubehör"
+    "wigs": "Pelucas y toppers",
+    "custom": "A medida",
+    "care": "Cuidado y accesorios"
   },
   "locale": {
     "label": "Idioma",
@@ -48,241 +48,241 @@
   },
   "hero": {
     "kicker": "HaarManufaktur · Iserlohn",
-    "line1": "Wie neu *geboren.*",
-    "line2": "Mehr Länge. *Mehr Fülle.*",
-    "line3": "Mehr *Sie selbst.*",
-    "lead": "Extensions aus Echthaar, von Andrea ausgewählt und persönlich auf Ihr Haar abgestimmt. Dazu Topper, Perücken und Maßanfertigungen aus ihrem Atelier in Iserlohn.",
-    "chapters": "Kapitel des Films",
-    "ch1": "Glut",
-    "ch2": "Phönix",
-    "ch3": "Haar",
-    "pause": "Bewegung pausieren",
-    "play": "Bewegung fortsetzen",
-    "replay": "Noch einmal ansehen",
+    "line1": "Como *volver a nacer.*",
+    "line2": "Más largo. *Más volumen.*",
+    "line3": "Más *usted.*",
+    "lead": "Extensiones de cabello natural, elegidas por Andrea y adaptadas personalmente a su cabello. Además, toppers, pelucas y piezas a medida de su taller en Iserlohn.",
+    "chapters": "Capítulos de la película",
+    "ch1": "Brasa",
+    "ch2": "Fénix",
+    "ch3": "Cabello",
+    "pause": "Pausar el movimiento",
+    "play": "Reanudar el movimiento",
+    "replay": "Volver a verlo",
     "trust": [
-      "Echthaar, persönlich ausgewählt",
-      "Persönliche Beratung durch Andrea",
-      "Bezahlung erst nach ihrer Bestätigung",
-      "Versand mit {carrier}, auch international"
+      "Cabello natural, elegido personalmente",
+      "Asesoramiento personal de Andrea",
+      "Pago solo tras su confirmación",
+      "Envío con {carrier}, también al extranjero"
     ],
-    "trustLabel": "Auf einen Blick",
-    "filmAlt": "Stummer Film, der von selbst abläuft: Glut glimmt in der Dunkelheit, aus ihr steigen Phönixflügel aus Licht auf und werden zu langem, kupferfarbenem Haar auf einer hellen Kopfform.",
-    "ctaExtensions": "Extensions entdecken",
-    "ctaCustom": "Maßanfertigung anfragen",
-    "ctaCollection": "Kollektion ansehen",
-    "ctaConsult": "Persönlich beraten lassen",
-    "ctaConsultVia": "per WhatsApp"
+    "trustLabel": "De un vistazo",
+    "filmAlt": "Película muda que se reproduce sola: una brasa brilla en la oscuridad, de ella se elevan alas de fénix hechas de luz y se convierten en un cabello largo y cobrizo sobre una cabeza clara.",
+    "ctaExtensions": "Descubrir las extensiones",
+    "ctaCustom": "Solicitar una pieza a medida",
+    "ctaCollection": "Ver la colección",
+    "ctaConsult": "Recibir asesoramiento personal",
+    "ctaConsultVia": "por WhatsApp"
   },
   "home": {
-    "whatsappNote": "öffnet WhatsApp",
-    "symbolImage": "Symbolbild",
-    "dock": "Andrea fragen",
-    "ribbonLabel": "Was Sie erwarten können",
+    "whatsappNote": "abre WhatsApp",
+    "symbolImage": "Imagen ilustrativa",
+    "dock": "Preguntar a Andrea",
+    "ribbonLabel": "Lo que puede esperar",
     "ribbon": [
       "Atelier in Iserlohn",
-      "Echthaar",
-      "Handwerk aus Rio de Janeiro",
-      "Sechs Extension-Methoden",
-      "Persönliche Beratung",
-      "Bezahlung erst nach Bestätigung",
-      "Versand mit {carrier}, auch international",
-      "Maßanfertigung in {custom} Werktagen"
+      "Cabello natural",
+      "Oficio de Río de Janeiro",
+      "Seis métodos de extensiones",
+      "Asesoramiento personal",
+      "Pago solo tras la confirmación",
+      "Envío con {carrier}, también al extranjero",
+      "Pieza a medida en {custom} días laborables"
     ],
-    "chapterLabel": "Kapitel",
+    "chapterLabel": "Capítulo",
     "ext": {
-      "kicker": "Extensions",
-      "title": "Mehr Länge. *Mehr Fülle.*",
-      "lead": "Echthaar in sechs Methoden, vom Clip-in zum Selbst-Einsetzen bis zur feinen Tresse. Die Packungen hier bestellen Sie direkt. Welche Methode und wie viel Haar zu Ihnen passen, sagt Andrea Ihnen persönlich.",
-      "methodsLabel": "Sechs Methoden",
+      "kicker": "Extensiones",
+      "title": "Más largo. *Más volumen.*",
+      "lead": "Cabello natural en seis métodos, desde el clip-in de colocación propia hasta la cortina fina. Los paquetes de aquí se piden directamente. Qué método y cuánto cabello le convienen, se lo dice Andrea personalmente.",
+      "methodsLabel": "Seis métodos",
       "methods": [
         "Clip-in",
         "Genius Weft",
         "Butterfly Weft",
         "Invisible Tape",
         "Tape-In",
-        "Keratin-Bondings"
+        "Bondings de queratina"
       ],
-      "methodsNote": "Weitere Methoden, Längen und Mengen stellt Andrea auf Anfrage zusammen.",
-      "cta": "Alle Extensions ansehen",
-      "salon": "Für Salons und Friseure: Mengen anfragen",
-      "view": "{name}, {color} ansehen",
-      "imageNote": "Inszenierte Studioaufnahmen. Die Haarfarbe ist am Originalfoto gemessen und abgeglichen. Die Originalfotos finden Sie auf der jeweiligen Produktseite.",
-      "galleryLabel": "Extensions im Atelier"
+      "methodsNote": "Andrea prepara otros métodos, largos y cantidades bajo petición.",
+      "cta": "Ver todas las extensiones",
+      "salon": "Para salones y peluqueros: consultar cantidades",
+      "view": "Ver {name}, {color}",
+      "imageNote": "Fotografías de estudio escenificadas. El color del cabello está medido y ajustado según la foto original. Las fotos originales las encontrará en la página de cada producto.",
+      "galleryLabel": "Extensiones en el taller"
     },
     "near": {
-      "kicker": "Aus der Nähe",
-      "title": "Kommen Sie *näher.*",
-      "lead": "Tresse, Clip und Tape entscheiden, wie sich Extensions tragen. So sehen die Stücke im Detail aus.",
+      "kicker": "De cerca",
+      "title": "Acérquese *un poco más.*",
+      "lead": "La cortina, el clip y la cinta deciden cómo se llevan las extensiones. Así se ven las piezas en detalle.",
       "shots": [
         {
           "label": "Clip-in",
-          "text": "Drei Tressen mit Clips zum Selbst-Einsetzen. Ohne Friseurtermin, und abends nehmen Sie sie wieder heraus."
+          "text": "Tres cortinas con clips para colocar en casa. Sin cita en la peluquería, y por la noche se las quita."
         },
         {
           "label": "Genius Weft",
-          "text": "Eine dünne Tresse, die sich auf die gewünschte Breite zuschneiden lässt."
+          "text": "Una cortina fina que se puede cortar al ancho deseado."
         },
         {
           "label": "Invisible Tape",
-          "text": "Schmale, dünne Tapes, die sich bei fachgerechter Einarbeitung unauffällig ins eigene Haar einfügen."
+          "text": "Cintas estrechas y finas que, bien colocadas por una profesional, se integran de forma discreta en su propio cabello."
         },
         {
           "label": "Butterfly Weft",
-          "text": "Eine feine, flexible Tresse, die flach am Kopf anliegt."
+          "text": "Una cortina fina y flexible que queda plana sobre la cabeza."
         }
       ],
-      "shotAlt": "{name}, {color}: Detailaufnahme",
-      "progress": "Bild {index} von {total}",
-      "cta": "Methoden vergleichen"
+      "shotAlt": "{name}, {color}: imagen de detalle",
+      "progress": "Imagen {index} de {total}",
+      "cta": "Comparar métodos"
     },
     "color": {
-      "kicker": "Farbe und Menge",
-      "title": "Ihre Farbe. *Ihre Menge.*",
-      "lead": "Kein Bildschirm zeigt Haarfarben ganz genau. Deshalb gleicht Andrea Ihre Farbe persönlich ab und sagt Ihnen, wie viele Packungen Sie für Ihr Ziel brauchen.",
-      "fanLabel": "Farben im Atelier",
-      "customTitle": "Ihre Farbe nicht dabei?",
-      "customText": "Andrea fertigt sie nach Maß.",
-      "stepsLabel": "So einfach geht der Farbabgleich",
+      "kicker": "Color y cantidad",
+      "title": "Su color. *Su cantidad.*",
+      "lead": "Ninguna pantalla muestra los colores del cabello con total exactitud. Por eso Andrea compara su color personalmente y le dice cuántos paquetes necesita para lograr lo que busca.",
+      "fanLabel": "Colores en el taller",
+      "customTitle": "¿No encuentra su color?",
+      "customText": "Andrea lo prepara a medida.",
+      "stepsLabel": "Así de sencillo es el ajuste de color",
       "steps": [
         {
-          "title": "Foto bei Tageslicht",
-          "text": "Am Fenster, ohne Blitz, Ansatz und Längen gut zu sehen."
+          "title": "Una foto con luz natural",
+          "text": "Junto a la ventana, sin flash, con la raíz y los largos bien visibles."
         },
         {
-          "title": "An Andrea senden",
-          "text": "Per WhatsApp oder über das Formular, gern mit Ihrem Wunsch: mehr Länge, mehr Fülle oder beides."
+          "title": "Envíela a Andrea",
+          "text": "Por WhatsApp o mediante el formulario, si quiere con su deseo: más largo, más volumen o ambas cosas."
         },
         {
-          "title": "Persönliche Antwort",
-          "text": "Andrea sagt Ihnen, welche Farbe passt und wie viele Packungen Sie brauchen."
+          "title": "Respuesta personal",
+          "text": "Andrea le dice qué color le va bien y cuántos paquetes necesita."
         }
       ],
-      "cta": "Foto an Andrea senden",
-      "ctaForm": "Lieber per Formular anfragen",
-      "screenNote": "Farben am Bildschirm können abweichen."
+      "cta": "Enviar una foto a Andrea",
+      "ctaForm": "Prefiero consultar por formulario",
+      "screenNote": "Los colores en pantalla pueden variar."
     },
     "topper": {
-      "kicker": "Topper und Perücken",
-      "title": "Fülle, *wo sie fehlt.*",
-      "lead": "Für lichter werdendes Haar am Oberkopf, für die Stirnpartie oder für einen ganz neuen Anfang: Topper, Perücken, Pony und Haarsysteme aus Echthaar. Jedes dieser Stücke gibt es genau einmal.",
-      "needsLabel": "Wonach suchen Sie?",
-      "cta": "Topper und Perücken ansehen",
-      "consult": "Unsicher, was passt? Andrea berät Sie per Foto oder im Atelier.",
-      "unique": "Unikat",
-      "sold": "Verkauft",
-      "custom": "Nach Maß",
-      "add": "In den Warenkorb",
-      "inCart": "Im Warenkorb",
-      "view": "{name} ansehen"
+      "kicker": "Toppers y pelucas",
+      "title": "Volumen *donde falta.*",
+      "lead": "Para el cabello que se aclara en la coronilla, para la zona de la frente o para un comienzo totalmente nuevo: toppers, pelucas, flequillos y sistemas capilares de cabello natural. Cada una de estas piezas existe una sola vez.",
+      "needsLabel": "¿Qué busca?",
+      "cta": "Ver toppers y pelucas",
+      "consult": "¿No sabe qué le conviene? Andrea le asesora por foto o en el taller.",
+      "unique": "Pieza única",
+      "sold": "Vendido",
+      "custom": "A medida",
+      "add": "Añadir a la cesta",
+      "inCart": "En la cesta",
+      "view": "Ver {name}"
     },
     "custom": {
-      "kicker": "Maßanfertigung",
-      "title": "Ihr Stück. *Nach Maß.*",
-      "lead": "Ihre Farbe, Ihre Länge, Ihre Struktur: Was Sie im Shop nicht finden, fertigt Andrea für Sie an. Topper, Perücken, Haarsysteme und Extensions.",
-      "stepsLabel": "Sechs Angaben für Ihre Anfrage",
+      "kicker": "A medida",
+      "title": "Su pieza. *A medida.*",
+      "lead": "Su color, su largo, su estructura: lo que no encuentre en la tienda, Andrea lo prepara para usted. Toppers, pelucas, sistemas capilares y extensiones.",
+      "stepsLabel": "Seis datos para su solicitud",
       "steps": [
         {
-          "title": "System",
-          "text": "Extensions, Topper, Perücke oder Haarsystem."
+          "title": "Sistema",
+          "text": "Extensiones, topper, peluca o sistema capilar."
         },
         {
-          "title": "Länge",
-          "text": "So lang, wie Sie es sich wünschen."
+          "title": "Largo",
+          "text": "Tan largo como desee."
         },
         {
-          "title": "Farbe",
-          "text": "Ihr Ton, gern mit Ansatz oder Ombré."
+          "title": "Color",
+          "text": "Su tono, si quiere con raíz o ombré."
         },
         {
-          "title": "Struktur",
-          "text": "Glatt, wellig, lockig oder kraus."
+          "title": "Estructura",
+          "text": "Liso, ondulado, rizado o muy rizado."
         },
         {
-          "title": "Menge",
-          "text": "Wie viel Fülle Sie sich wünschen."
+          "title": "Cantidad",
+          "text": "Cuánto volumen desea."
         },
         {
           "title": "Foto",
-          "text": "Ein Foto bei Tageslicht hilft beim Abgleich."
+          "text": "Una foto con luz natural ayuda a ajustar el color."
         }
       ],
-      "time": "Anfertigung in {custom} Werktagen, nachdem Sie bestellt haben.",
-      "cta": "Maßanfertigung anfragen",
-      "imageAlt": "Hände, die mit einer feinen Nadel einzelne Haare in eine dünne Basis einarbeiten"
+      "time": "Elaboración en {custom} días laborables, una vez realizado su pedido.",
+      "cta": "Solicitar una pieza a medida",
+      "imageAlt": "Manos que introducen cabellos uno a uno en una base fina con una aguja fina"
     },
     "hand": {
-      "kicker": "Die Hand dahinter",
-      "title": "Andrea weiß, *wie es sich anfühlt.*",
-      "lead": "Seit sie 19 ist, arbeitet Andrea mit Haar, angefangen in Rio de Janeiro. Sie kennt Haarverlust aus eigener Erfahrung und trägt selbst ein Haarteil, das sie selbst gefertigt hat. Deshalb gilt bei ihr: Es muss echt sein, und es muss sich im Alltag bewähren.",
-      "quote": "„Ich weiß ganz genau, was Haar für einen Menschen bedeutet, weil ich es selbst erlebt habe.“",
-      "by": "Andrea, Gründerin der HaarManufaktur",
-      "cta": "Andreas Geschichte lesen",
-      "visitTitle": "Treffen Sie Andrea im Atelier",
-      "visitCta": "Termin per WhatsApp vereinbaren",
-      "imageAlt": "Eine Frau vor einem goldgerahmten Spiegel, die ihr Haar berührt"
+      "kicker": "La mano detrás de todo",
+      "title": "Andrea sabe *cómo se siente.*",
+      "lead": "Andrea trabaja con cabello desde los 19 años, empezando en Río de Janeiro. Conoce la pérdida de cabello por experiencia propia y lleva ella misma una pieza que fabricó con sus manos. Por eso, para ella cuenta lo siguiente: tiene que ser auténtico y tiene que resistir el día a día.",
+      "quote": "«Sé muy bien lo que significa el cabello para una persona, porque yo misma lo he vivido.»",
+      "by": "Andrea, fundadora de la HaarManufaktur",
+      "cta": "Leer la historia de Andrea",
+      "visitTitle": "Conozca a Andrea en el taller",
+      "visitCta": "Concertar una cita por WhatsApp",
+      "imageAlt": "Una mujer ante un espejo con marco dorado, tocándose el cabello"
     },
     "concerns": {
-      "title": "Ihre Fragen. *Ehrlich beantwortet.*",
-      "lead": "Was Kundinnen und Kunden wissen möchten, bevor sie sich entscheiden. Alles offen, ohne Kleingedrucktes.",
+      "title": "Sus preguntas. *Respondidas con honestidad.*",
+      "lead": "Lo que nuestras clientas y clientes quieren saber antes de decidirse. Todo a la vista, sin letra pequeña.",
       "items": [
         {
-          "q": "Passt die Farbe zu mir?",
-          "a": "Schicken Sie Andrea ein Foto Ihres Haars bei Tageslicht. Sie vergleicht es mit den Stücken im Atelier und sagt Ihnen offen, was passt und was nicht."
+          "q": "¿El color me va bien?",
+          "a": "Envíe a Andrea una foto de su cabello con luz natural. Ella la compara con las piezas del taller y le dice con franqueza qué le va bien y qué no."
         },
         {
-          "q": "Wie viele Packungen brauche ich?",
-          "a": "Das hängt von Ihrem Haar und Ihrem Ziel ab. Andrea sagt es Ihnen persönlich, nachdem sie ein Foto gesehen hat. Lieber eine ehrliche Antwort als eine pauschale Tabelle."
+          "q": "¿Cuántos paquetes necesito?",
+          "a": "Depende de su cabello y de lo que quiera lograr. Andrea se lo dice personalmente después de ver una foto. Mejor una respuesta honesta que una tabla genérica."
         },
         {
-          "q": "Welche Methode passt zu mir?",
-          "a": "Clip-ins setzen Sie selbst ein und nehmen sie abends wieder heraus. Tapes, Tressen und Bondings werden fachgerecht eingearbeitet. Andrea bespricht mit Ihnen, was zu Ihrem Haar und Ihrem Alltag passt."
+          "q": "¿Qué método me conviene?",
+          "a": "Los clip-ins los coloca usted en casa y los quita por la noche. Las cintas, las cortinas y los bondings los coloca una profesional con técnica. Andrea comenta con usted qué encaja con su cabello y su día a día."
         },
         {
-          "q": "Fällt das auf?",
-          "a": "Tapes und Tressen sind flach und schmal gearbeitet. Wie unauffällig sie sitzen, hängt von Ihrem Haar und der Einarbeitung ab. Andrea sagt Ihnen ehrlich, was bei Ihnen möglich ist."
+          "q": "¿Se nota?",
+          "a": "Las cintas y las cortinas son planas y estrechas. Lo discretas que resulten depende de su cabello y de la colocación. Andrea le dice con sinceridad qué es posible en su caso."
         },
         {
-          "q": "Wie schnell ist es bei mir?",
-          "a": "Ab Lager in {stock} Werktagen nach Andreas Bestätigung, versendet mit {carrier}. Eine Maßanfertigung braucht {custom} Werktage, weil sie erst für Sie entsteht."
+          "q": "¿Cuánto tarda en llegar?",
+          "a": "Desde el almacén, en {stock} días laborables tras la confirmación de Andrea, enviado con {carrier}. Una pieza a medida necesita {custom} días laborables, porque solo se elabora para usted una vez pedida."
         },
         {
-          "q": "Wann bezahle ich?",
-          "a": "Nicht beim Bestellen. Andrea prüft Ihre Bestellung und bestätigt sie persönlich. Erst dann erhalten Sie die Zahlungsdaten."
+          "q": "¿Cuándo pago?",
+          "a": "No al hacer el pedido. Andrea revisa su pedido y lo confirma personalmente. Solo entonces recibe los datos de pago."
         },
         {
-          "q": "Und wenn es nicht passt?",
-          "a": "Es gilt das gesetzliche Widerrufsrecht von 14 Tagen. Prüfen Sie Farbe und Länge bitte, bevor Sie Tressen kürzen, einarbeiten oder Schutzfolien abziehen. Maßanfertigungen sind ausgenommen, weil sie nur für Sie entstehen."
+          "q": "¿Y si no me convence?",
+          "a": "Rige el derecho legal de desistimiento de 14 días. Compruebe el color y el largo antes de acortar o colocar las cortinas o de retirar las láminas protectoras. Las piezas a medida quedan excluidas, porque se elaboran solo para usted."
         },
         {
-          "q": "Versenden Sie ins Ausland?",
-          "a": "Ja, mit {carrier}: in die EU ab {euShip}. Für andere Länder nennt Andrea Ihnen die Versandkosten vor der Bestätigung."
+          "q": "¿Envían al extranjero?",
+          "a": "Sí, con {carrier}: a la UE desde {euShip}. Para otros países, Andrea le indica los gastos de envío antes de la confirmación."
         }
       ],
-      "returnsLink": "Widerruf im Detail",
-      "cta": "Persönlich beraten lassen"
+      "returnsLink": "El desistimiento en detalle",
+      "cta": "Recibir asesoramiento personal"
     },
     "steps": {
-      "title": "Drei Schritte *zu Ihrem Stück.*",
+      "title": "Tres pasos *hacia su pieza.*",
       "items": [
         {
-          "title": "Auswählen",
-          "text": "Im Shop, per WhatsApp oder im Atelier. Sie senden Ihre Bestellung ab, ohne zu bezahlen."
+          "title": "Elegir",
+          "text": "En la tienda, por WhatsApp o en el taller. Usted envía su pedido sin pagar."
         },
         {
-          "title": "Andrea bestätigt persönlich",
-          "text": "Sie prüft Ihre Bestellung noch einmal und meldet sich bei Ihnen. Erst danach bezahlen Sie."
+          "title": "Andrea confirma personalmente",
+          "text": "Ella revisa su pedido una vez más y se pone en contacto con usted. Solo después paga."
         },
         {
-          "title": "Ankommen",
-          "text": "Versand mit {carrier}: in Deutschland {deShip}, ab {freeFrom} kostenfrei. Ab Lager {stock} Werktage, nach Maß {custom} Werktage."
+          "title": "La llegada",
+          "text": "Envío con {carrier}: en Alemania {deShip}, gratis a partir de {freeFrom}. Desde el almacén {stock} días laborables, a medida {custom} días laborables."
         }
       ],
-      "cta": "Extensions entdecken"
+      "cta": "Descubrir las extensiones"
     },
     "close": {
-      "title": "Wie neu *geboren.*",
-      "lead": "Mehr Länge, mehr Fülle, mehr Sie selbst. Ihr Stück liegt vielleicht schon bereit. Und wenn nicht, fertigt Andrea es für Sie an.",
-      "imageAlt": "Phönixflügel aus goldenen Haarsträhnen, die aus Glut aufsteigen"
+      "title": "Como *volver a nacer.*",
+      "lead": "Más largo, más volumen, más usted. Quizá su pieza ya le esté esperando. Y si no, Andrea la prepara para usted.",
+      "imageAlt": "Alas de fénix hechas de mechones dorados que se elevan desde una brasa"
     }
   },
   "categories": {
@@ -355,42 +355,42 @@
     "packSize": "por paquete {grams} g",
     "setSize": "set ({pieces} cortinas) {grams} g",
     "extWithdrawal": "Puede desistir de su pedido en un plazo de 14 días. Compruebe el color y el largo antes de acortar las cortinas, colocarlas o retirar las láminas protectoras. Responde de la pérdida de valor causada por un uso que vaya más allá de esa comprobación, según la información sobre el desistimiento.",
-    "imageAltStaged": "{name}, {subtitle}: inszenierte Studioaufnahme",
-    "imageNoteRelit": "Studioaufnahme, neu ausgeleuchtet. Am Haar wurde nichts verändert. Das Originalfoto zeigt das Stück unbearbeitet.",
-    "imageNoteStaged": "Inszenierte Studioaufnahme. Die Haarfarbe ist am Originalfoto gemessen und abgeglichen. Das Originalfoto zeigt das Stück unbearbeitet.",
-    "compareNoteStaged": "Links die inszenierte Studioaufnahme, rechts das Originalfoto aus dem Atelier. Die Haarfarbe ist am Originalfoto gemessen und abgeglichen.",
-    "packQuestion": "Wie viele Packungen Sie brauchen, hängt von Ihrem Haar und Ihrem Wunsch ab. Andrea sagt es Ihnen persönlich.",
-    "consultTitle": "Beratung",
-    "consultText": "Fragen zu Farbe, Größe oder Passform? Andrea antwortet persönlich.",
-    "consultExtensions": "Unsicher bei Farbe oder Menge? Schicken Sie Andrea ein Foto Ihres Haars bei Tageslicht. Sie sagt Ihnen ehrlich, was passt.",
-    "accessories": "Pflege und Zubehör aus dem Atelier",
-    "accessoriesNote": "Das verwendet Andrea im Atelier selbst. Ob ein Produkt zu Ihrer Methode passt, sagt sie Ihnen gern vorab.",
-    "moreExtensions": "Weitere Packungen",
+    "imageAltStaged": "{name}, {subtitle}: fotografía de estudio escenificada",
+    "imageNoteRelit": "Fotografía de estudio, iluminada de nuevo. No se ha modificado nada en el cabello. La foto original muestra la pieza sin retocar.",
+    "imageNoteStaged": "Fotografía de estudio escenificada. El color del cabello está medido y ajustado según la foto original. La foto original muestra la pieza sin retocar.",
+    "compareNoteStaged": "A la izquierda, la fotografía de estudio escenificada; a la derecha, la foto original del taller. El color del cabello está medido y ajustado según la foto original.",
+    "packQuestion": "Cuántos paquetes necesita depende de su cabello y de su deseo. Andrea se lo dice personalmente.",
+    "consultTitle": "Asesoramiento",
+    "consultText": "¿Dudas sobre el color, la talla o el ajuste? Andrea le responde personalmente.",
+    "consultExtensions": "¿Duda con el color o la cantidad? Envíe a Andrea una foto de su cabello con luz natural. Ella le dice con honestidad qué le va bien.",
+    "accessories": "Cuidado y accesorios del taller",
+    "accessoriesNote": "Es lo que Andrea usa ella misma en el taller. Si un producto encaja con su método, se lo dice con gusto de antemano.",
+    "moreExtensions": "Más paquetes",
     "spec": {
-      "title": "Eigenschaften auf einen Blick",
-      "method": "Methode",
-      "length": "Länge",
+      "title": "Características de un vistazo",
+      "method": "Método",
+      "length": "Largo",
       "lengthValue": "{cm} cm",
-      "pack": "Packung",
+      "pack": "Paquete",
       "set": "Set",
       "packValue": "{grams} g",
-      "setValue": "{pieces} Tressen, {grams} g",
-      "color": "Farbe",
-      "texture": "Struktur",
-      "base": "Basis",
+      "setValue": "{pieces} cortinas, {grams} g",
+      "color": "Color",
+      "texture": "Estructura",
+      "base": "Base",
       "baseValue": "{base} cm",
       "textures": {
-        "glatt": "Glatt",
-        "leichtGewellt": "Leicht gewellt",
-        "lockig": "Lockig"
+        "glatt": "Liso",
+        "leichtGewellt": "Ligeramente ondulado",
+        "lockig": "Rizado"
       }
     },
     "copy": {
-      "title": "Das Stück im Detail",
-      "benefits": "Eigenschaften",
-      "how": "So funktioniert es",
-      "good": "Für wen es passt",
-      "care": "Pflege"
+      "title": "La pieza en detalle",
+      "benefits": "Características",
+      "how": "Cómo funciona",
+      "good": "Para quién es adecuada",
+      "care": "Cuidado"
     }
   },
   "price": {
@@ -401,7 +401,7 @@
   },
   "collection": {
     "title": "La colección",
-    "lead": "Extensions in Packungen und Haarteile aus dem Atelier. Jedes Haarteil gibt es nur einmal, Extensions in Packungen.",
+    "lead": "Extensiones en paquetes y piezas capilares del taller. Cada pieza capilar existe solo una vez; las extensiones, en paquetes.",
     "available": "{count, plural, =0 {Ninguna pieza disponible} one {# pieza disponible} other {# piezas disponibles}}",
     "all": "Todo",
     "filterLabel": "Filtrar por categoría",
@@ -413,27 +413,27 @@
     "apply": "Aplicar",
     "results": "{count, plural, one {# pieza} other {# piezas}} en esta selección",
     "soldHint": "Las piezas vendidas siguen visibles y están marcadas. Andrea hará con gusto una pieza similar a medida.",
-    "leadExtensions": "Mehr Länge, mehr Fülle, mehr Sie selbst. Die Packungen bestellen Sie direkt. Für andere Methoden, Längen und Mengen stellt Andrea alles persönlich zusammen.",
-    "hubLink": "Methoden, Farbhilfe und Beratung zu Extensions",
-    "byMethod": "Methode",
-    "byColor": "Farbe",
-    "byLength": "Länge",
-    "filterGroups": "Filter",
-    "any": "Alle",
-    "reset": "Filter zurücksetzen",
-    "empty": "Dazu gibt es gerade nichts. Lockern Sie die Filter oder lassen Sie sich ein Stück nach Maß fertigen.",
+    "leadExtensions": "Más largo, más volumen, más usted. Los paquetes se piden directamente. Para otros métodos, largos y cantidades, Andrea lo prepara todo personalmente.",
+    "hubLink": "Métodos, ayuda con el color y asesoramiento sobre extensiones",
+    "byMethod": "Método",
+    "byColor": "Color",
+    "byLength": "Largo",
+    "filterGroups": "Filtros",
+    "any": "Todos",
+    "reset": "Restablecer filtros",
+    "empty": "Ahora mismo no hay nada para esa selección. Relaje los filtros o encargue una pieza a medida.",
     "colors": {
-      "blond": "Blond",
-      "braun": "Braun",
-      "kupfer": "Kupfer und Rot",
-      "schwarz": "Schwarz",
-      "grau": "Grau",
-      "andere": "Weitere"
+      "blond": "Rubio",
+      "braun": "Castaño",
+      "kupfer": "Cobre y rojo",
+      "schwarz": "Negro",
+      "grau": "Gris",
+      "andere": "Otros"
     },
     "lengths": {
-      "kurz": "bis 30 cm",
-      "mittel": "31 bis 45 cm",
-      "lang": "ab 46 cm"
+      "kurz": "hasta 30 cm",
+      "mittel": "de 31 a 45 cm",
+      "lang": "desde 46 cm"
     }
   },
   "cart": {
@@ -571,12 +571,12 @@
     "countryHint": "Para países fuera de la UE, Andrea le indica los gastos de envío antes de confirmar."
   },
   "about": {
-    "metaTitle": "Über Andrea",
-    "metaDescription": "Andrea arbeitet seit ihrem 19. Lebensjahr mit Haar, angefangen in Rio de Janeiro. Heute führt sie ihr Atelier in Iserlohn: Extensions, Topper, Perücken und Haarsysteme aus Echthaar, auch nach Maß.",
-    "kicker": "Über Andrea",
-    "title": "Es ist nicht nur Haar. *Es ist viel mehr.*",
-    "lead": "Die Geschichte von Andreia Pereira Da Costa, die alle Andrea nennen: von Rio de Janeiro in ein Atelier in Iserlohn.",
-    "chaptersLabel": "Sieben Kapitel",
+    "metaTitle": "Sobre Andrea",
+    "metaDescription": "Andrea trabaja con cabello desde los 19 años, empezando en Río de Janeiro. Hoy dirige su taller en Iserlohn: extensiones, toppers, pelucas y sistemas capilares de cabello natural, también a medida.",
+    "kicker": "Sobre Andrea",
+    "title": "No es solo cabello. *Es mucho más.*",
+    "lead": "La historia de Andreia Pereira Da Costa, a quien todos llaman Andrea: de Río de Janeiro a un taller en Iserlohn.",
+    "chaptersLabel": "Siete capítulos",
     "chapters": [
       {
         "label": "Rio de Janeiro",
@@ -585,73 +585,73 @@
         "quote": "„Haare zeigen, wer du innen bist, von innen nach außen.“"
       },
       {
-        "label": "Neuanfang",
-        "title": "Ein neues Land. *Eine neue Sprache.*",
-        "text": "Andrea zieht nach Deutschland. Weil sie anfangs kaum Deutsch spricht, arbeitet sie viele Jahre in der Pflege, mit Menschen mit Behinderung. Dort lernt sie, Menschen mit Geduld und Würde zu begegnen. Das prägt bis heute, wie sie berät."
+        "label": "Un nuevo comienzo",
+        "title": "Un nuevo país. *Un nuevo idioma.*",
+        "text": "Andrea se traslada a Alemania. Como al principio apenas habla alemán, trabaja durante muchos años en el cuidado de personas con discapacidad. Allí aprende a tratar a las personas con paciencia y dignidad. Eso sigue marcando hoy su manera de asesorar."
       },
       {
-        "label": "Selbst betroffen",
-        "title": "Sie weiß, *wie es sich anfühlt.*",
-        "text": "Andrea kennt Haarverlust aus eigener Erfahrung. Sie trägt selbst ein Haarteil, das sie selbst gefertigt hat. Wer zu ihr kommt, spricht mit jemandem, der den Blick in den Spiegel kennt.",
-        "quote": "„Ich weiß ganz genau, was Haar für einen Menschen bedeutet, weil ich es selbst erlebt habe.“"
+        "label": "Afectada ella misma",
+        "title": "Ella sabe *cómo se siente.*",
+        "text": "Andrea conoce la pérdida de cabello por experiencia propia. Ella misma lleva una pieza que fabricó con sus manos. Quien acude a ella habla con alguien que conoce esa mirada al espejo.",
+        "quote": "«Sé muy bien lo que significa el cabello para una persona, porque yo misma lo he vivido.»"
       },
       {
-        "label": "Es muss echt sein",
-        "title": "Echt. *Und alltagstauglich.*",
-        "text": "Ein Haarteil aus anderem Haar hat sie einmal ausprobiert. Es hat sie im Alltag enttäuscht, zum Beispiel in der Sauna. Seitdem steht für sie fest: Es muss echtes Haar sein, und es muss sich im Leben bewähren, nicht nur im Spiegel."
+        "label": "Tiene que ser auténtico",
+        "title": "Auténtico. *Y pensado para el día a día.*",
+        "text": "Una vez probó una pieza de otro tipo de cabello. Le decepcionó en el día a día, por ejemplo en la sauna. Desde entonces lo tiene claro: tiene que ser cabello natural y tiene que resistir en la vida real, no solo frente al espejo."
       },
       {
-        "label": "Das Atelier",
-        "title": "Zurück *zum Haar.*",
-        "text": "Vor rund drei Jahren gründet Andrea ihr eigenes Atelier in Iserlohn und kehrt zu ihrem Handwerk zurück: Extensions, Topper, Perücken und Haarsysteme aus Echthaar, auch nach Maß.",
-        "quote": "„Am glücklichsten bin ich in meinem Atelier, wenn ich meine Stücke fertige.“"
+        "label": "El taller",
+        "title": "De vuelta *al cabello.*",
+        "text": "Hace unos tres años, Andrea fundó su propio taller en Iserlohn y volvió a su oficio: extensiones, toppers, pelucas y sistemas capilares de cabello natural, también a medida.",
+        "quote": "«Donde más feliz soy es en mi taller, cuando elaboro mis piezas.»"
       },
       {
-        "label": "Der Phönix",
-        "title": "Wie neu *geboren.*",
-        "text": "Ihr Zeichen ist der Phönix. Er steht für Vorher und Nachher. Wer Haar verloren hat, durch Alopezie oder einfach mit den Jahren, und es wiederbekommt, fühlt sich wie neu geboren.",
-        "quote": "„Wenn die Haare wieder da sind, ist man ein anderer Mensch. Man ist wie neu geboren.“"
+        "label": "El fénix",
+        "title": "Como *volver a nacer.*",
+        "text": "Su símbolo es el fénix. Representa el antes y el después. Quien ha perdido cabello, por alopecia o simplemente con los años, y lo recupera, se siente como si volviera a nacer.",
+        "quote": "«Cuando el cabello vuelve, se es otra persona. Es como volver a nacer.»"
       },
       {
-        "label": "Antrieb",
-        "title": "Für *jede und jeden.*",
-        "text": "Andrea möchte Menschen helfen, die sich so fühlen, wie sie sich selbst einmal gefühlt hat. Für jede Haarfarbe, jede Struktur, jede Herkunft: blond, brünett, rot, schwarz, glatt, wellig, lockig, kraus. Niemand soll denken: Das ist nicht für mich.",
-        "quote": "„Mir ist wichtig, dass ich den Menschen helfe. Dann ist mein Gewissen ruhig.“"
+        "label": "Su motivación",
+        "title": "Para *todas y todos.*",
+        "text": "Andrea quiere ayudar a las personas que se sienten como ella misma se sintió una vez. Para cualquier color de cabello, cualquier estructura, cualquier origen: rubio, castaño, pelirrojo, negro, liso, ondulado, rizado, muy rizado. Que nadie piense: esto no es para mí.",
+        "quote": "«Para mí es importante ayudar a las personas. Así mi conciencia está tranquila.»"
       }
     ],
     "quoteBy": "Andrea",
-    "colorsLabel": "Haar in allen Tönen, aus dem Atelier",
-    "trustTitle": "Worauf Sie sich *verlassen können.*",
+    "colorsLabel": "Cabello en todos los tonos, del taller",
+    "trustTitle": "En qué *puede confiar.*",
     "trust": [
       {
-        "title": "Echthaar, sorgfältig ausgewählt",
-        "text": "Ausgewählt von einer Frau, die seit ihrem 19. Lebensjahr mit Haar arbeitet."
+        "title": "Cabello natural, elegido con esmero",
+        "text": "Elegido por una mujer que trabaja con cabello desde los 19 años."
       },
       {
-        "title": "Persönlich bestätigt",
-        "text": "Sie bezahlen erst, wenn Andrea Ihre Bestellung geprüft und bestätigt hat."
+        "title": "Confirmado personalmente",
+        "text": "Usted paga solo cuando Andrea ha revisado y confirmado su pedido."
       },
       {
-        "title": "Nach Maß, wenn nötig",
-        "text": "Was es nicht fertig gibt, entsteht im Atelier in {custom} Werktagen."
+        "title": "A medida, cuando hace falta",
+        "text": "Lo que no existe ya hecho se elabora en el taller en {custom} días laborables."
       },
       {
-        "title": "Versand mit {carrier}",
-        "text": "In Deutschland, in die EU und auf Anfrage weltweit."
+        "title": "Envío con {carrier}",
+        "text": "A Alemania, a la UE y, bajo petición, a todo el mundo."
       }
     ],
-    "visitTitle": "Kommen Sie *ins Atelier.*",
-    "visitLead": "Oder schreiben Sie Andrea per WhatsApp, gern mit einem Foto Ihres Haars bei Tageslicht. Sie antwortet persönlich.",
-    "visitCta": "Termin per WhatsApp vereinbaren",
-    "visitForm": "Anfrage per Formular",
-    "hoursLabel": "Öffnungszeiten",
-    "closed": "geschlossen",
-    "nextTitle": "Bereit für *Ihr Stück?*",
-    "nextExtensions": "Extensions entdecken",
-    "nextCustom": "Maßanfertigung anfragen",
-    "imageAlt": "Phönixflügel aus goldenen Haarsträhnen vor dunklem Grund",
-    "craftAlt": "Hände, die mit einer feinen Nadel einzelne Haare in eine dünne Basis einarbeiten",
-    "mirrorAlt": "Eine Frau vor einem goldgerahmten Spiegel, die lächelnd ihr Haar berührt"
+    "visitTitle": "Venga *al taller.*",
+    "visitLead": "O escriba a Andrea por WhatsApp, si quiere con una foto de su cabello con luz natural. Ella responde personalmente.",
+    "visitCta": "Concertar una cita por WhatsApp",
+    "visitForm": "Consulta por formulario",
+    "hoursLabel": "Horario",
+    "closed": "cerrado",
+    "nextTitle": "¿Todo listo para *su pieza?*",
+    "nextExtensions": "Descubrir las extensiones",
+    "nextCustom": "Solicitar una pieza a medida",
+    "imageAlt": "Alas de fénix hechas de mechones dorados sobre un fondo oscuro",
+    "craftAlt": "Manos que introducen cabellos uno a uno en una base fina con una aguja fina",
+    "mirrorAlt": "Una mujer ante un espejo con marco dorado, tocándose el cabello con una sonrisa"
   },
   "consult": {
     "kicker": "Asesoramiento privado",
@@ -687,7 +687,7 @@
     "range": "{from} a {to}"
   },
   "footer": {
-    "claim": "Echthaar-Extensions, Perücken und Topper aus dem Atelier von Andrea in Iserlohn. Auf Wunsch nach Maß gefertigt.",
+    "claim": "Extensiones de cabello natural, pelucas y toppers del taller de Andrea en Iserlohn. Elaborados a medida si lo desea.",
     "collection": "Colección",
     "atelier": "Taller",
     "story": "La historia de Andrea",
@@ -710,7 +710,7 @@
     "socialNote": "Enlaces externos. La simple visita a esta página no transmite ningún dato a estos servicios.",
     "newsTitle": "Ver primero las piezas nuevas",
     "newsNote": "Cada pieza existe una sola vez. Siga a Andrea en Instagram, donde muestra primero las piezas nuevas.",
-    "extensionsHub": "Extensions: Methoden und Beratung"
+    "extensionsHub": "Extensiones: métodos y asesoramiento"
   },
   "newsletter": {
     "lead": "Cada pieza existe una sola vez. Le escribimos en cuanto haya una nueva terminada.",
@@ -844,8 +844,8 @@
     "returnA": "Tiene un derecho legal de desistimiento de 14 días desde la recepción de la mercancía. Los detalles y excepciones figuran en la información sobre el desistimiento.",
     "payQ": "¿Cuándo pago?",
     "payA": "No al enviar el pedido. Andrea confirma primero su pieza personalmente y después le indica cómo pagar.",
-    "packQ": "Wie viele Packungen brauche ich?",
-    "packA": "Das hängt von Ihrem Haar, der Methode und der gewünschten Länge ab. Andrea sagt Ihnen persönlich, wie viele Packungen Sie brauchen, am einfachsten per WhatsApp oder Anfrage."
+    "packQ": "¿Cuántos paquetes necesito?",
+    "packA": "Depende de su cabello, del método y del largo que desee. Andrea le dice personalmente cuántos paquetes necesita; lo más sencillo es por WhatsApp o mediante una consulta."
   },
   "drawer": {
     "title": "En su cesta",
@@ -907,105 +907,105 @@
     "salonCta": "Consultar como salón",
     "otherTitle": "¿Otro método, largo o cantidad?",
     "otherText": "Lo que no encuentre aquí, Andrea se lo prepara bajo consulta. Los salones y peluqueras también reciben una oferta personal.",
-    "metaTitle": "Echthaar-Extensions: Methoden, Farbe, Beratung",
-    "heroTitle": "Mehr Länge, mehr Fülle, mehr Sie selbst.",
-    "heroLead": "Echthaar-Extensions aus Andreas Atelier in Iserlohn. Die Packungen bestellen Sie direkt, alles andere stellt Andrea persönlich für Sie zusammen.",
-    "shopCta": "Packungen ansehen",
-    "adviceCta": "Beratung anfragen",
-    "methodsLead": "Sechs Methoden. Welche zu Ihrem Haar und Ihrem Alltag passt, klären Sie mit Andrea.",
-    "inShop": "{count, plural, one {# Packung im Shop} other {# Packungen im Shop}}",
-    "onRequest": "Auf Anfrage",
-    "colorTitle": "Die richtige Farbe finden",
-    "colorLead": "Licht und Bildschirm verändern, wie ein Farbton wirkt. Deshalb vergleicht Andrea Ihr Haar persönlich mit dem Stück.",
+    "metaTitle": "Extensiones de cabello natural: métodos, color, asesoramiento",
+    "heroTitle": "Más largo, más volumen, más usted.",
+    "heroLead": "Extensiones de cabello natural del taller de Andrea en Iserlohn. Los paquetes se piden directamente; todo lo demás lo prepara Andrea personalmente para usted.",
+    "shopCta": "Ver los paquetes",
+    "adviceCta": "Solicitar asesoramiento",
+    "methodsLead": "Seis métodos. Cuál encaja con su cabello y su día a día, lo aclara con Andrea.",
+    "inShop": "{count, plural, one {# paquete en la tienda} other {# paquetes en la tienda}}",
+    "onRequest": "Bajo petición",
+    "colorTitle": "Encontrar el color adecuado",
+    "colorLead": "La luz y la pantalla cambian el aspecto de un tono. Por eso Andrea compara personalmente su cabello con la pieza.",
     "colorSteps": {
       "light": {
-        "title": "Tageslicht nutzen",
-        "text": "Fotografieren Sie Ihr Haar am Fenster, ohne Blitz und ohne Filter."
+        "title": "Aproveche la luz natural",
+        "text": "Fotografíe su cabello junto a la ventana, sin flash y sin filtros."
       },
       "photo": {
-        "title": "Foto schicken",
-        "text": "Am einfachsten per WhatsApp, sonst mit einer Anfrage."
+        "title": "Envíe la foto",
+        "text": "Lo más sencillo es por WhatsApp; si no, con una consulta."
       },
       "answer": {
-        "title": "Andrea antwortet",
-        "text": "Sie sagt Ihnen ehrlich, welcher Ton passt, auch wenn es keiner aus dem Shop ist."
+        "title": "Andrea responde",
+        "text": "Ella le dice con honestidad qué tono le va bien, aunque no sea ninguno de la tienda."
       }
     },
-    "colorNote": "Die Farbe auf Ihrem Bildschirm kann vom echten Haar abweichen.",
-    "packKicker": "Beratung",
-    "packTitle": "Wie viele Packungen brauche ich?",
-    "packText": "Das hängt von Ihrem Haar, der Methode und Ihrem Wunsch ab. Andrea sagt Ihnen persönlich, wie viele Packungen Sie brauchen. Fragen Sie kurz, bevor Sie bestellen.",
-    "packWhatsapp": "Per WhatsApp fragen",
-    "packAsk": "Oder als Anfrage senden",
-    "productsTitle": "Extensions im Shop",
-    "allPacks": "Alle Extensions in der Kollektion"
+    "colorNote": "El color en su pantalla puede diferir del cabello real.",
+    "packKicker": "Asesoramiento",
+    "packTitle": "¿Cuántos paquetes necesito?",
+    "packText": "Depende de su cabello, del método y de su deseo. Andrea le dice personalmente cuántos paquetes necesita. Pregúntele brevemente antes de pedir.",
+    "packWhatsapp": "Preguntar por WhatsApp",
+    "packAsk": "O enviar una consulta",
+    "productsTitle": "Extensiones en la tienda",
+    "allPacks": "Todas las extensiones de la colección"
   },
   "custom": {
-    "metaTitle": "Maßanfertigung anfragen",
-    "kicker": "Maßanfertigung",
-    "title": "Ein Stück, das nur für Sie entsteht.",
-    "lead": "Länge, Farbe, Struktur und Menge werden auf Sie abgestimmt. In sechs kurzen Schritten sagen Sie Andrea, was Sie sich wünschen. Sie meldet sich persönlich bei Ihnen.",
-    "timing": "Die Fertigung dauert {mFrom} bis {mTo} Werktage.",
-    "stepOf": "Schritt {step} von {total}",
-    "next": "Weiter",
-    "back": "Zurück",
-    "optional": "optional",
-    "sending": "Wird gesendet",
+    "metaTitle": "Solicitar una pieza a medida",
+    "kicker": "A medida",
+    "title": "Una pieza que nace solo para usted.",
+    "lead": "El largo, el color, la estructura y la cantidad se adaptan a usted. En seis pasos breves le cuenta a Andrea lo que desea. Ella se pone en contacto con usted personalmente.",
+    "timing": "La elaboración tarda de {mFrom} a {mTo} días laborables.",
+    "stepOf": "Paso {step} de {total}",
+    "next": "Siguiente",
+    "back": "Atrás",
+    "optional": "opcional",
+    "sending": "Enviando",
     "strip": {
-      "kicker": "Maßanfertigung",
-      "title": "Ihre Farbe oder Länge ist nicht dabei?",
-      "text": "Andrea fertigt nach Maß. Sie wählen System, Länge, Farbe, Struktur und Menge, sie meldet sich persönlich bei Ihnen.",
-      "cta": "Maßanfertigung anfragen"
+      "kicker": "A medida",
+      "title": "¿No encuentra su color o su largo?",
+      "text": "Andrea trabaja a medida. Usted elige sistema, largo, color, estructura y cantidad, y ella se pone en contacto con usted personalmente.",
+      "cta": "Solicitar una pieza a medida"
     },
     "steps": {
       "system": {
-        "title": "Welches System?",
-        "hint": "Wählen Sie, was gefertigt werden soll. Wenn Sie unsicher sind, wählen Sie die letzte Option."
+        "title": "¿Qué sistema?",
+        "hint": "Elija lo que debe elaborarse. Si tiene dudas, elija la última opción."
       },
       "length": {
-        "title": "Welche Länge?",
-        "hint": "Zum Beispiel 55 cm. Bei Haarteilen zählt die Haarlänge.",
-        "label": "Wunschlänge"
+        "title": "¿Qué largo?",
+        "hint": "Por ejemplo, 55 cm. En las piezas capilares cuenta el largo del cabello.",
+        "label": "Largo deseado"
       },
       "color": {
-        "title": "Welche Farbe?",
-        "hint": "Beschreiben Sie den Ton in eigenen Worten. Ein Foto Ihres Haars bei Tageslicht schicken Sie Andrea nach der Anfrage per WhatsApp oder als Antwort auf ihre E-Mail.",
-        "label": "Haarfarbe"
+        "title": "¿Qué color?",
+        "hint": "Describa el tono con sus propias palabras. Una foto de su cabello con luz natural puede enviársela a Andrea después de la consulta, por WhatsApp o respondiendo a su correo.",
+        "label": "Color del cabello"
       },
       "structure": {
-        "title": "Welche Struktur?",
-        "hint": "Glatt, wellig oder lockig."
+        "title": "¿Qué estructura?",
+        "hint": "Liso, ondulado o rizado."
       },
       "amount": {
-        "title": "Welche Menge?",
-        "hint": "Zum Beispiel Anzahl der Packungen oder Gramm. Wenn Sie es nicht wissen, lassen Sie das Feld leer. Andrea berät Sie persönlich.",
-        "label": "Menge"
+        "title": "¿Qué cantidad?",
+        "hint": "Por ejemplo, el número de paquetes o los gramos. Si no lo sabe, deje el campo vacío. Andrea le asesora personalmente.",
+        "label": "Cantidad"
       },
       "contact": {
-        "title": "Wohin darf Andrea antworten?",
-        "hint": "Mit dieser Anfrage kaufen Sie noch nichts. Andrea meldet sich mit einem Vorschlag und einem festen Preis."
+        "title": "¿Adónde puede responderle Andrea?",
+        "hint": "Con esta consulta todavía no compra nada. Andrea se pone en contacto con una propuesta y un precio cerrado."
       }
     },
     "systems": {
       "topper": "Topper",
-      "peruecke": "Perücke",
-      "pony": "Pony",
-      "haarsystem": "Haarsystem für Männer",
-      "unsure": "Ich weiß es noch nicht"
+      "peruecke": "Peluca",
+      "pony": "Flequillo",
+      "haarsystem": "Sistema capilar para hombre",
+      "unsure": "Todavía no lo sé"
     },
     "methods": {
       "butterfly": "Butterfly Weft",
       "genius": "Genius Weft",
       "invisible": "Invisible Tape",
       "tape": "Tape-In",
-      "keratin": "Keratin-Bondings",
+      "keratin": "Bondings de queratina",
       "clip": "Clip-in"
     },
     "structures": {
-      "glatt": "Glatt",
-      "wellig": "Wellig",
-      "lockig": "Lockig",
-      "unsure": "Ich weiß es noch nicht"
+      "glatt": "Liso",
+      "wellig": "Ondulado",
+      "lockig": "Rizado",
+      "unsure": "Todavía no lo sé"
     }
   }
 }
