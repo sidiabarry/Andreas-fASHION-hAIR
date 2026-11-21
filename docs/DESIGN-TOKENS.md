@@ -55,3 +55,17 @@ Alle mit `latin-ext` (Polnisch, Türkisch).
 ## Maße
 
 `--af-radius-s|…|xl` (12/16/22/28 px), `--af-space-1…9` (4–96 px), `--af-section` (Abschnittsabstand), `--af-nav-h` (72 px, fixierte Kopfleiste), `--af-touch` (44 px Mindestzielgröße), `--af-wrap` (Inhaltsbreite).
+
+## Hero „Schaufenster“ (`src/components/home/HeroShowcase.tsx`, Klassen `.af-hx*`)
+
+Bento-Raster über die volle Breite (bis 1560 px, bündig mit der Kopfleiste):
+
+| Kachel | Inhalt | Zweck |
+| --- | --- | --- |
+| Versprechen | Live-Zähler verfügbarer Einzelstücke, Schlagzeile (letztes Wort in Serifenkursive), zwei CTAs, Einstiege nach Bedarf | sofort wissen, was es gibt, und direkt einsteigen |
+| Film | Atelier-Film mit Pause-Knopf (WCAG 2.2.2), Link zum Handwerk | Qualität zeigen |
+| Gerade im Atelier | echte Stücke mit Preis im Wechsel (`HeroSpotlight`, steht bei reduzierter Bewegung still) | Produkt und Preis über dem Falz |
+| Extensions | Bildkachel zur Kategorie | zweite Zielgruppe abholen |
+| Band | belegbare Gründe als Laufband (pausiert bei Hover, reduziert: statisch umbrochen) | Vertrauen |
+
+Der Zähler zählt nur echte Einzelstücke (`isUnique`), damit „jedes nur einmal“ stimmt. Keine erfundenen Bewertungen, keine Countdowns.

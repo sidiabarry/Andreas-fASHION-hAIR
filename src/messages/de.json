@@ -67,7 +67,24 @@
     },
     "ctaCollection": "Kollektion ansehen",
     "ctaConsult": "Persönlich beraten lassen",
-    "ctaFind": "Mein Stück finden"
+    "ctaFind": "Mein Stück finden",
+    "onlyOnce": "jedes nur einmal",
+    "filmPause": "Film anhalten",
+    "filmPlay": "Film abspielen",
+    "uspLabel": "Gute Gründe",
+    "spotlightPrev": "Vorheriges Stück",
+    "spotlightNext": "Nächstes Stück",
+    "spotlightShow": "Stück {index} von {total} zeigen",
+    "usps": [
+      "100 % Echthaar",
+      "Jedes Stück ein Unikat",
+      "Erst bestätigen, dann bezahlen",
+      "Lagernde Stücke in 2 bis 5 Werktagen bei Ihnen",
+      "Persönliche Beratung von Andrea",
+      "Maßanfertigung auf Wunsch",
+      "Atelier in Iserlohn"
+    ],
+    "needsLabel": "Wonach suchen Sie?"
   },
   "home": {
     "factsLabel": "Auf einen Blick",

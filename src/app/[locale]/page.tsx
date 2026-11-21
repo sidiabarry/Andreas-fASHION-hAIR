@@ -7,7 +7,7 @@ import { Finder } from "@/components/home/Finder";
 import { JsonLd } from "@/components/JsonLd";
 import { Logo } from "@/components/Logo";
 import { ProductCard } from "@/components/product/ProductCard";
-import { HeroPlaceholder } from "@/components/home/HeroPlaceholder";
+import { HeroShowcase } from "@/components/home/HeroShowcase";
 import { company } from "@/config/company";
 import { byCategory, CATEGORY_IDS, featured, INQUIRY_ONLY_CATEGORIES } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
@@ -32,7 +32,6 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
   const sold = await soldSlugs();
   const carrier = company.shippingCarrier ?? "";
 
-  const facts = [1, 2, 3, 4].map((n) => ({ big: t(`home.fact${n}Big`), text: t(`home.fact${n}`) }));
   const craft = [1, 2, 3, 4].map((n) => ({ key: t(`home.craft${n}Key`), text: t(`home.craft${n}`) }));
   const steps = [1, 2, 3].map((n) => ({ text: t(`home.step${n}`, { carrier }), title: t(`home.step${n}Title`) }));
   const faqs = [1, 2, 3, 4, 5, 6].map((n) => ({ a: t(`home.faq${n}A`, { carrier }), q: t(`home.faq${n}Q`) }));
@@ -78,26 +77,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
     <main>
       <JsonLd data={organizationJsonLd(locale)} />
       <JsonLd data={faqJson} />
-      <HeroPlaceholder
-        badgeBig={t("home.fact2Big")}
-        badgeText={t("home.fact2")}
-        body={t("hero.scene1.body")}
-        kicker={t("hero.scene1.kicker")}
-        primary={t("hero.ctaCollection")}
-        secondary={t("hero.ctaConsult")}
-        title={t("hero.scene1.title")}
-      />
-
-      <section aria-label={t("home.factsLabel")} className="af-section--tight">
-        <div className="af-wrap af-facts">
-          {facts.map((fact) => (
-            <div className="af-fact af-rise" key={fact.big}>
-              <strong>{fact.big}</strong>
-              <span>{fact.text}</span>
-            </div>
-          ))}
-        </div>
-      </section>
+      <HeroShowcase locale={locale} sold={sold} />
 
       <section aria-labelledby="finden-title" className="af-section" id="finden">
         <div className="af-wrap">

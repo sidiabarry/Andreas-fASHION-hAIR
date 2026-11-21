@@ -67,7 +67,24 @@
     },
     "ctaCollection": "Voir la collection",
     "ctaConsult": "Demander un conseil personnel",
-    "ctaFind": "Trouver ma pièce"
+    "ctaFind": "Trouver ma pièce",
+    "onlyOnce": "chaque pièce une seule fois",
+    "filmPause": "Mettre le film en pause",
+    "filmPlay": "Lire le film",
+    "uspLabel": "Bonnes raisons",
+    "spotlightPrev": "Pièce précédente",
+    "spotlightNext": "Pièce suivante",
+    "spotlightShow": "Afficher la pièce {index} sur {total}",
+    "usps": [
+      "100 % cheveux naturels",
+      "Chaque pièce est unique",
+      "D’abord la confirmation, ensuite le paiement",
+      "Pièces en stock chez vous en 2 à 5 jours ouvrés",
+      "Conseil personnel d’Andrea",
+      "Sur mesure à la demande",
+      "Atelier à Iserlohn"
+    ],
+    "needsLabel": "Que recherchez-vous ?"
   },
   "home": {
     "factsLabel": "En bref",

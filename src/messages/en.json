@@ -67,7 +67,24 @@
     },
     "ctaCollection": "View the collection",
     "ctaConsult": "Get personal advice",
-    "ctaFind": "Find my piece"
+    "ctaFind": "Find my piece",
+    "onlyOnce": "each one only once",
+    "filmPause": "Pause film",
+    "filmPlay": "Play film",
+    "uspLabel": "Good reasons",
+    "spotlightPrev": "Previous piece",
+    "spotlightNext": "Next piece",
+    "spotlightShow": "Show piece {index} of {total}",
+    "usps": [
+      "100 % human hair",
+      "Every piece one of a kind",
+      "Confirm first, pay later",
+      "Pieces in stock reach you in 2 to 5 working days",
+      "Personal advice from Andrea",
+      "Made to measure on request",
+      "Atelier in Iserlohn"
+    ],
+    "needsLabel": "What are you looking for?"
   },
   "home": {
     "factsLabel": "At a glance",
