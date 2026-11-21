@@ -7,7 +7,7 @@ import { createMemoryStore } from "@/server/store-memory";
 import type { NewOrder } from "@/server/store";
 
 const topper = getProductById(421)!;
-const glue = getProductById(234)!;
+const glue = getProductById(424)!; // Mengenware (Extensions-Packung)
 
 function newOrder(id: string, key: string, slugs: string[]): NewOrder {
   const priced = priceOrder(slugs.map((slug) => ({ quantity: 1, slug })), "DE", new Set());

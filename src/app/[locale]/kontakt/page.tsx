@@ -21,7 +21,7 @@ export default async function ContactPage({ params }: PageProps<"/[locale]/konta
   const t = await getTranslations({ locale });
   const day = (d: number) => t(`days.${d}` as "days.1");
   return (
-    <main className="af-page">
+    <main className="af-page af-zone-light" data-zone="light">
       <JsonLd data={organizationJsonLd(locale as Locale)} />
       <div className="af-wrap">
         <p className="af-mono">{t("contact.kicker")}</p>
@@ -83,7 +83,7 @@ export default async function ContactPage({ params }: PageProps<"/[locale]/konta
             {t("contact.formTitle")}
           </h2>
           <p className="af-text">{t("contact.formLead")}</p>
-          <Link className="af-cta-gold" href="/anfrage" style={{ justifySelf: "start" }}>
+          <Link className="af-cta-gold af-glass af-glass--gold" href="/anfrage" style={{ justifySelf: "start" }}>
             {t("contact.formCta")} <Arrow />
           </Link>
         </section>

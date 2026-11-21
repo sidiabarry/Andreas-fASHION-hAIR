@@ -4,7 +4,7 @@
     "claim": "HaarManufaktur",
     "titleTemplate": "%s | Andrea's Fashion Hair",
     "defaultTitle": "Andrea's Fashion Hair | Echthaar-Topper, Perücken und Haarsysteme",
-    "defaultDescription": "Wie neu geboren. Echthaar, Haar für Haar von Hand gefertigt: Topper, Front-Lace-Perücken, Pony und Haarsysteme aus der HaarManufaktur in Iserlohn. Jedes Stück ein Einzelstück.",
+    "defaultDescription": "Wie neu geboren. Extensions, Topper, Front-Lace-Perücken, Pony und Haarsysteme aus Echthaar, von der HaarManufaktur in Iserlohn. Jedes Haarteil ein Einzelstück.",
     "ogAlt": "Der goldene Phönix von Andrea's Fashion Hair auf dunklem Grund"
   },
   "common": {
@@ -12,7 +12,7 @@
     "menu": "Menü",
     "close": "Schließen",
     "cart": "Warenkorb",
-    "cartWithCount": "Warenkorb, {count, plural, =0 {leer} one {# Artikel} other {# Artikel}}",
+    "cartWithCount": "Warenkorb, {count, plural, one {# Artikel} other {# Artikel}}",
     "home": "Startseite",
     "required": "Pflichtfeld",
     "optional": "freiwillig",
@@ -36,7 +36,10 @@
     "story": "Geschichte",
     "consultation": "Beratung",
     "about": "Über Andrea",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "wigs": "Perücken & Topper",
+    "custom": "Maßanfertigung",
+    "care": "Pflege & Zubehör"
   },
   "locale": {
     "label": "Sprache",
@@ -44,113 +47,242 @@
     "current": "Aktuelle Sprache: {language}"
   },
   "hero": {
+    "kicker": "HaarManufaktur · Iserlohn",
+    "line1": "Wie neu *geboren.*",
+    "line2": "Mehr Länge. *Mehr Fülle.*",
+    "line3": "Mehr *Sie selbst.*",
+    "lead": "Handgefertigt von Andrea in Iserlohn: Echthaar-Extensions, Topper, Perücken und Maßanfertigungen. Mit persönlicher Beratung zu Farbe und Menge.",
     "chapters": "Kapitel des Films",
-    "filmAlt": "Ein Film ohne Ton begleitet das Scrollen: Glut steigt in der Dunkelheit auf, öffnet sich zu Phönixflügeln aus Licht und wird zu echtem, honigfarbenem Haar auf einer hellen Kopfform. Die Kamera kommt am Scheitel zur Ruhe.",
-    "scene1": {
-      "label": "Neubeginn",
-      "kicker": "Andrea's Fashion Hair",
-      "title": "Wie neu geboren.",
-      "body": "Echthaar, Haar für Haar von Hand gearbeitet. Für den Morgen, an dem Sie sich im Spiegel wiedererkennen."
-    },
-    "scene2": {
-      "label": "Identität",
-      "title": "Es ist nicht nur Haar.",
-      "body": "Es ist, wer Sie sind. Wer sein Haar verliert, verliert ein Stück Sicherheit. Der Phönix in unserem Zeichen steht für den Tag, an dem sie zurückkommt."
-    },
-    "scene3": {
-      "label": "Unsichtbar",
-      "title": "Niemand sieht einen Übergang.",
-      "body": "Hauchdünne Nano-Skin-Basis, jedes Haar einzeln injiziert, freier Scheitel. Sie spüren Ihr Stück kaum. Andere sehen es gar nicht.",
-      "tag1": "100 % Echthaar",
-      "tag2": "Freier Scheitel",
-      "tag3": "In Sekunden aufgesetzt"
-    },
+    "ch1": "Glut",
+    "ch2": "Phönix",
+    "ch3": "Haar",
+    "pause": "Bewegung pausieren",
+    "play": "Bewegung fortsetzen",
+    "replay": "Noch einmal ansehen",
+    "trust": [
+      "Echthaar, handgefertigt von Andrea",
+      "Persönliche Beratung durch Andrea",
+      "Bezahlung erst nach ihrer Bestätigung",
+      "Versand mit {carrier}, auch international"
+    ],
+    "trustLabel": "Auf einen Blick",
+    "filmAlt": "Stummer Film, der von selbst abläuft: Glut glimmt in der Dunkelheit, aus ihr steigen Phönixflügel aus Licht auf und werden zu langem, kupferfarbenem Haar auf einer hellen Kopfform.",
+    "ctaExtensions": "Extensions entdecken",
+    "ctaCustom": "Maßanfertigung anfragen",
     "ctaCollection": "Kollektion ansehen",
     "ctaConsult": "Persönlich beraten lassen",
-    "ctaFind": "Mein Stück finden",
-    "onlyOnce": "jedes nur einmal",
-    "filmPause": "Film anhalten",
-    "filmPlay": "Film abspielen",
-    "uspLabel": "Gute Gründe",
-    "spotlightPrev": "Vorheriges Stück",
-    "spotlightNext": "Nächstes Stück",
-    "spotlightShow": "Stück {index} von {total} zeigen",
-    "usps": [
-      "100 % Echthaar",
-      "Jedes Stück ein Unikat",
-      "Erst bestätigen, dann bezahlen",
-      "Lagernde Stücke in 2 bis 5 Werktagen bei Ihnen",
-      "Persönliche Beratung von Andrea",
-      "Maßanfertigung auf Wunsch",
-      "Atelier in Iserlohn"
-    ],
-    "needsLabel": "Wonach suchen Sie?"
+    "ctaConsultVia": "per WhatsApp"
   },
   "home": {
-    "factsLabel": "Auf einen Blick",
-    "fact1Big": "100 %",
-    "fact1": "Echthaar. Kein Kunsthaar, keine Mischung.",
-    "fact2Big": "1 von 1",
-    "fact2": "Jedes Stück wird einzeln gefertigt und existiert genau einmal.",
-    "fact3Big": "2 bis 5",
-    "fact3": "Werktage, bis ein lagerndes Stück bei Ihnen ist.",
-    "fact4Big": "15 bis 20",
-    "fact4": "Werktage für ein Stück, das nach Ihren Maßen entsteht.",
-    "finderTitle": "Was fehlt Ihnen gerade?",
-    "finderLead": "Sagen Sie es uns, und wir zeigen Ihnen die Stücke, die dafür gemacht sind.",
-    "finderTabs": "Bedarf wählen",
-    "finderAll": "Alle {category}",
-    "finderEmpty": "Gerade ist hier kein Stück frei. Andrea fertigt gern eines nach Maß.",
-    "craftKicker": "Das Handwerk",
-    "craftTitle": "Haar für Haar. Von Hand.",
-    "craftLead": "Ein Topper von der Stange sitzt auf dem Kopf. Unserer wird Teil davon. Der Unterschied liegt in vier Dingen.",
-    "craftImageAlt": "Hände, die einzelne Haare in eine hauchdünne Basis einarbeiten",
-    "craft1Key": "Die Basis",
-    "craft1": "Nano Skin, dünn wie eine zweite Haut. Sie liegt flach auf und verschwindet unter Ihrem Ansatz.",
-    "craft2Key": "Das Haar",
-    "craft2": "Jedes einzelne Haar wird von Hand injiziert. So wächst es scheinbar direkt aus der Kopfhaut.",
-    "craft3Key": "Der Scheitel",
-    "craft3": "Frei in jede Richtung. Sie tragen ihn links, rechts oder mittig, so wie heute Ihr Tag ist.",
-    "craft4Key": "Der Halt",
-    "craft4": "Clips, die in Sekunden sitzen und abends genauso schnell wieder gelöst sind.",
-    "atelierTitle": "Gerade im Atelier.",
-    "atelierLead": "Jedes dieser Stücke gibt es ein einziges Mal. Ist es verkauft, kommt es nicht wieder.",
-    "atelierAll": "Ganze Kollektion",
-    "phoenixTitle": "Der Phönix ist kein Zufall.",
-    "phoenixLead": "Mit neunzehn begann Andrea in Rio de Janeiro, mit Haaren zu arbeiten. Seitdem hat sie erlebt, was mit einem Menschen geschieht, der sein Haar verliert. Und was geschieht, wenn es zurückkommt.",
-    "phoenixQuote": "„Wenn das Haar wieder da ist, ist der Mensch ein anderer. Er ist wie neu geboren.“",
-    "phoenixBy": "Andrea, Gründerin und Haarmacherin",
-    "phoenixOutro": "Deshalb trägt jedes Stück aus ihrem Atelier dieses Zeichen. Es steht nicht für Haar. Es steht für den Morgen danach.",
-    "extKicker": "Extensions",
-    "extTitle": "Länge, die Ihnen niemand ansieht.",
-    "extLead": "Echthaar-Extensions in sechs Methoden, für Kundinnen und für Salons. Andrea stellt Ihnen Farbe, Länge und Menge persönlich zusammen.",
-    "extMethods": "Methoden",
-    "extCta": "Extensions anfragen",
-    "extImageAlt": "Echthaar-Extensions in drei Farbtönen: Weft, Tape, Bondings und Clip-In",
-    "stepsTitle": "Drei Schritte. Kein Risiko.",
-    "stepsLead": "Sie bezahlen erst, wenn Andrea Ihr Stück persönlich bestätigt hat.",
-    "step1Title": "Sie wählen Ihr Stück",
-    "step1": "Im Shop oder gemeinsam mit Andrea. Ein Foto bei Tageslicht genügt, und sie sagt Ihnen ehrlich, welche Farbe zu Ihnen passt.",
-    "step2Title": "Andrea bestätigt persönlich",
-    "step2": "Sie prüft Ihr Stück noch einmal von Hand und schreibt Ihnen. Erst danach bezahlen Sie.",
-    "step3Title": "Aufsetzen. Wiedererkennen.",
-    "step3": "Lagernde Stücke verschicken wir mit {carrier}. In der Regel sind sie 2 bis 5 Werktage nach Andreas Bestätigung bei Ihnen.",
-    "faqTitle": "Was Sie vorher wissen möchten.",
-    "faq1Q": "Sieht man, dass ich ein Haarteil trage?",
-    "faq1A": "Dafür ist die Nano-Skin-Basis gemacht. Jedes Haar wird einzeln injiziert, deshalb sieht der Scheitel aus wie Ihre eigene Kopfhaut. Selbst aus der Nähe ist kein Rand und kein Knoten zu erkennen.",
-    "faq2Q": "Woher weiß ich, welche Farbe passt?",
-    "faq2A": "Schicken Sie Andrea über die Beratung ein Foto Ihres Haars bei Tageslicht. Sie vergleicht es mit den Stücken im Atelier und sagt Ihnen offen, welches passt und welches nicht.",
-    "faq3Q": "Wie wird ein Topper befestigt?",
-    "faq3A": "Mit kleinen Clips an Ihrem eigenen Haar. Das dauert Sekunden, hält den ganzen Tag und braucht weder Kleber noch einen Friseurtermin.",
-    "faq4Q": "Wie schnell ist mein Stück bei mir?",
-    "faq4A": "Lagernde Stücke sind in der Regel 2 bis 5 Werktage nach Andreas Bestätigung bei Ihnen, verschickt mit {carrier}. Eine Maßanfertigung braucht 15 bis 20 Werktage, weil sie erst für Sie entsteht.",
-    "faq5Q": "Wann und wie bezahle ich?",
-    "faq5A": "Nicht beim Absenden. Andrea bestätigt Ihr Stück zuerst persönlich und schreibt Ihnen dann, wie Sie bezahlen können.",
-    "faq6Q": "Ich finde mein Stück nicht. Geht es nach Maß?",
-    "faq6A": "Ja. Länge, Farbe, Dichte und Basis werden auf Sie abgestimmt. Beschreiben Sie Andrea, was Sie sich wünschen, und sie meldet sich mit einem Vorschlag.",
-    "closeTitle": "Der Spiegel wartet.",
-    "closeLead": "Ihr Stück ist vielleicht schon fertig. Sehen Sie nach, bevor es jemand anderes trägt.",
-    "closeImageAlt": "Eine Frau vor dem Atelierspiegel, die ihr Haar berührt"
+    "whatsappNote": "öffnet WhatsApp",
+    "symbolImage": "Symbolbild",
+    "dock": "Andrea fragen",
+    "ribbonLabel": "Was Sie erwarten können",
+    "ribbon": [
+      "Handgefertigt in Iserlohn",
+      "Echthaar",
+      "Handwerk gelernt in Rio de Janeiro",
+      "Sechs Extension-Methoden",
+      "Persönliche Beratung",
+      "Bezahlung erst nach Bestätigung",
+      "Versand mit {carrier}, auch international",
+      "Maßanfertigung in {custom} Werktagen"
+    ],
+    "chapterLabel": "Kapitel",
+    "ext": {
+      "kicker": "Extensions",
+      "title": "Mehr Länge. *Mehr Fülle.*",
+      "lead": "Echthaar in sechs Methoden, vom Clip-in zum Selbst-Einsetzen bis zur feinen Tresse. Die Packungen hier bestellen Sie direkt. Welche Methode und wie viel Haar zu Ihnen passen, sagt Andrea Ihnen persönlich.",
+      "methodsLabel": "Sechs Methoden",
+      "methods": [
+        "Clip-in",
+        "Genius Weft",
+        "Butterfly Weft",
+        "Invisible Tape",
+        "Tape-In",
+        "Keratin-Bondings"
+      ],
+      "methodsNote": "Weitere Methoden, Längen und Mengen stellt Andrea auf Anfrage zusammen.",
+      "cta": "Alle Extensions ansehen",
+      "salon": "Für Salons und Friseure: Mengen anfragen",
+      "view": "{name}, {color} ansehen",
+      "imageNote": "KI-Inszenierung: Die Haarfarbe ist am Originalfoto angeglichen. Die Originalfotos auf den Produktseiten zeigen die Stücke unbearbeitet.",
+      "galleryLabel": "Extensions im Atelier"
+    },
+    "near": {
+      "kicker": "Aus der Nähe",
+      "title": "Kommen Sie *näher.*",
+      "lead": "Tresse, Clip und Tape entscheiden, wie sich Extensions tragen. So sehen die Stücke im Detail aus.",
+      "shots": [
+        {
+          "label": "Clip-in",
+          "text": "Drei Tressen mit Clips zum Selbst-Einsetzen. Ohne Friseurtermin, und abends nehmen Sie sie wieder heraus."
+        },
+        {
+          "label": "Genius Weft",
+          "text": "Eine dünne Tresse, die sich auf die gewünschte Breite zuschneiden lässt."
+        },
+        {
+          "label": "Invisible Tape",
+          "text": "Schmale, dünne Tapes, die sich unauffällig ins eigene Haar einfügen."
+        },
+        {
+          "label": "Butterfly Weft",
+          "text": "Eine feine, flexible Tresse, die flach am Kopf anliegt."
+        }
+      ],
+      "shotAlt": "{name}, {color}: Detailaufnahme",
+      "progress": "Bild {index} von {total}",
+      "cta": "Methoden vergleichen"
+    },
+    "color": {
+      "kicker": "Farbe und Menge",
+      "title": "Ihre Farbe. *Ihre Menge.*",
+      "lead": "Andrea gleicht Ihre Farbe persönlich ab und sagt Ihnen, wie viele Packungen Sie für Ihr Ziel brauchen.",
+      "fanLabel": "Farben im Atelier",
+      "customTitle": "Ihre Farbe nicht dabei?",
+      "customText": "Andrea fertigt sie nach Maß.",
+      "stepsLabel": "So einfach geht der Farbabgleich",
+      "steps": [
+        {
+          "title": "Foto bei Tageslicht",
+          "text": "Am Fenster, ohne Blitz, Ansatz und Längen gut zu sehen."
+        },
+        {
+          "title": "An Andrea senden",
+          "text": "Per WhatsApp oder über das Formular, gern mit Ihrem Wunsch: mehr Länge, mehr Fülle oder beides."
+        },
+        {
+          "title": "Persönliche Antwort",
+          "text": "Andrea sagt Ihnen, welche Farbe passt und wie viele Packungen Sie brauchen."
+        }
+      ],
+      "cta": "Foto an Andrea senden",
+      "ctaForm": "Lieber per Formular anfragen"
+    },
+    "topper": {
+      "kicker": "Topper und Perücken",
+      "title": "Fülle, *wo sie fehlt.*",
+      "lead": "Für lichter werdendes Haar am Oberkopf, für die Stirnpartie oder für einen ganz neuen Anfang: Topper, Perücken, Pony und Haarsysteme aus Echthaar. Jedes dieser Stücke gibt es genau einmal.",
+      "needsLabel": "Wonach suchen Sie?",
+      "cta": "Topper und Perücken ansehen",
+      "consult": "Unsicher, was passt? Andrea berät Sie per Foto oder im Atelier.",
+      "unique": "Unikat",
+      "sold": "Verkauft",
+      "custom": "Nach Maß",
+      "add": "In den Warenkorb",
+      "inCart": "Im Warenkorb",
+      "view": "{name} ansehen"
+    },
+    "custom": {
+      "kicker": "Maßanfertigung",
+      "title": "Ihr Stück. *Nach Maß.*",
+      "lead": "Ihre Farbe, Ihre Länge, Ihre Struktur: Was Sie im Shop nicht finden, fertigt Andrea für Sie an. Topper, Perücken, Haarsysteme und Extensions.",
+      "stepsLabel": "Sechs Angaben für Ihre Anfrage",
+      "steps": [
+        {
+          "title": "System",
+          "text": "Extensions, Topper, Perücke oder Haarsystem."
+        },
+        {
+          "title": "Länge",
+          "text": "Ihre Wunschlänge. Was möglich ist, sagt Andrea Ihnen."
+        },
+        {
+          "title": "Farbe",
+          "text": "Ihr Ton, gern mit Ansatz oder Ombré."
+        },
+        {
+          "title": "Struktur",
+          "text": "Glatt, wellig, lockig oder kraus."
+        },
+        {
+          "title": "Menge",
+          "text": "Wie viel Fülle Sie sich wünschen."
+        },
+        {
+          "title": "Foto",
+          "text": "Ein Foto bei Tageslicht hilft beim Abgleich."
+        }
+      ],
+      "time": "Lieferzeit in Deutschland: {custom} Werktage, sobald alle Angaben und Ihre Zahlung vorliegen.",
+      "cta": "Maßanfertigung anfragen",
+      "imageAlt": "Hände, die mit einer feinen Nadel einzelne Haare in eine dünne Basis einarbeiten"
+    },
+    "hand": {
+      "kicker": "Die Hand dahinter",
+      "title": "Andrea weiß, *wie es sich anfühlt.*",
+      "lead": "Seit sie 19 ist, arbeitet Andrea mit Haar, angefangen in Rio de Janeiro. Sie kennt Haarverlust aus eigener Erfahrung und trägt selbst ein Haarteil, das sie selbst gefertigt hat. Deshalb gilt bei ihr: Es muss echt sein, und es muss sich im Alltag bewähren.",
+      "quote": "„Ich weiß ganz genau, was Haar für einen Menschen bedeutet, weil ich es selbst erlebt habe.“",
+      "by": "Andrea, Gründerin der HaarManufaktur",
+      "cta": "Andreas Geschichte lesen",
+      "visitTitle": "Treffen Sie Andrea im Atelier",
+      "visitCta": "Termin per WhatsApp vereinbaren",
+      "imageAlt": "Eine Frau vor einem goldgerahmten Spiegel, die ihr Haar berührt"
+    },
+    "concerns": {
+      "title": "Ihre Fragen. *Ehrlich beantwortet.*",
+      "lead": "Was Kundinnen und Kunden wissen möchten, bevor sie sich entscheiden. Kurz und offen beantwortet.",
+      "items": [
+        {
+          "q": "Passt die Farbe zu mir?",
+          "a": "Schicken Sie Andrea ein Foto Ihres Haars bei Tageslicht. Sie vergleicht es mit den Stücken im Atelier und sagt Ihnen offen, was passt und was nicht."
+        },
+        {
+          "q": "Wie viele Packungen brauche ich?",
+          "a": "Das hängt von Ihrem Haar und Ihrem Ziel ab. Andrea sagt es Ihnen persönlich, nachdem sie ein Foto gesehen hat. Lieber eine ehrliche Antwort als eine pauschale Tabelle."
+        },
+        {
+          "q": "Welche Methode passt zu mir?",
+          "a": "Clip-ins setzen Sie selbst ein und nehmen sie abends wieder heraus. Tapes, Tressen und Bondings werden fachgerecht eingearbeitet. Andrea bespricht mit Ihnen, was zu Ihrem Haar und Ihrem Alltag passt."
+        },
+        {
+          "q": "Sieht man das?",
+          "a": "Tapes und Tressen sind flach und schmal gearbeitet und liegen dicht am Kopf. Andrea sagt Ihnen ehrlich, was bei Ihnen möglich ist."
+        },
+        {
+          "q": "Wie schnell ist es bei mir?",
+          "a": "Ab Lager in {stock} Werktagen nach Andreas Bestätigung, versendet mit {carrier}. Eine Maßanfertigung braucht {custom} Werktage, weil sie erst für Sie entsteht."
+        },
+        {
+          "q": "Wann bezahle ich?",
+          "a": "Nicht beim Bestellen. Andrea prüft Ihre Bestellung und bestätigt sie persönlich. Erst dann erhalten Sie die Zahlungsdaten."
+        },
+        {
+          "q": "Und wenn es nicht passt?",
+          "a": "Es gilt das gesetzliche Widerrufsrecht von 14 Tagen ab Erhalt der Ware. Maßanfertigungen sind ausgenommen, weil sie nur für Sie entstehen."
+        },
+        {
+          "q": "Versenden Sie ins Ausland?",
+          "a": "Ja, mit {carrier}: in die EU für {euShip}. Für andere Länder nennt Andrea Ihnen die Versandkosten vor der Bestätigung."
+        }
+      ],
+      "returnsLink": "Widerruf im Detail",
+      "cta": "Persönlich beraten lassen"
+    },
+    "steps": {
+      "title": "Drei Schritte *zu Ihrem Stück.*",
+      "items": [
+        {
+          "title": "Auswählen",
+          "text": "Im Shop, per WhatsApp oder im Atelier. Sie senden Ihre Bestellung ab, ohne zu bezahlen."
+        },
+        {
+          "title": "Andrea bestätigt persönlich",
+          "text": "Sie prüft Ihre Bestellung noch einmal und meldet sich bei Ihnen. Erst danach bezahlen Sie."
+        },
+        {
+          "title": "Ankommen",
+          "text": "Versand mit {carrier}: in Deutschland {deShip}, ab {freeFrom} kostenfrei. Ab Lager {stock} Werktage, nach Maß {custom} Werktage."
+        }
+      ],
+      "cta": "Extensions entdecken"
+    },
+    "close": {
+      "title": "Wie neu *geboren.*",
+      "lead": "Mehr Länge, mehr Fülle, mehr Sie selbst. Ihr Stück liegt vielleicht schon bereit. Und wenn nicht, fertigt Andrea es für Sie an.",
+      "imageAlt": "Phönixflügel aus goldenen Haarsträhnen, die aus Glut aufsteigen"
+    }
   },
   "categories": {
     "topper": {
@@ -181,7 +313,7 @@
     "extensions": {
       "label": "Extensions",
       "need": "Mehr Länge und Fülle",
-      "caption": "Echthaar-Extensions in sechs Methoden, persönlich für Sie zusammengestellt. Preise nennt Andrea Ihnen auf Anfrage."
+      "caption": "Echthaar-Extensions in mehreren Methoden. Die gelisteten Packungen können Sie direkt bestellen, alles andere stellt Andrea persönlich für Sie zusammen."
     }
   },
   "product": {
@@ -213,12 +345,53 @@
     "compareLabel": "Vergleich verschieben: links Studiolicht, rechts unbearbeitetes Originalfoto",
     "compareStudio": "Studiolicht",
     "compareOriginal": "Originalfoto aus dem Atelier",
-    "compareNote": "Das Studiofoto wurde neu ausgeleuchtet, am Haar wurde nichts verändert. Das Originalfoto zeigt das Stück so, wie Andrea es im Atelier fotografiert hat.",
     "askWhatsapp": "Fragen zu diesem Stück? Schreiben Sie Andrea direkt per WhatsApp",
     "askWhatsappShort": "Per WhatsApp fragen",
     "stickyLabel": "Schnellkauf",
-    "availabilityUnknown": "Verfügbarkeit bestätigen wir persönlich, bevor Sie bezahlen.",
-    "originBrazil": "Brasilianisches Echthaar"
+    "unitPrice": "{amount} / 1 kg",
+    "packSize": "je Packung {grams} g",
+    "setSize": "Set ({pieces} Tressen) {grams} g",
+    "imageAltStaged": "{name}, {subtitle}: KI-gestützt inszeniertes Studiobild",
+    "imageNoteRelit": "Studioaufnahme, neu ausgeleuchtet. Am Haar wurde nichts verändert.",
+    "imageNoteStaged": "KI-Inszenierung: Form und Fülle sind inszeniert. Die Originalfotos zeigen das Stück unbearbeitet.",
+    "consultTitle": "Beratung",
+    "consultText": "Fragen zu Farbe, Größe oder Passform? Andrea antwortet persönlich.",
+    "consultExtensions": "Unsicher bei Farbe oder Menge? Schicken Sie Andrea ein Foto Ihres Haars bei Tageslicht. Sie sagt Ihnen ehrlich, was passt.",
+    "accessories": "Pflege und Zubehör aus dem Atelier",
+    "accessoriesNote": "Das verwendet Andrea im Atelier selbst.",
+    "moreExtensions": "Weitere Packungen",
+    "spec": {
+      "title": "Eigenschaften auf einen Blick",
+      "method": "Methode",
+      "length": "Länge",
+      "lengthValue": "{cm} cm",
+      "pack": "Packung",
+      "set": "Set",
+      "packValue": "{grams} g",
+      "setValue": "{pieces} Tressen, {grams} g",
+      "color": "Farbe",
+      "texture": "Struktur",
+      "base": "Basis",
+      "baseValue": "{base} cm",
+      "textures": {
+        "glatt": "Glatt",
+        "leichtGewellt": "Leicht gewellt",
+        "lockig": "Lockig"
+      }
+    },
+    "copy": {
+      "title": "Das Stück im Detail",
+      "benefits": "Eigenschaften",
+      "how": "So funktioniert es",
+      "good": "Für wen es passt",
+      "care": "Pflege"
+    },
+    "flagStaged": "KI-Inszenierung",
+    "compareStudioStaged": "KI-Inszenierung",
+    "compareTitleStaged": "KI-Inszenierung und Originalfoto im Vergleich",
+    "compareLabelStaged": "Vergleich verschieben: links KI-Inszenierung, rechts unbearbeitetes Originalfoto",
+    "manufacturer": "Hergestellt von {name}, {address}, {email}",
+    "handmade": "Handgefertigt von Andrea in {city}"
   },
   "price": {
     "smallBusiness": "Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.",
@@ -228,7 +401,7 @@
   },
   "collection": {
     "title": "Die Kollektion",
-    "lead": "Alles, was gerade im Atelier fertig ist. Jedes Stück von Hand gearbeitet, jedes nur einmal da.",
+    "lead": "Handgefertigt von Andrea in Iserlohn. Jedes Haarteil gibt es nur einmal, Extensions in Packungen.",
     "available": "{count, plural, =0 {Kein Stück verfügbar} one {# Stück verfügbar} other {# Stücke verfügbar}}",
     "all": "Alle",
     "filterLabel": "Nach Kategorie filtern",
@@ -239,7 +412,29 @@
     "sortLength": "Haarlänge",
     "apply": "Anwenden",
     "results": "{count, plural, one {# Stück} other {# Stücke}} in dieser Auswahl",
-    "soldHint": "Verkaufte Stücke bleiben sichtbar und sind markiert. Ein ähnliches Stück fertigt Andrea gern nach Maß."
+    "soldHint": "Verkauft? Ein ähnliches Stück fertigt Andrea gern nach Maß.",
+    "leadExtensions": "Mehr Länge, mehr Fülle, mehr Sie selbst. Die Packungen bestellen Sie direkt. Für andere Methoden, Längen und Mengen stellt Andrea alles persönlich zusammen.",
+    "hubLink": "Methoden, Farbhilfe und Beratung zu Extensions",
+    "byMethod": "Methode",
+    "byColor": "Farbe",
+    "byLength": "Länge",
+    "filterGroups": "Filter",
+    "any": "Alle",
+    "reset": "Filter zurücksetzen",
+    "empty": "Dazu gibt es gerade nichts. Lockern Sie die Filter oder lassen Sie sich ein Stück nach Maß fertigen.",
+    "colors": {
+      "blond": "Blond",
+      "braun": "Braun",
+      "kupfer": "Kupfer und Rot",
+      "schwarz": "Schwarz",
+      "grau": "Grau",
+      "andere": "Weitere"
+    },
+    "lengths": {
+      "kurz": "bis 30 cm",
+      "mittel": "31 bis 45 cm",
+      "lang": "ab 46 cm"
+    }
   },
   "cart": {
     "title": "Ihr Warenkorb",
@@ -305,7 +500,7 @@
     "demoGone": "Im Vorschau-Modus werden Bestellungen nur kurz im Speicher gehalten. Diese ist nicht mehr vorhanden.",
     "withdrawTitle": "Widerruf",
     "withdrawText": "Sie können Ihren Vertrag innerhalb der gesetzlichen Frist jederzeit hier widerrufen:",
-    "careCta": "Passende Pflege ansehen",
+    "careCta": "Weitere Stücke ansehen",
     "print": "Diese Seite können Sie ausdrucken oder als PDF speichern."
   },
   "inquiry": {
@@ -377,24 +572,86 @@
   },
   "about": {
     "metaTitle": "Über Andrea",
-    "metaDescription": "Andrea's Fashion Hair aus Iserlohn: Echthaar-Topper, Perücken und Haarsysteme, gefertigt mit Respekt vor den Menschen, die sie tragen.",
-    "kicker": "Unsere Essenz",
-    "title": "Wo Technologie auf Menschlichkeit trifft. Wo Schönheit auf Erneuerung trifft.",
-    "storyTitle": "Unsere Geschichte",
-    "p1": "Andrea's Fashion Hair entstand aus einer Leidenschaft für Exzellenz und vor allem aus tiefem Respekt vor Menschen.",
-    "p2": "Wir wissen, dass Haare weit mehr sind als einzelne Strähnen. Sie tragen Geschichten, Erinnerungen, Identität, Weiblichkeit, Persönlichkeit und Selbstvertrauen in sich. Für viele Menschen ist es selbstverständlich, sich im Spiegel wiederzuerkennen. Für andere, besonders Menschen mit Alopezie, Kopfhauterkrankungen, medizinischen Behandlungen oder dünner werdendem Haar, kann dieser Blick zur Herausforderung werden.",
-    "p3": "Für diese Menschen sind wir da.",
-    "p4": "Wir schaffen mehr als Haarprothesen und Topper: Wir schaffen Möglichkeiten, sich selbst wieder nahe zu kommen.",
-    "quote": "„Haar ist etwas zutiefst Persönliches. Jedes Stück, das wir fertigen, soll sich vom ersten Moment an wie Ihres anfühlen.“",
+    "metaDescription": "Andrea arbeitet seit ihrem 19. Lebensjahr mit Haar, angefangen in Rio de Janeiro. Heute führt sie ihr Atelier in Iserlohn: Extensions, Topper, Perücken und Haarsysteme aus Echthaar, auch nach Maß.",
+    "kicker": "Über Andrea",
+    "title": "Es ist nicht nur Haar. *Es ist viel mehr.*",
+    "lead": "Die Geschichte von Andreia Pereira Da Costa, die alle Andrea nennen: von Rio de Janeiro in ein Atelier in Iserlohn.",
+    "chaptersLabel": "Sieben Kapitel",
+    "chapters": [
+      {
+        "label": "Rio de Janeiro",
+        "title": "Mit 19 *beginnt es.*",
+        "text": "In Rio de Janeiro fängt Andrea an, mit Haar zu arbeiten, und bleibt viele Jahre dabei. In Brasilien hat Haar einen hohen Stellenwert. Menschen legen viel Wert darauf, weil es mehr ist als Schönheit.",
+        "quote": "„Haare zeigen, wer du innen bist, von innen nach außen.“"
+      },
+      {
+        "label": "Neuanfang",
+        "title": "Ein neues Land. *Eine neue Sprache.*",
+        "text": "Andrea zieht nach Deutschland. Weil sie anfangs kaum Deutsch spricht, arbeitet sie viele Jahre in der Pflege, mit Menschen mit Behinderung. Dort lernt sie, Menschen mit Geduld und Würde zu begegnen. Das prägt bis heute, wie sie berät."
+      },
+      {
+        "label": "Selbst betroffen",
+        "title": "Sie weiß, *wie es sich anfühlt.*",
+        "text": "Andrea kennt Haarverlust aus eigener Erfahrung. Sie trägt selbst ein Haarteil, das sie selbst gefertigt hat. Wer zu ihr kommt, spricht mit jemandem, der den Blick in den Spiegel kennt.",
+        "quote": "„Ich weiß ganz genau, was Haar für einen Menschen bedeutet, weil ich es selbst erlebt habe.“"
+      },
+      {
+        "label": "Es muss echt sein",
+        "title": "Echt. *Und alltagstauglich.*",
+        "text": "Ein Haarteil aus anderem Haar hat sie einmal ausprobiert. Es hat sie im Alltag enttäuscht, zum Beispiel in der Sauna. Seitdem steht für sie fest: Es muss echtes Haar sein, und es muss sich im Leben bewähren, nicht nur im Spiegel."
+      },
+      {
+        "label": "Das Atelier",
+        "title": "Zurück *zum Haar.*",
+        "text": "Vor rund drei Jahren gründet Andrea ihr eigenes Atelier in Iserlohn und kehrt zu ihrem Handwerk zurück: Extensions, Topper, Perücken und Haarsysteme aus Echthaar, auch nach Maß.",
+        "quote": "„Am glücklichsten bin ich in meinem Atelier, wenn ich meine Stücke fertige.“"
+      },
+      {
+        "label": "Der Phönix",
+        "title": "Wie neu *geboren.*",
+        "text": "Ihr Zeichen ist der Phönix. Er steht für Vorher und Nachher. Wer Haar verloren hat, durch Alopezie oder einfach mit den Jahren, und sich mit einem passenden Haarteil wieder im Spiegel erkennt, fühlt sich oft wie neu geboren.",
+        "quote": "„Wenn die Haare wieder da sind, ist man ein anderer Mensch. Man ist wie neu geboren.“"
+      },
+      {
+        "label": "Antrieb",
+        "title": "Für *jede und jeden.*",
+        "text": "Andrea möchte Menschen helfen, die sich so fühlen, wie sie sich selbst einmal gefühlt hat. Für jede Haarfarbe, jede Struktur, jede Herkunft: blond, brünett, rot, schwarz, glatt, wellig, lockig, kraus. Niemand soll denken: Das ist nicht für mich.",
+        "quote": "„Mir ist wichtig, dass ich den Menschen helfe. Dann ist mein Gewissen ruhig.“"
+      }
+    ],
     "quoteBy": "Andrea",
-    "valuesKicker": "Was uns bewegt",
-    "valuesTitle": "Technologie, Menschlichkeit und Erneuerung",
-    "v1Title": "Natürlicher Look",
-    "v1": "Haartechnologien und Premium-Materialien, die Ihre Identität respektieren und ein wirklich natürliches Ergebnis schaffen.",
-    "v2Title": "Komfort",
-    "v2": "Jedes Stück ist auf Leichtigkeit, Halt und Wohlbefinden ausgelegt und wird mühelos und diskret Teil Ihres Alltags.",
-    "v3Title": "Selbstvertrauen",
-    "v3": "Wir schaffen mehr als Haarlösungen: Wir schaffen die Freiheit, sich selbst wiederzuerkennen, voll zu leben und zu zeigen, wer Sie sind."
+    "colorsLabel": "Haar in vielen Tönen, aus dem Atelier",
+    "trustTitle": "Worauf Sie sich *verlassen können.*",
+    "trust": [
+      {
+        "title": "Echthaar, sorgfältig ausgewählt",
+        "text": "Ausgewählt von einer Frau, die seit ihrem 19. Lebensjahr mit Haar arbeitet."
+      },
+      {
+        "title": "Persönlich bestätigt",
+        "text": "Sie bezahlen erst, wenn Andrea Ihre Bestellung geprüft und bestätigt hat."
+      },
+      {
+        "title": "Nach Maß, wenn nötig",
+        "text": "Was es nicht fertig gibt, fertigt Andrea im Atelier an. Lieferzeit: {custom} Werktage."
+      },
+      {
+        "title": "Versand mit {carrier}",
+        "text": "In Deutschland, in die EU und auf Anfrage weltweit."
+      }
+    ],
+    "visitTitle": "Kommen Sie *ins Atelier.*",
+    "visitLead": "Oder schreiben Sie Andrea per WhatsApp, gern mit einem Foto Ihres Haars bei Tageslicht. Sie antwortet persönlich.",
+    "visitCta": "Termin per WhatsApp vereinbaren",
+    "visitForm": "Anfrage per Formular",
+    "hoursLabel": "Öffnungszeiten",
+    "closed": "geschlossen",
+    "nextTitle": "Bereit für *Ihr Stück?*",
+    "nextExtensions": "Extensions entdecken",
+    "nextCustom": "Maßanfertigung anfragen",
+    "imageAlt": "Phönixflügel aus goldenen Haarsträhnen vor dunklem Grund",
+    "craftAlt": "Hände, die mit einer feinen Nadel einzelne Haare in eine dünne Basis einarbeiten",
+    "mirrorAlt": "Eine Frau vor einem goldgerahmten Spiegel, die lächelnd ihr Haar berührt"
   },
   "consult": {
     "kicker": "Private Beratung",
@@ -430,7 +687,7 @@
     "range": "{from} bis {to}"
   },
   "footer": {
-    "claim": "Spezialisiert auf Perücken, Haarprothesen und Topper in Premiumqualität. Natürliche Schönheit und Selbstvertrauen für alle.",
+    "claim": "Echthaar-Extensions, Perücken und Topper aus dem Atelier von Andrea in Iserlohn. Auf Wunsch nach Maß gefertigt.",
     "collection": "Kollektion",
     "atelier": "Atelier",
     "story": "Andreas Geschichte",
@@ -452,10 +709,11 @@
     "whatsapp": "Andrea's Fashion Hair per WhatsApp schreiben",
     "socialNote": "Externe Links. Beim bloßen Aufruf dieser Seite werden keine Daten an diese Dienste übertragen.",
     "newsTitle": "Neue Stücke zuerst sehen",
-    "newsNote": "Jedes Stück gibt es einmal. Folgen Sie Andrea auf Instagram, dort zeigt sie neue Stücke zuerst."
+    "newsNote": "Jedes Haarteil gibt es einmal. Folgen Sie Andrea auf Instagram, dort zeigt sie neue Stücke zuerst.",
+    "extensionsHub": "Extensions: Methoden und Beratung"
   },
   "newsletter": {
-    "lead": "Jedes Stück gibt es einmal. Wir schreiben Ihnen, sobald ein neues fertig ist.",
+    "lead": "Jedes Haarteil gibt es einmal. Wir schreiben Ihnen, sobald ein neues fertig ist.",
     "email": "E-Mail-Adresse",
     "consent": "Ich möchte per E-Mail über neue Stücke informiert werden. Abmeldung jederzeit über den Link in jeder E-Mail. Details in der <link>Datenschutzerklärung</link>.",
     "submit": "Eintragen",
@@ -513,7 +771,8 @@
     "kicker": "Seite nicht gefunden",
     "title": "Hier ist nichts mehr.",
     "lead": "Vielleicht wurde das Stück verkauft. In der Kollektion finden Sie alle, die noch da sind.",
-    "cta": "Zur Kollektion"
+    "cta": "Zur Kollektion",
+    "extensions": "Oder: Extensions auf Anfrage"
   },
   "error": {
     "kicker": "Etwas ist schiefgelaufen",
@@ -562,7 +821,7 @@
     "title": "Sicher bestellen",
     "returns": "14 Tage Widerrufsrecht ab Erhalt der Ware, ohne Angabe von Gründen. Ausnahmen (z. B. Maßanfertigungen) stehen in der <link>Widerrufsbelehrung</link>.",
     "shipping": "Versand nach Deutschland {de}, ab {free} Warenwert kostenlos. In die EU {eu}.",
-    "delivery": "Lieferzeit ab Lager in der Regel {from} bis {to} Werktage mit {carrier}, Maßanfertigungen {mFrom} bis {mTo} Werktage.",
+    "delivery": "Lieferzeit ab Lager {from} bis {to} Werktage mit {carrier}, Maßanfertigungen {mFrom} bis {mTo} Werktage.",
     "contact": "Persönliche Ansprechpartnerin: Andrea, Telefon <tel>{phone}</tel>",
     "atelier": "Atelier in {city}, Beratung nach Terminabsprache",
     "payLater": "Sie bezahlen erst, wenn Andrea Ihre Bestellung persönlich bestätigt hat.",
@@ -571,21 +830,21 @@
   "objections": {
     "title": "Was Sie vor dem Kauf wissen möchten",
     "visibleQ": "Sieht man, dass ich ein Haarteil trage?",
-    "visibleA": "Dafür ist die Nano-Skin-Basis gemacht: Jedes Haar ist einzeln injiziert, deshalb sieht der Scheitel aus wie Ihre eigene Kopfhaut.",
+    "visibleA": "Dafür ist die Nano-Skin-Basis gemacht: Jedes Haar ist einzeln injiziert, deshalb wirkt der Scheitel ähnlich wie eigene Kopfhaut.",
     "colorQ": "Passt die Farbe zu meinem Haar?",
-    "colorA": "Schicken Sie Andrea ein Foto Ihres Haars bei Tageslicht, am einfachsten per WhatsApp. Sie vergleicht es mit dem Stück und sagt Ihnen ehrlich, ob es passt.",
+    "colorA": "Schicken Sie Andrea ein Foto Ihres Haars bei Tageslicht, am einfachsten per WhatsApp. Sie sagt Ihnen ehrlich, ob es passt.",
     "holdQ": "Wie wird das Stück befestigt?",
-    "holdClips": "Mit kleinen Clips an Ihrem eigenen Haar. Das dauert Sekunden und braucht weder Kleber noch einen Friseurtermin.",
-    "holdOther": "Die Befestigung hängt vom Stück ab. Andrea erklärt Ihnen persönlich, welche Methode zu Ihnen passt.",
-    "careQ": "Wie pflege ich das Stück?",
-    "careA": "Andrea gibt Ihnen die Pflegehinweise für Ihr Stück persönlich mit. Fragen Sie gern vorab per WhatsApp, Telefon oder Anfrage.",
+    "holdClips": "Mit kleinen Clips an Ihrem eigenen Haar. Sie setzen das Stück selbst ein und nehmen es wieder heraus, ohne Kleber und ohne Friseurtermin.",
+    "holdOther": "Andrea erklärt Ihnen persönlich, welche Befestigung zu Ihnen passt.",
     "fitQ": "Passt es zu meiner Kopfform?",
-    "fitBase": "Die Basis dieses Stücks misst {base} cm. Wenn Sie unsicher sind, messen Sie die Stelle, die bedeckt werden soll, und schicken Sie Andrea die Maße.",
-    "fitNoBase": "Für dieses Stück ist keine Basisgröße angegeben. Andrea sagt Ihnen gern, ob es zu Ihnen passt.",
+    "fitBase": "Die Basis misst {base} cm. Unsicher? Schicken Sie Andrea die Maße der Stelle, die bedeckt werden soll.",
+    "fitNoBase": "Andrea sagt Ihnen gern, ob es zu Ihnen passt.",
     "returnQ": "Was, wenn es nicht passt?",
-    "returnA": "Sie haben ein gesetzliches Widerrufsrecht von 14 Tagen ab Erhalt der Ware. Die Einzelheiten und Ausnahmen stehen in der Widerrufsbelehrung.",
+    "returnA": "14 Tage Widerrufsrecht ab Erhalt der Ware. Alles Weitere steht in der Widerrufsbelehrung.",
     "payQ": "Wann bezahle ich?",
-    "payA": "Nicht beim Absenden der Bestellung. Andrea bestätigt Ihr Stück zuerst persönlich und schreibt Ihnen dann, wie Sie bezahlen."
+    "payA": "Nicht beim Absenden der Bestellung. Andrea bestätigt Ihr Stück zuerst persönlich und schreibt Ihnen dann, wie Sie bezahlen.",
+    "packQ": "Wie viele Packungen brauche ich?",
+    "packA": "Andrea sagt Ihnen persönlich, wie viele Packungen zu Ihrem Haar und Ihrem Wunsch passen, am einfachsten per WhatsApp."
   },
   "drawer": {
     "title": "Im Warenkorb",
@@ -626,7 +885,7 @@
   },
   "extensions": {
     "title": "Extensions",
-    "lead": "Mehr Länge, mehr Fülle, mehr Sie selbst. Andrea stellt Ihnen Methode, Farbe, Länge und Menge persönlich zusammen und nennt Ihnen einen festen Preis.",
+    "lead": "Mehr Länge, mehr Fülle, mehr Sie selbst. Die Packungen unten bestellen Sie direkt. Für andere Methoden, Längen und Mengen stellt Andrea Ihnen alles persönlich zusammen und nennt Ihnen einen festen Preis.",
     "methodsTitle": "Sechs Methoden",
     "butterfly": "Butterfly Weft",
     "butterflyText": "Eine besonders feine, flexible Tresse (Weft), die flach am Kopf anliegt.",
@@ -640,10 +899,110 @@
     "keratinText": "Einzelne Strähnen, die mit einer Keratin-Verbindung am eigenen Haar befestigt werden.",
     "clip": "Clip-in",
     "clipText": "Fertige Teile zum Selbst-Einclipsen, ohne Friseurbesuch. Zum Beispiel für mehr Länge, wenn Ihr Haar schulterlang ist.",
-    "which": "Welche Methode zu Ihrem Haar passt, bespricht Andrea gern mit Ihnen.",
     "formTitle": "Extensions anfragen",
     "salonTitle": "Für Salons und Friseurinnen",
     "salonText": "Sie möchten Echthaar-Extensions in Mengen für Ihren Salon beziehen? Andrea macht Ihnen ein individuelles Angebot.",
-    "salonCta": "Als Salon anfragen"
+    "salonCta": "Als Salon anfragen",
+    "otherTitle": "Andere Methode, Länge oder Menge?",
+    "otherText": "Was Sie hier nicht finden, stellt Andrea auf Anfrage für Sie zusammen. Auch Salons und Friseurinnen erhalten ein persönliches Angebot.",
+    "metaTitle": "Echthaar-Extensions: Methoden, Farbe, Beratung",
+    "heroTitle": "Mehr Länge, mehr Fülle, mehr Sie selbst.",
+    "heroLead": "Echthaar-Extensions, handgefertigt von Andrea in Iserlohn. Die Packungen bestellen Sie direkt, alles andere stellt sie persönlich für Sie zusammen.",
+    "shopCta": "Packungen ansehen",
+    "adviceCta": "Beratung anfragen",
+    "methodsLead": "Welche zu Ihrem Haar und Ihrem Alltag passt, klären Sie mit Andrea.",
+    "inShop": "{count, plural, one {# Packung im Shop} other {# Packungen im Shop}}",
+    "onRequest": "Auf Anfrage",
+    "colorTitle": "Die richtige Farbe finden",
+    "colorLead": "Andrea vergleicht Ihr Haar persönlich mit dem Stück.",
+    "colorSteps": {
+      "light": {
+        "title": "Tageslicht nutzen",
+        "text": "Fotografieren Sie Ihr Haar am Fenster, ohne Blitz und ohne Filter."
+      },
+      "photo": {
+        "title": "Foto schicken",
+        "text": "Am einfachsten per WhatsApp, sonst mit einer Anfrage."
+      },
+      "answer": {
+        "title": "Andrea antwortet",
+        "text": "Sie sagt Ihnen ehrlich, welcher Ton passt, auch wenn es keiner aus dem Shop ist."
+      }
+    },
+    "packKicker": "Beratung",
+    "packTitle": "Wie viele Packungen brauche ich?",
+    "packText": "Andrea sagt Ihnen persönlich, wie viele Packungen Sie brauchen. Fragen Sie kurz, bevor Sie bestellen.",
+    "packWhatsapp": "Per WhatsApp fragen",
+    "packAsk": "Oder als Anfrage senden",
+    "productsTitle": "Extensions im Shop",
+    "allPacks": "Alle Extensions in der Kollektion"
+  },
+  "custom": {
+    "metaTitle": "Maßanfertigung anfragen",
+    "kicker": "Maßanfertigung",
+    "title": "Ein Stück, das nur für Sie entsteht.",
+    "lead": "Länge, Farbe, Struktur und Menge werden auf Sie abgestimmt. In sechs kurzen Schritten sagen Sie Andrea, was Sie sich wünschen. Sie meldet sich persönlich bei Ihnen.",
+    "timing": "Lieferzeit innerhalb Deutschlands: {mFrom} bis {mTo} Werktage, sobald alle Angaben und – bei Vorkasse oder PayPal – Ihre Zahlung vorliegen. Maßanfertigungen sind vom Widerrufsrecht ausgenommen, weil sie nur für Sie entstehen.",
+    "stepOf": "Schritt {step} von {total}",
+    "next": "Weiter",
+    "back": "Zurück",
+    "optional": "optional",
+    "sending": "Wird gesendet",
+    "strip": {
+      "kicker": "Maßanfertigung",
+      "title": "Ihre Farbe oder Länge ist nicht dabei?",
+      "text": "Andrea fertigt nach Maß: System, Länge, Farbe, Struktur und Menge ganz nach Ihrem Wunsch.",
+      "cta": "Maßanfertigung anfragen"
+    },
+    "steps": {
+      "system": {
+        "title": "Welches System?",
+        "hint": "Wählen Sie, was gefertigt werden soll. Wenn Sie unsicher sind, wählen Sie die letzte Option."
+      },
+      "length": {
+        "title": "Welche Länge?",
+        "hint": "Zum Beispiel 55 cm. Bei Haarteilen zählt die Haarlänge.",
+        "label": "Wunschlänge"
+      },
+      "color": {
+        "title": "Welche Farbe?",
+        "hint": "Beschreiben Sie den Ton in eigenen Worten. Ein Foto Ihres Haars bei Tageslicht schicken Sie Andrea nach der Anfrage per WhatsApp oder als Antwort auf ihre E-Mail.",
+        "label": "Haarfarbe"
+      },
+      "structure": {
+        "title": "Welche Struktur?",
+        "hint": "Glatt, wellig oder lockig."
+      },
+      "amount": {
+        "title": "Welche Menge?",
+        "hint": "Zum Beispiel Anzahl der Packungen oder Gramm. Wenn Sie es nicht wissen, lassen Sie das Feld leer. Andrea berät Sie persönlich.",
+        "label": "Menge"
+      },
+      "contact": {
+        "title": "Wohin darf Andrea antworten?",
+        "hint": "Mit dieser Anfrage kaufen Sie noch nichts. Andrea meldet sich mit einem Vorschlag und einem festen Preis."
+      }
+    },
+    "systems": {
+      "topper": "Topper",
+      "peruecke": "Perücke",
+      "pony": "Pony",
+      "haarsystem": "Haarsystem für Männer",
+      "unsure": "Ich weiß es noch nicht"
+    },
+    "methods": {
+      "butterfly": "Butterfly Weft",
+      "genius": "Genius Weft",
+      "invisible": "Invisible Tape",
+      "tape": "Tape-In",
+      "keratin": "Keratin-Bondings",
+      "clip": "Clip-in"
+    },
+    "structures": {
+      "glatt": "Glatt",
+      "wellig": "Wellig",
+      "lockig": "Lockig",
+      "unsure": "Ich weiß es noch nicht"
+    }
   }
 }

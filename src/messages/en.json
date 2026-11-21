@@ -4,7 +4,7 @@
     "claim": "HaarManufaktur",
     "titleTemplate": "%s | Andrea's Fashion Hair",
     "defaultTitle": "Andrea's Fashion Hair | Human hair toppers, wigs and hair systems",
-    "defaultDescription": "Reborn. Human hair, crafted by hand hair by hair: toppers, front lace wigs, fringes and hair systems from the HaarManufaktur in Iserlohn, Germany. Every piece is one of a kind.",
+    "defaultDescription": "Reborn. Extensions, toppers, front lace wigs, fringes and hair systems in human hair, from the HaarManufaktur in Iserlohn, Germany. Every hairpiece is one of a kind.",
     "ogAlt": "The golden phoenix of Andrea's Fashion Hair on a dark background"
   },
   "common": {
@@ -12,7 +12,7 @@
     "menu": "Menu",
     "close": "Close",
     "cart": "Bag",
-    "cartWithCount": "Bag, {count, plural, =0 {empty} one {# item} other {# items}}",
+    "cartWithCount": "Bag, {count, plural, one {# item} other {# items}}",
     "home": "Home",
     "required": "required",
     "optional": "optional",
@@ -36,7 +36,10 @@
     "story": "Story",
     "consultation": "Consultation",
     "about": "About Andrea",
-    "contact": "Contact"
+    "contact": "Contact",
+    "wigs": "Wigs & toppers",
+    "custom": "Made to measure",
+    "care": "Care & accessories"
   },
   "locale": {
     "label": "Language",
@@ -44,113 +47,242 @@
     "current": "Current language: {language}"
   },
   "hero": {
-    "chapters": "Film chapters",
-    "filmAlt": "A silent film accompanies scrolling: embers rise in the dark, open into phoenix wings made of light and become real, honey-coloured hair on a pale head form. The camera comes to rest on the parting.",
-    "scene1": {
-      "label": "New beginning",
-      "kicker": "Andrea's Fashion Hair",
-      "title": "Reborn.",
-      "body": "Human hair, worked by hand, hair by hair. For the morning you recognise yourself in the mirror again."
-    },
-    "scene2": {
-      "label": "Identity",
-      "title": "It is not just hair.",
-      "body": "It is who you are. Losing your hair means losing a piece of confidence. The phoenix in our emblem stands for the day it comes back."
-    },
-    "scene3": {
-      "label": "Invisible",
-      "title": "No one sees a transition.",
-      "body": "Wafer-thin nano skin base, every hair injected individually, free parting. You barely feel your piece. Others do not see it at all.",
-      "tag1": "100 % human hair",
-      "tag2": "Free parting",
-      "tag3": "On in seconds"
-    },
+    "kicker": "HaarManufaktur · Iserlohn",
+    "line1": "As if *reborn.*",
+    "line2": "More length. *More fullness.*",
+    "line3": "More *you.*",
+    "lead": "Handmade by Andrea in Iserlohn: human-hair extensions, toppers, wigs and made-to-measure pieces. With personal advice on colour and quantity.",
+    "chapters": "Chapters of the film",
+    "ch1": "Embers",
+    "ch2": "Phoenix",
+    "ch3": "Hair",
+    "pause": "Pause motion",
+    "play": "Resume motion",
+    "replay": "Watch again",
+    "trust": [
+      "Human hair, handmade by Andrea",
+      "Personal advice from Andrea",
+      "Payment only after her confirmation",
+      "Shipping with {carrier}, also international"
+    ],
+    "trustLabel": "At a glance",
+    "filmAlt": "Silent film that plays by itself: embers glow in the dark, phoenix wings of light rise from them and turn into long, copper-coloured hair on a pale mannequin head.",
+    "ctaExtensions": "Discover extensions",
+    "ctaCustom": "Request made-to-measure",
     "ctaCollection": "View the collection",
     "ctaConsult": "Get personal advice",
-    "ctaFind": "Find my piece",
-    "onlyOnce": "each one only once",
-    "filmPause": "Pause film",
-    "filmPlay": "Play film",
-    "uspLabel": "Good reasons",
-    "spotlightPrev": "Previous piece",
-    "spotlightNext": "Next piece",
-    "spotlightShow": "Show piece {index} of {total}",
-    "usps": [
-      "100 % human hair",
-      "Every piece one of a kind",
-      "Confirm first, pay later",
-      "Pieces in stock reach you in 2 to 5 working days",
-      "Personal advice from Andrea",
-      "Made to measure on request",
-      "Atelier in Iserlohn"
-    ],
-    "needsLabel": "What are you looking for?"
+    "ctaConsultVia": "via WhatsApp"
   },
   "home": {
-    "factsLabel": "At a glance",
-    "fact1Big": "100 %",
-    "fact1": "Human hair. No synthetic hair, no blends.",
-    "fact2Big": "1 of 1",
-    "fact2": "Every piece is made individually and exists exactly once.",
-    "fact3Big": "2 to 5",
-    "fact3": "working days until an in-stock piece reaches you.",
-    "fact4Big": "15 to 20",
-    "fact4": "working days for a piece made to your measurements.",
-    "finderTitle": "What are you missing right now?",
-    "finderLead": "Tell us, and we will show you the pieces made for it.",
-    "finderTabs": "Choose your need",
-    "finderAll": "All {category}",
-    "finderEmpty": "No piece is available here right now. Andrea will gladly make one to measure.",
-    "craftKicker": "The craft",
-    "craftTitle": "Hair by hair. By hand.",
-    "craftLead": "An off-the-shelf topper sits on your head. Ours becomes part of it. The difference lies in four things.",
-    "craftImageAlt": "Hands working individual hairs into a wafer-thin base",
-    "craft1Key": "The base",
-    "craft1": "Nano skin, as thin as a second skin. It lies flat and disappears under your hairline.",
-    "craft2Key": "The hair",
-    "craft2": "Every single hair is injected by hand. So it seems to grow straight from the scalp.",
-    "craft3Key": "The parting",
-    "craft3": "Free in every direction. Wear it left, right or centre, however your day feels.",
-    "craft4Key": "The hold",
-    "craft4": "Clips that sit in seconds and come off just as quickly in the evening.",
-    "atelierTitle": "In the atelier now.",
-    "atelierLead": "Each of these pieces exists only once. Once it is sold, it does not come back.",
-    "atelierAll": "Whole collection",
-    "phoenixTitle": "The phoenix is no coincidence.",
-    "phoenixLead": "At nineteen, Andrea began working with hair in Rio de Janeiro. Since then she has seen what happens to a person who loses their hair. And what happens when it comes back.",
-    "phoenixQuote": "“When the hair is back, the person is different. They are reborn.”",
-    "phoenixBy": "Andrea, founder and hair maker",
-    "phoenixOutro": "That is why every piece from her atelier carries this emblem. It does not stand for hair. It stands for the morning after.",
-    "extKicker": "Extensions",
-    "extTitle": "Length no one can tell.",
-    "extLead": "Human hair extensions in six methods, for clients and for salons. Andrea puts together colour, length and amount for you personally.",
-    "extMethods": "Methods",
-    "extCta": "Enquire about extensions",
-    "extImageAlt": "Human hair extensions in three shades: weft, tape, bondings and clip-in",
-    "stepsTitle": "Three steps. No risk.",
-    "stepsLead": "You only pay once Andrea has personally confirmed your piece.",
-    "step1Title": "You choose your piece",
-    "step1": "In the shop or together with Andrea. A photo in daylight is enough, and she will tell you honestly which colour suits you.",
-    "step2Title": "Andrea confirms personally",
-    "step2": "She checks your piece by hand once more and writes to you. Only then do you pay.",
-    "step3Title": "Put it on. Recognise yourself.",
-    "step3": "We send in-stock pieces with {carrier}. They usually reach you 2 to 5 working days after Andrea’s confirmation.",
-    "faqTitle": "What you would like to know first.",
-    "faq1Q": "Can people tell that I am wearing a hair piece?",
-    "faq1A": "That is what the nano skin base is made for. Every hair is injected individually, so the parting looks like your own scalp. Even up close, no edge and no knot can be seen.",
-    "faq2Q": "How do I know which colour suits me?",
-    "faq2A": "Send Andrea a photo of your hair in daylight through the consultation form. She compares it with the pieces in the atelier and tells you openly which one suits you and which does not.",
-    "faq3Q": "How is a topper attached?",
-    "faq3A": "With small clips on your own hair. It takes seconds, holds all day and needs neither glue nor a hairdresser's appointment.",
-    "faq4Q": "How quickly will my piece reach me?",
-    "faq4A": "In-stock pieces usually reach you 2 to 5 working days after Andrea’s confirmation, shipped with {carrier}. A made-to-measure piece needs 15 to 20 working days, because it is made for you first.",
-    "faq5Q": "When and how do I pay?",
-    "faq5A": "Not when you send your order. Andrea first confirms your piece personally and then tells you how to pay.",
-    "faq6Q": "I cannot find my piece. Can it be made to measure?",
-    "faq6A": "Yes. Length, colour, density and base are matched to you. Describe to Andrea what you would like, and she will get back to you with a proposal.",
-    "closeTitle": "The mirror is waiting.",
-    "closeLead": "Your piece may already be finished. Take a look before someone else wears it.",
-    "closeImageAlt": "A woman in front of the atelier mirror, touching her hair"
+    "whatsappNote": "opens WhatsApp",
+    "symbolImage": "Illustrative image",
+    "dock": "Ask Andrea",
+    "ribbonLabel": "What you can expect",
+    "ribbon": [
+      "Handmade in Iserlohn",
+      "Human hair",
+      "Craft learned in Rio de Janeiro",
+      "Six extension methods",
+      "Personal advice",
+      "Payment only after confirmation",
+      "Shipping with {carrier}, also international",
+      "Made to measure in {custom} working days"
+    ],
+    "chapterLabel": "Chapter",
+    "ext": {
+      "kicker": "Extensions",
+      "title": "More length. *More fullness.*",
+      "lead": "Human hair in six methods, from clip-ins you put in yourself to fine wefts. You can order the packs shown here directly. Andrea will tell you in person which method and how much hair suit you.",
+      "methodsLabel": "Six methods",
+      "methods": [
+        "Clip-in",
+        "Genius Weft",
+        "Butterfly Weft",
+        "Invisible Tape",
+        "Tape-in",
+        "Keratin bonds"
+      ],
+      "methodsNote": "Andrea puts together other methods, lengths and quantities on request.",
+      "cta": "View all extensions",
+      "salon": "For salons and hairdressers: request quantities",
+      "view": "View {name}, {color}",
+      "imageNote": "AI staging: the hair colour is matched to the original photo. The original photos on the product pages show the pieces unedited.",
+      "galleryLabel": "Extensions in the atelier"
+    },
+    "near": {
+      "kicker": "Up close",
+      "title": "Come *closer.*",
+      "lead": "Weft, clip and tape decide how extensions feel to wear. This is what the pieces look like in detail.",
+      "shots": [
+        {
+          "label": "Clip-in",
+          "text": "Three wefts with clips that you put in yourself. No salon appointment, and you take them out again in the evening."
+        },
+        {
+          "label": "Genius Weft",
+          "text": "A thin weft that can be cut to the width you need."
+        },
+        {
+          "label": "Invisible Tape",
+          "text": "Narrow, thin tapes that blend discreetly into your own hair."
+        },
+        {
+          "label": "Butterfly Weft",
+          "text": "A fine, flexible weft that lies flat against the head."
+        }
+      ],
+      "shotAlt": "{name}, {color}: detail shot",
+      "progress": "Image {index} of {total}",
+      "cta": "Compare methods"
+    },
+    "color": {
+      "kicker": "Colour and quantity",
+      "title": "Your colour. *Your amount.*",
+      "lead": "Andrea matches your colour personally and tells you how many packs you need for your goal.",
+      "fanLabel": "Colours in the atelier",
+      "customTitle": "Your colour isn't here?",
+      "customText": "Andrea makes it to measure.",
+      "stepsLabel": "How colour matching works",
+      "steps": [
+        {
+          "title": "A photo in daylight",
+          "text": "By a window, without flash, with roots and lengths clearly visible."
+        },
+        {
+          "title": "Send it to Andrea",
+          "text": "Via WhatsApp or the form, ideally with your wish: more length, more fullness or both."
+        },
+        {
+          "title": "A personal answer",
+          "text": "Andrea tells you which colour suits you and how many packs you need."
+        }
+      ],
+      "cta": "Send Andrea a photo",
+      "ctaForm": "Prefer the form"
+    },
+    "topper": {
+      "kicker": "Toppers and wigs",
+      "title": "Fullness *where it's missing.*",
+      "lead": "For thinning hair on top, for the hairline or for a completely new start: toppers, wigs, fringes and hair systems in human hair. Each of these pieces exists only once.",
+      "needsLabel": "What are you looking for?",
+      "cta": "View toppers and wigs",
+      "consult": "Not sure what suits you? Andrea advises you by photo or in the atelier.",
+      "unique": "One of a kind",
+      "sold": "Sold",
+      "custom": "Made to measure",
+      "add": "Add to bag",
+      "inCart": "In your bag",
+      "view": "View {name}"
+    },
+    "custom": {
+      "kicker": "Made to measure",
+      "title": "Your piece. *Made to measure.*",
+      "lead": "Your colour, your length, your texture: whatever you can't find in the shop, Andrea makes for you. Toppers, wigs, hair systems and extensions.",
+      "stepsLabel": "Six details for your request",
+      "steps": [
+        {
+          "title": "System",
+          "text": "Extensions, topper, wig or hair system."
+        },
+        {
+          "title": "Length",
+          "text": "The length you would like. Andrea tells you what is possible."
+        },
+        {
+          "title": "Colour",
+          "text": "Your shade, with roots or ombré if you like."
+        },
+        {
+          "title": "Texture",
+          "text": "Straight, wavy, curly or coily."
+        },
+        {
+          "title": "Amount",
+          "text": "How much fullness you would like."
+        },
+        {
+          "title": "Photo",
+          "text": "A photo in daylight helps with matching."
+        }
+      ],
+      "time": "Delivery time in Germany: {custom} working days once all details and your payment have been received.",
+      "cta": "Request made-to-measure",
+      "imageAlt": "Hands using a fine needle to work single hairs into a thin base"
+    },
+    "hand": {
+      "kicker": "The hand behind it",
+      "title": "Andrea knows *how it feels.*",
+      "lead": "Andrea has worked with hair since she was 19, starting in Rio de Janeiro. She knows hair loss from her own experience and wears a hairpiece she made herself. That is why her rule is: it has to be real, and it has to hold up in everyday life.",
+      "quote": "“I know exactly what hair means to a person, because I have lived it myself.”",
+      "by": "Andrea, founder of the HaarManufaktur",
+      "cta": "Read Andrea's story",
+      "visitTitle": "Meet Andrea in the atelier",
+      "visitCta": "Book a visit via WhatsApp",
+      "imageAlt": "A woman in front of a gold-framed mirror, touching her hair"
+    },
+    "concerns": {
+      "title": "Your questions. *Honestly answered.*",
+      "lead": "What customers want to know before they decide. Answered briefly and openly.",
+      "items": [
+        {
+          "q": "Will the colour suit me?",
+          "a": "Send Andrea a photo of your hair in daylight. She compares it with the pieces in the atelier and tells you openly what matches and what doesn't."
+        },
+        {
+          "q": "How many packs do I need?",
+          "a": "That depends on your hair and your goal. Andrea tells you in person once she has seen a photo. An honest answer rather than a one-size-fits-all table."
+        },
+        {
+          "q": "Which method suits me?",
+          "a": "You put clip-ins in yourself and take them out in the evening. Tapes, wefts and bonds are fitted professionally. Andrea discusses with you what suits your hair and your everyday life."
+        },
+        {
+          "q": "Will it show?",
+          "a": "Tapes and wefts are made flat and narrow and sit close to the head. Andrea tells you honestly what is possible for you."
+        },
+        {
+          "q": "How soon will it arrive?",
+          "a": "From stock in {stock} working days after Andrea's confirmation, shipped with {carrier}. A made-to-measure piece takes {custom} working days, because it is made for you."
+        },
+        {
+          "q": "When do I pay?",
+          "a": "Not when you order. Andrea checks your order and confirms it in person. Only then do you receive the payment details."
+        },
+        {
+          "q": "And if it doesn't suit me?",
+          "a": "The statutory 14-day right of withdrawal applies from receipt of the goods. Made-to-measure pieces are excluded because they are made only for you."
+        },
+        {
+          "q": "Do you ship abroad?",
+          "a": "Yes, with {carrier}: to the EU for {euShip}. For other countries, Andrea tells you the shipping cost before confirming."
+        }
+      ],
+      "returnsLink": "Withdrawal in detail",
+      "cta": "Get personal advice"
+    },
+    "steps": {
+      "title": "Three steps *to your piece.*",
+      "items": [
+        {
+          "title": "Choose",
+          "text": "In the shop, via WhatsApp or in the atelier. You send your order without paying."
+        },
+        {
+          "title": "Andrea confirms in person",
+          "text": "She checks your order once more and gets in touch. Only then do you pay."
+        },
+        {
+          "title": "Arrival",
+          "text": "Shipping with {carrier}: in Germany {deShip}, free from {freeFrom}. From stock {stock} working days, made to measure {custom} working days."
+        }
+      ],
+      "cta": "Discover extensions"
+    },
+    "close": {
+      "title": "As if *reborn.*",
+      "lead": "More length, more fullness, more you. Your piece may already be waiting. And if not, Andrea will make it for you.",
+      "imageAlt": "Phoenix wings of golden strands of hair rising from embers"
+    }
   },
   "categories": {
     "topper": {
@@ -181,7 +313,7 @@
     "extensions": {
       "label": "Extensions",
       "need": "More length and volume",
-      "caption": "Human hair extensions in six methods, put together personally for you. Andrea will tell you the price on request."
+      "caption": "Human hair extensions in several methods. You can order the packs listed here directly; anything else Andrea puts together personally for you."
     }
   },
   "product": {
@@ -213,12 +345,53 @@
     "compareLabel": "Move the comparison: studio light on the left, unedited original photo on the right",
     "compareStudio": "Studio light",
     "compareOriginal": "Original photo from the atelier",
-    "compareNote": "The studio photo was relit; nothing about the hair was changed. The original photo shows the piece as Andrea photographed it in the atelier.",
     "askWhatsapp": "Questions about this piece? Message Andrea directly on WhatsApp",
     "askWhatsappShort": "Ask on WhatsApp",
     "stickyLabel": "Quick purchase",
-    "availabilityUnknown": "We confirm availability personally before you pay.",
-    "originBrazil": "Brazilian human hair"
+    "unitPrice": "{amount} / 1 kg",
+    "packSize": "per pack {grams} g",
+    "setSize": "set ({pieces} wefts) {grams} g",
+    "imageAltStaged": "{name}, {subtitle}: AI-assisted staged studio image",
+    "imageNoteRelit": "Studio shot, relit. Nothing about the hair was altered.",
+    "imageNoteStaged": "AI staging: shape and fullness are staged. The original photos show the piece unedited.",
+    "consultTitle": "Advice",
+    "consultText": "Questions about colour, size or fit? Andrea replies personally.",
+    "consultExtensions": "Unsure about colour or amount? Send Andrea a photo of your hair in daylight. She will tell you honestly what suits.",
+    "accessories": "Care and accessories from the atelier",
+    "accessoriesNote": "Andrea uses these herself in the atelier.",
+    "moreExtensions": "More packs",
+    "spec": {
+      "title": "Properties at a glance",
+      "method": "Method",
+      "length": "Length",
+      "lengthValue": "{cm} cm",
+      "pack": "Pack",
+      "set": "Set",
+      "packValue": "{grams} g",
+      "setValue": "{pieces} wefts, {grams} g",
+      "color": "Colour",
+      "texture": "Texture",
+      "base": "Base",
+      "baseValue": "{base} cm",
+      "textures": {
+        "glatt": "Straight",
+        "leichtGewellt": "Slightly wavy",
+        "lockig": "Curly"
+      }
+    },
+    "copy": {
+      "title": "The piece in detail",
+      "benefits": "Highlights",
+      "how": "How it works",
+      "good": "Who it is for",
+      "care": "Care"
+    },
+    "flagStaged": "AI staging",
+    "compareStudioStaged": "AI staging",
+    "compareTitleStaged": "AI staging and original photo compared",
+    "compareLabelStaged": "Move the comparison: AI staging on the left, unedited original photo on the right",
+    "manufacturer": "Made by {name}, {address}, {email}",
+    "handmade": "Handmade by Andrea in {city}"
   },
   "price": {
     "smallBusiness": "No VAT is charged in accordance with § 19 of the German VAT Act (small business).",
@@ -228,7 +401,7 @@
   },
   "collection": {
     "title": "The collection",
-    "lead": "Everything that is finished in the atelier right now. Every piece worked by hand, every one available only once.",
+    "lead": "Handmade by Andrea in Iserlohn. Every hairpiece exists only once, extensions come in packs.",
     "available": "{count, plural, =0 {No piece available} one {# piece available} other {# pieces available}}",
     "all": "All",
     "filterLabel": "Filter by category",
@@ -239,7 +412,29 @@
     "sortLength": "Hair length",
     "apply": "Apply",
     "results": "{count, plural, one {# piece} other {# pieces}} in this selection",
-    "soldHint": "Sold pieces stay visible and are marked. Andrea will gladly make a similar piece to measure."
+    "soldHint": "Sold? Andrea will gladly make a similar piece to measure.",
+    "leadExtensions": "More length, more fullness, more of you. You can order the packs directly. For other methods, lengths and amounts Andrea puts everything together personally.",
+    "hubLink": "Methods, colour help and advice for extensions",
+    "byMethod": "Method",
+    "byColor": "Colour",
+    "byLength": "Length",
+    "filterGroups": "Filters",
+    "any": "All",
+    "reset": "Reset filters",
+    "empty": "Nothing matches right now. Loosen the filters or have a piece made to measure.",
+    "colors": {
+      "blond": "Blonde",
+      "braun": "Brown",
+      "kupfer": "Copper and red",
+      "schwarz": "Black",
+      "grau": "Grey",
+      "andere": "Other"
+    },
+    "lengths": {
+      "kurz": "up to 30 cm",
+      "mittel": "31 to 45 cm",
+      "lang": "46 cm and longer"
+    }
   },
   "cart": {
     "title": "Your bag",
@@ -305,7 +500,7 @@
     "demoGone": "In preview mode, orders are only kept in memory for a short time. This one is no longer available.",
     "withdrawTitle": "Withdrawal",
     "withdrawText": "You can withdraw from your contract here at any time within the statutory period:",
-    "careCta": "See matching care products",
+    "careCta": "See more pieces",
     "print": "You can print this page or save it as a PDF."
   },
   "inquiry": {
@@ -377,24 +572,86 @@
   },
   "about": {
     "metaTitle": "About Andrea",
-    "metaDescription": "Andrea's Fashion Hair from Iserlohn, Germany: human hair toppers, wigs and hair systems, made with respect for the people who wear them.",
-    "kicker": "Our essence",
-    "title": "Where technology meets humanity. Where beauty meets renewal.",
-    "storyTitle": "Our story",
-    "p1": "Andrea's Fashion Hair grew out of a passion for excellence and, above all, out of deep respect for people.",
-    "p2": "We know that hair is far more than individual strands. It carries stories, memories, identity, femininity, personality and self-confidence. For many people it is a matter of course to recognise themselves in the mirror. For others, especially people with alopecia, scalp conditions, medical treatments or thinning hair, that look can become a challenge.",
-    "p3": "We are here for these people.",
-    "p4": "We create more than hair prostheses and toppers: we create ways to feel close to yourself again.",
-    "quote": "“Hair is deeply personal. Every piece we craft is built to feel like yours from the first moment.”",
+    "metaDescription": "Andrea has worked with hair since she was 19, starting in Rio de Janeiro. Today she runs her atelier in Iserlohn: extensions, toppers, wigs and hair systems in human hair, also made to measure.",
+    "kicker": "About Andrea",
+    "title": "It's not just hair. *It's so much more.*",
+    "lead": "The story of Andreia Pereira Da Costa, whom everyone calls Andrea: from Rio de Janeiro to an atelier in Iserlohn.",
+    "chaptersLabel": "Seven chapters",
+    "chapters": [
+      {
+        "label": "Rio de Janeiro",
+        "title": "It begins *at 19.*",
+        "text": "In Rio de Janeiro, Andrea starts working with hair and stays with it for many years. In Brazil, hair matters a great deal. People care about it because it is more than beauty.",
+        "quote": "“Hair shows who you are inside, from the inside out.”"
+      },
+      {
+        "label": "A new start",
+        "title": "A new country. *A new language.*",
+        "text": "Andrea moves to Germany. Because she hardly speaks German at first, she works in care for many years, with people with disabilities. There she learns to meet people with patience and dignity. It still shapes how she advises today."
+      },
+      {
+        "label": "Her own experience",
+        "title": "She knows *how it feels.*",
+        "text": "Andrea knows hair loss from her own experience. She wears a hairpiece she made herself. Whoever comes to her talks to someone who knows that look in the mirror.",
+        "quote": "“I know exactly what hair means to a person, because I have lived it myself.”"
+      },
+      {
+        "label": "It has to be real",
+        "title": "Real. *And made for everyday life.*",
+        "text": "She once tried a hairpiece made from other hair. It let her down in everyday life, in the sauna for example. Since then she has been certain: it has to be real hair, and it has to hold up in life, not just in the mirror."
+      },
+      {
+        "label": "The atelier",
+        "title": "Back *to hair.*",
+        "text": "About three years ago, Andrea founded her own atelier in Iserlohn and returned to her craft: extensions, toppers, wigs and hair systems in human hair, also made to measure.",
+        "quote": "“I am happiest in my atelier, when I am making my pieces.”"
+      },
+      {
+        "label": "The phoenix",
+        "title": "As if *reborn.*",
+        "text": "Her sign is the phoenix. It stands for before and after. Anyone who has lost hair, through alopecia or simply over the years, and recognises themselves in the mirror again with the right hairpiece, often feels as if reborn.",
+        "quote": "“When the hair is back, you are a different person. You are as if reborn.”"
+      },
+      {
+        "label": "What drives her",
+        "title": "For *everyone.*",
+        "text": "Andrea wants to help people who feel the way she once felt. For every hair colour, every texture, every background: blonde, brunette, red, black, straight, wavy, curly, coily. Nobody should think: this isn't for me.",
+        "quote": "“It matters to me that I help people. Then my conscience is at peace.”"
+      }
+    ],
     "quoteBy": "Andrea",
-    "valuesKicker": "What moves us",
-    "valuesTitle": "Technology, humanity and renewal",
-    "v1Title": "Natural look",
-    "v1": "Hair technologies and premium materials that respect your identity and create a truly natural result.",
-    "v2Title": "Comfort",
-    "v2": "Every piece is designed for lightness, hold and well-being, and becomes part of your everyday life effortlessly and discreetly.",
-    "v3Title": "Confidence",
-    "v3": "We create more than hair solutions: we create the freedom to recognise yourself, to live fully and to show who you are."
+    "colorsLabel": "Hair in many shades, from the atelier",
+    "trustTitle": "What you can *rely on.*",
+    "trust": [
+      {
+        "title": "Human hair, carefully chosen",
+        "text": "Chosen by a woman who has worked with hair since she was 19."
+      },
+      {
+        "title": "Confirmed in person",
+        "text": "You only pay once Andrea has checked and confirmed your order."
+      },
+      {
+        "title": "Made to measure if needed",
+        "text": "What doesn't exist ready-made, Andrea makes in the atelier. Delivery time: {custom} working days."
+      },
+      {
+        "title": "Shipping with {carrier}",
+        "text": "Within Germany, to the EU and worldwide on request."
+      }
+    ],
+    "visitTitle": "Come *to the atelier.*",
+    "visitLead": "Or write to Andrea on WhatsApp, ideally with a photo of your hair in daylight. She replies in person.",
+    "visitCta": "Book a visit via WhatsApp",
+    "visitForm": "Send a request",
+    "hoursLabel": "Opening hours",
+    "closed": "closed",
+    "nextTitle": "Ready for *your piece?*",
+    "nextExtensions": "Discover extensions",
+    "nextCustom": "Request made-to-measure",
+    "imageAlt": "Phoenix wings made of golden strands of hair against a dark background",
+    "craftAlt": "Hands using a fine needle to work single hairs into a thin base",
+    "mirrorAlt": "A woman in front of a gold-framed mirror, smiling as she touches her hair"
   },
   "consult": {
     "kicker": "Private consultation",
@@ -430,7 +687,7 @@
     "range": "{from} to {to}"
   },
   "footer": {
-    "claim": "Specialists in wigs, hair prostheses and premium quality toppers. Natural beauty and confidence for everyone.",
+    "claim": "Human-hair extensions, wigs and toppers from Andrea’s atelier in Iserlohn. Made to measure on request.",
     "collection": "Collection",
     "atelier": "Atelier",
     "story": "Andrea's story",
@@ -452,10 +709,11 @@
     "whatsapp": "Message Andrea's Fashion Hair on WhatsApp",
     "socialNote": "External links. Simply visiting this page does not transfer any data to these services.",
     "newsTitle": "See new pieces first",
-    "newsNote": "Every piece exists once. Follow Andrea on Instagram, where she shows new pieces first."
+    "newsNote": "Every hairpiece exists once. Follow Andrea on Instagram, where she shows new pieces first.",
+    "extensionsHub": "Extensions: methods and advice"
   },
   "newsletter": {
-    "lead": "Every piece exists once. We will write to you as soon as a new one is finished.",
+    "lead": "Every hairpiece exists once. We will write to you as soon as a new one is finished.",
     "email": "E-mail address",
     "consent": "I would like to be informed about new pieces by e-mail. Unsubscribe at any time via the link in every e-mail. Details in the <link>privacy policy</link>.",
     "submit": "Sign up",
@@ -513,7 +771,8 @@
     "kicker": "Page not found",
     "title": "Nothing here any more.",
     "lead": "Perhaps the piece has been sold. In the collection you will find all those that are still available.",
-    "cta": "To the collection"
+    "cta": "To the collection",
+    "extensions": "Or: extensions on request"
   },
   "error": {
     "kicker": "Something went wrong",
@@ -562,7 +821,7 @@
     "title": "Order with confidence",
     "returns": "14-day right of withdrawal from receipt of the goods, without giving reasons. Exceptions (e.g. made-to-measure pieces) are listed in the <link>cancellation policy</link>.",
     "shipping": "Shipping to Germany {de}, free from {free} order value. To the EU {eu}.",
-    "delivery": "Delivery time for in-stock pieces usually {from} to {to} working days with {carrier}, made-to-measure pieces {mFrom} to {mTo} working days.",
+    "delivery": "Delivery time for in-stock pieces {from} to {to} working days with {carrier}, made-to-measure pieces {mFrom} to {mTo} working days.",
     "contact": "Your personal contact: Andrea, phone <tel>{phone}</tel>",
     "atelier": "Atelier in {city}, consultations by appointment",
     "payLater": "You only pay once Andrea has personally confirmed your order.",
@@ -571,21 +830,21 @@
   "objections": {
     "title": "What you would like to know before buying",
     "visibleQ": "Can people tell that I am wearing a hair piece?",
-    "visibleA": "That is what the nano skin base is made for: every hair is injected individually, so the parting looks like your own scalp.",
+    "visibleA": "That is what the nano skin base is made for: every hair is injected individually, so the parting looks much like your own scalp.",
     "colorQ": "Does the colour match my hair?",
-    "colorA": "Send Andrea a photo of your hair in daylight, most easily via WhatsApp. She compares it with the piece and tells you honestly whether it matches.",
+    "colorA": "Send Andrea a photo of your hair in daylight, most easily by WhatsApp. She will tell you honestly whether it suits you.",
     "holdQ": "How is the piece attached?",
-    "holdClips": "With small clips on your own hair. It takes seconds and needs neither glue nor a hairdresser’s appointment.",
-    "holdOther": "The attachment depends on the piece. Andrea will explain personally which method suits you.",
-    "careQ": "How do I care for the piece?",
-    "careA": "Andrea gives you the care instructions for your piece personally. Feel free to ask beforehand via WhatsApp, phone or enquiry.",
+    "holdClips": "With small clips on your own hair. You put the piece in yourself and take it out again, without glue and without a hairdresser’s appointment.",
+    "holdOther": "Andrea will show you personally which method suits you.",
     "fitQ": "Will it fit my head shape?",
-    "fitBase": "The base of this piece measures {base} cm. If you are unsure, measure the area to be covered and send Andrea the measurements.",
-    "fitNoBase": "No base size is given for this piece. Andrea will gladly tell you whether it suits you.",
+    "fitBase": "The base measures {base} cm. Not sure? Send Andrea the measurements of the area to be covered.",
+    "fitNoBase": "Andrea will gladly tell you whether it suits you.",
     "returnQ": "What if it does not fit?",
-    "returnA": "You have a statutory right of withdrawal of 14 days from receipt of the goods. Details and exceptions are in the cancellation policy.",
+    "returnA": "You have a 14-day right of withdrawal from receipt of the goods. Everything else is in the withdrawal information.",
     "payQ": "When do I pay?",
-    "payA": "Not when you send the order. Andrea first confirms your piece personally and then tells you how to pay."
+    "payA": "Not when you send the order. Andrea first confirms your piece personally and then tells you how to pay.",
+    "packQ": "How many packs do I need?",
+    "packA": "Andrea will tell you personally how many packs suit your hair and your goal, most easily by WhatsApp."
   },
   "drawer": {
     "title": "In your bag",
@@ -626,7 +885,7 @@
   },
   "extensions": {
     "title": "Extensions",
-    "lead": "More length, more volume, more you. Andrea personally puts together method, colour, length and amount for you and gives you a fixed price.",
+    "lead": "More length, more volume, more you. You can order the packs below directly. For other methods, lengths and amounts, Andrea puts everything together personally and gives you a fixed price.",
     "methodsTitle": "Six methods",
     "butterfly": "Butterfly Weft",
     "butterflyText": "A particularly fine, flexible weft that lies flat against the head.",
@@ -640,10 +899,110 @@
     "keratinText": "Individual strands attached to your own hair with a keratin bond.",
     "clip": "Clip-in",
     "clipText": "Ready-made pieces you clip in yourself, without a salon visit. For example for more length if your hair is shoulder-length.",
-    "which": "Andrea will gladly discuss with you which method suits your hair.",
     "formTitle": "Enquire about extensions",
     "salonTitle": "For salons and hairdressers",
     "salonText": "Would you like to source human hair extensions in quantity for your salon? Andrea will make you an individual offer.",
-    "salonCta": "Enquire as a salon"
+    "salonCta": "Enquire as a salon",
+    "otherTitle": "Another method, length or amount?",
+    "otherText": "If you do not find it here, Andrea will put it together for you on request. Salons and hairdressers also receive a personal offer.",
+    "metaTitle": "Human-hair extensions: methods, colour, advice",
+    "heroTitle": "More length, more fullness, more of you.",
+    "heroLead": "Human-hair extensions, handmade by Andrea in Iserlohn. You order the packs directly, everything else she puts together for you personally.",
+    "shopCta": "View the packs",
+    "adviceCta": "Ask for advice",
+    "methodsLead": "Which one suits your hair and your everyday life, you settle with Andrea.",
+    "inShop": "{count, plural, one {# pack in the shop} other {# packs in the shop}}",
+    "onRequest": "On request",
+    "colorTitle": "Finding the right colour",
+    "colorLead": "Andrea compares your hair with the piece personally.",
+    "colorSteps": {
+      "light": {
+        "title": "Use daylight",
+        "text": "Photograph your hair by a window, without flash and without filters."
+      },
+      "photo": {
+        "title": "Send a photo",
+        "text": "Easiest via WhatsApp, otherwise with an enquiry."
+      },
+      "answer": {
+        "title": "Andrea replies",
+        "text": "She tells you honestly which shade suits, even if it is not one from the shop."
+      }
+    },
+    "packKicker": "Advice",
+    "packTitle": "How many packs do I need?",
+    "packText": "Andrea will tell you personally how many packs you need. Just ask before you order.",
+    "packWhatsapp": "Ask on WhatsApp",
+    "packAsk": "Or send an enquiry",
+    "productsTitle": "Extensions in the shop",
+    "allPacks": "All extensions in the collection"
+  },
+  "custom": {
+    "metaTitle": "Request made-to-measure",
+    "kicker": "Made to measure",
+    "title": "A piece made only for you.",
+    "lead": "Length, colour, texture and amount are tailored to you. In six short steps you tell Andrea what you wish for. She will get back to you personally.",
+    "timing": "Delivery time within Germany: {mFrom} to {mTo} working days once all details and – for advance payment or PayPal – your payment have been received. Custom-made pieces are excluded from the right of withdrawal because they are made only for you.",
+    "stepOf": "Step {step} of {total}",
+    "next": "Next",
+    "back": "Back",
+    "optional": "optional",
+    "sending": "Sending",
+    "strip": {
+      "kicker": "Made to measure",
+      "title": "Your colour or length is not here?",
+      "text": "Andrea makes it to measure: system, length, colour, texture and quantity just as you wish.",
+      "cta": "Request made-to-measure"
+    },
+    "steps": {
+      "system": {
+        "title": "Which system?",
+        "hint": "Choose what should be made. If you are unsure, pick the last option."
+      },
+      "length": {
+        "title": "Which length?",
+        "hint": "For example 55 cm. For hairpieces the hair length counts.",
+        "label": "Desired length"
+      },
+      "color": {
+        "title": "Which colour?",
+        "hint": "Describe the shade in your own words. You can send Andrea a photo of your hair in daylight after the enquiry, via WhatsApp or as a reply to her email.",
+        "label": "Hair colour"
+      },
+      "structure": {
+        "title": "Which texture?",
+        "hint": "Straight, wavy or curly."
+      },
+      "amount": {
+        "title": "Which amount?",
+        "hint": "For example number of packs or grams. If you do not know, leave it empty. Andrea will advise you personally.",
+        "label": "Amount"
+      },
+      "contact": {
+        "title": "Where may Andrea reply?",
+        "hint": "This enquiry does not buy anything. Andrea gets back to you with a proposal and a fixed price."
+      }
+    },
+    "systems": {
+      "topper": "Topper",
+      "peruecke": "Wig",
+      "pony": "Fringe",
+      "haarsystem": "Hair system for men",
+      "unsure": "I do not know yet"
+    },
+    "methods": {
+      "butterfly": "Butterfly Weft",
+      "genius": "Genius Weft",
+      "invisible": "Invisible Tape",
+      "tape": "Tape-in",
+      "keratin": "Keratin bonds",
+      "clip": "Clip-in"
+    },
+    "structures": {
+      "glatt": "Straight",
+      "wellig": "Wavy",
+      "lockig": "Curly",
+      "unsure": "I do not know yet"
+    }
   }
 }

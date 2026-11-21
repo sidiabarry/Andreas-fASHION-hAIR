@@ -103,7 +103,9 @@ export default function Page({ company: c }: { company: Company }) {
             consegne verso altri paesi sono possibili previo accordo. La spedizione è effettuata da {carrier}.
           </li>
           <li>Tempi di consegna degli articoli disponibili in Germania: {deliveryDaysOf(c)} giorni lavorativi. Con pagamento anticipato o PayPal il termine decorre dal giorno successivo al ricevimento del pagamento, altrimenti dal giorno successivo alla conclusione del contratto. I tempi per le spedizioni all'estero Le vengono comunicati prima della conclusione del contratto.</li>
-          <li>Realizziamo i pezzi su misura in circa {madeToOrderDaysOf(c)} giorni lavorativi, una volta ricevuti tutti i dati necessari e – con pagamento anticipato o PayPal – il pagamento. Le comunichiamo la data di spedizione prevista.</li>
+          <li>
+            I pezzi su misura Le vengono consegnati in Germania entro {madeToOrderDaysOf(c)} giorni lavorativi. Il termine decorre dal giorno successivo a quello in cui abbiamo ricevuto tutti i dati necessari e – con pagamento anticipato o PayPal – il pagamento. Per le spedizioni all'estero Le comunichiamo i tempi di consegna prima della conclusione del contratto.
+          </li>
           <li>Se la merce arriva con danni di trasporto visibili, La preghiamo di contestarli al corriere e di informarci brevemente. I Suoi diritti di legge restano invariati; la segnalazione ci aiuta a far valere i nostri diritti nei confronti del corriere.</li>
         </ol>
       </section>

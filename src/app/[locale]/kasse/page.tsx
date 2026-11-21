@@ -46,7 +46,7 @@ export default async function CheckoutPage({ params }: PageProps<"/[locale]/kass
   };
 
   return (
-    <main className="af-page">
+    <main className="af-page af-zone-light" data-zone="light">
       <div className="af-wrap">
         <h1 className="af-h1">{t("checkout.title")}</h1>
         {mode.checkoutOpen ? (
@@ -56,7 +56,7 @@ export default async function CheckoutPage({ params }: PageProps<"/[locale]/kass
         ) : (
           <div className="af-empty">
             <p className="af-lead">{t("checkout.closed")}</p>
-            <Link className="af-cta-gold" href={{ pathname: "/anfrage", query: { thema: "bestellung" } }}>
+            <Link className="af-cta-gold af-glass af-glass--gold" href={{ pathname: "/anfrage", query: { thema: "bestellung" } }}>
               {t("cart.inquiryCta")} <Arrow />
             </Link>
           </div>

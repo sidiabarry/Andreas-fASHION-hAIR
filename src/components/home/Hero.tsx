@@ -29,10 +29,8 @@ export type HeroTexts = {
   trust: string[];
   trustLabel: string;
   filmAlt: string;
-  ctaCollection: string;
-  ctaConsult: string;
-  ctaConsultVia: string;
-  whatsappNote: string;
+  ctaExtensions: string;
+  ctaCustom: string;
 };
 
 const CHAPTER_MS = 5000;
@@ -44,7 +42,7 @@ const FX: Record<number, Record<string, string>> = {
   2: { "data-fx": "strands", "data-fx-a": "0.8", "data-fx-heat": "0.05", "data-fx-loose": "0", "data-fx-ms": "0.75", "data-fx-mx": "0", "data-fx-my": "0.42", "data-fx-s": "0.82", "data-fx-x": "0.44", "data-fx-y": "0.12" },
 };
 
-export function Hero({ texts, posters, videos, whatsapp }: { texts: HeroTexts; posters: Poster[]; videos: { desktop: string; mobile: string }[]; whatsapp: string | null }) {
+export function Hero({ texts, posters, videos }: { texts: HeroTexts; posters: Poster[]; videos: { desktop: string; mobile: string }[] }) {
   const [chapter, setChapter] = useState(0);
   const [done, setDone] = useState(false);
   const [useVideo, setUseVideo] = useState(false);
@@ -173,22 +171,12 @@ export function Hero({ texts, posters, videos, whatsapp }: { texts: HeroTexts; p
         </h1>
         <p className="hero__lead">{texts.lead}</p>
         <div className="hero__actions">
-          <Link className="h-btn h-btn--gold" href="/kollektion">
-            <span>{texts.ctaCollection}</span> <Arrow />
+          <Link className="h-btn h-btn--gold af-glass af-glass--gold af-glass--lens af-glass--caps" data-magnetic="" href="/extensions">
+            <span>{texts.ctaExtensions}</span> <Arrow />
           </Link>
-          {whatsapp ? (
-            <a className="h-btn h-btn--line" href={whatsapp} rel="noopener noreferrer" target="_blank">
-              <span>{texts.ctaConsult}</span>
-              <small>
-                {texts.ctaConsultVia}
-                <span className="af-sr"> ({texts.whatsappNote})</span>
-              </small>
-            </a>
-          ) : (
-            <Link className="h-btn h-btn--line" href="/anfrage">
-              <span>{texts.ctaConsult}</span>
-            </Link>
-          )}
+          <Link className="h-link h-link--glass" href="/massanfertigung">
+            {texts.ctaCustom}
+          </Link>
         </div>
         <ul aria-label={texts.trustLabel} className="hero__trust">
           {texts.trust.map((item) => (
@@ -214,14 +202,14 @@ export function Hero({ texts, posters, videos, whatsapp }: { texts: HeroTexts; p
         </ol>
         <div className="hero__ctrls">
           {done ? (
-            <button className="hero__ctrl" onClick={replay} type="button">
+            <button className="hero__ctrl af-glass af-glass--lens" onClick={replay} type="button">
               <svg aria-hidden="true" height="14" viewBox="0 0 16 16" width="14">
                 <path d="M3 8a5 5 0 1 0 1.6-3.7M3 2.5v3h3" fill="none" stroke="currentColor" strokeWidth="1.5" />
               </svg>
               {texts.replay}
             </button>
           ) : null}
-          <button className="hero__ctrl" onClick={() => setPaused(!userPaused)} type="button">
+          <button className="hero__ctrl af-glass af-glass--lens" onClick={() => setPaused(!userPaused)} type="button">
             <svg aria-hidden="true" height="14" viewBox="0 0 16 16" width="14">
               {userPaused ? <path d="M5 3l8 5-8 5z" fill="currentColor" /> : <path d="M5 3h2v10H5zM9 3h2v10H9z" fill="currentColor" />}
             </svg>

@@ -16,12 +16,19 @@
     "glue": "Walker Tape Ultra Hold adhesivo líquido",
     "solvent": "Walker Tape C-22 disolvente",
     "tapeRoll": "Walker Tape Ultra Hold cinta adhesiva 3/4\" x 12 yd",
-    "tapeStrips": "Walker Tape Ultra Hold tiras adhesivas"
+    "tapeStrips": "Walker Tape Ultra Hold tiras adhesivas",
+    "toupet": "Tupé en V {len} cm",
+    "clipIn": "Extensiones clip-in {len} cm",
+    "genius": "Genius Weft {len} cm",
+    "invisibleTape": "Invisible Tape {len} cm",
+    "butterfly": "Butterfly Weft {len} cm"
   },
   "subtitles": {
     "premium": "Cabello natural premium",
     "men": "Sistema capilar para hombres",
-    "care": "Sujeción y cuidado"
+    "care": "Sujeción y cuidado",
+    "clipInSet": "Castaño oscuro natural, 3 piezas",
+    "geniusCurly": "Castaño café con ombré cobrizo, rizado natural"
   },
   "colors": {
     "Blond mit Reflexen und dunklem Goldblond": "Rubio con reflejos y rubio dorado oscuro",
@@ -45,12 +52,18 @@
     "Natürliches Dunkelbraun mit Kupferhighlights": "Castaño oscuro natural con mechas cobrizas",
     "Natürliches Dunkelbraun mit sanften Grausträhnen": "Castaño oscuro natural con suaves mechas grises",
     "Natürliches Dunkelbraun mit violettroten Highlights": "Castaño oscuro natural con mechas rojo violáceo",
-    "Schwarz": "Negro"
+    "Schwarz": "Negro",
+    "Dunkelblond mit hellen Reflexen": "Rubio oscuro con reflejos claros",
+    "Naturdunkelbraun": "Castaño oscuro natural",
+    "Goldblond Ombré": "Rubio dorado ombré",
+    "Kaffeebraun mit Kupfer-Ombré": "Castaño café con ombré cobrizo",
+    "Hellblond Ombré mit dunklem Ansatz": "Rubio claro ombré con raíz oscura"
   },
   "textures": {
     "Glatt": "Liso",
     "Leicht gewellt": "Ligeramente ondulado",
-    "Lockig": "Rizado"
+    "Lockig": "Rizado",
+    "Naturlockig": "Rizado natural"
   },
   "textureHair": {
     "Glatt": "Cabello natural liso",
@@ -76,7 +89,13 @@
     "glue": "Adhesivo líquido profesional de fuerte sujeción para postizos, pelucas y sistemas capilares. Dura mucho, resiste la humedad y resulta agradable sobre la piel.",
     "solvent": "Elimina rápida y suavemente los restos de adhesivo y cinta de postizos, pelucas y extensiones. La fórmula a base de cítricos actúa en pocos instantes.",
     "tapeRoll": "Cinta adhesiva de doble cara con fuerte sujeción para sistemas de reemplazo capilar, pelucas y extensiones. Sujeta firme, pasa desapercibida y resiste la humedad y el sudor.",
-    "tapeStrips": "Tiras adhesivas precortadas y curvadas para sistemas capilares. Sujeción extrafuerte, resistentes al sudor y a la humedad, fáciles de aplicar."
+    "tapeStrips": "Tiras adhesivas precortadas y curvadas para sistemas capilares. Sujeción extrafuerte, resistentes al sudor y a la humedad, fáciles de aplicar.",
+    "toupet": "Topper para mujer con base en V de cabello natural, en {color}. {len} cm de largo, peso {grams} g. Esta pieza existe una sola vez.",
+    "clipIn": "Extensiones clip-in de cabello natural en {color}, {len} cm de largo. El set consta de tres cortinas con clips y pesa {grams} g en total.",
+    "genius": "Genius Weft de cabello natural en {color}, {len} cm de largo. Un paquete contiene {grams} g.",
+    "geniusCurly": "Genius Weft de cabello natural en {color}, {len} cm de largo, rizado natural. Un paquete contiene {grams} g.",
+    "invisibleTape": "Extensiones Invisible Tape de cabello natural en {color}, {len} cm de largo. Bien colocadas por una profesional, las cintas se integran de forma discreta en su propio cabello. Un paquete contiene {grams} g.",
+    "butterfly": "Butterfly Weft de cabello natural en {color}, {len} cm de largo. El ancho de la cortina es de {width} cm por fila. Un paquete contiene {grams} g."
   },
   "specs": {
     "premium": "100 % cabello natural premium",
@@ -108,6 +127,17 @@
     "precut": "Tiras precortadas",
     "extraHold": "Sujeción extrafuerte",
     "sweatMoisture": "Resistente al sudor y a la humedad",
-    "fitting": "Ajuste en el taller"
+    "fitting": "Ajuste en el taller",
+    "premiumPlain": "Cabello natural premium",
+    "vBase": "Base en V (topper para mujer)",
+    "weight": "Peso {grams} g",
+    "clipSet": "Set de {n} cortinas con clips",
+    "weightSet": "Peso {grams} g (set)",
+    "packGrams": "{grams} g por paquete",
+    "weftPerPack": "{n} cortina por paquete",
+    "tapesPerPack": "{n} cintas por paquete",
+    "weftWidth": "Ancho de cortina {width} cm por fila",
+    "humanPlain": "Cabello natural",
+    "tapesSealed": "{n} cintas, selladas juntas en un solo paquete"
   }
 }

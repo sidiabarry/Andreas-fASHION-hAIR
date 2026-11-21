@@ -16,9 +16,20 @@
     "glue": "Walker Tape Ultra Hold colle liquide",
     "solvent": "Walker Tape C-22 solvant",
     "tapeRoll": "Walker Tape Ultra Hold ruban adhésif 3/4\" x 12 yd",
-    "tapeStrips": "Walker Tape Ultra Hold bandes adhésives"
+    "tapeStrips": "Walker Tape Ultra Hold bandes adhésives",
+    "toupet": "Toupet en V {len} cm",
+    "clipIn": "Extensions clip-in {len} cm",
+    "genius": "Genius Weft {len} cm",
+    "invisibleTape": "Invisible Tape {len} cm",
+    "butterfly": "Butterfly Weft {len} cm"
   },
-  "subtitles": { "premium": "Cheveux naturels premium", "men": "Système capillaire pour hommes", "care": "Fixation et soin" },
+  "subtitles": {
+    "premium": "Cheveux naturels premium",
+    "men": "Système capillaire pour hommes",
+    "care": "Fixation et soin",
+    "clipInSet": "Brun foncé naturel, 3 pièces",
+    "geniusCurly": "Brun café avec ombré cuivré, naturellement bouclé"
+  },
   "colors": {
     "Blond mit Reflexen und dunklem Goldblond": "Blond avec reflets et blond doré foncé",
     "Blond mit beigen Highlights und sanft goldenem Ansatz": "Blond avec mèches beiges et racine légèrement dorée",
@@ -41,11 +52,30 @@
     "Natürliches Dunkelbraun mit Kupferhighlights": "Brun foncé naturel avec mèches cuivrées",
     "Natürliches Dunkelbraun mit sanften Grausträhnen": "Brun foncé naturel avec douces mèches grises",
     "Natürliches Dunkelbraun mit violettroten Highlights": "Brun foncé naturel avec mèches rouge violine",
-    "Schwarz": "Noir"
+    "Schwarz": "Noir",
+    "Dunkelblond mit hellen Reflexen": "Blond foncé avec reflets clairs",
+    "Naturdunkelbraun": "Brun foncé naturel",
+    "Goldblond Ombré": "Blond doré ombré",
+    "Kaffeebraun mit Kupfer-Ombré": "Brun café avec ombré cuivré",
+    "Hellblond Ombré mit dunklem Ansatz": "Blond clair ombré avec racines foncées"
   },
-  "textures": { "Glatt": "Lisse", "Leicht gewellt": "Légèrement ondulé", "Lockig": "Bouclé" },
-  "textureHair": { "Glatt": "Cheveux naturels lisses", "Leicht gewellt": "Cheveux naturels légèrement ondulés", "Lockig": "Cheveux naturels bouclés", "": "Cheveux naturels fins" },
-  "hair": { "colorLen": "{hair}, couleur {color}, {len} cm de long.", "len": "{hair}, {len} cm de long.", "plain": "{hair}." },
+  "textures": {
+    "Glatt": "Lisse",
+    "Leicht gewellt": "Légèrement ondulé",
+    "Lockig": "Bouclé",
+    "Naturlockig": "Naturellement bouclé"
+  },
+  "textureHair": {
+    "Glatt": "Cheveux naturels lisses",
+    "Leicht gewellt": "Cheveux naturels légèrement ondulés",
+    "Lockig": "Cheveux naturels bouclés",
+    "": "Cheveux naturels fins"
+  },
+  "hair": {
+    "colorLen": "{hair}, couleur {color}, {len} cm de long.",
+    "len": "{hair}, {len} cm de long.",
+    "plain": "{hair}."
+  },
   "bodies": {
     "topper": "Chaque cheveu est implanté à la main dans une base nano skin ultrafine, la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
     "topperBase": "Chaque cheveu est implanté à la main dans une base nano skin ultrafine ({base} cm), la raie tombe donc là où vous le souhaitez. Fixé par clips, posé en quelques secondes, et personne ne voit de transition.",
@@ -59,7 +89,13 @@
     "glue": "Colle liquide professionnelle à forte tenue pour compléments capillaires, perruques et systèmes capillaires. Tient longtemps, résiste à l'humidité et reste agréable sur la peau.",
     "solvent": "Élimine rapidement et en douceur les résidus de colle et d'adhésif sur les compléments capillaires, perruques et extensions. La formule à base d'agrumes agit en quelques instants.",
     "tapeRoll": "Ruban adhésif double face à forte tenue pour systèmes de remplacement capillaire, perruques et extensions. Tient bien, reste discret et résiste à l'humidité et à la transpiration.",
-    "tapeStrips": "Bandes adhésives prédécoupées et incurvées pour systèmes capillaires. Tenue extra forte, résistantes à la transpiration et à l'humidité, faciles à appliquer."
+    "tapeStrips": "Bandes adhésives prédécoupées et incurvées pour systèmes capillaires. Tenue extra forte, résistantes à la transpiration et à l'humidité, faciles à appliquer.",
+    "toupet": "Topper pour femme à base en V en cheveux naturels, en {color}. {len} cm de long, poids {grams} g. Cette pièce n'existe qu'en un seul exemplaire.",
+    "clipIn": "Extensions clip-in en cheveux naturels en {color}, {len} cm de long. Le set se compose de trois trames avec clips et pèse {grams} g au total.",
+    "genius": "Genius Weft en cheveux naturels en {color}, {len} cm de long. Un paquet contient {grams} g.",
+    "geniusCurly": "Genius Weft en cheveux naturels en {color}, {len} cm de long, naturellement bouclé. Un paquet contient {grams} g.",
+    "invisibleTape": "Extensions Invisible Tape en cheveux naturels en {color}, {len} cm de long. Posés dans les règles de l'art, les tapes se fondent discrètement dans vos propres cheveux. Un paquet contient {grams} g.",
+    "butterfly": "Butterfly Weft en cheveux naturels en {color}, {len} cm de long. La largeur de la trame est de {width} cm par rangée. Un paquet contient {grams} g."
   },
   "specs": {
     "premium": "100 % cheveux naturels premium",
@@ -91,6 +127,17 @@
     "precut": "Bandes prédécoupées",
     "extraHold": "Tenue extra forte",
     "sweatMoisture": "Résiste à la transpiration et à l'humidité",
-    "fitting": "Adaptation à l'atelier"
+    "fitting": "Adaptation à l'atelier",
+    "premiumPlain": "Cheveux naturels premium",
+    "vBase": "Base en V (topper pour femme)",
+    "weight": "Poids {grams} g",
+    "clipSet": "Set de {n} trames avec clips",
+    "weightSet": "Poids {grams} g (set)",
+    "packGrams": "{grams} g par paquet",
+    "weftPerPack": "{n} trame par paquet",
+    "tapesPerPack": "{n} tapes par paquet",
+    "weftWidth": "Largeur de trame {width} cm par rangée",
+    "humanPlain": "Cheveux naturels",
+    "tapesSealed": "{n} tapes, scellés ensemble dans un seul paquet"
   }
 }

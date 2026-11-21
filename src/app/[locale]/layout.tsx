@@ -1,10 +1,13 @@
 import type { Metadata, Viewport } from "next";
+import { ViewTransition } from "react";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 
 import { CartProvider } from "@/components/cart/CartProvider";
+import { FxUi } from "@/components/fx/FxUi";
+import { GlassDefs } from "@/components/fx/GlassDefs";
 import { DemoBanner } from "@/components/site/DemoBanner";
 import { Footer } from "@/components/site/Footer";
 import { Header } from "@/components/site/Header";
@@ -18,8 +21,8 @@ import { fontVariables } from "../fonts";
 import "../globals.css";
 
 export const viewport: Viewport = {
-  colorScheme: "light",
-  themeColor: "#fbf7f1",
+  colorScheme: "dark",
+  themeColor: "#100e0d",
   width: "device-width",
   initialScale: 1,
 };
@@ -49,6 +52,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
   return (
     <html className={fontVariables} data-scroll-behavior="smooth" lang={locale}>
       <body className="af-body">
+        <GlassDefs />
         <a className="af-skip" href="#inhalt">
           {t("skip")}
         </a>
@@ -56,11 +60,12 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
           <CartProvider checkoutOpen={mode.checkoutOpen} products={products.map((product) => toLite(product, locale))}>
             <Header />
             <div id="inhalt" tabIndex={-1}>
-              {children}
+              <ViewTransition default="af-page">{children}</ViewTransition>
             </div>
             <Footer demo={mode.demo} />
             <Rise />
           </CartProvider>
+          <FxUi />
         </NextIntlClientProvider>
         {mode.demo ? <DemoBanner /> : null}
       </body>

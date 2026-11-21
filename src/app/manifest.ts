@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    background_color: "#fbf7f1",
+    background_color: "#100e0d",
     description: "Echthaar-Topper, Perücken und Haarsysteme aus der HaarManufaktur.",
     display: "browser",
     icons: [
@@ -14,6 +14,6 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Andrea's Fashion Hair",
     short_name: "Andrea's",
     start_url: "/",
-    theme_color: "#fbf7f1",
+    theme_color: "#100e0d",
   };
 }

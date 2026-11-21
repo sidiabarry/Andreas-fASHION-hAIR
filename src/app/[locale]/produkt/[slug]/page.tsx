@@ -5,6 +5,9 @@ import { notFound } from "next/navigation";
 import { Arrow } from "@/components/Arrow";
 import { JsonLd } from "@/components/JsonLd";
 import { AddToCart } from "@/components/product/AddToCart";
+import { CustomStrip } from "@/components/product/CustomStrip";
+import { ProductCopyBlock } from "@/components/product/ProductCopyBlock";
+import { SpecChips } from "@/components/product/SpecChips";
 import { CompareSlider } from "@/components/product/CompareSlider";
 import { Gallery } from "@/components/product/Gallery";
 import { RecentlyViewed } from "@/components/product/RecentlyViewed";
@@ -16,7 +19,8 @@ import { PriceNote } from "@/components/product/PriceNote";
 import { ProductCard } from "@/components/product/ProductCard";
 import { company } from "@/config/company";
 import { deliveryParams } from "@/config/shipping";
-import { byCategory, getProduct, isUnique, productText } from "@/data/catalog";
+import { unitText } from "@/components/cart/unitText";
+import { byCategory, galleryImages, getProduct, imageKindOf, isUnique, productCopy, productText, unitInfo } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
 import { breadcrumbJsonLd } from "@/lib/jsonld";
@@ -50,28 +54,39 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
   const isSold = product.sold || sold.has(product.slug);
   const unique = isUnique(product);
   const price = formatPrice(product.priceCents, locale);
-  const images = product.restyled ? [product.image, ...product.originals] : product.originals.length ? product.originals : [product.image];
-  const shots = images.map((src, index) => ({
-    alt:
-      product.restyled && index === 0
-        ? t("product.imageAlt", { name: text.name, subtitle: text.subtitle })
-        : t("product.originalAlt", { index: product.restyled ? index : index + 1, name: text.name, subtitle: text.subtitle }),
-    label: t("product.showImage", { index: index + 1, total: images.length }),
-    src,
-  }));
+  const kind = imageKindOf(product);
+  const gallery = galleryImages(product);
+  const images = gallery.map((shot) => shot.src);
+  let originalIndex = 0;
+  let studioIndex = 0;
+  const shots = gallery.map((shot, index) => {
+    const name = { name: text.name, subtitle: text.subtitle };
+    let alt: string;
+    if (shot.kind === "original") alt = t("product.originalAlt", { index: ++originalIndex, ...name });
+    else alt = t(kind === "staged" ? "product.imageAltStaged" : "product.imageAlt", { ...name, index: ++studioIndex });
+    return { alt, label: t("product.showImage", { index: index + 1, total: gallery.length }), src: shot.src };
+  });
+  const copy = productCopy(product, locale);
+  const available = (item: { slug: string; sold: boolean }) => !item.sold && !sold.has(item.slug);
+  const isExtension = product.category === "extensions";
   const more = byCategory(product.category)
-    .filter((item) => item.slug !== product.slug && !item.sold && !sold.has(item.slug))
+    .filter((item) => item.slug !== product.slug && available(item))
     .slice(0, 4);
+  // Zubehör: nur vorhandene Katalogprodukte der Kategorie Pflege
+  const accessories = isExtension ? byCategory("pflege").filter(available).slice(0, 4) : [];
   const delivery = deliveryParams();
   const hasNano = product.specs.some((spec) => spec.startsWith("Nano-Skin"));
   const hasClips = product.specs.includes("Befestigung mit Clips");
   const hair = product.category !== "pflege";
+  // Eigene Fragen zum Stück ersetzen die allgemeinen; Widerruf und Zahlung stehen immer dabei.
+  const ownFaq = copy?.faq ?? [];
   const objections = [
-    ...(hasNano ? [{ a: t("objections.visibleA"), q: t("objections.visibleQ") }] : []),
-    ...(hair ? [{ a: t("objections.colorA"), q: t("objections.colorQ") }] : []),
-    ...(hair ? [{ a: hasClips ? t("objections.holdClips") : t("objections.holdOther"), q: t("objections.holdQ") }] : []),
-    ...(hair ? [{ a: product.base ? t("objections.fitBase", { base: product.base }) : t("objections.fitNoBase"), q: t("objections.fitQ") }] : []),
-    ...(hair ? [{ a: t("objections.careA"), q: t("objections.careQ") }] : []),
+    ...ownFaq,
+    ...(ownFaq.length === 0 && hasNano ? [{ a: t("objections.visibleA"), q: t("objections.visibleQ") }] : []),
+    ...(ownFaq.length === 0 && hair ? [{ a: t("objections.colorA"), q: t("objections.colorQ") }] : []),
+    ...(ownFaq.length === 0 && hair ? [{ a: hasClips ? t("objections.holdClips") : t("objections.holdOther"), q: t("objections.holdQ") }] : []),
+    ...(ownFaq.length === 0 && hair ? [{ a: product.base ? t("objections.fitBase", { base: product.base }) : t("objections.fitNoBase"), q: t("objections.fitQ") }] : []),
+    ...(isExtension ? [{ a: t("objections.packA"), q: t("objections.packQ") }] : []),
     { a: t("objections.returnA"), q: t("objections.returnQ") },
     { a: t("objections.payA"), q: t("objections.payQ") },
   ];
@@ -98,7 +113,7 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
   };
 
   return (
-    <main className="af-page">
+    <main className="af-page af-page--zoned" data-zone="light">
       <JsonLd data={productJson} />
       <JsonLd
         data={breadcrumbJsonLd([
@@ -125,24 +140,28 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
         <div className="af-pdp">
           <div className="af-pdp__gallery">
             <Gallery closeLabel={t("product.zoomClose")} hint={t("product.zoomHint")} shots={shots} zoomLabel={t("product.zoom")} />
+            {kind ? (
+              <p className="af-note af-imgnote" data-kind={kind}>
+                {t(kind === "staged" ? "product.imageNoteStaged" : "product.imageNoteRelit")}
+              </p>
+            ) : null}
             {product.restyled && product.originals[0] ? (
               <section aria-labelledby="compare-title" className="af-stack" style={{ "--gap": "12px" } as React.CSSProperties}>
                 <h2 className="af-mono" id="compare-title">
-                  {t("product.compareTitle")}
+                  {t(kind === "staged" ? "product.compareTitleStaged" : "product.compareTitle")}
                 </h2>
                 <CompareSlider
-                  label={t("product.compareLabel")}
+                  label={t(kind === "staged" ? "product.compareLabelStaged" : "product.compareLabel")}
                   original={product.originals[0]}
                   originalLabel={t("product.compareOriginal")}
                   studio={product.image}
-                  studioLabel={t("product.compareStudio")}
+                  studioLabel={t(kind === "staged" ? "product.compareStudioStaged" : "product.compareStudio")}
                 />
-                <p className="af-note">{t("product.compareNote")}</p>
               </section>
             ) : null}
           </div>
 
-          <div className="af-pdp__info">
+          <div className="af-pdp__info af-zone-light">
             <div>
               <p className="af-mono">{t(`categories.${product.category}.label`)}</p>
               <h1 className="af-h2" style={{ marginTop: 14 }}>
@@ -151,11 +170,14 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
               <p className="af-lead" style={{ marginTop: 10 }}>
                 {text.subtitle}
               </p>
+              {product.manufacturer === "atelier" ? <p className="af-handmade">{t("product.handmade", { city: company.address.city })}</p> : null}
+              {copy?.headline ? <p className="af-headline">{copy.headline}</p> : null}
             </div>
+            <SpecChips locale={locale} product={product} />
 
             <div className="af-pdp__price">
               {price}
-              <PriceNote locale={locale} />
+              <PriceNote locale={locale} unit={unitInfo(product)} />
             </div>
 
             {isSold ? (
@@ -165,13 +187,11 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
             ) : product.madeToOrder ? (
               <p className="af-only">{t("product.customMsg", delivery)}</p>
             ) : null}
-            {!isSold && product.availability === "unknown" ? <p className="af-note">{t("product.availabilityUnknown")}</p> : null}
-            {product.origin === "Brasilien" ? <p className="af-note af-gold">{t("product.originBrazil")}</p> : null}
 
-            <p className="af-text">{text.description}</p>
+            <p className="af-text">{copy?.story ?? text.description}</p>
 
             {isSold ? (
-              <Link className="af-cta-band" href={{ pathname: "/anfrage", query: { produkt: `${text.name}, ${text.subtitle}`, thema: "massanfertigung" } }}>
+              <Link className="af-cta-band af-glass af-glass--gold" href={{ pathname: "/anfrage", query: { produkt: `${text.name}, ${text.subtitle}`, thema: "massanfertigung" } }}>
                 {t("product.similar")} <Arrow />
               </Link>
             ) : (
@@ -179,31 +199,47 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
                 <AddToCart price={price} slug={product.slug} unique={unique} />
               </div>
             )}
-            <div className="af-pdp__secondary">
-              <WishlistButton slug={product.slug} />
-              {company.social.whatsapp ? (
-                <a className="af-chip" href={company.social.whatsapp} rel="noopener noreferrer" target="_blank">
-                  <span>{t("product.askWhatsapp")}</span>
-                  <span className="af-sr"> {t("common.newTab")}</span>
-                </a>
-              ) : null}
+            <div className="af-consult">
+              <h2 className="af-mono">{t("product.consultTitle")}</h2>
+              <p className="af-text">{t(isExtension ? "product.consultExtensions" : "product.consultText")}</p>
+              <div className="af-pdp__secondary">
+                <WishlistButton slug={product.slug} />
+                {company.social.whatsapp ? (
+                  <a className="af-chip" href={company.social.whatsapp} rel="noopener noreferrer" target="_blank">
+                    <span>{t("product.askWhatsapp")}</span>
+                    <span className="af-sr"> {t("common.newTab")}</span>
+                  </a>
+                ) : null}
+              </div>
+              {company.social.whatsapp ? null : (
+                <Link className="af-cta-line" href={{ pathname: "/anfrage", query: { produkt: `${text.name}, ${text.subtitle}`, thema: "beratung" } }} style={{ justifySelf: "start" }}>
+                  {t("product.ask")}
+                </Link>
+              )}
             </div>
 
-            <Link className="af-cta-line" href={{ pathname: "/anfrage", query: { produkt: `${text.name}, ${text.subtitle}`, thema: "beratung" } }} style={{ justifySelf: "start" }}>
-              {t("product.ask")}
-            </Link>
-
-            <TrustFacts locale={locale} />
+            <TrustFacts compact locale={locale} />
 
             <section aria-labelledby="specs-title">
               <h2 className="af-sr" id="specs-title">
                 {t("product.specs")}
               </h2>
-              <ul className="af-specs">
-                {text.specs.map((spec) => (
-                  <li key={spec}>{spec}</li>
-                ))}
-              </ul>
+              {isExtension ? null : (
+                <ul className="af-specs">
+                  {text.specs.map((spec) => (
+                    <li key={spec}>{spec}</li>
+                  ))}
+                </ul>
+              )}
+              {product.manufacturer === "atelier" ? (
+                <p className="af-note">
+                  {t("product.manufacturer", {
+                    address: `${company.address.street}, ${company.address.postalCode} ${company.address.city}`,
+                    email: company.email,
+                    name: company.ownerFullName ?? company.brandName,
+                  })}
+                </p>
+              ) : null}
             </section>
 
             <section aria-labelledby="faq-title" className="af-faq af-faq--compact">
@@ -229,22 +265,42 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
             ) : null}
           </div>
         </div>
-
-        <RecentlyViewed exclude={product.slug} />
-        {more.length > 0 ? (
-          <section aria-labelledby="more-title" className="af-section" style={{ paddingBottom: 0 }}>
-            <h2 className="af-h2" id="more-title">
-              {t("product.more")}
-            </h2>
-            <div className="af-grid">
-              {more.map((item) => (
-                <ProductCard key={item.slug} locale={locale} product={item} />
-              ))}
-            </div>
-          </section>
-        ) : null}
       </div>
-      {!isSold ? <StickyBuyBar available name={text.name} price={price} slug={product.slug} unique={unique} /> : null}
+      <div className="af-zone-light af-zone-fade-top af-zone-band af-pdp__after">
+        <div className="af-wrap">
+          {copy ? <ProductCopyBlock copy={copy} locale={locale} /> : null}
+          {hair ? <CustomStrip product={`${text.name}, ${text.subtitle}`} /> : null}
+          <RecentlyViewed exclude={product.slug} />
+          {more.length > 0 ? (
+            <section aria-labelledby="more-title" className="af-section af-section--tight" style={{ paddingBottom: 0 }}>
+              <h2 className="af-h2" id="more-title">
+                {t(isExtension ? "product.moreExtensions" : "product.more")}
+              </h2>
+              <div className="af-grid">
+                {more.map((item) => (
+                  <ProductCard key={item.slug} locale={locale} product={item} />
+                ))}
+              </div>
+            </section>
+          ) : null}
+          {accessories.length > 0 ? (
+            <section aria-labelledby="acc-title" className="af-section af-section--tight" style={{ paddingBottom: 0 }}>
+              <h2 className="af-h2" id="acc-title">
+                {t("product.accessories")}
+              </h2>
+              <p className="af-note" style={{ marginTop: 12 }}>
+                {t("product.accessoriesNote")}
+              </p>
+              <div className="af-grid">
+                {accessories.map((item) => (
+                  <ProductCard key={item.slug} locale={locale} product={item} />
+                ))}
+              </div>
+            </section>
+          ) : null}
+        </div>
+      </div>
+      {!isSold ? <StickyBuyBar available name={text.name} price={price} slug={product.slug} unique={unique} unitLine={unitInfo(product) ? unitText(t, unitInfo(product)!, locale) : undefined} /> : null}
     </main>
   );
 }

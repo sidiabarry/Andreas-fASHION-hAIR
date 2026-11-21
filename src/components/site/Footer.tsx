@@ -2,8 +2,10 @@ import { getTranslations } from "next-intl/server";
 
 import { Logo } from "@/components/Logo";
 import { company } from "@/config/company";
-import { CATEGORY_IDS } from "@/data/catalog";
+import { VISIBLE_CATEGORY_IDS } from "@/data/catalog";
 import { Link } from "@/i18n/navigation";
+
+import "../shop.css";
 
 import { LocaleSwitcher } from "./LocaleSwitcher";
 import { NewsletterForm } from "./NewsletterForm";
@@ -33,6 +35,15 @@ export async function Footer({ demo }: { demo: boolean }) {
   return (
     <footer className="af-foot">
       <div className="af-wrap">
+        <div className="af-foot__custom">
+          <div>
+            <p className="af-mono">{t("custom.strip.kicker")}</p>
+            <p className="af-foot__customtitle">{t("custom.strip.title")}</p>
+          </div>
+          <Link className="af-cta-frame" href="/massanfertigung">
+            {t("custom.strip.cta")}
+          </Link>
+        </div>
         <div className="af-foot__grid">
           <div className="af-stack">
             <Link className="af-homelink" href="/">
@@ -60,11 +71,17 @@ export async function Footer({ demo }: { demo: boolean }) {
           <div>
             <h2 className="af-foot__h">{t("footer.collection")}</h2>
             <ul>
-              {CATEGORY_IDS.map((id) => (
+              <li>
+                <Link href="/extensions">{t("footer.extensionsHub")}</Link>
+              </li>
+              {VISIBLE_CATEGORY_IDS.map((id) => (
                 <li key={id}>
                   <Link href={{ pathname: "/kollektion", query: { kategorie: id } }}>{t(`categories.${id}.label`)}</Link>
                 </li>
               ))}
+              <li>
+                <Link href="/massanfertigung">{t("footer.custom")}</Link>
+              </li>
             </ul>
           </div>
           <div>
@@ -80,7 +97,7 @@ export async function Footer({ demo }: { demo: boolean }) {
                 <Link href={{ hash: "fragen", pathname: "/" }}>{t("footer.faq")}</Link>
               </li>
               <li>
-                <Link href={{ pathname: "/anfrage", query: { thema: "massanfertigung" } }}>{t("footer.custom")}</Link>
+                <Link href="/anfrage">{t("nav.consultation")}</Link>
               </li>
               <li>
                 <Link href="/kontakt">{t("nav.contact")}</Link>

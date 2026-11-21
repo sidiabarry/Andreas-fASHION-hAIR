@@ -14,12 +14,19 @@
     "glue": "Walker Tape Ultra Hold Flüssigkleber",
     "solvent": "Walker Tape C-22 Lösungsmittel",
     "tapeRoll": "Walker Tape Ultra Hold Klebeband 3/4\" x 12 yd",
-    "tapeStrips": "Walker Tape Ultra Hold Klebestreifen"
+    "tapeStrips": "Walker Tape Ultra Hold Klebestreifen",
+    "toupet": "V-Toupet {len} cm",
+    "clipIn": "Clip-in-Extensions {len} cm",
+    "genius": "Genius Weft {len} cm",
+    "invisibleTape": "Invisible Tape {len} cm",
+    "butterfly": "Butterfly Weft {len} cm"
   },
   "subtitles": {
     "premium": "Premium-Echthaar",
     "men": "Haarsystem für Männer",
-    "care": "Befestigung und Pflege"
+    "care": "Befestigung und Pflege",
+    "clipInSet": "Naturdunkelbraun, 3 Teile",
+    "geniusCurly": "Kaffeebraun mit Kupfer-Ombré, naturlockig"
   },
   "colors": {
     "Blond mit Reflexen und dunklem Goldblond": "Blond mit Reflexen und dunklem Goldblond",
@@ -43,10 +50,25 @@
     "Natürliches Dunkelbraun mit Kupferhighlights": "Natürliches Dunkelbraun mit Kupferhighlights",
     "Natürliches Dunkelbraun mit sanften Grausträhnen": "Natürliches Dunkelbraun mit sanften Grausträhnen",
     "Natürliches Dunkelbraun mit violettroten Highlights": "Natürliches Dunkelbraun mit violettroten Highlights",
-    "Schwarz": "Schwarz"
+    "Schwarz": "Schwarz",
+    "Dunkelblond mit hellen Reflexen": "Dunkelblond mit hellen Reflexen",
+    "Naturdunkelbraun": "Naturdunkelbraun",
+    "Goldblond Ombré": "Goldblond Ombré",
+    "Kaffeebraun mit Kupfer-Ombré": "Kaffeebraun mit Kupfer-Ombré",
+    "Hellblond Ombré mit dunklem Ansatz": "Hellblond Ombré mit dunklem Ansatz"
   },
-  "textures": { "Glatt": "Glatt", "Leicht gewellt": "Leicht gewellt", "Lockig": "Lockig" },
-  "textureHair": { "Glatt": "Glattes Echthaar", "Leicht gewellt": "Leicht gewelltes Echthaar", "Lockig": "Lockiges Echthaar", "": "Feines Echthaar" },
+  "textures": {
+    "Glatt": "Glatt",
+    "Leicht gewellt": "Leicht gewellt",
+    "Lockig": "Lockig",
+    "Naturlockig": "Naturlockig"
+  },
+  "textureHair": {
+    "Glatt": "Glattes Echthaar",
+    "Leicht gewellt": "Leicht gewelltes Echthaar",
+    "Lockig": "Lockiges Echthaar",
+    "": "Feines Echthaar"
+  },
   "hair": {
     "colorLen": "{hair} in {color}, {len} cm lang.",
     "len": "{hair}, {len} cm lang.",
@@ -65,7 +87,13 @@
     "glue": "Professioneller Flüssigkleber mit starkem Halt für Haarteile, Perücken und Haarsysteme. Hält lange, widersteht Feuchtigkeit und bleibt dabei angenehm auf der Haut.",
     "solvent": "Löst Kleber- und Tape-Rückstände von Haarteilen, Perücken und Extensions schnell und schonend. Die Formel auf Zitrusbasis wirkt in wenigen Augenblicken.",
     "tapeRoll": "Doppelseitiges Klebeband mit starkem Halt für Haarersatzsysteme, Perücken und Extensions. Sitzt fest, bleibt unauffällig und hält Feuchtigkeit und Schweiß stand.",
-    "tapeStrips": "Vorgeschnittene, geschwungene Klebestreifen für Haarsysteme. Extra starker Halt, schweiß- und feuchtigkeitsbeständig, einfach aufzutragen."
+    "tapeStrips": "Vorgeschnittene, geschwungene Klebestreifen für Haarsysteme. Extra starker Halt, schweiß- und feuchtigkeitsbeständig, einfach aufzutragen.",
+    "toupet": "Damen-Topper mit V-förmiger Basis aus Echthaar, in {color}. {len} cm lang, Gewicht {grams} g. Dieses Stück gibt es nur einmal.",
+    "clipIn": "Clip-in-Extensions aus Echthaar in {color}, {len} cm lang. Das Set besteht aus drei Tressen mit Clips und wiegt zusammen {grams} g.",
+    "genius": "Genius Weft aus Echthaar in {color}, {len} cm lang. Eine Packung enthält {grams} g.",
+    "geniusCurly": "Genius Weft aus Echthaar in {color}, {len} cm lang, naturlockig. Eine Packung enthält {grams} g.",
+    "invisibleTape": "Invisible-Tape-Extensions aus Echthaar in {color}, {len} cm lang. Die Tapes fügen sich bei fachgerechter Einarbeitung unauffällig ins eigene Haar ein. Eine Packung enthält {grams} g.",
+    "butterfly": "Butterfly Weft aus Echthaar in {color}, {len} cm lang. Die Tressenbreite beträgt {width} cm je Reihe. Eine Packung enthält {grams} g."
   },
   "specs": {
     "premium": "100 % Premium-Echthaar",
@@ -97,6 +125,17 @@
     "precut": "Vorgeschnittene Streifen",
     "extraHold": "Extra starker Halt",
     "sweatMoisture": "Schweiß- und feuchtigkeitsbeständig",
-    "fitting": "Anpassung im Atelier"
+    "fitting": "Anpassung im Atelier",
+    "premiumPlain": "Premium-Echthaar",
+    "vBase": "V-förmige Basis (Damen-Topper)",
+    "weight": "Gewicht {grams} g",
+    "clipSet": "Set aus {n} Tressen mit Clips",
+    "weightSet": "Gewicht {grams} g (Set)",
+    "packGrams": "{grams} g je Packung",
+    "weftPerPack": "{n} Tresse je Packung",
+    "tapesPerPack": "{n} Tapes je Packung",
+    "weftWidth": "Tressenbreite {width} cm je Reihe",
+    "humanPlain": "Echthaar",
+    "tapesSealed": "{n} Tapes, gemeinsam versiegelt in einer Packung"
   }
 }

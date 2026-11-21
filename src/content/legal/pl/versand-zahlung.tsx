@@ -53,7 +53,9 @@ export default function Page({ company: c }: { company: Company }) {
             Niemcy{others.length > 0 ? <>, {countryNames(others, "pl")}</> : null}; inne kraje po uzgodnieniu.
           </li>
           <li>Produkty z magazynu docierają na terenie Niemiec w ciągu {deliveryDaysOf(c)} dni roboczych – przy przedpłacie i PayPal od dnia następującego po otrzymaniu płatności, w pozostałych przypadkach od dnia następującego po zawarciu umowy. Czas dostawy za granicę podajemy przed zawarciem umowy.</li>
-          <li>Produkty na wymiar wykonujemy w ciągu ok. {madeToOrderDaysOf(c)} dni roboczych od otrzymania wszystkich danych oraz – przy przedpłacie lub PayPal – płatności.</li>
+          <li>
+            Produkty na wymiar dostarczamy na terenie Niemiec w ciągu {madeToOrderDaysOf(c)} dni roboczych, licząc od dnia następującego po otrzymaniu wszystkich danych oraz – przy przedpłacie lub PayPal – płatności.
+          </li>
           <li>Ze względów bezpieczeństwa niektórych produktów do pielęgnacji, klejów i rozpuszczalników nie możemy wysyłać do wszystkich krajów. Informujemy o tym na stronie produktu.</li>
         </ul>
       </section>
@@ -77,14 +79,14 @@ export default function Page({ company: c }: { company: Company }) {
                     {c.bank.bic ? <>, BIC: {c.bank.bic}</> : null}. W tytule przelewu prosimy podać numer zamówienia.
                   </>
                 ) : (
-                  <> <Missing field="bank" label="dane bankowe" /></>
+                  <>{" "}Dane bankowe otrzymają Państwo wraz z potwierdzeniem zamówienia.</>
                 )}
               </li>
             ) : null}
             {c.payments.paypal ? (
               <li>
                 <strong>PayPal</strong> – po potwierdzeniu zamówienia otrzymują Państwo żądanie zapłaty przez PayPal
-                {c.paypalEmail ? <> od {c.paypalEmail}</> : <> <Missing field="paypalEmail" label="konto PayPal" /></>}
+                {c.paypalEmail ? <> od {c.paypalEmail}</> : null}
                 ; płatne w ciągu 7 dni. Wysyłka po otrzymaniu płatności.
               </li>
             ) : null}

@@ -587,5 +587,90 @@
       "Hair length 30 cm"
     ],
     "subtitle": "Premium human hair"
+  },
+  "422": {
+    "description": "Women's topper with a V-shaped base in human hair, in dark blonde with light highlights. 46 cm long, weighing 117 g. This piece exists only once.",
+    "name": "V-toupee 46 cm",
+    "specs": [
+      "Human hair",
+      "Hair length 46 cm",
+      "Colour: Dark blonde with light highlights",
+      "V-shaped base (women's topper)",
+      "Weight 117 g"
+    ],
+    "subtitle": "Dark blonde with light highlights"
+  },
+  "423": {
+    "description": "Clip-in extensions in human hair in natural dark brown, 55 cm long. The set consists of three wefts with clips and weighs 194 g in total.",
+    "name": "Clip-in extensions 55 cm",
+    "specs": [
+      "Human hair",
+      "Hair length 55 cm",
+      "Colour: Natural dark brown",
+      "Set of 3 wefts with clips",
+      "Weight 194 g (set)"
+    ],
+    "subtitle": "Natural dark brown, 3 pieces"
+  },
+  "424": {
+    "description": "Genius Weft in human hair in natural dark brown, 55 cm long. One pack contains 50 g.",
+    "name": "Genius Weft 55 cm",
+    "specs": [
+      "Human hair",
+      "Hair length 55 cm",
+      "Colour: Natural dark brown",
+      "50 g per pack",
+      "1 weft per pack"
+    ],
+    "subtitle": "Natural dark brown"
+  },
+  "425": {
+    "description": "Genius Weft in human hair in golden blonde ombré, 55 cm long. One pack contains 50 g.",
+    "name": "Genius Weft 55 cm",
+    "specs": [
+      "Human hair",
+      "Hair length 55 cm",
+      "Colour: Golden blonde ombré",
+      "50 g per pack",
+      "1 weft per pack"
+    ],
+    "subtitle": "Golden blonde ombré"
+  },
+  "426": {
+    "description": "Genius Weft in human hair in coffee brown with copper ombré, 45 cm long, naturally curly. One pack contains 50 g.",
+    "name": "Genius Weft 45 cm",
+    "specs": [
+      "Human hair",
+      "Hair length 45 cm",
+      "Colour: Coffee brown with copper ombré",
+      "Texture: Naturally curly",
+      "50 g per pack",
+      "1 weft per pack"
+    ],
+    "subtitle": "Coffee brown with copper ombré, naturally curly"
+  },
+  "427": {
+    "description": "Invisible Tape extensions in human hair in light blonde ombré with dark root, 55 cm long. When professionally applied, the tapes blend discreetly into your own hair. One pack contains 25 g.",
+    "name": "Invisible Tape 55 cm",
+    "specs": [
+      "Human hair",
+      "Hair length 55 cm",
+      "Colour: Light blonde ombré with dark root",
+      "25 g per pack",
+      "3 tapes, sealed together in one pack"
+    ],
+    "subtitle": "Light blonde ombré with dark root"
+  },
+  "428": {
+    "description": "Butterfly Weft in human hair in natural dark brown, 55 cm long. The weft is 30 cm wide per row. One pack contains 50 g.",
+    "name": "Butterfly Weft 55 cm",
+    "specs": [
+      "Human hair",
+      "Hair length 55 cm",
+      "Colour: Natural dark brown",
+      "Weft width 30 cm per row",
+      "50 g per pack"
+    ],
+    "subtitle": "Natural dark brown"
   }
 }

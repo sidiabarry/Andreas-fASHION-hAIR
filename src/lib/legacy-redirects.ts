@@ -18,7 +18,6 @@ export const LEGACY_CATEGORY_MAP: Record<string, string> = {
   "curtain-bangs": "pony",
   mannerhaarsysteme: "maenner",
   prosthetics: "maenner",
-  wartungsprodukte: "pflege",
 };
 
 const L = "/de";
@@ -26,8 +25,11 @@ const L = "/de";
 /** Alter Produkt-Slug → neuer Slug */
 export function legacyProductMap(): Map<string, string> {
   const map = new Map<string, string>();
-  const bySlug = new Map((catalog as { id: number; slug: string }[]).map((p) => [p.id, p.slug]));
+  const all = catalog as { id: number; slug: string; hidden?: boolean }[];
+  const bySlug = new Map(all.map((p) => [p.id, p.slug]));
+  const hidden = new Set(all.filter((p) => p.hidden).map((p) => p.id));
   for (const old of live as LegacyProduct[]) {
+    if (hidden.has(old.id)) continue; // aus dem Shop genommen: alte URL fällt auf /product/:rest* → Kollektion
     const target = bySlug.get(old.id);
     if (!target) throw new Error(`No catalog product for legacy id ${old.id}`);
     map.set(decodeURIComponent(old.slug), target);

@@ -28,7 +28,7 @@ export default async function WithdrawalFunctionPage({ params, searchParams }: P
   const initialOrder = typeof query.bestellung === "string" && /^[A-Z0-9-]{1,40}$/.test(query.bestellung) ? query.bestellung : "";
 
   return (
-    <main className="af-page">
+    <main className="af-page af-zone-light" data-zone="light">
       <div className="af-wrap af-pdp">
         <div className="af-stack af-inquiry-intro">
           <p className="af-mono">{t("kicker")}</p>

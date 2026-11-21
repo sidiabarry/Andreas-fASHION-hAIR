@@ -37,7 +37,7 @@ Zitate unten sind sinngemäß geglättet (Andrea spricht Deutsch als Zweitsprach
    - Preisrahmen Extensions laut Gespräch etwa 80–120 €. **Noch nicht festgelegt, nicht veröffentlichen**, bis Andrea Preise bestätigt.
 2. **Topper** (auch W-förmige Topper mit Clips, für wenig Haar am Oberkopf), **Perücken**, **Männerhaarsysteme/Toupets** und **Maßanfertigungen**: weiter im Angebot, aber im **Hintergrund**, nicht als Aufmacher.
 3. **Für alle.** Die alte Seite wirkte, als sei das Angebot nur für eine bestimmte Gruppe. Bilder und Texte müssen **jede Haarfarbe, jede Haarstruktur und jede Herkunft** ansprechen. Blond, brünett, rot, schwarz, glatt, wellig, lockig, kraus sollen sichtbar und gleichwertig gezeigt werden. Niemand soll denken: „Das ist nicht für mich.“
-4. **Herkunft als Stärke:** Das Haar ist **brasilianisches Echthaar** (vom Nutzer bestätigt). Dazu Handwerk aus Rio de Janeiro, gefertigt in Iserlohn. Den Herkunftsnachweis (Lieferant, Rechnungen) hält Andrea für den Fall einer Nachfrage bereit.
+4. **Herkunft:** KORREKTUR 11/2026: Das Echthaar stammt **nicht** aus Brasilien (Auftraggeber). Keine Herkunftsangabe zum Haar verwenden. Andreas Weg (Handwerk gelernt in Rio de Janeiro, gefertigt in Iserlohn) darf erzählt werden.
 5. **Ziel der Seite:** „Jemand kommt, denkt: Das brauche ich, das will ich, und kauft.“ Andrea möchte Menschen helfen, nicht in erster Linie viel Geld verdienen. Die Seite soll das spürbar machen, ohne mitleidig zu werden.
 
 ## Andreas Haltung in ihren Worten (sinngemäß, zur Verwendung als Zitate nach Freigabe)

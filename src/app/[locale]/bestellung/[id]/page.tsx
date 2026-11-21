@@ -34,7 +34,7 @@ export default async function OrderPage({ params, searchParams }: PageProps<"/[l
 
   if (!order || !valid) {
     return (
-      <main className="af-page">
+      <main className="af-page af-zone-light" data-zone="light">
         <div className="af-wrap af-empty">
           <h1 className="af-h2">{t("order.notFound")}</h1>
           <p className="af-lead">{mode.demo ? t("order.demoGone") : t("order.notFoundLead")}</p>
@@ -52,7 +52,7 @@ export default async function OrderPage({ params, searchParams }: PageProps<"/[l
   const countryName = new Intl.DisplayNames([locale], { type: "region" }).of(order.customer.country) ?? order.customer.country;
 
   return (
-    <main className="af-page">
+    <main className="af-page af-zone-light" data-zone="light">
       <div className="af-wrap" style={{ maxWidth: 860 }}>
         <Logo size={64} variant="mark" />
         <p className="af-mono" style={{ marginTop: 28 }}>
@@ -109,7 +109,7 @@ export default async function OrderPage({ params, searchParams }: PageProps<"/[l
           {t("order.print")}
         </p>
         <div className="af-hero-actions" style={{ marginTop: 28 }}>
-          <Link className="af-cta-line" href={{ pathname: "/kollektion", query: { kategorie: "pflege" } }}>
+          <Link className="af-cta-line" href="/kollektion">
             {t("order.careCta")} <Arrow />
           </Link>
         </div>

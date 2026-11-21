@@ -6,6 +6,7 @@ import { useEffect, useRef } from "react";
 
 import { Arrow } from "@/components/Arrow";
 import { useCart } from "@/components/cart/CartProvider";
+import { unitText } from "@/components/cart/unitText";
 import { SHIPPING_ZONES } from "@/config/shipping";
 import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
@@ -36,7 +37,7 @@ export function CartDrawer({ checkoutOpen }: { checkoutOpen: boolean }) {
   return (
     <dialog
       aria-labelledby="drawer-title"
-      className="af-drawer"
+      className="af-drawer af-zone-light"
       onClick={(event) => {
         if (event.target === event.currentTarget) cart.dismiss();
       }}
@@ -69,6 +70,7 @@ export function CartDrawer({ checkoutOpen }: { checkoutOpen: boolean }) {
                   {product.subtitle}
                   {quantity > 1 ? ` · ${quantity} ×` : ""}
                 </p>
+                {product.unit ? <p className="af-note">{unitText(t, product.unit, locale)}</p> : null}
               </div>
               <span className="af-card__price">{formatPrice(product.priceCents * quantity, locale)}</span>
             </li>
@@ -81,11 +83,11 @@ export function CartDrawer({ checkoutOpen }: { checkoutOpen: boolean }) {
         <p className="af-note">{left > 0 ? t("drawer.freeLeft", { amount: formatPrice(left, locale) }) : t("drawer.freeReached")}</p>
         <div className="af-drawer__actions">
           {checkoutOpen ? (
-            <Link className="af-cta-band" href="/kasse" onClick={() => cart.dismiss()}>
+            <Link className="af-cta-band af-glass af-glass--gold" href="/kasse" onClick={() => cart.dismiss()}>
               {t("drawer.toCheckout")} <Arrow />
             </Link>
           ) : (
-            <Link className="af-cta-band" href={{ pathname: "/anfrage", query: { thema: "bestellung" } }} onClick={() => cart.dismiss()}>
+            <Link className="af-cta-band af-glass af-glass--gold" href={{ pathname: "/anfrage", query: { thema: "bestellung" } }} onClick={() => cart.dismiss()}>
               {t("drawer.toInquiry")} <Arrow />
             </Link>
           )}

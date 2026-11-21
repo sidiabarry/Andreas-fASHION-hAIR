@@ -29,7 +29,7 @@ export default async function InquiryPage({ params, searchParams }: PageProps<"/
   const available = mode.demo || mode.mail;
 
   return (
-    <main className="af-page">
+    <main className="af-page af-zone-light" data-zone="light">
       <div className="af-wrap af-pdp">
         <div className="af-stack af-inquiry-intro">
           <p className="af-mono">{t("kicker")}</p>

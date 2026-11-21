@@ -50,8 +50,7 @@ export default function Page({ company: c }: { company: Company }) {
           </li>
           <li>Lagernde Stücke sind innerhalb Deutschlands in {deliveryDaysOf(c)} Werktagen bei Ihnen – bei Vorkasse und PayPal ab dem Tag nach Zahlungseingang, sonst ab dem Tag nach Vertragsschluss. Die Lieferzeit ins Ausland nennen wir Ihnen vor Vertragsschluss.</li>
           <li>
-            Maßanfertigungen fertigen wir in etwa {madeToOrderDaysOf(c)} Werktagen, sobald alle Angaben
-            und – bei Vorkasse oder PayPal – die Zahlung vorliegen.
+            Maßanfertigungen sind innerhalb Deutschlands in {madeToOrderDaysOf(c)} Werktagen bei Ihnen, gerechnet ab dem Tag, nachdem alle Angaben und – bei Vorkasse oder PayPal – die Zahlung vorliegen.
           </li>
           <li>
             Einige Pflege-, Klebe- und Lösungsmittelprodukte können wir aus Sicherheitsgründen
@@ -84,7 +83,7 @@ export default function Page({ company: c }: { company: Company }) {
                     Bestellnummer als Verwendungszweck an.
                   </>
                 ) : (
-                  <> <Missing field="bank" label="Bankverbindung" /></>
+                  <>{" "}Die Bankverbindung erhalten Sie mit der Auftragsbestätigung.</>
                 )}
               </li>
             ) : null}
@@ -92,7 +91,7 @@ export default function Page({ company: c }: { company: Company }) {
               <li>
                 <strong>PayPal</strong> – Sie erhalten nach der Auftragsbestätigung eine
                 Zahlungsaufforderung über PayPal
-                {c.paypalEmail ? <> von {c.paypalEmail}</> : <> <Missing field="paypalEmail" label="PayPal-Konto" /></>}
+                {c.paypalEmail ? <> von {c.paypalEmail}</> : null}
                 ; zahlbar innerhalb von 7 Tagen. Versand nach Zahlungseingang.
               </li>
             ) : null}

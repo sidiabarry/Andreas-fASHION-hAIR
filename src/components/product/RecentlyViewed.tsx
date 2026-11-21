@@ -8,9 +8,11 @@ import { RECENT_KEY, useLocalList } from "@/components/cart/useLocalList";
 import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
 import { formatPrice } from "@/lib/money";
+import { unitText } from "@/components/cart/unitText";
 
 export function RecentlyViewed({ exclude }: { exclude?: string }) {
   const t = useTranslations("recent");
+  const tRoot = useTranslations();
   const locale = useLocale() as Locale;
   const cart = useCart();
   const { items } = useLocalList(RECENT_KEY, 12);
@@ -32,6 +34,7 @@ export function RecentlyViewed({ exclude }: { exclude?: string }) {
               <Image alt="" height={160} sizes="120px" src={p.image} width={120} />
               <span className="af-card__name">{p.name}</span>
               <span className="af-card__price">{formatPrice(p.priceCents, locale)}</span>
+              {p.unit ? <span className="af-note">{unitText(tRoot, p.unit, locale)}</span> : null}
             </Link>
           </li>
         ))}

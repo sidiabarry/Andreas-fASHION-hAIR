@@ -4,12 +4,25 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { JsonLd } from "@/components/JsonLd";
 import { ProductCard } from "@/components/product/ProductCard";
 import { SortSelect } from "@/components/product/SortSelect";
-import { CATEGORY_IDS, INQUIRY_ONLY_CATEGORIES, isCategoryId, products } from "@/data/catalog";
-import { ExtensionsSection } from "@/components/product/ExtensionsSection";
+import { CATEGORY_IDS, isCategoryId, products, VISIBLE_CATEGORY_IDS } from "@/data/catalog";
+import { CustomStrip } from "@/components/product/CustomStrip";
 import type { Product } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
 import { breadcrumbJsonLd } from "@/lib/jsonld";
+import {
+  COLOR_GROUP_IDS,
+  colorGroupOf,
+  facetCounts,
+  filterProducts,
+  LENGTH_BAND_IDS,
+  lengthBandOf,
+  METHOD_IDS,
+  methodOf,
+  parseColorGroup,
+  parseLengthBand,
+  parseMethod,
+} from "@/lib/collection";
 import { pageMetadata } from "@/lib/seo";
 import { soldSlugs } from "@/server/sold";
 
@@ -18,7 +31,7 @@ type Sort = (typeof SORTS)[number];
 
 export async function generateMetadata({ params, searchParams }: PageProps<"/[locale]/kollektion">): Promise<Metadata> {
   const { locale } = await params;
-  const { kategorie } = await searchParams;
+  const { kategorie, methode, farbe, laenge } = await searchParams;
   const t = await getTranslations({ locale });
   const category = isCategoryId(kategorie) ? kategorie : null;
   const meta = pageMetadata({
@@ -31,6 +44,8 @@ export async function generateMetadata({ params, searchParams }: PageProps<"/[lo
     // Kategorie-Ansichten sind eigene, indexierbare Seiten
     meta.alternates = { ...meta.alternates, canonical: `/${locale}/kollektion?kategorie=${category}` };
   }
+  // Gefilterte Ansichten sind Dubletten der Kategorie: nicht indexieren
+  if (parseMethod(methode) || parseColorGroup(farbe) || parseLengthBand(laenge)) meta.robots = { follow: true, index: false };
   return meta;
 }
 
@@ -55,9 +70,20 @@ function interleave(list: Product[]): Product[] {
   return out;
 }
 
+/** Nur gesetzte Parameter. */
+function compact(values: Record<string, string | null>): Record<string, string> {
+  const out: Record<string, string> = {};
+  for (const [key, value] of Object.entries(values)) if (value !== null) out[key] = value;
+  return out;
+}
+
 function sortProducts(list: Product[], sort: Sort, sold: Set<string>): Product[] {
   const isSold = (p: Product) => (p.sold || sold.has(p.slug) ? 1 : 0);
-  const copy = sort === "empfehlung" ? interleave(list) : list.slice();
+  // Empfehlung: Extensions zuerst, dann Haarteile; innerhalb jeder Kategorie die Farben gemischt
+  const copy =
+    sort === "empfehlung"
+      ? CATEGORY_IDS.flatMap((id) => interleave(list.filter((p) => p.category === id)))
+      : list.slice();
   copy.sort((a, b) => {
     const bySold = isSold(a) - isSold(b);
     if (bySold !== 0) return bySold;
@@ -78,16 +104,34 @@ export default async function CollectionPage({ params, searchParams }: PageProps
   const t = await getTranslations({ locale });
   const category = isCategoryId(query.kategorie) ? query.kategorie : null;
   const sort: Sort = SORTS.includes(query.sortierung as Sort) ? (query.sortierung as Sort) : "empfehlung";
+  const method = parseMethod(query.methode);
+  const color = parseColorGroup(query.farbe);
+  const length = parseLengthBand(query.laenge);
   const sold = await soldSlugs();
-  const list = sortProducts(category ? products.filter((p) => p.category === category) : products, sort, sold);
+  const inCategory = category ? products.filter((p) => p.category === category) : products;
+  const list = sortProducts(filterProducts(products, { category, color, length, method }), sort, sold);
   const open = list.filter((p) => !p.sold && !sold.has(p.slug)).length;
-  const hrefFor = (id: string | null) => ({
-    pathname: "/kollektion" as const,
-    query: { ...(id ? { kategorie: id } : {}), ...(sort !== "empfehlung" ? { sortierung: sort } : {}) },
-  });
+  const state = { farbe: color, kategorie: category, laenge: length, methode: method, sortierung: sort !== "empfehlung" ? sort : null };
+  const hrefFor = (change: Partial<typeof state>) => {
+    const next = { ...state, ...change };
+    // Methode gibt es nur bei Extensions
+    if (next.kategorie && next.kategorie !== "extensions") next.methode = null;
+    return {
+      pathname: "/kollektion" as const,
+      query: compact(next),
+    };
+  };
+  const hidden = compact({ farbe: color, kategorie: category, laenge: length, methode: method });
+  const showMethod = !category || category === "extensions";
+  const groups = [
+    ...(showMethod ? [{ key: "methode" as const, label: t("collection.byMethod"), options: facetCounts(inCategory, METHOD_IDS, methodOf).map((o) => ({ ...o, label: t(`extensions.${o.id}`) })), value: method }] : []),
+    { key: "farbe" as const, label: t("collection.byColor"), options: facetCounts(inCategory, COLOR_GROUP_IDS, colorGroupOf).map((o) => ({ ...o, label: t(`collection.colors.${o.id}`) })), value: color },
+    { key: "laenge" as const, label: t("collection.byLength"), options: facetCounts(inCategory, LENGTH_BAND_IDS, lengthBandOf).map((o) => ({ ...o, label: t(`collection.lengths.${o.id}`) })), value: length },
+  ].filter((group) => group.options.length > 1 || group.value);
+  const filtered = Boolean(method || color || length);
 
   return (
-    <main className="af-page">
+    <main className="af-page af-page--zoned" data-zone="light">
       <JsonLd
         data={breadcrumbJsonLd([
           { name: t("common.home"), path: `/${locale}` },
@@ -96,53 +140,98 @@ export default async function CollectionPage({ params, searchParams }: PageProps
         ])}
       />
       <div className="af-wrap">
-        {category && INQUIRY_ONLY_CATEGORIES.includes(category) ? null : <p className="af-mono">{t("collection.available", { count: open })}</p>}
+        <p className="af-mono">{t("collection.available", { count: open })}</p>
         <h1 className="af-h1" style={{ marginTop: 18 }}>
           {category ? t(`categories.${category}.label`) : t("collection.title")}
         </h1>
         <p className="af-lead" style={{ marginTop: 22 }}>
-          {category === "extensions" ? t("extensions.lead") : category ? t(`categories.${category}.caption`) : t("collection.lead")}
+          {category === "extensions" ? t("collection.leadExtensions") : category ? t(`categories.${category}.caption`) : t("collection.lead")}
         </p>
-        <div className="af-toolbar">
-          <nav aria-label={t("collection.filterLabel")} className="af-filters">
-            <Link aria-current={category === null ? "page" : undefined} className="af-tab" href={hrefFor(null)}>
-              {t("collection.all")}
+        {category === "extensions" || !category ? (
+          <p style={{ marginTop: 18 }}>
+            <Link className="af-cta-line" href="/extensions">
+              {t("collection.hubLink")}
             </Link>
-            {CATEGORY_IDS.map((id) => (
-              <Link aria-current={category === id ? "page" : undefined} className="af-tab" href={hrefFor(id)} key={id}>
-                {t(`categories.${id}.label`)}
+          </p>
+        ) : null}
+      </div>
+      <div className="af-zone-light af-zone-fade-top af-zone-band">
+        <div className="af-wrap">
+          <div className="af-toolbar">
+            <nav aria-label={t("collection.filterLabel")} className="af-filters">
+              <Link aria-current={category === null ? "page" : undefined} className="af-tab af-glass" href={hrefFor({ kategorie: null })}>
+                {t("collection.all")}
               </Link>
-            ))}
-          </nav>
-          {category && INQUIRY_ONLY_CATEGORIES.includes(category) ? null : (
-          <SortSelect
-            apply={t("collection.apply")}
-            category={category}
-            label={t("collection.sortLabel")}
-            options={[
-              { label: t("collection.sortFeatured"), value: "empfehlung" },
-              { label: t("collection.sortPriceAsc"), value: "preis-auf" },
-              { label: t("collection.sortPriceDesc"), value: "preis-ab" },
-              { label: t("collection.sortLength"), value: "laenge" },
-            ]}
-            value={sort}
-          />
+              {VISIBLE_CATEGORY_IDS.map((id) => (
+                <Link aria-current={category === id ? "page" : undefined} className="af-tab af-glass" href={hrefFor({ kategorie: id })} key={id}>
+                  {t(`categories.${id}.label`)}
+                </Link>
+              ))}
+            </nav>
+            <SortSelect
+              apply={t("collection.apply")}
+              hidden={hidden}
+              label={t("collection.sortLabel")}
+              options={[
+                { label: t("collection.sortFeatured"), value: "empfehlung" },
+                { label: t("collection.sortPriceAsc"), value: "preis-auf" },
+                { label: t("collection.sortPriceDesc"), value: "preis-ab" },
+                { label: t("collection.sortLength"), value: "laenge" },
+              ]}
+              value={sort}
+            />
+          </div>
+          {groups.length ? (
+            <div aria-label={t("collection.filterGroups")} className="af-facets" role="group">
+              {groups.map((group) => (
+                <div className="af-facet" key={group.key}>
+                  <span className="af-facet__label">{group.label}</span>
+                  <div className="af-facet__opts">
+                    <Link aria-current={group.value === null ? "true" : undefined} className="af-pill af-glass" href={hrefFor({ [group.key]: null })}>
+                      {t("collection.any")}
+                    </Link>
+                    {group.options.map((option) => (
+                      <Link aria-current={group.value === option.id ? "true" : undefined} className="af-pill af-glass" href={hrefFor({ [group.key]: option.id })} key={option.id}>
+                        {option.label} <i>{option.count}</i>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ))}
+              {filtered ? (
+                <Link className="af-facet__reset" href={hrefFor({ farbe: null, laenge: null, methode: null })}>
+                  {t("collection.reset")}
+                </Link>
+              ) : null}
+            </div>
+          ) : null}
+          <p aria-live="polite" className="af-note" style={{ marginTop: 18 }}>
+            {t("collection.results", { count: list.length })}. {t("collection.soldHint")}
+          </p>
+          {list.length ? (
+            <div className="af-grid">
+              {list.map((product, index) => (
+                <ProductCard key={product.slug} locale={locale} priority={index < 2} product={product} sold={sold.has(product.slug)} />
+              ))}
+            </div>
+          ) : (
+            <div className="af-msg" data-kind="info" style={{ marginTop: 32 }}>
+              <p>{t("collection.empty")}</p>
+              <p>
+                <Link className="af-link" href={hrefFor({ farbe: null, laenge: null, methode: null })}>
+                  {t("collection.reset")}
+                </Link>{" "}
+                ·{" "}
+                <Link className="af-link" href="/massanfertigung">
+                  {t("custom.strip.cta")}
+                </Link>
+              </p>
+            </div>
           )}
+          <div style={{ marginTop: 72 }}>
+            <CustomStrip />
+          </div>
         </div>
-        {category && INQUIRY_ONLY_CATEGORIES.includes(category) ? (
-          <ExtensionsSection locale={locale} />
-        ) : (
-          <>
-        <p aria-live="polite" className="af-note" style={{ marginTop: 18 }}>
-          {t("collection.results", { count: list.length })}. {t("collection.soldHint")}
-        </p>
-        <div className="af-grid">
-          {list.map((product, index) => (
-            <ProductCard key={product.slug} locale={locale} priority={index < 2} product={product} sold={sold.has(product.slug)} />
-          ))}
-        </div>
-          </>
-        )}
       </div>
     </main>
   );

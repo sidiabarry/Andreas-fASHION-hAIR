@@ -53,7 +53,9 @@ export default function Page({ company: c }: { company: Company }) {
             Alemania{others.length > 0 ? <>, {countryNames(others, "es")}</> : null}; otros países previo acuerdo.
           </li>
           <li>Las piezas en stock le llegan dentro de Alemania en {deliveryDaysOf(c)} días hábiles –con pago anticipado y PayPal, a partir del día siguiente a la recepción del pago; en los demás casos, a partir del día siguiente a la celebración del contrato–. El plazo al extranjero se lo indicamos antes de la celebración del contrato.</li>
-          <li>Fabricamos las piezas a medida en unos {madeToOrderDaysOf(c)} días hábiles, una vez recibidos todos los datos y –con pago anticipado o PayPal– el pago.</li>
+          <li>
+            Las piezas a medida le llegan dentro de Alemania en {madeToOrderDaysOf(c)} días hábiles, a contar desde el día siguiente a la recepción de todos los datos y –con pago anticipado o PayPal– del pago.
+          </li>
           <li>Por motivos de seguridad, no podemos enviar algunos productos de cuidado, adhesivos y disolventes a todos los países. Lo indicamos en la página del producto.</li>
         </ul>
       </section>
@@ -77,7 +79,7 @@ export default function Page({ company: c }: { company: Company }) {
                     {c.bank.bic ? <>, BIC: {c.bank.bic}</> : null}. Indique su número de pedido como concepto.
                   </>
                 ) : (
-                  <> <Missing field="bank" label="datos bancarios" /></>
+                  <>{" "}Recibirá los datos bancarios con la confirmación del pedido.</>
                 )}
               </li>
             ) : null}
@@ -85,7 +87,7 @@ export default function Page({ company: c }: { company: Company }) {
               <li>
                 <strong>PayPal</strong> – tras la confirmación del pedido recibe una solicitud de pago
                 por PayPal
-                {c.paypalEmail ? <> de {c.paypalEmail}</> : <> <Missing field="paypalEmail" label="cuenta de PayPal" /></>}
+                {c.paypalEmail ? <> de {c.paypalEmail}</> : null}
                 ; pagadera en 7 días. Envío tras recibir el pago.
               </li>
             ) : null}

@@ -49,18 +49,32 @@ function budget() {
 }
 
 export default function AtelierField() {
-  const ref = useRef<HTMLCanvasElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const canvas = ref.current;
-    if (!canvas) return;
+    const host = ref.current;
+    if (!host) return;
     restoreMotionChoice();
     const root = document.documentElement;
     if (prefersReducedMotion()) return;
+    // Jede Einbindung bekommt eine eigene Leinwand: destroy() gibt den WebGL-Kontext frei, eine
+    // wiederverwendete Leinwand (React StrictMode, schnelles Hin und Her) hätte nur noch einen toten Kontext.
+    const canvas = document.createElement("canvas");
+    canvas.className = "fx-canvas";
+    canvas.setAttribute("aria-hidden", "true");
+    host.appendChild(canvas);
+    const lost = (event: Event) => {
+      event.preventDefault();
+      canvas.hidden = true;
+    };
+    canvas.addEventListener("webglcontextlost", lost);
     let field: GoldField;
     try {
       field = new GoldField(canvas, budget());
-    } catch {
+    } catch (error) {
+      // Kein WebGL2 (alte Geräte, gesperrte GPU): die Seite bleibt vollständig, nur ohne Goldfeld.
+      if (process.env.NODE_ENV !== "production") console.warn("AtelierField:", error);
+      canvas.remove();
       return;
     }
     root.classList.add("fx-live");
@@ -144,9 +158,11 @@ export default function AtelierField() {
       document.removeEventListener("pointerleave", onLeave);
       document.removeEventListener("visibilitychange", sync);
       root.classList.remove("fx-live");
+      canvas.removeEventListener("webglcontextlost", lost);
       field.destroy();
+      canvas.remove();
     };
   }, []);
 
-  return <canvas aria-hidden="true" className="fx-canvas" ref={ref} />;
+  return <div className="fx-host" ref={ref} />;
 }

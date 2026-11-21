@@ -18,7 +18,7 @@ export default async function CartPage({ params }: PageProps<"/[locale]/warenkor
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "cart" });
   return (
-    <main className="af-page">
+    <main className="af-page af-zone-light" data-zone="light">
       <div className="af-wrap">
         <h1 className="af-h1">{t("title")}</h1>
         <p className="af-lead" style={{ margin: "22px 0 0" }}>
