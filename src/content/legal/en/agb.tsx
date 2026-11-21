@@ -134,9 +134,7 @@ export default function Page({ company: c }: { company: Company }) {
           </li>
           <li>Delivery time for goods in stock within Germany: {deliveryDaysOf(c)} business days. For advance payment or PayPal the period begins on the day after receipt of payment, otherwise on the day after conclusion of the contract. We will tell you the delivery time for shipments abroad before the contract is concluded.</li>
           <li>
-            We produce custom-made pieces within about {madeToOrderDaysOf(c)} business days after we have all
-            the details needed and – for advance payment or PayPal – payment has been received. We
-            will tell you the expected dispatch date.
+            Custom-made pieces reach you within Germany in {madeToOrderDaysOf(c)} business days. The period starts on the day after we have all the details needed for production and – for advance payment or PayPal – payment has been received. We will tell you the delivery time for shipments abroad before the contract is concluded.
           </li>
           <li>
             If goods arrive with visible transport damage, please complain to the delivery person

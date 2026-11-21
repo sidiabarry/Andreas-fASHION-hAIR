@@ -53,7 +53,9 @@ export default function Page({ company: c }: { company: Company }) {
             Duitsland{others.length > 0 ? <>, {countryNames(others, "nl")}</> : null}; andere landen na overleg.
           </li>
           <li>Stukken op voorraad zijn binnen Duitsland in {deliveryDaysOf(c)} werkdagen bij u – bij vooruitbetaling en PayPal vanaf de dag na ontvangst van de betaling, anders vanaf de dag na het sluiten van de overeenkomst. De levertijd naar het buitenland noemen wij u vóór het sluiten van de overeenkomst.</li>
-          <li>Maatwerk vervaardigen wij in ongeveer {madeToOrderDaysOf(c)} werkdagen zodra alle gegevens en – bij vooruitbetaling of PayPal – de betaling binnen zijn.</li>
+          <li>
+            Maatwerk is binnen Duitsland in {madeToOrderDaysOf(c)} werkdagen bij u, gerekend vanaf de dag nadat alle gegevens en – bij vooruitbetaling of PayPal – de betaling binnen zijn.
+          </li>
           <li>Om veiligheidsredenen kunnen wij sommige verzorgings-, lijm- en oplosmiddelproducten niet naar elk land verzenden. Wij vermelden dit op de productpagina.</li>
         </ul>
       </section>

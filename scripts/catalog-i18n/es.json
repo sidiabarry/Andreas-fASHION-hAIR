@@ -91,11 +91,11 @@
     "tapeRoll": "Cinta adhesiva de doble cara con fuerte sujeción para sistemas de reemplazo capilar, pelucas y extensiones. Sujeta firme, pasa desapercibida y resiste la humedad y el sudor.",
     "tapeStrips": "Tiras adhesivas precortadas y curvadas para sistemas capilares. Sujeción extrafuerte, resistentes al sudor y a la humedad, fáciles de aplicar.",
     "toupet": "Topper para mujer con base en V de cabello natural, en {color}. {len} cm de largo, peso {grams} g. Esta pieza existe una sola vez.",
-    "clipIn": "Extensiones clip-in de cabello natural premium en {color}, {len} cm de largo. El set consta de tres cortinas con clips y pesa {grams} g en total.",
-    "genius": "Genius Weft de cabello natural premium en {color}, {len} cm de largo. Un paquete contiene {grams} g.",
-    "geniusCurly": "Genius Weft de cabello natural premium en {color}, {len} cm de largo, rizado natural. Un paquete contiene {grams} g.",
-    "invisibleTape": "Extensiones Invisible Tape de cabello natural premium en {color}, {len} cm de largo. Bien colocadas por una profesional, las cintas se integran de forma discreta en su propio cabello. Un paquete contiene {grams} g.",
-    "butterfly": "Butterfly Weft de cabello natural premium en {color}, {len} cm de largo. El ancho de la cortina es de {width} cm por fila. Un paquete contiene {grams} g."
+    "clipIn": "Extensiones clip-in de cabello natural en {color}, {len} cm de largo. El set consta de tres cortinas con clips y pesa {grams} g en total.",
+    "genius": "Genius Weft de cabello natural en {color}, {len} cm de largo. Un paquete contiene {grams} g.",
+    "geniusCurly": "Genius Weft de cabello natural en {color}, {len} cm de largo, rizado natural. Un paquete contiene {grams} g.",
+    "invisibleTape": "Extensiones Invisible Tape de cabello natural en {color}, {len} cm de largo. Bien colocadas por una profesional, las cintas se integran de forma discreta en su propio cabello. Un paquete contiene {grams} g.",
+    "butterfly": "Butterfly Weft de cabello natural en {color}, {len} cm de largo. El ancho de la cortina es de {width} cm por fila. Un paquete contiene {grams} g."
   },
   "specs": {
     "premium": "100 % cabello natural premium",

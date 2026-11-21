@@ -4,7 +4,7 @@
     "claim": "HaarManufaktur",
     "titleTemplate": "%s | Andrea's Fashion Hair",
     "defaultTitle": "Andrea's Fashion Hair | Human hair toppers, wigs and hair systems",
-    "defaultDescription": "Reborn. Human hair, crafted by hand hair by hair: toppers, front lace wigs, fringes and hair systems from the HaarManufaktur in Iserlohn, Germany. Every piece is one of a kind.",
+    "defaultDescription": "Reborn. Extensions, toppers, front lace wigs, fringes and hair systems in human hair, from the HaarManufaktur in Iserlohn, Germany. Every hairpiece is one of a kind.",
     "ogAlt": "The golden phoenix of Andrea's Fashion Hair on a dark background"
   },
   "common": {
@@ -51,7 +51,7 @@
     "line1": "As if *reborn.*",
     "line2": "More length. *More fullness.*",
     "line3": "More *you.*",
-    "lead": "Extensions in human hair, chosen by Andrea and matched to your hair in person. Plus toppers, wigs and made-to-measure pieces from her atelier in Iserlohn.",
+    "lead": "Extensions in human hair, chosen by Andrea, with personal advice on colour and amount. Plus toppers, wigs and made-to-measure pieces from her atelier in Iserlohn.",
     "chapters": "Chapters of the film",
     "ch1": "Embers",
     "ch2": "Phoenix",
@@ -81,7 +81,7 @@
     "ribbon": [
       "Atelier in Iserlohn",
       "Human hair",
-      "Craft from Rio de Janeiro",
+      "Craft learned in Rio de Janeiro",
       "Six extension methods",
       "Personal advice",
       "Payment only after confirmation",
@@ -106,7 +106,7 @@
       "cta": "View all extensions",
       "salon": "For salons and hairdressers: request quantities",
       "view": "View {name}, {color}",
-      "imageNote": "Staged studio photographs. The hair colour was measured on the original photo and matched. You will find the original photos on each product page.",
+      "imageNote": "AI-assisted staged studio images: the hair colour was measured on the original photo and matched; shape, volume and arrangement are staged. The original photos on each product page show what the pieces really look like.",
       "galleryLabel": "Extensions in the atelier"
     },
     "near": {
@@ -187,7 +187,7 @@
         },
         {
           "title": "Length",
-          "text": "As long as you would like."
+          "text": "The length you would like. Andrea tells you what is possible."
         },
         {
           "title": "Colour",
@@ -206,7 +206,7 @@
           "text": "A photo in daylight helps with matching."
         }
       ],
-      "time": "Made in {custom} working days after you order.",
+      "time": "Delivery time in Germany: {custom} working days once all details and your payment have been received.",
       "cta": "Request made-to-measure",
       "imageAlt": "Hands using a fine needle to work single hairs into a thin base"
     },
@@ -223,7 +223,7 @@
     },
     "concerns": {
       "title": "Your questions. *Honestly answered.*",
-      "lead": "What customers want to know before they decide. All in the open, no small print.",
+      "lead": "What customers want to know before they decide. Answered briefly and openly.",
       "items": [
         {
           "q": "Will the colour suit me?",
@@ -255,7 +255,7 @@
         },
         {
           "q": "Do you ship abroad?",
-          "a": "Yes, with {carrier}: to the EU from {euShip}. For other countries, Andrea tells you the shipping cost before confirming."
+          "a": "Yes, with {carrier}: to the EU for {euShip}. For other countries, Andrea tells you the shipping cost before confirming."
         }
       ],
       "returnsLink": "Withdrawal in detail",
@@ -354,11 +354,11 @@
     "unitPrice": "{amount} / 1 kg",
     "packSize": "per pack {grams} g",
     "setSize": "set ({pieces} wefts) {grams} g",
-    "extWithdrawal": "You can withdraw from your order within 14 days. Please check colour and length before you shorten wefts, work them in or peel off protective films. For a loss in value caused by use beyond that check, you are liable as set out in the withdrawal information.",
-    "imageAltStaged": "{name}, {subtitle}: staged studio photograph",
+    "extWithdrawal": "You can withdraw from your order within 14 days of receiving the goods. Please check colour and length before you shorten wefts, work them in or peel off protective films. For a loss in value caused by use beyond that check, you are liable as set out in the withdrawal information.",
+    "imageAltStaged": "{name}, {subtitle}: AI-assisted staged studio image",
     "imageNoteRelit": "Studio photograph, relit. The hair itself was not altered. The original photo shows the piece unedited.",
-    "imageNoteStaged": "Staged studio photograph. The hair colour was measured against the original photo and matched. The original photo shows the piece unedited.",
-    "compareNoteStaged": "Staged studio photograph on the left, original atelier photo on the right. The hair colour was measured against the original photo and matched.",
+    "imageNoteStaged": "AI-assisted staged studio image: the hair colour was measured on the original photo and matched; shape, volume and arrangement are staged and may differ from the piece. The original photos in the gallery show the piece unedited.",
+    "compareNoteStaged": "On the left the AI-assisted staged studio image, on the right the original atelier photo. Only the hair colour was measured on the original photo and matched; shape, volume and arrangement are staged.",
     "packQuestion": "How many packs you need depends on your hair and what you want. Andrea tells you personally.",
     "consultTitle": "Advice",
     "consultText": "Questions about colour, size or fit? Andrea replies personally.",
@@ -609,7 +609,7 @@
       {
         "label": "The phoenix",
         "title": "As if *reborn.*",
-        "text": "Her sign is the phoenix. It stands for before and after. Anyone who has lost hair, through alopecia or simply over the years, and gets it back feels as if reborn.",
+        "text": "Her sign is the phoenix. It stands for before and after. Anyone who has lost hair, through alopecia or simply over the years, and recognises themselves in the mirror again with the right hairpiece, often feels as if reborn.",
         "quote": "“When the hair is back, you are a different person. You are as if reborn.”"
       },
       {
@@ -620,7 +620,7 @@
       }
     ],
     "quoteBy": "Andrea",
-    "colorsLabel": "Hair in every shade, from the atelier",
+    "colorsLabel": "Hair in many shades, from the atelier",
     "trustTitle": "What you can *rely on.*",
     "trust": [
       {
@@ -633,7 +633,7 @@
       },
       {
         "title": "Made to measure if needed",
-        "text": "What doesn't exist yet is made in the atelier in {custom} working days."
+        "text": "What doesn't exist ready-made, Andrea makes in the atelier. Delivery time: {custom} working days."
       },
       {
         "title": "Shipping with {carrier}",
@@ -709,11 +709,11 @@
     "whatsapp": "Message Andrea's Fashion Hair on WhatsApp",
     "socialNote": "External links. Simply visiting this page does not transfer any data to these services.",
     "newsTitle": "See new pieces first",
-    "newsNote": "Every piece exists once. Follow Andrea on Instagram, where she shows new pieces first.",
+    "newsNote": "Every hairpiece exists once. Follow Andrea on Instagram, where she shows new pieces first.",
     "extensionsHub": "Extensions: methods and advice"
   },
   "newsletter": {
-    "lead": "Every piece exists once. We will write to you as soon as a new one is finished.",
+    "lead": "Every hairpiece exists once. We will write to you as soon as a new one is finished.",
     "email": "E-mail address",
     "consent": "I would like to be informed about new pieces by e-mail. Unsubscribe at any time via the link in every e-mail. Details in the <link>privacy policy</link>.",
     "submit": "Sign up",
@@ -821,7 +821,7 @@
     "title": "Order with confidence",
     "returns": "14-day right of withdrawal from receipt of the goods, without giving reasons. Exceptions (e.g. made-to-measure pieces) are listed in the <link>cancellation policy</link>.",
     "shipping": "Shipping to Germany {de}, free from {free} order value. To the EU {eu}.",
-    "delivery": "Delivery time for in-stock pieces usually {from} to {to} working days with {carrier}, made-to-measure pieces {mFrom} to {mTo} working days.",
+    "delivery": "Delivery time for in-stock pieces {from} to {to} working days with {carrier}, made-to-measure pieces {mFrom} to {mTo} working days.",
     "contact": "Your personal contact: Andrea, phone <tel>{phone}</tel>",
     "atelier": "Atelier in {city}, consultations by appointment",
     "payLater": "You only pay once Andrea has personally confirmed your order.",
@@ -830,11 +830,11 @@
   "objections": {
     "title": "What you would like to know before buying",
     "visibleQ": "Can people tell that I am wearing a hair piece?",
-    "visibleA": "That is what the nano skin base is made for: every hair is injected individually, so the parting looks like your own scalp.",
+    "visibleA": "That is what the nano skin base is made for: every hair is injected individually, so the parting looks similar to your own scalp. How discreet the piece looks on you also depends on colour, density and fit. Andrea will tell you honestly beforehand what to expect.",
     "colorQ": "Does the colour match my hair?",
     "colorA": "Send Andrea a photo of your hair in daylight, most easily via WhatsApp. She compares it with the piece and tells you honestly whether it matches.",
     "holdQ": "How is the piece attached?",
-    "holdClips": "With small clips on your own hair. It takes seconds and needs neither glue nor a hairdresser’s appointment.",
+    "holdClips": "With small clips on your own hair. You put the piece in yourself and take it out again, without glue and without a hairdresser’s appointment.",
     "holdOther": "The attachment depends on the piece. Andrea will explain personally which method suits you.",
     "careQ": "How do I care for the piece?",
     "careA": "Andrea gives you the care instructions for your piece personally. Feel free to ask beforehand via WhatsApp, phone or enquiry.",
@@ -946,7 +946,7 @@
     "kicker": "Made to measure",
     "title": "A piece made only for you.",
     "lead": "Length, colour, texture and amount are tailored to you. In six short steps you tell Andrea what you wish for. She will get back to you personally.",
-    "timing": "Production takes {mFrom} to {mTo} working days.",
+    "timing": "Delivery time within Germany: {mFrom} to {mTo} working days once all details and – for advance payment or PayPal – your payment have been received. Custom-made pieces are excluded from the right of withdrawal because they are made only for you.",
     "stepOf": "Step {step} of {total}",
     "next": "Next",
     "back": "Back",

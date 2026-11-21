@@ -4,7 +4,7 @@
     "claim": "HaarManufaktur",
     "titleTemplate": "%s | Andrea's Fashion Hair",
     "defaultTitle": "Andrea's Fashion Hair | Echthaar-Topper, Perücken und Haarsysteme",
-    "defaultDescription": "Wie neu geboren. Echthaar, Haar für Haar von Hand gefertigt: Topper, Front-Lace-Perücken, Pony und Haarsysteme aus der HaarManufaktur in Iserlohn. Jedes Stück ein Einzelstück.",
+    "defaultDescription": "Wie neu geboren. Extensions, Topper, Front-Lace-Perücken, Pony und Haarsysteme aus Echthaar, von der HaarManufaktur in Iserlohn. Jedes Haarteil ein Einzelstück.",
     "ogAlt": "Der goldene Phönix von Andrea's Fashion Hair auf dunklem Grund"
   },
   "common": {
@@ -51,7 +51,7 @@
     "line1": "Wie neu *geboren.*",
     "line2": "Mehr Länge. *Mehr Fülle.*",
     "line3": "Mehr *Sie selbst.*",
-    "lead": "Extensions aus Echthaar, von Andrea ausgewählt und persönlich auf Ihr Haar abgestimmt. Dazu Topper, Perücken und Maßanfertigungen aus ihrem Atelier in Iserlohn.",
+    "lead": "Extensions aus Echthaar, von Andrea ausgewählt, mit persönlicher Beratung zu Farbe und Menge. Dazu Topper, Perücken und Maßanfertigungen aus ihrem Atelier in Iserlohn.",
     "chapters": "Kapitel des Films",
     "ch1": "Glut",
     "ch2": "Phönix",
@@ -81,7 +81,7 @@
     "ribbon": [
       "Atelier in Iserlohn",
       "Echthaar",
-      "Handwerk aus Rio de Janeiro",
+      "Handwerk gelernt in Rio de Janeiro",
       "Sechs Extension-Methoden",
       "Persönliche Beratung",
       "Bezahlung erst nach Bestätigung",
@@ -106,7 +106,7 @@
       "cta": "Alle Extensions ansehen",
       "salon": "Für Salons und Friseure: Mengen anfragen",
       "view": "{name}, {color} ansehen",
-      "imageNote": "Inszenierte Studioaufnahmen. Die Haarfarbe ist am Originalfoto gemessen und abgeglichen. Die Originalfotos finden Sie auf der jeweiligen Produktseite.",
+      "imageNote": "KI-gestützt inszenierte Studiobilder: Die Haarfarbe ist am Originalfoto gemessen und angeglichen, Form, Fülle und Anordnung sind inszeniert. Wie die Stücke wirklich aussehen, zeigen die Originalfotos auf der jeweiligen Produktseite.",
       "galleryLabel": "Extensions im Atelier"
     },
     "near": {
@@ -187,7 +187,7 @@
         },
         {
           "title": "Länge",
-          "text": "So lang, wie Sie es sich wünschen."
+          "text": "Ihre Wunschlänge. Was möglich ist, sagt Andrea Ihnen."
         },
         {
           "title": "Farbe",
@@ -206,7 +206,7 @@
           "text": "Ein Foto bei Tageslicht hilft beim Abgleich."
         }
       ],
-      "time": "Anfertigung in {custom} Werktagen, nachdem Sie bestellt haben.",
+      "time": "Lieferzeit in Deutschland: {custom} Werktage, sobald alle Angaben und Ihre Zahlung vorliegen.",
       "cta": "Maßanfertigung anfragen",
       "imageAlt": "Hände, die mit einer feinen Nadel einzelne Haare in eine dünne Basis einarbeiten"
     },
@@ -223,7 +223,7 @@
     },
     "concerns": {
       "title": "Ihre Fragen. *Ehrlich beantwortet.*",
-      "lead": "Was Kundinnen und Kunden wissen möchten, bevor sie sich entscheiden. Alles offen, ohne Kleingedrucktes.",
+      "lead": "Was Kundinnen und Kunden wissen möchten, bevor sie sich entscheiden. Kurz und offen beantwortet.",
       "items": [
         {
           "q": "Passt die Farbe zu mir?",
@@ -255,7 +255,7 @@
         },
         {
           "q": "Versenden Sie ins Ausland?",
-          "a": "Ja, mit {carrier}: in die EU ab {euShip}. Für andere Länder nennt Andrea Ihnen die Versandkosten vor der Bestätigung."
+          "a": "Ja, mit {carrier}: in die EU für {euShip}. Für andere Länder nennt Andrea Ihnen die Versandkosten vor der Bestätigung."
         }
       ],
       "returnsLink": "Widerruf im Detail",
@@ -354,11 +354,11 @@
     "unitPrice": "{amount} / 1 kg",
     "packSize": "je Packung {grams} g",
     "setSize": "Set ({pieces} Tressen) {grams} g",
-    "extWithdrawal": "Sie können Ihre Bestellung innerhalb von 14 Tagen widerrufen. Bitte prüfen Sie Farbe und Länge, bevor Sie Tressen kürzen, einarbeiten oder Schutzfolien abziehen – für einen Wertverlust durch eine Nutzung, die über die Prüfung hinausgeht, kommen Sie nach der Widerrufsbelehrung auf.",
-    "imageAltStaged": "{name}, {subtitle}: inszenierte Studioaufnahme",
+    "extWithdrawal": "Sie können Ihre Bestellung innerhalb von 14 Tagen ab Erhalt der Ware widerrufen. Bitte prüfen Sie Farbe und Länge, bevor Sie Tressen kürzen, einarbeiten oder Schutzfolien abziehen – für einen Wertverlust durch eine Nutzung, die über die Prüfung hinausgeht, kommen Sie nach der Widerrufsbelehrung auf.",
+    "imageAltStaged": "{name}, {subtitle}: KI-gestützt inszeniertes Studiobild",
     "imageNoteRelit": "Studioaufnahme, neu ausgeleuchtet. Am Haar wurde nichts verändert. Das Originalfoto zeigt das Stück unbearbeitet.",
-    "imageNoteStaged": "Inszenierte Studioaufnahme. Die Haarfarbe ist am Originalfoto gemessen und abgeglichen. Das Originalfoto zeigt das Stück unbearbeitet.",
-    "compareNoteStaged": "Links die inszenierte Studioaufnahme, rechts das Originalfoto aus dem Atelier. Die Haarfarbe ist am Originalfoto gemessen und abgeglichen.",
+    "imageNoteStaged": "KI-gestützt inszeniertes Studiobild: Die Haarfarbe ist am Originalfoto gemessen und angeglichen, Form, Fülle und Anordnung sind inszeniert und können vom Stück abweichen. Die Originalfotos in der Galerie zeigen das Stück unbearbeitet.",
+    "compareNoteStaged": "Links das KI-gestützt inszenierte Studiobild, rechts das Originalfoto aus dem Atelier. Nur die Haarfarbe ist am Originalfoto gemessen und angeglichen; Form, Fülle und Anordnung sind inszeniert.",
     "packQuestion": "Wie viele Packungen Sie brauchen, hängt von Ihrem Haar und Ihrem Wunsch ab. Andrea sagt es Ihnen persönlich.",
     "consultTitle": "Beratung",
     "consultText": "Fragen zu Farbe, Größe oder Passform? Andrea antwortet persönlich.",
@@ -609,7 +609,7 @@
       {
         "label": "Der Phönix",
         "title": "Wie neu *geboren.*",
-        "text": "Ihr Zeichen ist der Phönix. Er steht für Vorher und Nachher. Wer Haar verloren hat, durch Alopezie oder einfach mit den Jahren, und es wiederbekommt, fühlt sich wie neu geboren.",
+        "text": "Ihr Zeichen ist der Phönix. Er steht für Vorher und Nachher. Wer Haar verloren hat, durch Alopezie oder einfach mit den Jahren, und sich mit einem passenden Haarteil wieder im Spiegel erkennt, fühlt sich oft wie neu geboren.",
         "quote": "„Wenn die Haare wieder da sind, ist man ein anderer Mensch. Man ist wie neu geboren.“"
       },
       {
@@ -620,7 +620,7 @@
       }
     ],
     "quoteBy": "Andrea",
-    "colorsLabel": "Haar in allen Tönen, aus dem Atelier",
+    "colorsLabel": "Haar in vielen Tönen, aus dem Atelier",
     "trustTitle": "Worauf Sie sich *verlassen können.*",
     "trust": [
       {
@@ -633,7 +633,7 @@
       },
       {
         "title": "Nach Maß, wenn nötig",
-        "text": "Was es nicht fertig gibt, entsteht im Atelier in {custom} Werktagen."
+        "text": "Was es nicht fertig gibt, fertigt Andrea im Atelier an. Lieferzeit: {custom} Werktage."
       },
       {
         "title": "Versand mit {carrier}",
@@ -709,11 +709,11 @@
     "whatsapp": "Andrea's Fashion Hair per WhatsApp schreiben",
     "socialNote": "Externe Links. Beim bloßen Aufruf dieser Seite werden keine Daten an diese Dienste übertragen.",
     "newsTitle": "Neue Stücke zuerst sehen",
-    "newsNote": "Jedes Stück gibt es einmal. Folgen Sie Andrea auf Instagram, dort zeigt sie neue Stücke zuerst.",
+    "newsNote": "Jedes Haarteil gibt es einmal. Folgen Sie Andrea auf Instagram, dort zeigt sie neue Stücke zuerst.",
     "extensionsHub": "Extensions: Methoden und Beratung"
   },
   "newsletter": {
-    "lead": "Jedes Stück gibt es einmal. Wir schreiben Ihnen, sobald ein neues fertig ist.",
+    "lead": "Jedes Haarteil gibt es einmal. Wir schreiben Ihnen, sobald ein neues fertig ist.",
     "email": "E-Mail-Adresse",
     "consent": "Ich möchte per E-Mail über neue Stücke informiert werden. Abmeldung jederzeit über den Link in jeder E-Mail. Details in der <link>Datenschutzerklärung</link>.",
     "submit": "Eintragen",
@@ -821,7 +821,7 @@
     "title": "Sicher bestellen",
     "returns": "14 Tage Widerrufsrecht ab Erhalt der Ware, ohne Angabe von Gründen. Ausnahmen (z. B. Maßanfertigungen) stehen in der <link>Widerrufsbelehrung</link>.",
     "shipping": "Versand nach Deutschland {de}, ab {free} Warenwert kostenlos. In die EU {eu}.",
-    "delivery": "Lieferzeit ab Lager in der Regel {from} bis {to} Werktage mit {carrier}, Maßanfertigungen {mFrom} bis {mTo} Werktage.",
+    "delivery": "Lieferzeit ab Lager {from} bis {to} Werktage mit {carrier}, Maßanfertigungen {mFrom} bis {mTo} Werktage.",
     "contact": "Persönliche Ansprechpartnerin: Andrea, Telefon <tel>{phone}</tel>",
     "atelier": "Atelier in {city}, Beratung nach Terminabsprache",
     "payLater": "Sie bezahlen erst, wenn Andrea Ihre Bestellung persönlich bestätigt hat.",
@@ -830,11 +830,11 @@
   "objections": {
     "title": "Was Sie vor dem Kauf wissen möchten",
     "visibleQ": "Sieht man, dass ich ein Haarteil trage?",
-    "visibleA": "Dafür ist die Nano-Skin-Basis gemacht: Jedes Haar ist einzeln injiziert, deshalb sieht der Scheitel aus wie Ihre eigene Kopfhaut.",
+    "visibleA": "Dafür ist die Nano-Skin-Basis gemacht: Jedes Haar ist einzeln injiziert, deshalb wirkt der Scheitel ähnlich wie eigene Kopfhaut. Wie unauffällig das Stück bei Ihnen aussieht, hängt auch von Farbe, Dichte und Sitz ab. Andrea sagt Ihnen vorher ehrlich, was zu erwarten ist.",
     "colorQ": "Passt die Farbe zu meinem Haar?",
     "colorA": "Schicken Sie Andrea ein Foto Ihres Haars bei Tageslicht, am einfachsten per WhatsApp. Sie vergleicht es mit dem Stück und sagt Ihnen ehrlich, ob es passt.",
     "holdQ": "Wie wird das Stück befestigt?",
-    "holdClips": "Mit kleinen Clips an Ihrem eigenen Haar. Das dauert Sekunden und braucht weder Kleber noch einen Friseurtermin.",
+    "holdClips": "Mit kleinen Clips an Ihrem eigenen Haar. Sie setzen das Stück selbst ein und nehmen es wieder heraus, ohne Kleber und ohne Friseurtermin.",
     "holdOther": "Die Befestigung hängt vom Stück ab. Andrea erklärt Ihnen persönlich, welche Methode zu Ihnen passt.",
     "careQ": "Wie pflege ich das Stück?",
     "careA": "Andrea gibt Ihnen die Pflegehinweise für Ihr Stück persönlich mit. Fragen Sie gern vorab per WhatsApp, Telefon oder Anfrage.",
@@ -946,7 +946,7 @@
     "kicker": "Maßanfertigung",
     "title": "Ein Stück, das nur für Sie entsteht.",
     "lead": "Länge, Farbe, Struktur und Menge werden auf Sie abgestimmt. In sechs kurzen Schritten sagen Sie Andrea, was Sie sich wünschen. Sie meldet sich persönlich bei Ihnen.",
-    "timing": "Die Fertigung dauert {mFrom} bis {mTo} Werktage.",
+    "timing": "Lieferzeit innerhalb Deutschlands: {mFrom} bis {mTo} Werktage, sobald alle Angaben und – bei Vorkasse oder PayPal – Ihre Zahlung vorliegen. Maßanfertigungen sind vom Widerrufsrecht ausgenommen, weil sie nur für Sie entstehen.",
     "stepOf": "Schritt {step} von {total}",
     "next": "Weiter",
     "back": "Zurück",

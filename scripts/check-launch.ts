@@ -84,15 +84,49 @@ for (const file of unitPriceFiles) {
 }
 
 // Absolute Werbeaussagen (§ 5 UWG): nur mit Beleg bzw. abgeschwächt verwenden.
-const CLAIMS = /man sieht nichts|unsichtbar|niemand sieht|nicht zu sehen|naturbelassen|ungefärbt|double drawn/i;
-const claimIds = (catalog as CatalogEntry[])
-  .filter((p) => CLAIMS.test([p.name, p.subtitle, p.description, ...(p.specs ?? [])].join(" ")))
-  .map((p) => p.id);
+// „Premium“ ist eine unbelegte Qualitätsstufe (Andreas eigene Angabe, kein Lieferantennachweis).
+const CLAIMS = /man sieht nichts|unsichtbar|niemand sieht|nicht zu sehen|naturbelassen|ungefärbt|double drawn|premium/i;
+type CopyEntry = CatalogEntry & { headline?: string; story?: string; benefits?: string[]; goodFor?: string; faq?: { q: string; a: string }[] };
+const productTexts = (p: CopyEntry) =>
+  [p.name, p.subtitle, p.description, ...(p.specs ?? []), p.headline, p.story, ...(p.benefits ?? []), p.goodFor, ...(p.faq ?? []).flatMap((f) => [f.q, f.a])].join(" ");
+const claimIds = (catalog as CopyEntry[]).filter((p) => CLAIMS.test(productTexts(p))).map((p) => p.id);
 if (claimIds.length) {
   findings.push({
     area: "catalog.json",
     blocking: false,
-    text: `Werbeaussagen prüfen (§ 5 UWG; „niemand sieht“, „naturbelassen“, „Double Drawn“ o. Ä.) bei ${claimIds.length} Produkten: ${claimIds.join(", ")} – siehe docs/COMPLIANCE.md Abschnitt 4b`,
+    text: `Werbeaussagen prüfen (§ 5 UWG; „niemand sieht“, „naturbelassen“, „Double Drawn“, „Premium“ o. Ä.) bei ${claimIds.length} Produkten: ${claimIds.join(", ")} – siehe docs/COMPLIANCE.md Abschnitt 4b`,
+  });
+}
+
+// Heil-/Wirkversprechen (HWG-Nähe) und Herkunft des Haars: Das Haar stammt nicht aus Brasilien, Herkunft ist unbelegt.
+const HEALTH = /\bheil(t|en|ung)\b|(förder|anreg|regt)\S*.{0,20}haarwuchs|haarwuchs.{0,20}(förder|anreg)|wächst nach|gegen haarausfall|therapie|krankenkass|kassenzuschuss/i;
+const ORIGIN = /brasilianische[sn]? (echt)?haar|haar aus brasilien|brazilian hair|cabello brasileño|cheveux brésiliens/i;
+const deMessages = readFileSync(join(root, "src/messages/de.json"), "utf8");
+const healthIds = (catalog as CopyEntry[]).filter((p) => HEALTH.test(productTexts(p))).map((p) => p.id);
+if (HEALTH.test(deMessages) || healthIds.length) {
+  findings.push({
+    area: "Werbeaussagen",
+    blocking: true,
+    text: `Heil- oder Wirkversprechen bzw. Krankenkassen-Aussage gefunden (§ 3 HWG, § 5 UWG)${healthIds.length ? ` in Produkten ${healthIds.join(", ")}` : ""}${HEALTH.test(deMessages) ? " in src/messages/de.json" : ""}`,
+  });
+}
+const originIds = (catalog as CopyEntry[]).filter((p) => ORIGIN.test(productTexts(p))).map((p) => p.id);
+if (ORIGIN.test(deMessages) || originIds.length) {
+  findings.push({
+    area: "Werbeaussagen",
+    blocking: true,
+    text: `Herkunftsangabe zum Haar gefunden (§ 5 Abs. 1 Nr. 1 UWG; das Haar stammt nicht aus Brasilien)${originIds.length ? ` in Produkten ${originIds.join(", ")}` : ""}`,
+  });
+}
+
+// GPSR (Verordnung (EU) 2023/988, Art. 19): Herstellerangaben je Produkt im Angebot.
+// Solange kein Feld `manufacturer` (Name, Post- und E-Mail-Adresse) gepflegt ist, blockiert der Livegang.
+const noManufacturer = (catalog as (CatalogEntry & { sold?: boolean; manufacturer?: unknown })[]).filter((p) => !p.sold && !p.manufacturer).map((p) => p.id);
+if (noManufacturer.length) {
+  findings.push({
+    area: "catalog.json",
+    blocking: true,
+    text: `GPSR Art. 19: Herstellerangaben (Name, Postanschrift, E-Mail; bei Herstellern außerhalb der EU die verantwortliche Person) fehlen bei ${noManufacturer.length} Produkten – Frage an Andrea: selbst gefertigt oder zugekauft?`,
   });
 }
 
