@@ -21,7 +21,7 @@ export function PieceCard({ product, locale, sold, t, size = "m", index = 0, siz
   const flag = isSold ? t.sold : product.madeToOrder ? t.custom : isUnique(product) ? t.unique : null;
   return (
     <article className="piece" data-size={size} data-sold={isSold || undefined} style={{ "--k": index } as CSSProperties}>
-      <Link aria-label={t.view.replace("{name}", `${text.name}, ${text.subtitle}`)} className="piece__media" data-lens="" data-tilt="" href={`/produkt/${product.slug}`}>
+      <Link aria-label={`${flag ? `${flag}: ` : ""}${t.view.replace("{name}", `${text.name}, ${text.subtitle}`)}`} className="piece__media" data-lens="" data-tilt="" href={`/produkt/${product.slug}`}>
         <Image alt="" height={1604} sizes={sizes} src={product.image} width={1200} />
         <span aria-hidden="true" className="piece__glare" />
         {flag ? <span className="piece__flag">{flag}</span> : null}

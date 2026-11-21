@@ -168,7 +168,7 @@ body.af-body {
 .af-cta-line { display: inline-flex; align-items: center; gap: 10px; padding-block: 8px; font-size: 1rem; background: none; border: 0; border-bottom: 1px solid color-mix(in srgb, var(--af-ink) 35%, transparent); transition: border-color 0.4s var(--af-ease), gap 0.4s var(--af-ease); }
 .af-cta-line:hover { border-color: var(--af-gold); gap: 16px; }
 
-.af-cta-frame { position: relative; display: inline-flex; align-items: center; justify-content: center; height: 58px; padding-inline: 34px; font-family: var(--af-mono); font-size: 0.76rem; letter-spacing: 0.18em; text-transform: uppercase; background: transparent; border: 0; color: var(--af-ink); }
+.af-cta-frame { position: relative; display: inline-flex; align-items: center; justify-content: center; min-height: 58px; max-width: 100%; padding: 12px 34px; text-align: center; font-family: var(--af-mono); font-size: 0.76rem; letter-spacing: 0.18em; text-transform: uppercase; background: transparent; border: 0; color: var(--af-ink); }
 .af-cta-frame::before, .af-cta-frame::after { content: ""; position: absolute; width: 14px; height: 14px; border: 1px solid var(--af-gold); transition: width 0.55s var(--af-ease), height 0.55s var(--af-ease); }
 .af-cta-frame::before { left: 0; top: 0; border-right: 0; border-bottom: 0; }
 .af-cta-frame::after { right: 0; bottom: 0; border-left: 0; border-top: 0; }
