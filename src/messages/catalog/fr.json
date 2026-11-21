@@ -587,5 +587,90 @@
       "Longueur des cheveux 30 cm"
     ],
     "subtitle": "Cheveux naturels premium"
+  },
+  "422": {
+    "description": "Topper pour femme à base en V en cheveux naturels, en blond foncé avec reflets clairs. 46 cm de long, poids 117 g. Cette pièce n'existe qu'en un seul exemplaire.",
+    "name": "Toupet en V 46 cm",
+    "specs": [
+      "Cheveux naturels",
+      "Longueur des cheveux 46 cm",
+      "Couleur : Blond foncé avec reflets clairs",
+      "Base en V (topper pour femme)",
+      "Poids 117 g"
+    ],
+    "subtitle": "Blond foncé avec reflets clairs"
+  },
+  "423": {
+    "description": "Extensions clip-in en cheveux naturels premium en brun foncé naturel, 55 cm de long. Le set se compose de trois trames avec clips et pèse 194 g au total.",
+    "name": "Extensions clip-in 55 cm",
+    "specs": [
+      "Cheveux naturels premium",
+      "Longueur des cheveux 55 cm",
+      "Couleur : Brun foncé naturel",
+      "Set de 3 trames avec clips",
+      "Poids 194 g (set)"
+    ],
+    "subtitle": "Brun foncé naturel, 3 pièces"
+  },
+  "424": {
+    "description": "Genius Weft en cheveux naturels premium en brun foncé naturel, 55 cm de long. Un paquet contient 50 g.",
+    "name": "Genius Weft 55 cm",
+    "specs": [
+      "Cheveux naturels premium",
+      "Longueur des cheveux 55 cm",
+      "Couleur : Brun foncé naturel",
+      "50 g par paquet",
+      "1 trame par paquet"
+    ],
+    "subtitle": "Brun foncé naturel"
+  },
+  "425": {
+    "description": "Genius Weft en cheveux naturels premium en blond doré ombré, 55 cm de long. Un paquet contient 50 g.",
+    "name": "Genius Weft 55 cm",
+    "specs": [
+      "Cheveux naturels premium",
+      "Longueur des cheveux 55 cm",
+      "Couleur : Blond doré ombré",
+      "50 g par paquet",
+      "1 trame par paquet"
+    ],
+    "subtitle": "Blond doré ombré"
+  },
+  "426": {
+    "description": "Genius Weft en cheveux naturels premium en brun café avec ombré cuivré, 45 cm de long, naturellement bouclé. Un paquet contient 50 g.",
+    "name": "Genius Weft 45 cm",
+    "specs": [
+      "Cheveux naturels premium",
+      "Longueur des cheveux 45 cm",
+      "Couleur : Brun café avec ombré cuivré",
+      "Texture : Naturellement bouclé",
+      "50 g par paquet",
+      "1 trame par paquet"
+    ],
+    "subtitle": "Brun café avec ombré cuivré, naturellement bouclé"
+  },
+  "427": {
+    "description": "Extensions Invisible Tape en cheveux naturels premium en blond clair ombré avec racines foncées, 55 cm de long. Posés dans les règles de l'art, les tapes se fondent discrètement dans vos propres cheveux. Un paquet contient 25 g.",
+    "name": "Invisible Tape 55 cm",
+    "specs": [
+      "Cheveux naturels premium",
+      "Longueur des cheveux 55 cm",
+      "Couleur : Blond clair ombré avec racines foncées",
+      "25 g par paquet",
+      "3 tapes par paquet"
+    ],
+    "subtitle": "Blond clair ombré avec racines foncées"
+  },
+  "428": {
+    "description": "Butterfly Weft en cheveux naturels premium en brun foncé naturel, 55 cm de long. La largeur de la trame est de 30 cm par rangée. Un paquet contient 50 g.",
+    "name": "Butterfly Weft 55 cm",
+    "specs": [
+      "Cheveux naturels premium",
+      "Longueur des cheveux 55 cm",
+      "Couleur : Brun foncé naturel",
+      "Largeur de trame 30 cm par rangée",
+      "50 g par paquet"
+    ],
+    "subtitle": "Brun foncé naturel"
   }
 }
