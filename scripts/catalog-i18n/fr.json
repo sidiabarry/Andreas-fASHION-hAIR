@@ -91,11 +91,11 @@
     "tapeRoll": "Ruban adhésif double face à forte tenue pour systèmes de remplacement capillaire, perruques et extensions. Tient bien, reste discret et résiste à l'humidité et à la transpiration.",
     "tapeStrips": "Bandes adhésives prédécoupées et incurvées pour systèmes capillaires. Tenue extra forte, résistantes à la transpiration et à l'humidité, faciles à appliquer.",
     "toupet": "Topper pour femme à base en V en cheveux naturels, en {color}. {len} cm de long, poids {grams} g. Cette pièce n'existe qu'en un seul exemplaire.",
-    "clipIn": "Extensions clip-in en cheveux naturels premium en {color}, {len} cm de long. Le set se compose de trois trames avec clips et pèse {grams} g au total.",
-    "genius": "Genius Weft en cheveux naturels premium en {color}, {len} cm de long. Un paquet contient {grams} g.",
-    "geniusCurly": "Genius Weft en cheveux naturels premium en {color}, {len} cm de long, naturellement bouclé. Un paquet contient {grams} g.",
-    "invisibleTape": "Extensions Invisible Tape en cheveux naturels premium en {color}, {len} cm de long. Posés dans les règles de l'art, les tapes se fondent discrètement dans vos propres cheveux. Un paquet contient {grams} g.",
-    "butterfly": "Butterfly Weft en cheveux naturels premium en {color}, {len} cm de long. La largeur de la trame est de {width} cm par rangée. Un paquet contient {grams} g."
+    "clipIn": "Extensions clip-in en cheveux naturels en {color}, {len} cm de long. Le set se compose de trois trames avec clips et pèse {grams} g au total.",
+    "genius": "Genius Weft en cheveux naturels en {color}, {len} cm de long. Un paquet contient {grams} g.",
+    "geniusCurly": "Genius Weft en cheveux naturels en {color}, {len} cm de long, naturellement bouclé. Un paquet contient {grams} g.",
+    "invisibleTape": "Extensions Invisible Tape en cheveux naturels en {color}, {len} cm de long. Posés dans les règles de l'art, les tapes se fondent discrètement dans vos propres cheveux. Un paquet contient {grams} g.",
+    "butterfly": "Butterfly Weft en cheveux naturels en {color}, {len} cm de long. La largeur de la trame est de {width} cm par rangée. Un paquet contient {grams} g."
   },
   "specs": {
     "premium": "100 % cheveux naturels premium",

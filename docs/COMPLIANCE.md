@@ -1,6 +1,6 @@
 # Compliance-Grundlage – Andrea's Fashion Hair
 
-**Stand:** 20.11.2026 (Abschnitt 4b neu) · **Arbeitsstand:** Deutsche Rechtstexte vollständig (`src/content/legal/*`). Übersetzungen vollständig: en, fr, es, pt, it, nl, pl, tr (siehe Abschnitt 9).
+**Stand:** 21.11.2026 (Abschnitt 4c neu) · **Arbeitsstand:** Deutsche Rechtstexte vollständig (`src/content/legal/*`). Übersetzungen vollständig: en, fr, es, pt, it, nl, pl, tr (siehe Abschnitt 9).
 
 > **Wichtig – bitte zuerst lesen.** Die Texte sind sorgfältig nach der Rechtslage vom November 2026 erarbeitet und an den Gesetzestexten geprüft (Quellen: `docs/QUELLEN.md`). Sie sind aber **keine Rechtsberatung**. Vor dem Livegang muss eine Rechtsanwältin/ein Rechtsanwalt oder ein Rechtstexter-Dienst (z. B. Händlerbund, IT-Recht Kanzlei, Trusted Shops) die Texte und den Bestellprozess prüfen. Steuerfragen gehören zur Steuerberatung. Die Punkte unter „Von Anwalt prüfen lassen“ (Abschnitt 5) sind dabei besonders wichtig.
 
@@ -96,6 +96,15 @@ Inhaberin: **Andreia Pereira Da Costa**, Einzelunternehmen, Geschäftsbezeichnun
 - **Widerruf:** Normales Widerrufsrecht. Ausschluss nur bei Färbung/Zuschnitt nach Kundenwunsch (§ 312g Abs. 2 Nr. 1 BGB) oder bei tatsächlich versiegelter, entsiegelter Hygieneware (Nr. 3). Die Belehrung deckt das bereits ab. Bei Tapes schützt eher der Wertersatz (Schutzfolie abgezogen, geklebt) als der Hygiene-Ausschluss.
 - **Werbeaussagen (§ 5 UWG):** „Man sieht nichts“ und „niemand sieht einen Übergang“ (bisher in 36 Produkttexten) sind absolute Versprechen; „Double Drawn“, „ungefärbt“, „naturbelassen“ sind nachprüfbare Beschaffenheitsangaben und nur mit Lieferantenbeleg zulässig. `check:launch` listet betroffene Produkte als Hinweis.
 - **„Einzelstück“** nur bei Ware, die es tatsächlich einmal gibt; bei Packungsware mit mehreren Packungen nicht anzeigen.
+
+## 4c. Prüfung nach dem Umbau (Stand 21.11.2026)
+
+- **KI-gestützte Studiobilder (`imageKind: "staged"`):** Hinweis muss „KI-gestützt“ und „Form, Fülle und Anordnung inszeniert“ sagen (§ 5 UWG; Art. 50 Abs. 4 KI-VO spricht für eine Offenlegungspflicht, weil die Bilder einem real existierenden Gegenstand ähneln). Er steht unmittelbar am Bild: Produktgalerie (`product.imageNoteStaged`), Vergleichsregler (`product.compareNoteStaged`), Startseiten-Vitrine (`home.ext.imageNote`), Alt-Text überall (`product.imageAltStaged`). Offen (Website): Reglerbeschriftung „Studiolicht“ passt bei inszenierten Bildern nicht; kurze sichtbare Kennzeichnung auf Karten, wenn das Bild dort das Hauptbild ist.
+- **„Premium-Echthaar“:** unbelegte Qualitätsstufe → bei 423–428 nur „Echthaar“. Für alle übrigen Produkte gleich verfahren, bis ein Lieferantennachweis vorliegt; `check:launch` listet „Premium“ als Hinweis.
+- **Herkunft:** keine Herkunftsangabe zum Haar; „Handwerk aus Rio de Janeiro“ war als Produktherkunft missverständlich → „Handwerk gelernt in Rio de Janeiro“. „Entstanden im Atelier“ nur, wenn Andrea das Stück selbst gefertigt hat (Frage offen, auch für GPSR-Hersteller).
+- **HWG-Nähe:** Alopezie nur als Situation; kein „Haar wiederbekommen“ in Verbindung mit Krankheit. `check:launch` blockiert bei Heil-, Haarwuchs- und Krankenkassen-Aussagen.
+- **Lieferzeit Maßanfertigung:** einheitlich als Gesamtlieferzeit innerhalb Deutschlands, ab Vorliegen aller Angaben und (bei Vorkasse/PayPal) der Zahlung, ohne „etwa“ und ohne „in der Regel“ (Art. 246a § 1 Abs. 1 Nr. 7 EGBGB).
+- **GPSR:** `check:launch` blockiert, solange kein Feld `manufacturer` je Produkt gepflegt ist.
 
 ## 5. Von Anwalt prüfen lassen (mit Begründung)
 

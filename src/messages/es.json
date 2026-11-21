@@ -4,7 +4,7 @@
     "claim": "HaarManufaktur",
     "titleTemplate": "%s | Andrea's Fashion Hair",
     "defaultTitle": "Andrea's Fashion Hair | Toppers, pelucas y sistemas capilares de cabello natural",
-    "defaultDescription": "Como volver a nacer. Cabello natural trabajado a mano, pelo a pelo: toppers, pelucas front lace, flequillos y sistemas capilares de la HaarManufaktur en Iserlohn, Alemania. Cada pieza es única.",
+    "defaultDescription": "Como volver a nacer. Extensiones, toppers, pelucas front lace, flequillos y sistemas capilares de cabello natural, de la HaarManufaktur en Iserlohn, Alemania. Cada pieza capilar es única.",
     "ogAlt": "El fénix dorado de Andrea's Fashion Hair sobre fondo oscuro"
   },
   "common": {
@@ -51,7 +51,7 @@
     "line1": "Como *volver a nacer.*",
     "line2": "Más largo. *Más volumen.*",
     "line3": "Más *usted.*",
-    "lead": "Extensiones de cabello natural, elegidas por Andrea y adaptadas personalmente a su cabello. Además, toppers, pelucas y piezas a medida de su taller en Iserlohn.",
+    "lead": "Extensiones de cabello natural, elegidas por Andrea, con asesoramiento personal sobre color y cantidad. Además, toppers, pelucas y piezas a medida de su taller en Iserlohn.",
     "chapters": "Capítulos de la película",
     "ch1": "Brasa",
     "ch2": "Fénix",
@@ -81,7 +81,7 @@
     "ribbon": [
       "Atelier in Iserlohn",
       "Cabello natural",
-      "Oficio de Río de Janeiro",
+      "Oficio aprendido en Río de Janeiro",
       "Seis métodos de extensiones",
       "Asesoramiento personal",
       "Pago solo tras la confirmación",
@@ -106,7 +106,7 @@
       "cta": "Ver todas las extensiones",
       "salon": "Para salones y peluqueros: consultar cantidades",
       "view": "Ver {name}, {color}",
-      "imageNote": "Fotografías de estudio escenificadas. El color del cabello está medido y ajustado según la foto original. Las fotos originales las encontrará en la página de cada producto.",
+      "imageNote": "Imágenes de estudio escenificadas con ayuda de IA: el color del cabello está medido y ajustado según la foto original; la forma, el volumen y la disposición están escenificados. Las fotos originales en la página de cada producto muestran cómo son realmente las piezas.",
       "galleryLabel": "Extensiones en el taller"
     },
     "near": {
@@ -187,7 +187,7 @@
         },
         {
           "title": "Largo",
-          "text": "Tan largo como desee."
+          "text": "El largo que desee. Andrea le dice qué es posible."
         },
         {
           "title": "Color",
@@ -206,7 +206,7 @@
           "text": "Una foto con luz natural ayuda a ajustar el color."
         }
       ],
-      "time": "Elaboración en {custom} días laborables, una vez realizado su pedido.",
+      "time": "Plazo de entrega en Alemania: {custom} días laborables, una vez recibidos todos los datos y su pago.",
       "cta": "Solicitar una pieza a medida",
       "imageAlt": "Manos que introducen cabellos uno a uno en una base fina con una aguja fina"
     },
@@ -223,7 +223,7 @@
     },
     "concerns": {
       "title": "Sus preguntas. *Respondidas con honestidad.*",
-      "lead": "Lo que nuestras clientas y clientes quieren saber antes de decidirse. Todo a la vista, sin letra pequeña.",
+      "lead": "Lo que nuestras clientas y clientes quieren saber antes de decidirse. Respuestas breves y francas.",
       "items": [
         {
           "q": "¿El color me va bien?",
@@ -255,7 +255,7 @@
         },
         {
           "q": "¿Envían al extranjero?",
-          "a": "Sí, con {carrier}: a la UE desde {euShip}. Para otros países, Andrea le indica los gastos de envío antes de la confirmación."
+          "a": "Sí, con {carrier}: a la UE por {euShip}. Para otros países, Andrea le indica los gastos de envío antes de la confirmación."
         }
       ],
       "returnsLink": "El desistimiento en detalle",
@@ -354,11 +354,11 @@
     "unitPrice": "{amount} / 1 kg",
     "packSize": "por paquete {grams} g",
     "setSize": "set ({pieces} cortinas) {grams} g",
-    "extWithdrawal": "Puede desistir de su pedido en un plazo de 14 días. Compruebe el color y el largo antes de acortar las cortinas, colocarlas o retirar las láminas protectoras. Responde de la pérdida de valor causada por un uso que vaya más allá de esa comprobación, según la información sobre el desistimiento.",
-    "imageAltStaged": "{name}, {subtitle}: fotografía de estudio escenificada",
+    "extWithdrawal": "Puede desistir de su pedido en un plazo de 14 días desde la recepción de la mercancía. Compruebe el color y el largo antes de acortar las cortinas, colocarlas o retirar las láminas protectoras. Responde de la pérdida de valor causada por un uso que vaya más allá de esa comprobación, según la información sobre el desistimiento.",
+    "imageAltStaged": "{name}, {subtitle}: imagen de estudio escenificada con ayuda de IA",
     "imageNoteRelit": "Fotografía de estudio, iluminada de nuevo. No se ha modificado nada en el cabello. La foto original muestra la pieza sin retocar.",
-    "imageNoteStaged": "Fotografía de estudio escenificada. El color del cabello está medido y ajustado según la foto original. La foto original muestra la pieza sin retocar.",
-    "compareNoteStaged": "A la izquierda, la fotografía de estudio escenificada; a la derecha, la foto original del taller. El color del cabello está medido y ajustado según la foto original.",
+    "imageNoteStaged": "Imagen de estudio escenificada con ayuda de IA: el color del cabello está medido y ajustado según la foto original; la forma, el volumen y la disposición están escenificados y pueden diferir de la pieza. Las fotos originales de la galería muestran la pieza sin retocar.",
+    "compareNoteStaged": "A la izquierda, la imagen de estudio escenificada con ayuda de IA; a la derecha, la foto original del taller. Solo el color del cabello está medido y ajustado según la foto original; la forma, el volumen y la disposición están escenificados.",
     "packQuestion": "Cuántos paquetes necesita depende de su cabello y de su deseo. Andrea se lo dice personalmente.",
     "consultTitle": "Asesoramiento",
     "consultText": "¿Dudas sobre el color, la talla o el ajuste? Andrea le responde personalmente.",
@@ -609,7 +609,7 @@
       {
         "label": "El fénix",
         "title": "Como *volver a nacer.*",
-        "text": "Su símbolo es el fénix. Representa el antes y el después. Quien ha perdido cabello, por alopecia o simplemente con los años, y lo recupera, se siente como si volviera a nacer.",
+        "text": "Su símbolo es el fénix. Representa el antes y el después. Quien ha perdido cabello, por alopecia o simplemente con los años, y vuelve a reconocerse en el espejo con una pieza capilar adecuada, a menudo se siente como si volviera a nacer.",
         "quote": "«Cuando el cabello vuelve, se es otra persona. Es como volver a nacer.»"
       },
       {
@@ -620,7 +620,7 @@
       }
     ],
     "quoteBy": "Andrea",
-    "colorsLabel": "Cabello en todos los tonos, del taller",
+    "colorsLabel": "Cabello en muchos tonos, del taller",
     "trustTitle": "En qué *puede confiar.*",
     "trust": [
       {
@@ -633,7 +633,7 @@
       },
       {
         "title": "A medida, cuando hace falta",
-        "text": "Lo que no existe ya hecho se elabora en el taller en {custom} días laborables."
+        "text": "Lo que no existe ya hecho, Andrea lo elabora en el taller. Plazo de entrega: {custom} días laborables."
       },
       {
         "title": "Envío con {carrier}",
@@ -709,11 +709,11 @@
     "whatsapp": "Escribir a Andrea's Fashion Hair por WhatsApp",
     "socialNote": "Enlaces externos. La simple visita a esta página no transmite ningún dato a estos servicios.",
     "newsTitle": "Ver primero las piezas nuevas",
-    "newsNote": "Cada pieza existe una sola vez. Siga a Andrea en Instagram, donde muestra primero las piezas nuevas.",
+    "newsNote": "Cada pieza capilar existe una sola vez. Siga a Andrea en Instagram, donde muestra primero las piezas nuevas.",
     "extensionsHub": "Extensiones: métodos y asesoramiento"
   },
   "newsletter": {
-    "lead": "Cada pieza existe una sola vez. Le escribimos en cuanto haya una nueva terminada.",
+    "lead": "Cada pieza capilar existe una sola vez. Le escribimos en cuanto haya una nueva terminada.",
     "email": "Correo electrónico",
     "consent": "Quiero recibir información sobre piezas nuevas por correo electrónico. Puedo darme de baja en cualquier momento mediante el enlace de cada correo. Detalles en la <link>política de privacidad</link>.",
     "submit": "Suscribirse",
@@ -821,7 +821,7 @@
     "title": "Pedir con seguridad",
     "returns": "Derecho de desistimiento de 14 días desde la recepción de la mercancía, sin indicar motivos. Las excepciones (p. ej., piezas a medida) figuran en la <link>información sobre el desistimiento</link>.",
     "shipping": "Envío a Alemania {de}, gratis a partir de {free} de compra. A la UE {eu}.",
-    "delivery": "Plazo de entrega de piezas en stock: normalmente de {from} a {to} días laborables con {carrier}; piezas a medida, de {mFrom} a {mTo} días laborables.",
+    "delivery": "Plazo de entrega de piezas en stock: de {from} a {to} días laborables con {carrier}; piezas a medida, de {mFrom} a {mTo} días laborables.",
     "contact": "Su persona de contacto: Andrea, teléfono <tel>{phone}</tel>",
     "atelier": "Taller en {city}, asesoramiento con cita previa",
     "payLater": "Solo paga cuando Andrea ha confirmado personalmente su pedido.",
@@ -830,11 +830,11 @@
   "objections": {
     "title": "Lo que querrá saber antes de comprar",
     "visibleQ": "¿Se nota que llevo un postizo?",
-    "visibleA": "Para eso está hecha la base nano skin: cada pelo se implanta por separado, por eso la raya parece su propio cuero cabelludo.",
+    "visibleA": "Para eso está hecha la base nano skin: cada pelo se implanta por separado, por eso la raya se parece a un cuero cabelludo natural. Lo discreta que resulte la pieza en usted depende también del color, la densidad y el ajuste. Andrea le dice con sinceridad de antemano qué puede esperar.",
     "colorQ": "¿El color combina con mi cabello?",
     "colorA": "Envíe a Andrea una foto de su cabello con luz natural, lo más sencillo es por WhatsApp. Ella la compara con la pieza y le dice con sinceridad si encaja.",
     "holdQ": "¿Cómo se sujeta la pieza?",
-    "holdClips": "Con pequeños clips en su propio cabello. Lleva segundos y no necesita pegamento ni cita en la peluquería.",
+    "holdClips": "Con pequeños clips en su propio cabello. Usted misma coloca la pieza y la retira, sin pegamento ni cita en la peluquería.",
     "holdOther": "La sujeción depende de la pieza. Andrea le explica personalmente qué método le conviene.",
     "careQ": "¿Cómo cuido la pieza?",
     "careA": "Andrea le da personalmente las indicaciones de cuidado de su pieza. Pregunte con antelación por WhatsApp, teléfono o consulta.",
@@ -946,7 +946,7 @@
     "kicker": "A medida",
     "title": "Una pieza que nace solo para usted.",
     "lead": "El largo, el color, la estructura y la cantidad se adaptan a usted. En seis pasos breves le cuenta a Andrea lo que desea. Ella se pone en contacto con usted personalmente.",
-    "timing": "La elaboración tarda de {mFrom} a {mTo} días laborables.",
+    "timing": "Plazo de entrega dentro de Alemania: de {mFrom} a {mTo} días laborables, una vez recibidos todos los datos y –con pago anticipado o PayPal– su pago. Las piezas a medida están excluidas del derecho de desistimiento, porque se elaboran solo para usted.",
     "stepOf": "Paso {step} de {total}",
     "next": "Siguiente",
     "back": "Atrás",
