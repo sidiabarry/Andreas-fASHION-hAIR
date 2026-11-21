@@ -550,3 +550,74 @@ ol.af-steps { list-style: none; padding: 0; }
 /* Warenkorb und Kasse laden ihren Inhalt aus dem Gerät: Platz reservieren, damit nichts springt */
 .af-cartview { min-height: 75svh; }
 .af-homelink { display: inline-flex; align-items: center; }
+
+/* ======================================================================
+ * af-fx / af-ui – globale Effekt- und Bedienbausteine (home-design, vom Orchestrator freigegeben).
+ * Nur ergänzend: bestehende Klassen bleiben unverändert. Übernahme in Formulare und Shop-Komponenten
+ * siehe Übergabenotiz (Klassen af-ui-field, af-ui-select, af-ui-check, af-ui-loading).
+ * ====================================================================== */
+:root {
+  --af-champagne: #f3dfb3;
+  --af-ember: #c8642a;
+  --af-gold-grad: linear-gradient(160deg, #f3dfb3 8%, #e0a526 52%, #c8642a 96%);
+}
+
+/* Scrollbar: dunkler Schacht, warmer Griff, Gold beim Greifen */
+html { scrollbar-color: #6b5230 #0c0a09; scrollbar-width: thin; }
+html::-webkit-scrollbar { width: 11px; height: 11px; }
+html::-webkit-scrollbar-track { background: #0c0a09; }
+html::-webkit-scrollbar-thumb { border: 3px solid #0c0a09; border-radius: 99px; background: linear-gradient(180deg, #8a6a32, #5a3c1e); }
+html::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, #e0a526, #b9851a); }
+
+/* Fokus: zum bestehenden Goldumriss ein weicher Lichthof */
+.af-body :focus-visible { box-shadow: 0 0 0 6px color-mix(in srgb, var(--af-gold) 18%, transparent); }
+
+/* Eigener Cursor (nur Maus/Stift, FxUi.tsx). Eingabefelder behalten den Text-Cursor. */
+@media (pointer: fine) {
+  html.af-fx-cursor-on, html.af-fx-cursor-on body, html.af-fx-cursor-on a, html.af-fx-cursor-on button, html.af-fx-cursor-on label, html.af-fx-cursor-on summary, html.af-fx-cursor-on [role="button"] { cursor: none; }
+  html.af-fx-cursor-on input, html.af-fx-cursor-on textarea, html.af-fx-cursor-on select, html.af-fx-cursor-on [contenteditable="true"] { cursor: text; }
+}
+.af-fx-cursor { position: fixed; inset: 0; z-index: 9999; pointer-events: none; opacity: 0; transition: opacity 0.3s; }
+.af-fx-cursor[data-shown] { opacity: 1; }
+.af-fx-cursor[data-state="text"] { opacity: 0; }
+.af-fx-cursor__dot, .af-fx-cursor__ring { position: absolute; left: 0; top: 0; border-radius: 50%; will-change: transform; }
+.af-fx-cursor__dot { width: 6px; height: 6px; margin: -3px 0 0 -3px; background: var(--af-champagne); box-shadow: 0 0 10px 2px rgba(224, 165, 38, 0.7); }
+.af-fx-cursor__ring { width: 34px; height: 34px; margin: -17px 0 0 -17px; border: 1px solid rgba(224, 165, 38, 0.55); background-repeat: no-repeat; transition: width 0.45s var(--af-ease), height 0.45s var(--af-ease), margin 0.45s var(--af-ease), border-color 0.3s, background-color 0.3s; }
+.af-fx-cursor[data-state="link"] .af-fx-cursor__ring { width: 58px; height: 58px; margin: -29px 0 0 -29px; border-color: var(--af-gold); background-color: rgba(224, 165, 38, 0.08); }
+.af-fx-cursor[data-state="lens"] .af-fx-cursor__ring { width: 168px; height: 168px; margin: -84px 0 0 -84px; border: 1px solid rgba(243, 223, 179, 0.8); box-shadow: 0 0 0 6px rgba(16, 14, 13, 0.35), 0 0 40px -4px rgba(224, 165, 38, 0.55), inset 0 0 24px rgba(0, 0, 0, 0.45); background-color: #120d0a; }
+.af-fx-cursor[data-state="lens"] .af-fx-cursor__dot { opacity: 0; }
+.af-fx-cursor[data-down] .af-fx-cursor__ring { width: 26px; height: 26px; margin: -13px 0 0 -13px; }
+
+/* 3D-Neigung (FxUi setzt --rx/--ry von -1 bis 1) und magnetische Knöpfe */
+[data-tilt] { transform: perspective(1100px) rotateX(calc(var(--ry, 0) * -6deg)) rotateY(calc(var(--rx, 0) * 8deg)); transform-style: preserve-3d; transition: transform 0.9s var(--af-ease); }
+[data-tilt][data-tilting] { transition: transform 0.15s linear; }
+[data-magnetic] { transition: translate 0.5s var(--af-ease), transform 0.5s var(--af-ease), box-shadow 0.5s var(--af-ease) !important; }
+
+/* Formularbausteine zum Übernehmen (Shop und Formulare) */
+.af-ui-field { width: 100%; min-height: 52px; padding: 14px 16px; border: 1px solid var(--af-field-line); border-radius: 12px; background: color-mix(in srgb, var(--af-surface) 80%, transparent); color: var(--af-ink); font: inherit; transition: border-color 0.3s var(--af-ease), box-shadow 0.3s var(--af-ease), background 0.3s; }
+.af-ui-field::placeholder { color: color-mix(in srgb, var(--af-muted) 80%, transparent); }
+.af-ui-field:hover { border-color: color-mix(in srgb, var(--af-gold) 55%, var(--af-field-line)); }
+.af-ui-field:focus { outline: none; border-color: var(--af-gold); box-shadow: 0 0 0 4px rgba(224, 165, 38, 0.16), 0 10px 30px -18px rgba(224, 165, 38, 0.6); background: var(--af-surface); }
+.af-ui-field[aria-invalid="true"] { border-color: var(--af-err); }
+.af-ui-select { appearance: none; padding-right: 44px; background-image: linear-gradient(45deg, transparent 50%, var(--af-gold) 50%), linear-gradient(135deg, var(--af-gold) 50%, transparent 50%); background-position: calc(100% - 22px) 50%, calc(100% - 16px) 50%; background-size: 6px 6px; background-repeat: no-repeat; }
+.af-ui-select option { background: var(--af-raise); color: var(--af-ink); }
+.af-ui-check { appearance: none; flex: none; display: inline-grid; place-items: center; width: 22px; height: 22px; margin: 0; border: 1px solid var(--af-field-line); border-radius: 6px; background: var(--af-surface); transition: border-color 0.3s, background 0.3s, box-shadow 0.3s; }
+.af-ui-check::after { content: ""; width: 10px; height: 6px; border: 2px solid var(--af-bg); border-top: 0; border-right: 0; transform: translateY(-1px) rotate(-45deg) scale(0); transition: transform 0.3s var(--af-ease); }
+.af-ui-check:checked { border-color: var(--af-gold); background: var(--af-gold); box-shadow: 0 0 14px -2px rgba(224, 165, 38, 0.7); }
+.af-ui-check:checked::after { transform: translateY(-1px) rotate(-45deg) scale(1); }
+.af-ui-check[type="radio"] { border-radius: 50%; }
+.af-ui-check[type="radio"]::after { width: 8px; height: 8px; border: 0; border-radius: 50%; background: var(--af-bg); transform: scale(0); }
+.af-ui-check[type="radio"]:checked::after { transform: scale(1); }
+/* Ladezustand: Glut, die atmet (statt Drehkreisel) */
+.af-ui-loading { position: relative; display: inline-block; width: 22px; height: 22px; border-radius: 50%; background: radial-gradient(circle, var(--af-champagne) 0 18%, var(--af-gold) 32%, rgba(200, 100, 42, 0.4) 55%, transparent 70%); animation: af-ui-ember 1.6s var(--af-ease-in-out) infinite; }
+@keyframes af-ui-ember { 0%, 100% { transform: scale(0.75); opacity: 0.6; } 50% { transform: scale(1.1); opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .af-ui-loading { animation: none; } [data-tilt] { transform: none; } }
+html[data-motion="paused"] .af-ui-loading { animation-play-state: paused; }
+
+/* Seitenübergang (View Transitions API): alte Seite verglüht warm, neue steigt auf.
+ * Greift, sobald die Plattform Übergänge aktiviert (siehe Übergabenotiz home-overhaul). */
+::view-transition-old(root) { animation: af-fx-vt-out 0.45s var(--af-ease-in-out) both; }
+::view-transition-new(root) { animation: af-fx-vt-in 0.7s var(--af-ease) both; }
+@keyframes af-fx-vt-out { to { opacity: 0; filter: blur(6px) brightness(1.3) sepia(0.5); transform: scale(1.01); } }
+@keyframes af-fx-vt-in { from { opacity: 0; transform: translateY(14px); } }
+@media (prefers-reduced-motion: reduce) { ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; } }
