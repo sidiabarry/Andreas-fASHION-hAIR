@@ -33,7 +33,12 @@ export async function generateMetadata({ params }: PageProps<"/[locale]">): Prom
 }
 
 /** Studioaufnahmen der neuen Stücke (Hauptbild `<id>.jpg`, Detail `<id>-2.jpg`). */
-const studio = (id: number, detail = false) => `/assets/products/${id}${detail ? "-2" : ""}.jpg`;
+/** Nahaufnahme: letztes Studiofoto des Stücks (bei den neuen Extensions die Detailaufnahme). */
+const detail = (id: number) => {
+  const p = getProductById(id);
+  return p?.extraImages?.at(-1) ?? p?.secondImage ?? p?.image ?? `/assets/products/${id}.jpg`;
+};
+const studio = (id: number) => getProductById(id)?.image ?? `/assets/products/${id}.jpg`;
 
 /** Kapitel I: Reihenfolge der Vitrine (hellstes Stück zuerst, Farben abwechselnd). */
 const EXT_IDS = [425, 423, 426, 427, 428, 424];
@@ -114,7 +119,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
       alt: t("home.near.shotAlt", { color: text.subtitle, name: text.name }),
       focus: NEAR[i].focus,
       label: t(`home.near.shots.${i}.label`),
-      src: studio(p.id),
+      src: detail(p.id),
       text: t(`home.near.shots.${i}.text`),
     };
   });
