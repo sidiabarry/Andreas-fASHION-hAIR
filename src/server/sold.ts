@@ -1,12 +1,13 @@
 import "server-only";
 
 import { store } from "./db";
-import { siteMode } from "./mode";
 
-/** Verkaufte/reservierte Einzelstücke. Livebetrieb ohne Datenbank: nur der Katalog-Status. */
+/**
+ * Verkaufte/reservierte Einzelstücke aus dem aktiven Store: im Livebetrieb die Datenbank (auch bei geschlossener
+ * Kasse, damit „vergeben“ stimmt), sonst der Demo-Speicher bzw. nichts. Ein Datenbankfehler darf nie eine Seite
+ * kaputt machen; dann gilt nur der Katalogstatus, und die Datenbank verhindert den Doppelverkauf trotzdem.
+ */
 export async function soldSlugs(): Promise<Set<string>> {
-  const mode = siteMode();
-  if (!mode.demo && !mode.checkoutOpen) return new Set();
   try {
     return await store().soldSlugs();
   } catch {

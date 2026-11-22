@@ -40,11 +40,20 @@ export function supabaseConfigured(): boolean {
   return Boolean(process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY);
 }
 
+/**
+ * Zeitlimits: supabase-js wartet sonst unbegrenzt. Antwortet die Datenbank nicht (z. B. pausiertes Projekt), würde
+ * jede Seite hängen, die „vergeben“ abfragt. Lesen für den Seitenaufbau bleibt kurz, Schreiben (Bestellung) bekommt Luft.
+ */
+const READ_TIMEOUT_MS = 3_000;
+const WRITE_TIMEOUT_MS = 12_000;
+const readSignal = () => AbortSignal.timeout(READ_TIMEOUT_MS);
+
 let client: SupabaseClient | null = null;
 function db(): SupabaseClient {
   if (!client) {
     client = createClient(process.env.SUPABASE_URL as string, process.env.SUPABASE_SERVICE_ROLE_KEY as string, {
       auth: { autoRefreshToken: false, persistSession: false },
+      global: { fetch: (input, init) => fetch(input, { ...init, signal: init?.signal ?? AbortSignal.timeout(WRITE_TIMEOUT_MS) }) },
     });
   }
   return client;
@@ -83,7 +92,7 @@ export function createSupabaseStore(): Store {
   return {
     kind: "supabase",
     async soldSlugs() {
-      const { data, error } = await db().from("piece_reservations").select("slug");
+      const { data, error } = await db().from("piece_reservations").select("slug").abortSignal(readSignal());
       if (error) throw new Error("store:soldSlugs");
       return new Set((data ?? []).map((row: { slug: string }) => row.slug));
     },
@@ -163,7 +172,9 @@ export function createSupabaseStore(): Store {
       // Newsletter (Double-Opt-in) ist im Livebetrieb nicht aktiv; siehe actions.ts.
     },
     async hit(key, limit, windowMs) {
-      const { data, error } = await db().rpc("hit_rate_limit", { p_key: key, p_limit: limit, p_window_seconds: Math.round(windowMs / 1000) });
+      const { data, error } = await db()
+        .rpc("hit_rate_limit", { p_key: key, p_limit: limit, p_window_seconds: Math.round(windowMs / 1000) })
+        .abortSignal(readSignal());
       if (error) return true; // Rate-Limit darf den Kauf nie blockieren, wenn die Datenbank kurz hakt
       return Boolean(data);
     },

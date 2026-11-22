@@ -7,6 +7,8 @@ import "server-only";
  *   per Anfrage. Anfragen/Widerrufe gehen per E-Mail, sonst wird das Formular nicht angeboten – nie stiller Datenverlust.
  * - Demo (Entwicklung, Vercel-Vorschau, AFH_DEMO=1): kompletter Kaufablauf mit In-Memory-Store,
  *   sichtbarer Demo-Hinweis, keine echten Daten.
+ * - Notbremse: CHECKOUT_CLOSED=1 schließt nur die Online-Kasse (Bestellung dann per Anfrage). Datenbank, E-Mail,
+ *   Formulare und die Anzeige „vergeben“ bleiben davon unberührt.
  */
 export type SiteMode = {
   production: boolean;
@@ -21,5 +23,6 @@ export function siteMode(): SiteMode {
     vercelEnv === "production" || (vercelEnv === undefined && process.env.NODE_ENV === "production" && process.env.AFH_DEMO !== "1");
   const mail = Boolean(process.env.RESEND_API_KEY && process.env.MAIL_FROM && process.env.MAIL_TO_OWNER);
   const database = Boolean(process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY);
-  return { checkoutOpen: !production || (database && mail), demo: !production, mail, production };
+  const closed = process.env.CHECKOUT_CLOSED === "1";
+  return { checkoutOpen: !closed && (!production || (database && mail)), demo: !production, mail, production };
 }

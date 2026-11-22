@@ -80,6 +80,7 @@ Vercel → Projekt → **Settings → Environment Variables**. Je Variable nur *
 | `IP_HASH_SECRET` | lange Zufallszeichenkette: im Terminal `openssl rand -hex 32` oder 40+ Zeichen aus dem Passwortmanager. Ohne ihn wechselt der Schlüssel des Rate-Limits mit jedem Serverstart | ja |
 
 - `AFH_DEMO` auf Vercel **nie** setzen.
+- Optional: `CHECKOUT_CLOSED` = `1` ist die Notbremse (siehe unten) und im Normalbetrieb nicht gesetzt.
 - Vorschau-Deployments laufen immer im Demo-Modus mit Arbeitsspeicher, auch wenn dort Variablen stehen (`src/server/db.ts`). Production-Daten sind davon getrennt.
 - Variablen gelten erst für **neue** Deployments.
 - Die Werte gehören nicht in den Chat; Claude braucht sie nicht.
@@ -142,7 +143,8 @@ delete from inquiries where delete_after < current_date;
 
 | Maßnahme | Folge |
 | --- | --- |
-| `SUPABASE_SERVICE_ROLE_KEY` in Vercel entfernen, neu deployen | Kasse zu, Bestellung nur per Anfrage (Formulare gehen weiter). Bereits vergebene Stücke werden danach nicht mehr als vergeben angezeigt; Andrea entscheidet bei Anfragen. |
+| `CHECKOUT_CLOSED` = `1` in Vercel (Production) setzen, neu deployen | **Empfohlen.** Kasse zu, Bestellung nur per Anfrage. Formulare, Mails und die Anzeige „vergeben“ bleiben unverändert. Zum Wiederöffnen die Variable entfernen und neu deployen. |
+| `SUPABASE_SERVICE_ROLE_KEY` in Vercel entfernen, neu deployen | Kasse zu, Bestellung nur per Anfrage (Formulare gehen weiter). Vergebene Stücke werden danach nicht mehr als vergeben angezeigt, und zum Wiederöffnen muss der Schlüssel erneut aus Supabase kopiert werden. |
 | `MAIL_TO_OWNER` in Vercel entfernen, neu deployen | Kasse zu, Anfrage- und Widerrufsformular aus (Telefon und WhatsApp bleiben sichtbar). Die Anzeige „vergeben“ bleibt korrekt. |
 | Letzte gute Version | Vercel → Deployments → frühere Production-Version → *Promote to Production* (Instant Rollback) |
 | Domain zurück | DNS-Einträge auf die in Schritt 8 notierten alten Werte setzen |
@@ -157,6 +159,15 @@ delete from inquiries where delete_after < current_date;
 | Keine Mails, `mail_customer` = `fehlgeschlagen` | Domain in Resend nicht verifiziert oder `MAIL_FROM` nicht an der verifizierten Domain | Resend → Domains und Logs prüfen |
 | Keine Mails, `mail_customer` = `nicht_konfiguriert` | Resend-Variablen fehlen in Production | Variablen setzen, neu deployen |
 | „Stück bereits vergeben“, obwohl es frei sein sollte | Eine Testbestellung oder unbezahlte Bestellung hält die Reservierung | `select cancel_order('AF-XXXXXX');` |
+| Seiten laden etwa 3 Sekunden langsamer, die Kasse meldet „konnte nicht gesendet werden“ | Die Datenbank antwortet nicht (z. B. Supabase-Projekt pausiert oder gestört) | Projektstatus in Supabase prüfen und ggf. fortsetzen; bis dahin `CHECKOUT_CLOSED` = `1`. Die Seiten bleiben erreichbar, nur „vergeben“ wird solange nicht angezeigt. |
+
+## Vorab lokal geprüft
+
+Schema und Kauflogik wurden ohne echte Konten durchgespielt: das SQL gegen Postgres (PGlite, mit den Rollen von Supabase) und der Shop als Production-Build (`VERCEL_ENV=production`) gegen eine Nachbildung der Datenbank-Schnittstelle. Mails gingen an einen Ersatz, nichts verließ den Rechner.
+
+- **Datenbank:** Schema läuft durch; nur `service_role` kommt an Tabellen und Funktionen; Doppelverkauf-Schutz (auch alles-oder-nichts im gemischten Warenkorb); Wiederholung und Doppelklick; Stornierung; Ratenlimit; Grenzen der Eingaben; Typen des Codes entsprechen den Enums der Datenbank.
+- **Shop im Production-Modus:** Kauf mit Reservierung und beiden Mails inklusive Zahlungsangaben; Zugangsschutz der Bestellseite; „vergeben“ sofort sichtbar; gleichzeitiger Kauf desselben Stücks; Mailversand fällt aus (Bestellung geht trotzdem durch); Datenbank fällt aus oder antwortet nicht (Seiten bleiben erreichbar, Kasse meldet es freundlich); Anfrage; Widerruf; Ratenlimit; alle drei Varianten der Notbremse.
+- **Nicht abgedeckt** (erst mit den echten Diensten prüfbar): das Verhalten von Supabase selbst (Schlüssel, Region, Pausierung), Zustellung und Spam-Einstufung bei Resend, DNS und Zertifikat, die Vercel-Laufzeit. Deshalb bleibt Schritt 7 nötig.
 
 ## Bewusst noch nicht gebaut
 

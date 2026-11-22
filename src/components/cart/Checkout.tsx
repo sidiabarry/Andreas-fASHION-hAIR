@@ -76,6 +76,18 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
   const [meta, setMeta] = useState<{ key: string; startedAt: number } | null>(() => ({ key: crypto.randomUUID(), startedAt: Date.now() }));
   const summary = useRef<HTMLDivElement>(null);
 
+  // Meldung nach dem Rendern in den Blick holen und vorlesen lassen. Der Sprung ist bewusst sofort: Schrumpft die
+  // Seite (letztes Stück vergeben, leerer Warenkorb), bricht der Browser ein weiches Scrollen ab und die Kundin
+  // sähe nur den Footer.
+  const [alertTick, setAlertTick] = useState(0);
+  const focusAlert = () => setAlertTick((tick) => tick + 1);
+  useEffect(() => {
+    const element = summary.current;
+    if (!alertTick || !element) return;
+    element.focus({ preventScroll: true });
+    element.scrollIntoView({ behavior: "instant", block: "center" });
+  }, [alertTick]);
+
   useEffect(() => track("checkout_start"), []);
 
   const countries = useMemo(() => {
@@ -89,6 +101,12 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
   if (cart.items.length === 0) {
     return (
       <div className="af-empty">
+        {/* Das letzte Stück wurde gerade vergeben und aus dem Warenkorb genommen: die Erklärung bleibt sichtbar */}
+        {message ? (
+          <div className="af-msg" data-kind="error" ref={summary} role="alert" tabIndex={-1}>
+            {message}
+          </div>
+        ) : null}
         <p className="af-lead">{t("checkout.emptyCart")}</p>
         <Link className="af-cta-gold af-glass af-glass--gold" href="/kollektion">
           {t("hero.ctaCollection")} <Arrow />
@@ -107,8 +125,6 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
   };
   const err = (key: string) => (errors[key] ? t(`errors.${errors[key]}`) : null);
   const detailsComplete = Object.keys(validate(values)).length === 0;
-  const focusAlert = () => requestAnimationFrame(() => summary.current?.focus());
-
   const submit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const found = validate(values);
