@@ -1791,7 +1791,7 @@
       "50 g je Packung",
       "1 Tresse je Packung"
     ],
-    "image": "/assets/products/425.jpg",
+    "image": "/assets/products/425-studio-1.jpg",
     "restyled": true,
     "originals": [
       "/assets/originals/425-0.jpg",
@@ -1806,7 +1806,7 @@
     "priceUnit": "pack",
     "weightGrams": 50,
     "imageKind": "staged",
-    "secondImage": "/assets/products/425-2.jpg",
+    "secondImage": "/assets/products/425-studio-2.jpg",
     "headline": "Langes Goldblond mit Tiefe – gemacht zum Offentragen",
     "story": "Sie stehen am Fenster, drehen den Kopf, und das Licht wandert durch Ihr Haar, von einem Blond ins nächste. So wirkt ein Ombré: Die Farbe verläuft über die Länge, statt an einer Stelle zu wechseln. Dieses Genius Weft trägt Goldblond im Verlauf auf einer besonders flachen Naht, die dicht am Kopf liegt, damit Sie das Haar offen tragen können.",
     "benefits": [
@@ -1834,7 +1834,10 @@
         "a": "Der Halt kommt aus der Einarbeitung an einer Reihe kleiner Ringe in Ihrem eigenen Haar. Genius Weft ist eine feste Methode für den Alltag. Wächst Ihr Haar nach, setzt Ihre Friseurin die Reihe nach."
       }
     ],
-    "manufacturer": "atelier"
+    "manufacturer": "atelier",
+    "extraImages": [
+      "/assets/products/425-studio-3.jpg"
+    ]
   },
   {
     "id": 426,
