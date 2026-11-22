@@ -45,3 +45,30 @@ export function ownerAddress(): string | null {
 export function fillTemplate(template: string, values: Record<string, string>): string {
   return template.replace(/\{(\w+)\}/g, (match, key: string) => (key in values ? values[key] : match));
 }
+
+/**
+ * Kurznachricht an Andrea per Telegram-Bot (TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID aus der Umgebung).
+ * Zusätzlich zur E-Mail; ohne Konfiguration passiert nichts. Fehler blockieren nie den Ablauf.
+ * Telegram begrenzt Nachrichten auf 4096 Zeichen.
+ */
+export async function sendTelegram(subject: string, text: string): Promise<MailStatus> {
+  const token = process.env.TELEGRAM_BOT_TOKEN;
+  const chat = process.env.TELEGRAM_CHAT_ID;
+  if (!token || !chat) return "nicht_konfiguriert";
+  try {
+    const response = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+      body: JSON.stringify({ chat_id: chat, disable_web_page_preview: true, text: `${subject}\n\n${text}`.slice(0, 4096) }),
+      headers: { "Content-Type": "application/json" },
+      method: "POST",
+      signal: AbortSignal.timeout(8_000),
+    });
+    if (!response.ok) {
+      console.error(`[telegram] Versand fehlgeschlagen: HTTP ${response.status}`);
+      return "fehlgeschlagen";
+    }
+    return "gesendet";
+  } catch (error) {
+    console.error(`[telegram] Versand fehlgeschlagen: ${error instanceof Error ? error.name : "unbekannt"}`);
+    return "fehlgeschlagen";
+  }
+}

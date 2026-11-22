@@ -22,7 +22,7 @@ import {
   withdrawalSchema,
 } from "@/lib/validation";
 
-import { fillTemplate, ownerAddress, sendMail } from "./mail";
+import { fillTemplate, ownerAddress, sendMail, sendTelegram } from "./mail";
 import { siteMode } from "./mode";
 import { clientIp, hashIp, hashToken, newOrderId, newToken } from "./security";
 import type { MailStatus } from "./store";
@@ -202,7 +202,7 @@ export async function placeOrder(rawLocale: string, raw: unknown): Promise<Place
     });
     const owner = ownerAddress();
     if (owner) {
-      mailOwner = await sendMail({
+      mailOwner = await sendOwner({
         replyTo: order.customer.email,
         subject: `Neue Bestellung ${order.id}${mode.demo ? " (DEMO)" : ""}`,
         text: [
@@ -299,7 +299,7 @@ export async function sendInquiry(_prev: FormState, data: FormData): Promise<For
   }
   const owner = ownerAddress();
   if (mode.mail && owner) {
-    const status = await sendMail({
+    const status = await sendOwner({
       replyTo: input.email,
       subject: `Neue Anfrage: ${input.topic}${mode.demo ? " (DEMO)" : ""}`,
       text: [
@@ -409,7 +409,7 @@ export async function sendWithdrawal(_prev: FormState, data: FormData): Promise<
     });
     const owner = ownerAddress();
     if (owner) {
-      const ownerStatus = await sendMail({
+      const ownerStatus = await sendOwner({
         replyTo: input.email,
         subject: `Widerruf eingegangen: ${input.orderNumber}${mode.demo ? " (DEMO)" : ""}`,
         text: `Eingang: ${de.date}, ${de.time} Uhr\nSprache: ${locale}\n\n${content}`,
@@ -445,4 +445,10 @@ export async function subscribeNewsletter(_prev: FormState, data: FormData): Pro
   if (!(await allowed("newsletter", ipHash))) return { error: "rate", status: "error" };
   await getStore().saveSubscriber(parsed.data.email);
   return { demo: true, status: "ok" };
+}
+
+/** Nachricht an Andrea: E-Mail und, falls eingerichtet, zusätzlich Telegram. Status = E-Mail-Status. */
+async function sendOwner(mail: { replyTo?: string; subject: string; text: string; to: string }): Promise<MailStatus> {
+  const [status] = await Promise.all([sendMail(mail), sendTelegram(mail.subject, `${mail.text}\n\nAntwort an: ${mail.replyTo ?? "–"}`)]);
+  return status;
 }
