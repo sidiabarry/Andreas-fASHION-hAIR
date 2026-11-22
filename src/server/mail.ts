@@ -53,7 +53,7 @@ export function fillTemplate(template: string, values: Record<string, string>): 
  */
 export async function sendTelegram(subject: string, text: string): Promise<MailStatus> {
   const token = process.env.TELEGRAM_BOT_TOKEN || process.env.Telegram_key;
-  const chat = process.env.TELEGRAM_CHAT_ID;
+  const chat = process.env.TELEGRAM_CHAT_ID || process.env.Chat_ID;
   if (!token || !chat) return "nicht_konfiguriert";
   try {
     const response = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
