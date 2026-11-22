@@ -61,6 +61,8 @@ export type Product = ProductCopy & {
   imageKind?: ImageKind | null;
   /** Zweites Studiobild, steht in der Galerie direkt hinter dem Hauptbild. */
   secondImage?: string | null;
+  /** Weitere Studioaufnahmen nach dem Zweitbild. */
+  extraImages?: string[];
   /** Aus dem Shop genommen (Daten bleiben erhalten). Auftraggeber 21.11.2026: Walker-Tape-Produkte. */
   hidden?: boolean;
   /** GPSR Art. 19: "atelier" = von Andrea selbst gefertigt (Angaben aus company.ts; vom Auftraggeber bestätigt 21.11.2026). */
@@ -101,6 +103,7 @@ export function galleryImages(product: Product): { src: string; kind: "studio" |
   return [
     { kind: "studio", src: product.image },
     ...(product.secondImage ? [{ kind: "studio" as const, src: product.secondImage }] : []),
+    ...(product.extraImages ?? []).map((src) => ({ kind: "studio" as const, src })),
     ...product.originals.map((src) => ({ kind: "original" as const, src })),
   ];
 }

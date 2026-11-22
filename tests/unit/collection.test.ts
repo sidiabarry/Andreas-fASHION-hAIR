@@ -60,7 +60,9 @@ test("Bilder 422–428: Studiobild, Zweitbild, dann Originale; Bildart staged", 
     const gallery = galleryImages(product);
     assert.equal(gallery[0].src, `/assets/products/${id}.jpg`);
     assert.equal(gallery[1].src, `/assets/products/${id}-2.jpg`);
-    assert.ok(gallery.slice(2).every((shot) => shot.kind === "original"));
+    const extra = product.extraImages?.length ?? 0;
+    assert.ok(gallery.slice(2, 2 + extra).every((shot) => shot.kind === "studio"));
+    assert.ok(gallery.slice(2 + extra).every((shot) => shot.kind === "original"));
   }
   assert.equal(imageKindOf({ imageKind: undefined, restyled: true }), "relit");
   assert.equal(imageKindOf({ imageKind: undefined, restyled: false }), null);

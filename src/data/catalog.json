@@ -1694,7 +1694,10 @@
         "a": "Clip-ins sind zum Selbst-Einsetzen gemacht. Die ersten Male dauern etwas länger; am Hinterkopf hilft anfangs ein Handspiegel oder ein zweites Paar Augen."
       }
     ],
-    "manufacturer": "atelier"
+    "manufacturer": "atelier",
+    "extraImages": [
+      "/assets/products/423-3.jpg"
+    ]
   },
   {
     "id": 424,
@@ -2033,6 +2036,10 @@
         "a": "Beide sind flache Tressen an einer Ringreihe. Bei Butterfly Weft liegt die Tresse so über der Befestigung, dass ihr Haar die Ringe abdeckt; Genius Weft wird meist eingenäht und lässt sich an jeder Stelle zuschneiden. Welche Methode zu Ihrem Haar passt, bespricht Andrea gern mit Ihnen."
       }
     ],
-    "manufacturer": "atelier"
+    "manufacturer": "atelier",
+    "extraImages": [
+      "/assets/products/428-3.jpg",
+      "/assets/products/428-4.jpg"
+    ]
   }
 ]
