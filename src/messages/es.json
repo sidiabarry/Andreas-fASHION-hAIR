@@ -1119,6 +1119,12 @@
     "stageTrio": "Tres piezas de un vistazo",
     "compassCount": "{count} en el atelier",
     "compassCta": "Ver las piezas adecuadas",
-    "compassOne": "Ver la pieza"
+    "compassOne": "Ver la pieza",
+    "compassZone": {
+      "topper": "Raya y coronilla",
+      "peruecken": "Cabeza completa y front lace",
+      "pony": "Frente y nacimiento delantero",
+      "maenner": "Zona de coronilla en microskin"
+    }
   }
 }

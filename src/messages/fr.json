@@ -1119,6 +1119,12 @@
     "stageTrio": "Trois pièces en un coup d’œil",
     "compassCount": "{count} à l’atelier",
     "compassCta": "Voir les pièces adaptées",
-    "compassOne": "Voir la pièce"
+    "compassOne": "Voir la pièce",
+    "compassZone": {
+      "topper": "Raie & sommet",
+      "peruecken": "Tête entière & front lace",
+      "pony": "Front & racine avant",
+      "maenner": "Zone du sommet en micro-peau"
+    }
   }
 }

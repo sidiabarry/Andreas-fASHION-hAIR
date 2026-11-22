@@ -1119,6 +1119,12 @@
     "stageTrio": "Drei Stücke im Überblick",
     "compassCount": "{count} im Atelier",
     "compassCta": "Passende Stücke ansehen",
-    "compassOne": "Zum Stück"
+    "compassOne": "Zum Stück",
+    "compassZone": {
+      "topper": "Scheitel & Oberkopf",
+      "peruecken": "Vollmontur & Front Lace",
+      "pony": "Stirn & vorderer Ansatz",
+      "maenner": "Mikrohaut-Oberkopfzone"
+    }
   }
 }

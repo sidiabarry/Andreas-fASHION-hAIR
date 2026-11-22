@@ -1253,15 +1253,36 @@ html[data-motion="paused"] .af-hx__dot { animation: none; }
 .af-unique { display: flex; align-items: center; gap: 8px; margin: 4px 0 0; font-size: 0.86rem; color: #2f6b3a; font-weight: 550; }
 .af-unique::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #3b6e52; flex: none; }
 
-.af-compass { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(24px, 5vw, 72px); align-items: center; margin-top: clamp(56px, 7vw, 96px); padding: clamp(20px, 3.4vw, 44px); border-radius: var(--af-radius-xl); background: linear-gradient(165deg, #fffdf9, var(--af-cream)); border: 1px solid var(--af-line); box-shadow: var(--af-shadow); }
-.af-compass__list { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
-.af-compass__list button { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; width: 100%; min-height: 56px; padding: 12px 18px; border-radius: 18px; border: 1px solid transparent; background: none; text-align: left; transition: background 0.4s var(--af-ease), border-color 0.4s var(--af-ease), box-shadow 0.4s var(--af-ease); }
-.af-compass__list button:hover { background: color-mix(in srgb, var(--af-raise) 70%, transparent); }
-.af-compass__list button[aria-pressed="true"] { background: var(--af-raise); border-color: var(--af-line); box-shadow: var(--af-shadow-s); }
-.af-compass__need { font-family: var(--af-display); font-size: clamp(1.25rem, 1.6vw, 1.5rem); line-height: 1.15; }
-.af-compass__count { flex: none; font-family: var(--af-mono); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--af-muted); }
-.af-compass__stage { display: grid; grid-template-columns: minmax(0, 210px) minmax(0, 1fr); gap: 24px; align-items: center; }
-.af-compass__head { width: 100%; height: auto; }
-.af-compass__info { display: grid; gap: 10px; justify-items: start; }
-@media (max-width: 900px) { .af-compass { grid-template-columns: 1fr; } .af-compass__stage { grid-template-columns: 120px minmax(0, 1fr); } }
+/* Kopf-Kompass „Wo wünschen Sie sich mehr Haar?“ (HairZoneCompass.tsx): Auswahl · Profil mit Haarzone · Lösung */
+.af-compass { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 3fr) minmax(0, 4fr); gap: clamp(20px, 3vw, 40px); align-items: center; margin-top: clamp(56px, 7vw, 96px); padding: clamp(20px, 3.4vw, 40px); border-radius: 28px; background: linear-gradient(135deg, #fcf9f4, #faf4ea 50%, #f6ede0); border: 1px solid rgba(234, 224, 208, 0.9); box-shadow: 0 24px 60px -28px rgba(44, 36, 27, 0.14); }
+.af-compass__list { position: relative; display: grid; gap: 6px; }
+.af-compass__pill { position: absolute; left: 0; right: 0; top: 0; height: 0; border-radius: 18px; background: rgba(255, 255, 255, 0.95); border: 1px solid rgba(230, 218, 200, 0.8); box-shadow: 0 8px 24px -12px rgba(44, 36, 27, 0.14); opacity: 0; pointer-events: none; }
+.af-compass__pill[data-ready="true"] { opacity: 1; transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), height 0.55s cubic-bezier(0.22, 1, 0.36, 1); }
+.af-compass__tab { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 16px; width: 100%; min-height: 58px; padding: 14px 20px; border: 0; border-radius: 18px; background: none; text-align: left; cursor: pointer; }
+.af-compass__tab:focus-visible { outline: 2px solid var(--af-gold); outline-offset: 2px; }
+.af-compass__need { font-family: var(--af-display); font-size: clamp(1.2rem, 1.6vw, 1.45rem); line-height: 1.15; letter-spacing: -0.01em; color: var(--af-muted); transition: color 0.3s var(--af-ease); }
+.af-compass__tab:hover .af-compass__need, .af-compass__tab[aria-selected="true"] .af-compass__need { color: var(--af-ink); }
+.af-compass__count { flex: none; font-family: var(--af-mono); font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--af-muted); transition: color 0.3s var(--af-ease); }
+.af-compass__tab[aria-selected="true"] .af-compass__count { color: var(--af-gold); }
+.af-compass__stage { display: grid; justify-items: center; gap: 4px; }
+.af-compass__head { width: min(100%, 220px); height: auto; overflow: visible; }
+.af-compass__zone { transform-box: view-box; transform-origin: 110px 100px; animation: af-compass-zone 0.5s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.af-compass__strand { stroke-dasharray: 1; stroke-dashoffset: 0; animation: af-compass-draw 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.af-compass__ring { transform-box: fill-box; transform-origin: center; animation: af-compass-pulse 2.8s ease-in-out infinite; }
+.af-compass__dot { transform-box: fill-box; transform-origin: center; animation: af-compass-dot 0.35s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.af-compass__zonelabel { padding: 5px 12px; border-radius: 999px; border: 1px solid #e5d8c3; background: rgba(255, 255, 255, 0.75); font-family: var(--af-mono); font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--af-muted); animation: af-compass-rise 0.3s cubic-bezier(0.22, 1, 0.36, 1) both; }
+.af-compass__info { display: grid; gap: 12px; justify-items: start; animation: af-compass-panel 0.4s cubic-bezier(0.22, 1, 0.36, 1) both; }
+@keyframes af-compass-zone { from { opacity: 0; transform: scale(0.94); } }
+@keyframes af-compass-draw { from { stroke-dashoffset: 1; opacity: 0; } }
+@keyframes af-compass-pulse { 0%, 100% { transform: scale(0.85); opacity: 0.55; } 50% { transform: scale(1.35); opacity: 0.12; } }
+@keyframes af-compass-dot { from { transform: scale(0); opacity: 0; } }
+@keyframes af-compass-rise { from { opacity: 0; transform: translate3d(0, 4px, 0); } }
+@keyframes af-compass-panel { from { opacity: 0; transform: translate3d(0, 10px, 0); filter: blur(4px); } }
+@media (prefers-reduced-motion: reduce) {
+  .af-compass__pill[data-ready="true"] { transition: none; }
+  .af-compass__zone, .af-compass__strand, .af-compass__ring, .af-compass__dot, .af-compass__zonelabel, .af-compass__info { animation: none; }
+}
+html[data-motion="paused"] .af-compass__ring { animation: none; }
+@media (max-width: 1000px) { .af-compass { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } .af-compass__list { grid-column: 1 / -1; } }
+@media (max-width: 600px) { .af-compass { grid-template-columns: 1fr; } .af-compass__head { width: 170px; } }
 @media (max-width: 520px) { .af-compass__count { display: none; } }

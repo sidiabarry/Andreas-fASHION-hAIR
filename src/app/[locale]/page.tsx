@@ -146,7 +146,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
   ));
   const needs = NEEDS.map((id) => {
     const open = byCategory(id).filter((p) => !p.sold && !sold.has(p.slug));
-    return { caption: t(`categories.${id}.caption`), count: open.length, id, label: t(`categories.${id}.label`), need: t(`categories.${id}.need`), slug: open[0]?.slug ?? null };
+    return { caption: t(`categories.${id}.caption`), count: open.length, id, label: t(`categories.${id}.label`), need: t(`categories.${id}.need`), slug: open[0]?.slug ?? null, zone: t(`cat.compassZone.${id}`) };
   }).filter((n) => n.count > 0);
 
   const concerns = items("home.concerns.items", ["q", "a"], v);

@@ -1119,6 +1119,12 @@
     "stageTrio": "Three pieces at a glance",
     "compassCount": "{count} in the atelier",
     "compassCta": "View matching pieces",
-    "compassOne": "Go to the piece"
+    "compassOne": "Go to the piece",
+    "compassZone": {
+      "topper": "Parting & crown",
+      "peruecken": "Full head & front lace",
+      "pony": "Forehead & front hairline",
+      "maenner": "Micro-skin crown area"
+    }
   }
 }
