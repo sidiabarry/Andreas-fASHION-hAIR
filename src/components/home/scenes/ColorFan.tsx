@@ -1,5 +1,7 @@
+"use client";
+
 import Image from "next/image";
-import type { CSSProperties } from "react";
+import { useState, type CSSProperties, type KeyboardEvent } from "react";
 
 import { Arrow } from "@/components/Arrow";
 import { Link } from "@/i18n/navigation";
@@ -19,35 +21,78 @@ type ColorTexts = {
   steps: { title: string; text: string }[];
   cta: string;
   ctaForm: string;
+  lightLabel: string;
+  lightDay: string;
+  lightWarm: string;
+  view: string;
 };
 
 /**
- * Farbe und Menge: ein Fächer aus echten Haar-Ausschnitten der Studioaufnahmen (keine gemalten
- * Farbfelder), am Ende ein leerer, glimmender Streifen „Ihre Farbe? Nach Maß“. Daneben der
- * Farbabgleich in drei Schritten und genau ein Hauptknopf: Foto an Andrea.
+ * Farbe und Menge als „Seiden-Accordion“: echte Studioaufnahmen ganzer Strähnen, ohne Zoom und ohne gemalte
+ * Farbverläufe, damit Farbe und Ombré (Ansatz → Spitze) so erscheinen, wie sie sind. Die gewählte Strähne öffnet
+ * sich breit, die anderen bleiben schmale Streifen; am Ende „Ihre Farbe nicht dabei? Nach Maß“.
+ * „Warmes Licht“ ist nur eine Vorschau (Filter); Tageslicht zeigt das unveränderte Foto.
+ * Daneben der Farbabgleich in drei Schritten und genau ein Hauptknopf: Foto an Andrea.
  */
 export function ColorFan({ t, swatches, whatsapp, whatsappNote }: { t: ColorTexts; swatches: Swatch[]; whatsapp: string | null; whatsappNote: string }) {
   const total = swatches.length + 1;
+  const [active, setActive] = useState(Math.min(2, swatches.length - 1));
+  const [warm, setWarm] = useState(false);
+
+  const onKey = (event: KeyboardEvent<HTMLUListElement>) => {
+    const step = event.key === "ArrowRight" || event.key === "ArrowDown" ? 1 : event.key === "ArrowLeft" || event.key === "ArrowUp" ? -1 : 0;
+    if (!step) return;
+    event.preventDefault();
+    const next = (active + step + total) % total;
+    setActive(next);
+    event.currentTarget.querySelectorAll<HTMLElement>(".cf__open")[next]?.focus();
+  };
+
   return (
     <section aria-labelledby="color-title" className="cf" data-fx="strands" data-fx-a="0.35" data-fx-ma="0.2" data-fx-s="0.55" data-fx-x="-0.45" data-fx-y="0.1">
       <div className="af-wrap cf__grid">
-        <div className="cf__fan h-in">
-          <ul aria-label={t.fanLabel}>
-            {swatches.map((s, i) => (
-              <li key={s.slug} style={{ "--i": i - (total - 1) / 2, "--focus": s.focus } as CSSProperties}>
-                <Link className="cf__strip" href={`/produkt/${s.slug}`}>
-                  <Image alt="" fill sizes="(max-width: 900px) 20vw, 140px" src={s.image} />
-                  <span className="cf__name">{s.color}</span>
-                </Link>
-              </li>
-            ))}
-            <li className="cf__own" style={{ "--i": (total - 1) / 2 } as CSSProperties}>
-              <Link className="cf__strip" href="/massanfertigung">
+        <div className="cf__stage h-in" data-light={warm ? "warm" : "day"}>
+          <div aria-label={t.lightLabel} className="cf__light" role="group">
+            <button aria-pressed={!warm} onClick={() => setWarm(false)} type="button">
+              {t.lightDay}
+            </button>
+            <button aria-pressed={warm} onClick={() => setWarm(true)} type="button">
+              {t.lightWarm}
+            </button>
+          </div>
+
+          <ul aria-label={t.fanLabel} className="cf__panels" onKeyDown={onKey}>
+            {swatches.map((s, i) => {
+              const open = i === active;
+              return (
+                <li className="cf__panel" data-open={open} key={s.slug} onPointerEnter={(e) => e.pointerType === "mouse" && setActive(i)} style={{ "--focus": s.focus } as CSSProperties}>
+                  <Image alt="" className="cf__photo" fill sizes="(max-width: 639px) 92vw, (max-width: 1100px) 40vw, 320px" src={s.image} />
+                  <button aria-expanded={open} className="cf__open" onClick={() => setActive(i)} tabIndex={open ? 0 : -1} type="button">
+                    <span className="cf__idx">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="cf__label">{s.color}</span>
+                  </button>
+                  <div className="cf__detail" inert={!open}>
+                    <span className="cf__idx">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="cf__name">{s.color}</span>
+                    <Link className="cf__view" href={`/produkt/${s.slug}`}>
+                      {t.view} <Arrow />
+                    </Link>
+                  </div>
+                </li>
+              );
+            })}
+            <li className="cf__panel cf__panel--own" data-open={active === swatches.length} onPointerEnter={(e) => e.pointerType === "mouse" && setActive(swatches.length)}>
+              <button aria-expanded={active === swatches.length} className="cf__open" onClick={() => setActive(swatches.length)} tabIndex={active === swatches.length ? 0 : -1} type="button">
                 <span aria-hidden="true" className="cf__plus" />
-                <span className="cf__name">
-                  {t.customTitle} <span className="cf__sub">{t.customText}</span>
-                </span>
-              </Link>
+                <span className="cf__label">{t.customTitle}</span>
+              </button>
+              <div className="cf__detail" inert={active !== swatches.length}>
+                <span aria-hidden="true" className="cf__plus" />
+                <span className="cf__name">{t.customTitle}</span>
+                <Link className="cf__view" href="/massanfertigung">
+                  {t.customText} <Arrow />
+                </Link>
+              </div>
             </li>
           </ul>
         </div>

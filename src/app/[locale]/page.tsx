@@ -46,10 +46,10 @@ const NEAR = [
 ];
 /** Farbfächer: Ausschnitt dort, wo das Haar am meisten zeigt (Längen, Ombré-Verlauf, Locken). */
 const SWATCHES = [
-  { id: 424, focus: "50% 55%" },
-  { id: 426, focus: "40% 30%" },
-  { id: 425, focus: "46% 70%" },
-  { id: 427, focus: "58% 52%" },
+  { id: 424, focus: "50% 40%" },
+  { id: 426, focus: "50% 30%" },
+  { id: 425, focus: "50% 40%" },
+  { id: 427, focus: "55% 40%" },
 ];
 /** Kapitel II: das neue V-Toupet groß, dazu Einzelstücke in verschiedenen Farben und Strukturen. */
 const TOPPER_IDS = [422, 287, 415, 413];
@@ -198,6 +198,10 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
           fanLabel: t("home.color.fanLabel"),
           kicker: t("home.color.kicker"),
           lead: t("home.color.lead"),
+          lightDay: t("cat.lightDay"),
+          lightLabel: t("cat.lightLabel"),
+          lightWarm: t("cat.lightWarm"),
+          view: t("cat.compareView"),
           steps: items("home.color.steps", ["title", "text"]),
           stepsLabel: t("home.color.stepsLabel"),
           title: t("home.color.title"),
