@@ -52,7 +52,7 @@ export function fillTemplate(template: string, values: Record<string, string>): 
  * Telegram begrenzt Nachrichten auf 4096 Zeichen.
  */
 export async function sendTelegram(subject: string, text: string): Promise<MailStatus> {
-  const token = process.env.TELEGRAM_BOT_TOKEN;
+  const token = process.env.TELEGRAM_BOT_TOKEN || process.env.Telegram_key;
   const chat = process.env.TELEGRAM_CHAT_ID;
   if (!token || !chat) return "nicht_konfiguriert";
   try {
