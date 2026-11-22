@@ -150,7 +150,8 @@ if (!WARRANTY_LABEL || !existsSync(join(root, "public", WARRANTY_LABEL.src))) {
   });
 }
 
-// Betrieb: E-Mail-Versand
+// Betrieb: E-Mail-Versand (blockiert nur, wenn eine Datenbank angebunden ist, also echte Bestellungen möglich wären;
+// ohne Datenbank bleibt die Kasse zu und die Formulare zeigen Telefon/E-Mail: „Schaufenster“-Betrieb)
 for (const key of ["SUPABASE_URL", "SUPABASE_SERVICE_ROLE_KEY"]) {
   if (!process.env[key]) {
     findings.push({ area: "Umgebung", blocking: false, text: `${key} ist nicht gesetzt: Die Online-Kasse bleibt in Production geschlossen (Bestellung dann per Anfrage). Schema: supabase/migrations/0001_init.sql` });
@@ -158,7 +159,7 @@ for (const key of ["SUPABASE_URL", "SUPABASE_SERVICE_ROLE_KEY"]) {
 }
 for (const key of ["RESEND_API_KEY", "MAIL_FROM", "MAIL_TO_OWNER"]) {
   if (!process.env[key]) {
-    findings.push({ area: "Umgebung", blocking: production, text: `${key} ist nicht gesetzt: Anfrage- und Widerrufsformular sind in Production dann nicht nutzbar (es werden Telefon/E-Mail angezeigt)` });
+    findings.push({ area: "Umgebung", blocking: production && Boolean(process.env.SUPABASE_URL), text: `${key} ist nicht gesetzt: Anfrage- und Widerrufsformular sind in Production dann nicht nutzbar (es werden Telefon/E-Mail angezeigt)` });
   }
 }
 
