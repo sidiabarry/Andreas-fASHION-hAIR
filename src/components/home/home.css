@@ -358,7 +358,7 @@ html[data-motion="paused"] .home *, html[data-motion="paused"] .home *::before, 
   .xc__gallery > li:nth-child(even), .h-js .xc__gallery > li:nth-child(even):not(.is-in) { transform: none; }
   .h-js .xc__gallery > li:not(.is-in) { opacity: 1; transform: none; }
 
-  .real__frame { aspect-ratio: 4 / 5; }
+
   .real__captions { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 18px; }
 
   .cf__fan { order: 2; }
@@ -394,3 +394,32 @@ html[data-motion="paused"] .home *, html[data-motion="paused"] .home *::before, 
   .dock__wa span:not(.af-sr) { display: none; }
   .dock__wa { width: 48px; padding: 0; }
 }
+
+/* ---------- „Kommen Sie näher“: ganzes Produkt im Bild, Bedienung direkt darunter bzw. daneben ---------- */
+.real__stage { align-items: start; }
+.real__frame { aspect-ratio: 3 / 4; }
+.real__stage[data-running] .real__shot[data-on] img { animation-name: h-kenburns-soft; animation-duration: 9s; }
+@keyframes h-kenburns-soft { from { transform: scale(1); } to { transform: scale(1.07); } }
+.real__shot img { transform: scale(1); }
+.real__captions button { min-height: 52px; align-content: center; }
+.real__captions li:not([data-on]) .real__label { color: var(--af-muted); }
+@media (min-width: 901px) {
+  .real__stage { grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(32px, 5vw, 80px); align-items: center; }
+  .real__frame { max-width: 560px; }
+  .real__captions { grid-template-columns: 1fr; gap: 6px; }
+  .real__captions li { padding: 18px 22px 20px; border-radius: 20px; border: 1px solid transparent; transition: background 0.5s var(--af-ease), border-color 0.5s var(--af-ease), box-shadow 0.5s var(--af-ease); }
+  .real__captions li[data-on] { background: var(--af-raise); border-color: var(--af-line); box-shadow: var(--af-shadow-s); }
+}
+@media (max-width: 900px) {
+  /* Reiter direkt unter dem Bild; nur der Text des gewählten Reiters, damit man den Wechsel sofort sieht */
+  .real__stage { gap: 14px; }
+  .real__captions { display: flex; flex-wrap: wrap; gap: 8px; }
+  .real__captions li { display: contents; }
+  .real__captions button { flex: 1 1 calc(50% - 4px); min-width: 0; padding: 8px 14px 10px; border-radius: 16px; background: var(--af-raise); border: 1px solid var(--af-line); box-shadow: var(--af-shadow-s); gap: 8px; }
+  .real__captions li[data-on] button { border-color: var(--af-gold-fill); box-shadow: 0 0 0 1px var(--af-gold-fill), var(--af-shadow-s); }
+  .real__label { font-size: 1.15rem; }
+  .real__text { display: none; order: 9; flex: 1 0 100%; padding: 4px 4px 0; }
+  .real__captions li[data-on] .real__text { display: block; }
+}
+/* Fächer „Farbe und Menge“: Streifen dürfen nicht in die Nachbarabschnitte ragen */
+.cf { overflow: clip; }

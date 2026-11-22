@@ -39,10 +39,10 @@ const studio = (id: number, detail = false) => `/assets/products/${id}${detail ?
 const EXT_IDS = [425, 423, 426, 427, 428, 424];
 /** „Kommen Sie näher“: Detailaufnahmen mit Bildausschnitt für die Kamerafahrt. */
 const NEAR = [
-  { id: 423, focus: "50% 28%" },
-  { id: 424, focus: "62% 30%" },
-  { id: 427, focus: "66% 34%" },
-  { id: 428, focus: "50% 22%" },
+  { id: 423, focus: "50% 40%" },
+  { id: 425, focus: "50% 42%" },
+  { id: 427, focus: "50% 40%" },
+  { id: 428, focus: "50% 45%" },
 ];
 /** Farbfächer: Ausschnitt dort, wo das Haar am meisten zeigt (Längen, Ombré-Verlauf, Locken). */
 const SWATCHES = [
@@ -114,7 +114,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
       alt: t("home.near.shotAlt", { color: text.subtitle, name: text.name }),
       focus: NEAR[i].focus,
       label: t(`home.near.shots.${i}.label`),
-      src: studio(p.id, true),
+      src: studio(p.id),
       text: t(`home.near.shots.${i}.text`),
     };
   });
