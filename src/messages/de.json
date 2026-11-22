@@ -445,7 +445,7 @@
     "title": "Ihr Warenkorb",
     "lead": "Sie bezahlen jetzt noch nichts. Andrea bestätigt Ihr Stück zuerst persönlich.",
     "empty": "Noch liegt nichts darin. Ihr Stück ist vielleicht schon fertig und wartet im Atelier.",
-    "unique": "Einzelstück",
+    "unique": "Einzelstück: gibt es nur einmal",
     "quantity": "Menge",
     "quantityFor": "Menge für {name}",
     "remove": "Entfernen",
@@ -1033,7 +1033,10 @@
   },
   "shop": {
     "showInches": "Maße in Zoll anzeigen",
-    "showCm": "Maße in Zentimetern anzeigen"
+    "showCm": "Maße in Zentimetern anzeigen",
+    "neutralBox": "Versand im neutralen DHL-Karton, ohne Hinweis auf den Inhalt.",
+    "videoOption": "Vor dem Versand ein kurzes Tageslichtvideo meines Stücks erhalten (kostenlos)",
+    "videoHint": "Andrea schickt es per WhatsApp an Ihre Telefonnummer, ca. 10 Sekunden."
   },
   "pdp": {
     "helpersTitle": "Passt das zu mir? Kurz nachmessen",
@@ -1113,6 +1116,9 @@
     "compareView": "Dieses Stück ansehen",
     "stageSpot": "Ein Stück, ganz in Ruhe angesehen",
     "stageDuel": "Zwei Stücke, direkt nebeneinander",
-    "stageTrio": "Drei Stücke im Überblick"
+    "stageTrio": "Drei Stücke im Überblick",
+    "compassCount": "{count} im Atelier",
+    "compassCta": "Passende Stücke ansehen",
+    "compassOne": "Zum Stück"
   }
 }

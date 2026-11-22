@@ -29,3 +29,12 @@ test("WhatsApp: Nummer, Text und Link", () => {
   const url = buildAndreaWhatsAppUrl("+4917623681585", { name: "A" });
   assert.ok(url.startsWith("https://wa.me/4917623681585?text="));
 });
+
+import { appendVideoRequest, VIDEO_REQUEST_LINE } from "@/lib/video-note";
+
+test("Packtisch-Video: Wunsch wird angehängt und passt in die Grenze", () => {
+  assert.equal(appendVideoRequest("Frage zur Farbe", 800), `Frage zur Farbe\n\n${VIDEO_REQUEST_LINE}`);
+  assert.equal(appendVideoRequest("", 800), VIDEO_REQUEST_LINE);
+  const long = appendVideoRequest("x".repeat(900), 800);
+  assert.ok(long.length <= 800 && long.endsWith(VIDEO_REQUEST_LINE));
+});

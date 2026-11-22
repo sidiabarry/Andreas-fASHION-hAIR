@@ -445,7 +445,7 @@
     "title": "Su cesta",
     "lead": "Todavía no paga nada. Andrea confirma primero su pieza personalmente.",
     "empty": "Todavía está vacía. Quizá su pieza ya esté terminada y le espere en el taller.",
-    "unique": "Pieza única",
+    "unique": "Pieza única: solo existe una vez",
     "quantity": "Cantidad",
     "quantityFor": "Cantidad de {name}",
     "remove": "Quitar",
@@ -1033,7 +1033,10 @@
   },
   "shop": {
     "showInches": "Mostrar medidas en pulgadas",
-    "showCm": "Mostrar medidas en centímetros"
+    "showCm": "Mostrar medidas en centímetros",
+    "neutralBox": "Envío en una caja DHL neutra, sin indicar el contenido.",
+    "videoOption": "Recibir antes del envío un breve vídeo de mi pieza a la luz del día (gratis)",
+    "videoHint": "Andrea se lo envía por WhatsApp a su número, unos 10 segundos."
   },
   "pdp": {
     "helpersTitle": "¿Es para mí? Comprobación rápida",
@@ -1113,6 +1116,9 @@
     "compareView": "Ver esta pieza",
     "stageSpot": "Una pieza, para verla con calma",
     "stageDuel": "Dos piezas, una junto a la otra",
-    "stageTrio": "Tres piezas de un vistazo"
+    "stageTrio": "Tres piezas de un vistazo",
+    "compassCount": "{count} en el atelier",
+    "compassCta": "Ver las piezas adecuadas",
+    "compassOne": "Ver la pieza"
   }
 }

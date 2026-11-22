@@ -7,10 +7,10 @@ import { useEffect, useRef } from "react";
 import { Arrow } from "@/components/Arrow";
 import { useCart } from "@/components/cart/CartProvider";
 import { unitText } from "@/components/cart/unitText";
-import { SHIPPING_ZONES } from "@/config/shipping";
 import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
 import { formatPrice } from "@/lib/money";
+import { ShippingProgress } from "./ShippingProgress";
 
 /**
  * Mini-Warenkorb als Schublade: öffnet sich nach „In den Warenkorb“, statt die Seite zu wechseln.
@@ -30,9 +30,10 @@ export function CartDrawer({ checkoutOpen }: { checkoutOpen: boolean }) {
     if (!added && dialog.open) dialog.close();
   }, [added]);
 
-  const freeFrom = SHIPPING_ZONES.de.freeFromCents ?? 0;
-  const left = Math.max(0, freeFrom - cart.subtotalCents);
-  const suggestions = cart.suggestions.filter((p) => !cart.has(p.slug)).slice(0, 3);
+  // Modul 17: genau eine ruhige Empfehlung, nur wenn ein Haarteil im Korb liegt und noch kein Pflegeprodukt
+  const hasHair = cart.items.some(({ product }) => product.category !== "pflege");
+  const hasCare = cart.items.some(({ product }) => product.category === "pflege");
+  const suggestions = hasHair && !hasCare ? cart.suggestions.filter((p) => !cart.has(p.slug)).slice(0, 1) : [];
 
   return (
     <dialog
@@ -71,6 +72,7 @@ export function CartDrawer({ checkoutOpen }: { checkoutOpen: boolean }) {
                   {quantity > 1 ? ` · ${quantity} ×` : ""}
                 </p>
                 {product.unit ? <p className="af-note">{unitText(t, product.unit, locale)}</p> : null}
+                {product.unique ? <p className="af-unique">{t("cart.unique")}</p> : null}
               </div>
               <span className="af-card__price">{formatPrice(product.priceCents * quantity, locale)}</span>
             </li>
@@ -80,7 +82,7 @@ export function CartDrawer({ checkoutOpen }: { checkoutOpen: boolean }) {
           <span>{t("cart.subtotal")}</span>
           <span>{formatPrice(cart.subtotalCents, locale)}</span>
         </div>
-        <p className="af-note">{left > 0 ? t("drawer.freeLeft", { amount: formatPrice(left, locale) }) : t("drawer.freeReached")}</p>
+        <ShippingProgress subtotalCents={cart.subtotalCents} />
         <div className="af-drawer__actions">
           {checkoutOpen ? (
             <Link className="af-cta-band af-glass af-glass--gold" href="/kasse" onClick={() => cart.dismiss()}>

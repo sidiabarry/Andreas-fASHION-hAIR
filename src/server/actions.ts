@@ -10,6 +10,7 @@ import { getProduct, productText } from "@/data/catalog";
 import { isLocale } from "@/i18n/locales";
 import type { Locale } from "@/i18n/locales";
 import { formatPrice } from "@/lib/money";
+import { appendVideoRequest } from "@/lib/video-note";
 import { formatIban } from "@/lib/payment";
 import { priceOrder } from "@/lib/order";
 import {
@@ -264,6 +265,7 @@ export async function sendInquiry(_prev: FormState, data: FormData): Promise<For
     return { error: "invalid", fields, status: "error" };
   }
   const input = parsed.data;
+  if (data.get("video") === "on" && input.topic === "bestellung") input.message = appendVideoRequest(input.message, 1700);
   if (isTooFast(input.startedAt)) return { error: "bot", status: "error" };
   const { ipHash } = await requestInfo();
   if (!(await allowed("inquiry", ipHash))) return { error: "rate", status: "error" };

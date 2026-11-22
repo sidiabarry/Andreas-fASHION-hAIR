@@ -1232,3 +1232,27 @@ html[data-motion="paused"] .af-hx__dot { animation: none; }
 .af-compare2__col dt { color: var(--af-muted); font-size: 0.86rem; }
 .af-compare2__col dd { margin: 0; font-variant-numeric: tabular-nums; font-weight: 550; text-align: right; }
 @media (prefers-reduced-motion: reduce) { .af-comparebar > button { animation: none; } }
+
+/* ======================================================================
+ * Warenkorb: Versand-Fortschritt, Einzelstück-Zeile; Startseite: Kopf-Kompass
+ * ====================================================================== */
+.af-ship { display: grid; gap: 8px; }
+.af-ship__bar { height: 6px; border-radius: 99px; background: var(--af-line); overflow: hidden; }
+.af-ship__bar i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #f4cf72, var(--af-gold-fill)); transition: width 0.8s var(--af-ease); }
+.af-ship__box { display: flex; align-items: center; gap: 10px; margin: 0; font-size: 0.84rem; color: var(--af-muted); }
+.af-ship__box svg { flex: none; color: var(--af-gold); }
+.af-unique { display: flex; align-items: center; gap: 8px; margin: 4px 0 0; font-size: 0.86rem; color: #2f6b3a; font-weight: 550; }
+.af-unique::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #3b6e52; flex: none; }
+
+.af-compass { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(24px, 5vw, 72px); align-items: center; margin-top: clamp(56px, 7vw, 96px); padding: clamp(20px, 3.4vw, 44px); border-radius: var(--af-radius-xl); background: linear-gradient(165deg, #fffdf9, var(--af-cream)); border: 1px solid var(--af-line); box-shadow: var(--af-shadow); }
+.af-compass__list { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.af-compass__list button { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; width: 100%; min-height: 56px; padding: 12px 18px; border-radius: 18px; border: 1px solid transparent; background: none; text-align: left; transition: background 0.4s var(--af-ease), border-color 0.4s var(--af-ease), box-shadow 0.4s var(--af-ease); }
+.af-compass__list button:hover { background: color-mix(in srgb, var(--af-raise) 70%, transparent); }
+.af-compass__list button[aria-pressed="true"] { background: var(--af-raise); border-color: var(--af-line); box-shadow: var(--af-shadow-s); }
+.af-compass__need { font-family: var(--af-display); font-size: clamp(1.25rem, 1.6vw, 1.5rem); line-height: 1.15; }
+.af-compass__count { flex: none; font-family: var(--af-mono); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--af-muted); }
+.af-compass__stage { display: grid; grid-template-columns: minmax(0, 210px) minmax(0, 1fr); gap: 24px; align-items: center; }
+.af-compass__head { width: 100%; height: auto; }
+.af-compass__info { display: grid; gap: 10px; justify-items: start; }
+@media (max-width: 900px) { .af-compass { grid-template-columns: 1fr; } .af-compass__stage { grid-template-columns: 120px minmax(0, 1fr); } }
+@media (max-width: 520px) { .af-compass__count { display: none; } }

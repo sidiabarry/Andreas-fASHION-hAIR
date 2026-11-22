@@ -1,5 +1,6 @@
 "use client";
 
+import { appendVideoRequest } from "@/lib/video-note";
 import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import type { FormEvent, ReactNode } from "react";
@@ -71,6 +72,7 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [message, setMessage] = useState<string | null>(null);
   const [pending, startTransition] = useTransition();
+  const [video, setVideo] = useState(false);
   const [meta, setMeta] = useState<{ key: string; startedAt: number } | null>(() => ({ key: crypto.randomUUID(), startedAt: Date.now() }));
   const summary = useRef<HTMLDivElement>(null);
 
@@ -123,6 +125,7 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
       const result = await placeOrder(locale, {
         ...values,
         consents: {},
+        note: video ? appendVideoRequest(values.note, 800) : values.note,
         idempotencyKey: meta.key,
         items: cart.lines,
         startedAt: meta.startedAt,
@@ -224,8 +227,17 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
               )}
             </Field>
             <Field error={err("note")} hint={t("checkout.noteHint")} label={t("checkout.note")} name="note" optionalLabel={t("common.optional")}>
-              {(p) => <textarea {...p} className="af-ui-field" maxLength={800} onChange={set("note")} value={values.note} />}
+              {(p) => <textarea {...p} className="af-ui-field" maxLength={760} onChange={set("note")} value={values.note} />}
             </Field>
+            <div className="af-check">
+              <input checked={video} className="af-ui-check" id="packvideo" onChange={(event) => setVideo(event.target.checked)} type="checkbox" />
+              <label htmlFor="packvideo">
+                {t("shop.videoOption")}
+                <small className="af-note" style={{ display: "block" }}>
+                  {t("shop.videoHint")}
+                </small>
+              </label>
+            </div>
           </fieldset>
           <aside aria-labelledby="undecided-title" className="af-review">
             <h2 className="af-h3" id="undecided-title">

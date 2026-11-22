@@ -17,7 +17,7 @@ import { TopperChapter } from "@/components/home/scenes/TopperChapter";
 import { homeValues, openingHours, whatsappHref } from "@/components/home/values";
 import { JsonLd } from "@/components/JsonLd";
 import { PriceNote } from "@/components/product/PriceNote";
-import { getProductById, isUnique, productText, products, unitInfo, VISIBLE_CATEGORY_IDS, type CategoryId, type Product } from "@/data/catalog";
+import { byCategory, getProductById, isUnique, productText, products, unitInfo, VISIBLE_CATEGORY_IDS, type CategoryId, type Product } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
 import { organizationJsonLd } from "@/lib/jsonld";
 import { formatPrice } from "@/lib/money";
@@ -144,7 +144,10 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
       t={cardTexts}
     />
   ));
-  const needs = NEEDS.map((id) => ({ id, label: t(`categories.${id}.label`), need: t(`categories.${id}.need`) }));
+  const needs = NEEDS.map((id) => {
+    const open = byCategory(id).filter((p) => !p.sold && !sold.has(p.slug));
+    return { caption: t(`categories.${id}.caption`), count: open.length, id, label: t(`categories.${id}.label`), need: t(`categories.${id}.need`), slug: open[0]?.slug ?? null };
+  }).filter((n) => n.count > 0);
 
   const concerns = items("home.concerns.items", ["q", "a"], v);
   const faqJson = {
@@ -208,6 +211,9 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
         needs={needs}
         t={{
           chapter,
+          compassCount: t.raw("cat.compassCount") as string,
+          compassCta: t("cat.compassCta"),
+          compassOne: t("cat.compassOne"),
           consult: t("home.topper.consult"),
           cta: t("home.topper.cta"),
           kicker: t("home.topper.kicker"),

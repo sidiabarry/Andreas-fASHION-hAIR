@@ -445,7 +445,7 @@
     "title": "Your bag",
     "lead": "You do not pay anything yet. Andrea first confirms your piece personally.",
     "empty": "Nothing in it yet. Your piece may already be finished and waiting in the atelier.",
-    "unique": "One of a kind",
+    "unique": "One of a kind: exists only once",
     "quantity": "Quantity",
     "quantityFor": "Quantity for {name}",
     "remove": "Remove",
@@ -1033,7 +1033,10 @@
   },
   "shop": {
     "showInches": "Show measurements in inches",
-    "showCm": "Show measurements in centimetres"
+    "showCm": "Show measurements in centimetres",
+    "neutralBox": "Shipped in a plain DHL box with no indication of the contents.",
+    "videoOption": "Receive a short daylight video of my piece before it ships (free)",
+    "videoHint": "Andrea sends it by WhatsApp to your phone number, about 10 seconds."
   },
   "pdp": {
     "helpersTitle": "Will it suit me? Quick check",
@@ -1113,6 +1116,9 @@
     "compareView": "View this piece",
     "stageSpot": "One piece, viewed in peace",
     "stageDuel": "Two pieces, side by side",
-    "stageTrio": "Three pieces at a glance"
+    "stageTrio": "Three pieces at a glance",
+    "compassCount": "{count} in the atelier",
+    "compassCta": "View matching pieces",
+    "compassOne": "Go to the piece"
   }
 }

@@ -167,6 +167,17 @@ export function InquiryForm({ topic: initialTopic, product, ownerEmail, b2bNotic
           {(p) => <input {...p} className="af-ui-field" autoComplete="country-name" maxLength={80} />}
         </Field>
       ) : null}
+      {topic === "bestellung" ? (
+        <div className="af-check">
+          <input className="af-ui-check" id="packvideo" name="video" type="checkbox" />
+          <label htmlFor="packvideo">
+            {t("shop.videoOption")}
+            <small className="af-note" style={{ display: "block" }}>
+              {t("shop.videoHint")}
+            </small>
+          </label>
+        </div>
+      ) : null}
       {selection.length ? (
         <section aria-label={t("inquiry.selection")} className="af-review">
           <h2 className="af-mono">{t("inquiry.selection")}</h2>

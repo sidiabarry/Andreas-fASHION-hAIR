@@ -12,6 +12,7 @@ import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
 import { MAX_QUANTITY } from "@/lib/cart";
 import { formatPrice } from "@/lib/money";
+import { ShippingProgress } from "./ShippingProgress";
 
 export function CartView({ checkoutOpen, contact }: { checkoutOpen: boolean; contact: { phone: string; phoneHref: string; email: string; whatsapp: string | null } }) {
   const t = useTranslations();
@@ -51,7 +52,7 @@ export function CartView({ checkoutOpen, contact }: { checkoutOpen: boolean; con
                 <p className="af-note">{product.subtitle}</p>
                 {product.unit ? <p className="af-note">{unitText(t, product.unit, locale)}</p> : null}
                 {product.unique ? (
-                  <p className="af-note af-gold">{t("cart.unique")}</p>
+                  <p className="af-unique">{t("cart.unique")}</p>
                 ) : (
                   <div className="af-qty">
                     <label className="af-note" htmlFor={`qty-${product.slug}`}>
@@ -99,6 +100,7 @@ export function CartView({ checkoutOpen, contact }: { checkoutOpen: boolean; con
           <span>{t("cart.shipping")}</span>
           <span>{shipping === 0 ? t("checkout.shippingFree") : formatPrice(shipping, locale)}</span>
         </div>
+        <ShippingProgress subtotalCents={cart.subtotalCents} />
         <p className="af-note">{t("cart.shippingFrom")}</p>
         {checkoutOpen ? (
           <Link className="af-cta-band af-glass af-glass--gold" href="/kasse">
