@@ -1764,7 +1764,11 @@
         "a": "Schicken Sie Andrea ein Foto Ihres Haares bei Tageslicht, ohne Blitz. Sie sagt Ihnen vor der Zahlung, ob der Ton passt und wie viele Packungen Sie für Ihr Ziel brauchen."
       }
     ],
-    "manufacturer": "atelier"
+    "manufacturer": "atelier",
+    "extraImages": [
+      "/assets/products/424-3.jpg",
+      "/assets/products/424-4.jpg"
+    ]
   },
   {
     "id": 425,
