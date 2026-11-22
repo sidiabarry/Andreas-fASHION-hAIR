@@ -1,5 +1,5 @@
 /*
- * Startseite und „Über Andrea“ – Szenen-Gestaltung (Bereich home-design).
+ * Startseite und „Über Andréia“ – Szenen-Gestaltung (Bereich home-design).
  * Wird nur von diesen beiden Seiten importiert. Tokens aus globals.css (--af-*); eigene Werte sind
  * auf `.home` begrenzt. Bewegung nur über transform/opacity; reduzierte Bewegung und der globale
  * Schalter (html[data-motion="paused"]) halten alles an.

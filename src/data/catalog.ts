@@ -65,7 +65,7 @@ export type Product = ProductCopy & {
   extraImages?: string[];
   /** Aus dem Shop genommen (Daten bleiben erhalten). Auftraggeber 21.11.2026: Walker-Tape-Produkte. */
   hidden?: boolean;
-  /** GPSR Art. 19: "atelier" = von Andrea selbst gefertigt (Angaben aus company.ts; vom Auftraggeber bestätigt 21.11.2026). */
+  /** GPSR Art. 19: "atelier" = von Andréia selbst gefertigt (Angaben aus company.ts; vom Auftraggeber bestätigt 21.11.2026). */
   manufacturer?: "atelier" | null;
   originals: string[];
   madeToOrder: boolean;

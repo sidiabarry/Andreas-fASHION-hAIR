@@ -10,7 +10,7 @@ import { Words } from "../Words";
 
 type HandTexts = { kicker: string; title: string; lead: string; quote: string; by: string; cta: string; visitTitle: string; visitCta: string; imageAlt: string };
 
-/** Die Hand dahinter: Andrea, eigene Erfahrung, Zitat, Atelier-Besuch. */
+/** Die Hand dahinter: Andréia, eigene Erfahrung, Zitat, Atelier-Besuch. */
 export function Hand({ t, hours, whatsapp, whatsappNote, symbolImage }: { t: HandTexts; hours: string; whatsapp: string | null; whatsappNote: string; symbolImage: string }) {
   const a = company.address;
   return (

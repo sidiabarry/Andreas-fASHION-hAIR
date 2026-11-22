@@ -1,5 +1,5 @@
 /**
- * Logo von Andrea's Fashion Hair. EINZIGE Stelle, an der das Markenzeichen eingebunden wird.
+ * Logo von Andréia's Fashion Hair. EINZIGE Stelle, an der das Markenzeichen eingebunden wird.
  * Der Phönix ist ein Vektor (public/assets/brand/phoenix.svg); Namenszug und Claim sind echter Text.
  *
  * Varianten:
@@ -49,7 +49,7 @@ export function Logo({ variant = "lockup", claim = false, size = 40, stacked = f
     >
       {mark}
       <span className="af-logo__text">
-        <span className="af-logo__name">Andrea&apos;s Fashion Hair</span>
+        <span className="af-logo__name">Andréia&apos;s Fashion Hair</span>
         {claim ? <span className="af-logo__claim">HaarManufaktur</span> : null}
       </span>
     </span>

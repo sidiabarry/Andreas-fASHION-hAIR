@@ -39,7 +39,7 @@ await page.setContent(`<html><head><style>
   h1{margin:0;font-weight:500;font-size:54px;letter-spacing:.16em;text-transform:uppercase;color:#e8ae23;line-height:1.15}
   p{margin:18px 0 0;font-size:30px;font-style:italic;color:#e8ae23}
   small{display:block;margin-top:34px;font-family:Helvetica,Arial,sans-serif;font-size:24px;letter-spacing:.02em;color:#d8cfc6}
-</style></head><body><img src="${dataUrl}"><div><h1>Andrea's<br>Fashion Hair</h1><p>HaarManufaktur</p><small>Echthaar-Topper, Perücken und Haarsysteme<br>Iserlohn · Made in Germany</small></div></body></html>`);
+</style></head><body><img src="${dataUrl}"><div><h1>Andréia's<br>Fashion Hair</h1><p>HaarManufaktur</p><small>Echthaar-Topper, Perücken und Haarsysteme<br>Iserlohn · Made in Germany</small></div></body></html>`);
 await page.waitForTimeout(150);
 await page.screenshot({ path: join(root, "public/og.png") });
 await browser.close();

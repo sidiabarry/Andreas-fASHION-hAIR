@@ -176,7 +176,7 @@ export async function placeOrder(rawLocale: string, raw: unknown): Promise<Place
           "",
         ].join("\n");
 
-  // Zahlungsangaben direkt in die Eingangsbestätigung: gleich bezahlen oder nach Andreas Bestätigung
+  // Zahlungsangaben direkt in die Eingangsbestätigung: gleich bezahlen oder nach Andréias Bestätigung
   const tp = await getTranslations({ locale, namespace: "pay" });
   const payBlock = company.bank
     ? [
@@ -415,7 +415,7 @@ export async function sendWithdrawal(_prev: FormState, data: FormData): Promise<
         text: `Eingang: ${de.date}, ${de.time} Uhr\nSprache: ${locale}\n\n${content}`,
         to: owner,
       });
-      // In Production muss die Erklärung Andrea sicher erreichen, sonst Fehler anzeigen (kein stiller Verlust).
+      // In Production muss die Erklärung Andréia sicher erreichen, sonst Fehler anzeigen (kein stiller Verlust).
       if (ownerStatus !== "gesendet" && !mode.demo) return { error: "failed", status: "error" };
     } else if (!mode.demo) {
       return { error: "unavailable", status: "error" };
@@ -447,7 +447,7 @@ export async function subscribeNewsletter(_prev: FormState, data: FormData): Pro
   return { demo: true, status: "ok" };
 }
 
-/** Nachricht an Andrea: E-Mail und, falls eingerichtet, zusätzlich Telegram. Status = E-Mail-Status. */
+/** Nachricht an Andréia: E-Mail und, falls eingerichtet, zusätzlich Telegram. Status = E-Mail-Status. */
 async function sendOwner(mail: { replyTo?: string; subject: string; text: string; to: string }): Promise<MailStatus> {
   const [status] = await Promise.all([sendMail(mail), sendTelegram(mail.subject, `${mail.text}\n\nAntwort an: ${mail.replyTo ?? "–"}`)]);
   return status;

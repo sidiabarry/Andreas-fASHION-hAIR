@@ -1,4 +1,4 @@
-// Startseite und „Über Andrea“ – deutsche Quelltexte (Sie-Form). `node src/components/home/i18n/apply.mjs`
+// Startseite und „Über Andréia“ – deutsche Quelltexte (Sie-Form). `node src/components/home/i18n/apply.mjs`
 // schreibt sie in src/messages/de.json unter hero.*, home.* und about.*.
 // Markup: *kursiv* in Schlagzeilen (Display-Antiqua kursiv). ICU-Parameter kommen aus src/config.
 // Regeln: keine erfundenen Zahlen; Extensions sind Packungsware (kein „Unikat“, kein „von Hand gefertigt“,
@@ -8,7 +8,7 @@ export const hero = {
   line1: "Wie neu *geboren.*",
   line2: "Mehr Länge. *Mehr Fülle.*",
   line3: "Mehr *Sie selbst.*",
-  lead: "Extensions aus Echthaar, von Andrea ausgewählt und persönlich auf Ihr Haar abgestimmt. Dazu Topper, Perücken und Maßanfertigungen aus ihrem Atelier in Iserlohn.",
+  lead: "Extensions aus Echthaar, von Andréia ausgewählt und persönlich auf Ihr Haar abgestimmt. Dazu Topper, Perücken und Maßanfertigungen aus ihrem Atelier in Iserlohn.",
   chapters: "Kapitel des Films",
   ch1: "Glut",
   ch2: "Phönix",
@@ -16,7 +16,7 @@ export const hero = {
   pause: "Bewegung pausieren",
   play: "Bewegung fortsetzen",
   replay: "Noch einmal ansehen",
-  trust: ["Echthaar, persönlich ausgewählt", "Persönliche Beratung durch Andrea", "Bezahlung erst nach ihrer Bestätigung", "Versand mit {carrier}, auch international"],
+  trust: ["Echthaar, persönlich ausgewählt", "Persönliche Beratung durch Andréia", "Bezahlung erst nach ihrer Bestätigung", "Versand mit {carrier}, auch international"],
   trustLabel: "Auf einen Blick",
   filmAlt:
     "Stummer Film, der von selbst abläuft: Glut glimmt in der Dunkelheit, aus ihr steigen Phönixflügel aus Licht auf und werden zu langem, kupferfarbenem Haar auf einer hellen Kopfform.",
@@ -30,7 +30,7 @@ export const hero = {
 export const home = {
   whatsappNote: "öffnet WhatsApp",
   symbolImage: "Symbolbild",
-  dock: "Andrea fragen",
+  dock: "Andréia fragen",
   ribbonLabel: "Was Sie erwarten können",
   ribbon: [
     "Atelier in Iserlohn",
@@ -46,10 +46,10 @@ export const home = {
   ext: {
     kicker: "Extensions",
     title: "Mehr Länge. *Mehr Fülle.*",
-    lead: "Echthaar in sechs Methoden, vom Clip-in zum Selbst-Einsetzen bis zur feinen Tresse. Die Packungen hier bestellen Sie direkt. Welche Methode und wie viel Haar zu Ihnen passen, sagt Andrea Ihnen persönlich.",
+    lead: "Echthaar in sechs Methoden, vom Clip-in zum Selbst-Einsetzen bis zur feinen Tresse. Die Packungen hier bestellen Sie direkt. Welche Methode und wie viel Haar zu Ihnen passen, sagt Andréia Ihnen persönlich.",
     methodsLabel: "Sechs Methoden",
     methods: ["Clip-in", "Genius Weft", "Butterfly Weft", "Invisible Tape", "Tape-In", "Keratin-Bondings"],
-    methodsNote: "Weitere Methoden, Längen und Mengen stellt Andrea auf Anfrage zusammen.",
+    methodsNote: "Weitere Methoden, Längen und Mengen stellt Andréia auf Anfrage zusammen.",
     cta: "Alle Extensions ansehen",
     salon: "Für Salons und Friseure: Mengen anfragen",
     view: "{name}, {color} ansehen",
@@ -73,17 +73,17 @@ export const home = {
   color: {
     kicker: "Farbe und Menge",
     title: "Ihre Farbe. *Ihre Menge.*",
-    lead: "Kein Bildschirm zeigt Haarfarben ganz genau. Deshalb gleicht Andrea Ihre Farbe persönlich ab und sagt Ihnen, wie viele Packungen Sie für Ihr Ziel brauchen.",
+    lead: "Kein Bildschirm zeigt Haarfarben ganz genau. Deshalb gleicht Andréia Ihre Farbe persönlich ab und sagt Ihnen, wie viele Packungen Sie für Ihr Ziel brauchen.",
     fanLabel: "Farben im Atelier",
     customTitle: "Ihre Farbe nicht dabei?",
-    customText: "Andrea fertigt sie nach Maß.",
+    customText: "Andréia fertigt sie nach Maß.",
     stepsLabel: "So einfach geht der Farbabgleich",
     steps: [
       { title: "Foto bei Tageslicht", text: "Am Fenster, ohne Blitz, Ansatz und Längen gut zu sehen." },
-      { title: "An Andrea senden", text: "Per WhatsApp oder über das Formular, gern mit Ihrem Wunsch: mehr Länge, mehr Fülle oder beides." },
-      { title: "Persönliche Antwort", text: "Andrea sagt Ihnen, welche Farbe passt und wie viele Packungen Sie brauchen." },
+      { title: "An Andréia senden", text: "Per WhatsApp oder über das Formular, gern mit Ihrem Wunsch: mehr Länge, mehr Fülle oder beides." },
+      { title: "Persönliche Antwort", text: "Andréia sagt Ihnen, welche Farbe passt und wie viele Packungen Sie brauchen." },
     ],
-    cta: "Foto an Andrea senden",
+    cta: "Foto an Andréia senden",
     ctaForm: "Lieber per Formular anfragen",
     screenNote: "Farben am Bildschirm können abweichen.",
   },
@@ -93,7 +93,7 @@ export const home = {
     lead: "Für lichter werdendes Haar am Oberkopf, für die Stirnpartie oder für einen ganz neuen Anfang: Topper, Perücken, Pony und Haarsysteme aus Echthaar. Jedes dieser Stücke gibt es genau einmal.",
     needsLabel: "Wonach suchen Sie?",
     cta: "Topper und Perücken ansehen",
-    consult: "Unsicher, was passt? Andrea berät Sie per Foto oder im Atelier.",
+    consult: "Unsicher, was passt? Andréia berät Sie per Foto oder im Atelier.",
     unique: "Unikat",
     sold: "Verkauft",
     custom: "Nach Maß",
@@ -104,7 +104,7 @@ export const home = {
   custom: {
     kicker: "Maßanfertigung",
     title: "Ihr Stück. *Nach Maß.*",
-    lead: "Ihre Farbe, Ihre Länge, Ihre Struktur: Was Sie im Shop nicht finden, fertigt Andrea für Sie an. Topper, Perücken, Haarsysteme und Extensions.",
+    lead: "Ihre Farbe, Ihre Länge, Ihre Struktur: Was Sie im Shop nicht finden, fertigt Andréia für Sie an. Topper, Perücken, Haarsysteme und Extensions.",
     stepsLabel: "Sechs Angaben für Ihre Anfrage",
     steps: [
       { title: "System", text: "Extensions, Topper, Perücke oder Haarsystem." },
@@ -120,12 +120,12 @@ export const home = {
   },
   hand: {
     kicker: "Die Hand dahinter",
-    title: "Andrea weiß, *wie es sich anfühlt.*",
-    lead: "Seit sie 19 ist, arbeitet Andrea mit Haar, angefangen in Rio de Janeiro. Sie kennt Haarverlust aus eigener Erfahrung und trägt selbst ein Haarteil, das sie selbst gefertigt hat. Deshalb gilt bei ihr: Es muss echt sein, und es muss sich im Alltag bewähren.",
+    title: "Andréia weiß, *wie es sich anfühlt.*",
+    lead: "Seit sie 19 ist, arbeitet Andréia mit Haar, angefangen in Rio de Janeiro. Sie kennt Haarverlust aus eigener Erfahrung und trägt selbst ein Haarteil, das sie selbst gefertigt hat. Deshalb gilt bei ihr: Es muss echt sein, und es muss sich im Alltag bewähren.",
     quote: "„Ich weiß ganz genau, was Haar für einen Menschen bedeutet, weil ich es selbst erlebt habe.“",
-    by: "Andrea, Gründerin der HaarManufaktur",
-    cta: "Andreas Geschichte lesen",
-    visitTitle: "Treffen Sie Andrea im Atelier",
+    by: "Andréia, Gründerin der HaarManufaktur",
+    cta: "Andréias Geschichte lesen",
+    visitTitle: "Treffen Sie Andréia im Atelier",
     visitCta: "Termin per WhatsApp vereinbaren",
     imageAlt: "Eine Frau vor einem goldgerahmten Spiegel, die ihr Haar berührt",
   },
@@ -133,14 +133,14 @@ export const home = {
     title: "Ihre Fragen. *Ehrlich beantwortet.*",
     lead: "Was Kundinnen und Kunden wissen möchten, bevor sie sich entscheiden. Alles offen, ohne Kleingedrucktes.",
     items: [
-      { q: "Passt die Farbe zu mir?", a: "Schicken Sie Andrea ein Foto Ihres Haars bei Tageslicht. Sie vergleicht es mit den Stücken im Atelier und sagt Ihnen offen, was passt und was nicht." },
-      { q: "Wie viele Packungen brauche ich?", a: "Das hängt von Ihrem Haar und Ihrem Ziel ab. Andrea sagt es Ihnen persönlich, nachdem sie ein Foto gesehen hat. Lieber eine ehrliche Antwort als eine pauschale Tabelle." },
-      { q: "Welche Methode passt zu mir?", a: "Clip-ins setzen Sie selbst ein und nehmen sie abends wieder heraus. Tapes, Tressen und Bondings werden fachgerecht eingearbeitet. Andrea bespricht mit Ihnen, was zu Ihrem Haar und Ihrem Alltag passt." },
-      { q: "Fällt das auf?", a: "Tapes und Tressen sind flach und schmal gearbeitet. Wie unauffällig sie sitzen, hängt von Ihrem Haar und der Einarbeitung ab. Andrea sagt Ihnen ehrlich, was bei Ihnen möglich ist." },
-      { q: "Wie schnell ist es bei mir?", a: "Ab Lager in {stock} Werktagen nach Andreas Bestätigung, versendet mit {carrier}. Eine Maßanfertigung braucht {custom} Werktage, weil sie erst für Sie entsteht." },
-      { q: "Wann bezahle ich?", a: "Nicht beim Bestellen. Andrea prüft Ihre Bestellung und bestätigt sie persönlich. Erst dann erhalten Sie die Zahlungsdaten." },
+      { q: "Passt die Farbe zu mir?", a: "Schicken Sie Andréia ein Foto Ihres Haars bei Tageslicht. Sie vergleicht es mit den Stücken im Atelier und sagt Ihnen offen, was passt und was nicht." },
+      { q: "Wie viele Packungen brauche ich?", a: "Das hängt von Ihrem Haar und Ihrem Ziel ab. Andréia sagt es Ihnen persönlich, nachdem sie ein Foto gesehen hat. Lieber eine ehrliche Antwort als eine pauschale Tabelle." },
+      { q: "Welche Methode passt zu mir?", a: "Clip-ins setzen Sie selbst ein und nehmen sie abends wieder heraus. Tapes, Tressen und Bondings werden fachgerecht eingearbeitet. Andréia bespricht mit Ihnen, was zu Ihrem Haar und Ihrem Alltag passt." },
+      { q: "Fällt das auf?", a: "Tapes und Tressen sind flach und schmal gearbeitet. Wie unauffällig sie sitzen, hängt von Ihrem Haar und der Einarbeitung ab. Andréia sagt Ihnen ehrlich, was bei Ihnen möglich ist." },
+      { q: "Wie schnell ist es bei mir?", a: "Ab Lager in {stock} Werktagen nach Andréias Bestätigung, versendet mit {carrier}. Eine Maßanfertigung braucht {custom} Werktage, weil sie erst für Sie entsteht." },
+      { q: "Wann bezahle ich?", a: "Nicht beim Bestellen. Andréia prüft Ihre Bestellung und bestätigt sie persönlich. Erst dann erhalten Sie die Zahlungsdaten." },
       { q: "Und wenn es nicht passt?", a: "Es gilt das gesetzliche Widerrufsrecht von 14 Tagen. Prüfen Sie Farbe und Länge bitte, bevor Sie Tressen kürzen, einarbeiten oder Schutzfolien abziehen. Maßanfertigungen sind ausgenommen, weil sie nur für Sie entstehen." },
-      { q: "Versenden Sie ins Ausland?", a: "Ja, mit {carrier}: in die EU ab {euShip}. Für andere Länder nennt Andrea Ihnen die Versandkosten vor der Bestätigung." },
+      { q: "Versenden Sie ins Ausland?", a: "Ja, mit {carrier}: in die EU ab {euShip}. Für andere Länder nennt Andréia Ihnen die Versandkosten vor der Bestätigung." },
     ],
     returnsLink: "Widerruf im Detail",
     cta: "Persönlich beraten lassen",
@@ -149,42 +149,42 @@ export const home = {
     title: "Drei Schritte *zu Ihrem Stück.*",
     items: [
       { title: "Auswählen", text: "Im Shop, per WhatsApp oder im Atelier. Sie senden Ihre Bestellung ab, ohne zu bezahlen." },
-      { title: "Andrea bestätigt persönlich", text: "Sie prüft Ihre Bestellung noch einmal und meldet sich bei Ihnen. Erst danach bezahlen Sie." },
+      { title: "Andréia bestätigt persönlich", text: "Sie prüft Ihre Bestellung noch einmal und meldet sich bei Ihnen. Erst danach bezahlen Sie." },
       { title: "Ankommen", text: "Versand mit {carrier}: in Deutschland {deShip}, ab {freeFrom} kostenfrei. Ab Lager {stock} Werktage, nach Maß {custom} Werktage." },
     ],
     cta: "Extensions entdecken",
   },
   close: {
     title: "Wie neu *geboren.*",
-    lead: "Mehr Länge, mehr Fülle, mehr Sie selbst. Ihr Stück liegt vielleicht schon bereit. Und wenn nicht, fertigt Andrea es für Sie an.",
+    lead: "Mehr Länge, mehr Fülle, mehr Sie selbst. Ihr Stück liegt vielleicht schon bereit. Und wenn nicht, fertigt Andréia es für Sie an.",
     imageAlt: "Phönixflügel aus goldenen Haarsträhnen, die aus Glut aufsteigen",
   },
 };
 
 export const about = {
-  metaTitle: "Über Andrea",
+  metaTitle: "Über Andréia",
   metaDescription:
-    "Andrea arbeitet seit ihrem 19. Lebensjahr mit Haar, angefangen in Rio de Janeiro. Heute führt sie ihr Atelier in Iserlohn: Extensions, Topper, Perücken und Haarsysteme aus Echthaar, auch nach Maß.",
-  kicker: "Über Andrea",
+    "Andréia arbeitet seit ihrem 19. Lebensjahr mit Haar, angefangen in Rio de Janeiro. Heute führt sie ihr Atelier in Iserlohn: Extensions, Topper, Perücken und Haarsysteme aus Echthaar, auch nach Maß.",
+  kicker: "Über Andréia",
   title: "Es ist nicht nur Haar. *Es ist viel mehr.*",
-  lead: "Die Geschichte von Andreia Pereira Da Costa, die alle Andrea nennen: von Rio de Janeiro in ein Atelier in Iserlohn.",
+  lead: "Die Geschichte von Andreia Pereira Da Costa, die alle Andréia nennen: von Rio de Janeiro in ein Atelier in Iserlohn.",
   chaptersLabel: "Sieben Kapitel",
   chapters: [
     {
       label: "Rio de Janeiro",
       title: "Mit 19 *beginnt es.*",
-      text: "In Rio de Janeiro fängt Andrea an, mit Haar zu arbeiten, und bleibt viele Jahre dabei. In Brasilien hat Haar einen hohen Stellenwert. Menschen legen viel Wert darauf, weil es mehr ist als Schönheit.",
+      text: "In Rio de Janeiro fängt Andréia an, mit Haar zu arbeiten, und bleibt viele Jahre dabei. In Brasilien hat Haar einen hohen Stellenwert. Menschen legen viel Wert darauf, weil es mehr ist als Schönheit.",
       quote: "„Haare zeigen, wer du innen bist, von innen nach außen.“",
     },
     {
       label: "Neuanfang",
       title: "Ein neues Land. *Eine neue Sprache.*",
-      text: "Andrea zieht nach Deutschland. Weil sie anfangs kaum Deutsch spricht, arbeitet sie viele Jahre in der Pflege, mit Menschen mit Behinderung. Dort lernt sie, Menschen mit Geduld und Würde zu begegnen. Das prägt bis heute, wie sie berät.",
+      text: "Andréia zieht nach Deutschland. Weil sie anfangs kaum Deutsch spricht, arbeitet sie viele Jahre in der Pflege, mit Menschen mit Behinderung. Dort lernt sie, Menschen mit Geduld und Würde zu begegnen. Das prägt bis heute, wie sie berät.",
     },
     {
       label: "Selbst betroffen",
       title: "Sie weiß, *wie es sich anfühlt.*",
-      text: "Andrea kennt Haarverlust aus eigener Erfahrung. Sie trägt selbst ein Haarteil, das sie selbst gefertigt hat. Wer zu ihr kommt, spricht mit jemandem, der den Blick in den Spiegel kennt.",
+      text: "Andréia kennt Haarverlust aus eigener Erfahrung. Sie trägt selbst ein Haarteil, das sie selbst gefertigt hat. Wer zu ihr kommt, spricht mit jemandem, der den Blick in den Spiegel kennt.",
       quote: "„Ich weiß ganz genau, was Haar für einen Menschen bedeutet, weil ich es selbst erlebt habe.“",
     },
     {
@@ -195,7 +195,7 @@ export const about = {
     {
       label: "Das Atelier",
       title: "Zurück *zum Haar.*",
-      text: "Vor rund drei Jahren gründet Andrea ihr eigenes Atelier in Iserlohn und kehrt zu ihrem Handwerk zurück: Extensions, Topper, Perücken und Haarsysteme aus Echthaar, auch nach Maß.",
+      text: "Vor rund drei Jahren gründet Andréia ihr eigenes Atelier in Iserlohn und kehrt zu ihrem Handwerk zurück: Extensions, Topper, Perücken und Haarsysteme aus Echthaar, auch nach Maß.",
       quote: "„Am glücklichsten bin ich in meinem Atelier, wenn ich meine Stücke fertige.“",
     },
     {
@@ -207,21 +207,21 @@ export const about = {
     {
       label: "Antrieb",
       title: "Für *jede und jeden.*",
-      text: "Andrea möchte Menschen helfen, die sich so fühlen, wie sie sich selbst einmal gefühlt hat. Für jede Haarfarbe, jede Struktur, jede Herkunft: blond, brünett, rot, schwarz, glatt, wellig, lockig, kraus. Niemand soll denken: Das ist nicht für mich.",
+      text: "Andréia möchte Menschen helfen, die sich so fühlen, wie sie sich selbst einmal gefühlt hat. Für jede Haarfarbe, jede Struktur, jede Herkunft: blond, brünett, rot, schwarz, glatt, wellig, lockig, kraus. Niemand soll denken: Das ist nicht für mich.",
       quote: "„Mir ist wichtig, dass ich den Menschen helfe. Dann ist mein Gewissen ruhig.“",
     },
   ],
-  quoteBy: "Andrea",
+  quoteBy: "Andréia",
   colorsLabel: "Haar in allen Tönen, aus dem Atelier",
   trustTitle: "Worauf Sie sich *verlassen können.*",
   trust: [
     { title: "Echthaar, sorgfältig ausgewählt", text: "Ausgewählt von einer Frau, die seit ihrem 19. Lebensjahr mit Haar arbeitet." },
-    { title: "Persönlich bestätigt", text: "Sie bezahlen erst, wenn Andrea Ihre Bestellung geprüft und bestätigt hat." },
+    { title: "Persönlich bestätigt", text: "Sie bezahlen erst, wenn Andréia Ihre Bestellung geprüft und bestätigt hat." },
     { title: "Nach Maß, wenn nötig", text: "Was es nicht fertig gibt, entsteht im Atelier in {custom} Werktagen." },
     { title: "Versand mit {carrier}", text: "In Deutschland, in die EU und auf Anfrage weltweit." },
   ],
   visitTitle: "Kommen Sie *ins Atelier.*",
-  visitLead: "Oder schreiben Sie Andrea per WhatsApp, gern mit einem Foto Ihres Haars bei Tageslicht. Sie antwortet persönlich.",
+  visitLead: "Oder schreiben Sie Andréia per WhatsApp, gern mit einem Foto Ihres Haars bei Tageslicht. Sie antwortet persönlich.",
   visitCta: "Termin per WhatsApp vereinbaren",
   visitForm: "Anfrage per Formular",
   hoursLabel: "Öffnungszeiten",

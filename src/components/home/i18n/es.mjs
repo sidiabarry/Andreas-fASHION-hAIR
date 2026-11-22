@@ -1,10 +1,10 @@
-// Startseite und „Über Andrea“ – spanische Quelltexte. Gleiche Struktur und Regeln wie de.mjs.
+// Startseite und „Über Andréia“ – spanische Quelltexte. Gleiche Struktur und Regeln wie de.mjs.
 export const hero = {
   "kicker": "HaarManufaktur · Iserlohn",
   "line1": "Como *volver a nacer.*",
   "line2": "Más largo. *Más volumen.*",
   "line3": "Más *usted.*",
-  "lead": "Extensiones de cabello natural, elegidas por Andrea y adaptadas personalmente a su cabello. Además, toppers, pelucas y piezas a medida de su taller en Iserlohn.",
+  "lead": "Extensiones de cabello natural, elegidas por Andréia y adaptadas personalmente a su cabello. Además, toppers, pelucas y piezas a medida de su taller en Iserlohn.",
   "chapters": "Capítulos de la película",
   "ch1": "Brasa",
   "ch2": "Fénix",
@@ -14,7 +14,7 @@ export const hero = {
   "replay": "Volver a verlo",
   "trust": [
     "Cabello natural, elegido personalmente",
-    "Asesoramiento personal de Andrea",
+    "Asesoramiento personal de Andréia",
     "Pago solo tras su confirmación",
     "Envío con {carrier}, también al extranjero"
   ],
@@ -30,7 +30,7 @@ export const hero = {
 export const home = {
   "whatsappNote": "abre WhatsApp",
   "symbolImage": "Imagen ilustrativa",
-  "dock": "Preguntar a Andrea",
+  "dock": "Preguntar a Andréia",
   "ribbonLabel": "Lo que puede esperar",
   "ribbon": [
     "Atelier in Iserlohn",
@@ -46,7 +46,7 @@ export const home = {
   "ext": {
     "kicker": "Extensiones",
     "title": "Más largo. *Más volumen.*",
-    "lead": "Cabello natural en seis métodos, desde el clip-in de colocación propia hasta la cortina fina. Los paquetes de aquí se piden directamente. Qué método y cuánto cabello le convienen, se lo dice Andrea personalmente.",
+    "lead": "Cabello natural en seis métodos, desde el clip-in de colocación propia hasta la cortina fina. Los paquetes de aquí se piden directamente. Qué método y cuánto cabello le convienen, se lo dice Andréia personalmente.",
     "methodsLabel": "Seis métodos",
     "methods": [
       "Clip-in",
@@ -56,7 +56,7 @@ export const home = {
       "Tape-In",
       "Bondings de queratina"
     ],
-    "methodsNote": "Andrea prepara otros métodos, largos y cantidades bajo petición.",
+    "methodsNote": "Andréia prepara otros métodos, largos y cantidades bajo petición.",
     "cta": "Ver todas las extensiones",
     "salon": "Para salones y peluqueros: consultar cantidades",
     "view": "Ver {name}, {color}",
@@ -92,10 +92,10 @@ export const home = {
   "color": {
     "kicker": "Color y cantidad",
     "title": "Su color. *Su cantidad.*",
-    "lead": "Ninguna pantalla muestra los colores del cabello con total exactitud. Por eso Andrea compara su color personalmente y le dice cuántos paquetes necesita para lograr lo que busca.",
+    "lead": "Ninguna pantalla muestra los colores del cabello con total exactitud. Por eso Andréia compara su color personalmente y le dice cuántos paquetes necesita para lograr lo que busca.",
     "fanLabel": "Colores en el taller",
     "customTitle": "¿No encuentra su color?",
-    "customText": "Andrea lo prepara a medida.",
+    "customText": "Andréia lo prepara a medida.",
     "stepsLabel": "Así de sencillo es el ajuste de color",
     "steps": [
       {
@@ -103,15 +103,15 @@ export const home = {
         "text": "Junto a la ventana, sin flash, con la raíz y los largos bien visibles."
       },
       {
-        "title": "Envíela a Andrea",
+        "title": "Envíela a Andréia",
         "text": "Por WhatsApp o mediante el formulario, si quiere con su deseo: más largo, más volumen o ambas cosas."
       },
       {
         "title": "Respuesta personal",
-        "text": "Andrea le dice qué color le va bien y cuántos paquetes necesita."
+        "text": "Andréia le dice qué color le va bien y cuántos paquetes necesita."
       }
     ],
-    "cta": "Enviar una foto a Andrea",
+    "cta": "Enviar una foto a Andréia",
     "ctaForm": "Prefiero consultar por formulario",
     "screenNote": "Los colores en pantalla pueden variar."
   },
@@ -121,7 +121,7 @@ export const home = {
     "lead": "Para el cabello que se aclara en la coronilla, para la zona de la frente o para un comienzo totalmente nuevo: toppers, pelucas, flequillos y sistemas capilares de cabello natural. Cada una de estas piezas existe una sola vez.",
     "needsLabel": "¿Qué busca?",
     "cta": "Ver toppers y pelucas",
-    "consult": "¿No sabe qué le conviene? Andrea le asesora por foto o en el taller.",
+    "consult": "¿No sabe qué le conviene? Andréia le asesora por foto o en el taller.",
     "unique": "Pieza única",
     "sold": "Vendido",
     "custom": "A medida",
@@ -132,7 +132,7 @@ export const home = {
   "custom": {
     "kicker": "A medida",
     "title": "Su pieza. *A medida.*",
-    "lead": "Su color, su largo, su estructura: lo que no encuentre en la tienda, Andrea lo prepara para usted. Toppers, pelucas, sistemas capilares y extensiones.",
+    "lead": "Su color, su largo, su estructura: lo que no encuentre en la tienda, Andréia lo prepara para usted. Toppers, pelucas, sistemas capilares y extensiones.",
     "stepsLabel": "Seis datos para su solicitud",
     "steps": [
       {
@@ -166,12 +166,12 @@ export const home = {
   },
   "hand": {
     "kicker": "La mano detrás de todo",
-    "title": "Andrea sabe *cómo se siente.*",
-    "lead": "Andrea trabaja con cabello desde los 19 años, empezando en Río de Janeiro. Conoce la pérdida de cabello por experiencia propia y lleva ella misma una pieza que fabricó con sus manos. Por eso, para ella cuenta lo siguiente: tiene que ser auténtico y tiene que resistir el día a día.",
+    "title": "Andréia sabe *cómo se siente.*",
+    "lead": "Andréia trabaja con cabello desde los 19 años, empezando en Río de Janeiro. Conoce la pérdida de cabello por experiencia propia y lleva ella misma una pieza que fabricó con sus manos. Por eso, para ella cuenta lo siguiente: tiene que ser auténtico y tiene que resistir el día a día.",
     "quote": "«Sé muy bien lo que significa el cabello para una persona, porque yo misma lo he vivido.»",
-    "by": "Andrea, fundadora de la HaarManufaktur",
-    "cta": "Leer la historia de Andrea",
-    "visitTitle": "Conozca a Andrea en el taller",
+    "by": "Andréia, fundadora de la HaarManufaktur",
+    "cta": "Leer la historia de Andréia",
+    "visitTitle": "Conozca a Andréia en el taller",
     "visitCta": "Concertar una cita por WhatsApp",
     "imageAlt": "Una mujer ante un espejo con marco dorado, tocándose el cabello"
   },
@@ -181,27 +181,27 @@ export const home = {
     "items": [
       {
         "q": "¿El color me va bien?",
-        "a": "Envíe a Andrea una foto de su cabello con luz natural. Ella la compara con las piezas del taller y le dice con franqueza qué le va bien y qué no."
+        "a": "Envíe a Andréia una foto de su cabello con luz natural. Ella la compara con las piezas del taller y le dice con franqueza qué le va bien y qué no."
       },
       {
         "q": "¿Cuántos paquetes necesito?",
-        "a": "Depende de su cabello y de lo que quiera lograr. Andrea se lo dice personalmente después de ver una foto. Mejor una respuesta honesta que una tabla genérica."
+        "a": "Depende de su cabello y de lo que quiera lograr. Andréia se lo dice personalmente después de ver una foto. Mejor una respuesta honesta que una tabla genérica."
       },
       {
         "q": "¿Qué método me conviene?",
-        "a": "Los clip-ins los coloca usted en casa y los quita por la noche. Las cintas, las cortinas y los bondings los coloca una profesional con técnica. Andrea comenta con usted qué encaja con su cabello y su día a día."
+        "a": "Los clip-ins los coloca usted en casa y los quita por la noche. Las cintas, las cortinas y los bondings los coloca una profesional con técnica. Andréia comenta con usted qué encaja con su cabello y su día a día."
       },
       {
         "q": "¿Se nota?",
-        "a": "Las cintas y las cortinas son planas y estrechas. Lo discretas que resulten depende de su cabello y de la colocación. Andrea le dice con sinceridad qué es posible en su caso."
+        "a": "Las cintas y las cortinas son planas y estrechas. Lo discretas que resulten depende de su cabello y de la colocación. Andréia le dice con sinceridad qué es posible en su caso."
       },
       {
         "q": "¿Cuánto tarda en llegar?",
-        "a": "Desde el almacén, en {stock} días laborables tras la confirmación de Andrea, enviado con {carrier}. Una pieza a medida necesita {custom} días laborables, porque solo se elabora para usted una vez pedida."
+        "a": "Desde el almacén, en {stock} días laborables tras la confirmación de Andréia, enviado con {carrier}. Una pieza a medida necesita {custom} días laborables, porque solo se elabora para usted una vez pedida."
       },
       {
         "q": "¿Cuándo pago?",
-        "a": "No al hacer el pedido. Andrea revisa su pedido y lo confirma personalmente. Solo entonces recibe los datos de pago."
+        "a": "No al hacer el pedido. Andréia revisa su pedido y lo confirma personalmente. Solo entonces recibe los datos de pago."
       },
       {
         "q": "¿Y si no me convence?",
@@ -209,7 +209,7 @@ export const home = {
       },
       {
         "q": "¿Envían al extranjero?",
-        "a": "Sí, con {carrier}: a la UE desde {euShip}. Para otros países, Andrea le indica los gastos de envío antes de la confirmación."
+        "a": "Sí, con {carrier}: a la UE desde {euShip}. Para otros países, Andréia le indica los gastos de envío antes de la confirmación."
       }
     ],
     "returnsLink": "El desistimiento en detalle",
@@ -223,7 +223,7 @@ export const home = {
         "text": "En la tienda, por WhatsApp o en el taller. Usted envía su pedido sin pagar."
       },
       {
-        "title": "Andrea confirma personalmente",
+        "title": "Andréia confirma personalmente",
         "text": "Ella revisa su pedido una vez más y se pone en contacto con usted. Solo después paga."
       },
       {
@@ -235,34 +235,34 @@ export const home = {
   },
   "close": {
     "title": "Como *volver a nacer.*",
-    "lead": "Más largo, más volumen, más usted. Quizá su pieza ya le esté esperando. Y si no, Andrea la prepara para usted.",
+    "lead": "Más largo, más volumen, más usted. Quizá su pieza ya le esté esperando. Y si no, Andréia la prepara para usted.",
     "imageAlt": "Alas de fénix hechas de mechones dorados que se elevan desde una brasa"
   }
 };
 
 export const about = {
-  "metaTitle": "Sobre Andrea",
-  "metaDescription": "Andrea trabaja con cabello desde los 19 años, empezando en Río de Janeiro. Hoy dirige su taller en Iserlohn: extensiones, toppers, pelucas y sistemas capilares de cabello natural, también a medida.",
-  "kicker": "Sobre Andrea",
+  "metaTitle": "Sobre Andréia",
+  "metaDescription": "Andréia trabaja con cabello desde los 19 años, empezando en Río de Janeiro. Hoy dirige su taller en Iserlohn: extensiones, toppers, pelucas y sistemas capilares de cabello natural, también a medida.",
+  "kicker": "Sobre Andréia",
   "title": "No es solo cabello. *Es mucho más.*",
-  "lead": "La historia de Andreia Pereira Da Costa, a quien todos llaman Andrea: de Río de Janeiro a un taller en Iserlohn.",
+  "lead": "La historia de Andreia Pereira Da Costa, a quien todos llaman Andréia: de Río de Janeiro a un taller en Iserlohn.",
   "chaptersLabel": "Siete capítulos",
   "chapters": [
     {
       "label": "Rio de Janeiro",
       "title": "Mit 19 *beginnt es.*",
-      "text": "In Rio de Janeiro fängt Andrea an, mit Haar zu arbeiten, und bleibt viele Jahre dabei. In Brasilien hat Haar einen hohen Stellenwert. Menschen legen viel Wert darauf, weil es mehr ist als Schönheit.",
+      "text": "In Rio de Janeiro fängt Andréia an, mit Haar zu arbeiten, und bleibt viele Jahre dabei. In Brasilien hat Haar einen hohen Stellenwert. Menschen legen viel Wert darauf, weil es mehr ist als Schönheit.",
       "quote": "„Haare zeigen, wer du innen bist, von innen nach außen.“"
     },
     {
       "label": "Un nuevo comienzo",
       "title": "Un nuevo país. *Un nuevo idioma.*",
-      "text": "Andrea se traslada a Alemania. Como al principio apenas habla alemán, trabaja durante muchos años en el cuidado de personas con discapacidad. Allí aprende a tratar a las personas con paciencia y dignidad. Eso sigue marcando hoy su manera de asesorar."
+      "text": "Andréia se traslada a Alemania. Como al principio apenas habla alemán, trabaja durante muchos años en el cuidado de personas con discapacidad. Allí aprende a tratar a las personas con paciencia y dignidad. Eso sigue marcando hoy su manera de asesorar."
     },
     {
       "label": "Afectada ella misma",
       "title": "Ella sabe *cómo se siente.*",
-      "text": "Andrea conoce la pérdida de cabello por experiencia propia. Ella misma lleva una pieza que fabricó con sus manos. Quien acude a ella habla con alguien que conoce esa mirada al espejo.",
+      "text": "Andréia conoce la pérdida de cabello por experiencia propia. Ella misma lleva una pieza que fabricó con sus manos. Quien acude a ella habla con alguien que conoce esa mirada al espejo.",
       "quote": "«Sé muy bien lo que significa el cabello para una persona, porque yo misma lo he vivido.»"
     },
     {
@@ -273,7 +273,7 @@ export const about = {
     {
       "label": "El taller",
       "title": "De vuelta *al cabello.*",
-      "text": "Hace unos tres años, Andrea fundó su propio taller en Iserlohn y volvió a su oficio: extensiones, toppers, pelucas y sistemas capilares de cabello natural, también a medida.",
+      "text": "Hace unos tres años, Andréia fundó su propio taller en Iserlohn y volvió a su oficio: extensiones, toppers, pelucas y sistemas capilares de cabello natural, también a medida.",
       "quote": "«Donde más feliz soy es en mi taller, cuando elaboro mis piezas.»"
     },
     {
@@ -285,11 +285,11 @@ export const about = {
     {
       "label": "Su motivación",
       "title": "Para *todas y todos.*",
-      "text": "Andrea quiere ayudar a las personas que se sienten como ella misma se sintió una vez. Para cualquier color de cabello, cualquier estructura, cualquier origen: rubio, castaño, pelirrojo, negro, liso, ondulado, rizado, muy rizado. Que nadie piense: esto no es para mí.",
+      "text": "Andréia quiere ayudar a las personas que se sienten como ella misma se sintió una vez. Para cualquier color de cabello, cualquier estructura, cualquier origen: rubio, castaño, pelirrojo, negro, liso, ondulado, rizado, muy rizado. Que nadie piense: esto no es para mí.",
       "quote": "«Para mí es importante ayudar a las personas. Así mi conciencia está tranquila.»"
     }
   ],
-  "quoteBy": "Andrea",
+  "quoteBy": "Andréia",
   "colorsLabel": "Cabello en todos los tonos, del taller",
   "trustTitle": "En qué *puede confiar.*",
   "trust": [
@@ -299,7 +299,7 @@ export const about = {
     },
     {
       "title": "Confirmado personalmente",
-      "text": "Usted paga solo cuando Andrea ha revisado y confirmado su pedido."
+      "text": "Usted paga solo cuando Andréia ha revisado y confirmado su pedido."
     },
     {
       "title": "A medida, cuando hace falta",
@@ -311,7 +311,7 @@ export const about = {
     }
   ],
   "visitTitle": "Venga *al taller.*",
-  "visitLead": "O escriba a Andrea por WhatsApp, si quiere con una foto de su cabello con luz natural. Ella responde personalmente.",
+  "visitLead": "O escriba a Andréia por WhatsApp, si quiere con una foto de su cabello con luz natural. Ella responde personalmente.",
   "visitCta": "Concertar una cita por WhatsApp",
   "visitForm": "Consulta por formulario",
   "hoursLabel": "Horario",

@@ -125,7 +125,7 @@ export async function Footer({ demo }: { demo: boolean }) {
           </div>
         </div>
         <div className="af-foot__base">
-          <span>© {year} Andrea&apos;s Fashion Hair</span>
+          <span>© {year} Andréia&apos;s Fashion Hair</span>
           <nav aria-label={t("footer.legal")} className="af-foot__legal">
             <Link href="/impressum">{t("footer.imprint")}</Link>
             <Link href="/datenschutz">{t("footer.privacy")}</Link>

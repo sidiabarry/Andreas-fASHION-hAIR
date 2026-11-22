@@ -84,7 +84,7 @@ for (const file of unitPriceFiles) {
 }
 
 // Absolute Werbeaussagen (§ 5 UWG): nur mit Beleg bzw. abgeschwächt verwenden.
-// „Premium“ ist eine unbelegte Qualitätsstufe (Andreas eigene Angabe, kein Lieferantennachweis).
+// „Premium“ ist eine unbelegte Qualitätsstufe (Andréias eigene Angabe, kein Lieferantennachweis).
 const CLAIMS = /man sieht nichts|unsichtbar|niemand sieht|nicht zu sehen|naturbelassen|ungefärbt|double drawn|premium/i;
 type CopyEntry = CatalogEntry & { headline?: string; story?: string; benefits?: string[]; goodFor?: string; faq?: { q: string; a: string }[] };
 const productTexts = (p: CopyEntry) =>
@@ -126,7 +126,7 @@ if (noManufacturer.length) {
   findings.push({
     area: "catalog.json",
     blocking: true,
-    text: `GPSR Art. 19: Herstellerangaben (Name, Postanschrift, E-Mail; bei Herstellern außerhalb der EU die verantwortliche Person) fehlen bei ${noManufacturer.length} Produkten – Frage an Andrea: selbst gefertigt oder zugekauft?`,
+    text: `GPSR Art. 19: Herstellerangaben (Name, Postanschrift, E-Mail; bei Herstellern außerhalb der EU die verantwortliche Person) fehlen bei ${noManufacturer.length} Produkten – Frage an Andréia: selbst gefertigt oder zugekauft?`,
   });
 }
 
@@ -138,7 +138,7 @@ for (const file of ["impressum.tsx", "datenschutz.tsx", "agb.tsx", "widerruf.tsx
 }
 
 if (catalog.some((p) => (p as { availability?: string }).availability === "unknown")) {
-  findings.push({ area: "catalog.json", blocking: false, text: "Katalog mit Andrea abgleichen: Verfügbarkeit (availability) ist bei Stücken noch „unknown“" });
+  findings.push({ area: "catalog.json", blocking: false, text: "Katalog mit Andréia abgleichen: Verfügbarkeit (availability) ist bei Stücken noch „unknown“" });
 }
 
 // Harmonisierte Gewährleistungsmitteilung (DVO (EU) 2025/1960), amtliche Grafik

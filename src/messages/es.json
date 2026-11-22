@@ -1,11 +1,11 @@
 {
   "meta": {
-    "siteName": "Andrea's Fashion Hair",
+    "siteName": "Andréia's Fashion Hair",
     "claim": "HaarManufaktur",
-    "titleTemplate": "%s | Andrea's Fashion Hair",
-    "defaultTitle": "Andrea's Fashion Hair | Toppers, pelucas y sistemas capilares de cabello natural",
+    "titleTemplate": "%s | Andréia's Fashion Hair",
+    "defaultTitle": "Andréia's Fashion Hair | Toppers, pelucas y sistemas capilares de cabello natural",
     "defaultDescription": "Como volver a nacer. Extensiones, toppers, pelucas front lace, flequillos y sistemas capilares de cabello natural, de la HaarManufaktur en Iserlohn, Alemania. Cada pieza capilar es única.",
-    "ogAlt": "El fénix dorado de Andrea's Fashion Hair sobre fondo oscuro"
+    "ogAlt": "El fénix dorado de Andréia's Fashion Hair sobre fondo oscuro"
   },
   "common": {
     "skip": "Saltar al contenido",
@@ -25,7 +25,7 @@
     "breadcrumb": "Ruta de navegación"
   },
   "logo": {
-    "markAlt": "Fénix, el emblema de Andrea's Fashion Hair"
+    "markAlt": "Fénix, el emblema de Andréia's Fashion Hair"
   },
   "nav": {
     "main": "Navegación principal",
@@ -35,7 +35,7 @@
     "craft": "Artesanía",
     "story": "Historia",
     "consultation": "Asesoramiento",
-    "about": "Sobre Andrea",
+    "about": "Sobre Andréia",
     "contact": "Contacto",
     "wigs": "Pelucas y toppers",
     "custom": "A medida",
@@ -51,7 +51,7 @@
     "line1": "Como *volver a nacer.*",
     "line2": "Más largo. *Más volumen.*",
     "line3": "Más *usted.*",
-    "lead": "Hechos a mano por Andrea en Iserlohn con cabello natural fino de Vietnam: extensiones, toppers, pelucas y piezas a medida. Con asesoramiento personal sobre color y cantidad.",
+    "lead": "Hechos a mano por Andréia en Iserlohn con cabello natural fino de Vietnam: extensiones, toppers, pelucas y piezas a medida. Con asesoramiento personal sobre color y cantidad.",
     "chapters": "Capítulos de la película",
     "ch1": "Brasa",
     "ch2": "Fénix",
@@ -60,8 +60,8 @@
     "play": "Reanudar el movimiento",
     "replay": "Volver a verlo",
     "trust": [
-      "Cabello natural, hecho a mano por Andrea",
-      "Asesoramiento personal de Andrea",
+      "Cabello natural, hecho a mano por Andréia",
+      "Asesoramiento personal de Andréia",
       "Pago solo tras su confirmación",
       "Envío con {carrier}, también al extranjero"
     ],
@@ -81,7 +81,7 @@
   "home": {
     "whatsappNote": "abre WhatsApp",
     "symbolImage": "Imagen ilustrativa",
-    "dock": "Preguntar a Andrea",
+    "dock": "Preguntar a Andréia",
     "ribbonLabel": "Lo que puede esperar",
     "ribbon": [
       "Hecho a mano en Iserlohn",
@@ -97,7 +97,7 @@
     "ext": {
       "kicker": "Extensiones",
       "title": "Más largo. *Más volumen.*",
-      "lead": "Cabello natural en seis métodos, desde el clip-in de colocación propia hasta la cortina fina. Los paquetes de aquí se piden directamente. Qué método y cuánto cabello le convienen, se lo dice Andrea personalmente.",
+      "lead": "Cabello natural en seis métodos, desde el clip-in de colocación propia hasta la cortina fina. Los paquetes de aquí se piden directamente. Qué método y cuánto cabello le convienen, se lo dice Andréia personalmente.",
       "methodsLabel": "Seis métodos",
       "methods": [
         "Clip-in",
@@ -107,7 +107,7 @@
         "Tape-In",
         "Bondings de queratina"
       ],
-      "methodsNote": "Andrea prepara otros métodos, largos y cantidades bajo petición.",
+      "methodsNote": "Andréia prepara otros métodos, largos y cantidades bajo petición.",
       "cta": "Ver todas las extensiones",
       "salon": "Para salones y peluqueros: consultar cantidades",
       "view": "Ver {name}, {color}",
@@ -143,10 +143,10 @@
     "color": {
       "kicker": "Color y cantidad",
       "title": "Su color. *Su cantidad.*",
-      "lead": "Andrea ajusta su color personalmente y le dice cuántos paquetes necesita para su objetivo.",
+      "lead": "Andréia ajusta su color personalmente y le dice cuántos paquetes necesita para su objetivo.",
       "fanLabel": "Colores en el taller",
       "customTitle": "¿No encuentra su color?",
-      "customText": "Andrea lo prepara a medida.",
+      "customText": "Andréia lo prepara a medida.",
       "stepsLabel": "Así de sencillo es el ajuste de color",
       "steps": [
         {
@@ -154,15 +154,15 @@
           "text": "Junto a la ventana, sin flash, con la raíz y los largos bien visibles."
         },
         {
-          "title": "Envíela a Andrea",
+          "title": "Envíela a Andréia",
           "text": "Por WhatsApp o mediante el formulario, si quiere con su deseo: más largo, más volumen o ambas cosas."
         },
         {
           "title": "Respuesta personal",
-          "text": "Andrea le dice qué color le va bien y cuántos paquetes necesita."
+          "text": "Andréia le dice qué color le va bien y cuántos paquetes necesita."
         }
       ],
-      "cta": "Enviar una foto a Andrea",
+      "cta": "Enviar una foto a Andréia",
       "ctaForm": "Prefiero consultar por formulario"
     },
     "topper": {
@@ -171,7 +171,7 @@
       "lead": "Para más volumen en la coronilla, una frente bonita o un look totalmente nuevo: toppers, pelucas, flequillos y sistemas capilares de cabello natural. Cada una de estas piezas existe una sola vez.",
       "needsLabel": "¿Qué busca?",
       "cta": "Ver toppers y pelucas",
-      "consult": "¿No sabe qué le conviene? Andrea le asesora por foto o en el taller.",
+      "consult": "¿No sabe qué le conviene? Andréia le asesora por foto o en el taller.",
       "unique": "Pieza única",
       "sold": "Vendido",
       "custom": "A medida",
@@ -182,7 +182,7 @@
     "custom": {
       "kicker": "A medida",
       "title": "Su pieza. *A medida.*",
-      "lead": "Su color, su largo, su estructura: lo que no encuentre en la tienda, Andrea lo prepara para usted. Toppers, pelucas, sistemas capilares y extensiones.",
+      "lead": "Su color, su largo, su estructura: lo que no encuentre en la tienda, Andréia lo prepara para usted. Toppers, pelucas, sistemas capilares y extensiones.",
       "stepsLabel": "Seis datos para su solicitud",
       "steps": [
         {
@@ -191,7 +191,7 @@
         },
         {
           "title": "Largo",
-          "text": "El largo que desee. Andrea le dice qué es posible."
+          "text": "El largo que desee. Andréia le dice qué es posible."
         },
         {
           "title": "Color",
@@ -216,12 +216,12 @@
     },
     "hand": {
       "kicker": "La mano detrás de todo",
-      "title": "Andrea sabe *cómo se siente.*",
-      "lead": "Andrea trabaja con cabello desde los 19 años, empezando en Río de Janeiro. Conoce la pérdida de cabello por experiencia propia y lleva ella misma una pieza que fabricó con sus manos. Por eso, para ella cuenta lo siguiente: tiene que ser auténtico y tiene que resistir el día a día.",
+      "title": "Andréia sabe *cómo se siente.*",
+      "lead": "Andréia trabaja con cabello desde los 19 años, empezando en Río de Janeiro. Conoce la pérdida de cabello por experiencia propia y lleva ella misma una pieza que fabricó con sus manos. Por eso, para ella cuenta lo siguiente: tiene que ser auténtico y tiene que resistir el día a día.",
       "quote": "«Sé muy bien lo que significa el cabello para una persona, porque yo misma lo he vivido.»",
-      "by": "Andrea, fundadora de la HaarManufaktur",
-      "cta": "Leer la historia de Andrea",
-      "visitTitle": "Conozca a Andrea en el taller",
+      "by": "Andréia, fundadora de la HaarManufaktur",
+      "cta": "Leer la historia de Andréia",
+      "visitTitle": "Conozca a Andréia en el taller",
       "visitCta": "Concertar una cita por WhatsApp",
       "imageAlt": "Una mujer ante un espejo con marco dorado, tocándose el cabello"
     },
@@ -231,27 +231,27 @@
       "items": [
         {
           "q": "¿El color me va bien?",
-          "a": "Envíe a Andrea una foto de su cabello con luz natural. Ella la compara con las piezas del taller y le dice con franqueza qué le va bien y qué no."
+          "a": "Envíe a Andréia una foto de su cabello con luz natural. Ella la compara con las piezas del taller y le dice con franqueza qué le va bien y qué no."
         },
         {
           "q": "¿Cuántos paquetes necesito?",
-          "a": "Depende de su cabello y de lo que quiera lograr. Andrea se lo dice personalmente después de ver una foto. Mejor una respuesta honesta que una tabla genérica."
+          "a": "Depende de su cabello y de lo que quiera lograr. Andréia se lo dice personalmente después de ver una foto. Mejor una respuesta honesta que una tabla genérica."
         },
         {
           "q": "¿Qué método me conviene?",
-          "a": "Los clip-ins los coloca usted en casa y los quita por la noche. Las cintas, las cortinas y los bondings los coloca una profesional con técnica. Andrea comenta con usted qué encaja con su cabello y su día a día."
+          "a": "Los clip-ins los coloca usted en casa y los quita por la noche. Las cintas, las cortinas y los bondings los coloca una profesional con técnica. Andréia comenta con usted qué encaja con su cabello y su día a día."
         },
         {
           "q": "¿Se nota?",
-          "a": "Las tapes y las tiras son planas y estrechas y quedan pegadas a la cabeza. Andrea le dice con sinceridad qué es posible en su caso."
+          "a": "Las tapes y las tiras son planas y estrechas y quedan pegadas a la cabeza. Andréia le dice con sinceridad qué es posible en su caso."
         },
         {
           "q": "¿Cuánto tarda en llegar?",
-          "a": "Desde el almacén, en {stock} días laborables tras la confirmación de Andrea, enviado con {carrier}. Una pieza a medida necesita {custom} días laborables, porque solo se elabora para usted una vez pedida."
+          "a": "Desde el almacén, en {stock} días laborables tras la confirmación de Andréia, enviado con {carrier}. Una pieza a medida necesita {custom} días laborables, porque solo se elabora para usted una vez pedida."
         },
         {
           "q": "¿Cuándo pago?",
-          "a": "No al hacer el pedido. Andrea revisa su pedido y lo confirma personalmente. Solo entonces recibe los datos de pago."
+          "a": "No al hacer el pedido. Andréia revisa su pedido y lo confirma personalmente. Solo entonces recibe los datos de pago."
         },
         {
           "q": "¿Y si no me convence?",
@@ -259,7 +259,7 @@
         },
         {
           "q": "¿Envían al extranjero?",
-          "a": "Sí, con {carrier}: a la UE por {euShip}. Para otros países, Andrea le indica los gastos de envío antes de la confirmación."
+          "a": "Sí, con {carrier}: a la UE por {euShip}. Para otros países, Andréia le indica los gastos de envío antes de la confirmación."
         }
       ],
       "returnsLink": "El desistimiento en detalle",
@@ -273,7 +273,7 @@
           "text": "En la tienda, por WhatsApp o en el taller. Usted envía su pedido sin pagar."
         },
         {
-          "title": "Andrea confirma personalmente",
+          "title": "Andréia confirma personalmente",
           "text": "Ella revisa su pedido una vez más y se pone en contacto con usted. Puede pagar enseguida con código QR o tras su confirmación."
         },
         {
@@ -285,7 +285,7 @@
     },
     "close": {
       "title": "Como *volver a nacer.*",
-      "lead": "Más largo, más volumen, más usted. Quizá su pieza ya le esté esperando. Y si no, Andrea la prepara para usted.",
+      "lead": "Más largo, más volumen, más usted. Quizá su pieza ya le esté esperando. Y si no, Andréia la prepara para usted.",
       "imageAlt": "Alas de fénix hechas de mechones dorados que se elevan desde una brasa"
     }
   },
@@ -318,7 +318,7 @@
     "extensions": {
       "label": "Extensiones",
       "need": "Más largo y volumen",
-      "caption": "Extensiones de cabello natural en varios métodos. Los paquetes listados se pueden pedir directamente; todo lo demás lo prepara Andrea personalmente para usted."
+      "caption": "Extensiones de cabello natural en varios métodos. Los paquetes listados se pueden pedir directamente; todo lo demás lo prepara Andréia personalmente para usted."
     }
   },
   "product": {
@@ -350,7 +350,7 @@
     "compareLabel": "Mover la comparación: luz de estudio a la izquierda, foto original sin retocar a la derecha",
     "compareStudio": "Luz de estudio",
     "compareOriginal": "Foto original del taller",
-    "askWhatsapp": "¿Preguntas sobre esta pieza? Escriba a Andrea directamente por WhatsApp",
+    "askWhatsapp": "¿Preguntas sobre esta pieza? Escriba a Andréia directamente por WhatsApp",
     "askWhatsappShort": "Preguntar por WhatsApp",
     "stickyLabel": "Compra rápida",
     "unitPrice": "{amount} / 1 kg",
@@ -360,10 +360,10 @@
     "imageNoteRelit": "Imagen editada con IA.",
     "imageNoteStaged": "Imagen editada con IA.",
     "consultTitle": "Asesoramiento",
-    "consultText": "¿Dudas sobre el color, la talla o el ajuste? Andrea le responde personalmente.",
-    "consultExtensions": "¿Duda con el color o la cantidad? Envíe a Andrea una foto de su cabello con luz natural. Ella le dice con honestidad qué le va bien.",
+    "consultText": "¿Dudas sobre el color, la talla o el ajuste? Andréia le responde personalmente.",
+    "consultExtensions": "¿Duda con el color o la cantidad? Envíe a Andréia una foto de su cabello con luz natural. Ella le dice con honestidad qué le va bien.",
     "accessories": "Cuidado y accesorios del taller",
-    "accessoriesNote": "Andrea los usa ella misma en el taller.",
+    "accessoriesNote": "Andréia los usa ella misma en el taller.",
     "moreExtensions": "Más paquetes",
     "spec": {
       "title": "Características de un vistazo",
@@ -396,7 +396,7 @@
     "compareTitleStaged": "Imagen editada y foto original",
     "compareLabelStaged": "Mover la comparación: imagen editada a la izquierda, foto original sin editar a la derecha",
     "manufacturer": "Fabricado por {name}, {address}, {email}",
-    "handmade": "Hecho a mano por Andrea en {city}"
+    "handmade": "Hecho a mano por Andréia en {city}"
   },
   "price": {
     "smallBusiness": "No se aplica IVA conforme al § 19 de la ley alemana del IVA (pequeña empresa).",
@@ -406,7 +406,7 @@
   },
   "collection": {
     "title": "La colección",
-    "lead": "Hecho a mano por Andrea en Iserlohn. Cada pieza existe una sola vez, las extensiones vienen en paquetes.",
+    "lead": "Hecho a mano por Andréia en Iserlohn. Cada pieza existe una sola vez, las extensiones vienen en paquetes.",
     "available": "{count, plural, =0 {Ninguna pieza disponible} one {# pieza disponible} other {# piezas disponibles}}",
     "all": "Todo",
     "filterLabel": "Filtrar por categoría",
@@ -417,8 +417,8 @@
     "sortLength": "Largo del cabello",
     "apply": "Aplicar",
     "results": "{count, plural, one {# pieza} other {# piezas}} en esta selección",
-    "soldHint": "¿Vendida? Andrea le confecciona con gusto una pieza similar a medida.",
-    "leadExtensions": "Más largo, más volumen, más usted. Los paquetes se piden directamente. Para otros métodos, largos y cantidades, Andrea lo prepara todo personalmente.",
+    "soldHint": "¿Vendida? Andréia le confecciona con gusto una pieza similar a medida.",
+    "leadExtensions": "Más largo, más volumen, más usted. Los paquetes se piden directamente. Para otros métodos, largos y cantidades, Andréia lo prepara todo personalmente.",
     "hubLink": "Métodos, ayuda con el color y asesoramiento sobre extensiones",
     "byMethod": "Método",
     "byColor": "Color",
@@ -443,7 +443,7 @@
   },
   "cart": {
     "title": "Su cesta",
-    "lead": "Todavía no paga nada. Andrea confirma primero su pieza personalmente.",
+    "lead": "Todavía no paga nada. Andréia confirma primero su pieza personalmente.",
     "empty": "Todavía está vacía. Quizá su pieza ya esté terminada y le espere en el taller.",
     "unique": "Pieza única: solo existe una vez",
     "quantity": "Cantidad",
@@ -457,7 +457,7 @@
     "toCheckout": "Ir a pagar",
     "storageNote": "Su cesta solo se guarda en este dispositivo (en su navegador), no en nuestros servidores.",
     "inquiryTitle": "Por ahora, pedidos por consulta",
-    "inquiryLead": "La caja en línea está cerrada por el momento. Envíe su selección a Andrea como consulta o contacte con ella directamente por teléfono, correo electrónico o WhatsApp. Solo paga cuando Andrea haya confirmado su pieza.",
+    "inquiryLead": "La caja en línea está cerrada por el momento. Envíe su selección a Andréia como consulta o contacte con ella directamente por teléfono, correo electrónico o WhatsApp. Solo paga cuando Andréia haya confirmado su pieza.",
     "inquiryCta": "Enviar la selección como consulta"
   },
   "checkout": {
@@ -472,17 +472,17 @@
     "postalCode": "Código postal",
     "city": "Localidad",
     "country": "País",
-    "countryHint": "Puede pedir en línea dentro de la UE. Enviamos a todo el mundo: para otros países, envíe a Andrea una <link>consulta</link> y ella le indicará los gastos de envío antes de confirmar.",
-    "note": "Mensaje para Andrea",
+    "countryHint": "Puede pedir en línea dentro de la UE. Enviamos a todo el mundo: para otros países, envíe a Andréia una <link>consulta</link> y ella le indicará los gastos de envío antes de confirmar.",
+    "note": "Mensaje para Andréia",
     "noteHint": "Por ejemplo, una pregunta sobre el color o la sujeción. Por favor, no indique datos de salud.",
     "items": "Artículos",
     "deliveryAddress": "Dirección de entrega",
     "deliveryTime": "Plazo de entrega",
-    "deliveryTimeDe": "Normalmente de {from} a {to} días laborables tras la confirmación de Andrea, envío con {carrier}.",
-    "deliveryTimeEu": "Normalmente de {from} a {to} días laborables tras la confirmación de Andrea, envío con {carrier}. A otros países de la UE puede tardar unos días más.",
+    "deliveryTimeDe": "Normalmente de {from} a {to} días laborables tras la confirmación de Andréia, envío con {carrier}.",
+    "deliveryTimeEu": "Normalmente de {from} a {to} días laborables tras la confirmación de Andréia, envío con {carrier}. A otros países de la UE puede tardar unos días más.",
     "deliveryCustom": "Las piezas a medida necesitan de {mFrom} a {mTo} días laborables.",
     "payment": "Pago",
-    "paymentText": "No se carga nada automáticamente. Tras enviar, paga por transferencia con un código QR en su app bancaria, enseguida o tras la confirmación de Andrea. PayPal si lo desea.",
+    "paymentText": "No se carga nada automáticamente. Tras enviar, paga por transferencia con un código QR en su app bancaria, enseguida o tras la confirmación de Andréia. PayPal si lo desea.",
     "total": "Total",
     "shippingFree": "gratis",
     "consentsLegend": "Conformidad",
@@ -498,9 +498,9 @@
     "metaTitle": "Su pedido",
     "number": "Número de pedido {id}",
     "thanks": "Gracias, {name}. Hemos recibido su pedido.",
-    "lead": "Andrea revisa ahora su pieza una vez más a mano y le escribirá a {email}. Puede pagar aquí mismo o tras su confirmación.",
+    "lead": "Andréia revisa ahora su pieza una vez más a mano y le escribirá a {email}. Puede pagar aquí mismo o tras su confirmación.",
     "mailSent": "El acuse de recibo va de camino a su correo electrónico.",
-    "mailNotSent": "No se ha podido enviar el acuse de recibo por correo electrónico en este momento. Su pedido está guardado igualmente; Andrea se pondrá en contacto con usted.",
+    "mailNotSent": "No se ha podido enviar el acuse de recibo por correo electrónico en este momento. Su pedido está guardado igualmente; Andréia se pondrá en contacto con usted.",
     "notFound": "No encontramos este pedido.",
     "notFoundLead": "Compruebe el enlace de su confirmación.",
     "demoGone": "En el modo de vista previa, los pedidos solo se guardan brevemente en memoria. Este ya no está disponible.",
@@ -522,13 +522,13 @@
     },
     "intro": {
       "beratung": {
-        "title": "Andrea responde personalmente.",
+        "title": "Andréia responde personalmente.",
         "lead": "Describa lo que desea. No hace falta una foto; para empezar basta con una descripción sincera.",
         "hint": "Por ejemplo: su color de cabello, el largo que le gustaría llevar y si busca un topper o un sistema capilar."
       },
       "extensions": {
         "title": "Sus extensiones, preparadas para usted.",
-        "lead": "Indíquenos el método, el largo deseado y el color de su cabello. Andrea le responderá con una propuesta y un precio fijo.",
+        "lead": "Indíquenos el método, el largo deseado y el color de su cabello. Andréia le responderá con una propuesta y un precio fijo.",
         "hint": "Por ejemplo: tape-in, unos 50 cm, rubio medio, para cabello fino."
       },
       "massanfertigung": {
@@ -543,7 +543,7 @@
       },
       "bestellung": {
         "title": "Su selección, confirmada personalmente.",
-        "lead": "Envíe su selección a Andrea. Ella revisa las piezas y le escribe con el precio total, los gastos de envío y los siguientes pasos. Con esta consulta todavía no compra nada.",
+        "lead": "Envíe su selección a Andréia. Ella revisa las piezas y le escribe con el precio total, los gastos de envío y los siguientes pasos. Con esta consulta todavía no compra nada.",
         "hint": "Por ejemplo, su dirección de entrega o una pregunta sobre el color."
       }
     },
@@ -557,12 +557,12 @@
     "privacy": "He leído la <link>política de privacidad</link>. Mis datos solo se usarán para responder a mi consulta.",
     "submit": "Enviar consulta",
     "doneKicker": "Consulta enviada",
-    "doneTitle": "Gracias. Andrea se pondrá en contacto con usted.",
+    "doneTitle": "Gracias. Andréia se pondrá en contacto con usted.",
     "doneLead": "Lee cada mensaje ella misma y responde por correo electrónico.",
     "doneDemo": "Modo de vista previa: esta consulta no se ha enviado, solo se ha guardado para pruebas.",
     "failed": "No se ha podido enviar su consulta. Inténtelo de nuevo o escriba directamente a {email}.",
     "unavailableTitle": "El formulario no está disponible en este momento.",
-    "unavailable": "Escriba directamente un correo electrónico a Andrea, llámela o use WhatsApp. Así su mensaje no se perderá.",
+    "unavailable": "Escriba directamente un correo electrónico a Andréia, llámela o use WhatsApp. Así su mensaje no se perderá.",
     "contactAlt": "¿Prefiere el contacto directo?",
     "method": "Método",
     "methodUnsure": "Todavía no lo sé",
@@ -572,33 +572,33 @@
     "amountHint": "Por ejemplo, número de mechones o gramos, si lo sabe.",
     "company": "Salón o empresa",
     "contactPerson": "Persona de contacto",
-    "salonNote": "Para salones, Andrea elabora una oferta individual. Las condiciones generales de la tienda se aplican a consumidores.",
+    "salonNote": "Para salones, Andréia elabora una oferta individual. Las condiciones generales de la tienda se aplican a consumidores.",
     "country": "País de entrega",
-    "countryHint": "Para países fuera de la UE, Andrea le indica los gastos de envío antes de confirmar."
+    "countryHint": "Para países fuera de la UE, Andréia le indica los gastos de envío antes de confirmar."
   },
   "about": {
-    "metaTitle": "Sobre Andrea",
-    "metaDescription": "Andrea trabaja con cabello desde los 19 años, empezando en Río de Janeiro. Hoy dirige su taller en Iserlohn: extensiones, toppers, pelucas y sistemas capilares de cabello natural, también a medida.",
-    "kicker": "Sobre Andrea",
+    "metaTitle": "Sobre Andréia",
+    "metaDescription": "Andréia trabaja con cabello desde los 19 años, empezando en Río de Janeiro. Hoy dirige su taller en Iserlohn: extensiones, toppers, pelucas y sistemas capilares de cabello natural, también a medida.",
+    "kicker": "Sobre Andréia",
     "title": "No es solo cabello. *Es mucho más.*",
-    "lead": "La historia de Andreia Pereira Da Costa, a quien todos llaman Andrea: de Río de Janeiro a un taller en Iserlohn.",
+    "lead": "La historia de Andréia Pereira Da Costa: de Río de Janeiro a un taller en Iserlohn.",
     "chaptersLabel": "Siete capítulos",
     "chapters": [
       {
         "label": "Rio de Janeiro",
         "title": "Mit 19 *beginnt es.*",
-        "text": "In Rio de Janeiro fängt Andrea an, mit Haar zu arbeiten, und bleibt viele Jahre dabei. In Brasilien hat Haar einen hohen Stellenwert. Menschen legen viel Wert darauf, weil es mehr ist als Schönheit.",
+        "text": "In Rio de Janeiro fängt Andréia an, mit Haar zu arbeiten, und bleibt viele Jahre dabei. In Brasilien hat Haar einen hohen Stellenwert. Menschen legen viel Wert darauf, weil es mehr ist als Schönheit.",
         "quote": "„Haare zeigen, wer du innen bist, von innen nach außen.“"
       },
       {
         "label": "Un nuevo comienzo",
         "title": "Un nuevo país. *Un nuevo idioma.*",
-        "text": "Andrea se traslada a Alemania. Como al principio apenas habla alemán, trabaja durante muchos años en el cuidado de personas con discapacidad. Allí aprende a tratar a las personas con paciencia y dignidad. Eso sigue marcando hoy su manera de asesorar."
+        "text": "Andréia se traslada a Alemania. Como al principio apenas habla alemán, trabaja durante muchos años en el cuidado de personas con discapacidad. Allí aprende a tratar a las personas con paciencia y dignidad. Eso sigue marcando hoy su manera de asesorar."
       },
       {
         "label": "Afectada ella misma",
         "title": "Ella sabe *cómo se siente.*",
-        "text": "Andrea conoce la pérdida de cabello por experiencia propia. Ella misma lleva una pieza que fabricó con sus manos. Quien acude a ella habla con alguien que conoce esa mirada al espejo.",
+        "text": "Andréia conoce la pérdida de cabello por experiencia propia. Ella misma lleva una pieza que fabricó con sus manos. Quien acude a ella habla con alguien que conoce esa mirada al espejo.",
         "quote": "«Sé muy bien lo que significa el cabello para una persona, porque yo misma lo he vivido.»"
       },
       {
@@ -609,7 +609,7 @@
       {
         "label": "El taller",
         "title": "De vuelta *al cabello.*",
-        "text": "Hace unos tres años, Andrea fundó su propio taller en Iserlohn y volvió a su oficio: extensiones, toppers, pelucas y sistemas capilares de cabello natural, también a medida.",
+        "text": "Hace unos tres años, Andréia fundó su propio taller en Iserlohn y volvió a su oficio: extensiones, toppers, pelucas y sistemas capilares de cabello natural, también a medida.",
         "quote": "«Donde más feliz soy es en mi taller, cuando elaboro mis piezas.»"
       },
       {
@@ -621,11 +621,11 @@
       {
         "label": "Su motivación",
         "title": "Para *todas y todos.*",
-        "text": "Andrea quiere ayudar a las personas que se sienten como ella misma se sintió una vez. Para cualquier color de cabello, cualquier estructura, cualquier origen: rubio, castaño, pelirrojo, negro, liso, ondulado, rizado, muy rizado. Que nadie piense: esto no es para mí.",
+        "text": "Andréia quiere ayudar a las personas que se sienten como ella misma se sintió una vez. Para cualquier color de cabello, cualquier estructura, cualquier origen: rubio, castaño, pelirrojo, negro, liso, ondulado, rizado, muy rizado. Que nadie piense: esto no es para mí.",
         "quote": "«Para mí es importante ayudar a las personas. Así mi conciencia está tranquila.»"
       }
     ],
-    "quoteBy": "Andrea",
+    "quoteBy": "Andréia",
     "colorsLabel": "Cabello en muchos tonos, del taller",
     "trustTitle": "En qué *puede confiar.*",
     "trust": [
@@ -635,11 +635,11 @@
       },
       {
         "title": "Confirmado personalmente",
-        "text": "Paga enseguida con código QR o solo cuando Andrea haya revisado y confirmado su pedido."
+        "text": "Paga enseguida con código QR o solo cuando Andréia haya revisado y confirmado su pedido."
       },
       {
         "title": "A medida, cuando hace falta",
-        "text": "Lo que no existe ya hecho, Andrea lo elabora en el taller. Plazo de entrega: {custom} días laborables."
+        "text": "Lo que no existe ya hecho, Andréia lo elabora en el taller. Plazo de entrega: {custom} días laborables."
       },
       {
         "title": "Envío con {carrier}",
@@ -647,7 +647,7 @@
       }
     ],
     "visitTitle": "Venga *al taller.*",
-    "visitLead": "O escriba a Andrea por WhatsApp, si quiere con una foto de su cabello con luz natural. Ella responde personalmente.",
+    "visitLead": "O escriba a Andréia por WhatsApp, si quiere con una foto de su cabello con luz natural. Ella responde personalmente.",
     "visitCta": "Concertar una cita por WhatsApp",
     "visitForm": "Consulta por formulario",
     "hoursLabel": "Horario",
@@ -661,13 +661,13 @@
   },
   "consult": {
     "kicker": "Asesoramiento privado",
-    "title": "Conozca a Andrea en el taller",
+    "title": "Conozca a Andréia en el taller",
     "lead": "¿No está segura de lo que busca? Concierte una cita personal y descubra texturas, colores y ajustes con calma.",
     "cta": "Concertar asesoramiento"
   },
   "contact": {
     "metaTitle": "Contacto",
-    "metaDescription": "Andrea's Fashion Hair, Flehmestr. 2, 58642 Iserlohn, Alemania. Teléfono, correo electrónico, WhatsApp y horario del taller.",
+    "metaDescription": "Andréia's Fashion Hair, Flehmestr. 2, 58642 Iserlohn, Alemania. Teléfono, correo electrónico, WhatsApp y horario del taller.",
     "kicker": "Póngase en contacto",
     "title": "Nos alegrará saber de usted.",
     "lead": "Escríbanos, llámenos o visite el taller con cita previa.",
@@ -693,10 +693,10 @@
     "range": "{from} a {to}"
   },
   "footer": {
-    "claim": "Extensiones de cabello natural, pelucas y toppers del taller de Andrea en Iserlohn. Elaborados a medida si lo desea.",
+    "claim": "Extensiones de cabello natural, pelucas y toppers del taller de Andréia en Iserlohn. Elaborados a medida si lo desea.",
     "collection": "Colección",
     "atelier": "Taller",
-    "story": "La historia de Andrea",
+    "story": "La historia de Andréia",
     "faq": "Preguntas frecuentes",
     "custom": "A medida",
     "service": "Servicio",
@@ -709,13 +709,13 @@
     "withdrawal": "Derecho de desistimiento",
     "madeIn": "Made in Germany",
     "shippedWith": "Envío con {carrier}",
-    "social": "Andrea's Fashion Hair en redes sociales",
-    "instagram": "Andrea's Fashion Hair en Instagram",
-    "facebook": "Andrea's Fashion Hair en Facebook",
-    "whatsapp": "Escribir a Andrea's Fashion Hair por WhatsApp",
+    "social": "Andréia's Fashion Hair en redes sociales",
+    "instagram": "Andréia's Fashion Hair en Instagram",
+    "facebook": "Andréia's Fashion Hair en Facebook",
+    "whatsapp": "Escribir a Andréia's Fashion Hair por WhatsApp",
     "socialNote": "Enlaces externos. La simple visita a esta página no transmite ningún dato a estos servicios.",
     "newsTitle": "Ver primero las piezas nuevas",
-    "newsNote": "Cada pieza capilar existe una sola vez. Siga a Andrea en Instagram, donde muestra primero las piezas nuevas.",
+    "newsNote": "Cada pieza capilar existe una sola vez. Siga a Andréia en Instagram, donde muestra primero las piezas nuevas.",
     "extensionsHub": "Extensiones: métodos y asesoramiento"
   },
   "newsletter": {
@@ -731,7 +731,7 @@
     "metaTitle": "Desistir del contrato",
     "kicker": "Función de desistimiento",
     "title": "Desistir del contrato",
-    "lead": "Aquí puede desistir de un contrato celebrado en línea con Andrea's Fashion Hair. No necesita una cuenta. No tiene que indicar ningún motivo.",
+    "lead": "Aquí puede desistir de un contrato celebrado en línea con Andréia's Fashion Hair. No necesita una cuenta. No tiene que indicar ningún motivo.",
     "name": "Su nombre",
     "email": "Correo electrónico para el acuse de recibo",
     "orderNumber": "Número de pedido",
@@ -749,7 +749,7 @@
     "doneLead": "Recibido el {date} a las {time}. Se envía a {email} un acuse de recibo con el contenido de su declaración.",
     "doneMailFailed": "No se ha podido enviar el acuse de recibo por correo electrónico en este momento. Guarde esta página (imprímala o guárdela como PDF) y escriba además a {email}.",
     "doneDemo": "Modo de vista previa: este desistimiento solo se ha guardado para pruebas y no se ha enviado.",
-    "doneNote": "La confirmación acredita la recepción de su declaración. Andrea se pondrá en contacto con usted con los siguientes pasos para la devolución.",
+    "doneNote": "La confirmación acredita la recepción de su declaración. Andréia se pondrá en contacto con usted con los siguientes pasos para la devolución.",
     "unavailableTitle": "La función de desistimiento no funciona en este momento.",
     "unavailable": "Puede declarar su desistimiento en cualquier momento sin formalidades, por ejemplo por correo electrónico a {email} o por correo postal a {address}. No es necesario indicar ningún motivo.",
     "otherWays": "También puede declarar su desistimiento sin formalidades por correo electrónico o postal. Todo lo demás figura en la <link>información sobre el desistimiento</link>.",
@@ -765,11 +765,11 @@
     "terms": "Condiciones generales",
     "withdrawal": "Información sobre el desistimiento",
     "shipping": "Envío y pago",
-    "imprintDescription": "Identificación del proveedor Andrea's Fashion Hair, Iserlohn, Alemania.",
-    "privacyDescription": "Cómo trata Andrea's Fashion Hair sus datos.",
-    "termsDescription": "Condiciones generales de Andrea's Fashion Hair.",
+    "imprintDescription": "Identificación del proveedor Andréia's Fashion Hair, Iserlohn, Alemania.",
+    "privacyDescription": "Cómo trata Andréia's Fashion Hair sus datos.",
+    "termsDescription": "Condiciones generales de Andréia's Fashion Hair.",
     "withdrawalDescription": "Información sobre el desistimiento y modelo de formulario de desistimiento.",
-    "shippingDescription": "Gastos de envío, plazos de entrega y pago en Andrea's Fashion Hair.",
+    "shippingDescription": "Gastos de envío, plazos de entrega y pago en Andréia's Fashion Hair.",
     "withdrawCta": "Desistir del contrato"
   },
   "notFound": {
@@ -803,14 +803,14 @@
   },
   "mail": {
     "greeting": "Hola, {name}:",
-    "orderIntro": "gracias por su pedido en Andrea's Fashion Hair. Lo recibimos el {date} a las {time}.",
+    "orderIntro": "gracias por su pedido en Andréia's Fashion Hair. Lo recibimos el {date} a las {time}.",
     "orderItems": "Su pedido:",
     "orderShipping": "Envío: {amount}",
     "orderTotal": "Total: {amount}",
     "orderLink": "Ver su pedido en línea: {url}",
     "orderWithdraw": "Desistir del contrato: {url}",
     "withdrawalIntro": "Recibimos su declaración de desistimiento el {date} a las {time}. Este correo confirma la recepción y contiene el contenido de su declaración:",
-    "withdrawalOutro": "Andrea se pondrá en contacto con usted con los siguientes pasos para la devolución."
+    "withdrawalOutro": "Andréia se pondrá en contacto con usted con los siguientes pasos para la devolución."
   },
   "checkoutLegal": {
     "buyButton": "Pedido con obligación de pago",
@@ -828,9 +828,9 @@
     "returns": "Derecho de desistimiento de 14 días desde la recepción de la mercancía, sin indicar motivos. Las excepciones (p. ej., piezas a medida) figuran en la <link>información sobre el desistimiento</link>.",
     "shipping": "Envío a Alemania {de}, gratis a partir de {free} de compra. A la UE {eu}.",
     "delivery": "Plazo de entrega de piezas en stock: de {from} a {to} días laborables con {carrier}; piezas a medida, de {mFrom} a {mTo} días laborables.",
-    "contact": "Su persona de contacto: Andrea, teléfono <tel>{phone}</tel>",
+    "contact": "Su persona de contacto: Andréia, teléfono <tel>{phone}</tel>",
     "atelier": "Taller en {city}, asesoramiento con cita previa",
-    "payLater": "Usted decide cuándo pagar: enseguida con código QR o tras la confirmación personal de Andrea. Si una pieza no está disponible, le devolvemos el dinero sin demora.",
+    "payLater": "Usted decide cuándo pagar: enseguida con código QR o tras la confirmación personal de Andréia. Si una pieza no está disponible, le devolvemos el dinero sin demora.",
     "world": "Envíos a todo el mundo: para países fuera de la UE le indicamos los gastos de envío antes de confirmar. Allí pueden aplicarse aranceles e impuestos de importación."
   },
   "objections": {
@@ -838,19 +838,19 @@
     "visibleQ": "¿Se nota que llevo un postizo?",
     "visibleA": "Para eso está hecha la base nano skin: cada pelo se implanta por separado, así la raya se parece a su propio cuero cabelludo.",
     "colorQ": "¿El color combina con mi cabello?",
-    "colorA": "Envíe a Andrea una foto de su cabello a la luz del día, lo más fácil por WhatsApp. Ella le dirá con sinceridad si le va bien.",
+    "colorA": "Envíe a Andréia una foto de su cabello a la luz del día, lo más fácil por WhatsApp. Ella le dirá con sinceridad si le va bien.",
     "holdQ": "¿Cómo se sujeta la pieza?",
     "holdClips": "Con pequeños clips en su propio cabello. Usted misma coloca la pieza y la retira, sin pegamento ni cita en la peluquería.",
-    "holdOther": "Andrea le explica personalmente qué sujeción le conviene.",
+    "holdOther": "Andréia le explica personalmente qué sujeción le conviene.",
     "fitQ": "¿Se adapta a la forma de mi cabeza?",
-    "fitBase": "La base mide {base} cm. ¿Duda? Envíe a Andrea las medidas de la zona que quiere cubrir.",
-    "fitNoBase": "Andrea le dice con gusto si le sienta bien.",
+    "fitBase": "La base mide {base} cm. ¿Duda? Envíe a Andréia las medidas de la zona que quiere cubrir.",
+    "fitNoBase": "Andréia le dice con gusto si le sienta bien.",
     "returnQ": "¿Y si no me queda bien?",
     "returnA": "Tiene 14 días de desistimiento desde la recepción. Lo demás figura en la información sobre desistimiento.",
     "payQ": "¿Cuándo pago?",
-    "payA": "Cuando quiera: justo después del pedido con código QR en su app bancaria, o tras la confirmación personal de Andrea. No se carga nada automáticamente. Si una pieza no está disponible, le devolvemos el dinero sin demora.",
+    "payA": "Cuando quiera: justo después del pedido con código QR en su app bancaria, o tras la confirmación personal de Andréia. No se carga nada automáticamente. Si una pieza no está disponible, le devolvemos el dinero sin demora.",
     "packQ": "¿Cuántos paquetes necesito?",
-    "packA": "Andrea le dice personalmente cuántos paquetes encajan con su cabello y su deseo, lo más fácil por WhatsApp."
+    "packA": "Andréia le dice personalmente cuántos paquetes encajan con su cabello y su deseo, lo más fácil por WhatsApp."
   },
   "drawer": {
     "title": "En su cesta",
@@ -885,13 +885,13 @@
     "progressOrder": "Pedir",
     "progressDone": "Confirmación",
     "undecidedTitle": "¿Todavía no está segura?",
-    "undecided": "Envíe su selección como consulta o escriba a Andrea por WhatsApp. Solo paga después de su confirmación.",
+    "undecided": "Envíe su selección como consulta o escriba a Andréia por WhatsApp. Solo paga después de su confirmación.",
     "undecidedCta": "Enviar como consulta",
     "fieldsMissing": "Rellene los campos marcados."
   },
   "extensions": {
     "title": "Extensiones",
-    "lead": "Más largo, más volumen, más usted. Los paquetes de abajo se piden directamente. Para otros métodos, largos y cantidades, Andrea lo prepara todo personalmente y le indica un precio fijo.",
+    "lead": "Más largo, más volumen, más usted. Los paquetes de abajo se piden directamente. Para otros métodos, largos y cantidades, Andréia lo prepara todo personalmente y le indica un precio fijo.",
     "methodsTitle": "Seis métodos",
     "butterfly": "Butterfly Weft",
     "butterflyText": "Una cortina (weft) especialmente fina y flexible que queda plana sobre la cabeza.",
@@ -907,20 +907,20 @@
     "clipText": "Piezas listas para colocar usted misma con clips, sin ir a la peluquería. Por ejemplo, para más largo si su cabello llega a los hombros.",
     "formTitle": "Consultar extensiones",
     "salonTitle": "Para salones y peluqueras",
-    "salonText": "¿Quiere adquirir extensiones de cabello natural en cantidad para su salón? Andrea le hará una oferta individual.",
+    "salonText": "¿Quiere adquirir extensiones de cabello natural en cantidad para su salón? Andréia le hará una oferta individual.",
     "salonCta": "Consultar como salón",
     "otherTitle": "¿Otro método, largo o cantidad?",
-    "otherText": "Lo que no encuentre aquí, Andrea se lo prepara bajo consulta. Los salones y peluqueras también reciben una oferta personal.",
+    "otherText": "Lo que no encuentre aquí, Andréia se lo prepara bajo consulta. Los salones y peluqueras también reciben una oferta personal.",
     "metaTitle": "Extensiones de cabello natural: métodos, color, asesoramiento",
     "heroTitle": "Más largo, más volumen, más usted.",
-    "heroLead": "Extensiones de cabello natural, hechas a mano por Andrea en Iserlohn. Los paquetes se piden directamente, todo lo demás lo prepara ella personalmente para usted.",
+    "heroLead": "Extensiones de cabello natural, hechas a mano por Andréia en Iserlohn. Los paquetes se piden directamente, todo lo demás lo prepara ella personalmente para usted.",
     "shopCta": "Ver los paquetes",
     "adviceCta": "Solicitar asesoramiento",
-    "methodsLead": "Cuál encaja con su cabello y su día a día, lo decide con Andrea.",
+    "methodsLead": "Cuál encaja con su cabello y su día a día, lo decide con Andréia.",
     "inShop": "{count, plural, one {# paquete en la tienda} other {# paquetes en la tienda}}",
     "onRequest": "Bajo petición",
     "colorTitle": "Encontrar el color adecuado",
-    "colorLead": "Andrea compara personalmente su cabello con la pieza.",
+    "colorLead": "Andréia compara personalmente su cabello con la pieza.",
     "colorSteps": {
       "light": {
         "title": "Aproveche la luz natural",
@@ -931,13 +931,13 @@
         "text": "Lo más sencillo es por WhatsApp; si no, con una consulta."
       },
       "answer": {
-        "title": "Andrea responde",
+        "title": "Andréia responde",
         "text": "Ella le dice con honestidad qué tono le va bien, aunque no sea ninguno de la tienda."
       }
     },
     "packKicker": "Asesoramiento",
     "packTitle": "¿Cuántos paquetes necesito?",
-    "packText": "Andrea le dice personalmente cuántos paquetes necesita. Pregúntele antes de pedir.",
+    "packText": "Andréia le dice personalmente cuántos paquetes necesita. Pregúntele antes de pedir.",
     "packWhatsapp": "Preguntar por WhatsApp",
     "packAsk": "O enviar una consulta",
     "productsTitle": "Extensiones en la tienda",
@@ -947,7 +947,7 @@
     "metaTitle": "Solicitar una pieza a medida",
     "kicker": "A medida",
     "title": "Una pieza que nace solo para usted.",
-    "lead": "El largo, el color, la estructura y la cantidad se adaptan a usted. En seis pasos breves le cuenta a Andrea lo que desea. Ella se pone en contacto con usted personalmente.",
+    "lead": "El largo, el color, la estructura y la cantidad se adaptan a usted. En seis pasos breves le cuenta a Andréia lo que desea. Ella se pone en contacto con usted personalmente.",
     "timing": "Plazo de entrega dentro de Alemania: de {mFrom} a {mTo} días laborables, una vez recibidos todos los datos y –con pago anticipado o PayPal– su pago. Las piezas a medida están excluidas del derecho de desistimiento, porque se elaboran solo para usted.",
     "stepOf": "Paso {step} de {total}",
     "next": "Siguiente",
@@ -957,7 +957,7 @@
     "strip": {
       "kicker": "A medida",
       "title": "¿No encuentra su color o su largo?",
-      "text": "Andrea lo confecciona a medida: sistema, longitud, color, textura y cantidad a su gusto.",
+      "text": "Andréia lo confecciona a medida: sistema, longitud, color, textura y cantidad a su gusto.",
       "cta": "Solicitar una pieza a medida"
     },
     "steps": {
@@ -972,7 +972,7 @@
       },
       "color": {
         "title": "¿Qué color?",
-        "hint": "Describa el tono con sus propias palabras. Una foto de su cabello con luz natural puede enviársela a Andrea después de la consulta, por WhatsApp o respondiendo a su correo.",
+        "hint": "Describa el tono con sus propias palabras. Una foto de su cabello con luz natural puede enviársela a Andréia después de la consulta, por WhatsApp o respondiendo a su correo.",
         "label": "Color del cabello"
       },
       "structure": {
@@ -981,12 +981,12 @@
       },
       "amount": {
         "title": "¿Qué cantidad?",
-        "hint": "Por ejemplo, el número de paquetes o los gramos. Si no lo sabe, deje el campo vacío. Andrea le asesora personalmente.",
+        "hint": "Por ejemplo, el número de paquetes o los gramos. Si no lo sabe, deje el campo vacío. Andréia le asesora personalmente.",
         "label": "Cantidad"
       },
       "contact": {
-        "title": "¿Adónde puede responderle Andrea?",
-        "hint": "Con esta consulta todavía no compra nada. Andrea se pone en contacto con una propuesta y un precio cerrado."
+        "title": "¿Adónde puede responderle Andréia?",
+        "hint": "Con esta consulta todavía no compra nada. Andréia se pone en contacto con una propuesta y un precio cerrado."
       }
     },
     "systems": {
@@ -1025,13 +1025,13 @@
     "copy": "Copiar",
     "copied": "Copiado",
     "copyLabel": "Copiar {label}",
-    "instant": "Con una transferencia inmediata el dinero suele llegar a Andrea en segundos.",
-    "when": "Puede pagar ahora o tras la confirmación de Andrea. Si una pieza no está disponible, le devolvemos el dinero sin demora.",
+    "instant": "Con una transferencia inmediata el dinero suele llegar a Andréia en segundos.",
+    "when": "Puede pagar ahora o tras la confirmación de Andréia. Si una pieza no está disponible, le devolvemos el dinero sin demora.",
     "paypal": "¿Prefiere PayPal? Un clic le lleva a PayPal con el importe y el número de pedido ya rellenados.",
-    "mailTitle": "Cómo pagar (ahora o tras la confirmación de Andrea):",
+    "mailTitle": "Cómo pagar (ahora o tras la confirmación de Andréia):",
     "mailQr": "Código QR para su app bancaria: {url}",
     "paypalButton": "Pagar con PayPal",
-    "paypalItem": "Pedido {id} · Andrea's Fashion Hair",
+    "paypalItem": "Pedido {id} · Andréia's Fashion Hair",
     "mailPaypal": "¿Prefiere PayPal? {url}"
   },
   "shop": {
@@ -1039,7 +1039,7 @@
     "showCm": "Mostrar medidas en centímetros",
     "neutralBox": "Envío en una caja DHL neutra, sin indicar el contenido.",
     "videoOption": "Recibir antes del envío un breve vídeo de mi pieza a la luz del día (gratis)",
-    "videoHint": "Andrea se lo envía por WhatsApp a su número, unos 10 segundos."
+    "videoHint": "Andréia se lo envía por WhatsApp a su número, unos 10 segundos."
   },
   "pdp": {
     "helpersTitle": "¿Es para mí? Comprobación rápida",
@@ -1051,7 +1051,7 @@
     "zoneCollar": "a la clavícula",
     "zoneChest": "a la altura del pecho",
     "zoneWaist": "hasta la cintura o más abajo",
-    "heightNote": "Orientación según las proporciones del cuerpo. El cabello sigue la forma de la cabeza y parece algo más corto. Andrea le asesora con gusto.",
+    "heightNote": "Orientación según las proporciones del cuerpo. El cabello sigue la forma de la cabeza y parece algo más corto. Andréia le asesora con gusto.",
     "baseTitle": "¿Me quedará bien la base?",
     "baseLead": "Sostenga una tarjeta bancaria (85,6 × 54 mm) junto a la pantalla y mueva el control hasta que el rectángulo tenga el mismo tamaño. Después verá la base a tamaño real.",
     "baseSlider": "Ajustar el rectángulo a su tarjeta bancaria",
@@ -1085,7 +1085,7 @@
     "returnLink": "Leer la información sobre el desistimiento",
     "share": "Compartir con una persona de confianza",
     "shareCopied": "Enlace copiado",
-    "shareText": "Mira esta pieza de Andrea’s Fashion Hair: {name}",
+    "shareText": "Mira esta pieza de Andréia’s Fashion Hair: {name}",
     "atelierShow": "Fotos del taller ({count})",
     "atelierHide": "Mostrar solo fotos de estudio",
     "trustFold": "Envío, devolución y pago"
@@ -1110,7 +1110,7 @@
     "demoChestnut": "Castaño",
     "demoGold": "Rubio dorado",
     "matchError": "No se pudo leer la foto. Pruebe con otra.",
-    "matchNote": "Una orientación en pantalla, no sustituye el consejo de Andrea. Las piezas se ordenan después por proximidad de color.",
+    "matchNote": "Una orientación en pantalla, no sustituye el consejo de Andréia. Las piezas se ordenan después por proximidad de color.",
     "matchBadge": "{pct} % de proximidad",
     "compareBar": "Comparar {count} favoritos",
     "compareTitle": "Mi comparación",

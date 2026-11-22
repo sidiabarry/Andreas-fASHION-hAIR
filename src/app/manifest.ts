@@ -11,8 +11,8 @@ export default function manifest(): MetadataRoute.Manifest {
       { sizes: "512x512", src: "/icon-512.png", type: "image/png" },
     ],
     lang: "de",
-    name: "Andrea's Fashion Hair",
-    short_name: "Andrea's",
+    name: "Andréia's Fashion Hair",
+    short_name: "Andréia's",
     start_url: "/",
     theme_color: "#100e0d",
   };

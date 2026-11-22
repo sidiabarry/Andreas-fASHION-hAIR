@@ -3,7 +3,7 @@ import { DELIVERY_DAYS_IN_STOCK, MADE_TO_ORDER_DAYS, SHIPPING_ZONES } from "@/co
 import type { Locale } from "@/i18n/locales";
 import { formatPrice } from "@/lib/money";
 
-/** Zahlen für die Texte der Startseite und von „Über Andrea“ – ausschließlich aus src/config. */
+/** Zahlen für die Texte der Startseite und von „Über Andréia“ – ausschließlich aus src/config. */
 const range = ([a, b]: [number, number]) => `${a}–${b}`;
 
 export function homeValues(locale: Locale) {

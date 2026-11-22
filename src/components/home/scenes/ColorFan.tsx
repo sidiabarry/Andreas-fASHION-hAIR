@@ -32,7 +32,7 @@ type ColorTexts = {
  * Farbverläufe, damit Farbe und Ombré (Ansatz → Spitze) so erscheinen, wie sie sind. Die gewählte Strähne öffnet
  * sich breit, die anderen bleiben schmale Streifen; am Ende „Ihre Farbe nicht dabei? Nach Maß“.
  * „Warmes Licht“ ist nur eine Vorschau (Filter); Tageslicht zeigt das unveränderte Foto.
- * Daneben der Farbabgleich in drei Schritten und genau ein Hauptknopf: Foto an Andrea.
+ * Daneben der Farbabgleich in drei Schritten und genau ein Hauptknopf: Foto an Andréia.
  */
 export function ColorFan({ t, swatches, whatsapp, whatsappNote }: { t: ColorTexts; swatches: Swatch[]; whatsapp: string | null; whatsappNote: string }) {
   const total = swatches.length + 1;

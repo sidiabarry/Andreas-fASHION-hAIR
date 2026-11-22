@@ -1,6 +1,6 @@
 /**
- * WhatsApp-Nachricht an Andrea mit Kontext (Modul 19). Es wird nichts gesendet: der Link öffnet
- * WhatsApp mit vorausgefülltem Text, Absenden macht die Kundin selbst. Die Nachricht geht an Andrea
+ * WhatsApp-Nachricht an Andréia mit Kontext (Modul 19). Es wird nichts gesendet: der Link öffnet
+ * WhatsApp mit vorausgefülltem Text, Absenden macht die Kundin selbst. Die Nachricht geht an Andréia
  * und ist deshalb immer deutsch.
  */
 export type WhatsAppContext = {
@@ -18,7 +18,7 @@ export function whatsappNumber(phoneHref: string): string {
 }
 
 export function buildAndreaMessage(ctx: WhatsAppContext): string {
-  const lines = ["Hallo Andrea, ich interessiere mich für dieses Stück:", `${ctx.name}${ctx.subtitle ? `, ${ctx.subtitle}` : ""}`];
+  const lines = ["Hallo Andréia, ich interessiere mich für dieses Stück:", `${ctx.name}${ctx.subtitle ? `, ${ctx.subtitle}` : ""}`];
   const facts = [ctx.price, ctx.length ? `Länge ${ctx.length}` : null, ctx.base ? `Basis ${ctx.base}` : null].filter(Boolean);
   if (facts.length) lines.push(facts.join(" · "));
   if (ctx.heightCm) lines.push(`Meine Körpergröße: ${ctx.heightCm} cm`);

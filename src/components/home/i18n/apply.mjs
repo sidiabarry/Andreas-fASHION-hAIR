@@ -1,4 +1,4 @@
-// Schreibt die Texte der Startseite (hero.*, home.*) und von „Über Andrea“ (about.*) in die
+// Schreibt die Texte der Startseite (hero.*, home.*) und von „Über Andréia“ (about.*) in die
 // Nachrichtendateien. Aufruf: node src/components/home/i18n/apply.mjs
 // Sprachen ohne Nachrichtendatei (noch nicht freigeschaltet) werden übersprungen und gemeldet.
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";

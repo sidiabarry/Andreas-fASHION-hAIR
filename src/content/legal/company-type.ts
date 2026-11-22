@@ -10,7 +10,7 @@
  * dokumentierten Standardwert.
  */
 export type Company = {
-  /** "Andrea's Fashion Hair" */
+  /** "Andréia's Fashion Hair" */
   brandName: string;
   /** Vollständiger bürgerlicher Name der Inhaberin – Pflichtangabe nach § 5 DDG. */
   ownerFullName: string | null;

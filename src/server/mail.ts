@@ -47,7 +47,7 @@ export function fillTemplate(template: string, values: Record<string, string>): 
 }
 
 /**
- * Kurznachricht an Andrea per Telegram-Bot (TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID aus der Umgebung).
+ * Kurznachricht an Andréia per Telegram-Bot (TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID aus der Umgebung).
  * Zusätzlich zur E-Mail; ohne Konfiguration passiert nichts. Fehler blockieren nie den Ablauf.
  * Telegram begrenzt Nachrichten auf 4096 Zeichen.
  */

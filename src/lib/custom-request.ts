@@ -15,7 +15,7 @@ export function methodFor(system: CustomSystem | ""): MethodId | "" {
 
 /**
  * Eine Zeile mit System und Struktur für das Feld „product“ der Anfrage (max. 200 Zeichen laut Schema).
- * Die Beschriftungen kommen aus den Nachrichten, damit Andrea die Zeile in ihrer Sprache liest (Deutsch).
+ * Die Beschriftungen kommen aus den Nachrichten, damit Andréia die Zeile in ihrer Sprache liest (Deutsch).
  */
 export function customSummary(parts: { system: string; structure: string; base: string }, labels: { system: string; structure: string }): string {
   return [parts.base, parts.system ? `${labels.system}: ${parts.system}` : "", parts.structure ? `${labels.structure}: ${parts.structure}` : ""]

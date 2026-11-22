@@ -43,7 +43,7 @@ export function Header() {
   }, [open]);
 
   const current = (href: string) => (pathname === href ? "page" : undefined);
-  // Reihenfolge laut Rangfolge: Extensions, Perücken und Topper, Maßanfertigung (immer sichtbar), Pflege, Andrea, Beratung
+  // Reihenfolge laut Rangfolge: Extensions, Perücken und Topper, Maßanfertigung (immer sichtbar), Pflege, Andréia, Beratung
   const links = (
     <>
       <Link aria-current={current("/extensions")} href="/extensions">

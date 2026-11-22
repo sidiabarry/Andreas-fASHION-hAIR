@@ -1,4 +1,4 @@
-/* „Über Andrea“ – sieben Kapitel, jedes mit eigenem Layout. Baut auf home.css auf (Bereich home-design). */
+/* „Über Andréia“ – sieben Kapitel, jedes mit eigenem Layout. Baut auf home.css auf (Bereich home-design). */
 .about .aa-ch { position: relative; padding-block: clamp(96px, 12vw, 176px); }
 .aa-copy { display: grid; gap: 24px; justify-items: start; }
 .aa-label { display: flex; align-items: center; gap: 14px; margin: 0; font-family: var(--af-mono); font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--af-muted); hyphens: none; }

@@ -1,5 +1,5 @@
 /**
- * Firmendaten von Andrea's Fashion Hair.
+ * Firmendaten von Andréia's Fashion Hair.
  *
  * Quelle: öffentliche Angaben auf https://www.andreasfashionhair.de/ (Stand 11/2026)
  * sowie ausdrückliche Bestätigungen des Auftraggebers (markiert).
@@ -54,7 +54,7 @@ export type Company = {
   /** Versanddienstleister */
   shippingCarrier: string | null;
   /**
-   * Zahlungswege. Leer = noch nicht festgelegt (Kasse bestellt ohne Zahlung, Andrea meldet sich).
+   * Zahlungswege. Leer = noch nicht festgelegt (Kasse bestellt ohne Zahlung, Andréia meldet sich).
    * Vorgemerkt laut Inhaberin: "paypal" (PayPal ist vorhanden), später Ratenzahlung über PayPal.
    */
   paymentMethods: string[];
@@ -75,7 +75,7 @@ export type Company = {
 };
 
 export const company: Company = {
-  brandName: "Andrea's Fashion Hair",
+  brandName: "Andréia's Fashion Hair",
   // Vom Auftraggeber bestätigt (11/2026), Schreibweise exakt so.
   ownerFullName: "Andreia Pereira Da Costa",
   // Vom Auftraggeber angegeben (Einzelperson, Kleinunternehmerin, 11/2026).
