@@ -9,3 +9,8 @@ export function unitText(t: RootT, unit: UnitInfo, locale: Locale): string {
   const size = unit.kind === "set" ? t("product.setSize", { grams: unit.grams, pieces: unit.parts }) : t("product.packSize", { grams: unit.grams });
   return unit.baseCents ? `${size} · ${t("product.unitPrice", { amount: formatPrice(unit.baseCents, locale) })}` : size;
 }
+
+/** „40 cm“ bleibt beim Umbruch zusammen (Namen in Warenkorb, Schublade, Kasse, Merkliste). */
+export function keepUnits(name: string): string {
+  return name.replace(/(\d+) (cm|g|ml)\b/g, "$1 $2");
+}

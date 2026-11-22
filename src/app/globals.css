@@ -1375,3 +1375,9 @@ a:hover > .af-hx__round, a:focus-visible > .af-hx__round {
 @media (prefers-reduced-motion: reduce) { .af-ambient { display: none; } }
 .bs__media .af-ambient { object-position: 40% 40%; }
 .aa-band__media .af-ambient { object-position: 60% 40%; }
+
+/* Merkliste: Positionen wie im Warenkorb, Merk-Knopf als Pille */
+.af-wishlist { max-width: 820px; margin-top: 44px; border-top: 1px solid var(--af-line); }
+.af-wishlist .af-wish { margin-top: 12px; padding: 8px 16px; border: 1px solid var(--af-field-line); border-radius: 999px; font-size: 0.92rem; text-decoration: none; color: var(--af-ink); }
+.af-wishlist .af-wish[aria-pressed="true"] { color: var(--af-gold); border-color: var(--af-gold); }
+.af-wishlist__sold { color: var(--af-err); }
