@@ -10,6 +10,12 @@ import { ProductCopyBlock } from "@/components/product/ProductCopyBlock";
 import { SpecChips } from "@/components/product/SpecChips";
 import { CompareSlider } from "@/components/product/CompareSlider";
 import { Gallery } from "@/components/product/Gallery";
+import { AskWhatsApp } from "@/components/pdp/AskWhatsApp";
+import { MicroHelpers } from "@/components/pdp/MicroHelpers";
+import { PartingCompass } from "@/components/pdp/PartingCompass";
+import { ReturnPreview } from "@/components/pdp/ReturnPreview";
+import { ShareButton } from "@/components/pdp/ShareButton";
+import { WeightCompare } from "@/components/pdp/WeightCompare";
 import { RecentlyViewed } from "@/components/product/RecentlyViewed";
 import { StickyBuyBar } from "@/components/product/StickyBuyBar";
 import { TrustFacts } from "@/components/product/TrustFacts";
@@ -26,6 +32,7 @@ import { Link } from "@/i18n/navigation";
 import { breadcrumbJsonLd } from "@/lib/jsonld";
 import { formatPrice } from "@/lib/money";
 import { pageMetadata, siteUrl } from "@/lib/seo";
+import { parseBaseCm, parseLengthCm } from "@/lib/units";
 import { soldSlugs } from "@/server/sold";
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/produkt/[slug]">): Promise<Metadata> {
@@ -91,6 +98,13 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
     { a: t("objections.payA"), q: t("objections.payQ") },
   ];
   const base = siteUrl();
+  const pageUrl = `${base}/${locale}/produkt/${product.slug}`;
+  // Rechenbeispiel Tageswert nur für Haarteile und Systeme (Modul 12), ohne Maßanfertigung
+  const showDaily = ["topper", "peruecken", "pony", "maenner"].includes(product.category) && !product.madeToOrder && !isSold;
+  const perDay = formatPrice(Math.round(product.priceCents / 730), locale);
+  const lengthCm = hair && !isExtension ? parseLengthCm(product.length) : null;
+  const baseCm = hair && !isExtension ? parseBaseCm(product.base) : null;
+  const secondOriginal = product.originals[1] ?? null;
 
   const productJson = {
     "@context": "https://schema.org",
@@ -139,7 +153,7 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
 
         <div className="af-pdp">
           <div className="af-pdp__gallery">
-            <Gallery closeLabel={t("product.zoomClose")} hint={t("product.zoomHint")} shots={shots} zoomLabel={t("product.zoom")} />
+            <Gallery closeLabel={t("product.zoomClose")} hint={t("product.zoomHint")} loupeLabel={hair ? t("pdp.loupe") : undefined} loupeOffLabel={t("pdp.loupeOff")} shots={shots} zoomLabel={t("product.zoom")} />
             {kind ? (
               <p className="af-note af-imgnote" data-kind={kind}>
                 {t(kind === "staged" ? "product.imageNoteStaged" : "product.imageNoteRelit")}
@@ -174,11 +188,13 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
               {copy?.headline ? <p className="af-headline">{copy.headline}</p> : null}
             </div>
             <SpecChips locale={locale} product={product} />
+            {hair ? <MicroHelpers base={baseCm} clips={hasClips} lengthCm={lengthCm} /> : null}
 
             <div className="af-pdp__price">
               {price}
               <PriceNote locale={locale} unit={unitInfo(product)} />
             </div>
+            {showDaily ? <p className="af-note af-daily">{t("pdp.daily", { perDay, price })}</p> : null}
 
             {isSold ? (
               <p className="af-msg">{t("product.soldMsg")}</p>
@@ -205,11 +221,12 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
               <div className="af-pdp__secondary">
                 <WishlistButton slug={product.slug} />
                 {company.social.whatsapp ? (
-                  <a className="af-chip" href={company.social.whatsapp} rel="noopener noreferrer" target="_blank">
-                    <span>{t("product.askWhatsapp")}</span>
-                    <span className="af-sr"> {t("common.newTab")}</span>
-                  </a>
+                  <AskWhatsApp
+                    ctx={{ base: product.base || null, length: product.length ? `${product.length} cm` : null, name: text.name, price, subtitle: text.subtitle, url: pageUrl }}
+                    phoneHref={company.phoneHref}
+                  />
                 ) : null}
+                <ShareButton name={text.name} url={pageUrl} />
               </div>
               {company.social.whatsapp ? null : (
                 <Link className="af-cta-line" href={{ pathname: "/anfrage", query: { produkt: `${text.name}, ${text.subtitle}`, thema: "beratung" } }} style={{ justifySelf: "start" }}>
@@ -219,6 +236,7 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
             </div>
 
             <TrustFacts compact locale={locale} />
+            {hair ? <ReturnPreview madeToOrder={product.madeToOrder} /> : null}
 
             <section aria-labelledby="specs-title">
               <h2 className="af-sr" id="specs-title">
@@ -269,6 +287,8 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
       <div className="af-zone-light af-zone-fade-top af-zone-band af-pdp__after">
         <div className="af-wrap">
           {copy ? <ProductCopyBlock copy={copy} locale={locale} /> : null}
+          {hair && !isExtension && secondOriginal ? <PartingCompass extraAlt={t("product.originalAlt", { index: 2, name: text.name, subtitle: text.subtitle })} extraImage={secondOriginal} /> : null}
+          {product.netWeightGrams ? <WeightCompare grams={product.netWeightGrams} locale={locale} /> : null}
           {hair ? <CustomStrip product={`${text.name}, ${text.subtitle}`} /> : null}
           <RecentlyViewed exclude={product.slug} />
           {more.length > 0 ? (

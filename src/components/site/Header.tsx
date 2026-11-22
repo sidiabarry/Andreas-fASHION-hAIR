@@ -12,6 +12,7 @@ import { Link, usePathname } from "@/i18n/navigation";
 import "../shop.css";
 
 import { LocaleSwitcher } from "./LocaleSwitcher";
+import { UnitToggle } from "./UnitToggle";
 
 export function Header() {
   const t = useTranslations();
@@ -73,6 +74,7 @@ export function Header() {
             {links}
           </nav>
           <div className="af-nav__right">
+            <UnitToggle />
             <LocaleSwitcher id="locale-head" />
             <Link aria-label={t("wishlist.nav", { count: wishlist.items.length })} className="af-iconbtn af-glass" href="/merkliste">
               <svg aria-hidden="true" fill={wishlist.items.length ? "currentColor" : "none"} height="18" viewBox="0 0 24 24" width="18">
@@ -98,6 +100,7 @@ export function Header() {
       <nav aria-label={t("nav.mobile")} className="af-sheet" hidden={!open} id="af-sheet">
         {links}
         <Link href="/kontakt">{t("nav.contact")}</Link>
+        <UnitToggle />
         <LocaleSwitcher id="locale-sheet" />
       </nav>
       <CartDrawer checkoutOpen={cart.checkoutOpen} />
