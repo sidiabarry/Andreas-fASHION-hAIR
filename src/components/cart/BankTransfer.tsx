@@ -6,7 +6,9 @@ import { getTranslations } from "next-intl/server";
 import { company } from "@/config/company";
 import type { Locale } from "@/i18n/locales";
 import { formatPrice } from "@/lib/money";
-import { epcPayload, formatIban } from "@/lib/payment";
+import { epcPayload, formatIban, paypalCheckoutUrl } from "@/lib/payment";
+
+import { Arrow } from "@/components/Arrow";
 
 import { CopyField } from "./CopyField";
 
@@ -22,6 +24,10 @@ export async function BankTransfer({ locale, orderId, totalCents }: { locale: Lo
   const options = { color: { dark: "#1e1813", light: "#ffffff" }, errorCorrectionLevel: "M" as const, margin: 0 };
   const [svg, png] = await Promise.all([QRCode.toString(payload, { ...options, type: "svg" }), QRCode.toDataURL(payload, { ...options, margin: 2, scale: 10 })]);
   const amount = formatPrice(totalCents, locale);
+  const paypalUrl =
+    company.paymentMethods.includes("paypal") && company.paypal
+      ? paypalCheckoutUrl({ cents: totalCents, email: company.paypal, itemName: t("paypalItem", { id: orderId }), locale, reference: orderId })
+      : null;
 
   return (
     <section aria-labelledby="pay-title" className="af-pay">
@@ -53,8 +59,15 @@ export async function BankTransfer({ locale, orderId, totalCents }: { locale: Lo
       <ul className="af-pay__notes">
         <li>{t("instant")}</li>
         <li>{t("when")}</li>
-        {company.paymentMethods.includes("paypal") && company.paypal ? <li>{t("paypal", { email: company.paypal })}</li> : null}
       </ul>
+      {paypalUrl ? (
+        <div className="af-pay__paypal">
+          <p className="af-text">{t("paypal")}</p>
+          <a className="af-cta-gold af-glass af-glass--gold" href={paypalUrl} rel="noopener noreferrer" target="_blank">
+            <span>{t("paypalButton")}</span> <Arrow />
+          </a>
+        </div>
+      ) : null}
     </section>
   );
 }

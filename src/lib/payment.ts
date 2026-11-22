@@ -31,3 +31,24 @@ export function epcAmount(cents: number): string {
 export function epcPayload({ name, iban, cents, reference }: { name: string; iban: string; cents: number; reference: string }): string {
   return ["BCD", "002", "1", "SCT", "", name.slice(0, 70), iban.replace(/\s+/g, "").toUpperCase(), epcAmount(cents), "", "", reference.slice(0, 140)].join("\n");
 }
+
+/**
+ * Direkter PayPal-Bezahllink (PayPal „Jetzt kaufen“ über die Kontoadresse, ohne API-Schlüssel und ohne Skript auf
+ * unserer Seite): Empfängerin, Betrag in Euro und Bestellnummer sind vorausgefüllt. Erst der Klick führt zu paypal.com.
+ */
+export function paypalCheckoutUrl({ email, cents, reference, itemName, locale }: { email: string; cents: number; reference: string; itemName: string; locale: string }): string {
+  const lc: Record<string, string> = { de: "DE", en: "GB", es: "ES", fr: "FR" };
+  const params = new URLSearchParams({
+    amount: epcAmount(cents).replace("EUR", ""),
+    business: email,
+    charset: "utf-8",
+    cmd: "_xclick",
+    currency_code: "EUR",
+    invoice: reference,
+    item_name: itemName.slice(0, 127),
+    lc: lc[locale] ?? "DE",
+    no_note: "1",
+    no_shipping: "1",
+  });
+  return `https://www.paypal.com/cgi-bin/webscr?${params.toString()}`;
+}

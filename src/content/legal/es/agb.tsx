@@ -83,7 +83,7 @@ export default function Page({ company: c }: { company: Company }) {
                 <li><strong>Pago anticipado por transferencia:</strong> puede transferir el importe total justo después de su pedido, a más tardar en un plazo de 7 días desde la recepción de la confirmación del pedido. Enviamos la mercancía tras recibir el pago. Si el pago no se recibe pese a un recordatorio, podemos resolver el contrato.</li>
               ) : null}
               {c.payments.paypal ? (
-                <li><strong>PayPal:</strong> tras la confirmación del pedido recibe una solicitud de pago de PayPal. Pague en un plazo de 7 días. Se aplican además las condiciones de PayPal. Enviamos tras recibir el pago.</li>
+                <li><strong>PayPal:</strong> puede pagar justo después del pedido con el botón de PayPal en la página de confirmación, o recibe una solicitud de pago de PayPal tras la confirmación del pedido. Pague a más tardar 7 días después de la confirmación del pedido. Se aplican además las condiciones de PayPal. Enviamos tras recibir el pago.</li>
               ) : null}
               {c.payments.paypalInstallments ? <li><strong>Pago a plazos con PayPal:</strong> si PayPal le ofrece esta opción, puede pagar a plazos tras una comprobación de solvencia de PayPal. El crédito lo celebra directamente con PayPal como prestamista; se aplican sus condiciones e información precontractual. Nosotros no concedemos crédito. Su contrato de compraventa con nosotros no se ve afectado.</li> : null}
               {c.payments.bankTransfer ? (

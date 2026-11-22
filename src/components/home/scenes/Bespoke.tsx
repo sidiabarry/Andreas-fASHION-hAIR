@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { Arrow } from "@/components/Arrow";
+import { AmbientVideo } from "@/components/fx/AmbientVideo";
 import { Link } from "@/i18n/navigation";
 
 import { Chapter } from "../Chapter";
@@ -26,7 +27,8 @@ export function Bespoke({ t, symbolImage }: { t: BespokeTexts; symbolImage: stri
   return (
     <section aria-labelledby="bespoke-title" className="bs" data-fx="thread" data-fx-a="0.4" data-fx-ma="0.2" data-fx-s="0.55" data-fx-x="-0.4" data-fx-y="-0.62" id="massanfertigung">
       <figure className="bs__media">
-        <Image alt={t.imageAlt} fill sizes="(max-width: 900px) 100vw, 55vw" src="/assets/content/craft.jpg" />
+        <Image alt={t.imageAlt} fill sizes="(max-width: 900px) 100vw, 55vw" src="/assets/world/craft-poster.jpg" />
+        <AmbientVideo desktop="/assets/world/craft.mp4" mobile="/assets/world/craft-mobile.mp4" />
         <figcaption>{symbolImage}</figcaption>
       </figure>
       <div className="af-wrap bs__in">

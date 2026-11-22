@@ -1027,9 +1027,12 @@
     "copyLabel": "{label} kopieren",
     "instant": "Mit Echtzeitüberweisung ist das Geld meist in Sekunden bei Andrea.",
     "when": "Sie können jetzt bezahlen oder nach Andreas Bestätigung. Ist ein Stück wider Erwarten nicht verfügbar, bekommen Sie Ihr Geld umgehend zurück.",
-    "paypal": "Lieber mit PayPal? Andrea schickt Ihnen eine Zahlungsaufforderung von {email}.",
+    "paypal": "Lieber mit PayPal? Ein Klick führt zu PayPal, Betrag und Bestellnummer sind schon eingetragen.",
     "mailTitle": "So bezahlen Sie (gleich oder nach Andreas Bestätigung):",
-    "mailQr": "QR-Code für Ihre Banking-App: {url}"
+    "mailQr": "QR-Code für Ihre Banking-App: {url}",
+    "paypalButton": "Mit PayPal bezahlen",
+    "paypalItem": "Bestellung {id} · Andrea's Fashion Hair",
+    "mailPaypal": "Lieber mit PayPal? {url}"
   },
   "shop": {
     "showInches": "Maße in Zoll anzeigen",

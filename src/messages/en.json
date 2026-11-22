@@ -1027,9 +1027,12 @@
     "copyLabel": "Copy {label}",
     "instant": "With an instant transfer the money usually reaches Andrea within seconds.",
     "when": "You can pay now or after Andrea’s confirmation. If a piece is unexpectedly not available, you get your money back without delay.",
-    "paypal": "Prefer PayPal? Andrea will send you a payment request from {email}.",
+    "paypal": "Prefer PayPal? One click takes you to PayPal with the amount and order number already filled in.",
     "mailTitle": "How to pay (now or after Andrea’s confirmation):",
-    "mailQr": "QR code for your banking app: {url}"
+    "mailQr": "QR code for your banking app: {url}",
+    "paypalButton": "Pay with PayPal",
+    "paypalItem": "Order {id} · Andrea's Fashion Hair",
+    "mailPaypal": "Prefer PayPal? {url}"
   },
   "shop": {
     "showInches": "Show measurements in inches",

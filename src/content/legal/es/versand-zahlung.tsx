@@ -85,10 +85,10 @@ export default function Page({ company: c }: { company: Company }) {
             ) : null}
             {c.payments.paypal ? (
               <li>
-                <strong>PayPal</strong> – tras la confirmación del pedido recibe una solicitud de pago
-                por PayPal
-                {c.paypalEmail ? <> de {c.paypalEmail}</> : null}
-                ; pagadera en 7 días. Envío tras recibir el pago.
+                <strong>PayPal</strong> – justo después del pedido con el botón de PayPal en la página
+                de confirmación, o mediante una solicitud de pago tras la confirmación del pedido
+                {c.paypalEmail ? <> (pago a {c.paypalEmail})</> : null}
+                ; pagadera a más tardar 7 días después de la confirmación del pedido. Envío tras recibir el pago.
               </li>
             ) : null}
             {c.payments.paypalInstallments ? <li><strong>Pago a plazos con PayPal</strong> – si PayPal se lo ofrece; el prestamista es PayPal, según su comprobación de solvencia y sus condiciones. Nosotros no concedemos crédito.</li> : null}

@@ -86,10 +86,10 @@ export default function Page({ company: c }: { company: Company }) {
             ) : null}
             {c.payments.paypal ? (
               <li>
-                <strong>PayPal</strong> – après la confirmation de commande, vous recevez une demande
-                de paiement via PayPal
-                {c.paypalEmail ? <> de {c.paypalEmail}</> : null}
-                ; payable dans les 7 jours. Expédition après réception du paiement.
+                <strong>PayPal</strong> – dès la commande via le bouton PayPal sur la page de
+                confirmation, ou par une demande de paiement après la confirmation de commande
+                {c.paypalEmail ? <> (paiement à {c.paypalEmail})</> : null}
+                ; payable au plus tard 7 jours après la confirmation de commande. Expédition après réception du paiement.
               </li>
             ) : null}
             {c.payments.paypalInstallments ? <li><strong>Paiement échelonné via PayPal</strong> – si PayPal vous le propose ; le prêteur est PayPal, sous réserve de sa vérification de solvabilité et de ses conditions. Nous n'accordons nous-mêmes aucun crédit.</li> : null}

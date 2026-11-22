@@ -1364,3 +1364,14 @@ a:hover > .af-hx__round, a:focus-visible > .af-hx__round {
   -webkit-backdrop-filter: blur(20px) saturate(170%);
   backdrop-filter: blur(20px) saturate(170%);
 }
+
+/* PayPal direkt auf der Bestellbestätigung: eigener, ruhiger Block unter den Überweisungsangaben */
+.af-pay__paypal { display: grid; gap: 14px; justify-items: start; margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--af-line); }
+.af-pay__paypal .af-text { margin: 0; max-width: 52ch; }
+
+/* Stimmungsvideo über dem Standbild (AmbientVideo.tsx): gleicher Zuschnitt, weiche Überblendung, erst wenn es läuft */
+.af-ambient { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; pointer-events: none; transition: opacity 0.8s var(--af-ease); }
+.af-ambient[data-playing="true"] { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .af-ambient { display: none; } }
+.bs__media .af-ambient { object-position: 40% 40%; }
+.aa-band__media .af-ambient { object-position: 60% 40%; }

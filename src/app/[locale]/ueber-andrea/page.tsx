@@ -4,6 +4,7 @@ import type { CSSProperties } from "react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { Arrow } from "@/components/Arrow";
+import { AmbientVideo } from "@/components/fx/AmbientVideo";
 import { FieldMount } from "@/components/fx/FieldMount";
 import { HairStage } from "@/components/fx/HairStage";
 import { Reveal } from "@/components/home/Reveal";
@@ -145,7 +146,8 @@ export default async function AboutPage({ params }: PageProps<"/[locale]/ueber-a
       {/* 5 Das Atelier: randloses Werkstattbild */}
       <section aria-labelledby="kapitel-5-title" className="aa-ch aa-ch--band" id="kapitel-5">
         <figure className="aa-band__media">
-          <Image alt={t("craftAlt")} fill sizes="100vw" src="/assets/content/craft.jpg" />
+          <Image alt={t("craftAlt")} fill sizes="100vw" src="/assets/world/craft-poster.jpg" />
+          <AmbientVideo desktop="/assets/world/craft.mp4" mobile="/assets/world/craft-mobile.mp4" />
           <figcaption>{symbol}</figcaption>
         </figure>
         <div className="af-wrap aa-band">

@@ -11,7 +11,7 @@ import { isLocale } from "@/i18n/locales";
 import type { Locale } from "@/i18n/locales";
 import { formatPrice } from "@/lib/money";
 import { appendVideoRequest } from "@/lib/video-note";
-import { formatIban } from "@/lib/payment";
+import { formatIban, paypalCheckoutUrl } from "@/lib/payment";
 import { priceOrder } from "@/lib/order";
 import {
   checkoutSchema,
@@ -186,6 +186,9 @@ export async function placeOrder(rawLocale: string, raw: unknown): Promise<Place
         `${tp("amount")}: ${formatPrice(order.totalCents, locale)}`,
         `${tp("reference")}: ${order.id}`,
         tp("mailQr", { url: link }),
+        ...(company.paymentMethods.includes("paypal") && company.paypal
+          ? ["", tp("mailPaypal", { url: paypalCheckoutUrl({ cents: order.totalCents, email: company.paypal, itemName: tp("paypalItem", { id: order.id }), locale, reference: order.id }) })]
+          : []),
       ].join("\n")
     : "";
   let mailCustomer: MailStatus = "nicht_konfiguriert";

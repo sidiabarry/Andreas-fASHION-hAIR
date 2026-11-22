@@ -126,8 +126,9 @@ export default function Page({ company: c }: { company: Company }) {
               ) : null}
               {c.payments.paypal ? (
                 <li>
-                  <strong>PayPal:</strong> Nach der Auftragsbestätigung erhalten Sie eine
-                  Zahlungsaufforderung von PayPal. Bitte bezahlen Sie innerhalb von 7 Tagen. Für die
+                  <strong>PayPal:</strong> Sie können sofort nach der Bestellung über den PayPal-Knopf auf
+                  der Bestellbestätigung bezahlen oder erhalten nach der Auftragsbestätigung eine
+                  Zahlungsaufforderung von PayPal. Bitte bezahlen Sie spätestens 7 Tage nach der Auftragsbestätigung. Für die
                   Zahlung gelten zusätzlich die Bedingungen von PayPal. Wir versenden nach
                   Zahlungseingang.
                 </li>

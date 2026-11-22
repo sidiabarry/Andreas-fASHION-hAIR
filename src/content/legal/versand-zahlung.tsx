@@ -89,10 +89,10 @@ export default function Page({ company: c }: { company: Company }) {
             ) : null}
             {c.payments.paypal ? (
               <li>
-                <strong>PayPal</strong> – Sie erhalten nach der Auftragsbestätigung eine
-                Zahlungsaufforderung über PayPal
-                {c.paypalEmail ? <> von {c.paypalEmail}</> : null}
-                ; zahlbar innerhalb von 7 Tagen. Versand nach Zahlungseingang.
+                <strong>PayPal</strong> – sofort nach der Bestellung über den PayPal-Knopf auf der
+                Bestellbestätigung oder nach der Auftragsbestätigung per Zahlungsaufforderung
+                {c.paypalEmail ? <> (Zahlung an {c.paypalEmail})</> : null}
+                ; zahlbar spätestens 7 Tage nach der Auftragsbestätigung. Versand nach Zahlungseingang.
               </li>
             ) : null}
             {c.payments.paypalInstallments ? <li><strong>Ratenzahlung über PayPal</strong> – sofern PayPal sie Ihnen anbietet; Kreditgeber ist PayPal, nach dessen Bonitätsprüfung und Bedingungen. Wir selbst gewähren keinen Kredit.</li> : null}

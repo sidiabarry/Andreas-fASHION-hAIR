@@ -89,10 +89,10 @@ export default function Page({ company: c }: { company: Company }) {
             ) : null}
             {c.payments.paypal ? (
               <li>
-                <strong>PayPal</strong> – after the order confirmation you receive a payment request
-                via PayPal
-                {c.paypalEmail ? <> from {c.paypalEmail}</> : null}
-                ; payable within 7 days. Shipping after receipt of payment.
+                <strong>PayPal</strong> – right after ordering via the PayPal button on the order
+                confirmation page, or via a payment request after the order confirmation
+                {c.paypalEmail ? <> (payment to {c.paypalEmail})</> : null}
+                ; payable no later than 7 days after the order confirmation. Shipping after receipt of payment.
               </li>
             ) : null}
             {c.payments.paypalInstallments ? <li><strong>PayPal instalments</strong> – if PayPal offers them to you; the lender is PayPal, subject to its credit check and terms. We do not grant credit ourselves.</li> : null}

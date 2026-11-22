@@ -105,8 +105,9 @@ export default function Page({ company: c }: { company: Company }) {
               ) : null}
               {c.payments.paypal ? (
                 <li>
-                  <strong>PayPal:</strong> After the order confirmation you receive a payment request
-                  from PayPal. Please pay within 7 days. PayPal's terms also apply to the payment. We
+                  <strong>PayPal:</strong> You can pay right after ordering via the PayPal button on the
+                  order confirmation page, or you receive a payment request from PayPal after the order
+                  confirmation. Please pay no later than 7 days after the order confirmation. PayPal's terms also apply to the payment. We
                   ship once payment has been received.
                 </li>
               ) : null}
