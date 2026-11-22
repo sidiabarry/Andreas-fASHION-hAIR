@@ -24,6 +24,24 @@ export const PROCESSORS = [
     name: "Resend (Plus Five Five, Inc.)",
     purpose: "Versand von E-Mails (Bestell- und Eingangsbestätigungen, Antworten auf Anfragen)",
   },
+  {
+    basis: "Art. 6 Abs. 1 lit. b DSGVO; Auftragsverarbeitung nach Art. 28 DSGVO",
+    country: "Irland (EU)",
+    name: "Google Ireland Limited (Gmail)",
+    purpose: "Versand von E-Mails (Bestell- und Eingangsbestätigungen, Benachrichtigung der Inhaberin)",
+  },
+  {
+    basis: "Art. 6 Abs. 1 lit. b DSGVO; Auftragsverarbeitung nach Art. 28 DSGVO",
+    country: "Irland (EU), Server in Frankfurt",
+    name: "Supabase Inc. (Datenbank)",
+    purpose: "Speicherung von Bestellungen, Anfragen und Widerrufen",
+  },
+  {
+    basis: "Art. 6 Abs. 1 lit. b und f DSGVO",
+    country: "Vereinigte Arabische Emirate / weltweit",
+    name: "Telegram (Telegram Messenger Inc. / Telegram FZ-LLC)",
+    purpose: "Interne Benachrichtigung der Inhaberin über neue Bestellungen, Anfragen und Widerrufe",
+  },
 ];
 
 function hoursText(c: Company): string {
