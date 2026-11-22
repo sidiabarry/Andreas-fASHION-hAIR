@@ -1402,3 +1402,4 @@ a:hover > .af-hx__round, a:focus-visible > .af-hx__round {
 /* Grundpreis (§ 4 PAngV, Pflicht neben dem Preis): klein und ruhig */
 .af-base { font-size: 0.82em; opacity: 0.6; white-space: nowrap; }
 .af-hx__pieceunit, .af-card__sub:last-child { font-size: 0.78rem; }
+.af-pdp__price .af-pricenote, .af-pricenote { font-size: 0.74rem; opacity: 0.7; }

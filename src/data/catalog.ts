@@ -126,9 +126,16 @@ export function basePricePerKgCents(product: Pick<Product, "priceCents" | "netWe
 /** Angaben neben dem Preis: Verkaufseinheit mit Gewicht und Grundpreis je 1 kg. null = keine Angabe. */
 export type UnitInfo = { kind: "pack" | "set"; grams: number; parts: number; baseCents: number | null };
 
+/**
+ * Grundpreis je 1 kg anzeigen (Pflicht, § 4 PAngV). Dargestellt bewusst klein und ruhig.
+ * ACHTUNG: § 4 PAngV verlangt den Grundpreis bei Ware nach Gewicht neben dem Preis; ohne ihn besteht Abmahnrisiko.
+ * Zum Einblenden auf true setzen – alle Stellen (Karten, Produktseite, Warenkorb, Kasse) folgen.
+ */
+export const SHOW_BASE_PRICE = true;
+
 export function unitInfo(product: Product): UnitInfo | null {
   if (!product.priceUnit || !product.weightGrams) return null;
-  return { baseCents: basePricePerKgCents(product), grams: product.weightGrams, kind: product.priceUnit, parts: product.setParts ?? 0 };
+  return { baseCents: SHOW_BASE_PRICE ? basePricePerKgCents(product) : null, grams: product.weightGrams, kind: product.priceUnit, parts: product.setParts ?? 0 };
 }
 
 const translations: Partial<Record<Locale, Record<string, ProductText>>> = {
