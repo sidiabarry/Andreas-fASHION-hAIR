@@ -21,7 +21,7 @@ export function siteMode(): SiteMode {
   const vercelEnv = process.env.VERCEL_ENV;
   const production =
     vercelEnv === "production" || (vercelEnv === undefined && process.env.NODE_ENV === "production" && process.env.AFH_DEMO !== "1");
-  const mail = Boolean(process.env.RESEND_API_KEY && process.env.MAIL_FROM && process.env.MAIL_TO_OWNER);
+  const mail = Boolean((process.env.RESEND_API_KEY || process.env.Resend_Key) && process.env.MAIL_FROM && process.env.MAIL_TO_OWNER);
   const database = Boolean(process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY);
   const closed = process.env.CHECKOUT_CLOSED === "1";
   return { checkoutOpen: !closed && (!production || (database && mail)), demo: !production, mail, production };

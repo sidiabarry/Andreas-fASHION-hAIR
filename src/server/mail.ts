@@ -10,7 +10,7 @@ export type Mail = { to: string; subject: string; text: string; replyTo?: string
  * Es werden nie Empfänger, Inhalte oder Schlüssel geloggt.
  */
 export async function sendMail(mail: Mail): Promise<MailStatus> {
-  const key = process.env.RESEND_API_KEY;
+  const key = (process.env.RESEND_API_KEY || process.env.Resend_Key || "").trim();
   const from = process.env.MAIL_FROM;
   if (!key || !from) return "nicht_konfiguriert";
   try {
