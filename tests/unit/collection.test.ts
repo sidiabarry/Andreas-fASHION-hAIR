@@ -58,8 +58,8 @@ test("Bilder 422–428: Studiobild, Zweitbild, dann Originale; Bildart staged", 
     const product = p(id);
     assert.equal(imageKindOf(product), "staged", String(id));
     const gallery = galleryImages(product);
-    assert.equal(gallery[0].src, `/assets/products/${id}.jpg`);
-    assert.equal(gallery[1].src, `/assets/products/${id}-2.jpg`);
+    assert.equal(gallery[0].src, product.image);
+    assert.equal(gallery[1].src, product.secondImage);
     const extra = product.extraImages?.length ?? 0;
     assert.ok(gallery.slice(2, 2 + extra).every((shot) => shot.kind === "studio"));
     assert.ok(gallery.slice(2 + extra).every((shot) => shot.kind === "original"));

@@ -39,7 +39,7 @@ export async function ProductCard({ product, locale, sold, priority }: { product
         <p className="af-card__sub">
           {Number.parseInt(product.length, 10) > 0 ? `${t("spec.lengthValue", { cm: Number.parseInt(product.length, 10) })} · ` : ""}
           {unit.kind === "set" ? t("setSize", { grams: unit.grams, pieces: unit.parts }) : t("packSize", { grams: unit.grams })}
-          {unit.baseCents ? ` · ${t("unitPrice", { amount: formatPrice(unit.baseCents, locale) })}` : ""}
+          {unit.baseCents ? <span className="af-base"> · {t("unitPrice", { amount: formatPrice(unit.baseCents, locale) })}</span> : null}
         </p>
       ) : null}
     </Link>

@@ -1398,3 +1398,7 @@ a:hover > .af-hx__round, a:focus-visible > .af-hx__round {
 
 /* KI-Hinweis: fast durchsichtig, ausführlich in den AGB */
 .af-imgnote, .xc__fine p { opacity: 0.4; font-size: 0.72rem !important; }
+
+/* Grundpreis (§ 4 PAngV, Pflicht neben dem Preis): klein und ruhig */
+.af-base { font-size: 0.82em; opacity: 0.6; white-space: nowrap; }
+.af-hx__pieceunit, .af-card__sub:last-child { font-size: 0.78rem; }
