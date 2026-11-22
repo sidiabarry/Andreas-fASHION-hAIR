@@ -1,6 +1,7 @@
 -- Andrea's Fashion Hair – Datenbankschema (Supabase/Postgres)
--- STATUS: vorbereitet, NICHT verdrahtet. Die Website nutzt derzeit nur den In-Memory-Demo-Store
--- (src/server/store-memory.ts). Wer Supabase anschließt, implementiert src/server/store.ts dagegen.
+-- STATUS: verdrahtet. Production nutzt diesen Store (src/server/store-supabase.ts), sobald SUPABASE_URL und
+-- SUPABASE_SERVICE_ROLE_KEY gesetzt sind; Demo und Vorschau nutzen den In-Memory-Store (src/server/store-memory.ts).
+-- Einmalig im Supabase SQL-Editor ausführen (nicht wiederholbar: legt Typen und Tabellen an). Anleitung: docs/LIVEGANG.md
 -- Abgeleitet aus dem Export (0000_export_d1_reference.sql), verbessert:
 --   * Doppelverkauf-Schutz in der Datenbank (Primärschlüssel auf dem Einzelstück in piece_reservations)
 --   * Bestellung + Reservierung atomar in einer Funktion (place_order)
@@ -67,7 +68,8 @@ create table inquiries (
   phone text not null default '',
   product text not null default '',
   message text not null check (char_length(message) <= 1600),
-  delete_after date not null default (now() + interval '2 years')::date
+  -- Datenschutzerklärung: Anfragen ohne Vertrag spätestens nach 12 Monaten löschen
+  delete_after date not null default (now() + interval '12 months')::date
 );
 
 create table withdrawals (

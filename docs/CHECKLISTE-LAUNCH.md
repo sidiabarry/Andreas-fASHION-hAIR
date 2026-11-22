@@ -2,6 +2,8 @@
 
 `npm run check:launch` zeigt den aktuellen Stand automatisch. Ein Production-Deploy auf Vercel bricht ab, solange blockierende Punkte offen sind.
 
+Die technische Reihenfolge (Konten, Variablen, Testbestellung, Domain, Notbremse) steht in **`docs/LIVEGANG.md`**; diese Liste enthält, was inhaltlich und rechtlich zu klären ist.
+
 ## Von Andreia / dem Betreiber zu liefern oder zu entscheiden
 
 - [ ] **Handelsregister**: Gibt es einen Eintrag? Wenn nein, `register: false` in `src/config/company.ts`.
@@ -37,7 +39,7 @@ Diese Aussagen standen im Export bzw. auf der Live-Seite. Sie werden nur verwend
 - [ ] Resend-Konto, Domain verifizieren, `RESEND_API_KEY`, `MAIL_FROM`, `MAIL_TO_OWNER` in Vercel setzen
 - [ ] `SITE_URL` und `IP_HASH_SECRET` setzen
 - [ ] Auftragsverarbeitungsverträge: Vercel (Hosting), Resend (E-Mail); Angaben in `src/config/legal-company.ts` mit den Verträgen abgleichen
-- [ ] Datenbank (Supabase) erst nach Abnahme: Migration `supabase/migrations/0001_init.sql`, Store-Klasse gegen `src/server/store.ts`
+- [ ] Datenbank (Supabase) erst nach Abnahme: Migration `supabase/migrations/0001_init.sql` einmal im SQL-Editor ausführen (Store ist umgesetzt: `src/server/store-supabase.ts`); Schritte in `docs/LIVEGANG.md`
 
 ## Domain-Umzug
 
