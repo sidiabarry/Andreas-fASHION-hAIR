@@ -4,12 +4,43 @@ import type { MailStatus } from "./store";
 
 export type Mail = { to: string; subject: string; text: string; replyTo?: string };
 
+/** Gmail (kostenlos, ohne eigene Domain): Absender ist das Gmail-Konto, Anmeldung per App-Passwort. */
+function gmailConfig(): { user: string; pass: string } | null {
+  const user = (process.env.GMAIL_USER || "").trim();
+  const pass = (process.env.GMAIL_APP_PASSWORD || "").replace(/\s+/g, "");
+  return user && pass ? { pass, user } : null;
+}
+
+/** Ist ein Versandweg eingerichtet (Gmail oder Resend mit Absender)? Empfängerin der Shop-Mails inklusive. */
+export function mailConfigured(): boolean {
+  const resend = Boolean((process.env.RESEND_API_KEY || process.env.Resend_Key) && process.env.MAIL_FROM);
+  return Boolean((gmailConfig() || resend) && ownerAddress());
+}
+
 /**
- * Versand über die Resend-HTTP-API (RESEND_API_KEY, MAIL_FROM aus der Umgebung).
+ * Versand bevorzugt über Gmail (GMAIL_USER, GMAIL_APP_PASSWORD), sonst über die Resend-HTTP-API (RESEND_API_KEY, MAIL_FROM).
  * Ohne Konfiguration wird nichts versendet (Status "nicht_konfiguriert").
  * Es werden nie Empfänger, Inhalte oder Schlüssel geloggt.
  */
 export async function sendMail(mail: Mail): Promise<MailStatus> {
+  const gmail = gmailConfig();
+  if (gmail) {
+    try {
+      const { createTransport } = await import("nodemailer");
+      const transport = createTransport({ auth: gmail, connectionTimeout: 10_000, host: "smtp.gmail.com", port: 465, secure: true, socketTimeout: 15_000 });
+      await transport.sendMail({
+        from: { address: gmail.user, name: process.env.MAIL_FROM_NAME || "Andréia's Fashion Hair" },
+        replyTo: mail.replyTo,
+        subject: mail.subject.slice(0, 200),
+        text: mail.text,
+        to: mail.to,
+      });
+      return "gesendet";
+    } catch (error) {
+      console.error(`[mail] Gmail-Versand fehlgeschlagen: ${error instanceof Error ? `${error.name} ${(error as { code?: string }).code ?? ""}` : "unbekannt"}`);
+      return "fehlgeschlagen";
+    }
+  }
   const key = (process.env.RESEND_API_KEY || process.env.Resend_Key || "").trim();
   const from = process.env.MAIL_FROM;
   if (!key || !from) return "nicht_konfiguriert";
@@ -38,7 +69,7 @@ export async function sendMail(mail: Mail): Promise<MailStatus> {
 }
 
 export function ownerAddress(): string | null {
-  return process.env.MAIL_TO_OWNER || null;
+  return process.env.MAIL_TO_OWNER || (process.env.GMAIL_USER || "").trim() || null;
 }
 
 /** Ersetzt {platzhalter} in Texten des Rechtsagenten. Unbekannte Platzhalter bleiben sichtbar stehen. */

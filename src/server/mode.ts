@@ -21,7 +21,10 @@ export function siteMode(): SiteMode {
   const vercelEnv = process.env.VERCEL_ENV;
   const production =
     vercelEnv === "production" || (vercelEnv === undefined && process.env.NODE_ENV === "production" && process.env.AFH_DEMO !== "1");
-  const mail = Boolean((process.env.RESEND_API_KEY || process.env.Resend_Key) && process.env.MAIL_FROM && process.env.MAIL_TO_OWNER);
+  // Versandweg: Gmail (GMAIL_USER + GMAIL_APP_PASSWORD) oder Resend (Schlüssel + MAIL_FROM); Empfängerin MAIL_TO_OWNER oder das Gmail-Konto
+  const gmail = Boolean(process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD);
+  const resend = Boolean((process.env.RESEND_API_KEY || process.env.Resend_Key) && process.env.MAIL_FROM);
+  const mail = (gmail || resend) && Boolean(process.env.MAIL_TO_OWNER || process.env.GMAIL_USER);
   const database = Boolean(process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY);
   const closed = process.env.CHECKOUT_CLOSED === "1";
   return { checkoutOpen: !closed && (!production || (database && mail)), demo: !production, mail, production };
