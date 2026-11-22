@@ -32,7 +32,7 @@ export const PROCESSORS = [
   },
   {
     basis: "Art. 6 Abs. 1 lit. b DSGVO; Auftragsverarbeitung nach Art. 28 DSGVO",
-    country: "Irland (EU), Server in Frankfurt",
+    country: "Irland (EU), Server in Irland",
     name: "Supabase Inc. (Datenbank)",
     purpose: "Speicherung von Bestellungen, Anfragen und Widerrufen",
   },
