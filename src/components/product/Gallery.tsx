@@ -6,8 +6,27 @@ import { useRef, useState } from "react";
 type Shot = { src: string; alt: string; label: string };
 
 /** Produktgalerie mit Vorschaubildern und Vergrößerung (Dialog; Zoom per Fingergeste bzw. Mausrad/Klick). */
-export function Gallery({ shots, zoomLabel, closeLabel, hint, loupeLabel, loupeOffLabel }: { shots: Shot[]; zoomLabel: string; closeLabel: string; hint: string; loupeLabel?: string; loupeOffLabel?: string }) {
+export function Gallery({
+  shots: studio,
+  extra,
+  zoomLabel,
+  closeLabel,
+  hint,
+  loupeLabel,
+  loupeOffLabel,
+}: {
+  shots: Shot[];
+  /** Zusätzliche Aufnahmen (z. B. Atelierfotos), erst nach Klick auf einen dezenten Knopf sichtbar. */
+  extra?: { shots: Shot[]; show: string; hide: string };
+  zoomLabel: string;
+  closeLabel: string;
+  hint: string;
+  loupeLabel?: string;
+  loupeOffLabel?: string;
+}) {
   const [index, setIndex] = useState(0);
+  const [more, setMore] = useState(false);
+  const shots = more && extra ? [...studio, ...extra.shots] : studio;
   const [loupe, setLoupe] = useState(false);
   const [lens, setLens] = useState<{ x: number; y: number; w: number; h: number } | null>(null);
   const [scale, setScale] = useState(1);
@@ -64,6 +83,19 @@ export function Gallery({ shots, zoomLabel, closeLabel, hint, loupeLabel, loupeO
             </button>
           ))}
         </div>
+      ) : null}
+      {extra?.shots.length ? (
+        <button
+          aria-expanded={more}
+          className="af-pdp__more"
+          onClick={() => {
+            setIndex(more ? 0 : studio.length);
+            setMore((on) => !on);
+          }}
+          type="button"
+        >
+          {more ? extra.hide : extra.show.replace("{count}", String(extra.shots.length))}
+        </button>
       ) : null}
       <dialog aria-label={zoomLabel} className="af-zoom" onClick={(e) => e.target === e.currentTarget && dialog.current?.close()} ref={dialog}>
         <button aria-label={closeLabel} className="af-drawer__x af-zoom__x" onClick={() => dialog.current?.close()} type="button">

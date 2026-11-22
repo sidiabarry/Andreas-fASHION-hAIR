@@ -345,7 +345,9 @@ html[data-motion="paused"] .home *, html[data-motion="paused"] .home *::before, 
 @media (prefers-reduced-motion: reduce) {
   .ribbon__track { animation: none; flex-wrap: wrap; width: auto; justify-content: center; }
   .ribbon__row[aria-hidden] { display: none; }
-  .ribbon__row { flex-wrap: wrap; justify-content: center; row-gap: 12px; }
+  .ribbon__row { flex-wrap: wrap; justify-content: center; gap: 10px 28px; padding-inline: 20px; }
+  .ribbon__row li { gap: 10px; white-space: normal; font-size: 1.05rem; }
+  .ribbon__spark { order: -1; }
   .ribbon::before, .ribbon::after { display: none; }
   .hero__poster img { transform: none; transition: none; }
   .hero__ctrls { display: none; }

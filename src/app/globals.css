@@ -1001,27 +1001,24 @@ html[data-motion="paused"] .af-hx__dot { animation: none; }
 @media (max-width: 759px) {
   .af-hx { --hx-gap: 10px; --hx-side: 12px; }
   .af-hx__live { font-size: 0.62rem; letter-spacing: 0.08em; gap: 4px 7px; }
-  .af-hx__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: auto; grid-template-areas: "copy copy" "film film" "spot ext"; }
+  .af-hx__grid { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto; grid-template-areas: "copy" "film" "spot" "ext"; }
   .af-hx__grid > * { border-radius: 22px; }
   .af-hx__copy { gap: 24px; padding: 22px 18px 20px; }
   .af-hx__title { font-size: clamp(2.8rem, 13.5vw, 4rem); }
   .af-hx__actions { gap: 14px 20px; }
-  .af-hx__needs ul { flex-wrap: nowrap; overflow-x: auto; margin-inline: -18px; padding: 2px 18px 4px; scrollbar-width: none; overscroll-behavior-x: contain; }
-  .af-hx__needs ul::-webkit-scrollbar { display: none; }
+  .af-hx__needs ul { gap: 8px; }
+  .af-hx__needs a { padding-inline: 12px 10px; }
   .af-hx__watermark { right: -120px; bottom: -110px; }
   .af-hx__film { aspect-ratio: 4 / 4.3; }
-  .af-hx__spot, .af-hx__ext { aspect-ratio: 3 / 4.7; }
-  .af-hx__spot { padding: 8px; gap: 6px; }
+  .af-hx__spot { aspect-ratio: auto; padding: 10px; gap: 10px; }
+  .af-hx__stage { flex: none; height: calc((100vw - 44px) * 0.75 + 76px); }
+  .af-hx__ext { aspect-ratio: 16 / 10; }
   .af-hx__spothead { padding: 4px 2px 0 4px; }
   .af-hx__spothead .af-mono { font-size: 0.6rem; letter-spacing: 0.1em; }
   .af-hx__arrows { display: none; }
-  .af-hx__piecebody { grid-template-columns: 1fr; padding: 0 4px; }
-  .af-hx__piecename { font-size: 0.86rem; }
-  .af-hx__piecesub { display: none; }
-  .af-hx__pieceprice { grid-column: 1; grid-row: auto; justify-self: start; padding: 4px 9px; font-size: 0.78rem; }
-  .af-hx__pieceimg { border-radius: 14px; }
-  .af-hx__extbody { padding: 14px 14px 72px; }
-  .af-hx__ext > .af-hx__round { left: 14px; right: auto; bottom: 14px; width: 42px; height: 42px; }
+  .af-hx__piecebody { padding: 2px 6px 4px; }
+  .af-hx__pieceimg { flex: none; aspect-ratio: 4 / 3; border-radius: 14px; }
+  .af-hx__extbody { padding: 18px 76px 18px 18px; }
   }
 
 /* Knöpfe im Versprechen */
@@ -1052,7 +1049,6 @@ html[data-motion="paused"] .af-hx__dot { animation: none; }
   .af-hx__filmtitle { font-size: clamp(1.6rem, 7.4vw, 2.1rem); }
   .af-hx__actions { display: grid; justify-items: center; width: 100%; }
   .af-hx__primary { width: 100%; justify-content: center; }
-  .af-hx__pieceunit { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { .af-hx__filmtitle, .af-hx__chapter .af-mono { animation: none; } }
 /* Beschriftung des Films: laufend (Kapitel 1 im ersten Bild) oder bei „Bewegung reduzieren“ das letzte Kapitel.
@@ -1381,3 +1377,7 @@ a:hover > .af-hx__round, a:focus-visible > .af-hx__round {
 .af-wishlist .af-wish { margin-top: 12px; padding: 8px 16px; border: 1px solid var(--af-field-line); border-radius: 999px; font-size: 0.92rem; text-decoration: none; color: var(--af-ink); }
 .af-wishlist .af-wish[aria-pressed="true"] { color: var(--af-gold); border-color: var(--af-gold); }
 .af-wishlist__sold { color: var(--af-err); }
+
+/* Extensions: Atelierfotos hinter dezentem Knopf */
+.af-pdp__more { justify-self: start; min-height: 44px; margin-top: 4px; padding: 0 2px; background: none; border: 0; font: inherit; font-size: 0.82rem; letter-spacing: 0.02em; color: var(--af-muted); text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--af-muted) 40%, transparent); text-underline-offset: 4px; cursor: pointer; transition: color 0.3s var(--af-ease); }
+.af-pdp__more:hover { color: var(--af-ink); }

@@ -168,7 +168,7 @@
     "topper": {
       "kicker": "Topper und Perücken",
       "title": "Fülle, *wo sie fehlt.*",
-      "lead": "Für lichter werdendes Haar am Oberkopf, für die Stirnpartie oder für einen ganz neuen Anfang: Topper, Perücken, Pony und Haarsysteme aus Echthaar. Jedes dieser Stücke gibt es genau einmal.",
+      "lead": "Für mehr Fülle am Oberkopf, eine schöne Stirnpartie oder einen ganz neuen Look: Topper, Perücken, Pony und Haarsysteme aus Echthaar. Jedes dieser Stücke gibt es genau einmal.",
       "needsLabel": "Wonach suchen Sie?",
       "cta": "Topper und Perücken ansehen",
       "consult": "Unsicher, was passt? Andrea berät Sie per Foto oder im Atelier.",
@@ -293,7 +293,7 @@
     "topper": {
       "label": "Topper",
       "need": "Mehr Fülle am Oberkopf",
-      "caption": "Für lichter werdendes Haar am Scheitel und Oberkopf. Ihr eigenes Haar an den Seiten bleibt."
+      "caption": "Für mehr Fülle an Scheitel und Oberkopf – Ihr eigenes Haar an den Seiten bleibt."
     },
     "peruecken": {
       "label": "Perücken",
@@ -1085,7 +1085,9 @@
     "returnLink": "Widerrufsbelehrung lesen",
     "share": "Mit Vertrauensperson teilen",
     "shareCopied": "Link kopiert",
-    "shareText": "Schau mal, dieses Stück von Andrea’s Fashion Hair: {name}"
+    "shareText": "Schau mal, dieses Stück von Andrea’s Fashion Hair: {name}",
+    "atelierShow": "Fotos aus dem Atelier ({count})",
+    "atelierHide": "Nur Studiofotos zeigen"
   },
   "cat": {
     "toolsLabel": "Ansicht anpassen",

@@ -168,7 +168,7 @@
     "topper": {
       "kicker": "Toppers et perruques",
       "title": "Du volume *là où il manque.*",
-      "lead": "Pour des cheveux qui s'éclaircissent sur le dessus de la tête, pour la zone du front ou pour un tout nouveau départ : toppers, perruques, franges et systèmes capillaires en cheveux naturels. Chacune de ces pièces n'existe qu'en un seul exemplaire.",
+      "lead": "Pour plus de volume sur le dessus de la tête, une jolie ligne frontale ou un tout nouveau look : toppers, perruques, franges et systèmes capillaires en cheveux naturels. Chacune de ces pièces n'existe qu'en un seul exemplaire.",
       "needsLabel": "Que recherchez-vous ?",
       "cta": "Voir les toppers et les perruques",
       "consult": "Un doute sur ce qui vous convient ? Andrea vous conseille par photo ou à l'atelier.",
@@ -293,7 +293,7 @@
     "topper": {
       "label": "Toppers",
       "need": "Plus de volume sur le dessus",
-      "caption": "Pour des cheveux qui s'affinent au niveau de la raie et du sommet du crâne. Vos cheveux sur les côtés restent."
+      "caption": "Pour plus de volume au niveau de la raie et du sommet – vos cheveux sur les côtés restent."
     },
     "peruecken": {
       "label": "Perruques",
@@ -1085,7 +1085,9 @@
     "returnLink": "Lire les informations sur la rétractation",
     "share": "Partager avec une personne de confiance",
     "shareCopied": "Lien copié",
-    "shareText": "Regarde cette pièce d’Andrea’s Fashion Hair : {name}"
+    "shareText": "Regarde cette pièce d’Andrea’s Fashion Hair : {name}",
+    "atelierShow": "Photos de l’atelier ({count})",
+    "atelierHide": "Afficher seulement les photos studio"
   },
   "cat": {
     "toolsLabel": "Adapter l’affichage",

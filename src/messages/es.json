@@ -168,7 +168,7 @@
     "topper": {
       "kicker": "Toppers y pelucas",
       "title": "Volumen *donde falta.*",
-      "lead": "Para el cabello que se aclara en la coronilla, para la zona de la frente o para un comienzo totalmente nuevo: toppers, pelucas, flequillos y sistemas capilares de cabello natural. Cada una de estas piezas existe una sola vez.",
+      "lead": "Para más volumen en la coronilla, una frente bonita o un look totalmente nuevo: toppers, pelucas, flequillos y sistemas capilares de cabello natural. Cada una de estas piezas existe una sola vez.",
       "needsLabel": "¿Qué busca?",
       "cta": "Ver toppers y pelucas",
       "consult": "¿No sabe qué le conviene? Andrea le asesora por foto o en el taller.",
@@ -293,7 +293,7 @@
     "topper": {
       "label": "Toppers",
       "need": "Más volumen en la parte superior",
-      "caption": "Para el cabello que se aclara en la raya y la coronilla. Su propio cabello de los lados se mantiene."
+      "caption": "Para más volumen en la raya y la coronilla – su propio cabello de los lados se mantiene."
     },
     "peruecken": {
       "label": "Pelucas",
@@ -1085,7 +1085,9 @@
     "returnLink": "Leer la información sobre el desistimiento",
     "share": "Compartir con una persona de confianza",
     "shareCopied": "Enlace copiado",
-    "shareText": "Mira esta pieza de Andrea’s Fashion Hair: {name}"
+    "shareText": "Mira esta pieza de Andrea’s Fashion Hair: {name}",
+    "atelierShow": "Fotos del taller ({count})",
+    "atelierHide": "Mostrar solo fotos de estudio"
   },
   "cat": {
     "toolsLabel": "Ajustar la vista",

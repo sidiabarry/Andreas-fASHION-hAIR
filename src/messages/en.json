@@ -168,7 +168,7 @@
     "topper": {
       "kicker": "Toppers and wigs",
       "title": "Fullness *where it's missing.*",
-      "lead": "For thinning hair on top, for the hairline or for a completely new start: toppers, wigs, fringes and hair systems in human hair. Each of these pieces exists only once.",
+      "lead": "For more fullness on top, a lovely hairline or a whole new look: toppers, wigs, fringes and hair systems in human hair. Each of these pieces exists only once.",
       "needsLabel": "What are you looking for?",
       "cta": "View toppers and wigs",
       "consult": "Not sure what suits you? Andrea advises you by photo or in the atelier.",
@@ -293,7 +293,7 @@
     "topper": {
       "label": "Toppers",
       "need": "More volume on top",
-      "caption": "For thinning hair at the parting and crown. Your own hair at the sides stays."
+      "caption": "For more fullness at the parting and crown – your own hair at the sides stays."
     },
     "peruecken": {
       "label": "Wigs",
@@ -1085,7 +1085,9 @@
     "returnLink": "Read the withdrawal information",
     "share": "Share with someone you trust",
     "shareCopied": "Link copied",
-    "shareText": "Have a look at this piece from Andrea’s Fashion Hair: {name}"
+    "shareText": "Have a look at this piece from Andrea’s Fashion Hair: {name}",
+    "atelierShow": "Photos from the atelier ({count})",
+    "atelierHide": "Show studio photos only"
   },
   "cat": {
     "toolsLabel": "Adjust the view",

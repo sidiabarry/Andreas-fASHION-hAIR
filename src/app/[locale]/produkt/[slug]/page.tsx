@@ -73,6 +73,8 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
     else alt = t(kind === "staged" ? "product.imageAltStaged" : "product.imageAlt", { ...name, index: ++studioIndex });
     return { alt, label: t("product.showImage", { index: index + 1, total: gallery.length }), src: shot.src };
   });
+  const studioShots = shots.filter((_, i) => gallery[i].kind === "studio");
+  const atelierShots = shots.filter((_, i) => gallery[i].kind === "original");
   const copy = productCopy(product, locale);
   const available = (item: { slug: string; sold: boolean }) => !item.sold && !sold.has(item.slug);
   const isExtension = product.category === "extensions";
@@ -153,7 +155,9 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
 
         <div className="af-pdp">
           <div className="af-pdp__gallery">
-            <Gallery closeLabel={t("product.zoomClose")} hint={t("product.zoomHint")} loupeLabel={hair ? t("pdp.loupe") : undefined} loupeOffLabel={t("pdp.loupeOff")} shots={shots} zoomLabel={t("product.zoom")} />
+            <Gallery
+              closeLabel={t("product.zoomClose")}
+              extra={isExtension && studioShots.length ? { hide: t("pdp.atelierHide"), shots: atelierShots, show: t("pdp.atelierShow") } : undefined} hint={t("product.zoomHint")} loupeLabel={hair ? t("pdp.loupe") : undefined} loupeOffLabel={t("pdp.loupeOff")} shots={isExtension && studioShots.length ? studioShots : shots} zoomLabel={t("product.zoom")} />
             {kind ? (
               <p className="af-note af-imgnote" data-kind={kind}>
                 {t(kind === "staged" ? "product.imageNoteStaged" : "product.imageNoteRelit")}
