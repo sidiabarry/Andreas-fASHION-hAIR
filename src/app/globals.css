@@ -1194,3 +1194,41 @@ html[data-motion="paused"] .af-hx__dot { animation: none; }
 .af-modal__steps { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; counter-reset: s; }
 .af-modal__steps li { position: relative; padding-left: 46px; min-height: 34px; counter-increment: s; }
 .af-modal__steps li::before { content: counter(s); position: absolute; left: 0; top: 0; display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--af-gold-fill); color: var(--af-on-gold); font-weight: 600; }
+
+/* ======================================================================
+ * Kollektion: Ansicht-Leiste, Lichtvorschau, Bühnen nach Anzahl, Farbnähe, Vergleich
+ * ====================================================================== */
+.af-cat__defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+.af-viewbar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin: 0 0 22px; }
+.af-seg { display: inline-flex; padding: 4px; gap: 2px; border-radius: 999px; background: var(--af-surface); border: 1px solid var(--af-line); }
+.af-seg button { min-height: 40px; padding: 0 16px; border: 0; border-radius: 999px; background: none; color: var(--af-muted); font-size: 0.88rem; font-weight: 550; transition: background 0.3s var(--af-ease), color 0.3s var(--af-ease); }
+.af-seg button[aria-pressed="true"] { background: var(--af-ink); color: var(--af-bg); box-shadow: var(--af-shadow-s); }
+.af-seg-btn { min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid var(--af-field-line); background: var(--af-raise); font-size: 0.88rem; font-weight: 550; transition: border-color 0.3s var(--af-ease), box-shadow 0.3s var(--af-ease); }
+.af-seg-btn:hover { border-color: var(--af-ink); box-shadow: var(--af-shadow-s); }
+.af-cat[data-light="warm"] .af-card__media img { filter: url(#af-light-warm); }
+.af-cat[data-light="office"] .af-card__media img { filter: url(#af-light-office); }
+.af-card__media img { transition: filter 0.5s var(--af-ease), transform 1.1s var(--af-ease); }
+.af-gridcell { min-width: 0; }
+.af-card__match { position: absolute; right: 10px; bottom: 10px; padding: 5px 9px; font-family: var(--af-mono); font-size: 0.62rem; letter-spacing: 0.08em; font-variant-numeric: tabular-nums; color: #2f6b3a; font-weight: 600; z-index: 2; }
+.af-filebtn { position: relative; justify-content: center; cursor: pointer; }
+.af-filebtn:focus-within { outline: 2px solid var(--af-ink); outline-offset: 3px; }
+.af-demos { display: flex; flex-wrap: wrap; gap: 8px; }
+.af-demos button { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 16px 0 10px; border-radius: 999px; border: 1px solid var(--af-field-line); background: var(--af-raise); font-size: 0.9rem; }
+.af-demos button span { width: 24px; height: 24px; border-radius: 50%; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35); }
+.af-stagenote { margin: 8px 0 0; }
+.af-grid--spot { grid-template-columns: minmax(0, 560px); justify-content: center; }
+.af-grid--duel { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.af-grid--trio { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+@media (max-width: 760px) { .af-grid--spot { grid-template-columns: 1fr; } .af-grid--duel, .af-grid--trio { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.af-comparebar { position: fixed; left: 0; right: 0; bottom: max(14px, env(safe-area-inset-bottom)); z-index: 56; display: flex; justify-content: center; pointer-events: none; }
+.af-comparebar > button { pointer-events: auto; box-shadow: var(--af-shadow-l); animation: af-comparebar-in 0.6s var(--af-ease-out) both; }
+@keyframes af-comparebar-in { from { transform: translateY(24px); opacity: 0; } }
+.af-modal--wide { width: min(760px, calc(100vw - 24px)); }
+.af-compare2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(12px, 3vw, 28px); }
+.af-compare2__col { display: grid; gap: 12px; align-content: start; }
+.af-compare2__col img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 16px; background: var(--af-night); }
+.af-compare2__col dl { display: grid; margin: 0; }
+.af-compare2__col dl div { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid var(--af-line); }
+.af-compare2__col dt { color: var(--af-muted); font-size: 0.86rem; }
+.af-compare2__col dd { margin: 0; font-variant-numeric: tabular-nums; font-weight: 550; text-align: right; }
+@media (prefers-reduced-motion: reduce) { .af-comparebar > button { animation: none; } }

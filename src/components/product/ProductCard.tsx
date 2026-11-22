@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
+import { CardMedia } from "@/components/catalog/CardMedia";
 import { imageKindOf, isUnique, unitInfo, productText } from "@/data/catalog";
 import type { Product } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
@@ -9,28 +9,28 @@ import { formatPrice } from "@/lib/money";
 
 export async function ProductCard({ product, locale, sold, priority }: { product: Product; locale: Locale; sold?: boolean; priority?: boolean }) {
   const t = await getTranslations({ locale, namespace: "product" });
+  const tc = await getTranslations({ locale, namespace: "cat" });
   const text = productText(product, locale);
   const isSold = product.sold || Boolean(sold);
   const unit = unitInfo(product);
   const flag = isSold ? t("flagSold") : product.madeToOrder ? t("flagCustom") : isUnique(product) ? t("flagUnique") : null;
   return (
     <Link className="af-card af-rise" data-sold={isSold} href={`/produkt/${product.slug}`}>
-      <div className="af-card__media" data-tilt="">
-        <Image
-          alt={t(imageKindOf(product) === "staged" ? "imageAltStaged" : "imageAlt", { name: text.name, subtitle: text.subtitle })}
-          height={800}
-          priority={priority}
-          sizes="(max-width: 760px) 46vw, (max-width: 1080px) 31vw, 300px"
-          src={product.image}
-          width={600}
-        />
+      <CardMedia
+        alt={t(imageKindOf(product) === "staged" ? "imageAltStaged" : "imageAlt", { name: text.name, subtitle: text.subtitle })}
+        matchLabel={tc.raw("matchBadge") as string}
+        original={product.originals[0] ?? null}
+        priority={priority}
+        slug={product.slug}
+        src={product.image}
+      >
         {flag ? (
           <span className="af-card__flag af-glass af-glass--badge" data-sold={isSold}>
             {flag}
           </span>
         ) : null}
         {imageKindOf(product) === "staged" ? <span className="af-card__ai af-glass af-glass--badge">{t("flagStaged")}</span> : null}
-      </div>
+      </CardMedia>
       <div className="af-card__row">
         <span className="af-card__name">{text.name.replace(/(\d+) (cm|g|ml)\b/g, "$1\u00a0$2")}</span>
         <span className="af-card__price">{formatPrice(product.priceCents, locale)}</span>

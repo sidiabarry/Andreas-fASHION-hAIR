@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
+import { CatalogGrid } from "@/components/catalog/CatalogGrid";
+import { CatalogTools } from "@/components/catalog/CatalogTools";
+import { ColorMatcher } from "@/components/catalog/ColorMatcher";
+import { CompareBar } from "@/components/catalog/CompareBar";
+import type { CompareItem } from "@/components/catalog/CompareBar";
+import { ViewToolbar } from "@/components/catalog/ViewToolbar";
 import { JsonLd } from "@/components/JsonLd";
 import { ProductCard } from "@/components/product/ProductCard";
 import { SortSelect } from "@/components/product/SortSelect";
-import { CATEGORY_IDS, isCategoryId, products, VISIBLE_CATEGORY_IDS } from "@/data/catalog";
+import { CATEGORY_IDS, isCategoryId, productText, products, VISIBLE_CATEGORY_IDS } from "@/data/catalog";
 import { CustomStrip } from "@/components/product/CustomStrip";
 import type { Product } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
@@ -23,7 +29,10 @@ import {
   parseLengthBand,
   parseMethod,
 } from "@/lib/collection";
+import { hairColorHex } from "@/lib/hair-colors";
+import { formatPrice } from "@/lib/money";
 import { pageMetadata } from "@/lib/seo";
+import { parseBaseCm, parseLengthCm } from "@/lib/units";
 import { soldSlugs } from "@/server/sold";
 
 const SORTS = ["empfehlung", "preis-auf", "preis-ab", "laenge"] as const;
@@ -129,6 +138,16 @@ export default async function CollectionPage({ params, searchParams }: PageProps
     { key: "laenge" as const, label: t("collection.byLength"), options: facetCounts(inCategory, LENGTH_BAND_IDS, lengthBandOf).map((o) => ({ ...o, label: t(`collection.lengths.${o.id}`) })), value: length },
   ].filter((group) => group.options.length > 1 || group.value);
   const filtered = Boolean(method || color || length);
+  // Bühne nach Anzahl (Modul 6): 1 Spotlight, 2 Duell, 3 Dreier, sonst Raster
+  const stage = category && !filtered && sort === "empfehlung" ? ({ 1: "spot", 2: "duel", 3: "trio" } as const)[list.length as 1 | 2 | 3] ?? null : null;
+  const swatches = products.flatMap((p) => {
+    const hex = hairColorHex(p.color);
+    return hex ? [{ hex, slug: p.slug }] : [];
+  });
+  const compareItems: CompareItem[] = products.map((p) => {
+    const text = productText(p, locale);
+    return { base: parseBaseCm(p.base), image: p.image, lengthCm: parseLengthCm(p.length), name: text.name, original: p.originals[0] ?? null, price: formatPrice(p.priceCents, locale), slug: p.slug, subtitle: text.subtitle };
+  });
 
   return (
     <main className="af-page af-page--zoned" data-zone="light">
@@ -157,6 +176,8 @@ export default async function CollectionPage({ params, searchParams }: PageProps
       </div>
       <div className="af-zone-light af-zone-fade-top af-zone-band">
         <div className="af-wrap">
+          <CatalogTools>
+          <ViewToolbar>{!category || category === "extensions" || category === "pflege" ? null : <ColorMatcher swatches={swatches} />}</ViewToolbar>
           <div className="af-toolbar">
             <nav aria-label={t("collection.filterLabel")} className="af-filters">
               <Link aria-current={category === null ? "page" : undefined} className="af-tab af-glass" href={hrefFor({ kategorie: null })}>
@@ -209,11 +230,13 @@ export default async function CollectionPage({ params, searchParams }: PageProps
             {t("collection.results", { count: list.length })}. {t("collection.soldHint")}
           </p>
           {list.length ? (
-            <div className="af-grid">
-              {list.map((product, index) => (
-                <ProductCard key={product.slug} locale={locale} priority={index < 2} product={product} sold={sold.has(product.slug)} />
-              ))}
-            </div>
+            <>
+              {stage ? <p className="af-mono af-stagenote">{t(`cat.stage${stage === "spot" ? "Spot" : stage === "duel" ? "Duel" : "Trio"}`)}</p> : null}
+              <CatalogGrid
+                className={`af-grid${stage ? ` af-grid--${stage}` : ""}`}
+                items={list.map((product, index) => ({ node: <ProductCard locale={locale} priority={index < 2} product={product} sold={sold.has(product.slug)} />, slug: product.slug }))}
+              />
+            </>
           ) : (
             <div className="af-msg" data-kind="info" style={{ marginTop: 32 }}>
               <p>{t("collection.empty")}</p>
@@ -228,6 +251,8 @@ export default async function CollectionPage({ params, searchParams }: PageProps
               </p>
             </div>
           )}
+          <CompareBar items={compareItems} />
+          </CatalogTools>
           <div style={{ marginTop: 72 }}>
             <CustomStrip />
           </div>
