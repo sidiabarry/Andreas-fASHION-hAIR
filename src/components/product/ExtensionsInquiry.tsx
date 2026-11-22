@@ -32,7 +32,7 @@ export async function ExtensionsInquiry({ locale }: { locale: Locale }) {
         <h2 className="af-h3" id="ext-form-title">
           {t("extensions.formTitle")}
         </h2>
-        {mode.demo || mode.mail ? (
+        {mode.demo || mode.inquiry ? (
           <InquiryForm b2bNotice={legalFor(locale).checkoutTextsFor(toLegalCompany()).b2bNotice} fixedTopic ownerEmail={company.email} product="" topic="extensions" />
         ) : (
           <div className="af-msg" data-kind="info" role="status">

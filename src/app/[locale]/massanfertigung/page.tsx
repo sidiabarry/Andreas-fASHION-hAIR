@@ -28,7 +28,7 @@ export default async function CustomPage({ params, searchParams }: PageProps<"/[
   const t = await getTranslations({ locale });
   const product = typeof query.produkt === "string" ? query.produkt.slice(0, 120) : "";
   const mode = siteMode();
-  const available = mode.demo || mode.mail;
+  const available = mode.demo || mode.inquiry;
 
   return (
     <main className="af-page">

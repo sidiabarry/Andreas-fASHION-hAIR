@@ -243,7 +243,7 @@ const formValue = (data: FormData, key: string) => {
 
 export async function sendInquiry(_prev: FormState, data: FormData): Promise<FormState> {
   const mode = siteMode();
-  if (mode.production && !mode.mail) return { error: "unavailable", status: "error" };
+  if (mode.production && !mode.inquiry) return { error: "unavailable", status: "error" };
   const locale = safeLocale(formValue(data, "locale"));
   const parsed = inquirySchema.safeParse({
     email: formValue(data, "email"),
@@ -298,8 +298,8 @@ export async function sendInquiry(_prev: FormState, data: FormData): Promise<For
     }).catch(() => undefined);
   }
   const owner = ownerAddress();
-  if (mode.mail && owner) {
-    const status = await sendOwner({
+  if (mode.inquiry) {
+    const inquiryMail = {
       replyTo: input.email,
       subject: `Neue Anfrage: ${input.topic}${mode.demo ? " (DEMO)" : ""}`,
       text: [
@@ -322,9 +322,14 @@ export async function sendInquiry(_prev: FormState, data: FormData): Promise<For
       ]
         .filter((line) => line !== "")
         .join("\n"),
-      to: owner,
-    });
-    if (status !== "gesendet" && !mode.demo) return { error: "failed", status: "error" };
+      to: owner ?? "",
+    };
+    // Erfolgreich, sobald Andréia die Anfrage auf mindestens einem Weg erreicht (E-Mail oder Telegram).
+    const [mailStatus, telegramStatus] = await Promise.all([
+      mode.mail && owner ? sendMail(inquiryMail) : Promise.resolve<MailStatus>("nicht_konfiguriert"),
+      sendTelegram(inquiryMail.subject, `${inquiryMail.text}\n\nAntwort an: ${input.email}`),
+    ]);
+    if (mailStatus !== "gesendet" && telegramStatus !== "gesendet" && !mode.demo) return { error: "failed", status: "error" };
   }
   return { demo: mode.demo, status: "ok" };
 }

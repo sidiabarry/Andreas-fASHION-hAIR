@@ -160,7 +160,7 @@ for (const key of ["SUPABASE_URL", "SUPABASE_SERVICE_ROLE_KEY"]) {
 for (const key of ["RESEND_API_KEY", "MAIL_FROM", "MAIL_TO_OWNER"]) {
   const gmail = Boolean(process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD); // Gmail ersetzt Resend-Schlüssel, Absender und Empfängerin
   if (!process.env[key] && !gmail && !(key === "RESEND_API_KEY" && process.env.Resend_Key)) {
-    findings.push({ area: "Umgebung", blocking: production && Boolean(process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY), text: `${key} ist nicht gesetzt: Anfrage- und Widerrufsformular sind in Production dann nicht nutzbar (es werden Telefon/E-Mail angezeigt)` });
+    findings.push({ area: "Umgebung", blocking: false, text: `${key} ist nicht gesetzt (Kasse bleibt dann automatisch geschlossen, siehe src/server/mode.ts): Anfrage- und Widerrufsformular sind in Production dann nicht nutzbar (es werden Telefon/E-Mail angezeigt)` });
   }
 }
 

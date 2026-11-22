@@ -15,6 +15,8 @@ export type SiteMode = {
   demo: boolean;
   checkoutOpen: boolean;
   mail: boolean;
+  /** Anfrageformular nutzbar: E-Mail oder Telegram an die Inhaberin eingerichtet. */
+  inquiry: boolean;
 };
 
 export function siteMode(): SiteMode {
@@ -25,7 +27,8 @@ export function siteMode(): SiteMode {
   const gmail = Boolean(process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD);
   const resend = Boolean((process.env.RESEND_API_KEY || process.env.Resend_Key) && process.env.MAIL_FROM);
   const mail = (gmail || resend) && Boolean(process.env.MAIL_TO_OWNER || process.env.GMAIL_USER);
+  const telegram = Boolean((process.env.TELEGRAM_BOT_TOKEN || process.env.Telegram_key) && (process.env.TELEGRAM_CHAT_ID || process.env.Chat_ID));
   const database = Boolean(process.env.SUPABASE_URL && process.env.SUPABASE_SERVICE_ROLE_KEY);
   const closed = process.env.CHECKOUT_CLOSED === "1";
-  return { checkoutOpen: !closed && (!production || (database && mail)), demo: !production, mail, production };
+  return { checkoutOpen: !closed && (!production || (database && mail)), demo: !production, inquiry: mail || telegram, mail, production };
 }

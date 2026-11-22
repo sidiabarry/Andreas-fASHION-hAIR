@@ -26,7 +26,7 @@ export default async function InquiryPage({ params, searchParams }: PageProps<"/
   const topic: InquiryTopic = INQUIRY_TOPICS.includes(query.thema as InquiryTopic) ? (query.thema as InquiryTopic) : "beratung";
   const product = typeof query.produkt === "string" ? query.produkt.slice(0, 160) : "";
   const mode = siteMode();
-  const available = mode.demo || mode.mail;
+  const available = mode.demo || mode.inquiry;
 
   return (
     <main className="af-page af-zone-light" data-zone="light">
