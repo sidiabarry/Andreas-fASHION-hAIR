@@ -163,11 +163,11 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
                 {t(kind === "staged" ? "product.imageNoteStaged" : "product.imageNoteRelit")}
               </p>
             ) : null}
-            {product.restyled && product.originals[0] ? (
-              <section aria-labelledby="compare-title" className="af-stack" style={{ "--gap": "12px" } as React.CSSProperties}>
-                <h2 className="af-mono" id="compare-title">
+            {product.restyled && product.originals[0] && !isExtension ? (
+              <details className="af-pdp__compare">
+                <summary className="af-mono" id="compare-title">
                   {t(kind === "staged" ? "product.compareTitleStaged" : "product.compareTitle")}
-                </h2>
+                </summary>
                 <CompareSlider
                   label={t(kind === "staged" ? "product.compareLabelStaged" : "product.compareLabel")}
                   original={product.originals[0]}
@@ -175,7 +175,7 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
                   studio={product.image}
                   studioLabel={t(kind === "staged" ? "product.compareStudioStaged" : "product.compareStudio")}
                 />
-              </section>
+              </details>
             ) : null}
           </div>
 
@@ -239,8 +239,6 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
               )}
             </div>
 
-            <TrustFacts compact locale={locale} />
-            {hair ? <ReturnPreview madeToOrder={product.madeToOrder} /> : null}
 
             <section aria-labelledby="specs-title">
               <h2 className="af-sr" id="specs-title">
@@ -268,6 +266,15 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
               <h2 className="af-h3" id="faq-title">
                 {t("objections.title")}
               </h2>
+              {copy ? <ProductCopyBlock copy={copy} locale={locale} /> : null}
+              <details>
+                <summary>
+                  <h3 className="af-faq__q">{t("pdp.trustFold")}</h3>
+                  <i aria-hidden="true" />
+                </summary>
+                <TrustFacts compact locale={locale} />
+                {hair ? <ReturnPreview madeToOrder={product.madeToOrder} /> : null}
+              </details>
               {objections.map((item) => (
                 <details key={item.q}>
                   <summary>
@@ -290,7 +297,6 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
       </div>
       <div className="af-zone-light af-zone-fade-top af-zone-band af-pdp__after">
         <div className="af-wrap">
-          {copy ? <ProductCopyBlock copy={copy} locale={locale} /> : null}
           {hair && !isExtension && secondOriginal ? <PartingCompass extraAlt={t("product.originalAlt", { index: 2, name: text.name, subtitle: text.subtitle })} extraImage={secondOriginal} /> : null}
           {product.netWeightGrams ? <WeightCompare grams={product.netWeightGrams} locale={locale} /> : null}
           {hair ? <CustomStrip product={`${text.name}, ${text.subtitle}`} /> : null}

@@ -111,7 +111,7 @@
       "cta": "Ver todas las extensiones",
       "salon": "Para salones y peluqueros: consultar cantidades",
       "view": "Ver {name}, {color}",
-      "imageNote": "Puesta en escena con IA: el color del cabello se ajusta a la foto original. Las fotos originales en las páginas de producto muestran las piezas sin editar.",
+      "imageNote": "Imágenes editadas con IA.",
       "galleryLabel": "Extensiones en el taller"
     },
     "near": {
@@ -357,8 +357,8 @@
     "packSize": "por paquete {grams} g",
     "setSize": "set ({pieces} cortinas) {grams} g",
     "imageAltStaged": "{name}, {subtitle}: imagen de estudio escenificada con ayuda de IA",
-    "imageNoteRelit": "Foto de estudio, reiluminada. No se ha modificado nada del cabello.",
-    "imageNoteStaged": "Puesta en escena con IA: la forma y el volumen están escenificados. Las fotos originales muestran la pieza sin editar.",
+    "imageNoteRelit": "Imagen editada con IA.",
+    "imageNoteStaged": "Imagen editada con IA.",
     "consultTitle": "Asesoramiento",
     "consultText": "¿Dudas sobre el color, la talla o el ajuste? Andrea le responde personalmente.",
     "consultExtensions": "¿Duda con el color o la cantidad? Envíe a Andrea una foto de su cabello con luz natural. Ella le dice con honestidad qué le va bien.",
@@ -391,10 +391,10 @@
       "good": "Para quién es adecuada",
       "care": "Cuidado"
     },
-    "flagStaged": "Escenificación IA",
-    "compareStudioStaged": "Escenificación IA",
-    "compareTitleStaged": "Escenificación IA y foto original comparadas",
-    "compareLabelStaged": "Mover la comparación: a la izquierda la escenificación IA, a la derecha la foto original sin retocar",
+    "flagStaged": "Imagen editada",
+    "compareStudioStaged": "Imagen editada",
+    "compareTitleStaged": "Imagen editada y foto original",
+    "compareLabelStaged": "Mover la comparación: imagen editada a la izquierda, foto original sin editar a la derecha",
     "manufacturer": "Fabricado por {name}, {address}, {email}",
     "handmade": "Hecho a mano por Andrea en {city}"
   },
@@ -1087,7 +1087,8 @@
     "shareCopied": "Enlace copiado",
     "shareText": "Mira esta pieza de Andrea’s Fashion Hair: {name}",
     "atelierShow": "Fotos del taller ({count})",
-    "atelierHide": "Mostrar solo fotos de estudio"
+    "atelierHide": "Mostrar solo fotos de estudio",
+    "trustFold": "Envío, devolución y pago"
   },
   "cat": {
     "toolsLabel": "Ajustar la vista",

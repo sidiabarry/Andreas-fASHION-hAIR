@@ -111,7 +111,7 @@
       "cta": "Alle Extensions ansehen",
       "salon": "Für Salons und Friseure: Mengen anfragen",
       "view": "{name}, {color} ansehen",
-      "imageNote": "KI-Inszenierung: Die Haarfarbe ist am Originalfoto angeglichen. Die Originalfotos auf den Produktseiten zeigen die Stücke unbearbeitet.",
+      "imageNote": "Bilder mit KI bearbeitet.",
       "galleryLabel": "Extensions im Atelier"
     },
     "near": {
@@ -357,8 +357,8 @@
     "packSize": "je Packung {grams} g",
     "setSize": "Set ({pieces} Tressen) {grams} g",
     "imageAltStaged": "{name}, {subtitle}: KI-gestützt inszeniertes Studiobild",
-    "imageNoteRelit": "Studioaufnahme, neu ausgeleuchtet. Am Haar wurde nichts verändert.",
-    "imageNoteStaged": "KI-Inszenierung: Form und Fülle sind inszeniert. Die Originalfotos zeigen das Stück unbearbeitet.",
+    "imageNoteRelit": "Bild mit KI bearbeitet.",
+    "imageNoteStaged": "Bild mit KI bearbeitet.",
     "consultTitle": "Beratung",
     "consultText": "Fragen zu Farbe, Größe oder Passform? Andrea antwortet persönlich.",
     "consultExtensions": "Unsicher bei Farbe oder Menge? Schicken Sie Andrea ein Foto Ihres Haars bei Tageslicht. Sie sagt Ihnen ehrlich, was passt.",
@@ -391,10 +391,10 @@
       "good": "Für wen es passt",
       "care": "Pflege"
     },
-    "flagStaged": "KI-Inszenierung",
-    "compareStudioStaged": "KI-Inszenierung",
-    "compareTitleStaged": "KI-Inszenierung und Originalfoto im Vergleich",
-    "compareLabelStaged": "Vergleich verschieben: links KI-Inszenierung, rechts unbearbeitetes Originalfoto",
+    "flagStaged": "Bearbeitetes Bild",
+    "compareStudioStaged": "Bearbeitetes Bild",
+    "compareTitleStaged": "Bearbeitetes Bild und Originalfoto",
+    "compareLabelStaged": "Vergleich verschieben: links bearbeitetes Bild, rechts unbearbeitetes Originalfoto",
     "manufacturer": "Hergestellt von {name}, {address}, {email}",
     "handmade": "Handgefertigt von Andrea in {city}"
   },
@@ -1087,7 +1087,8 @@
     "shareCopied": "Link kopiert",
     "shareText": "Schau mal, dieses Stück von Andrea’s Fashion Hair: {name}",
     "atelierShow": "Fotos aus dem Atelier ({count})",
-    "atelierHide": "Nur Studiofotos zeigen"
+    "atelierHide": "Nur Studiofotos zeigen",
+    "trustFold": "Versand, Rückgabe und Bezahlung"
   },
   "cat": {
     "toolsLabel": "Ansicht anpassen",

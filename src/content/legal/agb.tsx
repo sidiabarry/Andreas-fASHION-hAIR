@@ -216,6 +216,10 @@ export default function Page({ company: c }: { company: Company }) {
             Eine zusätzliche Garantie geben wir nur, wenn wir sie bei einem Produkt ausdrücklich
             angeben.
           </li>
+          <li>
+            Die Produktbilder im Shop sind mit KI bearbeitet, vor allem der Hintergrund.
+            Unbearbeitete Originalfotos aus dem Atelier zeigen wir auf jeder Produktseite.
+          </li>
         </ol>
       </section>
 

@@ -3,45 +3,35 @@ import { getTranslations } from "next-intl/server";
 import type { ProductCopy } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
 
-/** Ausführliche Verkaufstexte (nur, wenn am Produkt hinterlegt). Headline und Story stehen oben auf der Seite, FAQ im Frageblock. */
+/**
+ * Ausführliche Verkaufstexte (nur, wenn am Produkt hinterlegt) als zugeklappte Abschnitte im Frageblock,
+ * damit die Seite auf dem Handy kurz bleibt. Headline und Story stehen oben auf der Seite.
+ */
 export async function ProductCopyBlock({ copy, locale }: { copy: ProductCopy; locale: Locale }) {
   const t = await getTranslations({ locale, namespace: "product.copy" });
-  const has = copy.benefits?.length || copy.howItWorks || copy.goodFor || copy.care?.length;
-  if (!has) return null;
+  const items: { key: string; title: string; body: React.ReactNode }[] = [];
+  const list = (entries: string[]) => (
+    <ul className="af-copy__list">
+      {entries.map((item) => (
+        <li key={item}>{item}</li>
+      ))}
+    </ul>
+  );
+  if (copy.benefits?.length) items.push({ body: list(copy.benefits), key: "benefits", title: t("benefits") });
+  if (copy.howItWorks) items.push({ body: <p>{copy.howItWorks}</p>, key: "how", title: t("how") });
+  if (copy.goodFor) items.push({ body: <p>{copy.goodFor}</p>, key: "good", title: t("good") });
+  if (copy.care?.length) items.push({ body: list(copy.care), key: "care", title: t("care") });
   return (
-    <section aria-label={t("title")} className="af-copy">
-      {copy.benefits?.length ? (
-        <div>
-          <h2 className="af-mono">{t("benefits")}</h2>
-          <ul className="af-copy__list">
-            {copy.benefits.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </div>
-      ) : null}
-      {copy.howItWorks ? (
-        <div>
-          <h2 className="af-mono">{t("how")}</h2>
-          <p className="af-text">{copy.howItWorks}</p>
-        </div>
-      ) : null}
-      {copy.goodFor ? (
-        <div>
-          <h2 className="af-mono">{t("good")}</h2>
-          <p className="af-text">{copy.goodFor}</p>
-        </div>
-      ) : null}
-      {copy.care?.length ? (
-        <div>
-          <h2 className="af-mono">{t("care")}</h2>
-          <ul className="af-copy__list">
-            {copy.care.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </div>
-      ) : null}
-    </section>
+    <>
+      {items.map((item) => (
+        <details key={item.key}>
+          <summary>
+            <h3 className="af-faq__q">{item.title}</h3>
+            <i aria-hidden="true" />
+          </summary>
+          {item.body}
+        </details>
+      ))}
+    </>
   );
 }

@@ -1381,3 +1381,20 @@ a:hover > .af-hx__round, a:focus-visible > .af-hx__round {
 /* Extensions: Atelierfotos hinter dezentem Knopf */
 .af-pdp__more { justify-self: start; min-height: 44px; margin-top: 4px; padding: 0 2px; background: none; border: 0; font: inherit; font-size: 0.82rem; letter-spacing: 0.02em; color: var(--af-muted); text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--af-muted) 40%, transparent); text-underline-offset: 4px; cursor: pointer; transition: color 0.3s var(--af-ease); }
 .af-pdp__more:hover { color: var(--af-ink); }
+
+/* Produktseite: kompakt – Vorschaubilder in einer Reihe, Vergleich und Details zugeklappt */
+.af-pdp__thumbs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.af-pdp__thumbs::-webkit-scrollbar { display: none; }
+.af-thumb { flex: none; }
+@media (max-width: 759px) { .af-thumb { width: 64px; height: 82px; border-radius: 10px; } }
+.af-pdp__compare { border-top: 1px solid var(--af-line); padding-top: 4px; }
+.af-pdp__compare > summary { display: flex; align-items: center; justify-content: space-between; min-height: 44px; cursor: pointer; list-style: none; }
+.af-pdp__compare > summary::-webkit-details-marker { display: none; }
+.af-pdp__compare > summary::after { content: "+"; font-size: 1.2rem; color: var(--af-gold-ink, var(--af-muted)); transition: transform 0.3s var(--af-ease); }
+.af-pdp__compare[open] > summary::after { transform: rotate(45deg); }
+.af-faq--compact details > .af-trust { margin: 4px 0 14px; padding: 0; background: none; border: 0; box-shadow: none; }
+.af-faq--compact details > .af-trust > h2 { display: none; }
+.af-faq--compact details > .af-copy__list { margin: 4px 0 14px; }
+
+/* KI-Hinweis: fast durchsichtig, ausführlich in den AGB */
+.af-imgnote, .xc__fine p { opacity: 0.4; font-size: 0.72rem !important; }

@@ -111,7 +111,7 @@
       "cta": "View all extensions",
       "salon": "For salons and hairdressers: request quantities",
       "view": "View {name}, {color}",
-      "imageNote": "AI staging: the hair colour is matched to the original photo. The original photos on the product pages show the pieces unedited.",
+      "imageNote": "Images edited with AI.",
       "galleryLabel": "Extensions in the atelier"
     },
     "near": {
@@ -357,8 +357,8 @@
     "packSize": "per pack {grams} g",
     "setSize": "set ({pieces} wefts) {grams} g",
     "imageAltStaged": "{name}, {subtitle}: AI-assisted staged studio image",
-    "imageNoteRelit": "Studio shot, relit. Nothing about the hair was altered.",
-    "imageNoteStaged": "AI staging: shape and fullness are staged. The original photos show the piece unedited.",
+    "imageNoteRelit": "Image edited with AI.",
+    "imageNoteStaged": "Image edited with AI.",
     "consultTitle": "Advice",
     "consultText": "Questions about colour, size or fit? Andrea replies personally.",
     "consultExtensions": "Unsure about colour or amount? Send Andrea a photo of your hair in daylight. She will tell you honestly what suits.",
@@ -391,10 +391,10 @@
       "good": "Who it is for",
       "care": "Care"
     },
-    "flagStaged": "AI staging",
-    "compareStudioStaged": "AI staging",
-    "compareTitleStaged": "AI staging and original photo compared",
-    "compareLabelStaged": "Move the comparison: AI staging on the left, unedited original photo on the right",
+    "flagStaged": "Edited image",
+    "compareStudioStaged": "Edited image",
+    "compareTitleStaged": "Edited image and original photo",
+    "compareLabelStaged": "Move the comparison: edited image on the left, unedited original photo on the right",
     "manufacturer": "Made by {name}, {address}, {email}",
     "handmade": "Handmade by Andrea in {city}"
   },
@@ -1087,7 +1087,8 @@
     "shareCopied": "Link copied",
     "shareText": "Have a look at this piece from Andrea’s Fashion Hair: {name}",
     "atelierShow": "Photos from the atelier ({count})",
-    "atelierHide": "Show studio photos only"
+    "atelierHide": "Show studio photos only",
+    "trustFold": "Shipping, returns and payment"
   },
   "cat": {
     "toolsLabel": "Adjust the view",

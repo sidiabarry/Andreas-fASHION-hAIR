@@ -29,7 +29,6 @@ export async function ProductCard({ product, locale, sold, priority }: { product
             {flag}
           </span>
         ) : null}
-        {imageKindOf(product) === "staged" ? <span className="af-card__ai af-glass af-glass--badge">{t("flagStaged")}</span> : null}
       </CardMedia>
       <div className="af-card__row">
         <span className="af-card__name">{text.name.replace(/(\d+) (cm|g|ml)\b/g, "$1\u00a0$2")}</span>

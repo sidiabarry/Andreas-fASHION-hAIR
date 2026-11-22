@@ -86,7 +86,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
   });
 
   // Hero (Schaufenster): Extensions mit Preis im Wechsel, Live-Zahl echter Einzelstücke, Film in drei Kapiteln
-  const spotlight: SpotlightPiece[] = pieces.map((p) => ({ flag: tp("flagStaged"), image: p.image, name: p.name, price: p.price, slug: p.slug, subtitle: p.color, unit: p.unit }));
+  const spotlight: SpotlightPiece[] = pieces.map((p) => ({ flag: null, image: p.image, name: p.name, price: p.price, slug: p.slug, subtitle: p.color, unit: p.unit }));
   const uniqueOpen = products.filter((p) => isUnique(p) && !p.sold && !sold.has(p.slug)).length;
   const showcase: ShowcaseTexts = {
     chapters: [1, 2, 3].map((n) => ({ label: t(`hero.ch${n}`), title: t(`hero.line${n}`) })),
