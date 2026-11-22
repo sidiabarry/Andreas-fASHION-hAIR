@@ -1127,3 +1127,6 @@ html[data-motion="paused"] .af-hx__dot { animation: none; }
   .af-pay__code { width: min(78%, 240px); }
 }
 @media print { .af-pay { box-shadow: none; background: #fff; } .af-pay__copy, .af-pay__qr a { display: none; } }
+
+/* Produktnamen nicht mitten im Wort trennen („Clip-in-Ex-tensions“) */
+.af-pdp__info h1, .af-card__name, .af-hx__piecename { hyphens: manual; }
