@@ -51,6 +51,9 @@ export function fillTemplate(template: string, values: Record<string, string>): 
  * Zusätzlich zur E-Mail; ohne Konfiguration passiert nichts. Fehler blockieren nie den Ablauf.
  * Telegram begrenzt Nachrichten auf 4096 Zeichen.
  */
+/** Letzter Telegram-Fehler (ohne Schlüssel), nur für den Verbindungstest. */
+export let lastTelegramError = "";
+
 export async function sendTelegram(subject: string, text: string): Promise<MailStatus> {
   const token = (process.env.TELEGRAM_BOT_TOKEN || process.env.Telegram_key || "").trim().replace(/^bot/i, "").replace(/^["']|["']$/g, "");
   const chat = (process.env.TELEGRAM_CHAT_ID || process.env.Chat_ID || "").trim().replace(/^["']|["']$/g, "");
@@ -64,7 +67,9 @@ export async function sendTelegram(subject: string, text: string): Promise<MailS
     });
     if (!response.ok) {
       const shape = `Schlüssel: ${token.length} Zeichen, ${/^\d+:[\w-]{30,}$/.test(token) ? "Format ok" : "Format unerwartet"}`;
-      console.error(`[telegram] Versand fehlgeschlagen: HTTP ${response.status} (${shape})`);
+      const detail = await response.json().then((j: { description?: string }) => j.description ?? "").catch(() => "");
+      lastTelegramError = `HTTP ${response.status} ${detail} (${shape}, Chat-ID ${chat.length} Zeichen)`;
+      console.error(`[telegram] Versand fehlgeschlagen: ${lastTelegramError}`);
       return "fehlgeschlagen";
     }
     return "gesendet";
