@@ -33,7 +33,11 @@ export type ShowcaseTexts = {
  * drei Kapiteln, Extensions mit Preis und Grundpreis, Maßanfertigung. Keine erfundenen Belege, keine Countdowns.
  */
 export function HeroShowcase({ t, pieces }: { t: ShowcaseTexts; pieces: SpotlightPiece[] }) {
-  const poster = getImageProps({ alt: "", height: 1080, priority: true, quality: 70, sizes: "(max-width: 759px) 100vw, (max-width: 1099px) 60vw, 560px", src: "/assets/world/journey-poster.jpg", width: 1080 }).props;
+  // Standbild = ERSTES Filmbild (Glut): der Film setzt beim Start nahtlos darauf an. Bei „Bewegung reduzieren“ gleich das
+  // Endbild (Haar). Der Browser wählt per <picture> eines von beiden, geladen wird nur dieses.
+  const posterSizes = "(max-width: 759px) 100vw, (max-width: 1099px) 60vw, 560px";
+  const poster = getImageProps({ alt: "", height: 1080, priority: true, quality: 70, sizes: posterSizes, src: "/assets/world/journey-poster-start.jpg", width: 1080 }).props;
+  const endPoster = getImageProps({ alt: "", height: 1080, quality: 70, sizes: posterSizes, src: "/assets/world/journey-poster.jpg", width: 1080 }).props;
 
   return (
     <section aria-labelledby="hero-title" className="af-hx">
@@ -78,9 +82,20 @@ export function HeroShowcase({ t, pieces }: { t: ShowcaseTexts; pieces: Spotligh
         </div>
 
         <div className="af-hx__film af-ondark">
-          {/* eslint-disable-next-line jsx-a11y/alt-text, @next/next/no-img-element -- optimiert über getImageProps, alt="" (dekorativ) */}
-          <img className="af-hx__poster" {...poster} />
-          <HeroFilm chapters={t.chapters} desktop="/assets/world/journey.mp4" mobile="/assets/world/journey-mobile.mp4" pauseLabel={t.pause} playLabel={t.play} />
+          <picture>
+            <source media="(prefers-reduced-motion: reduce)" sizes={endPoster.sizes} srcSet={endPoster.srcSet} />
+            {/* eslint-disable-next-line jsx-a11y/alt-text -- optimiert über getImageProps, alt="" (dekorativ) */}
+            <img className="af-hx__poster" {...poster} />
+          </picture>
+          <HeroFilm
+            chapters={t.chapters}
+            desktop="/assets/world/journey.mp4"
+            endPoster="/assets/world/journey-poster.jpg"
+            mobile="/assets/world/journey-mobile.mp4"
+            pauseLabel={t.pause}
+            playLabel={t.play}
+            posterSizes={posterSizes}
+          />
         </div>
 
         <HeroSpotlight nextLabel={t.spotlightNext} pieces={pieces} prevLabel={t.spotlightPrev} showTemplate={t.spotlightShow} title={t.spotlightTitle} />

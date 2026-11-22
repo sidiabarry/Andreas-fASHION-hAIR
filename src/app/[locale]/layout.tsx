@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import { ViewTransition } from "react";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { headers } from "next/headers";
@@ -23,8 +22,8 @@ import { fontVariables } from "../fonts";
 import "../globals.css";
 
 export const viewport: Viewport = {
-  colorScheme: "dark",
-  themeColor: "#100e0d",
+  colorScheme: "light",
+  themeColor: "#fbf7f1",
   width: "device-width",
   initialScale: 1,
 };
@@ -63,7 +62,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
           <CartProvider checkoutOpen={mode.checkoutOpen} products={products.map((product) => toLite(product, locale))}>
             <Header />
             <div id="inhalt" tabIndex={-1}>
-              <ViewTransition default="af-page">{children}</ViewTransition>
+              {children}
             </div>
             <Footer demo={mode.demo} />
             <Rise />

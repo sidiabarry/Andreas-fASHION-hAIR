@@ -65,7 +65,8 @@
 .h-chapter__label { font-family: var(--af-mono); font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--af-muted); }
 
 /* ---------- Partikelfeld ---------- */
-.fx-canvas { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 3; pointer-events: none; mix-blend-mode: multiply; opacity: 0.85; }
+.fx-canvas { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 3; pointer-events: none; mix-blend-mode: multiply; opacity: 0.85; animation: fx-field-in 1.6s var(--af-ease) both; }
+@keyframes fx-field-in { from { opacity: 0; } }
 html[data-motion="paused"] .fx-canvas { opacity: 0.55; }
 
 /* ---------- 1 Hero: Film in drei Kapiteln ---------- */
