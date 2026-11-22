@@ -8,6 +8,7 @@ import type { Company as LegalCompany } from "@/content/legal/company-type";
 import { company } from "./company";
 import type { Company } from "./company";
 import { DELIVERY_DAYS_IN_STOCK, EU_COUNTRIES, MADE_TO_ORDER_DAYS, SHIPPING_ZONES } from "./shipping";
+import { formatIban } from "@/lib/payment";
 
 /** Hosting und Auftragsverarbeiter (für die Datenschutzerklärung). Vor dem Launch mit den AV-Verträgen abgleichen. */
 export const HOSTING = {
@@ -23,6 +24,24 @@ export const PROCESSORS = [
     name: "Resend (Plus Five Five, Inc.)",
     purpose: "Versand von E-Mails (Bestell- und Eingangsbestätigungen, Antworten auf Anfragen)",
   },
+  {
+    basis: "Art. 6 Abs. 1 lit. b DSGVO; Auftragsverarbeitung nach Art. 28 DSGVO",
+    country: "Irland (EU)",
+    name: "Google Ireland Limited (Gmail)",
+    purpose: "Versand von E-Mails (Bestell- und Eingangsbestätigungen, Benachrichtigung der Inhaberin)",
+  },
+  {
+    basis: "Art. 6 Abs. 1 lit. b DSGVO; Auftragsverarbeitung nach Art. 28 DSGVO",
+    country: "Irland (EU), Server in Irland",
+    name: "Supabase Inc. (Datenbank)",
+    purpose: "Speicherung von Bestellungen, Anfragen und Widerrufen",
+  },
+  {
+    basis: "Art. 6 Abs. 1 lit. b und f DSGVO",
+    country: "Vereinigte Arabische Emirate / weltweit",
+    name: "Telegram (Telegram Messenger Inc. / Telegram FZ-LLC)",
+    purpose: "Interne Benachrichtigung der Inhaberin über neue Bestellungen, Anfragen und Widerrufe",
+  },
 ];
 
 function hoursText(c: Company): string {
@@ -37,7 +56,7 @@ function hoursText(c: Company): string {
 
 export function toLegalCompany(c: Company = company): LegalCompany {
   return {
-    bank: c.bank ? { bic: c.bank.bic, holder: c.bank.holder, iban: c.bank.iban } : null,
+    bank: c.bank ? { bic: c.bank.bic, holder: c.bank.holder, iban: formatIban(c.bank.iban) } : null,
     brandName: c.brandName,
     carrier: c.shippingCarrier,
     city: c.address.city,

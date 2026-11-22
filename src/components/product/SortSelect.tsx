@@ -11,20 +11,23 @@ export function SortSelect({
   apply,
   options,
   value,
-  category,
+  hidden = {},
 }: {
   label: string;
   apply: string;
   options: { value: string; label: string }[];
   value: string;
-  category: string | null;
+  /** Weitere Parameter der Seite (Kategorie, Filter), die beim Sortieren erhalten bleiben. */
+  hidden?: Record<string, string>;
 }) {
   const form = useRef<HTMLFormElement>(null);
   return (
     <form className="af-sort" method="get" ref={form}>
-      {category ? <input name="kategorie" type="hidden" value={category} /> : null}
+      {Object.entries(hidden).map(([name, value]) => (
+        <input key={name} name={name} type="hidden" value={value} />
+      ))}
       <label htmlFor="sortierung">{label}</label>
-      <select defaultValue={value} id="sortierung" name="sortierung" onChange={() => form.current?.requestSubmit()}>
+      <select className="af-ui-field af-ui-select" defaultValue={value} id="sortierung" name="sortierung" onChange={() => form.current?.requestSubmit()}>
         {options.map((option) => (
           <option key={option.value} value={option.value}>
             {option.label}

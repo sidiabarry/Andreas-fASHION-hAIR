@@ -1,11 +1,13 @@
 "use client";
 
+import { appendVideoRequest } from "@/lib/video-note";
 import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import type { FormEvent, ReactNode } from "react";
 
 import { Arrow } from "@/components/Arrow";
 import { useCart } from "@/components/cart/CartProvider";
+import { unitText } from "@/components/cart/unitText";
 import { Field } from "@/components/forms/Field";
 import { Honeypot } from "@/components/forms/Honeypot";
 import { deliveryParams, ORDER_COUNTRIES, shippingCents, zoneForCountry } from "@/config/shipping";
@@ -68,11 +70,23 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
   const cart = useCart();
   const [values, setValues] = useState<Values>(EMPTY);
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [agb, setAgb] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
   const [pending, startTransition] = useTransition();
+  const [video, setVideo] = useState(false);
   const [meta, setMeta] = useState<{ key: string; startedAt: number } | null>(() => ({ key: crypto.randomUUID(), startedAt: Date.now() }));
   const summary = useRef<HTMLDivElement>(null);
+
+  // Meldung nach dem Rendern in den Blick holen und vorlesen lassen. Der Sprung ist bewusst sofort: Schrumpft die
+  // Seite (letztes Stück vergeben, leerer Warenkorb), bricht der Browser ein weiches Scrollen ab und die Kundin
+  // sähe nur den Footer.
+  const [alertTick, setAlertTick] = useState(0);
+  const focusAlert = () => setAlertTick((tick) => tick + 1);
+  useEffect(() => {
+    const element = summary.current;
+    if (!alertTick || !element) return;
+    element.focus({ preventScroll: true });
+    element.scrollIntoView({ behavior: "instant", block: "center" });
+  }, [alertTick]);
 
   useEffect(() => track("checkout_start"), []);
 
@@ -87,8 +101,14 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
   if (cart.items.length === 0) {
     return (
       <div className="af-empty">
+        {/* Das letzte Stück wurde gerade vergeben und aus dem Warenkorb genommen: die Erklärung bleibt sichtbar */}
+        {message ? (
+          <div className="af-msg" data-kind="error" ref={summary} role="alert" tabIndex={-1}>
+            {message}
+          </div>
+        ) : null}
         <p className="af-lead">{t("checkout.emptyCart")}</p>
-        <Link className="af-cta-gold" href="/kollektion">
+        <Link className="af-cta-gold af-glass af-glass--gold" href="/kollektion">
           {t("hero.ctaCollection")} <Arrow />
         </Link>
       </div>
@@ -105,12 +125,9 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
   };
   const err = (key: string) => (errors[key] ? t(`errors.${errors[key]}`) : null);
   const detailsComplete = Object.keys(validate(values)).length === 0;
-  const focusAlert = () => requestAnimationFrame(() => summary.current?.focus());
-
   const submit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const found = validate(values);
-    if (!agb) found.agb = "consent";
     setErrors(found);
     if (Object.keys(found).length) {
       setMessage(t("errors.summary", { count: Object.keys(found).length }));
@@ -123,7 +140,8 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
     startTransition(async () => {
       const result = await placeOrder(locale, {
         ...values,
-        consents: { agb },
+        consents: {},
+        note: video ? appendVideoRequest(values.note, 800) : values.note,
         idempotencyKey: meta.key,
         items: cart.lines,
         startedAt: meta.startedAt,
@@ -183,27 +201,27 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
             <legend className="af-h3">{t("checkoutx.contactTitle")}</legend>
             <div className="af-form__two">
               <Field error={err("name")} label={t("checkout.name")} name="name" required requiredLabel={t("common.required")}>
-                {(p) => <input {...p} autoComplete="name" maxLength={120} onChange={set("name")} value={values.name} />}
+                {(p) => <input {...p} className="af-ui-field" autoComplete="name" maxLength={120} onChange={set("name")} value={values.name} />}
               </Field>
               <Field error={err("email")} hint={t("checkout.emailHint")} label={t("checkout.email")} name="email" required requiredLabel={t("common.required")}>
-                {(p) => <input {...p} autoComplete="email" inputMode="email" maxLength={160} onChange={set("email")} type="email" value={values.email} />}
+                {(p) => <input {...p} className="af-ui-field" autoComplete="email" inputMode="email" maxLength={160} onChange={set("email")} type="email" value={values.email} />}
               </Field>
             </div>
             <Field error={err("phone")} label={t("checkout.phone")} name="phone" optionalLabel={t("common.optional")}>
-              {(p) => <input {...p} autoComplete="tel" inputMode="tel" maxLength={40} onChange={set("phone")} type="tel" value={values.phone} />}
+              {(p) => <input {...p} className="af-ui-field" autoComplete="tel" inputMode="tel" maxLength={40} onChange={set("phone")} type="tel" value={values.phone} />}
             </Field>
           </fieldset>
           <fieldset className="af-fieldset">
             <legend className="af-h3">{t("checkoutx.addressTitle")}</legend>
             <Field error={err("street")} label={t("checkout.street")} name="street" required requiredLabel={t("common.required")}>
-              {(p) => <input {...p} autoComplete="street-address" maxLength={160} onChange={set("street")} value={values.street} />}
+              {(p) => <input {...p} className="af-ui-field" autoComplete="street-address" maxLength={160} onChange={set("street")} value={values.street} />}
             </Field>
             <div className="af-form__two">
               <Field error={err("postalCode")} label={t("checkout.postalCode")} name="postalCode" required requiredLabel={t("common.required")}>
-                {(p) => <input {...p} autoComplete="postal-code" maxLength={12} onChange={set("postalCode")} value={values.postalCode} />}
+                {(p) => <input {...p} className="af-ui-field" autoComplete="postal-code" maxLength={12} onChange={set("postalCode")} value={values.postalCode} />}
               </Field>
               <Field error={err("city")} label={t("checkout.city")} name="city" required requiredLabel={t("common.required")}>
-                {(p) => <input {...p} autoComplete="address-level2" maxLength={120} onChange={set("city")} value={values.city} />}
+                {(p) => <input {...p} className="af-ui-field" autoComplete="address-level2" maxLength={120} onChange={set("city")} value={values.city} />}
               </Field>
             </div>
             <Field
@@ -215,7 +233,7 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
               requiredLabel={t("common.required")}
             >
               {(p) => (
-                <select {...p} autoComplete="country" onChange={set("country")} value={values.country}>
+                <select {...p} className="af-ui-field af-ui-select" autoComplete="country" onChange={set("country")} value={values.country}>
                   {countries.map((c) => (
                     <option key={c.code} value={c.code}>
                       {c.name}
@@ -225,8 +243,17 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
               )}
             </Field>
             <Field error={err("note")} hint={t("checkout.noteHint")} label={t("checkout.note")} name="note" optionalLabel={t("common.optional")}>
-              {(p) => <textarea {...p} maxLength={800} onChange={set("note")} value={values.note} />}
+              {(p) => <textarea {...p} className="af-ui-field" maxLength={760} onChange={set("note")} value={values.note} />}
             </Field>
+            <div className="af-check">
+              <input checked={video} className="af-ui-check" id="packvideo" onChange={(event) => setVideo(event.target.checked)} type="checkbox" />
+              <label htmlFor="packvideo">
+                {t("shop.videoOption")}
+                <small className="af-note" style={{ display: "block" }}>
+                  {t("shop.videoHint")}
+                </small>
+              </label>
+            </div>
           </fieldset>
           <aside aria-labelledby="undecided-title" className="af-review">
             <h2 className="af-h3" id="undecided-title">
@@ -255,6 +282,7 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
                 <span>
                   {quantity > 1 ? `${quantity} × ` : ""}
                   {product.name}, {product.subtitle}
+                  {product.unit ? <small className="af-note" style={{ display: "block" }}>{unitText(t, product.unit, locale)}</small> : null}
                 </span>
                 <span>{formatPrice(product.priceCents * quantity, locale)}</span>
               </li>
@@ -298,31 +326,12 @@ export function Checkout({ legal, carrier, whatsapp }: { legal: CheckoutLegal; c
           ) : null}
           <fieldset className="af-fieldset">
             <legend className="af-sr">{t("checkout.consentsLegend")}</legend>
-            <div className="af-check">
-              <input
-                aria-describedby={errors.agb ? "agb-error" : undefined}
-                aria-invalid={errors.agb ? true : undefined}
-                checked={agb}
-                id="agb"
-                name="agb"
-                onChange={(event) => {
-                  setAgb(event.target.checked);
-                  if (event.target.checked && errors.agb) setErrors((current) => Object.fromEntries(Object.entries(current).filter(([k]) => k !== "agb")));
-                }}
-                required
-                type="checkbox"
-              />
-              <label htmlFor="agb">{linked(legal.agbConsent, legal.links)}</label>
-            </div>
-            {errors.agb ? (
-              <p className="af-field__error" id="agb-error">
-                {t(`errors.${errors.agb}`)}
-              </p>
-            ) : null}
+            <p className="af-note">{linked(t.raw("checkout.agbNotice") as string, legal.links)}</p>
             <p className="af-note">{linked(legal.withdrawalNote, legal.links)}</p>
             <p className="af-note">{linked(legal.privacyNote, legal.links)}</p>
           </fieldset>
-          <button aria-busy={pending} className="af-cta-band" disabled={pending || !meta} type="submit">
+          <button aria-busy={pending} className="af-cta-band af-glass af-glass--gold" data-magnetic disabled={pending || !meta} type="submit">
+            {pending ? <span aria-hidden="true" className="af-ui-loading" /> : null}
             {pending ? t("common.sending") : legal.buyButton}
           </button>
         </div>

@@ -1,22 +1,23 @@
 import Image from "next/image";
 
 import { Arrow } from "@/components/Arrow";
+import { HairStage } from "@/components/fx/HairStage";
 import { Logo } from "@/components/Logo";
 import { company } from "@/config/company";
 import { Link } from "@/i18n/navigation";
 
 import { Words } from "../Words";
 
-type HandTexts = { kicker: string; title: string; lead: string; quote: string; by: string; cta: string; visitTitle: string; hours: string; visitCta: string; imageAlt: string };
+type HandTexts = { kicker: string; title: string; lead: string; quote: string; by: string; cta: string; visitTitle: string; visitCta: string; imageAlt: string };
 
-/** Die Hand dahinter: Andrea, eigene Erfahrung, Zitat, Atelier-Besuch. */
-export function Hand({ t, whatsapp, whatsappNote, symbolImage }: { t: HandTexts; whatsapp: string | null; whatsappNote: string; symbolImage: string }) {
+/** Die Hand dahinter: Andréia, eigene Erfahrung, Zitat, Atelier-Besuch. */
+export function Hand({ t, hours, whatsapp, whatsappNote, symbolImage }: { t: HandTexts; hours: string; whatsapp: string | null; whatsappNote: string; symbolImage: string }) {
   const a = company.address;
   return (
-    <section aria-labelledby="hand-title" className="hand" data-fx="halo" data-fx-a="0.35" data-fx-ma="0.2" data-fx-s="0.5" data-fx-x="-0.5" data-fx-y="0.1">
+    <section aria-labelledby="hand-title" className="hand" data-fx="phoenix" data-fx-a="0.4" data-fx-ma="0.22" data-fx-ms="0.4" data-fx-my="0.55" data-fx-s="0.34" data-fx-x="-0.5" data-fx-y="0.05">
       <div className="af-wrap hand__grid">
         <figure className="hand__media h-in h-lightedge">
-          <Image alt={t.imageAlt} height={1158} sizes="(max-width: 900px) 100vw, 50vw" src="/assets/content/phoenix.jpg" width={2048} />
+          <Image alt={t.imageAlt} height={1194} sizes="(max-width: 900px) 100vw, 50vw" src="/assets/content/mirror.jpg" width={1600} />
           <figcaption>{symbolImage}</figcaption>
         </figure>
         <div className="hand__copy">
@@ -30,7 +31,7 @@ export function Hand({ t, whatsapp, whatsappNote, symbolImage }: { t: HandTexts;
             <blockquote>{t.quote}</blockquote>
             <figcaption>{t.by}</figcaption>
           </figure>
-          <Link className="h-btn h-btn--gold h-in" href="/ueber-andrea">
+          <Link className="h-btn h-btn--gold af-glass af-glass--gold h-in" href="/ueber-andrea">
             <span>{t.cta}</span> <Arrow />
           </Link>
           <div className="hand__visit h-in">
@@ -38,7 +39,7 @@ export function Hand({ t, whatsapp, whatsappNote, symbolImage }: { t: HandTexts;
             <address>
               {a.street}, {a.postalCode} {a.city}
               <br />
-              {t.hours}
+              {hours}
             </address>
             {whatsapp ? (
               <a className="h-link" href={whatsapp} rel="noopener noreferrer" target="_blank">
@@ -58,7 +59,7 @@ type ConcernTexts = { title: string; lead: string; items: { q: string; a: string
 /** Alle Bedenken, offen sichtbar (kein Akkordeon). */
 export function Concerns({ t, whatsapp, whatsappNote }: { t: ConcernTexts; whatsapp: string | null; whatsappNote: string }) {
   return (
-    <section aria-labelledby="concerns-title" className="concerns" id="fragen">
+    <section aria-labelledby="concerns-title" className="concerns af-zone-light af-zone-fade-top af-zone-fade-bottom" id="fragen">
       <div className="af-wrap">
         <header className="h-head h-in">
           <h2 className="h-title" id="concerns-title">
@@ -79,12 +80,12 @@ export function Concerns({ t, whatsapp, whatsappNote }: { t: ConcernTexts; whats
         </dl>
         <div className="concerns__cta h-in">
           {whatsapp ? (
-            <a className="h-btn h-btn--gold" href={whatsapp} rel="noopener noreferrer" target="_blank">
+            <a className="h-btn h-btn--gold af-glass af-glass--gold" data-magnetic="" href={whatsapp} rel="noopener noreferrer" target="_blank">
               <span>{t.cta}</span> <Arrow />
               <span className="af-sr"> ({whatsappNote})</span>
             </a>
           ) : (
-            <Link className="h-btn h-btn--gold" href="/anfrage">
+            <Link className="h-btn h-btn--gold af-glass af-glass--gold" data-magnetic="" href="/anfrage">
               <span>{t.cta}</span> <Arrow />
             </Link>
           )}
@@ -125,7 +126,7 @@ export function Steps({ t }: { t: { title: string; items: { title: string; text:
           ))}
         </ol>
         <p className="steps__cta h-in">
-          <Link className="h-btn h-btn--gold" href="/kollektion">
+          <Link className="h-btn h-btn--gold af-glass af-glass--gold" data-magnetic="" href="/extensions">
             <span>{t.cta}</span> <Arrow />
           </Link>
         </p>
@@ -134,26 +135,16 @@ export function Steps({ t }: { t: { title: string; items: { title: string; text:
   );
 }
 
-/** Abschluss: der Spiegel, „Wie neu geboren.“, Hauptknopf und Beratung. */
-export function Close({
-  t,
-  ctaCollection,
-  ctaConsult,
-  whatsapp,
-  whatsappNote,
-  symbolImage,
-}: {
-  t: { title: string; lead: string; imageAlt: string };
-  ctaCollection: string;
-  ctaConsult: string;
-  whatsapp: string | null;
-  whatsappNote: string;
-  symbolImage: string;
-}) {
+/**
+ * Abschluss „Wie neu geboren“: Haar fällt als Vorhang und ordnet sich zum Phönix (WebGL-Simulation,
+ * reagiert auf Zeiger und Scroll). Ohne WebGL oder bei reduzierter Bewegung: Phönix aus Haar als Bild.
+ */
+export function Close({ t, ctaExtensions, ctaCustom, symbolImage }: { t: { title: string; lead: string; imageAlt: string }; ctaExtensions: string; ctaCustom: string; symbolImage: string }) {
   return (
-    <section aria-labelledby="close-title" className="close" data-fx="ring" data-fx-a="0.75" data-fx-heat="0.35" data-fx-ma="0.5" data-fx-ms="0.62" data-fx-mx="0" data-fx-my="0.38" data-fx-s="0.5" data-fx-x="0.42" data-fx-y="0.05">
+    <section aria-labelledby="close-title" className="close" data-fx="embers" data-fx-a="0.45" data-fx-heat="1" data-fx-loose="0.6" data-fx-ma="0.3" data-fx-s="1.1" data-fx-x="0.3" data-fx-y="-0.75">
+      <HairStage my={0.3} mscale={0.95} scale={0.7} x={0.7} y={0.56} />
       <div className="close__media">
-        <Image alt={t.imageAlt} fill sizes="100vw" src="/assets/content/mirror.jpg" />
+        <Image alt={t.imageAlt} fill sizes="100vw" src="/assets/content/phoenix.jpg" />
         <span className="close__note">{symbolImage}</span>
       </div>
       <div className="af-wrap close__in">
@@ -163,15 +154,12 @@ export function Close({
         </h2>
         <p className="h-lead h-in">{t.lead}</p>
         <div className="hero__actions h-in">
-          <Link className="h-btn h-btn--gold" href="/kollektion">
-            <span>{ctaCollection}</span> <Arrow />
+          <Link className="h-btn h-btn--gold af-glass af-glass--gold" data-magnetic="" href="/extensions">
+            <span>{ctaExtensions}</span> <Arrow />
           </Link>
-          {whatsapp ? (
-            <a className="h-btn h-btn--line" href={whatsapp} rel="noopener noreferrer" target="_blank">
-              <span>{ctaConsult}</span>
-              <span className="af-sr"> ({whatsappNote})</span>
-            </a>
-          ) : null}
+          <Link className="h-link" href="/massanfertigung">
+            {ctaCustom}
+          </Link>
         </div>
       </div>
     </section>

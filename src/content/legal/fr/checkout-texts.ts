@@ -30,11 +30,11 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
       vatNote,
       shipNote,
       `Délai de livraison : pièces en stock en Allemagne ${delivery} jours ouvrables (paiement anticipé/PayPal : à compter de la réception du paiement) ; étranger : indiqué avant la conclusion du contrat. Pièces sur mesure : voir la page produit.`,
-      "De nombreuses pièces sont uniques. Nous vérifions personnellement la disponibilité ; le contrat n'est conclu qu'avec notre confirmation de commande par e-mail. Vous ne payez qu'ensuite.",
+      "De nombreuses pièces sont uniques. Nous vérifions personnellement la disponibilité ; le contrat n'est conclu qu'avec notre confirmation de commande par e-mail. Vous pouvez payer dès l'envoi ou après la confirmation de commande.",
       "Les pièces fabriquées sur mesure sont exclues du droit de rétractation.",
     ],
     confirmationNotice:
-      "Merci, {name} ! Nous avons bien reçu votre commande {orderNo}. En l'envoyant, vous avez fait une offre d'achat ferme. Nous vérifions maintenant personnellement la disponibilité de votre pièce et vous répondons par e-mail sous trois jours ouvrables. Le contrat de vente est conclu dès que nous acceptons votre commande par cette confirmation, qui contient aussi les informations de paiement. Merci de ne payer qu'ensuite. Nous venons de vous envoyer un accusé de réception par e-mail.",
+      "Merci, {name} ! Nous avons bien reçu votre commande {orderNo}. En l'envoyant, vous avez fait une offre d'achat ferme. Nous vérifions maintenant personnellement la disponibilité de votre pièce et vous répondons par e-mail sous trois jours ouvrables. Le contrat de vente est conclu dès que nous acceptons votre commande par notre confirmation de commande. Vous pouvez payer ici même ou après la confirmation ; si votre pièce n'est pas disponible, nous remboursons sans délai tout paiement déjà effectué. Nous venons de vous envoyer un accusé de réception par e-mail.",
     withdrawalButtonLabel: "Se rétracter du contrat",
     withdrawalConfirmLabel: "Confirmer la rétractation",
     withdrawalFormIntro:
@@ -53,7 +53,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
           "Total : {total}",
           "Adresse de livraison : {shippingAddress}",
           "",
-          "Nous vérifions personnellement la disponibilité de votre pièce et vous répondons sous trois jours ouvrables. Le contrat de vente est conclu avec notre confirmation de commande, qui contient aussi les informations de paiement. Merci de ne payer qu'ensuite.",
+          "Nous vérifions personnellement la disponibilité de votre pièce et vous répondons sous trois jours ouvrables. Le contrat de vente est conclu avec notre confirmation de commande. Vous pouvez payer dès maintenant par virement (informations de paiement et QR code sur votre page de confirmation) ou après notre confirmation. Si votre pièce n'est pas disponible, nous remboursons sans délai tout paiement déjà effectué.",
           "",
           "Bien cordialement",
           "{brand}",

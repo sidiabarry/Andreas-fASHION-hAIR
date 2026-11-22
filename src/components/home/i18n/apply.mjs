@@ -1,6 +1,5 @@
-// Schreibt die Texte der Startseite (hero.*, home.*) und von „Über Andrea“ (about.*) in die
+// Schreibt die Texte der Startseite (hero.*, home.*) und von „Über Andréia“ (about.*) in die
 // Nachrichtendateien. Aufruf: node src/components/home/i18n/apply.mjs
-// Erst beim Umstieg auf die neuen Szenen ausführen: Die bestehenden Seiten brauchen die bisherigen Schlüssel.
 // Sprachen ohne Nachrichtendatei (noch nicht freigeschaltet) werden übersprungen und gemeldet.
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -18,8 +17,8 @@ for (const file of readdirSync(here).filter((f) => /^[a-z]{2}\.mjs$/.test(f))) {
   }
   const texts = await import(pathToFileURL(join(here, file)).href);
   const messages = JSON.parse(readFileSync(target, "utf8"));
-  messages.hero = { ...(messages.hero ?? {}), ...texts.hero };
-  for (const stale of ["scene1", "scene2", "scene3"]) delete messages.hero[stale];
+  // hero.ctaCollection nutzen auch Warenkorb und Kasse: Er steht deshalb in jeder Quelldatei.
+  messages.hero = texts.hero;
   messages.home = texts.home;
   messages.about = texts.about;
   writeFileSync(target, `${JSON.stringify(messages, null, 2)}\n`);

@@ -77,13 +77,13 @@ export default function Page({ company: c }: { company: Company }) {
           </p>
         ) : (
           <>
-            <p>Puede pagar con las siguientes formas de pago. Le enviamos los datos de pago con la confirmación del pedido.</p>
+            <p>Puede pagar con las siguientes formas de pago. Encontrará los datos de pago en la página de confirmación justo después de su pedido; también se los enviamos con la confirmación del pedido.</p>
             <ul>
               {c.payments.prepayment ? (
-                <li><strong>Pago anticipado por transferencia:</strong> transfiera el importe total en un plazo de 7 días desde la recepción de la confirmación del pedido. Enviamos la mercancía tras recibir el pago. Si el pago no se recibe pese a un recordatorio, podemos resolver el contrato.</li>
+                <li><strong>Pago anticipado por transferencia:</strong> puede transferir el importe total justo después de su pedido, a más tardar en un plazo de 7 días desde la recepción de la confirmación del pedido. Enviamos la mercancía tras recibir el pago. Si el pago no se recibe pese a un recordatorio, podemos resolver el contrato.</li>
               ) : null}
               {c.payments.paypal ? (
-                <li><strong>PayPal:</strong> tras la confirmación del pedido recibe una solicitud de pago de PayPal. Pague en un plazo de 7 días. Se aplican además las condiciones de PayPal. Enviamos tras recibir el pago.</li>
+                <li><strong>PayPal:</strong> puede pagar justo después del pedido con el botón de PayPal en la página de confirmación, o recibe una solicitud de pago de PayPal tras la confirmación del pedido. Pague a más tardar 7 días después de la confirmación del pedido. Se aplican además las condiciones de PayPal. Enviamos tras recibir el pago.</li>
               ) : null}
               {c.payments.paypalInstallments ? <li><strong>Pago a plazos con PayPal:</strong> si PayPal le ofrece esta opción, puede pagar a plazos tras una comprobación de solvencia de PayPal. El crédito lo celebra directamente con PayPal como prestamista; se aplican sus condiciones e información precontractual. Nosotros no concedemos crédito. Su contrato de compraventa con nosotros no se ve afectado.</li> : null}
               {c.payments.bankTransfer ? (
@@ -103,7 +103,9 @@ export default function Page({ company: c }: { company: Company }) {
             envíos a otros países son posibles previo acuerdo. El envío lo realiza {carrier}.
           </li>
           <li>Plazo de entrega de los artículos en stock dentro de Alemania: {deliveryDaysOf(c)} días hábiles. Con pago anticipado o PayPal, el plazo comienza el día siguiente a la recepción del pago; en los demás casos, el día siguiente a la celebración del contrato. El plazo para envíos al extranjero se lo comunicamos antes de la celebración del contrato.</li>
-          <li>Fabricamos las piezas a medida en unos {madeToOrderDaysOf(c)} días hábiles, una vez que disponemos de todos los datos necesarios y –en caso de pago anticipado o PayPal– del pago. Le comunicamos la fecha de envío prevista.</li>
+          <li>
+            Las piezas a medida le llegan dentro de Alemania en {madeToOrderDaysOf(c)} días hábiles. El plazo empieza el día siguiente a aquel en que disponemos de todos los datos necesarios y –en caso de pago anticipado o PayPal– del pago. El plazo de entrega para envíos al extranjero se lo comunicamos antes de la celebración del contrato.
+          </li>
           <li>Si la mercancía llega con daños de transporte visibles, reclame al repartidor e infórmenos brevemente. Sus derechos legales no se ven afectados; su aviso nos ayuda a reclamar a la empresa de transporte.</li>
         </ol>
       </section>

@@ -30,11 +30,11 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
       vatNote,
       shipNote,
       `Plazo de entrega: piezas en stock dentro de Alemania ${delivery} días hábiles (pago anticipado/PayPal: desde la recepción del pago); extranjero: se indica antes de la celebración del contrato. Piezas a medida: véase la página del producto.`,
-      "Muchas piezas son únicas. Comprobamos personalmente la disponibilidad; el contrato solo se celebra con nuestra confirmación del pedido por correo electrónico. Usted paga después.",
+      "Muchas piezas son únicas. Comprobamos personalmente la disponibilidad; el contrato solo se celebra con nuestra confirmación del pedido por correo electrónico. Puede pagar justo después del envío o tras la confirmación del pedido.",
       "Las piezas fabricadas a medida están excluidas del derecho de desistimiento.",
     ],
     confirmationNotice:
-      "¡Gracias, {name}! Hemos recibido su pedido {orderNo}. Al enviarlo ha realizado una oferta de compra vinculante. Ahora comprobamos personalmente si su pieza está disponible y le responderemos por correo electrónico en un plazo de tres días hábiles. El contrato de compraventa se celebra en cuanto aceptamos su pedido con esa confirmación, que incluye también los datos de pago. Pague solo después. Le acabamos de enviar un acuse de recibo por correo electrónico.",
+      "¡Gracias, {name}! Hemos recibido su pedido {orderNo}. Al enviarlo ha realizado una oferta de compra vinculante. Ahora comprobamos personalmente si su pieza está disponible y le responderemos por correo electrónico en un plazo de tres días hábiles. El contrato de compraventa se celebra en cuanto aceptamos su pedido con nuestra confirmación del pedido. Puede pagar aquí mismo o tras la confirmación; si su pieza no está disponible, le reembolsamos sin demora cualquier pago ya realizado. Le acabamos de enviar un acuse de recibo por correo electrónico.",
     withdrawalButtonLabel: "Desistir del contrato",
     withdrawalConfirmLabel: "Confirmar desistimiento",
     withdrawalFormIntro:
@@ -53,7 +53,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
           "Total: {total}",
           "Dirección de entrega: {shippingAddress}",
           "",
-          "Comprobamos personalmente si su pieza está disponible y le responderemos en un plazo de tres días hábiles. El contrato de compraventa se celebra con nuestra confirmación del pedido, que incluye también los datos de pago. Pague solo después.",
+          "Comprobamos personalmente si su pieza está disponible y le responderemos en un plazo de tres días hábiles. El contrato de compraventa se celebra con nuestra confirmación del pedido. Puede pagar ya por transferencia (datos de pago y código QR en su página de confirmación) o tras nuestra confirmación. Si su pieza no está disponible, le reembolsamos sin demora cualquier pago ya realizado.",
           "",
           "Un cordial saludo",
           "{brand}",

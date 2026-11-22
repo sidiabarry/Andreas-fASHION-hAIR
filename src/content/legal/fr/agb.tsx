@@ -91,20 +91,21 @@ export default function Page({ company: c }: { company: Company }) {
           </p>
         ) : (
           <>
-            <p>Vous pouvez payer avec les modes de paiement suivants. Nous vous envoyons les informations de paiement avec la confirmation de commande.</p>
+            <p>Vous pouvez payer avec les modes de paiement suivants. Vous trouvez les informations de paiement sur la page de confirmation juste après votre commande ; nous les envoyons aussi avec la confirmation de commande.</p>
             <ul>
               {c.payments.prepayment ? (
                 <li>
-                  <strong>Paiement anticipé par virement :</strong> veuillez virer le montant total
-                  dans les 7 jours suivant la réception de la confirmation de commande. Nous expédions
+                  <strong>Paiement anticipé par virement :</strong> vous pouvez virer le montant total
+                  dès votre commande, au plus tard dans les 7 jours suivant la réception de la confirmation de commande. Nous expédions
                   après réception du paiement. À défaut de paiement malgré un rappel, nous pouvons
                   résoudre le contrat.
                 </li>
               ) : null}
               {c.payments.paypal ? (
                 <li>
-                  <strong>PayPal :</strong> après la confirmation de commande, vous recevez une demande
-                  de paiement PayPal. Veuillez payer dans les 7 jours. Les conditions de PayPal
+                  <strong>PayPal :</strong> vous pouvez payer dès la commande via le bouton PayPal sur la
+                  page de confirmation, ou vous recevez une demande de paiement PayPal après la
+                  confirmation de commande. Veuillez payer au plus tard 7 jours après la confirmation. Les conditions de PayPal
                   s'appliquent en outre. Expédition après réception du paiement.
                 </li>
               ) : null}
@@ -133,9 +134,7 @@ export default function Page({ company: c }: { company: Company }) {
           </li>
           <li>Délai de livraison des articles en stock en Allemagne : {deliveryDaysOf(c)} jours ouvrables. Pour le paiement anticipé ou PayPal, le délai court à partir du lendemain de la réception du paiement, sinon à partir du lendemain de la conclusion du contrat. Pour les envois à l'étranger, nous vous indiquons le délai avant la conclusion du contrat.</li>
           <li>
-            Nous fabriquons les pièces sur mesure en {madeToOrderDaysOf(c)} jours ouvrables environ, dès que
-            nous disposons de toutes les informations nécessaires et – pour le paiement anticipé ou
-            PayPal – du paiement. Nous vous indiquons la date d'expédition prévue.
+            Les pièces sur mesure vous parviennent en Allemagne en {madeToOrderDaysOf(c)} jours ouvrables. Le délai commence le lendemain du jour où nous disposons de toutes les informations nécessaires et – pour le paiement anticipé ou PayPal – du paiement. Pour les envois à l'étranger, nous vous indiquons le délai de livraison avant la conclusion du contrat.
           </li>
           <li>En cas de dommages de transport visibles, veuillez faire une réclamation auprès du livreur et nous en informer brièvement. Vos droits légaux n'en sont pas affectés ; votre signalement nous aide à faire valoir nos droits envers le transporteur.</li>
         </ol>

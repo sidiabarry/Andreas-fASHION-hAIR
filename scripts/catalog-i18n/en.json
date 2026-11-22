@@ -16,12 +16,19 @@
     "glue": "Walker Tape Ultra Hold liquid adhesive",
     "solvent": "Walker Tape C-22 solvent",
     "tapeRoll": "Walker Tape Ultra Hold tape 3/4\" x 12 yd",
-    "tapeStrips": "Walker Tape Ultra Hold tape strips"
+    "tapeStrips": "Walker Tape Ultra Hold tape strips",
+    "toupet": "V-toupee {len} cm",
+    "clipIn": "Clip-in extensions {len} cm",
+    "genius": "Genius Weft {len} cm",
+    "invisibleTape": "Invisible Tape {len} cm",
+    "butterfly": "Butterfly Weft {len} cm"
   },
   "subtitles": {
     "premium": "Premium human hair",
     "men": "Hair system for men",
-    "care": "Fixing and care"
+    "care": "Fixing and care",
+    "clipInSet": "Natural dark brown, 3 pieces",
+    "geniusCurly": "Coffee brown with copper ombré, naturally curly"
   },
   "colors": {
     "Blond mit Reflexen und dunklem Goldblond": "Blonde with highlights and dark golden blonde",
@@ -45,10 +52,25 @@
     "Natürliches Dunkelbraun mit Kupferhighlights": "Natural dark brown with copper highlights",
     "Natürliches Dunkelbraun mit sanften Grausträhnen": "Natural dark brown with soft grey streaks",
     "Natürliches Dunkelbraun mit violettroten Highlights": "Natural dark brown with violet-red highlights",
-    "Schwarz": "Black"
+    "Schwarz": "Black",
+    "Dunkelblond mit hellen Reflexen": "Dark blonde with light highlights",
+    "Naturdunkelbraun": "Natural dark brown",
+    "Goldblond Ombré": "Golden blonde ombré",
+    "Kaffeebraun mit Kupfer-Ombré": "Coffee brown with copper ombré",
+    "Hellblond Ombré mit dunklem Ansatz": "Light blonde ombré with dark root"
   },
-  "textures": { "Glatt": "Straight", "Leicht gewellt": "Slightly wavy", "Lockig": "Curly" },
-  "textureHair": { "Glatt": "Straight human hair", "Leicht gewellt": "Slightly wavy human hair", "Lockig": "Curly human hair", "": "Fine human hair" },
+  "textures": {
+    "Glatt": "Straight",
+    "Leicht gewellt": "Slightly wavy",
+    "Lockig": "Curly",
+    "Naturlockig": "Naturally curly"
+  },
+  "textureHair": {
+    "Glatt": "Straight human hair",
+    "Leicht gewellt": "Slightly wavy human hair",
+    "Lockig": "Curly human hair",
+    "": "Fine human hair"
+  },
   "hair": {
     "colorLen": "{hair} in {color}, {len} cm long.",
     "len": "{hair}, {len} cm long.",
@@ -58,7 +80,7 @@
     "topper": "Every single hair is injected by hand into a wafer-thin nano skin base, so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
     "topperBase": "Every single hair is injected by hand into a wafer-thin nano skin base ({base} cm), so the parting falls wherever you want it. Fastened with clips, put on in seconds, and no one sees a transition.",
     "pony": "A fringe that fills your forehead and hairline in seconds, without cutting your own hair. Fastened with clips and removable at any time.",
-    "wig": "The front lace line is worked so finely that the hairline looks like your own hair growth. Put it on, adjust it, and the mirror shows you again."
+    "wig": "The front lace line is worked so finely that the hairline looks like your own hair growth. Put it on, adjust it, and the you feel at ease straight away."
   },
   "descriptions": {
     "menSkin": "Hair system made of ultra-thin micro skin that practically disappears on the scalp. 100 % human hair, light, breathable and made so that the hairline looks like your own hair growth.",
@@ -67,7 +89,13 @@
     "glue": "Professional liquid adhesive with a strong hold for hair pieces, wigs and hair systems. Lasts a long time, resists moisture and stays comfortable on the skin.",
     "solvent": "Removes adhesive and tape residue from hair pieces, wigs and extensions quickly and gently. The citrus-based formula works within moments.",
     "tapeRoll": "Double-sided tape with a strong hold for hair replacement systems, wigs and extensions. Holds firmly, stays inconspicuous and withstands moisture and sweat.",
-    "tapeStrips": "Pre-cut, curved tape strips for hair systems. Extra strong hold, resistant to sweat and moisture, easy to apply."
+    "tapeStrips": "Pre-cut, curved tape strips for hair systems. Extra strong hold, resistant to sweat and moisture, easy to apply.",
+    "toupet": "Women's topper with a V-shaped base in human hair, in {color}. {len} cm long, weighing {grams} g. This piece exists only once.",
+    "clipIn": "Clip-in extensions in human hair in {color}, {len} cm long. The set consists of three wefts with clips and weighs {grams} g in total.",
+    "genius": "Genius Weft in human hair in {color}, {len} cm long. One pack contains {grams} g.",
+    "geniusCurly": "Genius Weft in human hair in {color}, {len} cm long, naturally curly. One pack contains {grams} g.",
+    "invisibleTape": "Invisible Tape extensions in human hair in {color}, {len} cm long. When professionally applied, the tapes blend discreetly into your own hair. One pack contains {grams} g.",
+    "butterfly": "Butterfly Weft in human hair in {color}, {len} cm long. The weft is {width} cm wide per row. One pack contains {grams} g."
   },
   "specs": {
     "premium": "100 % premium human hair",
@@ -99,6 +127,17 @@
     "precut": "Pre-cut strips",
     "extraHold": "Extra strong hold",
     "sweatMoisture": "Resistant to sweat and moisture",
-    "fitting": "Fitted in the atelier"
+    "fitting": "Fitted in the atelier",
+    "premiumPlain": "Premium human hair",
+    "vBase": "V-shaped base (women's topper)",
+    "weight": "Weight {grams} g",
+    "clipSet": "Set of {n} wefts with clips",
+    "weightSet": "Weight {grams} g (set)",
+    "packGrams": "{grams} g per pack",
+    "weftPerPack": "{n} weft per pack",
+    "tapesPerPack": "{n} tapes per pack",
+    "weftWidth": "Weft width {width} cm per row",
+    "humanPlain": "Human hair",
+    "tapesSealed": "{n} tapes, sealed together in one pack"
   }
 }

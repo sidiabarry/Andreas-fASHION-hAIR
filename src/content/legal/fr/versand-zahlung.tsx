@@ -53,14 +53,16 @@ export default function Page({ company: c }: { company: Company }) {
             livraison : Allemagne{others.length > 0 ? <>, {countryNames(others, "fr")}</> : null} ; autres pays sur accord.
           </li>
           <li>Les pièces en stock vous parviennent en Allemagne en {deliveryDaysOf(c)} jours ouvrables – pour le paiement anticipé et PayPal à partir du lendemain de la réception du paiement, sinon à partir du lendemain de la conclusion du contrat. Pour l'étranger, nous vous indiquons le délai avant la conclusion du contrat.</li>
-          <li>Nous fabriquons les pièces sur mesure en {madeToOrderDaysOf(c)} jours ouvrables environ, dès réception de toutes les informations et – pour le paiement anticipé ou PayPal – du paiement.</li>
+          <li>
+            Les pièces sur mesure vous parviennent en Allemagne en {madeToOrderDaysOf(c)} jours ouvrables, à compter du lendemain de la réception de toutes les informations et – pour le paiement anticipé ou PayPal – du paiement.
+          </li>
           <li>Pour des raisons de sécurité, nous ne pouvons pas expédier certains produits d'entretien, adhésifs et solvants dans tous les pays. Nous le signalons sur la page produit.</li>
         </ul>
       </section>
 
       <section>
         <h2 id="zahlungsarten">3. Modes de paiement</h2>
-        <p>Après votre commande, nous vérifions personnellement la disponibilité et vous envoyons une confirmation de commande avec les informations de paiement. Vous ne payez qu'après acceptation de votre commande.</p>
+        <p>Après votre commande, nous vérifions personnellement la disponibilité et vous envoyons une confirmation de commande avec les informations de paiement. Vous pouvez payer dès votre commande ou après notre confirmation. Si une pièce n'est pas disponible, nous remboursons sans délai tout paiement déjà effectué.</p>
         {!anyPayment(c) ? (
           <p>
             <Missing field="payments" label="mode de paiement à définir" />
@@ -69,7 +71,7 @@ export default function Page({ company: c }: { company: Company }) {
           <ul>
             {c.payments.prepayment ? (
               <li>
-                <strong>Paiement anticipé par virement</strong> – payable dans les 7 jours suivant la
+                <strong>Paiement anticipé par virement</strong> – payable dès la commande, au plus tard 7 jours après la
                 confirmation de commande ; expédition après réception du paiement.
                 {c.bank ? (
                   <>
@@ -78,16 +80,16 @@ export default function Page({ company: c }: { company: Company }) {
                     commande comme référence.
                   </>
                 ) : (
-                  <> <Missing field="bank" label="coordonnées bancaires" /></>
+                  <>{" "}Vous recevrez les coordonnées bancaires avec la confirmation de commande.</>
                 )}
               </li>
             ) : null}
             {c.payments.paypal ? (
               <li>
-                <strong>PayPal</strong> – après la confirmation de commande, vous recevez une demande
-                de paiement via PayPal
-                {c.paypalEmail ? <> de {c.paypalEmail}</> : <> <Missing field="paypalEmail" label="compte PayPal" /></>}
-                ; payable dans les 7 jours. Expédition après réception du paiement.
+                <strong>PayPal</strong> – dès la commande via le bouton PayPal sur la page de
+                confirmation, ou par une demande de paiement après la confirmation de commande
+                {c.paypalEmail ? <> (paiement à {c.paypalEmail})</> : null}
+                ; payable au plus tard 7 jours après la confirmation de commande. Expédition après réception du paiement.
               </li>
             ) : null}
             {c.payments.paypalInstallments ? <li><strong>Paiement échelonné via PayPal</strong> – si PayPal vous le propose ; le prêteur est PayPal, sous réserve de sa vérification de solvabilité et de ses conditions. Nous n'accordons nous-mêmes aucun crédit.</li> : null}

@@ -7,8 +7,10 @@ import { legacyProductMap, legacyRedirects } from "@/lib/legacy-redirects";
 
 test("Jede alte Produkt-URL zeigt auf das Produkt mit gleicher ID und gleichem Preis", () => {
   const map = legacyProductMap();
-  assert.equal(map.size, 50);
-  for (const old of live) {
+  const hidden = new Set(catalog.filter((p) => (p as { hidden?: boolean }).hidden).map((p) => p.id));
+  const visibleLive = live.filter((old) => !hidden.has(old.id));
+  assert.equal(map.size, visibleLive.length);
+  for (const old of visibleLive) {
     const target = map.get(decodeURIComponent(old.slug));
     const product = catalog.find((p) => p.slug === target);
     assert.ok(product, old.slug);
@@ -32,6 +34,6 @@ test("Alle Seiten-Weiterleitungen enden auf /de/ und sind permanent", () => {
   assert.equal(find("/terms"), "/de/agb");
   assert.equal(find("/wishlist"), "/de/kollektion");
   assert.equal(find("/product-category/curtain-bangs"), "/de/kollektion?kategorie=pony");
-  assert.equal(find("/product-category/wartungsprodukte"), "/de/kollektion?kategorie=pflege");
+  assert.equal(find("/product-category/:rest*"), "/de/kollektion"); // alte Pflege-Kategorie (Walker Tape ausgeblendet) fällt hierauf
   assert.equal(find("/product/413"), "/de/produkt/echthaar-topper-35-cm-helles-aschblond-413");
 });

@@ -53,7 +53,9 @@ export default function Page({ company: c }: { company: Company }) {
             Teslimat ülkeleri: Almanya{others.length > 0 ? <>, {countryNames(others, "tr")}</> : null}; diğer ülkeler anlaşma ile.
           </li>
           <li>Stoktaki ürünler Almanya içinde {deliveryDaysOf(c)} iş günü içinde size ulaşır – ön ödeme ve PayPal'da ödemenin alındığı günü izleyen günden, diğer durumlarda sözleşmenin kurulduğu günü izleyen günden itibaren. Yurt dışı teslimat süresini sözleşme kurulmadan önce bildiririz.</li>
-          <li>Ölçüye göre ürünleri, tüm bilgiler ve – ön ödeme veya PayPal'da – ödeme alındıktan sonra yaklaşık {madeToOrderDaysOf(c)} iş gününde üretiriz.</li>
+          <li>
+            Ölçüye göre ürünler, tüm bilgiler ve – ön ödeme veya PayPal'da – ödeme alındıktan sonraki günden itibaren Almanya içinde {madeToOrderDaysOf(c)} iş günü içinde size ulaşır.
+          </li>
           <li>Güvenlik nedeniyle bazı bakım, yapıştırıcı ve çözücü ürünlerini her ülkeye gönderemiyoruz. Bunu ürün sayfasında belirtiriz.</li>
         </ul>
       </section>
@@ -77,14 +79,14 @@ export default function Page({ company: c }: { company: Company }) {
                     {c.bank.bic ? <>, BIC: {c.bank.bic}</> : null}. Lütfen açıklamaya sipariş numaranızı yazın.
                   </>
                 ) : (
-                  <> <Missing field="bank" label="banka bilgileri" /></>
+                  <>{" "}Banka bilgilerini sipariş onayıyla birlikte alırsınız.</>
                 )}
               </li>
             ) : null}
             {c.payments.paypal ? (
               <li>
                 <strong>PayPal</strong> – sipariş onayından sonra PayPal üzerinden bir ödeme talebi alırsınız
-                {c.paypalEmail ? <> (gönderen: {c.paypalEmail})</> : <> <Missing field="paypalEmail" label="PayPal hesabı" /></>}
+                {c.paypalEmail ? <> (gönderen: {c.paypalEmail})</> : null}
                 ; 7 gün içinde ödenir. Ödeme alındıktan sonra gönderim.
               </li>
             ) : null}

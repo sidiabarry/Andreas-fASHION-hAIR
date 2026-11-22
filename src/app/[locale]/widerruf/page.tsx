@@ -24,7 +24,7 @@ export default async function WithdrawalPolicyPage({ params }: PageProps<"/[loca
   return (
     <LegalPage fields={["ownerFullName"]} locale={locale as Locale} page="widerruf" title={t("withdrawal")}>
       <div className="af-hero-actions" style={{ marginTop: 36 }}>
-        <Link className="af-cta-gold" href="/widerruf/erklaeren">
+        <Link className="af-cta-gold af-glass af-glass--gold" href="/widerruf/erklaeren">
           {t("withdrawCta")} <Arrow />
         </Link>
       </div>

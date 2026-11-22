@@ -14,7 +14,7 @@ export async function ConsultBlock() {
           {t("title")}
         </h2>
         <p className="af-lead">{t("lead")}</p>
-        <Link className="af-cta-gold" href="/anfrage">
+        <Link className="af-cta-gold af-glass af-glass--gold" href="/anfrage">
           {t("cta")} <Arrow />
         </Link>
       </div>

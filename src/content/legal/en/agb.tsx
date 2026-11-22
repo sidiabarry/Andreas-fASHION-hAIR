@@ -93,20 +93,21 @@ export default function Page({ company: c }: { company: Company }) {
           </p>
         ) : (
           <>
-            <p>You can pay with the following payment methods. We send you the payment details with the order confirmation.</p>
+            <p>You can pay with the following payment methods. You will find the payment details on the order confirmation page right after ordering; we also send them with the order confirmation.</p>
             <ul>
               {c.payments.prepayment ? (
                 <li>
-                  <strong>Advance payment by bank transfer:</strong> Please transfer the total amount
-                  within 7 days of receiving the order confirmation. We ship the goods once payment
+                  <strong>Advance payment by bank transfer:</strong> You can transfer the total amount right after
+                  ordering, at the latest within 7 days of receiving the order confirmation. We ship the goods once payment
                   has been received. If payment is not received despite a reminder, we may withdraw
                   from the contract.
                 </li>
               ) : null}
               {c.payments.paypal ? (
                 <li>
-                  <strong>PayPal:</strong> After the order confirmation you receive a payment request
-                  from PayPal. Please pay within 7 days. PayPal's terms also apply to the payment. We
+                  <strong>PayPal:</strong> You can pay right after ordering via the PayPal button on the
+                  order confirmation page, or you receive a payment request from PayPal after the order
+                  confirmation. Please pay no later than 7 days after the order confirmation. PayPal's terms also apply to the payment. We
                   ship once payment has been received.
                 </li>
               ) : null}
@@ -134,9 +135,7 @@ export default function Page({ company: c }: { company: Company }) {
           </li>
           <li>Delivery time for goods in stock within Germany: {deliveryDaysOf(c)} business days. For advance payment or PayPal the period begins on the day after receipt of payment, otherwise on the day after conclusion of the contract. We will tell you the delivery time for shipments abroad before the contract is concluded.</li>
           <li>
-            We produce custom-made pieces within about {madeToOrderDaysOf(c)} business days after we have all
-            the details needed and – for advance payment or PayPal – payment has been received. We
-            will tell you the expected dispatch date.
+            Custom-made pieces reach you within Germany in {madeToOrderDaysOf(c)} business days. The period starts on the day after we have all the details needed for production and – for advance payment or PayPal – payment has been received. We will tell you the delivery time for shipments abroad before the contract is concluded.
           </li>
           <li>
             If goods arrive with visible transport damage, please complain to the delivery person

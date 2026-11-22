@@ -25,13 +25,14 @@ export function NewsletterForm() {
         <label className="af-sr" htmlFor="nl-email">
           {t("newsletter.email")}
         </label>
-        <input autoComplete="email" id="nl-email" name="email" required type="email" />
-        <button disabled={pending} type="submit">
+        <input autoComplete="email" className="af-ui-field" id="nl-email" name="email" required type="email" />
+        <button aria-busy={pending} disabled={pending} type="submit">
+          {pending ? <span aria-hidden="true" className="af-ui-loading" /> : null}
           {t("newsletter.submit")}
         </button>
       </div>
       <div className="af-check">
-        <input id="nl-consent" name="consent" required type="checkbox" />
+        <input className="af-ui-check" id="nl-consent" name="consent" required type="checkbox" />
         <label htmlFor="nl-consent">
           {t.rich("newsletter.consent", { link: (chunks) => <Link href="/datenschutz">{chunks}</Link> })}
         </label>

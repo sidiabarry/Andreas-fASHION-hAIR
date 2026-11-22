@@ -33,11 +33,11 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
       vatNote,
       shipNote,
       `Delivery time: pieces in stock within Germany ${delivery} business days (advance payment/PayPal: from receipt of payment); abroad: stated before conclusion of the contract. Custom-made pieces: see product page.`,
-      "Many pieces are unique. We check availability personally; the contract is only concluded with our order confirmation by email. You only pay after that.",
+      "Many pieces are unique. We check availability personally; the contract is only concluded with our order confirmation by email. You can pay right after sending or after the order confirmation.",
       "Custom-made pieces are excluded from the right of withdrawal.",
     ],
     confirmationNotice:
-      "Thank you, {name}! We have received your order {orderNo}. By submitting it you have made a binding offer to buy. We are now personally checking whether your piece is available and will get back to you by email within three working days. The contract of sale is concluded as soon as we accept your order with this order confirmation, which also contains the payment details. Please only pay after that. We have just sent you an acknowledgement of receipt by email.",
+      "Thank you, {name}! We have received your order {orderNo}. By submitting it you have made a binding offer to buy. We are now personally checking whether your piece is available and will get back to you by email within three working days. The contract of sale is concluded as soon as we accept your order with our order confirmation. You can pay right here or after the order confirmation; if your piece is unexpectedly not available, we refund any payment without delay. We have just sent you an acknowledgement of receipt by email.",
     withdrawalButtonLabel: "Withdraw from contract",
     withdrawalConfirmLabel: "Confirm withdrawal",
     withdrawalFormIntro:
@@ -56,7 +56,7 @@ function build(smallBusiness: boolean | null, domesticCents: number, freeFromCen
           "Total: {total}",
           "Delivery address: {shippingAddress}",
           "",
-          "We are personally checking whether your piece is available and will get back to you within three working days. The contract of sale is concluded with our order confirmation, which also contains the payment details. Please only pay after that.",
+          "We are personally checking whether your piece is available and will get back to you within three working days. The contract of sale is concluded with our order confirmation. You can pay by bank transfer right away (payment details and QR code on your order confirmation page) or after our order confirmation. If your piece is unexpectedly not available, we refund any payment without delay.",
           "",
           "Kind regards",
           "{brand}",

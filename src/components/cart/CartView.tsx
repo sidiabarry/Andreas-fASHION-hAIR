@@ -6,11 +6,13 @@ import { useState } from "react";
 
 import { Arrow } from "@/components/Arrow";
 import { useCart } from "@/components/cart/CartProvider";
+import { unitText } from "@/components/cart/unitText";
 import { shippingCents } from "@/config/shipping";
 import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
 import { MAX_QUANTITY } from "@/lib/cart";
 import { formatPrice } from "@/lib/money";
+import { ShippingProgress } from "./ShippingProgress";
 
 export function CartView({ checkoutOpen, contact }: { checkoutOpen: boolean; contact: { phone: string; phoneHref: string; email: string; whatsapp: string | null } }) {
   const t = useTranslations();
@@ -25,7 +27,7 @@ export function CartView({ checkoutOpen, contact }: { checkoutOpen: boolean; con
     return (
       <div className="af-empty">
         <p className="af-lead">{t("cart.empty")}</p>
-        <Link className="af-cta-gold" href="/kollektion">
+        <Link className="af-cta-gold af-glass af-glass--gold" href="/kollektion">
           {t("hero.ctaCollection")} <Arrow />
         </Link>
         <p aria-live="polite" className="af-sr">
@@ -48,14 +50,15 @@ export function CartView({ checkoutOpen, contact }: { checkoutOpen: boolean; con
                   <b>{product.name}</b>
                 </Link>
                 <p className="af-note">{product.subtitle}</p>
+                {product.unit ? <p className="af-note">{unitText(t, product.unit, locale)}</p> : null}
                 {product.unique ? (
-                  <p className="af-note af-gold">{t("cart.unique")}</p>
+                  <p className="af-unique">{t("cart.unique")}</p>
                 ) : (
                   <div className="af-qty">
                     <label className="af-note" htmlFor={`qty-${product.slug}`}>
                       {t("cart.quantity")}
                     </label>
-                    <select id={`qty-${product.slug}`} onChange={(event) => cart.setQuantity(product.slug, Number(event.target.value))} value={quantity}>
+                    <select className="af-ui-field af-ui-select" id={`qty-${product.slug}`} onChange={(event) => cart.setQuantity(product.slug, Number(event.target.value))} value={quantity}>
                       {Array.from({ length: MAX_QUANTITY }, (_, i) => i + 1).map((value) => (
                         <option key={value} value={value}>
                           {value}
@@ -97,16 +100,17 @@ export function CartView({ checkoutOpen, contact }: { checkoutOpen: boolean; con
           <span>{t("cart.shipping")}</span>
           <span>{shipping === 0 ? t("checkout.shippingFree") : formatPrice(shipping, locale)}</span>
         </div>
+        <ShippingProgress subtotalCents={cart.subtotalCents} />
         <p className="af-note">{t("cart.shippingFrom")}</p>
         {checkoutOpen ? (
-          <Link className="af-cta-band" href="/kasse">
+          <Link className="af-cta-band af-glass af-glass--gold" href="/kasse">
             {t("cart.toCheckout")} <Arrow />
           </Link>
         ) : (
           <div className="af-stack" style={{ "--gap": "14px" } as React.CSSProperties}>
             <h2 className="af-h3">{t("cart.inquiryTitle")}</h2>
             <p className="af-note">{t("cart.inquiryLead")}</p>
-            <Link className="af-cta-band" href={{ pathname: "/anfrage", query: { thema: "bestellung" } }}>
+            <Link className="af-cta-band af-glass af-glass--gold" href={{ pathname: "/anfrage", query: { thema: "bestellung" } }}>
               {t("cart.inquiryCta")} <Arrow />
             </Link>
             <p className="af-note">

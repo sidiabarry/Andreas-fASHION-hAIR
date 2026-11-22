@@ -50,8 +50,7 @@ export default function Page({ company: c }: { company: Company }) {
           </li>
           <li>Lagernde Stücke sind innerhalb Deutschlands in {deliveryDaysOf(c)} Werktagen bei Ihnen – bei Vorkasse und PayPal ab dem Tag nach Zahlungseingang, sonst ab dem Tag nach Vertragsschluss. Die Lieferzeit ins Ausland nennen wir Ihnen vor Vertragsschluss.</li>
           <li>
-            Maßanfertigungen fertigen wir in etwa {madeToOrderDaysOf(c)} Werktagen, sobald alle Angaben
-            und – bei Vorkasse oder PayPal – die Zahlung vorliegen.
+            Maßanfertigungen sind innerhalb Deutschlands in {madeToOrderDaysOf(c)} Werktagen bei Ihnen, gerechnet ab dem Tag, nachdem alle Angaben und – bei Vorkasse oder PayPal – die Zahlung vorliegen.
           </li>
           <li>
             Einige Pflege-, Klebe- und Lösungsmittelprodukte können wir aus Sicherheitsgründen
@@ -64,8 +63,8 @@ export default function Page({ company: c }: { company: Company }) {
         <h2 id="zahlungsarten">3. Zahlungsarten</h2>
         <p>
           Nach Ihrer Bestellung prüfen wir die Verfügbarkeit persönlich und senden Ihnen eine
-          Auftragsbestätigung mit den Zahlungsdaten. Sie zahlen erst, nachdem wir Ihre Bestellung
-          angenommen haben.
+          Auftragsbestätigung. Sie können sofort nach der Bestellung bezahlen oder nach unserer
+          Auftragsbestätigung. Ist ein Stück nicht verfügbar, erstatten wir bereits gezahlte Beträge unverzüglich.
         </p>
         {!anyPayment(c) ? (
           <p>
@@ -75,7 +74,7 @@ export default function Page({ company: c }: { company: Company }) {
           <ul>
             {c.payments.prepayment ? (
               <li>
-                <strong>Vorkasse per Überweisung</strong> – zahlbar innerhalb von 7 Tagen nach der
+                <strong>Vorkasse per Überweisung</strong> – zahlbar sofort nach der Bestellung, spätestens 7 Tage nach der
                 Auftragsbestätigung; Versand nach Zahlungseingang.
                 {c.bank ? (
                   <>
@@ -84,16 +83,16 @@ export default function Page({ company: c }: { company: Company }) {
                     Bestellnummer als Verwendungszweck an.
                   </>
                 ) : (
-                  <> <Missing field="bank" label="Bankverbindung" /></>
+                  <>{" "}Die Bankverbindung erhalten Sie mit der Auftragsbestätigung.</>
                 )}
               </li>
             ) : null}
             {c.payments.paypal ? (
               <li>
-                <strong>PayPal</strong> – Sie erhalten nach der Auftragsbestätigung eine
-                Zahlungsaufforderung über PayPal
-                {c.paypalEmail ? <> von {c.paypalEmail}</> : <> <Missing field="paypalEmail" label="PayPal-Konto" /></>}
-                ; zahlbar innerhalb von 7 Tagen. Versand nach Zahlungseingang.
+                <strong>PayPal</strong> – sofort nach der Bestellung über den PayPal-Knopf auf der
+                Bestellbestätigung oder nach der Auftragsbestätigung per Zahlungsaufforderung
+                {c.paypalEmail ? <> (Zahlung an {c.paypalEmail})</> : null}
+                ; zahlbar spätestens 7 Tage nach der Auftragsbestätigung. Versand nach Zahlungseingang.
               </li>
             ) : null}
             {c.payments.paypalInstallments ? <li><strong>Ratenzahlung über PayPal</strong> – sofern PayPal sie Ihnen anbietet; Kreditgeber ist PayPal, nach dessen Bonitätsprüfung und Bedingungen. Wir selbst gewähren keinen Kredit.</li> : null}

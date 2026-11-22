@@ -1,6 +1,6 @@
 # Compliance-Grundlage – Andrea's Fashion Hair
 
-**Stand:** 17.11.2026 · **Arbeitsstand:** Deutsche Rechtstexte vollständig (`src/content/legal/*`). Übersetzungen vollständig: en, fr, es, pt, it, nl, pl, tr (siehe Abschnitt 9).
+**Stand:** 21.11.2026 (Abschnitt 4c neu) · **Arbeitsstand:** Deutsche Rechtstexte vollständig (`src/content/legal/*`). Übersetzungen vollständig: en, fr, es, pt, it, nl, pl, tr (siehe Abschnitt 9).
 
 > **Wichtig – bitte zuerst lesen.** Die Texte sind sorgfältig nach der Rechtslage vom November 2026 erarbeitet und an den Gesetzestexten geprüft (Quellen: `docs/QUELLEN.md`). Sie sind aber **keine Rechtsberatung**. Vor dem Livegang muss eine Rechtsanwältin/ein Rechtsanwalt oder ein Rechtstexter-Dienst (z. B. Händlerbund, IT-Recht Kanzlei, Trusted Shops) die Texte und den Bestellprozess prüfen. Steuerfragen gehören zur Steuerberatung. Die Punkte unter „Von Anwalt prüfen lassen“ (Abschnitt 5) sind dabei besonders wichtig.
 
@@ -87,6 +87,24 @@ Inhaberin: **Andreia Pereira Da Costa**, Einzelunternehmen, Geschäftsbezeichnun
 - **Extensions (Butterfly Weft, Genius Weft, Invisible Tape, Tape-In, Keratin-Bondings, Clip-in):** Gleiche Logik wie bei Haarteilen. Kein pauschaler Widerrufsausschluss. Ausschluss nur, wenn (a) nach Kundenvorgabe gefärbt, zugeschnitten oder angefertigt (§ 312g Abs. 2 Nr. 1 BGB – in der Belehrung ergänzt) oder (b) versiegelt geliefert, hygienisch sensibel und entsiegelt (Nr. 3; z. B. Tape-In/Invisible Tape mit Klebefläche, Keratin-Bondings – Siegel tatsächlich anbringen und auf der Produktseite kennzeichnen). Clip-ins ohne Siegel: normales Widerrufsrecht. GPSR-Angaben (Hersteller, Warnhinweise zu Kleber/Keratin/Hitze beim Einarbeiten) je Produkt ergänzen. Bei Einarbeitung im Salon: Handwerksfrage wie oben (Friseurhandwerk).
 - **Salons und Friseure (B2B):** AGB § 1 stellt klar, dass die AGB nur für Verbraucher gelten; Unternehmer erhalten ein individuelles Angebot (`checkoutTexts.b2bNotice`). Für B2B-Angebote sollte die Inhaberin eigene kurze Liefer- und Zahlungsbedingungen haben (Muster beim Rechtstexter-Dienst). Für Kleinunternehmerin: Rechnungen an Salons ohne USt mit Hinweis auf § 19 UStG.
 - **Ratenzahlung über PayPal (standardmäßig aus, `payments.paypalInstallments`):** Baustein in AGB § 5 und auf der Versandseite vorbereitet: Kreditgeber ist PayPal, Bonitätsprüfung durch PayPal, die Inhaberin gewährt keinen Kredit. **Vor Aktivierung prüfen lassen:** (1) ob die Inhaberin durch das Anbieten als Kreditvermittlerin gilt (§ 655a BGB; Gewerbeerlaubnis nach § 34c GewO ist für Händler, die nur als Annex vermitteln, in der Regel nicht erforderlich – bestätigen lassen); (2) Werbung mit Raten („ab X € im Monat“) löst die Pflichtangaben für Verbraucherkredit-Werbung aus (§ 17 PAngV: Sollzinssatz, Nettodarlehensbetrag, effektiver Jahreszins, repräsentatives Beispiel) – PayPal stellt dafür eigene Banner/Texte bereit; keine eigenen Ratenbeträge bewerben. (3) PayPal-Händlerbedingungen für Ratenzahlung beachten.
+
+## 4b. Extensions im Onlineverkauf und V-Toupet (Stand 20.11.2026)
+
+- **Grundpreis (§ 4 Abs. 1 PAngV):** Pflicht für alle Extensions-Packungen (Genius Weft, Butterfly Weft, Invisible Tape je 25/50 g) und für das Clip-in-Set 194 g: Bei Extensions ist das Gewicht die herausgehobene Mengenangabe, nach der die Kundin vergleicht. Das Clip-in-Set ist keine Ausnahme nach Abs. 3 Nr. 2 (drei gleichartige Tressen, keine „verschiedenartigen Erzeugnisse“). Abs. 3 Nr. 7 (kosmetische Mittel) greift nicht: Haarteile sind keine Stoffe oder Gemische. **Kein** Grundpreis beim V-Toupet (Einzelstück, das Gewicht beschreibt nur das Stück).
+- **Bezugsgröße 1 kg (§ 5 Abs. 1 PAngV).** „je 100 g“ ist nur bei loser Ware zulässig (Abs. 2). `check:launch` blockiert, wenn in `src/messages`, `src/components` oder `src/lib` „€ / 100 g“ steht.
+- **Ort:** überall, wo der Preis der Packung steht (Produktseite, Kollektionskarten, Startseiten-Teaser, Suche, Warenkorb, Bestellübersicht), sichtbar und nicht nur im Tooltip.
+- **Widerruf:** Normales Widerrufsrecht. Ausschluss nur bei Färbung/Zuschnitt nach Kundenwunsch (§ 312g Abs. 2 Nr. 1 BGB) oder bei tatsächlich versiegelter, entsiegelter Hygieneware (Nr. 3). Die Belehrung deckt das bereits ab. Bei Tapes schützt eher der Wertersatz (Schutzfolie abgezogen, geklebt) als der Hygiene-Ausschluss.
+- **Werbeaussagen (§ 5 UWG):** „Man sieht nichts“ und „niemand sieht einen Übergang“ (bisher in 36 Produkttexten) sind absolute Versprechen; „Double Drawn“, „ungefärbt“, „naturbelassen“ sind nachprüfbare Beschaffenheitsangaben und nur mit Lieferantenbeleg zulässig. `check:launch` listet betroffene Produkte als Hinweis.
+- **„Einzelstück“** nur bei Ware, die es tatsächlich einmal gibt; bei Packungsware mit mehreren Packungen nicht anzeigen.
+
+## 4c. Prüfung nach dem Umbau (Stand 21.11.2026)
+
+- **KI-gestützte Studiobilder (`imageKind: "staged"`):** Hinweis muss „KI-gestützt“ und „Form, Fülle und Anordnung inszeniert“ sagen (§ 5 UWG; Art. 50 Abs. 4 KI-VO spricht für eine Offenlegungspflicht, weil die Bilder einem real existierenden Gegenstand ähneln). Er steht unmittelbar am Bild: Produktgalerie (`product.imageNoteStaged`), Vergleichsregler (`product.compareNoteStaged`), Startseiten-Vitrine (`home.ext.imageNote`), Alt-Text überall (`product.imageAltStaged`). Offen (Website): Reglerbeschriftung „Studiolicht“ passt bei inszenierten Bildern nicht; kurze sichtbare Kennzeichnung auf Karten, wenn das Bild dort das Hauptbild ist.
+- **„Premium-Echthaar“:** unbelegte Qualitätsstufe → bei 423–428 nur „Echthaar“. Für alle übrigen Produkte gleich verfahren, bis ein Lieferantennachweis vorliegt; `check:launch` listet „Premium“ als Hinweis.
+- **Herkunft:** keine Herkunftsangabe zum Haar; „Handwerk aus Rio de Janeiro“ war als Produktherkunft missverständlich → „Handwerk gelernt in Rio de Janeiro“. „Entstanden im Atelier“ nur, wenn Andrea das Stück selbst gefertigt hat (Frage offen, auch für GPSR-Hersteller).
+- **HWG-Nähe:** Alopezie nur als Situation; kein „Haar wiederbekommen“ in Verbindung mit Krankheit. `check:launch` blockiert bei Heil-, Haarwuchs- und Krankenkassen-Aussagen.
+- **Lieferzeit Maßanfertigung:** einheitlich als Gesamtlieferzeit innerhalb Deutschlands, ab Vorliegen aller Angaben und (bei Vorkasse/PayPal) der Zahlung, ohne „etwa“ und ohne „in der Regel“ (Art. 246a § 1 Abs. 1 Nr. 7 EGBGB).
+- **GPSR:** `check:launch` blockiert, solange kein Feld `manufacturer` je Produkt gepflegt ist.
 
 ## 5. Von Anwalt prüfen lassen (mit Begründung)
 

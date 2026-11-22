@@ -1,6 +1,7 @@
 -- Andrea's Fashion Hair – Datenbankschema (Supabase/Postgres)
--- STATUS: vorbereitet, NICHT verdrahtet. Die Website nutzt derzeit nur den In-Memory-Demo-Store
--- (src/server/store-memory.ts). Wer Supabase anschließt, implementiert src/server/store.ts dagegen.
+-- STATUS: verdrahtet. Production nutzt diesen Store (src/server/store-supabase.ts), sobald SUPABASE_URL und
+-- SUPABASE_SERVICE_ROLE_KEY gesetzt sind; Demo und Vorschau nutzen den In-Memory-Store (src/server/store-memory.ts).
+-- Einmalig im Supabase SQL-Editor ausführen (nicht wiederholbar: legt Typen und Tabellen an). Anleitung: docs/LIVEGANG.md
 -- Abgeleitet aus dem Export (0000_export_d1_reference.sql), verbessert:
 --   * Doppelverkauf-Schutz in der Datenbank (Primärschlüssel auf dem Einzelstück in piece_reservations)
 --   * Bestellung + Reservierung atomar in einer Funktion (place_order)
@@ -67,7 +68,8 @@ create table inquiries (
   phone text not null default '',
   product text not null default '',
   message text not null check (char_length(message) <= 1600),
-  delete_after date not null default (now() + interval '2 years')::date
+  -- Datenschutzerklärung: Anfragen ohne Vertrag spätestens nach 12 Monaten löschen
+  delete_after date not null default (now() + interval '12 months')::date
 );
 
 create table withdrawals (
@@ -119,17 +121,21 @@ set search_path = public
 as $$
 declare
   existing text;
+  inserted text;
   taken text[];
 begin
-  select id into existing from orders where idempotency_key = (p_order->>'idempotency_key')::uuid;
-  if existing is not null then
-    return jsonb_build_object('ok', true, 'duplicate', true, 'id', existing);
-  end if;
-
+  -- Gleicher Idempotenzschlüssel = dieselbe Bestellung. ON CONFLICT fängt auch den Doppelklick ab, bei dem
+  -- zwei Aufrufe gleichzeitig ankommen (der zweite wartet, bis der erste fertig ist, und legt nichts an).
   insert into orders (id, token_hash, idempotency_key, locale, customer_name, email, phone, street, postal_code, city, country, note, subtotal_cents, shipping_cents, total_cents)
   values (p_order->>'id', p_order->>'token_hash', (p_order->>'idempotency_key')::uuid, p_order->>'locale', p_order->>'customer_name', p_order->>'email',
           coalesce(p_order->>'phone', ''), p_order->>'street', p_order->>'postal_code', p_order->>'city', p_order->>'country', coalesce(p_order->>'note', ''),
-          (p_order->>'subtotal_cents')::int, (p_order->>'shipping_cents')::int, (p_order->>'total_cents')::int);
+          (p_order->>'subtotal_cents')::int, (p_order->>'shipping_cents')::int, (p_order->>'total_cents')::int)
+  on conflict (idempotency_key) do nothing
+  returning id into inserted;
+  if inserted is null then
+    select id into existing from orders where idempotency_key = (p_order->>'idempotency_key')::uuid;
+    return jsonb_build_object('ok', true, 'duplicate', true, 'id', existing);
+  end if;
 
   insert into order_items (order_id, product_id, slug, name, unit_cents, quantity, is_unique)
   select p_order->>'id', (i->>'product_id')::int, i->>'slug', i->>'name', (i->>'unit_cents')::int, (i->>'quantity')::int, (i->>'is_unique')::boolean
@@ -142,7 +148,13 @@ begin
     select array_agg(r.slug) into taken
     from piece_reservations r
     where r.slug in (select i->>'slug' from jsonb_array_elements(p_items) i where (i->>'is_unique')::boolean);
-    raise exception 'sold:%', array_to_string(taken, ',') using errcode = 'P0001';
+    if taken is null then
+      -- dasselbe Einzelstück mehrfach im selben Warenkorb
+      select array_agg(d.slug) into taken
+      from (select i->>'slug' as slug from jsonb_array_elements(p_items) i
+            where (i->>'is_unique')::boolean group by 1 having count(*) > 1) d;
+    end if;
+    raise exception 'sold:%', coalesce(array_to_string(taken, ','), '') using errcode = 'P0001';
   end;
 
   return jsonb_build_object('ok', true, 'duplicate', false, 'id', p_order->>'id');
@@ -157,10 +169,13 @@ language plpgsql
 security definer
 set search_path = public
 as $$
+declare
+  changed int;
 begin
   update orders set status = 'storniert' where id = p_id;
+  get diagnostics changed = row_count; -- FOUND würde nach dem DELETE nur die Reservierungen zählen
   delete from piece_reservations where order_id = p_id;
-  return found;
+  return changed > 0;
 end;
 $$;
 revoke all on function cancel_order(text) from public, anon, authenticated;
@@ -184,3 +199,9 @@ begin
 end;
 $$;
 revoke all on function hit_rate_limit(text, int, int) from public, anon, authenticated;
+
+-- Der serverseitige Schlüssel (service_role) bekommt seine Rechte ausdrücklich, unabhängig von den
+-- Standardrechten des Supabase-Projekts. anon/authenticated bleiben ausgesperrt (siehe oben).
+grant usage on schema public to service_role;
+grant all on all tables in schema public to service_role;
+grant execute on function place_order(jsonb, jsonb), cancel_order(text), hit_rate_limit(text, int, int) to service_role;

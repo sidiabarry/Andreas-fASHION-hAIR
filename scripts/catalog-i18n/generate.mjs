@@ -91,7 +91,11 @@ function render(parsed, lang) {
   const subtitle = parsed.subtitle.key ? lang.subtitles[parsed.subtitle.key] : lang.colors[parsed.subtitle.color];
   let description;
   if (parsed.description.kind === "plain") {
-    description = fill(lang.descriptions[parsed.description.key], parsed.description.params);
+    const values = translateParams(parsed.description.params, lang);
+    if (lang.inlineColorLowercase && values.color) {
+      values.color = values.color.charAt(0).toLocaleLowerCase(lang.locale) + values.color.slice(1);
+    }
+    description = fill(lang.descriptions[parsed.description.key], values);
   } else {
     const { hairKey, hairParams, bodyKey, bodyParams } = parsed.description;
     const hair = lang.textureHair[hairParams.hair];

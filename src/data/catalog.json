@@ -3,7 +3,7 @@
     "id": 421,
     "slug": "echthaar-topper-30-cm-421",
     "name": "Echthaar-Topper 30 cm",
-    "subtitle": "Premium-Echthaar",
+    "subtitle": "Feines Echthaar aus Vietnam",
     "category": "topper",
     "priceCents": 30000,
     "sold": false,
@@ -13,7 +13,7 @@
     "texture": "",
     "description": "Feines Echthaar, 30 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 30 cm"
     ],
     "image": "/assets/products/421.jpg",
@@ -24,13 +24,14 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 420,
     "slug": "echthaar-topper-r-420",
     "name": "Echthaar-Topper (R)",
-    "subtitle": "Premium-Echthaar",
+    "subtitle": "Feines Echthaar aus Vietnam",
     "category": "topper",
     "priceCents": 25000,
     "sold": false,
@@ -40,7 +41,7 @@
     "texture": "",
     "description": "Feines Echthaar. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar"
+      "100 % Echthaar aus Vietnam, besonders fein"
     ],
     "image": "/assets/products/420.jpg",
     "restyled": true,
@@ -50,13 +51,14 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 419,
     "slug": "front-lace-peruecke-30-cm-419",
     "name": "Front-Lace-Perücke 30 cm",
-    "subtitle": "Premium-Echthaar",
+    "subtitle": "Feines Echthaar aus Vietnam",
     "category": "peruecken",
     "priceCents": 45000,
     "sold": false,
@@ -64,9 +66,9 @@
     "base": "",
     "color": "",
     "texture": "",
-    "description": "Feines Echthaar, 30 cm lang. Die Front-Lace-Linie ist so fein gearbeitet, dass der Ansatz wie Ihr eigener Haarwuchs wirkt. Aufsetzen, ausrichten, und der Spiegel zeigt wieder Sie.",
+    "description": "Feines Echthaar, 30 cm lang. Die Front-Lace-Linie ist so fein gearbeitet, dass der Ansatz wie Ihr eigener Haarwuchs wirkt. Aufsetzen, ausrichten, und Sie fühlen sich sofort wohl.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 30 cm",
       "Front Lace mit natürlichem Haaransatz"
     ],
@@ -78,13 +80,14 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 417,
     "slug": "front-lace-peruecke-417",
     "name": "Front-Lace-Perücke",
-    "subtitle": "Premium-Echthaar",
+    "subtitle": "Feines Echthaar aus Vietnam",
     "category": "peruecken",
     "priceCents": 55000,
     "sold": false,
@@ -92,9 +95,9 @@
     "base": "",
     "color": "",
     "texture": "",
-    "description": "Feines Echthaar. Die Front-Lace-Linie ist so fein gearbeitet, dass der Ansatz wie Ihr eigener Haarwuchs wirkt. Aufsetzen, ausrichten, und der Spiegel zeigt wieder Sie.",
+    "description": "Feines Echthaar. Die Front-Lace-Linie ist so fein gearbeitet, dass der Ansatz wie Ihr eigener Haarwuchs wirkt. Aufsetzen, ausrichten, und Sie fühlen sich sofort wohl.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Front Lace mit natürlichem Haaransatz"
     ],
     "image": "/assets/products/417.jpg",
@@ -105,7 +108,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 416,
@@ -121,7 +125,7 @@
     "texture": "Glatt",
     "description": "Glattes Echthaar in Dunkelbraun, 40 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (11 x 9 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 40 cm",
       "Basis 11 x 9 cm",
       "Farbe: Dunkelbraun",
@@ -138,7 +142,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 415,
@@ -154,7 +159,7 @@
     "texture": "Glatt",
     "description": "Glattes Echthaar in Kupferbraun, 33 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (9 x 11 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 33 cm",
       "Basis 9 x 11 cm",
       "Farbe: Kupferbraun",
@@ -171,7 +176,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 414,
@@ -187,7 +193,7 @@
     "texture": "Glatt",
     "description": "Glattes Echthaar in Blond mit Reflexen und dunklem Goldblond, 45 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (9 x 11 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 45 cm",
       "Basis 9 x 11 cm",
       "Farbe: Blond mit Reflexen und dunklem Goldblond",
@@ -204,7 +210,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 413,
@@ -220,7 +227,7 @@
     "texture": "Leicht gewellt",
     "description": "Leicht gewelltes Echthaar in Helles Aschblond, 35 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (9 x 11 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 35 cm",
       "Basis 9 x 11 cm",
       "Farbe: Helles Aschblond",
@@ -237,7 +244,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 408,
@@ -253,7 +261,7 @@
     "texture": "Leicht gewellt",
     "description": "Leicht gewelltes Echthaar in Helles Aschblond, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (9 x 11 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 25 cm",
       "Basis 9 x 11 cm",
       "Farbe: Helles Aschblond",
@@ -270,13 +278,14 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 407,
     "slug": "vorhangpony-25-cm-407",
     "name": "Vorhangpony 25 cm",
-    "subtitle": "Premium-Echthaar",
+    "subtitle": "Feines Echthaar aus Vietnam",
     "category": "pony",
     "priceCents": 12600,
     "sold": false,
@@ -286,7 +295,7 @@
     "texture": "Glatt",
     "description": "Glattes Echthaar, 25 cm lang. Ein Pony, der Stirn und Ansatz in Sekunden füllt, ohne dass Sie Ihr eigenes Haar schneiden. Mit Clips befestigt und jederzeit wieder abgenommen.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 25 cm",
       "Basis 7 x 5 cm",
       "Struktur: Glatt",
@@ -302,7 +311,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 405,
@@ -318,7 +328,7 @@
     "texture": "Glatt",
     "description": "Glattes Echthaar in Mittleres Kupferbraun, 25 cm lang. Ein Pony, der Stirn und Ansatz in Sekunden füllt, ohne dass Sie Ihr eigenes Haar schneiden. Mit Clips befestigt und jederzeit wieder abgenommen.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 25 cm",
       "Basis 13 x 10 cm",
       "Farbe: Mittleres Kupferbraun",
@@ -335,7 +345,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 287,
@@ -349,9 +360,9 @@
     "base": "",
     "color": "Goldblond",
     "texture": "Leicht gewellt",
-    "description": "Leicht gewelltes Echthaar in Goldblond, 35 cm lang. Die Front-Lace-Linie ist so fein gearbeitet, dass der Ansatz wie Ihr eigener Haarwuchs wirkt. Aufsetzen, ausrichten, und der Spiegel zeigt wieder Sie.",
+    "description": "Leicht gewelltes Echthaar in Goldblond, 35 cm lang. Die Front-Lace-Linie ist so fein gearbeitet, dass der Ansatz wie Ihr eigener Haarwuchs wirkt. Aufsetzen, ausrichten, und Sie fühlen sich sofort wohl.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 35 cm",
       "Farbe: Goldblond",
       "Struktur: Leicht gewellt",
@@ -365,7 +376,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 263,
@@ -381,7 +393,7 @@
     "texture": "Glatt",
     "description": "Glattes Echthaar in Schwarz, 30 cm lang. Ein Pony, der Stirn und Ansatz in Sekunden füllt, ohne dass Sie Ihr eigenes Haar schneiden. Mit Clips befestigt und jederzeit wieder abgenommen.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 30 cm",
       "Basis 5 x 7 cm",
       "Farbe: Schwarz",
@@ -398,7 +410,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 256,
@@ -414,7 +427,7 @@
     "texture": "Glatt",
     "description": "Glattes Echthaar in Schwarz, 30 cm lang. Ein Pony, der Stirn und Ansatz in Sekunden füllt, ohne dass Sie Ihr eigenes Haar schneiden. Mit Clips befestigt und jederzeit wieder abgenommen.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 30 cm",
       "Basis 10 x 10 cm",
       "Farbe: Schwarz",
@@ -431,7 +444,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 246,
@@ -447,7 +461,7 @@
     "texture": "Leicht gewellt",
     "description": "Leicht gewelltes Echthaar in Mittelbraun Ombré, 50 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (11 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 50 cm",
       "Basis 11 x 10 cm",
       "Farbe: Mittelbraun Ombré",
@@ -464,7 +478,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 241,
@@ -480,6 +495,7 @@
     "texture": "",
     "description": "Haarsystem aus ultradünner Mikrohaut, die auf der Kopfhaut praktisch verschwindet. 100 % Echthaar, leicht, atmungsaktiv und so gearbeitet, dass der Ansatz wie eigener Haarwuchs aussieht.",
     "specs": [
+      "100 % Echthaar aus Vietnam, besonders fein",
       "100 % Echthaar",
       "Ultradünne Mikrohaut-Basis",
       "Leicht und atmungsaktiv",
@@ -493,7 +509,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 238,
@@ -509,6 +526,7 @@
     "texture": "",
     "description": "Nach Ihren Maßen gefertigt: Farbe, Dichte, Haarrichtung und Basis werden auf Sie abgestimmt. Das Ergebnis sitzt bequem, wirkt natürlich und bleibt diskret.",
     "specs": [
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Anfertigung nach Maß",
       "Farbe und Dichte nach Ihrem Haar",
       "100 % Echthaar",
@@ -522,7 +540,8 @@
     "madeToOrder": true,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 234,
@@ -550,7 +569,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "hidden": true
   },
   {
     "id": 222,
@@ -578,7 +598,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "hidden": true
   },
   {
     "id": 228,
@@ -606,7 +627,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "hidden": true
   },
   {
     "id": 220,
@@ -634,7 +656,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": null
+    "origin": null,
+    "hidden": true
   },
   {
     "id": 206,
@@ -650,7 +673,7 @@
     "texture": "Leicht gewellt",
     "description": "Leicht gewelltes Echthaar in Grau meliert, 47 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 47 cm",
       "Basis 13 x 10 cm",
       "Farbe: Grau meliert",
@@ -667,7 +690,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 200,
@@ -683,7 +707,7 @@
     "texture": "Leicht gewellt",
     "description": "Leicht gewelltes Echthaar in Dunkelbraun, 47 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 47 cm",
       "Basis 13 x 10 cm",
       "Farbe: Dunkelbraun",
@@ -700,7 +724,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 191,
@@ -716,7 +741,7 @@
     "texture": "Leicht gewellt",
     "description": "Leicht gewelltes Echthaar in Helles Kupferbraun, 47 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 47 cm",
       "Basis 13 x 10 cm",
       "Farbe: Helles Kupferbraun",
@@ -733,7 +758,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 186,
@@ -749,7 +775,7 @@
     "texture": "Leicht gewellt",
     "description": "Leicht gewelltes Echthaar in Dunkelbraun, 40 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 40 cm",
       "Basis 13 x 10 cm",
       "Farbe: Dunkelbraun",
@@ -766,7 +792,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 180,
@@ -782,7 +809,7 @@
     "texture": "Glatt",
     "description": "Glattes Echthaar in Helles Kupferbraun, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 25 cm",
       "Basis 13 x 10 cm",
       "Farbe: Helles Kupferbraun",
@@ -799,7 +826,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 175,
@@ -815,7 +843,7 @@
     "texture": "Glatt",
     "description": "Glattes Echthaar in Goldblond mit hellblonden Strähnen, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 10 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 25 cm",
       "Basis 13 x 10 cm",
       "Farbe: Goldblond mit hellblonden Strähnen",
@@ -832,7 +860,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 169,
@@ -848,7 +877,7 @@
     "texture": "Lockig",
     "description": "Lockiges Echthaar in Dunkelbraun, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 15 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 25 cm",
       "Basis 13 x 15 cm",
       "Farbe: Dunkelbraun",
@@ -865,7 +894,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 164,
@@ -881,7 +911,7 @@
     "texture": "Leicht gewellt",
     "description": "Leicht gewelltes Echthaar in Braun mit leichtem Kupferton, 43 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis (13 x 15 cm) injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 43 cm",
       "Basis 13 x 15 cm",
       "Farbe: Braun mit leichtem Kupferton",
@@ -899,13 +929,14 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 110,
     "slug": "echthaar-topper-110",
     "name": "Echthaar-Topper",
-    "subtitle": "Premium-Echthaar",
+    "subtitle": "Feines Echthaar aus Vietnam",
     "category": "topper",
     "priceCents": 50000,
     "sold": false,
@@ -915,7 +946,7 @@
     "texture": "Glatt",
     "description": "Glattes Echthaar. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Struktur: Glatt",
       "Nano-Skin-Basis, Haar für Haar von Hand injiziert (3D)",
       "Freier Scheitel, in jede Richtung zu legen"
@@ -929,7 +960,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 105,
@@ -945,7 +977,7 @@
     "texture": "",
     "description": "Feines Echthaar in Natürliches Dunkelbraun, 65 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 65 cm",
       "Farbe: Natürliches Dunkelbraun"
     ],
@@ -958,7 +990,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 99,
@@ -974,7 +1007,7 @@
     "texture": "",
     "description": "Feines Echthaar in Helles Aschblond Ombré, 56 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 56 cm",
       "Farbe: Helles Aschblond Ombré"
     ],
@@ -987,7 +1020,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 93,
@@ -1003,7 +1037,7 @@
     "texture": "",
     "description": "Feines Echthaar in Helles Aschblond Ombré, 55 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 55 cm",
       "Farbe: Helles Aschblond Ombré"
     ],
@@ -1016,13 +1050,14 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 88,
     "slug": "echthaar-topper-53-cm-88",
     "name": "Echthaar-Topper 53 cm",
-    "subtitle": "Premium-Echthaar",
+    "subtitle": "Feines Echthaar aus Vietnam",
     "category": "topper",
     "priceCents": 59000,
     "sold": false,
@@ -1032,7 +1067,7 @@
     "texture": "",
     "description": "Feines Echthaar, 53 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 53 cm"
     ],
     "image": "/assets/products/88.jpg",
@@ -1044,7 +1079,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 83,
@@ -1060,7 +1096,7 @@
     "texture": "",
     "description": "Feines Echthaar in Mittelbraun, 45 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 45 cm",
       "Farbe: Mittelbraun"
     ],
@@ -1073,7 +1109,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 78,
@@ -1089,7 +1126,7 @@
     "texture": "",
     "description": "Feines Echthaar in Mittelbraun, 56 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 56 cm",
       "Farbe: Mittelbraun"
     ],
@@ -1102,7 +1139,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 73,
@@ -1118,7 +1156,7 @@
     "texture": "",
     "description": "Feines Echthaar in Blond mit beigen Highlights und sanft goldenem Ansatz, 40 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 40 cm",
       "Farbe: Blond mit beigen Highlights und sanft goldenem Ansatz"
     ],
@@ -1131,7 +1169,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 68,
@@ -1147,7 +1186,7 @@
     "texture": "",
     "description": "Feines Echthaar in Kupferbraun mit dunkelgoldblonden Reflexen, 40 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 40 cm",
       "Farbe: Kupferbraun mit dunkelgoldblonden Reflexen"
     ],
@@ -1160,7 +1199,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 63,
@@ -1176,7 +1216,7 @@
     "texture": "",
     "description": "Feines Echthaar in Natürliches Dunkelbraun, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 25 cm",
       "Farbe: Natürliches Dunkelbraun"
     ],
@@ -1189,7 +1229,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 58,
@@ -1205,7 +1246,7 @@
     "texture": "",
     "description": "Feines Echthaar in Grau meliert, 35 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 35 cm",
       "Farbe: Grau meliert"
     ],
@@ -1218,7 +1259,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 53,
@@ -1234,7 +1276,7 @@
     "texture": "",
     "description": "Feines Echthaar in Natürliches Dunkelbraun, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 25 cm",
       "Farbe: Natürliches Dunkelbraun"
     ],
@@ -1247,7 +1289,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 48,
@@ -1263,7 +1306,7 @@
     "texture": "",
     "description": "Feines Echthaar in Kupferbraun mit sanften Goldhighlights, 45 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 45 cm",
       "Farbe: Kupferbraun mit sanften Goldhighlights"
     ],
@@ -1276,7 +1319,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 43,
@@ -1292,7 +1336,7 @@
     "texture": "",
     "description": "Feines Echthaar in Natürliches Dunkelbraun mit Kupferhighlights, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 25 cm",
       "Farbe: Natürliches Dunkelbraun mit Kupferhighlights"
     ],
@@ -1305,7 +1349,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 38,
@@ -1321,7 +1366,7 @@
     "texture": "",
     "description": "Feines Echthaar in Natürliches Dunkelbraun mit violettroten Highlights, 25 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 25 cm",
       "Farbe: Natürliches Dunkelbraun mit violettroten Highlights"
     ],
@@ -1334,7 +1379,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 33,
@@ -1350,7 +1396,7 @@
     "texture": "",
     "description": "Feines Echthaar in Natürliches Dunkelbraun mit sanften Grausträhnen, 20 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 20 cm",
       "Farbe: Natürliches Dunkelbraun mit sanften Grausträhnen"
     ],
@@ -1363,7 +1409,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 29,
@@ -1379,7 +1426,7 @@
     "texture": "",
     "description": "Feines Echthaar in Natürliches Dunkelbraun, 14 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 14 cm",
       "Farbe: Natürliches Dunkelbraun"
     ],
@@ -1392,7 +1439,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 21,
@@ -1406,8 +1454,9 @@
     "base": "",
     "color": "",
     "texture": "",
-    "description": "Haarsystem aus Premium-Echthaar mit 20 cm Haarlänge. Wird im Atelier auf Ihren Ansatz und Ihre Farbe abgestimmt, damit niemand einen Übergang sieht.",
+    "description": "Haarsystem aus feinem Echthaar aus Vietnam mit 20 cm Haarlänge. Wird im Atelier auf Ihren Ansatz und Ihre Farbe abgestimmt, damit niemand einen Übergang sieht.",
     "specs": [
+      "100 % Echthaar aus Vietnam, besonders fein",
       "100 % Echthaar",
       "Haarlänge 20 cm",
       "Anpassung im Atelier"
@@ -1421,7 +1470,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 17,
@@ -1437,7 +1487,7 @@
     "texture": "",
     "description": "Feines Echthaar in Dunkelbraun, 47 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 47 cm",
       "Farbe: Dunkelbraun"
     ],
@@ -1450,7 +1500,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 12,
@@ -1466,7 +1517,7 @@
     "texture": "",
     "description": "Feines Echthaar in Grau meliert, 20 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 20 cm",
       "Farbe: Grau meliert"
     ],
@@ -1479,7 +1530,8 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
   },
   {
     "id": 11,
@@ -1495,7 +1547,7 @@
     "texture": "",
     "description": "Feines Echthaar in Mittleres Goldblond, 20 cm lang. Jedes Haar ist einzeln von Hand in eine hauchdünne Nano-Skin-Basis injiziert, deshalb fällt der Scheitel dorthin, wo Sie ihn möchten. Mit Clips befestigt, in Sekunden aufgesetzt, und niemand sieht einen Übergang.",
     "specs": [
-      "100 % Premium-Echthaar",
+      "100 % Echthaar aus Vietnam, besonders fein",
       "Haarlänge 20 cm",
       "Farbe: Mittleres Goldblond"
     ],
@@ -1508,6 +1560,493 @@
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
-    "origin": "Brasilien"
+    "origin": "Vietnam",
+    "manufacturer": "atelier"
+  },
+  {
+    "id": 422,
+    "slug": "v-toupet-46-cm-natuerliches-dunkelblond-422",
+    "name": "V-Toupet 46 cm",
+    "subtitle": "Dunkelblond mit hellen Reflexen",
+    "category": "topper",
+    "priceCents": 49000,
+    "sold": false,
+    "length": "46",
+    "base": "",
+    "color": "Dunkelblond mit hellen Reflexen",
+    "texture": "",
+    "description": "Damen-Topper mit V-förmiger Basis aus Echthaar, in Dunkelblond mit hellen Reflexen. 46 cm lang, Gewicht 117 g. Dieses Stück gibt es nur einmal.",
+    "specs": [
+      "100 % Echthaar aus Vietnam, besonders fein",
+      "Echthaar",
+      "Haarlänge 46 cm",
+      "Farbe: Dunkelblond mit hellen Reflexen",
+      "V-förmige Basis (Damen-Topper)",
+      "Gewicht 117 g"
+    ],
+    "image": "/assets/products/422.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/422-0.jpg",
+      "/assets/originals/422-1.jpg",
+      "/assets/originals/422-2.jpg",
+      "/assets/originals/422-3.jpg",
+      "/assets/originals/422-4.jpg",
+      "/assets/originals/422-5.jpg",
+      "/assets/originals/422-6.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Vietnam",
+    "netWeightGrams": null,
+    "imageKind": "staged",
+    "secondImage": "/assets/products/422-2.jpg",
+    "headline": "Ein Scheitel, der fällt wie Ihr eigenes Haar",
+    "story": "Sie streichen das Haar zur Seite, und es fällt, wie Haar eben fällt: weich, ein wenig schwer, mit hellen Reflexen dort, wo das Licht es trifft. Andréia arbeitet seit ihrem neunzehnten Lebensjahr mit Haar, angefangen in Rio de Janeiro. Eines hat sie dabei nie losgelassen: Es muss echt sein. In ihrem Atelier in Iserlohn wartet dieses V-Toupet: 46 cm Dunkelblond mit hellen Reflexen, und es gibt dieses eine Stück nur ein einziges Mal.",
+    "benefits": [
+      "Hauchdünne, hautfarbene Basis → das Haar sitzt dicht bis an ihren Rand.",
+      "Vorne öffnet sich die Basis zu einem schmalen V → von dort fällt das Haar zu beiden Seiten, so wie sich ein Scheitel von selbst bildet.",
+      "Echthaar in Dunkelblond mit hellen Reflexen → Sie föhnen, glätten und stylen es wie Ihr eigenes Haar, mit Hitzeschutz."
+    ],
+    "howItWorks": "Ein Topper ist ein Haarteil für den Oberkopf: Er wird auf das eigene Haar gesetzt, und seine Längen verbinden sich mit dem Haar darunter und daneben. Bei diesem Stück ist die Basis vorne V-förmig ausgespart; das Haar ist ringsum bis an den Rand eingearbeitet und fällt von dort aus zu beiden Seiten.",
+    "goodFor": "Für Frauen, die sich am Oberkopf mehr Fülle wünschen und ihr eigenes Haar dabei behalten möchten. Die Farbe passt zu dunkelblondem Haar mit helleren Partien.",
+    "care": [
+      "Mit mildem, sulfatfreiem Shampoo waschen; Pflege nur in die Längen geben und die Basis schonend behandeln.",
+      "An der Luft trocknen lassen; Föhn, Glätteisen und Lockenstab nur mit Hitzeschutz."
+    ],
+    "faq": [
+      {
+        "q": "Sieht man, dass ich einen Topper trage?",
+        "a": "Die hauchdünne, hautfarbene Basis und das schmale V vorn sind dafür gemacht, dass der Scheitel natürlich fällt. Andréia sagt Ihnen ehrlich, wie gut das Stück zu Ihrem Haar passt."
+      },
+      {
+        "q": "Passt die Farbe zu meinem Haar?",
+        "a": "Schicken Sie Andréia ein Foto Ihres Haares bei Tageslicht, ohne Blitz. Sie sagt Ihnen offen, ob dieses Stück zu Ihnen passt."
+      },
+      {
+        "q": "Wie wird der Topper befestigt?",
+        "a": "Andréia zeigt Ihnen persönlich, welche Befestigung zu Ihrem Haar passt."
+      }
+    ],
+    "manufacturer": "atelier"
+  },
+  {
+    "id": 423,
+    "slug": "clip-in-extensions-55-cm-naturdunkelbraun-3-teile-423",
+    "name": "Clip-in-Extensions 55 cm",
+    "subtitle": "Naturdunkelbraun, 3 Teile",
+    "category": "extensions",
+    "priceCents": 39000,
+    "sold": false,
+    "length": "55",
+    "base": "",
+    "color": "Naturdunkelbraun",
+    "texture": "",
+    "description": "Clip-in-Extensions aus Echthaar in Naturdunkelbraun, 55 cm lang. Das Set besteht aus drei Tressen mit Clips und wiegt zusammen 194 g.",
+    "specs": [
+      "100 % Echthaar aus Vietnam, besonders fein",
+      "Echthaar",
+      "Haarlänge 55 cm",
+      "Farbe: Naturdunkelbraun",
+      "Set aus 3 Tressen mit Clips",
+      "Gewicht 194 g (Set)"
+    ],
+    "image": "/assets/products/423-studio-1.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/423-0.jpg",
+      "/assets/originals/423-1.jpg",
+      "/assets/originals/423-2.jpg",
+      "/assets/originals/423-3.jpg",
+      "/assets/originals/423-4.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Vietnam",
+    "netWeightGrams": 194,
+    "priceUnit": "set",
+    "weightGrams": 194,
+    "setParts": 3,
+    "imageKind": "staged",
+    "secondImage": "/assets/products/423-studio-2.jpg",
+    "headline": "Lange Haare für heute Abend – und morgen Ihre eigenen",
+    "story": "Sie öffnen das Haar, schütteln den Kopf, und es fällt Ihnen lang und schwer über den Rücken. Am nächsten Morgen ist es wieder schulterlang, so wie Sie es kennen. Clip-ins machen beides möglich: drei Tressen aus Echthaar in Naturdunkelbraun, die Sie selbst einsetzen und abends wieder herausnehmen. Ohne Termin, ohne Kleber.",
+    "benefits": [
+      "Clips statt Kleber → Sie entscheiden jeden Tag neu, ob Sie heute Länge tragen möchten.",
+      "Drei Tressen mit zusammen 8 Clips (zwei breitere mit je 3, eine schmalere mit 2) → Sie verteilen die Länge auf mehrere Reihen, und sie fällt rundum.",
+      "Echthaar → Sie stylen es wie Ihr eigenes: föhnen, glätten, locken, mit Hitzeschutz."
+    ],
+    "howItWorks": "Clip-in-Tressen sind Haarbahnen mit kleinen Clips an der Oberkante. Sie ziehen am Hinterkopf einen waagerechten Scheitel, stecken das Haar darüber hoch, toupieren den Ansatz darunter leicht und schließen die Clips nah am Ansatz, den mittleren zuerst. Ihr eigenes Haar fällt darüber und deckt die Tresse ab. Abends öffnen Sie alle Clips und nehmen die Tressen heraus.",
+    "goodFor": "Für Frauen mit etwa schulterlangem oder längerem Haar, die Länge und Fülle möchten, ohne sich auf eine dauerhafte Methode festzulegen. Die Farbe passt zu natürlich dunkelbraunem Haar.",
+    "care": [
+      "Vor dem Schlafen und vor dem Duschen herausnehmen.",
+      "Die Tressen separat waschen: mildes, sulfatfreies Shampoo, lauwarmes Wasser, an der Luft trocknen lassen."
+    ],
+    "faq": [
+      {
+        "q": "Sieht man die Clips?",
+        "a": "Die Clips sitzen nah am Ansatz unter einer Lage Ihres eigenen Haares, das sie abdeckt. Schicken Sie Andréia vorher ein Foto Ihres Haares bei Tageslicht, damit die Farbe stimmt."
+      },
+      {
+        "q": "Schaffe ich das allein?",
+        "a": "Clip-ins sind zum Selbst-Einsetzen gemacht. Die ersten Male dauern etwas länger; am Hinterkopf hilft anfangs ein Handspiegel oder ein zweites Paar Augen."
+      }
+    ],
+    "manufacturer": "atelier",
+    "extraImages": [
+      "/assets/products/423-studio-3.jpg"
+    ]
+  },
+  {
+    "id": 424,
+    "slug": "genius-weft-55-cm-naturdunkelbraun-424",
+    "name": "Genius Weft 55 cm",
+    "subtitle": "Naturdunkelbraun",
+    "category": "extensions",
+    "priceCents": 11500,
+    "sold": false,
+    "length": "55",
+    "base": "",
+    "color": "Naturdunkelbraun",
+    "texture": "",
+    "description": "Genius Weft aus Echthaar in Naturdunkelbraun, 55 cm lang. Eine Packung enthält 50 g.",
+    "specs": [
+      "100 % Echthaar aus Vietnam, besonders fein",
+      "Echthaar",
+      "Haarlänge 55 cm",
+      "Farbe: Naturdunkelbraun",
+      "50 g je Packung",
+      "1 Tresse je Packung"
+    ],
+    "image": "/assets/products/424-studio-1.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/424-0.jpg",
+      "/assets/originals/424-1.jpg",
+      "/assets/originals/424-2.jpg",
+      "/assets/originals/424-3.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Vietnam",
+    "netWeightGrams": 50,
+    "priceUnit": "pack",
+    "weightGrams": 50,
+    "imageKind": "staged",
+    "secondImage": "/assets/products/424-studio-2.jpg",
+    "headline": "Langes, dunkles Haar – genau so, wie Sie es sich wünschen",
+    "story": "Sie binden morgens einen Zopf, und er reicht so weit, wie Sie es sich immer gewünscht haben. Sie lassen ihn durch die Hand gleiten und spüren das Gewicht von echtem Haar. Dahinter steckt eine Tresse mit besonders flacher Naht: Genius Weft liegt dicht am Kopf, und daran hängen 55 cm Echthaar in Naturdunkelbraun.",
+    "benefits": [
+      "Genius Weft hat eine flache Naht ohne Rückhaar → Die Reihe liegt dicht am Kopf und trägt wenig auf, auch wenn Sie das Haar offen tragen.",
+      "Genius Weft lässt sich an jeder Stelle zuschneiden → Die Tresse wird an Ihre Kopfform angepasst, nicht umgekehrt.",
+      "Echthaar → Sie föhnen, glätten und locken es wie Ihr eigenes Haar, mit Hitzeschutz."
+    ],
+    "howItWorks": "Genius Weft wird von einer Friseurin oder Extension-Fachfrau eingearbeitet. Sie setzt eine Reihe kleiner Ringe in eine waagerechte Linie Ihres eigenen Haares und befestigt die Tresse daran, meist durch Einnähen. Weil die Naht so flach ist, liegt die Reihe dicht am Kopf. Wächst Ihr eigenes Haar nach, wird die Tresse nachgesetzt; wann, bestimmt Ihre Friseurin.",
+    "goodFor": "Für alle, die dauerhaft mehr Länge oder Dichte möchten und dafür einen Termin bei einer Fachfrau einplanen. Wegen der flachen Naht wird Genius Weft oft für feines bis mittleres Haar gewählt.",
+    "care": [
+      "Shampoo an Ansatz und Kopfhaut geben, Spülung und Kur nur in die Längen, nicht an die Naht.",
+      "Die Reihe nach dem Waschen vollständig trocknen, bevor Sie schlafen gehen."
+    ],
+    "faq": [
+      {
+        "q": "Sieht man die Tresse?",
+        "a": "Die Naht ist sehr flach und liegt dicht am Kopf, darüber fällt Ihr eigenes Haar. Ihre Friseurin plant die Reihe gemeinsam mit Ihnen."
+      },
+      {
+        "q": "Hält das?",
+        "a": "Der Halt kommt aus der Einarbeitung: Die Tresse wird an einer Reihe kleiner Ringe in Ihrem eigenen Haar befestigt. Genius Weft ist eine feste Methode für den Alltag, nicht nur für einen Abend. Wächst Ihr Haar nach, setzt Ihre Friseurin die Reihe nach."
+      },
+      {
+        "q": "Passt Naturdunkelbraun zu mir?",
+        "a": "Schicken Sie Andréia ein Foto Ihres Haares bei Tageslicht, ohne Blitz. Sie sagt Ihnen vor der Zahlung, ob der Ton passt und wie viele Packungen Sie für Ihr Ziel brauchen."
+      }
+    ],
+    "manufacturer": "atelier",
+    "extraImages": [
+      "/assets/products/424-studio-3.jpg",
+      "/assets/products/424-studio-4.jpg"
+    ]
+  },
+  {
+    "id": 425,
+    "slug": "genius-weft-55-cm-blond-ombre-425",
+    "name": "Genius Weft 55 cm",
+    "subtitle": "Goldblond Ombré",
+    "category": "extensions",
+    "priceCents": 13500,
+    "sold": false,
+    "length": "55",
+    "base": "",
+    "color": "Goldblond Ombré",
+    "texture": "",
+    "description": "Genius Weft aus Echthaar in Goldblond Ombré, 55 cm lang. Eine Packung enthält 50 g.",
+    "specs": [
+      "100 % Echthaar aus Vietnam, besonders fein",
+      "Echthaar",
+      "Haarlänge 55 cm",
+      "Farbe: Goldblond Ombré",
+      "50 g je Packung",
+      "1 Tresse je Packung"
+    ],
+    "image": "/assets/products/425-studio-1.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/425-0.jpg",
+      "/assets/originals/425-1.jpg",
+      "/assets/originals/425-2.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Vietnam",
+    "netWeightGrams": 50,
+    "priceUnit": "pack",
+    "weightGrams": 50,
+    "imageKind": "staged",
+    "secondImage": "/assets/products/425-studio-2.jpg",
+    "headline": "Langes Goldblond mit Tiefe – gemacht zum Offentragen",
+    "story": "Sie stehen am Fenster, drehen den Kopf, und das Licht wandert durch Ihr Haar, von einem Blond ins nächste. So wirkt ein Ombré: Die Farbe verläuft über die Länge, statt an einer Stelle zu wechseln. Dieses Genius Weft trägt Goldblond im Verlauf auf einer besonders flachen Naht, die dicht am Kopf liegt, damit Sie das Haar offen tragen können.",
+    "benefits": [
+      "Goldblond Ombré → Ihr Haar wirkt nicht wie ein einziger Ton, sondern wie viele, die ineinander übergehen.",
+      "Genius Weft hat eine flache Naht ohne Rückhaar → Die Reihe liegt dicht am Kopf und trägt wenig auf, auch wenn Sie das Haar offen tragen.",
+      "Genius Weft lässt sich an jeder Stelle zuschneiden → Die Tresse wird an Ihre Kopfform angepasst, nicht umgekehrt."
+    ],
+    "howItWorks": "Genius Weft wird von einer Friseurin oder Extension-Fachfrau an einer Reihe kleiner Ringe im eigenen Haar befestigt, meist durch Einnähen. Die flache Naht lässt die Reihe dicht am Kopf liegen. Mit dem Nachwachsen Ihres Haares wird die Tresse nachgesetzt; den Zeitpunkt bestimmt Ihre Friseurin.",
+    "goodFor": "Für blondes Haar, das mehr Länge oder Fülle bekommen soll, und für alle, die einen weichen Farbverlauf mögen. Wegen der flachen Naht wird Genius Weft oft für feines bis mittleres Haar gewählt.",
+    "care": [
+      "Shampoo an Ansatz und Kopfhaut, Spülung und Kur nur in die Längen, nicht an die Naht.",
+      "Die Reihe nach dem Waschen vollständig trocknen, bevor Sie schlafen gehen."
+    ],
+    "faq": [
+      {
+        "q": "Passt das zu meinem Blond?",
+        "a": "Schicken Sie Andréia ein Foto Ihres Haares bei Tageslicht, ohne Blitz, gern mit Ansatz und Spitzen. Sie sagt Ihnen ehrlich, ob das Ombré zu Ihnen passt."
+      },
+      {
+        "q": "Sieht man die Tresse?",
+        "a": "Die Naht ist sehr flach und liegt dicht am Kopf, darüber fällt Ihr eigenes Haar. Ihre Friseurin plant die Reihe gemeinsam mit Ihnen."
+      },
+      {
+        "q": "Hält das?",
+        "a": "Der Halt kommt aus der Einarbeitung an einer Reihe kleiner Ringe in Ihrem eigenen Haar. Genius Weft ist eine feste Methode für den Alltag. Wächst Ihr Haar nach, setzt Ihre Friseurin die Reihe nach."
+      }
+    ],
+    "manufacturer": "atelier",
+    "extraImages": [
+      "/assets/products/425-studio-3.jpg"
+    ]
+  },
+  {
+    "id": 426,
+    "slug": "genius-weft-45-cm-kaffeebraun-ombre-426",
+    "name": "Genius Weft 45 cm",
+    "subtitle": "Kaffeebraun mit Kupfer-Ombré, naturlockig",
+    "category": "extensions",
+    "priceCents": 11500,
+    "sold": false,
+    "length": "45",
+    "base": "",
+    "color": "Kaffeebraun mit Kupfer-Ombré",
+    "texture": "Lockig",
+    "description": "Genius Weft aus Echthaar in Kaffeebraun mit Kupfer-Ombré, 45 cm lang, naturlockig. Eine Packung enthält 50 g.",
+    "specs": [
+      "100 % Echthaar aus Vietnam, besonders fein",
+      "Echthaar",
+      "Haarlänge 45 cm",
+      "Farbe: Kaffeebraun mit Kupfer-Ombré",
+      "Struktur: Naturlockig",
+      "50 g je Packung",
+      "1 Tresse je Packung"
+    ],
+    "image": "/assets/products/426-studio-1.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/426-0.jpg",
+      "/assets/originals/426-1.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Vietnam",
+    "netWeightGrams": 50,
+    "priceUnit": "pack",
+    "weightGrams": 50,
+    "imageKind": "staged",
+    "secondImage": "/assets/products/426-studio-2.jpg",
+    "headline": "Mehr Locken, mehr Länge – und alles bleibt lockig",
+    "story": "Sie schütteln den Kopf, und die Locken springen zurück, nur länger als gestern. Glätten müssen Sie dafür nichts: Dieses Genius Weft ist selbst naturlockig, in Kaffeebraun mit Kupfer-Ombré, und fällt mit Ihren Locken. Dahinter liegt eine Tresse mit besonders flacher Naht, dicht am Kopf.",
+    "benefits": [
+      "Naturlockige Struktur → Ihre Locken bekommen Länge dazu und bleiben, was sie sind.",
+      "Kaffeebraun mit Kupfer-Ombré → ein warmer Verlauf, der in den Locken spielt.",
+      "Genius Weft hat eine flache Naht ohne Rückhaar → Die Reihe liegt dicht am Kopf und trägt wenig auf."
+    ],
+    "howItWorks": "Genius Weft wird von einer Friseurin oder Extension-Fachfrau an einer Reihe kleiner Ringe im eigenen Haar befestigt, meist durch Einnähen. Die Naht einer Genius-Weft-Tresse ist flach und lässt sich an jeder Stelle zuschneiden, sodass die Breite zu Ihrer Kopfform passt. Wächst Ihr Haar nach, wird die Tresse nachgesetzt.",
+    "goodFor": "Für lockiges Haar, das länger oder voller werden soll, ohne die eigene Struktur aufzugeben. Die Farbe passt zu braunem Haar mit warmen, kupfernen Tönen.",
+    "care": [
+      "Shampoo an Ansatz und Kopfhaut, Spülung und Kur nur in die Längen, nicht an die Naht.",
+      "Die Reihe nach dem Waschen vollständig trocknen, bevor Sie schlafen gehen."
+    ],
+    "faq": [
+      {
+        "q": "Passen die Locken zu meinen?",
+        "a": "Locken sind so verschieden wie die Menschen, die sie tragen. Schicken Sie Andréia ein Foto Ihres Haares bei Tageslicht, ohne Blitz. Sie sagt Ihnen vor der Zahlung, ob Struktur und Farbe zu Ihnen passen."
+      },
+      {
+        "q": "Sieht man die Tresse?",
+        "a": "Die Naht ist sehr flach und liegt dicht am Kopf, darüber fallen Ihre eigenen Locken. Am besten setzt eine Fachfrau ein, die Erfahrung mit lockigem Haar hat."
+      },
+      {
+        "q": "Hält das?",
+        "a": "Der Halt kommt aus der Einarbeitung an einer Reihe kleiner Ringe in Ihrem eigenen Haar. Genius Weft ist eine feste Methode für den Alltag. Wächst Ihr Haar nach, setzt Ihre Friseurin die Reihe nach."
+      }
+    ],
+    "manufacturer": "atelier"
+  },
+  {
+    "id": 427,
+    "slug": "invisible-tape-55-cm-blond-ombre-mit-dunklem-ansatz-427",
+    "name": "Invisible Tape 55 cm",
+    "subtitle": "Hellblond Ombré mit dunklem Ansatz",
+    "category": "extensions",
+    "priceCents": 6000,
+    "sold": false,
+    "length": "55",
+    "base": "",
+    "color": "Hellblond Ombré mit dunklem Ansatz",
+    "texture": "",
+    "description": "Invisible-Tape-Extensions aus Echthaar in Hellblond Ombré mit dunklem Ansatz, 55 cm lang. Die Tapes fügen sich bei fachgerechter Einarbeitung unauffällig ins eigene Haar ein. Eine Packung enthält 25 g.",
+    "specs": [
+      "100 % Echthaar aus Vietnam, besonders fein",
+      "Echthaar",
+      "Haarlänge 55 cm",
+      "Farbe: Hellblond Ombré mit dunklem Ansatz",
+      "25 g je Packung",
+      "3 Tapes, gemeinsam versiegelt in einer Packung"
+    ],
+    "image": "/assets/products/427-studio-1.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/427-0.jpg",
+      "/assets/originals/427-1.jpg",
+      "/assets/originals/427-2.jpg",
+      "/assets/originals/427-3.jpg",
+      "/assets/originals/427-4.jpg",
+      "/assets/originals/427-5.jpg",
+      "/assets/originals/427-6.jpg",
+      "/assets/originals/427-7.jpg",
+      "/assets/originals/427-8.jpg",
+      "/assets/originals/427-9.jpg",
+      "/assets/originals/427-10.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Vietnam",
+    "netWeightGrams": 25,
+    "priceUnit": "pack",
+    "weightGrams": 25,
+    "imageKind": "staged",
+    "secondImage": "/assets/products/427-studio-2.jpg",
+    "headline": "Blond und lang – und Ihr dunkler Ansatz darf bleiben",
+    "story": "Sie streichen das Haar zurück, und am Ansatz zeigt sich, was immer schon da war: ein dunkleres Blond, das ins Helle übergeht. Genau mit diesem Übergang spielen diese Extensions: hellblond im Ombré, oben mit dunklem Ansatz. Getragen wird das Haar auf Invisible Tapes, dünnen, flachen Klebestreifen, die dicht am Kopf liegen.",
+    "benefits": [
+      "Dunkler Ansatz im Ombré → Der Übergang zu Ihrem eigenen, dunkleren Ansatz wird weicher, und Ihr Blond darf natürlich nachwachsen.",
+      "Dünner, flacher Klebestreifen → Die Tapes liegen dicht am Kopf, auch wenn Sie den Scheitel wechseln oder das Haar zurückstreichen.",
+      "Versiegelt verpackt → Ihre drei Tapes kommen gemeinsam in einer Packung und unberührt bei Ihnen an."
+    ],
+    "howItWorks": "Invisible Tape ist eine Variante der Tape-In-Methode. Das Haar sitzt auf einem Klebestreifen, der nah am Ansatz an feinen Strähnen Ihres eigenen Haares befestigt wird. Bei Invisible Tape ist dieser Streifen dünner und flacher als beim klassischen Tape, und das Haar ist bis an seine Kante eingesetzt. Einarbeiten, Nachsetzen und Entfernen übernimmt eine Friseurin oder Extension-Fachfrau.",
+    "goodFor": "Für blondes Haar mit dunklerem Ansatz, das mehr Länge oder Dichte bekommen soll. Invisible Tape wird oft bei feinem Haar gewählt und dann, wenn der Scheitel gewechselt oder das Haar gern hochgesteckt wird.",
+    "care": [
+      "Die ersten 48 Stunden nach dem Einsetzen nicht waschen.",
+      "Sulfatfreies Shampoo verwenden; keine Spülung und kein Öl an die Tapes geben."
+    ],
+    "faq": [
+      {
+        "q": "Sieht man die Tapes?",
+        "a": "Die Tapes sind dünn und flach und liegen dicht am Kopf. Bei fachgerechter Einarbeitung fügen sie sich unauffällig in Ihr eigenes Haar ein."
+      },
+      {
+        "q": "Passt die Farbe zu meinem Haar?",
+        "a": "Schicken Sie Andréia vor dem Bestellen ein Foto Ihres Haares bei Tageslicht. Sie sagt Ihnen ehrlich, ob der Ton passt."
+      },
+      {
+        "q": "Hält das?",
+        "a": "Die Tapes werden nah am Ansatz an feinen Strähnen Ihres eigenen Haares befestigt. Für guten Halt kommt es auf die Pflege an: die ersten 48 Stunden nicht waschen, keine Spülung und kein Öl an die Tapes. Wächst Ihr Haar nach, setzt Ihre Friseurin die Tapes nach."
+      }
+    ],
+    "manufacturer": "atelier"
+  },
+  {
+    "id": 428,
+    "slug": "butterfly-weft-55-cm-dunkelbraun-naturfarben-428",
+    "name": "Butterfly Weft 55 cm",
+    "subtitle": "Naturdunkelbraun",
+    "category": "extensions",
+    "priceCents": 13000,
+    "sold": false,
+    "length": "55",
+    "base": "",
+    "color": "Naturdunkelbraun",
+    "texture": "",
+    "description": "Butterfly Weft aus Echthaar in Naturdunkelbraun, 55 cm lang. Die Tressenbreite beträgt 30 cm je Reihe. Eine Packung enthält 50 g.",
+    "specs": [
+      "100 % Echthaar aus Vietnam, besonders fein",
+      "Echthaar",
+      "Haarlänge 55 cm",
+      "Farbe: Naturdunkelbraun",
+      "Tressenbreite 30 cm je Reihe",
+      "50 g je Packung"
+    ],
+    "image": "/assets/products/428-studio-1.jpg",
+    "restyled": true,
+    "originals": [
+      "/assets/originals/428-0.jpg",
+      "/assets/originals/428-1.jpg",
+      "/assets/originals/428-2.jpg"
+    ],
+    "madeToOrder": false,
+    "safety": null,
+    "availability": "unknown",
+    "origin": "Vietnam",
+    "netWeightGrams": 50,
+    "priceUnit": "pack",
+    "weightGrams": 50,
+    "imageKind": "staged",
+    "secondImage": "/assets/products/428-studio-2.jpg",
+    "headline": "Lange, volle Haare – Reihe für Reihe aufgebaut",
+    "story": "Sie greifen ins Haar, und es liegt lang und schwer in Ihrer Hand, bis weit über die Schultern. Dafür arbeitet Butterfly Weft in Reihen: Die flache Tresse wird an kleinen Ringen befestigt und liegt so darüber, dass ihr Haar die Befestigung abdeckt. Jede Reihe bringt Echthaar in Naturdunkelbraun, mit 30 cm Tressenbreite.",
+    "benefits": [
+      "Tresse liegt über der Befestigung → Die Ringe liegen unter dem Haar der Tresse; obenauf ist Haar.",
+      "30 cm Tressenbreite je Reihe → Die Fülle verteilt sich über die Breite des Hinterkopfs statt in einzelnen Strähnen.",
+      "Echthaar → Sie föhnen, glätten und locken es wie Ihr eigenes Haar, mit Hitzeschutz."
+    ],
+    "howItWorks": "Eine Friseurin oder Extension-Fachfrau setzt eine Reihe kleiner Ringe in Ihr eigenes Haar, meist von Ohr zu Ohr, und befestigt die Tresse daran. Ihr eigenes Haar deckt die Reihe von oben ab. Wächst es nach, wird die Tresse nachgesetzt.",
+    "goodFor": "Für alle, die dauerhaft mehr Länge und Fülle möchten und dafür einen Termin bei einer Fachfrau einplanen. Die Farbe passt zu natürlich dunkelbraunem Haar.",
+    "care": [
+      "Sulfatfreies Shampoo an der Tresse entlang waschen, nicht an den Ringen reiben.",
+      "Spülung und Kur erst ab der Mitte der Längen."
+    ],
+    "faq": [
+      {
+        "q": "Sieht man die Reihe?",
+        "a": "Die Tresse liegt über den Ringen, und von oben fällt Ihr eigenes Haar darüber. Ihre Friseurin plant die Position gemeinsam mit Ihnen."
+      },
+      {
+        "q": "Hält das?",
+        "a": "Der Halt kommt aus der Einarbeitung an einer Reihe kleiner Ringe in Ihrem eigenen Haar. Butterfly Weft ist eine feste Methode für den Alltag. Wächst Ihr Haar nach, setzt Ihre Friseurin die Reihe nach."
+      },
+      {
+        "q": "Was ist der Unterschied zu Genius Weft?",
+        "a": "Beide sind flache Tressen an einer Ringreihe. Bei Butterfly Weft liegt die Tresse so über der Befestigung, dass ihr Haar die Ringe abdeckt; Genius Weft wird meist eingenäht und lässt sich an jeder Stelle zuschneiden. Welche Methode zu Ihrem Haar passt, bespricht Andréia gern mit Ihnen."
+      }
+    ],
+    "manufacturer": "atelier",
+    "extraImages": [
+      "/assets/products/428-studio-3.jpg",
+      "/assets/products/428-studio-4.jpg"
+    ]
   }
 ]

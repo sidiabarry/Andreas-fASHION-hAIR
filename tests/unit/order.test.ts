@@ -6,21 +6,21 @@ import { priceOrder } from "@/lib/order";
 import { checkoutSchema, isTooFast } from "@/lib/validation";
 
 const topper = getProductById(421)!; // 300,00 €
-const glue = getProductById(234)!; // 18,60 €
+const glue = getProductById(424)!; // Mengenware (Extensions-Packung), 115,00 €
 const soldInCatalog = getProductById(206)!;
 
 test("Preise und Summen kommen nur aus dem Katalog", () => {
   const r = priceOrder([{ quantity: 1, slug: topper.slug }, { quantity: 2, slug: glue.slug }], "DE", new Set());
   assert.ok(r.ok);
   if (!r.ok) return;
-  assert.equal(r.order.subtotalCents, 30000 + 2 * 1860);
+  assert.equal(r.order.subtotalCents, 30000 + 2 * 11500);
   assert.equal(r.order.shippingCents, 0);
-  assert.equal(r.order.totalCents, 33720);
+  assert.equal(r.order.totalCents, 53000);
 });
 
 test("Versand unter 150 € in DE, EU-Pauschale", () => {
   const de = priceOrder([{ quantity: 1, slug: glue.slug }], "DE", new Set());
-  assert.ok(de.ok && de.order.shippingCents === 600 && de.order.totalCents === 2460);
+  assert.ok(de.ok && de.order.shippingCents === 600 && de.order.totalCents === 12100);
   const at = priceOrder([{ quantity: 1, slug: glue.slug }], "AT", new Set());
   assert.ok(at.ok && at.order.shippingCents === 1500);
 });

@@ -1,21 +1,12 @@
 # Stand
 
-Branch `nextjs`. Zuletzt aktualisiert beim jeweiligen Push.
+Aktueller Stand, offene Punkte und Arbeitsweise: **`docs/UEBERGABE.md`** (21.11.2026).
+Arbeitsnotizen der Agenten: `docs/arbeitsnotizen/`.
 
-## Steht (lauffähig, Build grün)
+## Stand 21.11.2026 (Lichtatelier, produktionsreif im Code)
 
-- Next.js 16, de/en, alle Routen erreichbar: Start (statischer Platzhalter-Hero bis der Design-Agent übernimmt), Kollektion mit Filter/Sortierung, Produktseite, Warenkorb, Kasse (Demo), Bestätigung (mit Code), Anfrage, Über Andrea, Kontakt, Impressum, Datenschutz, AGB, Widerrufsbelehrung, Versand und Zahlung, Widerrufsfunktion, 404.
-- Rechtstexte des Rechtsagenten eingebunden (de maßgeblich, en übersetzt; andere Sprachen fallen auf Deutsch mit Hinweis zurück).
-- Weiterleitungen aller alten Live-URLs (67 Prüfungen grün), Spracherkennung (22 grün), Tastatur (7), Kaufablauf inkl. Doppelverkauf-Schutz (12).
-- Unit-Tests 29/29.
-
-## Nächste Schritte
-
-1. Rechtstexte-Stand `origin/legal-texts` erneut mergen (weitere Sprachen), Gewährleistungslabel.
-2. Produktseite/Kasse-Conversion: feste Kaufleiste, Warenkorb-Schublade, einseitige Gastkasse, Merkliste/Zuletzt angesehen, Original-Vergleich, Einwände am Produkt.
-3. Übrige Sprachen (fr, es, pt, it, nl, pl, tr).
-4. Vollständiger Playwright-Lauf (alle Seiten × 4 Viewports, axe, CLS).
-
-## Grenze zum Design-Agenten
-
-Startseite: `src/app/[locale]/page.tsx`, `src/components/home/**`, `src/components/fx/**`, `src/styles/home.css`, Nachrichten `home.*`/`hero.*`. Schnittstellen in `docs/ARCHITEKTUR.md`, Tokens in `docs/DESIGN-TOKENS.md`.
+- Durchgehend hell, Schaufenster-Hero mit dem 15-s-Film, Seitenwechsel als Lichtöffnung vom Klickpunkt.
+- Haar: alles feines Echthaar aus Vietnam (vom Auftraggeber bestätigt); „Premium-Echthaar“ entfernt.
+- Zahlung: Überweisung per GiroCode (EPC-QR, ohne Drittanbieter) + Kopierfelder auf der Bestellbestätigung und in der Eingangsmail; IBAN der Inhaberin in `company.ts`. Zahlen sofort oder nach Andreas Bestätigung (AGB/Versand & Zahlung angepasst, de/en/fr/es).
+- Kasse ohne Pflicht-Häkchen (AGB-Hinweis über dem Bestellknopf).
+- Livebetrieb: Kasse öffnet sich automatisch, sobald in Vercel gesetzt sind: `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` (Schema `supabase/migrations/0001_init.sql` einspielen), `RESEND_API_KEY`, `MAIL_FROM`, `MAIL_TO_OWNER`, `IP_HASH_SECRET`, `SITE_URL`.

@@ -53,14 +53,16 @@ export default function Page({ company: c }: { company: Company }) {
             Alemania{others.length > 0 ? <>, {countryNames(others, "es")}</> : null}; otros países previo acuerdo.
           </li>
           <li>Las piezas en stock le llegan dentro de Alemania en {deliveryDaysOf(c)} días hábiles –con pago anticipado y PayPal, a partir del día siguiente a la recepción del pago; en los demás casos, a partir del día siguiente a la celebración del contrato–. El plazo al extranjero se lo indicamos antes de la celebración del contrato.</li>
-          <li>Fabricamos las piezas a medida en unos {madeToOrderDaysOf(c)} días hábiles, una vez recibidos todos los datos y –con pago anticipado o PayPal– el pago.</li>
+          <li>
+            Las piezas a medida le llegan dentro de Alemania en {madeToOrderDaysOf(c)} días hábiles, a contar desde el día siguiente a la recepción de todos los datos y –con pago anticipado o PayPal– del pago.
+          </li>
           <li>Por motivos de seguridad, no podemos enviar algunos productos de cuidado, adhesivos y disolventes a todos los países. Lo indicamos en la página del producto.</li>
         </ul>
       </section>
 
       <section>
         <h2 id="zahlungsarten">3. Formas de pago</h2>
-        <p>Tras su pedido comprobamos personalmente la disponibilidad y le enviamos una confirmación del pedido con los datos de pago. Solo paga después de que hayamos aceptado su pedido.</p>
+        <p>Tras su pedido comprobamos personalmente la disponibilidad y le enviamos una confirmación del pedido con los datos de pago. Puede pagar justo después del pedido o tras nuestra confirmación. Si una pieza no está disponible, le reembolsamos sin demora cualquier pago ya realizado.</p>
         {!anyPayment(c) ? (
           <p>
             <Missing field="payments" label="forma de pago pendiente de definir" />
@@ -69,7 +71,7 @@ export default function Page({ company: c }: { company: Company }) {
           <ul>
             {c.payments.prepayment ? (
               <li>
-                <strong>Pago anticipado por transferencia</strong> – en un plazo de 7 días desde la
+                <strong>Pago anticipado por transferencia</strong> – justo después del pedido, a más tardar 7 días tras la
                 confirmación del pedido; envío tras recibir el pago.
                 {c.bank ? (
                   <>
@@ -77,16 +79,16 @@ export default function Page({ company: c }: { company: Company }) {
                     {c.bank.bic ? <>, BIC: {c.bank.bic}</> : null}. Indique su número de pedido como concepto.
                   </>
                 ) : (
-                  <> <Missing field="bank" label="datos bancarios" /></>
+                  <>{" "}Recibirá los datos bancarios con la confirmación del pedido.</>
                 )}
               </li>
             ) : null}
             {c.payments.paypal ? (
               <li>
-                <strong>PayPal</strong> – tras la confirmación del pedido recibe una solicitud de pago
-                por PayPal
-                {c.paypalEmail ? <> de {c.paypalEmail}</> : <> <Missing field="paypalEmail" label="cuenta de PayPal" /></>}
-                ; pagadera en 7 días. Envío tras recibir el pago.
+                <strong>PayPal</strong> – justo después del pedido con el botón de PayPal en la página
+                de confirmación, o mediante una solicitud de pago tras la confirmación del pedido
+                {c.paypalEmail ? <> (pago a {c.paypalEmail})</> : null}
+                ; pagadera a más tardar 7 días después de la confirmación del pedido. Envío tras recibir el pago.
               </li>
             ) : null}
             {c.payments.paypalInstallments ? <li><strong>Pago a plazos con PayPal</strong> – si PayPal se lo ofrece; el prestamista es PayPal, según su comprobación de solvencia y sus condiciones. Nosotros no concedemos crédito.</li> : null}

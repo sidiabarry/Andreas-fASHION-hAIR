@@ -1,18 +1,18 @@
 {
   "meta": {
-    "siteName": "Andrea's Fashion Hair",
+    "siteName": "Andréia's Fashion Hair",
     "claim": "HaarManufaktur",
-    "titleTemplate": "%s | Andrea's Fashion Hair",
-    "defaultTitle": "Andrea's Fashion Hair | Echthaar-Topper, Perücken und Haarsysteme",
-    "defaultDescription": "Wie neu geboren. Echthaar, Haar für Haar von Hand gefertigt: Topper, Front-Lace-Perücken, Pony und Haarsysteme aus der HaarManufaktur in Iserlohn. Jedes Stück ein Einzelstück.",
-    "ogAlt": "Der goldene Phönix von Andrea's Fashion Hair auf dunklem Grund"
+    "titleTemplate": "%s | Andréia's Fashion Hair",
+    "defaultTitle": "Andréia's Fashion Hair | Echthaar-Topper, Perücken und Haarsysteme",
+    "defaultDescription": "Wie neu geboren. Extensions, Topper, Front-Lace-Perücken, Pony und Haarsysteme aus Echthaar, von der HaarManufaktur in Iserlohn. Jedes Haarteil ein Einzelstück.",
+    "ogAlt": "Der goldene Phönix von Andréia's Fashion Hair auf dunklem Grund"
   },
   "common": {
     "skip": "Zum Inhalt springen",
     "menu": "Menü",
     "close": "Schließen",
     "cart": "Warenkorb",
-    "cartWithCount": "Warenkorb, {count, plural, =0 {leer} one {# Artikel} other {# Artikel}}",
+    "cartWithCount": "Warenkorb, {count, plural, one {# Artikel} other {# Artikel}}",
     "home": "Startseite",
     "required": "Pflichtfeld",
     "optional": "freiwillig",
@@ -25,7 +25,7 @@
     "breadcrumb": "Brotkrumen"
   },
   "logo": {
-    "markAlt": "Phönix, das Zeichen von Andrea's Fashion Hair"
+    "markAlt": "Phönix, das Zeichen von Andréia's Fashion Hair"
   },
   "nav": {
     "main": "Hauptnavigation",
@@ -35,8 +35,11 @@
     "craft": "Handwerk",
     "story": "Geschichte",
     "consultation": "Beratung",
-    "about": "Über Andrea",
-    "contact": "Kontakt"
+    "about": "Über Andréia",
+    "contact": "Kontakt",
+    "wigs": "Perücken & Topper",
+    "custom": "Maßanfertigung",
+    "care": "Pflege & Zubehör"
   },
   "locale": {
     "label": "Sprache",
@@ -44,102 +47,253 @@
     "current": "Aktuelle Sprache: {language}"
   },
   "hero": {
+    "kicker": "HaarManufaktur · Iserlohn",
+    "line1": "Wie neu *geboren.*",
+    "line2": "Mehr Länge. *Mehr Fülle.*",
+    "line3": "Mehr *Sie selbst.*",
+    "lead": "Handgefertigt von Andréia in Iserlohn, aus feinem Echthaar aus Vietnam: Extensions, Topper, Perücken und Maßanfertigungen. Mit persönlicher Beratung zu Farbe und Menge.",
     "chapters": "Kapitel des Films",
-    "filmAlt": "Ein Film ohne Ton begleitet das Scrollen: Glut steigt in der Dunkelheit auf, öffnet sich zu Phönixflügeln aus Licht und wird zu echtem, honigfarbenem Haar auf einer hellen Kopfform. Die Kamera kommt am Scheitel zur Ruhe.",
-    "scene1": {
-      "label": "Neubeginn",
-      "kicker": "Andrea's Fashion Hair",
-      "title": "Wie neu geboren.",
-      "body": "Echthaar, Haar für Haar von Hand gearbeitet. Für den Morgen, an dem Sie sich im Spiegel wiedererkennen."
-    },
-    "scene2": {
-      "label": "Identität",
-      "title": "Es ist nicht nur Haar.",
-      "body": "Es ist, wer Sie sind. Wer sein Haar verliert, verliert ein Stück Sicherheit. Der Phönix in unserem Zeichen steht für den Tag, an dem sie zurückkommt."
-    },
-    "scene3": {
-      "label": "Unsichtbar",
-      "title": "Niemand sieht einen Übergang.",
-      "body": "Hauchdünne Nano-Skin-Basis, jedes Haar einzeln injiziert, freier Scheitel. Sie spüren Ihr Stück kaum. Andere sehen es gar nicht.",
-      "tag1": "100 % Echthaar",
-      "tag2": "Freier Scheitel",
-      "tag3": "In Sekunden aufgesetzt"
-    },
+    "ch1": "Glut",
+    "ch2": "Phönix",
+    "ch3": "Haar",
+    "pause": "Bewegung pausieren",
+    "play": "Bewegung fortsetzen",
+    "replay": "Noch einmal ansehen",
+    "trust": [
+      "Echthaar, handgefertigt von Andréia",
+      "Persönliche Beratung durch Andréia",
+      "Bezahlung erst nach ihrer Bestätigung",
+      "Versand mit {carrier}, auch international"
+    ],
+    "trustLabel": "Auf einen Blick",
+    "filmAlt": "Stummer Film, der von selbst abläuft: Glut glimmt in der Dunkelheit, aus ihr steigen Phönixflügel aus Licht auf und werden zu langem, kupferfarbenem Haar auf einer hellen Kopfform.",
+    "ctaExtensions": "Extensions entdecken",
+    "ctaCustom": "Maßanfertigung anfragen",
     "ctaCollection": "Kollektion ansehen",
     "ctaConsult": "Persönlich beraten lassen",
-    "ctaFind": "Mein Stück finden"
+    "ctaConsultVia": "per WhatsApp",
+    "liveCount": "{count, plural, one {# Einzelstück} other {# Einzelstücke}} im Atelier",
+    "needsLabel": "Wonach suchen Sie?",
+    "spotlightPrev": "Vorheriges Stück",
+    "spotlightNext": "Nächstes Stück",
+    "spotlightShow": "Stück {index} von {total} zeigen"
   },
   "home": {
-    "factsLabel": "Auf einen Blick",
-    "fact1Big": "100 %",
-    "fact1": "Echthaar. Kein Kunsthaar, keine Mischung.",
-    "fact2Big": "1 von 1",
-    "fact2": "Jedes Stück wird einzeln gefertigt und existiert genau einmal.",
-    "fact3Big": "2 bis 5",
-    "fact3": "Werktage, bis ein lagerndes Stück bei Ihnen ist.",
-    "fact4Big": "15 bis 20",
-    "fact4": "Werktage für ein Stück, das nach Ihren Maßen entsteht.",
-    "finderTitle": "Was fehlt Ihnen gerade?",
-    "finderLead": "Sagen Sie es uns, und wir zeigen Ihnen die Stücke, die dafür gemacht sind.",
-    "finderTabs": "Bedarf wählen",
-    "finderAll": "Alle {category}",
-    "finderEmpty": "Gerade ist hier kein Stück frei. Andrea fertigt gern eines nach Maß.",
-    "craftKicker": "Das Handwerk",
-    "craftTitle": "Haar für Haar. Von Hand.",
-    "craftLead": "Ein Topper von der Stange sitzt auf dem Kopf. Unserer wird Teil davon. Der Unterschied liegt in vier Dingen.",
-    "craftImageAlt": "Hände, die einzelne Haare in eine hauchdünne Basis einarbeiten",
-    "craft1Key": "Die Basis",
-    "craft1": "Nano Skin, dünn wie eine zweite Haut. Sie liegt flach auf und verschwindet unter Ihrem Ansatz.",
-    "craft2Key": "Das Haar",
-    "craft2": "Jedes einzelne Haar wird von Hand injiziert. So wächst es scheinbar direkt aus der Kopfhaut.",
-    "craft3Key": "Der Scheitel",
-    "craft3": "Frei in jede Richtung. Sie tragen ihn links, rechts oder mittig, so wie heute Ihr Tag ist.",
-    "craft4Key": "Der Halt",
-    "craft4": "Clips, die in Sekunden sitzen und abends genauso schnell wieder gelöst sind.",
-    "atelierTitle": "Gerade im Atelier.",
-    "atelierLead": "Jedes dieser Stücke gibt es ein einziges Mal. Ist es verkauft, kommt es nicht wieder.",
-    "atelierAll": "Ganze Kollektion",
-    "phoenixTitle": "Der Phönix ist kein Zufall.",
-    "phoenixLead": "Mit neunzehn begann Andrea in Rio de Janeiro, mit Haaren zu arbeiten. Seitdem hat sie erlebt, was mit einem Menschen geschieht, der sein Haar verliert. Und was geschieht, wenn es zurückkommt.",
-    "phoenixQuote": "„Wenn das Haar wieder da ist, ist der Mensch ein anderer. Er ist wie neu geboren.“",
-    "phoenixBy": "Andrea, Gründerin und Haarmacherin",
-    "phoenixOutro": "Deshalb trägt jedes Stück aus ihrem Atelier dieses Zeichen. Es steht nicht für Haar. Es steht für den Morgen danach.",
-    "extKicker": "Extensions",
-    "extTitle": "Länge, die Ihnen niemand ansieht.",
-    "extLead": "Echthaar-Extensions in sechs Methoden, für Kundinnen und für Salons. Andrea stellt Ihnen Farbe, Länge und Menge persönlich zusammen.",
-    "extMethods": "Methoden",
-    "extCta": "Extensions anfragen",
-    "extImageAlt": "Echthaar-Extensions in drei Farbtönen: Weft, Tape, Bondings und Clip-In",
-    "stepsTitle": "Drei Schritte. Kein Risiko.",
-    "stepsLead": "Sie bezahlen erst, wenn Andrea Ihr Stück persönlich bestätigt hat.",
-    "step1Title": "Sie wählen Ihr Stück",
-    "step1": "Im Shop oder gemeinsam mit Andrea. Ein Foto bei Tageslicht genügt, und sie sagt Ihnen ehrlich, welche Farbe zu Ihnen passt.",
-    "step2Title": "Andrea bestätigt persönlich",
-    "step2": "Sie prüft Ihr Stück noch einmal von Hand und schreibt Ihnen. Erst danach bezahlen Sie.",
-    "step3Title": "Aufsetzen. Wiedererkennen.",
-    "step3": "Lagernde Stücke verschicken wir mit {carrier}. In der Regel sind sie 2 bis 5 Werktage nach Andreas Bestätigung bei Ihnen.",
-    "faqTitle": "Was Sie vorher wissen möchten.",
-    "faq1Q": "Sieht man, dass ich ein Haarteil trage?",
-    "faq1A": "Dafür ist die Nano-Skin-Basis gemacht. Jedes Haar wird einzeln injiziert, deshalb sieht der Scheitel aus wie Ihre eigene Kopfhaut. Selbst aus der Nähe ist kein Rand und kein Knoten zu erkennen.",
-    "faq2Q": "Woher weiß ich, welche Farbe passt?",
-    "faq2A": "Schicken Sie Andrea über die Beratung ein Foto Ihres Haars bei Tageslicht. Sie vergleicht es mit den Stücken im Atelier und sagt Ihnen offen, welches passt und welches nicht.",
-    "faq3Q": "Wie wird ein Topper befestigt?",
-    "faq3A": "Mit kleinen Clips an Ihrem eigenen Haar. Das dauert Sekunden, hält den ganzen Tag und braucht weder Kleber noch einen Friseurtermin.",
-    "faq4Q": "Wie schnell ist mein Stück bei mir?",
-    "faq4A": "Lagernde Stücke sind in der Regel 2 bis 5 Werktage nach Andreas Bestätigung bei Ihnen, verschickt mit {carrier}. Eine Maßanfertigung braucht 15 bis 20 Werktage, weil sie erst für Sie entsteht.",
-    "faq5Q": "Wann und wie bezahle ich?",
-    "faq5A": "Nicht beim Absenden. Andrea bestätigt Ihr Stück zuerst persönlich und schreibt Ihnen dann, wie Sie bezahlen können.",
-    "faq6Q": "Ich finde mein Stück nicht. Geht es nach Maß?",
-    "faq6A": "Ja. Länge, Farbe, Dichte und Basis werden auf Sie abgestimmt. Beschreiben Sie Andrea, was Sie sich wünschen, und sie meldet sich mit einem Vorschlag.",
-    "closeTitle": "Der Spiegel wartet.",
-    "closeLead": "Ihr Stück ist vielleicht schon fertig. Sehen Sie nach, bevor es jemand anderes trägt.",
-    "closeImageAlt": "Eine Frau vor dem Atelierspiegel, die ihr Haar berührt"
+    "whatsappNote": "öffnet WhatsApp",
+    "symbolImage": "Symbolbild",
+    "dock": "Andréia fragen",
+    "ribbonLabel": "Was Sie erwarten können",
+    "ribbon": [
+      "Handgefertigt in Iserlohn",
+      "Feines Echthaar aus Vietnam",
+      "Handwerk gelernt in Rio de Janeiro",
+      "Sechs Extension-Methoden",
+      "Persönliche Beratung",
+      "Bezahlen per QR-Code in der Banking-App",
+      "Versand mit {carrier}, auch international",
+      "Maßanfertigung in {custom} Werktagen"
+    ],
+    "chapterLabel": "Kapitel",
+    "ext": {
+      "kicker": "Extensions",
+      "title": "Mehr Länge. *Mehr Fülle.*",
+      "lead": "Echthaar in sechs Methoden, vom Clip-in zum Selbst-Einsetzen bis zur feinen Tresse. Die Packungen hier bestellen Sie direkt. Welche Methode und wie viel Haar zu Ihnen passen, sagt Andréia Ihnen persönlich.",
+      "methodsLabel": "Sechs Methoden",
+      "methods": [
+        "Clip-in",
+        "Genius Weft",
+        "Butterfly Weft",
+        "Invisible Tape",
+        "Tape-In",
+        "Keratin-Bondings"
+      ],
+      "methodsNote": "Weitere Methoden, Längen und Mengen stellt Andréia auf Anfrage zusammen.",
+      "cta": "Alle Extensions ansehen",
+      "salon": "Für Salons und Friseure: Mengen anfragen",
+      "view": "{name}, {color} ansehen",
+      "imageNote": "Bilder mit KI bearbeitet.",
+      "galleryLabel": "Extensions im Atelier"
+    },
+    "near": {
+      "kicker": "Aus der Nähe",
+      "title": "Kommen Sie *näher.*",
+      "lead": "Tresse, Clip und Tape entscheiden, wie sich Extensions tragen. So sehen die Stücke im Detail aus.",
+      "shots": [
+        {
+          "label": "Clip-in",
+          "text": "Drei Tressen mit Clips zum Selbst-Einsetzen. Ohne Friseurtermin, und abends nehmen Sie sie wieder heraus."
+        },
+        {
+          "label": "Genius Weft",
+          "text": "Eine dünne Tresse, die sich auf die gewünschte Breite zuschneiden lässt."
+        },
+        {
+          "label": "Invisible Tape",
+          "text": "Schmale, dünne Tapes, die sich unauffällig ins eigene Haar einfügen."
+        },
+        {
+          "label": "Butterfly Weft",
+          "text": "Eine feine, flexible Tresse, die flach am Kopf anliegt."
+        }
+      ],
+      "shotAlt": "{name}, {color}: Detailaufnahme",
+      "progress": "Bild {index} von {total}",
+      "cta": "Methoden vergleichen"
+    },
+    "color": {
+      "kicker": "Farbe und Menge",
+      "title": "Ihre Farbe. *Ihre Menge.*",
+      "lead": "Andréia gleicht Ihre Farbe persönlich ab und sagt Ihnen, wie viele Packungen Sie für Ihr Ziel brauchen.",
+      "fanLabel": "Farben im Atelier",
+      "customTitle": "Ihre Farbe nicht dabei?",
+      "customText": "Andréia fertigt sie nach Maß.",
+      "stepsLabel": "So einfach geht der Farbabgleich",
+      "steps": [
+        {
+          "title": "Foto bei Tageslicht",
+          "text": "Am Fenster, ohne Blitz, Ansatz und Längen gut zu sehen."
+        },
+        {
+          "title": "An Andréia senden",
+          "text": "Per WhatsApp oder über das Formular, gern mit Ihrem Wunsch: mehr Länge, mehr Fülle oder beides."
+        },
+        {
+          "title": "Persönliche Antwort",
+          "text": "Andréia sagt Ihnen, welche Farbe passt und wie viele Packungen Sie brauchen."
+        }
+      ],
+      "cta": "Foto an Andréia senden",
+      "ctaForm": "Lieber per Formular anfragen"
+    },
+    "topper": {
+      "kicker": "Topper und Perücken",
+      "title": "Fülle, *wo sie fehlt.*",
+      "lead": "Für mehr Fülle am Oberkopf, eine schöne Stirnpartie oder einen ganz neuen Look: Topper, Perücken, Pony und Haarsysteme aus Echthaar. Jedes dieser Stücke gibt es genau einmal.",
+      "needsLabel": "Wonach suchen Sie?",
+      "cta": "Topper und Perücken ansehen",
+      "consult": "Unsicher, was passt? Andréia berät Sie per Foto oder im Atelier.",
+      "unique": "Unikat",
+      "sold": "Verkauft",
+      "custom": "Nach Maß",
+      "add": "In den Warenkorb",
+      "inCart": "Im Warenkorb",
+      "view": "{name} ansehen"
+    },
+    "custom": {
+      "kicker": "Maßanfertigung",
+      "title": "Ihr Stück. *Nach Maß.*",
+      "lead": "Ihre Farbe, Ihre Länge, Ihre Struktur: Was Sie im Shop nicht finden, fertigt Andréia für Sie an. Topper, Perücken, Haarsysteme und Extensions.",
+      "stepsLabel": "Sechs Angaben für Ihre Anfrage",
+      "steps": [
+        {
+          "title": "System",
+          "text": "Extensions, Topper, Perücke oder Haarsystem."
+        },
+        {
+          "title": "Länge",
+          "text": "Ihre Wunschlänge. Was möglich ist, sagt Andréia Ihnen."
+        },
+        {
+          "title": "Farbe",
+          "text": "Ihr Ton, gern mit Ansatz oder Ombré."
+        },
+        {
+          "title": "Struktur",
+          "text": "Glatt, wellig, lockig oder kraus."
+        },
+        {
+          "title": "Menge",
+          "text": "Wie viel Fülle Sie sich wünschen."
+        },
+        {
+          "title": "Foto",
+          "text": "Ein Foto bei Tageslicht hilft beim Abgleich."
+        }
+      ],
+      "time": "Lieferzeit in Deutschland: {custom} Werktage, sobald alle Angaben und Ihre Zahlung vorliegen.",
+      "cta": "Maßanfertigung anfragen",
+      "imageAlt": "Hände, die mit einer feinen Nadel einzelne Haare in eine dünne Basis einarbeiten"
+    },
+    "hand": {
+      "kicker": "Die Hand dahinter",
+      "title": "Andréia weiß, *wie es sich anfühlt.*",
+      "lead": "Seit sie 19 ist, arbeitet Andréia mit Haar, angefangen in Rio de Janeiro. Sie kennt Haarverlust aus eigener Erfahrung und trägt selbst ein Haarteil, das sie selbst gefertigt hat. Deshalb gilt bei ihr: Es muss echt sein, und es muss sich im Alltag bewähren.",
+      "quote": "„Ich weiß ganz genau, was Haar für einen Menschen bedeutet, weil ich es selbst erlebt habe.“",
+      "by": "Andréia, Gründerin der HaarManufaktur",
+      "cta": "Andréias Geschichte lesen",
+      "visitTitle": "Treffen Sie Andréia im Atelier",
+      "visitCta": "Termin per WhatsApp vereinbaren",
+      "imageAlt": "Eine Frau vor einem goldgerahmten Spiegel, die ihr Haar berührt"
+    },
+    "concerns": {
+      "title": "Ihre Fragen. *Ehrlich beantwortet.*",
+      "lead": "Was Kundinnen und Kunden wissen möchten, bevor sie sich entscheiden. Kurz und offen beantwortet.",
+      "items": [
+        {
+          "q": "Passt die Farbe zu mir?",
+          "a": "Schicken Sie Andréia ein Foto Ihres Haars bei Tageslicht. Sie vergleicht es mit den Stücken im Atelier und sagt Ihnen offen, was passt und was nicht."
+        },
+        {
+          "q": "Wie viele Packungen brauche ich?",
+          "a": "Das hängt von Ihrem Haar und Ihrem Ziel ab. Andréia sagt es Ihnen persönlich, nachdem sie ein Foto gesehen hat. Lieber eine ehrliche Antwort als eine pauschale Tabelle."
+        },
+        {
+          "q": "Welche Methode passt zu mir?",
+          "a": "Clip-ins setzen Sie selbst ein und nehmen sie abends wieder heraus. Tapes, Tressen und Bondings werden fachgerecht eingearbeitet. Andréia bespricht mit Ihnen, was zu Ihrem Haar und Ihrem Alltag passt."
+        },
+        {
+          "q": "Sieht man das?",
+          "a": "Tapes und Tressen sind flach und schmal gearbeitet und liegen dicht am Kopf. Andréia sagt Ihnen ehrlich, was bei Ihnen möglich ist."
+        },
+        {
+          "q": "Wie schnell ist es bei mir?",
+          "a": "Ab Lager in {stock} Werktagen nach Andréias Bestätigung, versendet mit {carrier}. Eine Maßanfertigung braucht {custom} Werktage, weil sie erst für Sie entsteht."
+        },
+        {
+          "q": "Wann bezahle ich?",
+          "a": "Nicht beim Bestellen. Andréia prüft Ihre Bestellung und bestätigt sie persönlich. Erst dann erhalten Sie die Zahlungsdaten."
+        },
+        {
+          "q": "Und wenn es nicht passt?",
+          "a": "Es gilt das gesetzliche Widerrufsrecht von 14 Tagen ab Erhalt der Ware. Maßanfertigungen sind ausgenommen, weil sie nur für Sie entstehen."
+        },
+        {
+          "q": "Versenden Sie ins Ausland?",
+          "a": "Ja, mit {carrier}: in die EU für {euShip}. Für andere Länder nennt Andréia Ihnen die Versandkosten vor der Bestätigung."
+        }
+      ],
+      "returnsLink": "Widerruf im Detail",
+      "cta": "Persönlich beraten lassen"
+    },
+    "steps": {
+      "title": "Drei Schritte *zu Ihrem Stück.*",
+      "items": [
+        {
+          "title": "Auswählen",
+          "text": "Im Shop, per WhatsApp oder im Atelier. Sie senden Ihre Bestellung ab, ohne zu bezahlen."
+        },
+        {
+          "title": "Andréia bestätigt persönlich",
+          "text": "Sie prüft Ihre Bestellung noch einmal und meldet sich bei Ihnen. Bezahlen können Sie gleich per QR-Code oder nach ihrer Bestätigung."
+        },
+        {
+          "title": "Ankommen",
+          "text": "Versand mit {carrier}: in Deutschland {deShip}, ab {freeFrom} kostenfrei. Ab Lager {stock} Werktage, nach Maß {custom} Werktage."
+        }
+      ],
+      "cta": "Extensions entdecken"
+    },
+    "close": {
+      "title": "Wie neu *geboren.*",
+      "lead": "Mehr Länge, mehr Fülle, mehr Sie selbst. Ihr Stück liegt vielleicht schon bereit. Und wenn nicht, fertigt Andréia es für Sie an.",
+      "imageAlt": "Phönixflügel aus goldenen Haarsträhnen, die aus Glut aufsteigen"
+    }
   },
   "categories": {
     "topper": {
       "label": "Topper",
       "need": "Mehr Fülle am Oberkopf",
-      "caption": "Für lichter werdendes Haar am Scheitel und Oberkopf. Ihr eigenes Haar an den Seiten bleibt."
+      "caption": "Für mehr Fülle an Scheitel und Oberkopf – Ihr eigenes Haar an den Seiten bleibt."
     },
     "peruecken": {
       "label": "Perücken",
@@ -164,7 +318,7 @@
     "extensions": {
       "label": "Extensions",
       "need": "Mehr Länge und Fülle",
-      "caption": "Echthaar-Extensions in sechs Methoden, persönlich für Sie zusammengestellt. Preise nennt Andrea Ihnen auf Anfrage."
+      "caption": "Echthaar-Extensions in mehreren Methoden. Die gelisteten Packungen können Sie direkt bestellen, alles andere stellt Andréia persönlich für Sie zusammen."
     }
   },
   "product": {
@@ -196,12 +350,53 @@
     "compareLabel": "Vergleich verschieben: links Studiolicht, rechts unbearbeitetes Originalfoto",
     "compareStudio": "Studiolicht",
     "compareOriginal": "Originalfoto aus dem Atelier",
-    "compareNote": "Das Studiofoto wurde neu ausgeleuchtet, am Haar wurde nichts verändert. Das Originalfoto zeigt das Stück so, wie Andrea es im Atelier fotografiert hat.",
-    "askWhatsapp": "Fragen zu diesem Stück? Schreiben Sie Andrea direkt per WhatsApp",
+    "askWhatsapp": "Fragen zu diesem Stück? Schreiben Sie Andréia direkt per WhatsApp",
     "askWhatsappShort": "Per WhatsApp fragen",
     "stickyLabel": "Schnellkauf",
-    "availabilityUnknown": "Verfügbarkeit bestätigen wir persönlich, bevor Sie bezahlen.",
-    "originBrazil": "Brasilianisches Echthaar"
+    "unitPrice": "{amount} / 1 kg",
+    "packSize": "je Packung {grams} g",
+    "setSize": "Set ({pieces} Tressen) {grams} g",
+    "imageAltStaged": "{name}, {subtitle}: KI-gestützt inszeniertes Studiobild",
+    "imageNoteRelit": "Bild mit KI bearbeitet.",
+    "imageNoteStaged": "Bild mit KI bearbeitet.",
+    "consultTitle": "Beratung",
+    "consultText": "Fragen zu Farbe, Größe oder Passform? Andréia antwortet persönlich.",
+    "consultExtensions": "Unsicher bei Farbe oder Menge? Schicken Sie Andréia ein Foto Ihres Haars bei Tageslicht. Sie sagt Ihnen ehrlich, was passt.",
+    "accessories": "Pflege und Zubehör aus dem Atelier",
+    "accessoriesNote": "Das verwendet Andréia im Atelier selbst.",
+    "moreExtensions": "Weitere Packungen",
+    "spec": {
+      "title": "Eigenschaften auf einen Blick",
+      "method": "Methode",
+      "length": "Länge",
+      "lengthValue": "{cm} cm",
+      "pack": "Packung",
+      "set": "Set",
+      "packValue": "{grams} g",
+      "setValue": "{pieces} Tressen, {grams} g",
+      "color": "Farbe",
+      "texture": "Struktur",
+      "base": "Basis",
+      "baseValue": "{base} cm",
+      "textures": {
+        "glatt": "Glatt",
+        "leichtGewellt": "Leicht gewellt",
+        "lockig": "Lockig"
+      }
+    },
+    "copy": {
+      "title": "Das Stück im Detail",
+      "benefits": "Eigenschaften",
+      "how": "So funktioniert es",
+      "good": "Für wen es passt",
+      "care": "Pflege"
+    },
+    "flagStaged": "Bearbeitetes Bild",
+    "compareStudioStaged": "Bearbeitetes Bild",
+    "compareTitleStaged": "Bearbeitetes Bild und Originalfoto",
+    "compareLabelStaged": "Vergleich verschieben: links bearbeitetes Bild, rechts unbearbeitetes Originalfoto",
+    "manufacturer": "Hergestellt von {name}, {address}, {email}",
+    "handmade": "Handgefertigt von Andréia in {city}"
   },
   "price": {
     "smallBusiness": "Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.",
@@ -211,7 +406,7 @@
   },
   "collection": {
     "title": "Die Kollektion",
-    "lead": "Alles, was gerade im Atelier fertig ist. Jedes Stück von Hand gearbeitet, jedes nur einmal da.",
+    "lead": "Handgefertigt von Andréia in Iserlohn. Jedes Haarteil gibt es nur einmal, Extensions in Packungen.",
     "available": "{count, plural, =0 {Kein Stück verfügbar} one {# Stück verfügbar} other {# Stücke verfügbar}}",
     "all": "Alle",
     "filterLabel": "Nach Kategorie filtern",
@@ -222,13 +417,35 @@
     "sortLength": "Haarlänge",
     "apply": "Anwenden",
     "results": "{count, plural, one {# Stück} other {# Stücke}} in dieser Auswahl",
-    "soldHint": "Verkaufte Stücke bleiben sichtbar und sind markiert. Ein ähnliches Stück fertigt Andrea gern nach Maß."
+    "soldHint": "Verkauft? Ein ähnliches Stück fertigt Andréia gern nach Maß.",
+    "leadExtensions": "Mehr Länge, mehr Fülle, mehr Sie selbst. Die Packungen bestellen Sie direkt. Für andere Methoden, Längen und Mengen stellt Andréia alles persönlich zusammen.",
+    "hubLink": "Methoden, Farbhilfe und Beratung zu Extensions",
+    "byMethod": "Methode",
+    "byColor": "Farbe",
+    "byLength": "Länge",
+    "filterGroups": "Filter",
+    "any": "Alle",
+    "reset": "Filter zurücksetzen",
+    "empty": "Dazu gibt es gerade nichts. Lockern Sie die Filter oder lassen Sie sich ein Stück nach Maß fertigen.",
+    "colors": {
+      "blond": "Blond",
+      "braun": "Braun",
+      "kupfer": "Kupfer und Rot",
+      "schwarz": "Schwarz",
+      "grau": "Grau",
+      "andere": "Weitere"
+    },
+    "lengths": {
+      "kurz": "bis 30 cm",
+      "mittel": "31 bis 45 cm",
+      "lang": "ab 46 cm"
+    }
   },
   "cart": {
     "title": "Ihr Warenkorb",
-    "lead": "Sie bezahlen jetzt noch nichts. Andrea bestätigt Ihr Stück zuerst persönlich.",
+    "lead": "Sie bezahlen jetzt noch nichts. Andréia bestätigt Ihr Stück zuerst persönlich.",
     "empty": "Noch liegt nichts darin. Ihr Stück ist vielleicht schon fertig und wartet im Atelier.",
-    "unique": "Einzelstück",
+    "unique": "Einzelstück: gibt es nur einmal",
     "quantity": "Menge",
     "quantityFor": "Menge für {name}",
     "remove": "Entfernen",
@@ -240,7 +457,7 @@
     "toCheckout": "Zur Kasse",
     "storageNote": "Ihr Warenkorb wird nur auf diesem Gerät gespeichert (im Browser), nicht bei uns.",
     "inquiryTitle": "Bestellen derzeit per Anfrage",
-    "inquiryLead": "Die Online-Kasse ist gerade geschlossen. Schicken Sie Andrea Ihre Auswahl als Anfrage, oder melden Sie sich direkt per Telefon, E-Mail oder WhatsApp. Sie bezahlen erst, wenn Andrea Ihr Stück bestätigt hat.",
+    "inquiryLead": "Die Online-Kasse ist gerade geschlossen. Schicken Sie Andréia Ihre Auswahl als Anfrage, oder melden Sie sich direkt per Telefon, E-Mail oder WhatsApp. Sie bezahlen erst, wenn Andréia Ihr Stück bestätigt hat.",
     "inquiryCta": "Auswahl als Anfrage senden"
   },
   "checkout": {
@@ -255,17 +472,17 @@
     "postalCode": "Postleitzahl",
     "city": "Ort",
     "country": "Land",
-    "countryHint": "Online bestellen können Sie innerhalb der EU. Wir versenden weltweit: Für andere Länder schreiben Sie Andrea bitte eine <link>Anfrage</link>, sie nennt Ihnen die Versandkosten vor der Bestätigung.",
-    "note": "Nachricht an Andrea",
+    "countryHint": "Online bestellen können Sie innerhalb der EU. Wir versenden weltweit: Für andere Länder schreiben Sie Andréia bitte eine <link>Anfrage</link>, sie nennt Ihnen die Versandkosten vor der Bestätigung.",
+    "note": "Nachricht an Andréia",
     "noteHint": "Zum Beispiel eine Frage zur Farbe oder Befestigung. Bitte keine Gesundheitsdaten angeben.",
     "items": "Artikel",
     "deliveryAddress": "Lieferadresse",
     "deliveryTime": "Lieferzeit",
-    "deliveryTimeDe": "In der Regel {from} bis {to} Werktage nach Andreas Bestätigung, Versand mit {carrier}.",
-    "deliveryTimeEu": "In der Regel {from} bis {to} Werktage nach Andreas Bestätigung, Versand mit {carrier}. In andere EU-Länder kann es einige Tage länger dauern.",
+    "deliveryTimeDe": "In der Regel {from} bis {to} Werktage nach Andréias Bestätigung, Versand mit {carrier}.",
+    "deliveryTimeEu": "In der Regel {from} bis {to} Werktage nach Andréias Bestätigung, Versand mit {carrier}. In andere EU-Länder kann es einige Tage länger dauern.",
     "deliveryCustom": "Maßanfertigungen brauchen {mFrom} bis {mTo} Werktage.",
     "payment": "Zahlung",
-    "paymentText": "Es wird jetzt nichts abgebucht. Andrea bestätigt Ihre Bestellung persönlich per E-Mail und teilt Ihnen darin mit, wie Sie bezahlen.",
+    "paymentText": "Nichts wird automatisch abgebucht. Nach dem Absenden überweisen Sie bequem per QR-Code in Ihrer Banking-App, gleich oder nach Andréias Bestätigung. Auf Wunsch auch per PayPal.",
     "total": "Gesamtsumme",
     "shippingFree": "kostenlos",
     "consentsLegend": "Zustimmung",
@@ -274,21 +491,22 @@
     "failed": "Die Bestellung konnte nicht gesendet werden. Bitte versuchen Sie es noch einmal oder melden Sie sich per Telefon oder E-Mail.",
     "rateLimited": "Zu viele Versuche in kurzer Zeit. Bitte warten Sie ein paar Minuten.",
     "closed": "Die Online-Kasse ist gerade geschlossen. Bitte senden Sie Ihre Auswahl als Anfrage.",
-    "emptyCart": "Ihr Warenkorb ist leer."
+    "emptyCart": "Ihr Warenkorb ist leer.",
+    "agbNotice": "Mit Ihrer Bestellung gelten unsere {agb}."
   },
   "order": {
     "metaTitle": "Ihre Bestellung",
     "number": "Bestellnummer {id}",
     "thanks": "Danke, {name}. Ihre Bestellung ist eingegangen.",
-    "lead": "Andrea prüft Ihr Stück jetzt noch einmal von Hand und schreibt Ihnen an {email}. Bis dahin müssen Sie nichts tun und nichts bezahlen.",
+    "lead": "Andréia prüft Ihr Stück jetzt noch einmal von Hand und schreibt Ihnen an {email}. Bezahlen können Sie gleich hier oder nach ihrer Bestätigung.",
     "mailSent": "Eine Eingangsbestätigung ist an Ihre E-Mail-Adresse unterwegs.",
-    "mailNotSent": "Die Eingangsbestätigung per E-Mail konnte gerade nicht versendet werden. Ihre Bestellung ist trotzdem gespeichert; Andrea meldet sich bei Ihnen.",
+    "mailNotSent": "Die Eingangsbestätigung per E-Mail konnte gerade nicht versendet werden. Ihre Bestellung ist trotzdem gespeichert; Andréia meldet sich bei Ihnen.",
     "notFound": "Diese Bestellung finden wir nicht.",
     "notFoundLead": "Bitte prüfen Sie den Link aus Ihrer Bestätigung.",
     "demoGone": "Im Vorschau-Modus werden Bestellungen nur kurz im Speicher gehalten. Diese ist nicht mehr vorhanden.",
     "withdrawTitle": "Widerruf",
     "withdrawText": "Sie können Ihren Vertrag innerhalb der gesetzlichen Frist jederzeit hier widerrufen:",
-    "careCta": "Passende Pflege ansehen",
+    "careCta": "Weitere Stücke ansehen",
     "print": "Diese Seite können Sie ausdrucken oder als PDF speichern."
   },
   "inquiry": {
@@ -304,13 +522,13 @@
     },
     "intro": {
       "beratung": {
-        "title": "Andrea antwortet persönlich.",
+        "title": "Andréia antwortet persönlich.",
         "lead": "Beschreiben Sie, was Sie sich wünschen. Ein Foto ist nicht nötig, eine ehrliche Beschreibung genügt für den Anfang.",
         "hint": "Zum Beispiel: Ihre Haarfarbe, welche Länge Sie tragen möchten und ob Sie einen Topper oder ein Haarsystem suchen."
       },
       "extensions": {
         "title": "Ihre Extensions, zusammengestellt für Sie.",
-        "lead": "Sagen Sie uns Methode, Wunschlänge und Haarfarbe. Andrea meldet sich mit einem Vorschlag und einem festen Preis.",
+        "lead": "Sagen Sie uns Methode, Wunschlänge und Haarfarbe. Andréia meldet sich mit einem Vorschlag und einem festen Preis.",
         "hint": "Zum Beispiel: Tape-In, etwa 50 cm, mittelblond, für feines Haar."
       },
       "massanfertigung": {
@@ -325,7 +543,7 @@
       },
       "bestellung": {
         "title": "Ihre Auswahl, persönlich bestätigt.",
-        "lead": "Senden Sie Andrea Ihre Auswahl. Sie prüft die Stücke und schreibt Ihnen mit Gesamtpreis, Versandkosten und den nächsten Schritten. Mit dieser Anfrage kaufen Sie noch nichts.",
+        "lead": "Senden Sie Andréia Ihre Auswahl. Sie prüft die Stücke und schreibt Ihnen mit Gesamtpreis, Versandkosten und den nächsten Schritten. Mit dieser Anfrage kaufen Sie noch nichts.",
         "hint": "Zum Beispiel Ihre Lieferadresse oder eine Frage zur Farbe."
       }
     },
@@ -339,12 +557,12 @@
     "privacy": "Ich habe die <link>Datenschutzerklärung</link> gelesen. Meine Angaben werden nur zur Beantwortung meiner Anfrage verwendet.",
     "submit": "Anfrage senden",
     "doneKicker": "Anfrage gesendet",
-    "doneTitle": "Danke. Andrea meldet sich bei Ihnen.",
+    "doneTitle": "Danke. Andréia meldet sich bei Ihnen.",
     "doneLead": "Sie liest jede Nachricht selbst und antwortet per E-Mail.",
     "doneDemo": "Vorschau-Modus: Diese Anfrage wurde nicht versendet, sondern nur zum Testen gespeichert.",
     "failed": "Die Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es noch einmal oder schreiben Sie direkt an {email}.",
     "unavailableTitle": "Das Formular ist gerade nicht erreichbar.",
-    "unavailable": "Bitte schreiben Sie Andrea direkt eine E-Mail, rufen Sie an oder nutzen Sie WhatsApp. Ihre Angaben gehen so nicht verloren.",
+    "unavailable": "Bitte schreiben Sie Andréia direkt eine E-Mail, rufen Sie an oder nutzen Sie WhatsApp. Ihre Angaben gehen so nicht verloren.",
     "contactAlt": "Lieber direkt?",
     "method": "Methode",
     "methodUnsure": "Ich weiß es noch nicht",
@@ -354,40 +572,102 @@
     "amountHint": "Zum Beispiel Anzahl der Strähnen oder Gramm, falls Sie es wissen.",
     "company": "Salon oder Firma",
     "contactPerson": "Ansprechpartnerin oder Ansprechpartner",
-    "salonNote": "Für Salons erstellt Andrea ein individuelles Angebot. Die AGB des Shops gelten für Verbraucherinnen und Verbraucher.",
+    "salonNote": "Für Salons erstellt Andréia ein individuelles Angebot. Die AGB des Shops gelten für Verbraucherinnen und Verbraucher.",
     "country": "Lieferland",
-    "countryHint": "Für Länder außerhalb der EU nennt Andrea Ihnen die Versandkosten vor der Bestätigung."
+    "countryHint": "Für Länder außerhalb der EU nennt Andréia Ihnen die Versandkosten vor der Bestätigung."
   },
   "about": {
-    "metaTitle": "Über Andrea",
-    "metaDescription": "Andrea's Fashion Hair aus Iserlohn: Echthaar-Topper, Perücken und Haarsysteme, gefertigt mit Respekt vor den Menschen, die sie tragen.",
-    "kicker": "Unsere Essenz",
-    "title": "Wo Technologie auf Menschlichkeit trifft. Wo Schönheit auf Erneuerung trifft.",
-    "storyTitle": "Unsere Geschichte",
-    "p1": "Andrea's Fashion Hair entstand aus einer Leidenschaft für Exzellenz und vor allem aus tiefem Respekt vor Menschen.",
-    "p2": "Wir wissen, dass Haare weit mehr sind als einzelne Strähnen. Sie tragen Geschichten, Erinnerungen, Identität, Weiblichkeit, Persönlichkeit und Selbstvertrauen in sich. Für viele Menschen ist es selbstverständlich, sich im Spiegel wiederzuerkennen. Für andere, besonders Menschen mit Alopezie, Kopfhauterkrankungen, medizinischen Behandlungen oder dünner werdendem Haar, kann dieser Blick zur Herausforderung werden.",
-    "p3": "Für diese Menschen sind wir da.",
-    "p4": "Wir schaffen mehr als Haarprothesen und Topper: Wir schaffen Möglichkeiten, sich selbst wieder nahe zu kommen.",
-    "quote": "„Haar ist etwas zutiefst Persönliches. Jedes Stück, das wir fertigen, soll sich vom ersten Moment an wie Ihres anfühlen.“",
-    "quoteBy": "Andrea",
-    "valuesKicker": "Was uns bewegt",
-    "valuesTitle": "Technologie, Menschlichkeit und Erneuerung",
-    "v1Title": "Natürlicher Look",
-    "v1": "Haartechnologien und Premium-Materialien, die Ihre Identität respektieren und ein wirklich natürliches Ergebnis schaffen.",
-    "v2Title": "Komfort",
-    "v2": "Jedes Stück ist auf Leichtigkeit, Halt und Wohlbefinden ausgelegt und wird mühelos und diskret Teil Ihres Alltags.",
-    "v3Title": "Selbstvertrauen",
-    "v3": "Wir schaffen mehr als Haarlösungen: Wir schaffen die Freiheit, sich selbst wiederzuerkennen, voll zu leben und zu zeigen, wer Sie sind."
+    "metaTitle": "Über Andréia",
+    "metaDescription": "Andréia arbeitet seit ihrem 19. Lebensjahr mit Haar, angefangen in Rio de Janeiro. Heute führt sie ihr Atelier in Iserlohn: Extensions, Topper, Perücken und Haarsysteme aus Echthaar, auch nach Maß.",
+    "kicker": "Über Andréia",
+    "title": "Es ist nicht nur Haar. *Es ist viel mehr.*",
+    "lead": "Die Geschichte von Andréia Pereira Da Costa: von Rio de Janeiro in ein Atelier in Iserlohn.",
+    "chaptersLabel": "Sieben Kapitel",
+    "chapters": [
+      {
+        "label": "Rio de Janeiro",
+        "title": "Mit 19 *beginnt es.*",
+        "text": "In Rio de Janeiro fängt Andréia an, mit Haar zu arbeiten, und bleibt viele Jahre dabei. In Brasilien hat Haar einen hohen Stellenwert. Menschen legen viel Wert darauf, weil es mehr ist als Schönheit.",
+        "quote": "„Haare zeigen, wer du innen bist, von innen nach außen.“"
+      },
+      {
+        "label": "Neuanfang",
+        "title": "Ein neues Land. *Eine neue Sprache.*",
+        "text": "Andréia zieht nach Deutschland. Weil sie anfangs kaum Deutsch spricht, arbeitet sie viele Jahre in der Pflege, mit Menschen mit Behinderung. Dort lernt sie, Menschen mit Geduld und Würde zu begegnen. Das prägt bis heute, wie sie berät."
+      },
+      {
+        "label": "Selbst betroffen",
+        "title": "Sie weiß, *wie es sich anfühlt.*",
+        "text": "Andréia kennt Haarverlust aus eigener Erfahrung. Sie trägt selbst ein Haarteil, das sie selbst gefertigt hat. Wer zu ihr kommt, spricht mit jemandem, der den Blick in den Spiegel kennt.",
+        "quote": "„Ich weiß ganz genau, was Haar für einen Menschen bedeutet, weil ich es selbst erlebt habe.“"
+      },
+      {
+        "label": "Es muss echt sein",
+        "title": "Echt. *Und alltagstauglich.*",
+        "text": "Ein Haarteil aus anderem Haar hat sie einmal ausprobiert. Es hat sie im Alltag enttäuscht, zum Beispiel in der Sauna. Seitdem steht für sie fest: Es muss echtes Haar sein, und es muss sich im Leben bewähren, nicht nur im Spiegel."
+      },
+      {
+        "label": "Das Atelier",
+        "title": "Zurück *zum Haar.*",
+        "text": "Vor rund drei Jahren gründet Andréia ihr eigenes Atelier in Iserlohn und kehrt zu ihrem Handwerk zurück: Extensions, Topper, Perücken und Haarsysteme aus Echthaar, auch nach Maß.",
+        "quote": "„Am glücklichsten bin ich in meinem Atelier, wenn ich meine Stücke fertige.“"
+      },
+      {
+        "label": "Der Phönix",
+        "title": "Wie neu *geboren.*",
+        "text": "Ihr Zeichen ist der Phönix. Er steht für Vorher und Nachher. Wer Haar verloren hat, durch Alopezie oder einfach mit den Jahren, und sich mit einem passenden Haarteil wieder im Spiegel erkennt, fühlt sich oft wie neu geboren.",
+        "quote": "„Wenn die Haare wieder da sind, ist man ein anderer Mensch. Man ist wie neu geboren.“"
+      },
+      {
+        "label": "Antrieb",
+        "title": "Für *jede und jeden.*",
+        "text": "Andréia möchte Menschen helfen, die sich so fühlen, wie sie sich selbst einmal gefühlt hat. Für jede Haarfarbe, jede Struktur, jede Herkunft: blond, brünett, rot, schwarz, glatt, wellig, lockig, kraus. Niemand soll denken: Das ist nicht für mich.",
+        "quote": "„Mir ist wichtig, dass ich den Menschen helfe. Dann ist mein Gewissen ruhig.“"
+      }
+    ],
+    "quoteBy": "Andréia",
+    "colorsLabel": "Haar in vielen Tönen, aus dem Atelier",
+    "trustTitle": "Worauf Sie sich *verlassen können.*",
+    "trust": [
+      {
+        "title": "Echthaar, sorgfältig ausgewählt",
+        "text": "Ausgewählt von einer Frau, die seit ihrem 19. Lebensjahr mit Haar arbeitet."
+      },
+      {
+        "title": "Persönlich bestätigt",
+        "text": "Sie bezahlen gleich per QR-Code oder erst, wenn Andréia Ihre Bestellung geprüft und bestätigt hat."
+      },
+      {
+        "title": "Nach Maß, wenn nötig",
+        "text": "Was es nicht fertig gibt, fertigt Andréia im Atelier an. Lieferzeit: {custom} Werktage."
+      },
+      {
+        "title": "Versand mit {carrier}",
+        "text": "In Deutschland, in die EU und auf Anfrage weltweit."
+      }
+    ],
+    "visitTitle": "Kommen Sie *ins Atelier.*",
+    "visitLead": "Oder schreiben Sie Andréia per WhatsApp, gern mit einem Foto Ihres Haars bei Tageslicht. Sie antwortet persönlich.",
+    "visitCta": "Termin per WhatsApp vereinbaren",
+    "visitForm": "Anfrage per Formular",
+    "hoursLabel": "Öffnungszeiten",
+    "closed": "geschlossen",
+    "nextTitle": "Bereit für *Ihr Stück?*",
+    "nextExtensions": "Extensions entdecken",
+    "nextCustom": "Maßanfertigung anfragen",
+    "imageAlt": "Phönixflügel aus goldenen Haarsträhnen vor dunklem Grund",
+    "craftAlt": "Hände, die mit einer feinen Nadel einzelne Haare in eine dünne Basis einarbeiten",
+    "mirrorAlt": "Eine Frau vor einem goldgerahmten Spiegel, die lächelnd ihr Haar berührt"
   },
   "consult": {
     "kicker": "Private Beratung",
-    "title": "Treffen Sie Andrea im Atelier",
+    "title": "Treffen Sie Andréia im Atelier",
     "lead": "Sie sind sich nicht sicher, was Sie suchen? Vereinbaren Sie einen persönlichen Termin und erleben Sie Texturen, Farben und Passformen in Ruhe.",
     "cta": "Beratung vereinbaren"
   },
   "contact": {
     "metaTitle": "Kontakt",
-    "metaDescription": "Andrea's Fashion Hair, Flehmestr. 2, 58642 Iserlohn. Telefon, E-Mail, WhatsApp und Öffnungszeiten des Ateliers.",
+    "metaDescription": "Andréia's Fashion Hair, Flehmestr. 2, 58642 Iserlohn. Telefon, E-Mail, WhatsApp und Öffnungszeiten des Ateliers.",
     "kicker": "Kontakt aufnehmen",
     "title": "Wir freuen uns, von Ihnen zu hören.",
     "lead": "Schreiben Sie uns, rufen Sie an oder kommen Sie nach Absprache ins Atelier.",
@@ -413,10 +693,10 @@
     "range": "{from} bis {to}"
   },
   "footer": {
-    "claim": "Spezialisiert auf Perücken, Haarprothesen und Topper in Premiumqualität. Natürliche Schönheit und Selbstvertrauen für alle.",
+    "claim": "Echthaar-Extensions, Perücken und Topper aus dem Atelier von Andréia in Iserlohn. Auf Wunsch nach Maß gefertigt.",
     "collection": "Kollektion",
     "atelier": "Atelier",
-    "story": "Andreas Geschichte",
+    "story": "Andréias Geschichte",
     "faq": "Häufige Fragen",
     "custom": "Maßanfertigung",
     "service": "Service",
@@ -429,16 +709,17 @@
     "withdrawal": "Widerrufsbelehrung",
     "madeIn": "Made in Germany",
     "shippedWith": "Versand mit {carrier}",
-    "social": "Andrea's Fashion Hair in sozialen Netzwerken",
-    "instagram": "Andrea's Fashion Hair auf Instagram",
-    "facebook": "Andrea's Fashion Hair auf Facebook",
-    "whatsapp": "Andrea's Fashion Hair per WhatsApp schreiben",
+    "social": "Andréia's Fashion Hair in sozialen Netzwerken",
+    "instagram": "Andréia's Fashion Hair auf Instagram",
+    "facebook": "Andréia's Fashion Hair auf Facebook",
+    "whatsapp": "Andréia's Fashion Hair per WhatsApp schreiben",
     "socialNote": "Externe Links. Beim bloßen Aufruf dieser Seite werden keine Daten an diese Dienste übertragen.",
     "newsTitle": "Neue Stücke zuerst sehen",
-    "newsNote": "Jedes Stück gibt es einmal. Folgen Sie Andrea auf Instagram, dort zeigt sie neue Stücke zuerst."
+    "newsNote": "Jedes Haarteil gibt es einmal. Folgen Sie Andréia auf Instagram, dort zeigt sie neue Stücke zuerst.",
+    "extensionsHub": "Extensions: Methoden und Beratung"
   },
   "newsletter": {
-    "lead": "Jedes Stück gibt es einmal. Wir schreiben Ihnen, sobald ein neues fertig ist.",
+    "lead": "Jedes Haarteil gibt es einmal. Wir schreiben Ihnen, sobald ein neues fertig ist.",
     "email": "E-Mail-Adresse",
     "consent": "Ich möchte per E-Mail über neue Stücke informiert werden. Abmeldung jederzeit über den Link in jeder E-Mail. Details in der <link>Datenschutzerklärung</link>.",
     "submit": "Eintragen",
@@ -450,7 +731,7 @@
     "metaTitle": "Vertrag widerrufen",
     "kicker": "Widerrufsfunktion",
     "title": "Vertrag widerrufen",
-    "lead": "Hier können Sie einen online geschlossenen Vertrag mit Andrea's Fashion Hair widerrufen. Sie brauchen dafür kein Konto. Einen Grund müssen Sie nicht nennen.",
+    "lead": "Hier können Sie einen online geschlossenen Vertrag mit Andréia's Fashion Hair widerrufen. Sie brauchen dafür kein Konto. Einen Grund müssen Sie nicht nennen.",
     "name": "Ihr Name",
     "email": "E-Mail-Adresse für die Eingangsbestätigung",
     "orderNumber": "Bestellnummer",
@@ -468,7 +749,7 @@
     "doneLead": "Eingegangen am {date} um {time} Uhr. Eine Eingangsbestätigung mit dem Inhalt Ihrer Erklärung geht an {email}.",
     "doneMailFailed": "Die Eingangsbestätigung per E-Mail konnte gerade nicht versendet werden. Bitte bewahren Sie diese Seite auf (drucken oder als PDF speichern) und schreiben Sie zusätzlich an {email}.",
     "doneDemo": "Vorschau-Modus: Dieser Widerruf wurde nur zum Testen gespeichert und nicht versendet.",
-    "doneNote": "Die Bestätigung belegt den Eingang Ihrer Erklärung. Andrea meldet sich mit den nächsten Schritten zur Rücksendung.",
+    "doneNote": "Die Bestätigung belegt den Eingang Ihrer Erklärung. Andréia meldet sich mit den nächsten Schritten zur Rücksendung.",
     "unavailableTitle": "Die Widerrufsfunktion ist gerade gestört.",
     "unavailable": "Sie können Ihren Widerruf jederzeit formlos erklären, zum Beispiel per E-Mail an {email} oder per Post an {address}. Eine Begründung ist nicht nötig.",
     "otherWays": "Sie können den Widerruf auch formlos per E-Mail oder Post erklären. Alles Weitere steht in der <link>Widerrufsbelehrung</link>.",
@@ -484,11 +765,11 @@
     "terms": "Allgemeine Geschäftsbedingungen",
     "withdrawal": "Widerrufsbelehrung",
     "shipping": "Versand und Zahlung",
-    "imprintDescription": "Anbieterkennzeichnung von Andrea's Fashion Hair, Iserlohn.",
-    "privacyDescription": "Wie Andrea's Fashion Hair mit Ihren Daten umgeht.",
-    "termsDescription": "Allgemeine Geschäftsbedingungen von Andrea's Fashion Hair.",
+    "imprintDescription": "Anbieterkennzeichnung von Andréia's Fashion Hair, Iserlohn.",
+    "privacyDescription": "Wie Andréia's Fashion Hair mit Ihren Daten umgeht.",
+    "termsDescription": "Allgemeine Geschäftsbedingungen von Andréia's Fashion Hair.",
     "withdrawalDescription": "Widerrufsbelehrung und Muster-Widerrufsformular.",
-    "shippingDescription": "Versandkosten, Lieferzeiten und Zahlung bei Andrea's Fashion Hair.",
+    "shippingDescription": "Versandkosten, Lieferzeiten und Zahlung bei Andréia's Fashion Hair.",
     "withdrawCta": "Vertrag widerrufen"
   },
   "notFound": {
@@ -496,7 +777,8 @@
     "kicker": "Seite nicht gefunden",
     "title": "Hier ist nichts mehr.",
     "lead": "Vielleicht wurde das Stück verkauft. In der Kollektion finden Sie alle, die noch da sind.",
-    "cta": "Zur Kollektion"
+    "cta": "Zur Kollektion",
+    "extensions": "Oder: Extensions auf Anfrage"
   },
   "error": {
     "kicker": "Etwas ist schiefgelaufen",
@@ -521,14 +803,14 @@
   },
   "mail": {
     "greeting": "Hallo {name},",
-    "orderIntro": "vielen Dank für Ihre Bestellung bei Andrea's Fashion Hair. Wir haben sie am {date} um {time} Uhr erhalten.",
+    "orderIntro": "vielen Dank für Ihre Bestellung bei Andréia's Fashion Hair. Wir haben sie am {date} um {time} Uhr erhalten.",
     "orderItems": "Ihre Bestellung:",
     "orderShipping": "Versand: {amount}",
     "orderTotal": "Gesamtsumme: {amount}",
     "orderLink": "Ihre Bestellung online ansehen: {url}",
     "orderWithdraw": "Vertrag widerrufen: {url}",
     "withdrawalIntro": "Ihre Widerrufserklärung ist am {date} um {time} Uhr bei uns eingegangen. Diese E-Mail bestätigt den Eingang und enthält den Inhalt Ihrer Erklärung:",
-    "withdrawalOutro": "Andrea meldet sich mit den nächsten Schritten zur Rücksendung."
+    "withdrawalOutro": "Andréia meldet sich mit den nächsten Schritten zur Rücksendung."
   },
   "checkoutLegal": {
     "buyButton": "Zahlungspflichtig bestellen",
@@ -545,30 +827,30 @@
     "title": "Sicher bestellen",
     "returns": "14 Tage Widerrufsrecht ab Erhalt der Ware, ohne Angabe von Gründen. Ausnahmen (z. B. Maßanfertigungen) stehen in der <link>Widerrufsbelehrung</link>.",
     "shipping": "Versand nach Deutschland {de}, ab {free} Warenwert kostenlos. In die EU {eu}.",
-    "delivery": "Lieferzeit ab Lager in der Regel {from} bis {to} Werktage mit {carrier}, Maßanfertigungen {mFrom} bis {mTo} Werktage.",
-    "contact": "Persönliche Ansprechpartnerin: Andrea, Telefon <tel>{phone}</tel>",
+    "delivery": "Lieferzeit ab Lager {from} bis {to} Werktage mit {carrier}, Maßanfertigungen {mFrom} bis {mTo} Werktage.",
+    "contact": "Persönliche Ansprechpartnerin: Andréia, Telefon <tel>{phone}</tel>",
     "atelier": "Atelier in {city}, Beratung nach Terminabsprache",
-    "payLater": "Sie bezahlen erst, wenn Andrea Ihre Bestellung persönlich bestätigt hat.",
+    "payLater": "Sie entscheiden, wann Sie bezahlen: gleich per QR-Code oder nach Andréias persönlicher Bestätigung. Ist ein Stück nicht verfügbar, gibt es Ihr Geld umgehend zurück.",
     "world": "Versand weltweit: Für Länder außerhalb der EU nennen wir Ihnen die Versandkosten vor der Bestätigung. Dort können Zoll und Einfuhrabgaben anfallen."
   },
   "objections": {
     "title": "Was Sie vor dem Kauf wissen möchten",
     "visibleQ": "Sieht man, dass ich ein Haarteil trage?",
-    "visibleA": "Dafür ist die Nano-Skin-Basis gemacht: Jedes Haar ist einzeln injiziert, deshalb sieht der Scheitel aus wie Ihre eigene Kopfhaut.",
+    "visibleA": "Dafür ist die Nano-Skin-Basis gemacht: Jedes Haar ist einzeln injiziert, deshalb wirkt der Scheitel ähnlich wie eigene Kopfhaut.",
     "colorQ": "Passt die Farbe zu meinem Haar?",
-    "colorA": "Schicken Sie Andrea ein Foto Ihres Haars bei Tageslicht, am einfachsten per WhatsApp. Sie vergleicht es mit dem Stück und sagt Ihnen ehrlich, ob es passt.",
+    "colorA": "Schicken Sie Andréia ein Foto Ihres Haars bei Tageslicht, am einfachsten per WhatsApp. Sie sagt Ihnen ehrlich, ob es passt.",
     "holdQ": "Wie wird das Stück befestigt?",
-    "holdClips": "Mit kleinen Clips an Ihrem eigenen Haar. Das dauert Sekunden und braucht weder Kleber noch einen Friseurtermin.",
-    "holdOther": "Die Befestigung hängt vom Stück ab. Andrea erklärt Ihnen persönlich, welche Methode zu Ihnen passt.",
-    "careQ": "Wie pflege ich das Stück?",
-    "careA": "Andrea gibt Ihnen die Pflegehinweise für Ihr Stück persönlich mit. Fragen Sie gern vorab per WhatsApp, Telefon oder Anfrage.",
+    "holdClips": "Mit kleinen Clips an Ihrem eigenen Haar. Sie setzen das Stück selbst ein und nehmen es wieder heraus, ohne Kleber und ohne Friseurtermin.",
+    "holdOther": "Andréia erklärt Ihnen persönlich, welche Befestigung zu Ihnen passt.",
     "fitQ": "Passt es zu meiner Kopfform?",
-    "fitBase": "Die Basis dieses Stücks misst {base} cm. Wenn Sie unsicher sind, messen Sie die Stelle, die bedeckt werden soll, und schicken Sie Andrea die Maße.",
-    "fitNoBase": "Für dieses Stück ist keine Basisgröße angegeben. Andrea sagt Ihnen gern, ob es zu Ihnen passt.",
+    "fitBase": "Die Basis misst {base} cm. Unsicher? Schicken Sie Andréia die Maße der Stelle, die bedeckt werden soll.",
+    "fitNoBase": "Andréia sagt Ihnen gern, ob es zu Ihnen passt.",
     "returnQ": "Was, wenn es nicht passt?",
-    "returnA": "Sie haben ein gesetzliches Widerrufsrecht von 14 Tagen ab Erhalt der Ware. Die Einzelheiten und Ausnahmen stehen in der Widerrufsbelehrung.",
+    "returnA": "14 Tage Widerrufsrecht ab Erhalt der Ware. Alles Weitere steht in der Widerrufsbelehrung.",
     "payQ": "Wann bezahle ich?",
-    "payA": "Nicht beim Absenden der Bestellung. Andrea bestätigt Ihr Stück zuerst persönlich und schreibt Ihnen dann, wie Sie bezahlen."
+    "payA": "Wann Sie möchten: gleich nach der Bestellung per QR-Code in Ihrer Banking-App oder nach Andréias persönlicher Bestätigung. Abgebucht wird nichts automatisch. Ist ein Stück wider Erwarten nicht verfügbar, bekommen Sie Ihr Geld umgehend zurück.",
+    "packQ": "Wie viele Packungen brauche ich?",
+    "packA": "Andréia sagt Ihnen persönlich, wie viele Packungen zu Ihrem Haar und Ihrem Wunsch passen, am einfachsten per WhatsApp."
   },
   "drawer": {
     "title": "Im Warenkorb",
@@ -603,13 +885,13 @@
     "progressOrder": "Bestellen",
     "progressDone": "Bestätigung",
     "undecidedTitle": "Noch unsicher?",
-    "undecided": "Schicken Sie Ihre Auswahl als Anfrage oder schreiben Sie Andrea per WhatsApp. Sie bezahlen erst nach ihrer Bestätigung.",
+    "undecided": "Schicken Sie Ihre Auswahl als Anfrage oder schreiben Sie Andréia per WhatsApp. Sie bezahlen erst nach ihrer Bestätigung.",
     "undecidedCta": "Als Anfrage senden",
     "fieldsMissing": "Bitte füllen Sie die markierten Felder aus."
   },
   "extensions": {
     "title": "Extensions",
-    "lead": "Mehr Länge, mehr Fülle, mehr Sie selbst. Andrea stellt Ihnen Methode, Farbe, Länge und Menge persönlich zusammen und nennt Ihnen einen festen Preis.",
+    "lead": "Mehr Länge, mehr Fülle, mehr Sie selbst. Die Packungen unten bestellen Sie direkt. Für andere Methoden, Längen und Mengen stellt Andréia Ihnen alles persönlich zusammen und nennt Ihnen einen festen Preis.",
     "methodsTitle": "Sechs Methoden",
     "butterfly": "Butterfly Weft",
     "butterflyText": "Eine besonders feine, flexible Tresse (Weft), die flach am Kopf anliegt.",
@@ -623,10 +905,232 @@
     "keratinText": "Einzelne Strähnen, die mit einer Keratin-Verbindung am eigenen Haar befestigt werden.",
     "clip": "Clip-in",
     "clipText": "Fertige Teile zum Selbst-Einclipsen, ohne Friseurbesuch. Zum Beispiel für mehr Länge, wenn Ihr Haar schulterlang ist.",
-    "which": "Welche Methode zu Ihrem Haar passt, bespricht Andrea gern mit Ihnen.",
     "formTitle": "Extensions anfragen",
     "salonTitle": "Für Salons und Friseurinnen",
-    "salonText": "Sie möchten Echthaar-Extensions in Mengen für Ihren Salon beziehen? Andrea macht Ihnen ein individuelles Angebot.",
-    "salonCta": "Als Salon anfragen"
+    "salonText": "Sie möchten Echthaar-Extensions in Mengen für Ihren Salon beziehen? Andréia macht Ihnen ein individuelles Angebot.",
+    "salonCta": "Als Salon anfragen",
+    "otherTitle": "Andere Methode, Länge oder Menge?",
+    "otherText": "Was Sie hier nicht finden, stellt Andréia auf Anfrage für Sie zusammen. Auch Salons und Friseurinnen erhalten ein persönliches Angebot.",
+    "metaTitle": "Echthaar-Extensions: Methoden, Farbe, Beratung",
+    "heroTitle": "Mehr Länge, mehr Fülle, mehr Sie selbst.",
+    "heroLead": "Echthaar-Extensions, handgefertigt von Andréia in Iserlohn. Die Packungen bestellen Sie direkt, alles andere stellt sie persönlich für Sie zusammen.",
+    "shopCta": "Packungen ansehen",
+    "adviceCta": "Beratung anfragen",
+    "methodsLead": "Welche zu Ihrem Haar und Ihrem Alltag passt, klären Sie mit Andréia.",
+    "inShop": "{count, plural, one {# Packung im Shop} other {# Packungen im Shop}}",
+    "onRequest": "Auf Anfrage",
+    "colorTitle": "Die richtige Farbe finden",
+    "colorLead": "Andréia vergleicht Ihr Haar persönlich mit dem Stück.",
+    "colorSteps": {
+      "light": {
+        "title": "Tageslicht nutzen",
+        "text": "Fotografieren Sie Ihr Haar am Fenster, ohne Blitz und ohne Filter."
+      },
+      "photo": {
+        "title": "Foto schicken",
+        "text": "Am einfachsten per WhatsApp, sonst mit einer Anfrage."
+      },
+      "answer": {
+        "title": "Andréia antwortet",
+        "text": "Sie sagt Ihnen ehrlich, welcher Ton passt, auch wenn es keiner aus dem Shop ist."
+      }
+    },
+    "packKicker": "Beratung",
+    "packTitle": "Wie viele Packungen brauche ich?",
+    "packText": "Andréia sagt Ihnen persönlich, wie viele Packungen Sie brauchen. Fragen Sie kurz, bevor Sie bestellen.",
+    "packWhatsapp": "Per WhatsApp fragen",
+    "packAsk": "Oder als Anfrage senden",
+    "productsTitle": "Extensions im Shop",
+    "allPacks": "Alle Extensions in der Kollektion"
+  },
+  "custom": {
+    "metaTitle": "Maßanfertigung anfragen",
+    "kicker": "Maßanfertigung",
+    "title": "Ein Stück, das nur für Sie entsteht.",
+    "lead": "Länge, Farbe, Struktur und Menge werden auf Sie abgestimmt. In sechs kurzen Schritten sagen Sie Andréia, was Sie sich wünschen. Sie meldet sich persönlich bei Ihnen.",
+    "timing": "Lieferzeit innerhalb Deutschlands: {mFrom} bis {mTo} Werktage, sobald alle Angaben und – bei Vorkasse oder PayPal – Ihre Zahlung vorliegen. Maßanfertigungen sind vom Widerrufsrecht ausgenommen, weil sie nur für Sie entstehen.",
+    "stepOf": "Schritt {step} von {total}",
+    "next": "Weiter",
+    "back": "Zurück",
+    "optional": "optional",
+    "sending": "Wird gesendet",
+    "strip": {
+      "kicker": "Maßanfertigung",
+      "title": "Ihre Farbe oder Länge ist nicht dabei?",
+      "text": "Andréia fertigt nach Maß: System, Länge, Farbe, Struktur und Menge ganz nach Ihrem Wunsch.",
+      "cta": "Maßanfertigung anfragen"
+    },
+    "steps": {
+      "system": {
+        "title": "Welches System?",
+        "hint": "Wählen Sie, was gefertigt werden soll. Wenn Sie unsicher sind, wählen Sie die letzte Option."
+      },
+      "length": {
+        "title": "Welche Länge?",
+        "hint": "Zum Beispiel 55 cm. Bei Haarteilen zählt die Haarlänge.",
+        "label": "Wunschlänge"
+      },
+      "color": {
+        "title": "Welche Farbe?",
+        "hint": "Beschreiben Sie den Ton in eigenen Worten. Ein Foto Ihres Haars bei Tageslicht schicken Sie Andréia nach der Anfrage per WhatsApp oder als Antwort auf ihre E-Mail.",
+        "label": "Haarfarbe"
+      },
+      "structure": {
+        "title": "Welche Struktur?",
+        "hint": "Glatt, wellig oder lockig."
+      },
+      "amount": {
+        "title": "Welche Menge?",
+        "hint": "Zum Beispiel Anzahl der Packungen oder Gramm. Wenn Sie es nicht wissen, lassen Sie das Feld leer. Andréia berät Sie persönlich.",
+        "label": "Menge"
+      },
+      "contact": {
+        "title": "Wohin darf Andréia antworten?",
+        "hint": "Mit dieser Anfrage kaufen Sie noch nichts. Andréia meldet sich mit einem Vorschlag und einem festen Preis."
+      }
+    },
+    "systems": {
+      "topper": "Topper",
+      "peruecke": "Perücke",
+      "pony": "Pony",
+      "haarsystem": "Haarsystem für Männer",
+      "unsure": "Ich weiß es noch nicht"
+    },
+    "methods": {
+      "butterfly": "Butterfly Weft",
+      "genius": "Genius Weft",
+      "invisible": "Invisible Tape",
+      "tape": "Tape-In",
+      "keratin": "Keratin-Bondings",
+      "clip": "Clip-in"
+    },
+    "structures": {
+      "glatt": "Glatt",
+      "wellig": "Wellig",
+      "lockig": "Lockig",
+      "unsure": "Ich weiß es noch nicht"
+    }
+  },
+  "pay": {
+    "kicker": "Bezahlen per Überweisung",
+    "title": "Bezahlen, ohne etwas abzutippen.",
+    "lead": "Öffnen Sie Ihre Banking-App, scannen Sie den Code und bestätigen Sie. Empfängerin, Betrag und Verwendungszweck sind schon ausgefüllt.",
+    "scanLabel": "GiroCode für Ihre Banking-App, Betrag {amount}",
+    "save": "Code speichern",
+    "saveHint": "Am Handy: Code speichern und in der Banking-App unter „Foto-Überweisung“ öffnen.",
+    "holder": "Empfängerin",
+    "iban": "IBAN",
+    "amount": "Betrag",
+    "reference": "Verwendungszweck",
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "copyLabel": "{label} kopieren",
+    "instant": "Mit Echtzeitüberweisung ist das Geld meist in Sekunden bei Andréia.",
+    "when": "Sie können jetzt bezahlen oder nach Andréias Bestätigung. Ist ein Stück wider Erwarten nicht verfügbar, bekommen Sie Ihr Geld umgehend zurück.",
+    "paypal": "Lieber mit PayPal? Ein Klick führt zu PayPal, Betrag und Bestellnummer sind schon eingetragen.",
+    "mailTitle": "So bezahlen Sie (gleich oder nach Andréias Bestätigung):",
+    "mailQr": "QR-Code für Ihre Banking-App: {url}",
+    "paypalButton": "Mit PayPal bezahlen",
+    "paypalItem": "Bestellung {id} · Andréia's Fashion Hair",
+    "mailPaypal": "Lieber mit PayPal? {url}"
+  },
+  "shop": {
+    "showInches": "Maße in Zoll anzeigen",
+    "showCm": "Maße in Zentimetern anzeigen",
+    "neutralBox": "Versand im neutralen DHL-Karton, ohne Hinweis auf den Inhalt.",
+    "videoOption": "Vor dem Versand ein kurzes Tageslichtvideo meines Stücks erhalten (kostenlos)",
+    "videoHint": "Andréia schickt es per WhatsApp an Ihre Telefonnummer, ca. 10 Sekunden."
+  },
+  "pdp": {
+    "helpersTitle": "Passt das zu mir? Kurz nachmessen",
+    "heightTitle": "Wie fällt das Haar bei mir?",
+    "heightLabel": "Ihre Körpergröße",
+    "heightResult": "Bei {height} reicht diese Länge ({length}) etwa {zone}.",
+    "zoneChin": "ans Kinn",
+    "zoneShoulder": "an die Schulter",
+    "zoneCollar": "zum Schlüsselbein",
+    "zoneChest": "auf Brusthöhe",
+    "zoneWaist": "bis zur Taille oder darunter",
+    "heightNote": "Orientierung nach Körperproportionen. Das Haar fällt über die Kopfform, deshalb wirkt die Länge etwas kürzer. Andréia berät Sie gern genauer.",
+    "baseTitle": "Passt die Basis auf meinen Kopf?",
+    "baseLead": "Halten Sie eine Bankkarte (85,6 × 54 mm) an den Bildschirm und ziehen Sie den Regler, bis das Rechteck genauso groß ist. Danach sehen Sie die Basis in Originalgröße.",
+    "baseSlider": "Rechteck an Ihre Bankkarte angleichen",
+    "baseCard": "Bankkarte",
+    "baseActual": "Basis {size} in Originalgröße",
+    "baseTooBig": "Auf diesem Bildschirm zu groß für die Originalgröße. Drehen Sie das Gerät oder nutzen Sie ein größeres Display.",
+    "baseFinger": "Zum Vergleich: Vier Finger nebeneinander sind meist etwa 7 bis 8 cm breit.",
+    "clipTitle": "Wie klingt der Clip?",
+    "clipPlay": "Klick-Geräusch abspielen",
+    "clipNote": "Simulation: ein nachgebildetes Klick-Geräusch, keine Aufnahme des Stücks.",
+    "loupe": "Lupe einschalten: Ansatz und Haarstruktur vergrößern",
+    "loupeOff": "Lupe ausschalten",
+    "daily": "Rechenbeispiel: ca. {perDay} pro Tag bei 2 Jahren Tragedauer ({price} ÷ 730 Tage).",
+    "partingTitle": "Der Scheitel gehört Ihnen",
+    "partingText": "Jedes Haar wird einzeln eingearbeitet. Deshalb tragen Sie den Scheitel dort, wo Sie möchten, ohne festgenähte Linie.",
+    "partingLabel": "Scheitel wählen",
+    "partingLeft": "Links",
+    "partingCenter": "Mitte",
+    "partingRight": "Rechts",
+    "partingMore": "Weitere Originalaufnahme",
+    "weightTitle": "Leicht auf dem Kopf",
+    "weightText": "Eine Packung wiegt {grams} g. Zum Vergleich: Ein Smartphone wiegt etwa 200 g.",
+    "weightThis": "Diese Packung",
+    "weightPhone": "Smartphone (ca.)",
+    "returnOpen": "So funktioniert die Heimanprobe",
+    "returnTitle": "Zu Hause in Ruhe prüfen",
+    "returnStep1": "Stück erhalten und bei Tageslicht ansehen.",
+    "returnStep2": "Vorsichtig anprobieren, wie im Geschäft. Bitte nicht schneiden, färben, waschen oder kleben.",
+    "returnStep3": "Innerhalb von 14 Tagen ohne Angabe von Gründen widerrufen. Die Rücksendekosten tragen Sie.",
+    "returnCustom": "Maßanfertigungen sind vom Widerruf ausgenommen.",
+    "returnLink": "Widerrufsbelehrung lesen",
+    "share": "Mit Vertrauensperson teilen",
+    "shareCopied": "Link kopiert",
+    "shareText": "Schau mal, dieses Stück von Andréia’s Fashion Hair: {name}",
+    "atelierShow": "Fotos aus dem Atelier ({count})",
+    "atelierHide": "Nur Studiofotos zeigen",
+    "trustFold": "Versand, Rückgabe und Bezahlung"
+  },
+  "cat": {
+    "toolsLabel": "Ansicht anpassen",
+    "photoLabel": "Foto-Ansicht",
+    "photoStudio": "Studiobild",
+    "photoOriginal": "Originalfoto aus dem Atelier",
+    "lightLabel": "Lichtvorschau",
+    "lightDay": "Tageslicht",
+    "lightWarm": "Warmes Licht",
+    "lightOffice": "Bürolicht",
+    "lightNote": "Näherung: zeigt, wie sich die Farbe bei anderem Licht verändern kann.",
+    "matchOpen": "Eigenhaar abgleichen · 100 % auf Ihrem Gerät",
+    "matchClear": "Farbsortierung zurücksetzen",
+    "matchTitle": "Farbe Ihres Haares abgleichen",
+    "matchLead": "Wählen Sie ein Foto Ihres Haares bei Tageslicht. Es wird nur in Ihrem Browser ausgewertet und nie hochgeladen.",
+    "matchFile": "Foto wählen",
+    "matchDemo": "Oder eine Beispielfarbe wählen",
+    "demoDark": "Dunkelbraun",
+    "demoChestnut": "Kastanienbraun",
+    "demoGold": "Goldblond",
+    "matchError": "Das Foto konnte nicht gelesen werden. Bitte versuchen Sie ein anderes.",
+    "matchNote": "Orientierung am Bildschirm, kein Ersatz für Andréias Beratung. Die Stücke stehen danach nach Farbnähe sortiert.",
+    "matchBadge": "{pct} % Farbnähe",
+    "compareBar": "{count} Favoriten vergleichen",
+    "compareTitle": "Mein Vergleich",
+    "compareA": "Erstes Stück",
+    "compareB": "Zweites Stück",
+    "rowLength": "Länge",
+    "rowBase": "Basis",
+    "rowPrice": "Preis",
+    "compareView": "Dieses Stück ansehen",
+    "stageSpot": "Ein Stück, ganz in Ruhe angesehen",
+    "stageDuel": "Zwei Stücke, direkt nebeneinander",
+    "stageTrio": "Drei Stücke im Überblick",
+    "compassCount": "{count} im Atelier",
+    "compassCta": "Passende Stücke ansehen",
+    "compassOne": "Zum Stück",
+    "compassZone": {
+      "topper": "Scheitel & Oberkopf",
+      "peruecken": "Vollmontur & Front Lace",
+      "pony": "Stirn & vorderer Ansatz",
+      "maenner": "Mikrohaut-Oberkopfzone"
+    }
   }
 }

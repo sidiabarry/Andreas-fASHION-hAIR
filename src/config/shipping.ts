@@ -7,12 +7,12 @@
  * - Weltweit: 7 bis 14 Werktage, Versandkosten auf Anfrage
  * - Bearbeitung: in der Regel 3 bis 5 Werktage, individuelle/maßgefertigte Stücke können länger dauern
  *
- * Gespräch mit der Inhaberin (11/2026, docs/ANDREA-GESCHICHTE.md): Lieferzeit ab Lager 2 bis 5 Tage,
+ * Gespräch mit der Inhaberin (11/2026, docs/ANDRÉIA-GESCHICHTE.md): Lieferzeit ab Lager 2 bis 5 Tage,
  * Maßanfertigung 15 bis 20 Tage; Versand weltweit mit DHL (Vertrag inkl. Ausland).
- * Außerhalb der EU nennt Andrea die Versandkosten vor ihrer Bestätigung (keine Online-Kasse, Anfrage).
+ * Außerhalb der EU nennt Andréia die Versandkosten vor ihrer Bestätigung (keine Online-Kasse, Anfrage).
  *
  * Die Live-Seite schreibt "ab 6 €" bzw. "ab 15 €". Solange keine Staffel bekannt ist,
- * gilt der genannte Betrag als fester Preis. Bitte mit Andrea bestätigen (docs/CHECKLISTE-LAUNCH.md).
+ * gilt der genannte Betrag als fester Preis. Bitte mit Andréia bestätigen (docs/CHECKLISTE-LAUNCH.md).
  *
  * Keine Imports: wird auch direkt von Node-Tests geladen.
  */

@@ -103,7 +103,9 @@ export default function Page({ company: c }: { company: Company }) {
             naar andere landen is mogelijk na overleg. De verzending gebeurt met {carrier}.
           </li>
           <li>Levertijd voor artikelen op voorraad binnen Duitsland: {deliveryDaysOf(c)} werkdagen. Bij vooruitbetaling of PayPal begint de termijn op de dag na ontvangst van de betaling, anders op de dag na het sluiten van de overeenkomst. De levertijd voor zendingen naar het buitenland delen wij u vóór het sluiten van de overeenkomst mee.</li>
-          <li>Maatwerk vervaardigen wij binnen ongeveer {madeToOrderDaysOf(c)} werkdagen nadat alle benodigde gegevens en – bij vooruitbetaling of PayPal – de betaling bij ons zijn binnengekomen. Wij laten u de verwachte verzenddatum weten.</li>
+          <li>
+            Maatwerk is binnen Duitsland in {madeToOrderDaysOf(c)} werkdagen bij u. De termijn begint op de dag nadat alle benodigde gegevens en – bij vooruitbetaling of PayPal – de betaling bij ons zijn binnengekomen. De levertijd voor zendingen naar het buitenland delen wij u vóór het sluiten van de overeenkomst mee.
+          </li>
           <li>Komen de goederen aan met zichtbare transportschade, meld dit dan bij de bezorger en laat het ons kort weten. Uw wettelijke rechten blijven onverlet; uw melding helpt ons aanspraken tegenover de vervoerder geldend te maken.</li>
         </ol>
       </section>

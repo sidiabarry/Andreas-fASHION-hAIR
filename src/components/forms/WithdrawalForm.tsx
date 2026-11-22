@@ -143,6 +143,7 @@ export function WithdrawalForm({ confirmLabel, initialOrder, ownerEmail, ownerAd
         <StartedAt />
         <Honeypot />
         <button aria-busy={pending} className="af-cta-band" disabled={pending} type="submit">
+          {pending ? <span aria-hidden="true" className="af-ui-loading" /> : null}
           {pending ? t("common.sending") : confirmLabel}
         </button>
       </form>
@@ -157,22 +158,22 @@ export function WithdrawalForm({ confirmLabel, initialOrder, ownerEmail, ownerAd
       {alert}
       <div className="af-form__two">
         <Field error={err("name")} label={t("withdrawal.name")} name="name" required requiredLabel={t("common.required")}>
-          {(p) => <input {...p} autoComplete="name" maxLength={120} onChange={set("name")} value={values.name} />}
+          {(p) => <input {...p} className="af-ui-field" autoComplete="name" maxLength={120} onChange={set("name")} value={values.name} />}
         </Field>
         <Field error={err("email")} label={t("withdrawal.email")} name="email" required requiredLabel={t("common.required")}>
-          {(p) => <input {...p} autoComplete="email" inputMode="email" maxLength={160} onChange={set("email")} type="email" value={values.email} />}
+          {(p) => <input {...p} className="af-ui-field" autoComplete="email" inputMode="email" maxLength={160} onChange={set("email")} type="email" value={values.email} />}
         </Field>
       </div>
       <div className="af-form__two">
         <Field error={err("orderNumber")} hint={t("withdrawal.orderNumberHint")} label={t("withdrawal.orderNumber")} name="orderNumber" required requiredLabel={t("common.required")}>
-          {(p) => <input {...p} maxLength={60} onChange={set("orderNumber")} value={values.orderNumber} />}
+          {(p) => <input {...p} className="af-ui-field" maxLength={60} onChange={set("orderNumber")} value={values.orderNumber} />}
         </Field>
         <Field error={err("orderDate")} label={t("withdrawal.orderDate")} name="orderDate" optionalLabel={t("common.optional")}>
-          {(p) => <input {...p} maxLength={40} onChange={set("orderDate")} type="date" value={values.orderDate} />}
+          {(p) => <input {...p} className="af-ui-field" maxLength={40} onChange={set("orderDate")} type="date" value={values.orderDate} />}
         </Field>
       </div>
       <Field error={err("items")} hint={t("withdrawal.itemsHint")} label={t("withdrawal.items")} name="items" optionalLabel={t("common.optional")}>
-        {(p) => <textarea {...p} maxLength={600} onChange={set("items")} value={values.items} />}
+        {(p) => <textarea {...p} className="af-ui-field" maxLength={600} onChange={set("items")} value={values.items} />}
       </Field>
       <button className="af-cta-band" type="submit">
         {t("withdrawal.next")}

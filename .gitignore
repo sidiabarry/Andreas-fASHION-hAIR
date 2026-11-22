@@ -25,3 +25,8 @@ tests/e2e/output
 npm-debug.log*
 .DS_Store
 *.zip
+
+# Agenten-Arbeitsplatz (Worktrees von Claude Code, Übergaben zwischen Agenten, lokale Einstellungen)
+.claude/worktrees
+.claude/settings.local.json
+.coordination

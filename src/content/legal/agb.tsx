@@ -114,20 +114,21 @@ export default function Page({ company: c }: { company: Company }) {
           </p>
         ) : (
           <>
-            <p>Sie können mit den folgenden Zahlungsarten bezahlen. Die Zahlungsdaten senden wir Ihnen mit der Auftragsbestätigung.</p>
+            <p>Sie können mit den folgenden Zahlungsarten bezahlen. Die Zahlungsdaten finden Sie direkt nach Ihrer Bestellung auf der Bestellbestätigung; außerdem senden wir sie mit der Auftragsbestätigung.</p>
             <ul>
               {c.payments.prepayment ? (
                 <li>
-                  <strong>Vorkasse per Überweisung:</strong> Bitte überweisen Sie den Gesamtbetrag
-                  innerhalb von 7 Tagen nach Erhalt der Auftragsbestätigung. Wir versenden die Ware
+                  <strong>Vorkasse per Überweisung:</strong> Sie können den Gesamtbetrag sofort nach Ihrer
+                  Bestellung überweisen, spätestens innerhalb von 7 Tagen nach Erhalt der Auftragsbestätigung. Wir versenden die Ware
                   nach Zahlungseingang. Geht die Zahlung trotz Erinnerung nicht ein, können wir vom
                   Vertrag zurücktreten.
                 </li>
               ) : null}
               {c.payments.paypal ? (
                 <li>
-                  <strong>PayPal:</strong> Nach der Auftragsbestätigung erhalten Sie eine
-                  Zahlungsaufforderung von PayPal. Bitte bezahlen Sie innerhalb von 7 Tagen. Für die
+                  <strong>PayPal:</strong> Sie können sofort nach der Bestellung über den PayPal-Knopf auf
+                  der Bestellbestätigung bezahlen oder erhalten nach der Auftragsbestätigung eine
+                  Zahlungsaufforderung von PayPal. Bitte bezahlen Sie spätestens 7 Tage nach der Auftragsbestätigung. Für die
                   Zahlung gelten zusätzlich die Bedingungen von PayPal. Wir versenden nach
                   Zahlungseingang.
                 </li>
@@ -160,9 +161,7 @@ export default function Page({ company: c }: { company: Company }) {
           </li>
           <li>Lieferzeit für lagernde Ware innerhalb Deutschlands: {deliveryDaysOf(c)} Werktage. Die Frist beginnt bei Zahlung per Vorkasse oder PayPal am Tag nach Zahlungseingang, sonst am Tag nach Vertragsschluss. Die Lieferzeit für Sendungen ins Ausland teilen wir Ihnen vor Vertragsschluss mit.</li>
           <li>
-            Maßanfertigungen fertigen wir innerhalb von etwa {madeToOrderDaysOf(c)} Werktagen, nachdem alle
-            für die Anfertigung nötigen Angaben bei uns vorliegen und – bei Vorkasse oder PayPal –
-            die Zahlung eingegangen ist. Den voraussichtlichen Versandtag teilen wir Ihnen mit.
+            Maßanfertigungen sind innerhalb Deutschlands in {madeToOrderDaysOf(c)} Werktagen bei Ihnen. Die Frist beginnt am Tag, nachdem alle für die Anfertigung nötigen Angaben bei uns vorliegen und – bei Vorkasse oder PayPal – die Zahlung eingegangen ist. Die Lieferzeit für Sendungen ins Ausland teilen wir Ihnen vor Vertragsschluss mit.
           </li>
           <li>
             Kommt die Ware mit äußerlich erkennbaren Transportschäden an, bitten wir Sie, dies beim
@@ -216,6 +215,10 @@ export default function Page({ company: c }: { company: Company }) {
           <li>
             Eine zusätzliche Garantie geben wir nur, wenn wir sie bei einem Produkt ausdrücklich
             angeben.
+          </li>
+          <li>
+            Die Produktbilder im Shop sind mit KI bearbeitet, vor allem der Hintergrund.
+            Unbearbeitete Originalfotos aus dem Atelier zeigen wir auf jeder Produktseite.
           </li>
         </ol>
       </section>

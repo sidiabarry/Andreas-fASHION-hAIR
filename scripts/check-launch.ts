@@ -12,7 +12,7 @@
  * missingCompanyFields() als blockierend erfasst (legal: true). Zusätzlich prüft
  * `npm run test:e2e -- --production`, dass keine Seite einen Marker rendert.
  */
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -31,7 +31,7 @@ for (const missing of missingCompanyFields(company)) {
 }
 
 // Sicherheitsangaben für Gefahrstoffe / GPSR
-const catalog = JSON.parse(readFileSync(join(root, "src/data/catalog.json"), "utf8")) as { id: number; name: string; category: string; safety: string | null }[];
+const catalog = (JSON.parse(readFileSync(join(root, "src/data/catalog.json"), "utf8")) as { id: number; name: string; category: string; safety: string | null; hidden?: boolean }[]).filter((p) => !p.hidden); // ausgeblendete Produkte stehen nicht im Shop
 for (const product of catalog) {
   if (product.category === "pflege" && !product.safety) {
     const solvent = /lösungsmittel/i.test(product.name);
@@ -43,6 +43,93 @@ for (const product of catalog) {
   }
 }
 
+// Gewichtsware (Extensions in Packungen nach Gramm): Grundpreis § 4 PAngV, Bezugsgröße 1 kg (§ 5 Abs. 1 PAngV).
+// Erkennung über Kategorie oder Methode im Namen, damit die Prüfung unabhängig vom Katalogschema greift.
+type CatalogEntry = (typeof catalog)[number] & { color?: string; description?: string; subtitle?: string; specs?: string[]; netWeightGrams?: unknown };
+const EXTENSION = /genius weft|butterfly weft|invisible tape|tape-?in|clip-?in|bonding|extension/i;
+const isWeightGood = (p: CatalogEntry) => p.category === "extensions" || EXTENSION.test(p.name);
+for (const product of catalog as CatalogEntry[]) {
+  if (!isWeightGood(product)) continue;
+  const grams = product.netWeightGrams;
+  if (typeof grams !== "number" || !Number.isFinite(grams) || grams <= 0) {
+    findings.push({
+      area: "catalog.json",
+      blocking: true,
+      text: `${product.name} (id ${product.id}): Füllgewicht (netWeightGrams) fehlt – ohne Gewicht kein Grundpreis je 1 kg (§ 4 Abs. 1, § 5 Abs. 1 PAngV)`,
+    });
+  }
+  if (!product.color?.trim()) {
+    findings.push({
+      area: "catalog.json",
+      blocking: true,
+      text: `${product.name} (id ${product.id}): Farbe fehlt – wesentliche Eigenschaft bei Packungsware (Art. 246a § 1 Abs. 1 Nr. 1 EGBGB)`,
+    });
+  }
+}
+
+// Grundpreis darf bei Fertigpackungen nur je 1 kg angegeben werden (100 g nur bei loser Ware, § 5 Abs. 2 PAngV).
+const per100g = /(€|EUR)\s*(\/|pro|je|per|par|por)\s*100\s*g\b|\/\s*100\s*g\b/i;
+const listFiles = (dir: string): string[] =>
+  existsSync(join(root, dir))
+    ? readdirSync(join(root, dir), { recursive: true, encoding: "utf8" })
+        .filter((f) => /\.(json|ts|tsx)$/.test(f))
+        .map((f) => `${dir}/${f}`)
+    : [];
+const unitPriceFiles = [...listFiles("src/messages").filter((f) => !f.includes("/catalog/")), ...listFiles("src/components"), ...listFiles("src/lib")];
+for (const file of unitPriceFiles) {
+  const path = join(root, file);
+  if (existsSync(path) && per100g.test(readFileSync(path, "utf8"))) {
+    findings.push({ area: "Preisangaben", blocking: true, text: `${file}: Grundpreis „/ 100 g“ gefunden – bei verpackter Ware nur „/ 1 kg“ zulässig (§ 5 Abs. 1 PAngV)` });
+  }
+}
+
+// Absolute Werbeaussagen (§ 5 UWG): nur mit Beleg bzw. abgeschwächt verwenden.
+// „Premium“ ist eine unbelegte Qualitätsstufe (Andréias eigene Angabe, kein Lieferantennachweis).
+const CLAIMS = /man sieht nichts|unsichtbar|niemand sieht|nicht zu sehen|naturbelassen|ungefärbt|double drawn|premium/i;
+type CopyEntry = CatalogEntry & { headline?: string; story?: string; benefits?: string[]; goodFor?: string; faq?: { q: string; a: string }[] };
+const productTexts = (p: CopyEntry) =>
+  [p.name, p.subtitle, p.description, ...(p.specs ?? []), p.headline, p.story, ...(p.benefits ?? []), p.goodFor, ...(p.faq ?? []).flatMap((f) => [f.q, f.a])].join(" ");
+const claimIds = (catalog as CopyEntry[]).filter((p) => CLAIMS.test(productTexts(p))).map((p) => p.id);
+if (claimIds.length) {
+  findings.push({
+    area: "catalog.json",
+    blocking: false,
+    text: `Werbeaussagen prüfen (§ 5 UWG; „niemand sieht“, „naturbelassen“, „Double Drawn“, „Premium“ o. Ä.) bei ${claimIds.length} Produkten: ${claimIds.join(", ")} – siehe docs/COMPLIANCE.md Abschnitt 4b`,
+  });
+}
+
+// Heil-/Wirkversprechen (HWG-Nähe) und Herkunft des Haars: Das Haar stammt aus Vietnam (vom Auftraggeber bestätigt 21.11.2026), eine Angabe „Brasilien“ wäre irreführend.
+const HEALTH = /\bheil(t|en|ung)\b|(förder|anreg|regt)\S*.{0,20}haarwuchs|haarwuchs.{0,20}(förder|anreg)|wächst nach|gegen haarausfall|therapie|krankenkass|kassenzuschuss/i;
+const ORIGIN = /brasilianische[sn]? (echt)?haar|haar aus brasilien|brazilian hair|cabello brasileño|cheveux brésiliens/i;
+const deMessages = readFileSync(join(root, "src/messages/de.json"), "utf8");
+const healthIds = (catalog as CopyEntry[]).filter((p) => HEALTH.test(productTexts(p))).map((p) => p.id);
+if (HEALTH.test(deMessages) || healthIds.length) {
+  findings.push({
+    area: "Werbeaussagen",
+    blocking: true,
+    text: `Heil- oder Wirkversprechen bzw. Krankenkassen-Aussage gefunden (§ 3 HWG, § 5 UWG)${healthIds.length ? ` in Produkten ${healthIds.join(", ")}` : ""}${HEALTH.test(deMessages) ? " in src/messages/de.json" : ""}`,
+  });
+}
+const originIds = (catalog as CopyEntry[]).filter((p) => ORIGIN.test(productTexts(p))).map((p) => p.id);
+if (ORIGIN.test(deMessages) || originIds.length) {
+  findings.push({
+    area: "Werbeaussagen",
+    blocking: true,
+    text: `Herkunftsangabe zum Haar gefunden (§ 5 Abs. 1 Nr. 1 UWG; das Haar stammt nicht aus Brasilien)${originIds.length ? ` in Produkten ${originIds.join(", ")}` : ""}`,
+  });
+}
+
+// GPSR (Verordnung (EU) 2023/988, Art. 19): Herstellerangaben je Produkt im Angebot.
+// Solange kein Feld `manufacturer` (Name, Post- und E-Mail-Adresse) gepflegt ist, blockiert der Livegang.
+const noManufacturer = (catalog as (CatalogEntry & { sold?: boolean; manufacturer?: unknown })[]).filter((p) => !p.sold && !p.manufacturer).map((p) => p.id);
+if (noManufacturer.length) {
+  findings.push({
+    area: "catalog.json",
+    blocking: true,
+    text: `GPSR Art. 19: Herstellerangaben (Name, Postanschrift, E-Mail; bei Herstellern außerhalb der EU die verantwortliche Person) fehlen bei ${noManufacturer.length} Produkten – Frage an Andréia: selbst gefertigt oder zugekauft?`,
+  });
+}
+
 // Rechtstexte des Rechtsagenten vorhanden?
 for (const file of ["impressum.tsx", "datenschutz.tsx", "agb.tsx", "widerruf.tsx", "versand-zahlung.tsx", "widerrufsformular.ts", "checkout-texts.ts"]) {
   if (!existsSync(join(root, "src/content/legal", file))) {
@@ -50,10 +137,8 @@ for (const file of ["impressum.tsx", "datenschutz.tsx", "agb.tsx", "widerruf.tsx
   }
 }
 
-// Herkunftsangabe „Brasilianisches Echthaar“ (vom Auftraggeber bestätigt): Nachweis bereithalten
-findings.push({ area: "catalog.json", blocking: false, text: "Herkunft „Brasilianisches Echthaar“ wird angezeigt: Herkunftsnachweis (Lieferantenbelege) bereithalten" });
 if (catalog.some((p) => (p as { availability?: string }).availability === "unknown")) {
-  findings.push({ area: "catalog.json", blocking: false, text: "Katalog mit Andrea abgleichen: Verfügbarkeit (availability) ist bei Stücken noch „unknown“" });
+  findings.push({ area: "catalog.json", blocking: false, text: "Katalog mit Andréia abgleichen: Verfügbarkeit (availability) ist bei Stücken noch „unknown“" });
 }
 
 // Harmonisierte Gewährleistungsmitteilung (DVO (EU) 2025/1960), amtliche Grafik
@@ -65,10 +150,17 @@ if (!WARRANTY_LABEL || !existsSync(join(root, "public", WARRANTY_LABEL.src))) {
   });
 }
 
-// Betrieb: E-Mail-Versand
-for (const key of ["RESEND_API_KEY", "MAIL_FROM", "MAIL_TO_OWNER"]) {
+// Betrieb: E-Mail-Versand (blockiert nur, wenn eine Datenbank angebunden ist, also echte Bestellungen möglich wären;
+// ohne Datenbank bleibt die Kasse zu und die Formulare zeigen Telefon/E-Mail: „Schaufenster“-Betrieb)
+for (const key of ["SUPABASE_URL", "SUPABASE_SERVICE_ROLE_KEY"]) {
   if (!process.env[key]) {
-    findings.push({ area: "Umgebung", blocking: production, text: `${key} ist nicht gesetzt: Anfrage- und Widerrufsformular sind in Production dann nicht nutzbar (es werden Telefon/E-Mail angezeigt)` });
+    findings.push({ area: "Umgebung", blocking: false, text: `${key} ist nicht gesetzt: Die Online-Kasse bleibt in Production geschlossen (Bestellung dann per Anfrage). Schema: supabase/migrations/0001_init.sql` });
+  }
+}
+for (const key of ["RESEND_API_KEY", "MAIL_FROM", "MAIL_TO_OWNER"]) {
+  const gmail = Boolean(process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD); // Gmail ersetzt Resend-Schlüssel, Absender und Empfängerin
+  if (!process.env[key] && !gmail && !(key === "RESEND_API_KEY" && process.env.Resend_Key)) {
+    findings.push({ area: "Umgebung", blocking: false, text: `${key} ist nicht gesetzt (Kasse bleibt dann automatisch geschlossen, siehe src/server/mode.ts): Anfrage- und Widerrufsformular sind in Production dann nicht nutzbar (es werden Telefon/E-Mail angezeigt)` });
   }
 }
 

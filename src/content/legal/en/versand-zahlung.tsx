@@ -54,8 +54,7 @@ export default function Page({ company: c }: { company: Company }) {
           </li>
           <li>Pieces in stock reach you within Germany in {deliveryDaysOf(c)} business days – for advance payment and PayPal from the day after receipt of payment, otherwise from the day after conclusion of the contract. We will tell you the delivery time abroad before the contract is concluded.</li>
           <li>
-            We produce custom-made pieces in about {madeToOrderDaysOf(c)} business days once all details and –
-            for advance payment or PayPal – payment have been received.
+            Custom-made pieces reach you within Germany in {madeToOrderDaysOf(c)} business days, counting from the day after all details and – for advance payment or PayPal – payment have been received.
           </li>
           <li>For safety reasons we cannot ship some care, adhesive and solvent products to every country. We point this out on the product page.</li>
         </ul>
@@ -65,7 +64,7 @@ export default function Page({ company: c }: { company: Company }) {
         <h2 id="zahlungsarten">3. Payment methods</h2>
         <p>
           After your order we personally check availability and send you an order confirmation with
-          the payment details. You only pay after we have accepted your order.
+          the payment details. You can pay right after ordering or after our order confirmation. If a piece is not available, we refund any payment without delay.
         </p>
         {!anyPayment(c) ? (
           <p>
@@ -75,7 +74,7 @@ export default function Page({ company: c }: { company: Company }) {
           <ul>
             {c.payments.prepayment ? (
               <li>
-                <strong>Advance payment by bank transfer</strong> – payable within 7 days of the order
+                <strong>Advance payment by bank transfer</strong> – payable right after ordering, at the latest 7 days after the order
                 confirmation; shipping after receipt of payment.
                 {c.bank ? (
                   <>
@@ -84,16 +83,16 @@ export default function Page({ company: c }: { company: Company }) {
                     the payment reference.
                   </>
                 ) : (
-                  <> <Missing field="bank" label="bank details" /></>
+                  <>{" "}You will receive the bank details with the order confirmation.</>
                 )}
               </li>
             ) : null}
             {c.payments.paypal ? (
               <li>
-                <strong>PayPal</strong> – after the order confirmation you receive a payment request
-                via PayPal
-                {c.paypalEmail ? <> from {c.paypalEmail}</> : <> <Missing field="paypalEmail" label="PayPal account" /></>}
-                ; payable within 7 days. Shipping after receipt of payment.
+                <strong>PayPal</strong> – right after ordering via the PayPal button on the order
+                confirmation page, or via a payment request after the order confirmation
+                {c.paypalEmail ? <> (payment to {c.paypalEmail})</> : null}
+                ; payable no later than 7 days after the order confirmation. Shipping after receipt of payment.
               </li>
             ) : null}
             {c.payments.paypalInstallments ? <li><strong>PayPal instalments</strong> – if PayPal offers them to you; the lender is PayPal, subject to its credit check and terms. We do not grant credit ourselves.</li> : null}

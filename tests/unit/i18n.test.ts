@@ -49,7 +49,10 @@ for (const locale of LOCALES) {
   });
 }
 
-test("Produkttexte: jede freigeschaltete Sprache außer Deutsch hat alle 50 Produkte vollständig", () => {
+/** Neue Produkte, deren Übersetzung noch aussteht (Fallback: Deutsch). Nach `npm run i18n:catalog` leeren. */
+const TRANSLATION_PENDING = new Set<number>();
+
+test("Produkttexte: jede freigeschaltete Sprache außer Deutsch hat alle Produkte vollständig (außer ausstehende)", () => {
   const catalog = JSON.parse(readFileSync(join(dir, "../data/catalog.json"), "utf8")) as { id: number; specs: string[] }[];
   const files = readdirSync(join(dir, "catalog"));
   for (const locale of LOCALES.filter((l) => l !== "de")) {
@@ -57,6 +60,7 @@ test("Produkttexte: jede freigeschaltete Sprache außer Deutsch hat alle 50 Prod
     const texts = load(`catalog/${locale}.json`) as Record<string, { name: string; subtitle: string; description: string; specs: string[] }>;
     for (const product of catalog) {
       const entry = texts[String(product.id)];
+      if (!entry && TRANSLATION_PENDING.has(product.id)) continue;
       assert.ok(entry, `${locale}: Produkt ${product.id}`);
       assert.ok(entry.name && entry.subtitle && entry.description);
       assert.equal(entry.specs.length, product.specs.length);
