@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/ueber-an
 
 /** „Für jede Haarfarbe“: echte Stücke aus dem Atelier, hell bis dunkel, glatt bis lockig. */
 const COLOR_IDS = [427, 425, 422, 287, 426, 415, 58, 424];
-const imageOf = (id: number, fallback: string) => ([422, 423, 424, 425, 426, 427, 428].includes(id) ? `/assets/products/${id}.jpg` : fallback);
+const imageOf = (id: number, fallback: string) => getProductById(id)?.image ?? fallback;
 
 type Chapter = { label: string; title: string; text: string; quote?: string };
 

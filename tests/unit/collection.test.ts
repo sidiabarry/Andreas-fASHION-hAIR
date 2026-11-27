@@ -10,7 +10,8 @@ const p = (id: number) => getProductById(id)!;
 
 test("Methode folgt dem Produktnamen, nur bei Extensions", () => {
   assert.equal(methodOf(p(424)), "genius");
-  assert.equal(methodOf(p(425)), "genius");
+  assert.equal(methodOf(p(425)), "thin");
+  assert.equal(methodOf(p(426)), "thin");
   assert.equal(methodOf(p(427)), "invisible");
   assert.equal(methodOf(p(428)), "butterfly");
   assert.equal(methodOf(p(423)), "clip");
@@ -40,8 +41,10 @@ test("Filter kombinieren sich; unbekannte Parameter werden verworfen", () => {
   const none = { category: null, color: null, length: null, method: null };
   assert.equal(filterProducts(products, none).length, products.length);
   const genius = filterProducts(products, { ...none, category: "extensions", method: "genius" });
-  assert.deepEqual(genius.map((x) => x.id).sort(), [424, 425, 426]);
-  assert.deepEqual(filterProducts(genius, { ...none, color: "blond" }).map((x) => x.id), [425]);
+  assert.deepEqual(genius.map((x) => x.id).sort(), [424]);
+  const thin = filterProducts(products, { ...none, category: "extensions", method: "thin" });
+  assert.deepEqual(thin.map((x) => x.id).sort(), [425, 426]);
+  assert.deepEqual(filterProducts(thin, { ...none, color: "blond" }).map((x) => x.id), [425]);
   assert.equal(parseMethod("unsinn"), null);
   assert.equal(parseColorGroup(["blond"]), null);
 });
@@ -53,16 +56,22 @@ test("Standardreihenfolge: Extensions zuerst", () => {
   assert.ok(ordered.slice(firstOther).every((x) => x.category !== "extensions"));
 });
 
-test("Bilder 422–428: Studiobild, Zweitbild, dann Originale; Bildart staged", () => {
+test("Bilder 422–428: Hauptbild, Film, weitere Studiobilder, dann Atelierfotos; keine Rohfotos mehr", () => {
   for (const id of [422, 423, 424, 425, 426, 427, 428]) {
     const product = p(id);
     assert.equal(imageKindOf(product), "staged", String(id));
+    assert.deepEqual(product.originals, [], `${id}: Rohfotos entfernt`);
     const gallery = galleryImages(product);
     assert.equal(gallery[0].src, product.image);
-    assert.equal(gallery[1].src, product.secondImage);
-    const extra = product.extraImages?.length ?? 0;
-    assert.ok(gallery.slice(2, 2 + extra).every((shot) => shot.kind === "studio"));
-    assert.ok(gallery.slice(2 + extra).every((shot) => shot.kind === "original"));
+    const order = gallery.map((shot) => shot.kind);
+    // Reihenfolge: studio, (video), studio…, atelier…
+    const firstAtelier = order.indexOf("atelier");
+    if (firstAtelier >= 0) assert.ok(order.slice(firstAtelier).every((kind) => kind === "atelier"), String(id));
+    if (product.video) {
+      assert.equal(gallery[1].kind, "video");
+      assert.equal(gallery[1].poster, product.video.poster);
+    }
+    assert.ok(!order.includes("original"), String(id));
   }
   assert.equal(imageKindOf({ imageKind: undefined, restyled: true }), "relit");
   assert.equal(imageKindOf({ imageKind: undefined, restyled: false }), null);

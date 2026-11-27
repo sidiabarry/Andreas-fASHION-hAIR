@@ -1,0 +1,16 @@
+{
+  "name": "produktfilme",
+  "private": true,
+  "description": "Schnitt der Produktfilme aus dem Atelier (Remotion). Nicht Teil des Shop-Builds.",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts toupet out/toupet-master.mp4 --codec=h264 --crf=16 && remotion render src/index.ts locken out/locken-master.mp4 --codec=h264 --crf=16"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.542",
+    "@remotion/renderer": "4.0.542",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.542"
+  }
+}

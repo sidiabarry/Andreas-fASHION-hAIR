@@ -63,6 +63,10 @@ export type Product = ProductCopy & {
   secondImage?: string | null;
   /** Weitere Studioaufnahmen nach dem Zweitbild. */
   extraImages?: string[];
+  /** Echte, unretuschierte Aufnahmen aus dem Atelier (nur Licht und Weißabgleich angepasst), stehen hinter den Studiobildern. */
+  atelierImages?: string[];
+  /** Film aus dem Atelier (geschnitten, ohne Ton), steht in der Galerie direkt hinter dem Hauptbild. */
+  video?: { src: string; poster: string } | null;
   /** Aus dem Shop genommen (Daten bleiben erhalten). Auftraggeber 21.11.2026: Walker-Tape-Produkte. */
   hidden?: boolean;
   /** GPSR Art. 19: "atelier" = von Andréia selbst gefertigt (Angaben aus company.ts; vom Auftraggeber bestätigt 21.11.2026). */
@@ -94,16 +98,23 @@ export function imageKindOf(product: Pick<Product, "restyled" | "imageKind">): I
   return product.restyled ? (product.imageKind ?? "relit") : null;
 }
 
-/** Bilder in Galerie-Reihenfolge: Studio-Hauptbild, Zweitbild, dann die unbearbeiteten Originalfotos. */
-export function galleryImages(product: Product): { src: string; kind: "studio" | "original" }[] {
+export type GalleryItem = { src: string; kind: "studio" | "original" | "atelier" | "video"; poster?: string };
+
+/**
+ * Galerie-Reihenfolge: Hauptbild, Film (falls vorhanden), weitere Studiobilder, dann echte Atelieraufnahmen.
+ * Ältere Stücke ohne Studiobild zeigen ihre Originalfotos.
+ */
+export function galleryImages(product: Product): GalleryItem[] {
   if (!product.restyled) {
     const list = product.originals.length ? product.originals : [product.image];
     return list.map((src) => ({ kind: "original", src }));
   }
   return [
     { kind: "studio", src: product.image },
+    ...(product.video ? [{ kind: "video" as const, poster: product.video.poster, src: product.video.src }] : []),
     ...(product.secondImage ? [{ kind: "studio" as const, src: product.secondImage }] : []),
     ...(product.extraImages ?? []).map((src) => ({ kind: "studio" as const, src })),
+    ...(product.atelierImages ?? []).map((src) => ({ kind: "atelier" as const, src })),
     ...product.originals.map((src) => ({ kind: "original" as const, src })),
   ];
 }

@@ -3,11 +3,11 @@
     "headline": "Une raie qui tombe comme vos propres cheveux",
     "story": "Vous ramenez vos cheveux sur le côté, et ils tombent comme tombent les cheveux : doucement, un peu lourds, avec des reflets clairs là où la lumière les touche. Andréia travaille les cheveux depuis l'âge de dix-neuf ans, d'abord à Rio de Janeiro. Une chose ne l'a jamais quittée : cela doit être authentique. Ce toupet en V vous attend dans son atelier d'Iserlohn : 46 cm de blond foncé aux reflets clairs, et cette pièce n'existe qu'en un seul exemplaire.",
     "benefits": [
-      "Une base ultrafine, couleur peau → les cheveux sont implantés jusqu'à son bord.",
-      "À l'avant, la base s'ouvre en un V étroit → de là, les cheveux retombent des deux côtés, comme une raie se forme d'elle-même.",
-      "Des cheveux naturels blond foncé aux reflets clairs → vous les séchez, les lissez et les coiffez comme vos propres cheveux, avec une protection thermique."
+      "Base ultra-fine en forme de V → à l'avant, elle s'ouvre en un V étroit, d'où les cheveux retombent des deux côtés, comme une raie qui se forme d'elle-même.",
+      "Petits clips sur la base → vous posez le topper vous-même, fermez les clips dans vos propres cheveux et le retirez le soir. Sans colle, sans rendez-vous.",
+      "Cheveux naturels blond foncé aux reflets clairs → vous les séchez, lissez et coiffez comme vos propres cheveux, avec une protection thermique."
     ],
-    "howItWorks": "Un topper est un complément capillaire pour le dessus de la tête : il se pose sur vos propres cheveux, et ses longueurs se fondent avec les cheveux en dessous et à côté. Sur cette pièce, la base est évidée en V à l'avant ; les cheveux sont implantés tout autour jusqu'au bord et retombent de là des deux côtés.",
+    "howItWorks": "Un topper est une pièce capillaire pour le dessus de la tête : il se pose sur vos propres cheveux et ses longueurs se fondent avec les cheveux en dessous et autour. Sur cette pièce, la base est découpée en V à l'avant. De petits clips se trouvent sur sa face inférieure : vous posez le topper, ouvrez les clips, les glissez dans vos propres cheveux et les refermez. La vidéo ci-dessus montre chaque geste.",
     "goodFor": "Pour les femmes qui rêvent de plus de volume sur le dessus de la tête, tout en gardant leurs propres cheveux. La couleur convient à des cheveux blond foncé avec des parties plus claires.",
     "care": [
       "Laver avec un shampooing doux, sans sulfates ; n'appliquer le soin que sur les longueurs et ménager la base.",
@@ -15,16 +15,16 @@
     ],
     "faq": [
       {
-        "q": "Voit-on que je porte un topper ?",
-        "a": "La base ultrafine couleur peau et le fin V à l'avant sont conçus pour que la raie tombe naturellement. Andréia vous dit honnêtement dans quelle mesure la pièce convient à vos cheveux."
+        "q": "Verra-t-on que je porte un topper ?",
+        "a": "La base ultra-fine et le V étroit à l'avant sont conçus pour que la raie tombe naturellement. Andréia vous dit honnêtement si la pièce convient à vos cheveux."
       },
       {
         "q": "La couleur va-t-elle avec mes cheveux ?",
-        "a": "Envoyez à Andréia une photo de vos cheveux à la lumière du jour, sans flash. Elle vous dit ouvertement si cette pièce vous convient."
+        "a": "Envoyez à Andréia une photo de vos cheveux à la lumière du jour, sans flash. Elle vous dit franchement si cette pièce vous convient."
       },
       {
-        "q": "Comment le topper se fixe-t-il ?",
-        "a": "Andréia vous montre personnellement quelle fixation convient à vos cheveux."
+        "q": "Comment le topper est-il fixé ?",
+        "a": "Avec de petits clips sur la face inférieure de la base. Vous posez le topper, ouvrez les clips, les glissez près de la racine dans vos propres cheveux et les refermez. Le soir, vous ouvrez les clips et le retirez. En cas de doute, Andréia vous montre le geste en personne."
       }
     ]
   },
@@ -83,60 +83,74 @@
     ]
   },
   "425": {
-    "headline": "Un long blond doré tout en profondeur – conçu pour être porté lâché",
-    "story": "Vous êtes près de la fenêtre, vous tournez la tête, et la lumière glisse dans vos cheveux, d'un blond à l'autre. C'est ainsi qu'agit un ombré : la couleur se fond sur toute la longueur, au lieu de changer en un seul endroit. Ce Genius Weft porte du blond doré en dégradé sur une couture particulièrement plate, posée près de la tête, pour que vous puissiez porter les cheveux lâchés.",
+    "headline": "Un blond doré qui se fond dans la lumière – sur une bande si fine qu'elle épouse votre tête",
+    "story": "Vous êtes près de la fenêtre, vous tournez la tête et la lumière traverse vos cheveux : du brun chaud à la racine vers un blond doré qui s'éclaircit jusqu'aux pointes. 55 cm de cheveux naturels, portés par une bande de trame extra-fine. Elle est si plate et souple qu'elle suit l'arrondi de l'arrière de votre tête au lieu de faire de l'épaisseur, et vos propres cheveux retombent simplement par-dessus.",
     "benefits": [
-      "Blond doré ombré → vos cheveux ne ressemblent pas à une seule teinte, mais à plusieurs qui se fondent les unes dans les autres.",
-      "Le Genius Weft a une couture plate, sans cheveux à l'arrière → la rangée se pose près de la tête et ajoute peu d'épaisseur, même si vous portez les cheveux lâchés.",
-      "Le Genius Weft peut être coupé à n'importe quel endroit → la trame s'adapte à la forme de votre tête, et non l'inverse."
+      "Bande extra-fine et souple → elle suit l'arrondi de votre tête et ne fait presque pas d'épaisseur, même cheveux lâchés.",
+      "Blond doré ombré à racine plus foncée → la transition avec votre propre racine paraît douce, et votre blond peut repousser naturellement.",
+      "Beaucoup de cheveux sur une seule ligne → le volume se trouve sur une rangée plutôt que sur de nombreuses mèches séparées. Le poids se répartit sur toute la largeur de la bande.",
+      "Fixée avec des anneaux ou du fil → ni chaleur ni colle sur vos propres cheveux.",
+      "Réutilisable à chaque remontée → quand vos cheveux poussent, votre coiffeuse détache la bande et repose les mêmes cheveux plus haut."
     ],
-    "howItWorks": "Le Genius Weft est fixé par une coiffeuse ou une spécialiste des extensions à une rangée de petits anneaux dans vos propres cheveux, le plus souvent en le cousant. La couture plate permet à la rangée de se poser près de la tête. Quand vos cheveux repoussent, la trame est replacée ; le moment, c'est votre coiffeuse qui le décide.",
-    "goodFor": "Pour des cheveux blonds qui doivent gagner en longueur ou en volume, et pour toutes celles qui aiment un dégradé de couleur tout en douceur. Grâce à sa couture plate, le Genius Weft est souvent choisi pour des cheveux fins à moyens.",
+    "howItWorks": "Une bande de trame est une bande sur le bord supérieur de laquelle les cheveux sont implantés serrés. Sur cette bande, le bord est extra-fin et souple. Une coiffeuse ou une spécialiste des extensions place une rangée de petits anneaux sur une ligne horizontale de vos propres cheveux à l'arrière de la tête et y fixe la bande, le plus souvent en la cousant. Vos propres cheveux retombent par-dessus. Quand ils poussent, la bande est détachée et reposée plus haut ; c'est votre coiffeuse qui décide quand.",
+    "goodFor": "Pour les cheveux blonds qui doivent gagner en longueur ou en volume, et pour toutes celles qui aiment un dégradé doux d'une racine plus foncée vers des longueurs dorées. Comme la bande est très fine, ce type de trame est souvent choisi pour les cheveux fins à moyens.",
     "care": [
-      "Shampooing sur la racine et le cuir chevelu, après-shampooing et soin uniquement sur les longueurs, pas sur la couture.",
-      "Laisser la rangée sécher complètement après le lavage, avant d'aller dormir."
+      "Shampooing sur les racines et le cuir chevelu ; après-shampooing et masque uniquement sur les longueurs, pas sur la bande.",
+      "Brosser en partant des pointes, en soutenant la rangée de la main.",
+      "Laisser la rangée sécher complètement après le lavage avant d'aller dormir."
     ],
     "faq": [
       {
+        "q": "Quelle différence avec le Genius Weft ?",
+        "a": "Ce sont deux trames fixées sur une rangée d'anneaux dans vos propres cheveux. Cette bande est travaillée extra-fine et souple, c'est pourquoi elle épouse particulièrement bien la forme de la tête. Andréia vous conseille volontiers sur la trame qui convient à vos cheveux."
+      },
+      {
         "q": "Est-ce que cela va avec mon blond ?",
-        "a": "Envoyez à Andréia une photo de vos cheveux à la lumière du jour, sans flash, de préférence avec la racine et les pointes. Elle vous dit honnêtement si l'ombré vous convient."
+        "a": "Envoyez à Andréia une photo de vos cheveux à la lumière du jour, sans flash, idéalement avec racines et pointes. Elle vous dit honnêtement si l'ombré vous convient."
       },
       {
-        "q": "Voit-on la trame ?",
-        "a": "La couture est très plate et se pose près de la tête, vos propres cheveux retombant par-dessus. Votre coiffeuse planifie la rangée avec vous."
+        "q": "Voit-on la bande ?",
+        "a": "La bande est extra-fine et repose près de la tête, vos propres cheveux retombent par-dessus. Votre coiffeuse planifie la rangée avec vous."
       },
       {
-        "q": "Est-ce que cela tient ?",
-        "a": "La tenue vient de la pose sur une rangée de petits anneaux dans vos propres cheveux. Le Genius Weft est une méthode fixe pour le quotidien. Quand vos cheveux repoussent, votre coiffeuse replace la rangée."
+        "q": "Est-ce que ça tient ?",
+        "a": "La tenue vient de la pose sur une rangée de petits anneaux dans vos propres cheveux. Une bande de trame est une méthode durable pour le quotidien. Quand vos cheveux poussent, votre coiffeuse remonte la rangée."
       }
     ]
   },
   "426": {
-    "headline": "Plus de boucles, plus de longueur – et tout reste bouclé",
-    "story": "Vous secouez la tête et les boucles rebondissent, simplement plus longues qu'hier. Pas besoin de lisser quoi que ce soit : ce Genius Weft est lui-même naturellement bouclé, en brun café avec un ombré cuivré, et tombe avec vos boucles. Derrière, il y a une trame à la couture particulièrement plate, près de la tête.",
+    "headline": "Des boucles plus longues – sur une bande si fine qu'elle épouse votre tête",
+    "story": "Vous secouez la tête et les boucles rebondissent, simplement plus longues qu'hier. Rien à lisser : ces cheveux sont eux-mêmes naturellement bouclés, en brun café avec un ombré cuivré qui brille différemment dans chaque boucle. Ils sont portés par une bande de trame extra-fine. Elle est si plate et souple qu'elle suit l'arrondi de l'arrière de votre tête au lieu de faire de l'épaisseur, et vos propres boucles retombent simplement par-dessus.",
     "benefits": [
-      "Une texture naturellement bouclée → vos boucles gagnent en longueur et restent ce qu'elles sont.",
-      "Brun café avec ombré cuivré → un dégradé chaleureux qui joue dans les boucles.",
-      "Le Genius Weft a une couture plate, sans cheveux à l'arrière → la rangée se pose près de la tête et ajoute peu d'épaisseur."
+      "Bande extra-fine et souple → elle suit l'arrondi de votre tête et ne fait presque pas d'épaisseur. Vos propres boucles retombent par-dessus, même cheveux lâchés.",
+      "Beaucoup de cheveux sur une seule ligne → le volume se trouve sur une rangée plutôt que sur de nombreuses mèches séparées. Le poids se répartit sur toute la largeur de la bande.",
+      "Fixée avec des anneaux ou du fil → ni chaleur ni colle sur vos propres cheveux.",
+      "Naturellement bouclée, brun café avec ombré cuivré → vos boucles gagnent en longueur et restent ce qu'elles sont. Le dégradé chaud joue dans chaque boucle.",
+      "Réutilisable à chaque remontée → quand vos cheveux poussent, votre coiffeuse détache la bande et repose les mêmes cheveux plus haut."
     ],
-    "howItWorks": "Le Genius Weft est fixé par une coiffeuse ou une spécialiste des extensions à une rangée de petits anneaux dans vos propres cheveux, le plus souvent en le cousant. La couture d'une trame Genius Weft est plate et peut être coupée à n'importe quel endroit, de sorte que la largeur s'adapte à la forme de votre tête. Quand vos cheveux repoussent, la trame est replacée.",
-    "goodFor": "Pour des cheveux bouclés qui doivent devenir plus longs ou plus fournis, sans renoncer à leur propre texture. La couleur convient à des cheveux bruns aux tons chauds et cuivrés.",
+    "howItWorks": "Une bande de trame est une bande sur le bord supérieur de laquelle les cheveux sont implantés serrés. Sur cette bande, le bord est extra-fin et souple. Une coiffeuse ou une spécialiste des extensions place une rangée de petits anneaux sur une ligne horizontale de vos propres cheveux à l'arrière de la tête et y fixe la bande, le plus souvent en la cousant. Vos propres cheveux retombent par-dessus. Quand ils poussent, la bande est détachée et reposée plus haut ; c'est votre coiffeuse qui décide quand.",
+    "goodFor": "Pour les cheveux bouclés qui doivent gagner en longueur ou en volume sans renoncer à leur propre texture. Comme la bande est très fine, ce type de trame est souvent choisi pour les cheveux fins à moyens. La couleur convient aux cheveux bruns aux reflets chauds et cuivrés.",
     "care": [
-      "Shampooing sur la racine et le cuir chevelu, après-shampooing et soin uniquement sur les longueurs, pas sur la couture.",
-      "Laisser la rangée sécher complètement après le lavage, avant d'aller dormir."
+      "Shampooing sur les racines et le cuir chevelu ; après-shampooing et masque uniquement sur les longueurs, pas sur la bande.",
+      "Démêler les boucles avec les doigts ou un peigne à dents larges, des pointes vers le haut, en soutenant la rangée de la main.",
+      "Laisser la rangée sécher complètement après le lavage avant d'aller dormir."
     ],
     "faq": [
       {
-        "q": "Les boucles iront-elles avec les miennes ?",
-        "a": "Les boucles sont aussi différentes que les personnes qui les portent. Envoyez à Andréia une photo de vos cheveux à la lumière du jour, sans flash. Avant le paiement, elle vous dit si la texture et la couleur vous conviennent."
+        "q": "Quelle différence avec le Genius Weft ?",
+        "a": "Ce sont deux trames fixées sur une rangée d'anneaux dans vos propres cheveux. Cette bande est travaillée extra-fine et souple, c'est pourquoi elle épouse particulièrement bien la forme de la tête. Andréia vous conseille volontiers sur la trame qui convient à vos cheveux."
       },
       {
-        "q": "Voit-on la trame ?",
-        "a": "La couture est très plate et se pose près de la tête, vos propres boucles retombant par-dessus. Le mieux est de la faire poser par une spécialiste expérimentée avec les cheveux bouclés."
+        "q": "Les boucles vont-elles avec les miennes ?",
+        "a": "Les boucles sont aussi différentes que les personnes qui les portent. Envoyez à Andréia une photo de vos cheveux à la lumière du jour, sans flash. Elle vous dit avant le paiement si la texture et la couleur vous conviennent."
       },
       {
-        "q": "Est-ce que cela tient ?",
-        "a": "La tenue vient de la pose sur une rangée de petits anneaux dans vos propres cheveux. Le Genius Weft est une méthode fixe pour le quotidien. Quand vos cheveux repoussent, votre coiffeuse replace la rangée."
+        "q": "Voit-on la bande ?",
+        "a": "La bande est extra-fine et repose près de la tête, vos propres boucles retombent par-dessus. L'idéal est une pose par une spécialiste qui a l'expérience des cheveux bouclés."
+      },
+      {
+        "q": "Est-ce que ça tient ?",
+        "a": "La tenue vient de la pose sur une rangée de petits anneaux dans vos propres cheveux. Une bande de trame est une méthode durable pour le quotidien. Quand vos cheveux poussent, votre coiffeuse remonte la rangée."
       }
     ]
   },

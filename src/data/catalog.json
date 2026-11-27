@@ -1584,32 +1584,24 @@
       "V-förmige Basis (Damen-Topper)",
       "Gewicht 117 g"
     ],
-    "image": "/assets/products/422.jpg",
+    "image": "/assets/products/422-1.webp",
     "restyled": true,
-    "originals": [
-      "/assets/originals/422-0.jpg",
-      "/assets/originals/422-1.jpg",
-      "/assets/originals/422-2.jpg",
-      "/assets/originals/422-3.jpg",
-      "/assets/originals/422-4.jpg",
-      "/assets/originals/422-5.jpg",
-      "/assets/originals/422-6.jpg"
-    ],
+    "originals": [],
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
     "origin": "Vietnam",
     "netWeightGrams": null,
     "imageKind": "staged",
-    "secondImage": "/assets/products/422-2.jpg",
+    "secondImage": "/assets/products/422-2.webp",
     "headline": "Ein Scheitel, der fällt wie Ihr eigenes Haar",
     "story": "Sie streichen das Haar zur Seite, und es fällt, wie Haar eben fällt: weich, ein wenig schwer, mit hellen Reflexen dort, wo das Licht es trifft. Andréia arbeitet seit ihrem neunzehnten Lebensjahr mit Haar, angefangen in Rio de Janeiro. Eines hat sie dabei nie losgelassen: Es muss echt sein. In ihrem Atelier in Iserlohn wartet dieses V-Toupet: 46 cm Dunkelblond mit hellen Reflexen, und es gibt dieses eine Stück nur ein einziges Mal.",
     "benefits": [
-      "Hauchdünne, hautfarbene Basis → das Haar sitzt dicht bis an ihren Rand.",
-      "Vorne öffnet sich die Basis zu einem schmalen V → von dort fällt das Haar zu beiden Seiten, so wie sich ein Scheitel von selbst bildet.",
+      "Hauchdünne Basis in V-Form → Vorne öffnet sie sich zu einem schmalen V, und von dort fällt das Haar zu beiden Seiten, so wie sich ein Scheitel von selbst bildet.",
+      "Kleine Clips an der Basis → Sie setzen den Topper selbst auf, schließen die Clips an Ihrem eigenen Haar und nehmen ihn abends wieder ab. Ohne Kleber, ohne Termin.",
       "Echthaar in Dunkelblond mit hellen Reflexen → Sie föhnen, glätten und stylen es wie Ihr eigenes Haar, mit Hitzeschutz."
     ],
-    "howItWorks": "Ein Topper ist ein Haarteil für den Oberkopf: Er wird auf das eigene Haar gesetzt, und seine Längen verbinden sich mit dem Haar darunter und daneben. Bei diesem Stück ist die Basis vorne V-förmig ausgespart; das Haar ist ringsum bis an den Rand eingearbeitet und fällt von dort aus zu beiden Seiten.",
+    "howItWorks": "Ein Topper ist ein Haarteil für den Oberkopf: Er wird auf das eigene Haar gesetzt, und seine Längen verbinden sich mit dem Haar darunter und daneben. Bei diesem Stück ist die Basis vorne V-förmig ausgespart. An ihrer Unterseite sitzen kleine Clips: Sie legen den Topper auf, öffnen die Clips, schieben sie in Ihr eigenes Haar und schließen sie. Das Video oben zeigt jeden Handgriff.",
     "goodFor": "Für Frauen, die sich am Oberkopf mehr Fülle wünschen und ihr eigenes Haar dabei behalten möchten. Die Farbe passt zu dunkelblondem Haar mit helleren Partien.",
     "care": [
       "Mit mildem, sulfatfreiem Shampoo waschen; Pflege nur in die Längen geben und die Basis schonend behandeln.",
@@ -1618,7 +1610,7 @@
     "faq": [
       {
         "q": "Sieht man, dass ich einen Topper trage?",
-        "a": "Die hauchdünne, hautfarbene Basis und das schmale V vorn sind dafür gemacht, dass der Scheitel natürlich fällt. Andréia sagt Ihnen ehrlich, wie gut das Stück zu Ihrem Haar passt."
+        "a": "Die hauchdünne Basis und das schmale V vorn sind dafür gemacht, dass der Scheitel natürlich fällt. Andréia sagt Ihnen ehrlich, wie gut das Stück zu Ihrem Haar passt."
       },
       {
         "q": "Passt die Farbe zu meinem Haar?",
@@ -1626,10 +1618,21 @@
       },
       {
         "q": "Wie wird der Topper befestigt?",
-        "a": "Andréia zeigt Ihnen persönlich, welche Befestigung zu Ihrem Haar passt."
+        "a": "Mit kleinen Clips an der Unterseite der Basis. Sie setzen den Topper auf, öffnen die Clips, schieben sie nah am Ansatz in Ihr eigenes Haar und schließen sie. Abends öffnen Sie die Clips und nehmen ihn ab. Wenn Sie unsicher sind, zeigt Andréia es Ihnen persönlich."
       }
     ],
-    "manufacturer": "atelier"
+    "manufacturer": "atelier",
+    "extraImages": [
+      "/assets/products/422-3.webp"
+    ],
+    "atelierImages": [
+      "/assets/products/422-atelier-1.jpg",
+      "/assets/products/422-atelier-2.jpg"
+    ],
+    "video": {
+      "src": "/assets/video/422-film.mp4",
+      "poster": "/assets/video/422-film-poster.jpg"
+    }
   },
   {
     "id": 423,
@@ -1652,15 +1655,9 @@
       "Set aus 3 Tressen mit Clips",
       "Gewicht 194 g (Set)"
     ],
-    "image": "/assets/products/423-studio-1.jpg",
+    "image": "/assets/products/423-1.webp",
     "restyled": true,
-    "originals": [
-      "/assets/originals/423-0.jpg",
-      "/assets/originals/423-1.jpg",
-      "/assets/originals/423-2.jpg",
-      "/assets/originals/423-3.jpg",
-      "/assets/originals/423-4.jpg"
-    ],
+    "originals": [],
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
@@ -1670,7 +1667,7 @@
     "weightGrams": 194,
     "setParts": 3,
     "imageKind": "staged",
-    "secondImage": "/assets/products/423-studio-2.jpg",
+    "secondImage": "/assets/products/423-2.webp",
     "headline": "Lange Haare für heute Abend – und morgen Ihre eigenen",
     "story": "Sie öffnen das Haar, schütteln den Kopf, und es fällt Ihnen lang und schwer über den Rücken. Am nächsten Morgen ist es wieder schulterlang, so wie Sie es kennen. Clip-ins machen beides möglich: drei Tressen aus Echthaar in Naturdunkelbraun, die Sie selbst einsetzen und abends wieder herausnehmen. Ohne Termin, ohne Kleber.",
     "benefits": [
@@ -1696,7 +1693,11 @@
     ],
     "manufacturer": "atelier",
     "extraImages": [
-      "/assets/products/423-studio-3.jpg"
+      "/assets/products/423-3.webp"
+    ],
+    "atelierImages": [
+      "/assets/products/423-atelier-1.jpg",
+      "/assets/products/423-atelier-2.jpg"
     ]
   },
   {
@@ -1720,14 +1721,9 @@
       "50 g je Packung",
       "1 Tresse je Packung"
     ],
-    "image": "/assets/products/424-studio-1.jpg",
+    "image": "/assets/products/424-1.webp",
     "restyled": true,
-    "originals": [
-      "/assets/originals/424-0.jpg",
-      "/assets/originals/424-1.jpg",
-      "/assets/originals/424-2.jpg",
-      "/assets/originals/424-3.jpg"
-    ],
+    "originals": [],
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
@@ -1736,7 +1732,7 @@
     "priceUnit": "pack",
     "weightGrams": 50,
     "imageKind": "staged",
-    "secondImage": "/assets/products/424-studio-2.jpg",
+    "secondImage": "/assets/products/424-2.webp",
     "headline": "Langes, dunkles Haar – genau so, wie Sie es sich wünschen",
     "story": "Sie binden morgens einen Zopf, und er reicht so weit, wie Sie es sich immer gewünscht haben. Sie lassen ihn durch die Hand gleiten und spüren das Gewicht von echtem Haar. Dahinter steckt eine Tresse mit besonders flacher Naht: Genius Weft liegt dicht am Kopf, und daran hängen 55 cm Echthaar in Naturdunkelbraun.",
     "benefits": [
@@ -1765,15 +1761,13 @@
       }
     ],
     "manufacturer": "atelier",
-    "extraImages": [
-      "/assets/products/424-studio-3.jpg",
-      "/assets/products/424-studio-4.jpg"
-    ]
+    "extraImages": [],
+    "atelierImages": []
   },
   {
     "id": 425,
-    "slug": "genius-weft-55-cm-blond-ombre-425",
-    "name": "Genius Weft 55 cm",
+    "slug": "extra-duennes-tressenband-55-cm-goldblond-ombre-425",
+    "name": "Extra dünnes Tressenband 55 cm",
     "subtitle": "Goldblond Ombré",
     "category": "extensions",
     "priceCents": 13500,
@@ -1782,7 +1776,7 @@
     "base": "",
     "color": "Goldblond Ombré",
     "texture": "",
-    "description": "Genius Weft aus Echthaar in Goldblond Ombré, 55 cm lang. Eine Packung enthält 50 g.",
+    "description": "Extra dünnes Tressenband aus Echthaar in Goldblond Ombré, 55 cm lang. Eine Packung enthält 50 g.",
     "specs": [
       "100 % Echthaar aus Vietnam, besonders fein",
       "Echthaar",
@@ -1791,13 +1785,9 @@
       "50 g je Packung",
       "1 Tresse je Packung"
     ],
-    "image": "/assets/products/425-studio-1.jpg",
+    "image": "/assets/products/425-1.webp",
     "restyled": true,
-    "originals": [
-      "/assets/originals/425-0.jpg",
-      "/assets/originals/425-1.jpg",
-      "/assets/originals/425-2.jpg"
-    ],
+    "originals": [],
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
@@ -1806,43 +1796,52 @@
     "priceUnit": "pack",
     "weightGrams": 50,
     "imageKind": "staged",
-    "secondImage": "/assets/products/425-studio-2.jpg",
-    "headline": "Langes Goldblond mit Tiefe – gemacht zum Offentragen",
-    "story": "Sie stehen am Fenster, drehen den Kopf, und das Licht wandert durch Ihr Haar, von einem Blond ins nächste. So wirkt ein Ombré: Die Farbe verläuft über die Länge, statt an einer Stelle zu wechseln. Dieses Genius Weft trägt Goldblond im Verlauf auf einer besonders flachen Naht, die dicht am Kopf liegt, damit Sie das Haar offen tragen können.",
+    "secondImage": "/assets/products/425-2.webp",
+    "headline": "Goldblond, das ins Licht fließt – auf einem Band, so dünn, dass es sich an Ihren Kopf schmiegt",
+    "story": "Sie stehen am Fenster, drehen den Kopf, und das Licht wandert durch Ihr Haar: vom warmen Braun am Ansatz in ein Goldblond, das zu den Spitzen hin immer heller wird. 55 cm Echthaar, getragen von einem extra dünnen Tressenband. Es ist so flach und biegsam, dass es der Rundung Ihres Hinterkopfs folgt, statt aufzutragen, und Ihr eigenes Haar fällt einfach darüber.",
     "benefits": [
-      "Goldblond Ombré → Ihr Haar wirkt nicht wie ein einziger Ton, sondern wie viele, die ineinander übergehen.",
-      "Genius Weft hat eine flache Naht ohne Rückhaar → Die Reihe liegt dicht am Kopf und trägt wenig auf, auch wenn Sie das Haar offen tragen.",
-      "Genius Weft lässt sich an jeder Stelle zuschneiden → Die Tresse wird an Ihre Kopfform angepasst, nicht umgekehrt."
+      "Extra dünnes, biegsames Band → Es folgt der Rundung Ihres Kopfes und trägt kaum auf, auch wenn Sie das Haar offen tragen.",
+      "Goldblond Ombré mit dunklerem Ansatz → Der Übergang zu Ihrem eigenen Ansatz wirkt weich, und Ihr Blond darf natürlich nachwachsen.",
+      "Viel Haar auf einer einzigen Linie → Die Fülle sitzt in einer Reihe statt in vielen einzelnen Strähnen. Das Gewicht verteilt sich über die ganze Breite des Bandes.",
+      "Befestigt mit Ringen oder Faden → Keine Wärme und kein Kleber an Ihrem eigenen Haar.",
+      "Beim Nachsetzen wiederverwendbar → Wächst Ihr Haar nach, löst Ihre Friseurin das Band und setzt dasselbe Haar wieder höher."
     ],
-    "howItWorks": "Genius Weft wird von einer Friseurin oder Extension-Fachfrau an einer Reihe kleiner Ringe im eigenen Haar befestigt, meist durch Einnähen. Die flache Naht lässt die Reihe dicht am Kopf liegen. Mit dem Nachwachsen Ihres Haares wird die Tresse nachgesetzt; den Zeitpunkt bestimmt Ihre Friseurin.",
-    "goodFor": "Für blondes Haar, das mehr Länge oder Fülle bekommen soll, und für alle, die einen weichen Farbverlauf mögen. Wegen der flachen Naht wird Genius Weft oft für feines bis mittleres Haar gewählt.",
+    "howItWorks": "Ein Tressenband ist eine Bahn, an deren Oberkante das Haar dicht an dicht eingearbeitet ist. Bei diesem Band ist die Kante extra dünn und biegsam. Eine Friseurin oder Extension-Fachfrau setzt am Hinterkopf eine Reihe kleiner Ringe in eine waagerechte Linie Ihres eigenen Haares und befestigt das Band daran, meist durch Einnähen. Ihr eigenes Haar fällt von oben darüber. Wächst es nach, wird das Band gelöst und wieder höher gesetzt; wann, bestimmt Ihre Friseurin.",
+    "goodFor": "Für blondes Haar, das länger oder voller werden soll, und für alle, die einen weichen Verlauf von dunklerem Ansatz zu goldenen Längen mögen. Weil das Band so dünn ist, wird diese Art Tresse gern bei feinem bis mittlerem Haar gewählt.",
     "care": [
-      "Shampoo an Ansatz und Kopfhaut, Spülung und Kur nur in die Längen, nicht an die Naht.",
-      "Die Reihe nach dem Waschen vollständig trocknen, bevor Sie schlafen gehen."
+      "Shampoo an Ansatz und Kopfhaut geben, Spülung und Kur nur in die Längen, nicht an das Band.",
+      "Von den Spitzen her bürsten und die Reihe dabei mit der Hand stützen.",
+      "Die Reihe nach dem Waschen vollständig trocknen lassen, bevor Sie schlafen gehen."
     ],
     "faq": [
+      {
+        "q": "Was ist der Unterschied zu Genius Weft?",
+        "a": "Beide sind Tressen, die an einer Ringreihe in Ihrem eigenen Haar befestigt werden. Dieses Band ist extra dünn und biegsam gearbeitet und legt sich deshalb besonders eng an die Kopfform. Welche Tresse zu Ihrem Haar passt, bespricht Andréia gern mit Ihnen."
+      },
       {
         "q": "Passt das zu meinem Blond?",
         "a": "Schicken Sie Andréia ein Foto Ihres Haares bei Tageslicht, ohne Blitz, gern mit Ansatz und Spitzen. Sie sagt Ihnen ehrlich, ob das Ombré zu Ihnen passt."
       },
       {
-        "q": "Sieht man die Tresse?",
-        "a": "Die Naht ist sehr flach und liegt dicht am Kopf, darüber fällt Ihr eigenes Haar. Ihre Friseurin plant die Reihe gemeinsam mit Ihnen."
+        "q": "Sieht man das Band?",
+        "a": "Das Band ist extra dünn und liegt dicht am Kopf, darüber fällt Ihr eigenes Haar. Ihre Friseurin plant die Reihe gemeinsam mit Ihnen."
       },
       {
         "q": "Hält das?",
-        "a": "Der Halt kommt aus der Einarbeitung an einer Reihe kleiner Ringe in Ihrem eigenen Haar. Genius Weft ist eine feste Methode für den Alltag. Wächst Ihr Haar nach, setzt Ihre Friseurin die Reihe nach."
+        "a": "Der Halt kommt aus der Einarbeitung an einer Reihe kleiner Ringe in Ihrem eigenen Haar. Ein Tressenband ist eine feste Methode für den Alltag. Wächst Ihr Haar nach, setzt Ihre Friseurin die Reihe nach."
       }
     ],
     "manufacturer": "atelier",
-    "extraImages": [
-      "/assets/products/425-studio-3.jpg"
+    "extraImages": [],
+    "atelierImages": [
+      "/assets/products/425-atelier-1.jpg",
+      "/assets/products/425-atelier-2.jpg"
     ]
   },
   {
     "id": 426,
-    "slug": "genius-weft-45-cm-kaffeebraun-ombre-426",
-    "name": "Genius Weft 45 cm",
+    "slug": "extra-duennes-tressenband-45-cm-kaffeebraun-kupfer-ombre-426",
+    "name": "Extra dünnes Tressenband 45 cm",
     "subtitle": "Kaffeebraun mit Kupfer-Ombré, naturlockig",
     "category": "extensions",
     "priceCents": 11500,
@@ -1851,7 +1850,7 @@
     "base": "",
     "color": "Kaffeebraun mit Kupfer-Ombré",
     "texture": "Lockig",
-    "description": "Genius Weft aus Echthaar in Kaffeebraun mit Kupfer-Ombré, 45 cm lang, naturlockig. Eine Packung enthält 50 g.",
+    "description": "Extra dünnes Tressenband aus Echthaar in Kaffeebraun mit Kupfer-Ombré, 45 cm lang, naturlockig. Eine Packung enthält 50 g.",
     "specs": [
       "100 % Echthaar aus Vietnam, besonders fein",
       "Echthaar",
@@ -1861,12 +1860,9 @@
       "50 g je Packung",
       "1 Tresse je Packung"
     ],
-    "image": "/assets/products/426-studio-1.jpg",
+    "image": "/assets/products/426-1.webp",
     "restyled": true,
-    "originals": [
-      "/assets/originals/426-0.jpg",
-      "/assets/originals/426-1.jpg"
-    ],
+    "originals": [],
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
@@ -1875,35 +1871,52 @@
     "priceUnit": "pack",
     "weightGrams": 50,
     "imageKind": "staged",
-    "secondImage": "/assets/products/426-studio-2.jpg",
-    "headline": "Mehr Locken, mehr Länge – und alles bleibt lockig",
-    "story": "Sie schütteln den Kopf, und die Locken springen zurück, nur länger als gestern. Glätten müssen Sie dafür nichts: Dieses Genius Weft ist selbst naturlockig, in Kaffeebraun mit Kupfer-Ombré, und fällt mit Ihren Locken. Dahinter liegt eine Tresse mit besonders flacher Naht, dicht am Kopf.",
+    "secondImage": "/assets/products/426-2.webp",
+    "headline": "Länger lockig – auf einem Band, so dünn, dass es sich an Ihren Kopf schmiegt",
+    "story": "Sie schütteln den Kopf, und die Locken springen zurück, nur länger als gestern. Glätten müssen Sie dafür nichts: Dieses Haar ist selbst naturlockig, in Kaffeebraun mit einem Kupfer-Ombré, das in jeder Locke anders leuchtet. Getragen wird es von einem extra dünnen Tressenband. Es ist so flach und biegsam, dass es sich an die Rundung Ihres Hinterkopfs legt, statt aufzutragen, und Ihre eigenen Locken fallen einfach darüber.",
     "benefits": [
-      "Naturlockige Struktur → Ihre Locken bekommen Länge dazu und bleiben, was sie sind.",
-      "Kaffeebraun mit Kupfer-Ombré → ein warmer Verlauf, der in den Locken spielt.",
-      "Genius Weft hat eine flache Naht ohne Rückhaar → Die Reihe liegt dicht am Kopf und trägt wenig auf."
+      "Extra dünnes, biegsames Band → Es folgt der Rundung Ihres Kopfes und trägt kaum auf. Ihre eigenen Locken legen sich darüber, auch wenn Sie das Haar offen tragen.",
+      "Viel Haar auf einer einzigen Linie → Die Fülle sitzt in einer Reihe statt in vielen einzelnen Strähnen. Das Gewicht verteilt sich über die ganze Breite des Bandes.",
+      "Befestigt mit Ringen oder Faden → Keine Wärme und kein Kleber an Ihrem eigenen Haar.",
+      "Naturlockig in Kaffeebraun mit Kupfer-Ombré → Ihre Locken bekommen Länge dazu und bleiben, was sie sind. Der warme Verlauf spielt in jeder Locke.",
+      "Beim Nachsetzen wiederverwendbar → Wächst Ihr Haar nach, löst Ihre Friseurin das Band und setzt dasselbe Haar wieder höher."
     ],
-    "howItWorks": "Genius Weft wird von einer Friseurin oder Extension-Fachfrau an einer Reihe kleiner Ringe im eigenen Haar befestigt, meist durch Einnähen. Die Naht einer Genius-Weft-Tresse ist flach und lässt sich an jeder Stelle zuschneiden, sodass die Breite zu Ihrer Kopfform passt. Wächst Ihr Haar nach, wird die Tresse nachgesetzt.",
-    "goodFor": "Für lockiges Haar, das länger oder voller werden soll, ohne die eigene Struktur aufzugeben. Die Farbe passt zu braunem Haar mit warmen, kupfernen Tönen.",
+    "howItWorks": "Ein Tressenband ist eine Bahn, an deren Oberkante das Haar dicht an dicht eingearbeitet ist. Bei diesem Band ist die Kante extra dünn und biegsam. Eine Friseurin oder Extension-Fachfrau setzt am Hinterkopf eine Reihe kleiner Ringe in eine waagerechte Linie Ihres eigenen Haares und befestigt das Band daran, meist durch Einnähen. Ihr eigenes Haar fällt von oben darüber. Wächst es nach, wird das Band gelöst und wieder höher gesetzt; wann, bestimmt Ihre Friseurin.",
+    "goodFor": "Für lockiges Haar, das länger oder voller werden soll, ohne die eigene Struktur aufzugeben. Weil das Band so dünn ist, wird diese Art Tresse gern bei feinem bis mittlerem Haar gewählt. Die Farbe passt zu braunem Haar mit warmen, kupfernen Tönen.",
     "care": [
-      "Shampoo an Ansatz und Kopfhaut, Spülung und Kur nur in die Längen, nicht an die Naht.",
-      "Die Reihe nach dem Waschen vollständig trocknen, bevor Sie schlafen gehen."
+      "Shampoo an Ansatz und Kopfhaut geben, Spülung und Kur nur in die Längen, nicht an das Band.",
+      "Locken mit den Fingern oder einem grobzinkigen Kamm entwirren, von den Spitzen nach oben, die Reihe dabei mit der Hand stützen.",
+      "Die Reihe nach dem Waschen vollständig trocknen lassen, bevor Sie schlafen gehen."
     ],
     "faq": [
+      {
+        "q": "Was ist der Unterschied zu Genius Weft?",
+        "a": "Beide sind Tressen, die an einer Ringreihe in Ihrem eigenen Haar befestigt werden. Dieses Band ist extra dünn und biegsam gearbeitet und legt sich deshalb besonders eng an die Kopfform. Welche Tresse zu Ihrem Haar passt, bespricht Andréia gern mit Ihnen."
+      },
       {
         "q": "Passen die Locken zu meinen?",
         "a": "Locken sind so verschieden wie die Menschen, die sie tragen. Schicken Sie Andréia ein Foto Ihres Haares bei Tageslicht, ohne Blitz. Sie sagt Ihnen vor der Zahlung, ob Struktur und Farbe zu Ihnen passen."
       },
       {
-        "q": "Sieht man die Tresse?",
-        "a": "Die Naht ist sehr flach und liegt dicht am Kopf, darüber fallen Ihre eigenen Locken. Am besten setzt eine Fachfrau ein, die Erfahrung mit lockigem Haar hat."
+        "q": "Sieht man das Band?",
+        "a": "Das Band ist extra dünn und liegt dicht am Kopf, darüber fallen Ihre eigenen Locken. Am besten setzt eine Fachfrau ein, die Erfahrung mit lockigem Haar hat."
       },
       {
         "q": "Hält das?",
-        "a": "Der Halt kommt aus der Einarbeitung an einer Reihe kleiner Ringe in Ihrem eigenen Haar. Genius Weft ist eine feste Methode für den Alltag. Wächst Ihr Haar nach, setzt Ihre Friseurin die Reihe nach."
+        "a": "Der Halt kommt aus der Einarbeitung an einer Reihe kleiner Ringe in Ihrem eigenen Haar. Ein Tressenband ist eine feste Methode für den Alltag. Wächst Ihr Haar nach, setzt Ihre Friseurin die Reihe nach."
       }
     ],
-    "manufacturer": "atelier"
+    "manufacturer": "atelier",
+    "extraImages": [
+      "/assets/products/426-3.webp"
+    ],
+    "atelierImages": [
+      "/assets/products/426-atelier-1.jpg"
+    ],
+    "video": {
+      "src": "/assets/video/426-film.mp4",
+      "poster": "/assets/video/426-film-poster.jpg"
+    }
   },
   {
     "id": 427,
@@ -1926,21 +1939,9 @@
       "25 g je Packung",
       "3 Tapes, gemeinsam versiegelt in einer Packung"
     ],
-    "image": "/assets/products/427-studio-1.jpg",
+    "image": "/assets/products/427-1.webp",
     "restyled": true,
-    "originals": [
-      "/assets/originals/427-0.jpg",
-      "/assets/originals/427-1.jpg",
-      "/assets/originals/427-2.jpg",
-      "/assets/originals/427-3.jpg",
-      "/assets/originals/427-4.jpg",
-      "/assets/originals/427-5.jpg",
-      "/assets/originals/427-6.jpg",
-      "/assets/originals/427-7.jpg",
-      "/assets/originals/427-8.jpg",
-      "/assets/originals/427-9.jpg",
-      "/assets/originals/427-10.jpg"
-    ],
+    "originals": [],
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
@@ -1949,7 +1950,7 @@
     "priceUnit": "pack",
     "weightGrams": 25,
     "imageKind": "staged",
-    "secondImage": "/assets/products/427-studio-2.jpg",
+    "secondImage": "/assets/products/427-2.webp",
     "headline": "Blond und lang – und Ihr dunkler Ansatz darf bleiben",
     "story": "Sie streichen das Haar zurück, und am Ansatz zeigt sich, was immer schon da war: ein dunkleres Blond, das ins Helle übergeht. Genau mit diesem Übergang spielen diese Extensions: hellblond im Ombré, oben mit dunklem Ansatz. Getragen wird das Haar auf Invisible Tapes, dünnen, flachen Klebestreifen, die dicht am Kopf liegen.",
     "benefits": [
@@ -1977,7 +1978,11 @@
         "a": "Die Tapes werden nah am Ansatz an feinen Strähnen Ihres eigenen Haares befestigt. Für guten Halt kommt es auf die Pflege an: die ersten 48 Stunden nicht waschen, keine Spülung und kein Öl an die Tapes. Wächst Ihr Haar nach, setzt Ihre Friseurin die Tapes nach."
       }
     ],
-    "manufacturer": "atelier"
+    "manufacturer": "atelier",
+    "extraImages": [
+      "/assets/products/427-3.webp"
+    ],
+    "atelierImages": []
   },
   {
     "id": 428,
@@ -2000,13 +2005,9 @@
       "Tressenbreite 30 cm je Reihe",
       "50 g je Packung"
     ],
-    "image": "/assets/products/428-studio-1.jpg",
+    "image": "/assets/products/428-1.webp",
     "restyled": true,
-    "originals": [
-      "/assets/originals/428-0.jpg",
-      "/assets/originals/428-1.jpg",
-      "/assets/originals/428-2.jpg"
-    ],
+    "originals": [],
     "madeToOrder": false,
     "safety": null,
     "availability": "unknown",
@@ -2015,7 +2016,7 @@
     "priceUnit": "pack",
     "weightGrams": 50,
     "imageKind": "staged",
-    "secondImage": "/assets/products/428-studio-2.jpg",
+    "secondImage": "/assets/products/428-2.webp",
     "headline": "Lange, volle Haare – Reihe für Reihe aufgebaut",
     "story": "Sie greifen ins Haar, und es liegt lang und schwer in Ihrer Hand, bis weit über die Schultern. Dafür arbeitet Butterfly Weft in Reihen: Die flache Tresse wird an kleinen Ringen befestigt und liegt so darüber, dass ihr Haar die Befestigung abdeckt. Jede Reihe bringt Echthaar in Naturdunkelbraun, mit 30 cm Tressenbreite.",
     "benefits": [
@@ -2045,8 +2046,8 @@
     ],
     "manufacturer": "atelier",
     "extraImages": [
-      "/assets/products/428-studio-3.jpg",
-      "/assets/products/428-studio-4.jpg"
-    ]
+      "/assets/products/428-3.webp"
+    ],
+    "atelierImages": []
   }
 ]

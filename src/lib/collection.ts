@@ -2,7 +2,7 @@ import { CATEGORY_IDS } from "@/data/catalog";
 import type { CategoryId, Product } from "@/data/catalog";
 
 /** Extensions-Methoden (Reihenfolge wie auf der Extensions-Seite). */
-export const METHOD_IDS = ["butterfly", "genius", "invisible", "tape", "keratin", "clip"] as const;
+export const METHOD_IDS = ["clip", "thin", "genius", "butterfly", "invisible", "tape", "keratin"] as const;
 export type MethodId = (typeof METHOD_IDS)[number];
 
 export const COLOR_GROUP_IDS = ["blond", "braun", "kupfer", "schwarz", "grau", "andere"] as const;
@@ -18,6 +18,7 @@ export const LENGTH_BANDS = { kurz: { from: 0, to: 30 }, lang: { from: 46, to: I
 export function methodOf(product: Pick<Product, "category" | "name">): MethodId | null {
   if (product.category !== "extensions") return null;
   const n = product.name.toLowerCase();
+  if (n.includes("tressenband")) return "thin";
   if (n.includes("butterfly")) return "butterfly";
   if (n.includes("genius")) return "genius";
   if (n.includes("invisible")) return "invisible";

@@ -42,6 +42,7 @@
     "legacy-src",
     ".next",
     ".claude",
-    ".coordination"
+    ".coordination",
+    "scripts/produktfilme"
   ]
 }

@@ -20,6 +20,7 @@
     "toupet": "V-toupee {len} cm",
     "clipIn": "Clip-in extensions {len} cm",
     "genius": "Genius Weft {len} cm",
+    "thinWeft": "Extra-thin weft band {len} cm",
     "invisibleTape": "Invisible Tape {len} cm",
     "butterfly": "Butterfly Weft {len} cm"
   },
@@ -93,7 +94,7 @@
     "toupet": "Women's topper with a V-shaped base in human hair, in {color}. {len} cm long, weighing {grams} g. This piece exists only once.",
     "clipIn": "Clip-in extensions in human hair in {color}, {len} cm long. The set consists of three wefts with clips and weighs {grams} g in total.",
     "genius": "Genius Weft in human hair in {color}, {len} cm long. One pack contains {grams} g.",
-    "geniusCurly": "Genius Weft in human hair in {color}, {len} cm long, naturally curly. One pack contains {grams} g.",
+    "thinWeftCurly": "Extra-thin weft band in human hair in {color}, {len} cm long, naturally curly. One pack contains {grams} g.",
     "invisibleTape": "Invisible Tape extensions in human hair in {color}, {len} cm long. When professionally applied, the tapes blend discreetly into your own hair. One pack contains {grams} g.",
     "butterfly": "Butterfly Weft in human hair in {color}, {len} cm long. The weft is {width} cm wide per row. One pack contains {grams} g."
   },

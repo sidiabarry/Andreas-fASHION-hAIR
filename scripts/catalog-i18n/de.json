@@ -18,6 +18,7 @@
     "toupet": "V-Toupet {len} cm",
     "clipIn": "Clip-in-Extensions {len} cm",
     "genius": "Genius Weft {len} cm",
+    "thinWeft": "Extra dünnes Tressenband {len} cm",
     "invisibleTape": "Invisible Tape {len} cm",
     "butterfly": "Butterfly Weft {len} cm"
   },
@@ -91,7 +92,7 @@
     "toupet": "Damen-Topper mit V-förmiger Basis aus Echthaar, in {color}. {len} cm lang, Gewicht {grams} g. Dieses Stück gibt es nur einmal.",
     "clipIn": "Clip-in-Extensions aus Echthaar in {color}, {len} cm lang. Das Set besteht aus drei Tressen mit Clips und wiegt zusammen {grams} g.",
     "genius": "Genius Weft aus Echthaar in {color}, {len} cm lang. Eine Packung enthält {grams} g.",
-    "geniusCurly": "Genius Weft aus Echthaar in {color}, {len} cm lang, naturlockig. Eine Packung enthält {grams} g.",
+    "thinWeftCurly": "Extra dünnes Tressenband aus Echthaar in {color}, {len} cm lang, naturlockig. Eine Packung enthält {grams} g.",
     "invisibleTape": "Invisible-Tape-Extensions aus Echthaar in {color}, {len} cm lang. Die Tapes fügen sich bei fachgerechter Einarbeitung unauffällig ins eigene Haar ein. Eine Packung enthält {grams} g.",
     "butterfly": "Butterfly Weft aus Echthaar in {color}, {len} cm lang. Die Tressenbreite beträgt {width} cm je Reihe. Eine Packung enthält {grams} g."
   },
