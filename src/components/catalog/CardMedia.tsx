@@ -5,10 +5,10 @@ import type { ReactNode } from "react";
 
 import { useCatalogTools } from "./CatalogTools";
 
-/** Bildfläche der Produktkarte: Studio/Original (Modul 4) und Farbnähe-Plakette (Modul 3). */
-export function CardMedia({ slug, src, original, alt, priority, matchLabel, children }: { slug: string; src: string; original: string | null; alt: string; priority?: boolean; matchLabel: string; children?: ReactNode }) {
-  const { mode, match } = useCatalogTools();
-  const shown = mode === "original" && original ? original : src;
+/** Bildfläche der Produktkarte mit Farbnähe-Plakette (Modul 3). */
+export function CardMedia({ slug, src, alt, priority, matchLabel, children }: { slug: string; src: string; alt: string; priority?: boolean; matchLabel: string; children?: ReactNode }) {
+  const { match } = useCatalogTools();
+  const shown = src;
   const score = match?.[slug];
   return (
     <div className="af-card__media" data-tilt="">

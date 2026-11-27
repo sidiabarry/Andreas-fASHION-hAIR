@@ -10,7 +10,7 @@ const p = (id: number) => getProductById(id)!;
 
 test("Methode folgt dem Produktnamen, nur bei Extensions", () => {
   assert.equal(methodOf(p(424)), "genius");
-  assert.equal(methodOf(p(425)), "thin");
+  assert.equal(methodOf(p(425)), "genius");
   assert.equal(methodOf(p(426)), "thin");
   assert.equal(methodOf(p(427)), "invisible");
   assert.equal(methodOf(p(428)), "butterfly");
@@ -41,10 +41,10 @@ test("Filter kombinieren sich; unbekannte Parameter werden verworfen", () => {
   const none = { category: null, color: null, length: null, method: null };
   assert.equal(filterProducts(products, none).length, products.length);
   const genius = filterProducts(products, { ...none, category: "extensions", method: "genius" });
-  assert.deepEqual(genius.map((x) => x.id).sort(), [424]);
+  assert.deepEqual(genius.map((x) => x.id).sort(), [424, 425]);
   const thin = filterProducts(products, { ...none, category: "extensions", method: "thin" });
-  assert.deepEqual(thin.map((x) => x.id).sort(), [425, 426]);
-  assert.deepEqual(filterProducts(thin, { ...none, color: "blond" }).map((x) => x.id), [425]);
+  assert.deepEqual(thin.map((x) => x.id), [426]);
+  assert.deepEqual(filterProducts(genius, { ...none, color: "blond" }).map((x) => x.id), [425]);
   assert.equal(parseMethod("unsinn"), null);
   assert.equal(parseColorGroup(["blond"]), null);
 });

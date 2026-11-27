@@ -1227,9 +1227,9 @@
       "onRequest": "Auf Anfrage in jeder Farbe, Länge und Menge. Andréia nennt Ihnen einen festen Preis.",
       "requestCta": "Diese Technik anfragen",
       "otherColors": "Auch in anderen Farben auf Anfrage",
-      "symbol": "Symbolbild",
       "film": "Film",
-      "diagram": "Schema: So sitzt {name} am eigenen Haar"
+      "diagram": "Schema: So sitzt {name} am eigenen Haar",
+      "onRequestBadge": "Auf Anfrage"
     },
     "methods": {
       "clip": {
@@ -1429,7 +1429,7 @@
         }
       ]
     },
-    "note": "Produktbilder mit KI bearbeitet. Tape-In und Keratin-Bondings: Symbolbilder, mit KI erstellt. Filme: echte Aufnahmen aus dem Atelier.",
+    "note": "Produktbilder mit KI bearbeitet, Farben mit Rohfotos aus dem Atelier abgeglichen. Filme: echte Aufnahmen aus dem Atelier. Tape-In und Keratin-Bondings: auf Anfrage, als Skizze dargestellt.",
     "mega": {
       "title": "Extensions",
       "text": "Sieben Techniken aus Echthaar, handgefertigt von Andréia in Iserlohn. Finden Sie Ihre in drei Fragen.",

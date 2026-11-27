@@ -1227,9 +1227,9 @@
       "onRequest": "Bajo consulta en cualquier color, largo y cantidad. Andréia le indica un precio fijo.",
       "requestCta": "Consultar esta técnica",
       "otherColors": "También en otros colores bajo consulta",
-      "symbol": "Imagen ilustrativa",
       "film": "Vídeo",
-      "diagram": "Esquema: cómo se fija {name} en su propio cabello"
+      "diagram": "Esquema: cómo se fija {name} en su propio cabello",
+      "onRequestBadge": "Bajo consulta"
     },
     "methods": {
       "clip": {
@@ -1429,7 +1429,7 @@
         }
       ]
     },
-    "note": "Imágenes de producto editadas con IA. Tape-In y bondings de queratina: imágenes ilustrativas creadas con IA. Vídeos: grabaciones reales del atelier.",
+    "note": "Imágenes de producto editadas con IA, colores comparados con fotos sin editar del atelier. Vídeos: grabaciones reales del atelier. Tape-In y bondings de queratina: bajo consulta, mostrados como esquema.",
     "mega": {
       "title": "Extensiones",
       "text": "Siete técnicas en cabello natural, hechas a mano por Andréia en Iserlohn. Encuentre la suya en tres preguntas.",

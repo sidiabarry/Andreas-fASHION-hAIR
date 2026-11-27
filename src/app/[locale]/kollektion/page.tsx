@@ -146,7 +146,7 @@ export default async function CollectionPage({ params, searchParams }: PageProps
   });
   const compareItems: CompareItem[] = products.map((p) => {
     const text = productText(p, locale);
-    return { base: parseBaseCm(p.base), image: p.image, lengthCm: parseLengthCm(p.length), name: text.name, original: p.originals[0] ?? null, price: formatPrice(p.priceCents, locale), slug: p.slug, subtitle: text.subtitle };
+    return { base: parseBaseCm(p.base), image: p.image, lengthCm: parseLengthCm(p.length), name: text.name, price: formatPrice(p.priceCents, locale), slug: p.slug, subtitle: text.subtitle };
   });
 
   return (

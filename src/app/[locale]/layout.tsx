@@ -61,7 +61,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
         <NextIntlClientProvider>
           <ShopPreferences>
           <CartProvider checkoutOpen={mode.checkoutOpen} products={products.map((product) => toLite(product, locale))}>
-            <Header methods={methodShowcases(() => true).map((m) => ({ id: m.id, image: m.image, symbol: m.symbol }))} />
+            <Header methods={methodShowcases(() => true).map((m) => ({ id: m.id, image: m.image, onRequest: m.onRequest }))} />
             <div id="inhalt" tabIndex={-1}>
               {children}
             </div>

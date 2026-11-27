@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import { CartDrawer } from "@/components/cart/CartDrawer";
 import { useCart } from "@/components/cart/CartProvider";
 import { useLocalList, WISHLIST_KEY } from "@/components/cart/useLocalList";
+import { MethodDiagram } from "@/components/extensions/MethodDiagram";
 import { Logo } from "@/components/Logo";
 import { Link, usePathname } from "@/i18n/navigation";
 import type { MethodId } from "@/lib/collection";
@@ -16,7 +17,7 @@ import "../shop.css";
 import { LocaleSwitcher } from "./LocaleSwitcher";
 import { UnitToggle } from "./UnitToggle";
 
-export type NavMethod = { id: MethodId; image: string; symbol: boolean };
+export type NavMethod = { id: MethodId; image: string | null; onRequest: boolean };
 
 export function Header({ methods = [] }: { methods?: NavMethod[] }) {
   const t = useTranslations();
@@ -134,8 +135,9 @@ export function Header({ methods = [] }: { methods?: NavMethod[] }) {
                       {methods.map((m) => (
                         <li key={m.id}>
                           <Link className="af-mega__tile" href={{ hash: `technik-${m.id}`, pathname: "/extensions" }}>
-                            <span className="af-mega__img">
-                              <Image alt="" height={240} sizes="140px" src={m.image} width={180} />
+                            <span className="af-mega__img" data-diagram={m.image ? undefined : ""}>
+                              {m.image ? <Image alt="" height={240} sizes="140px" src={m.image} width={180} /> : <MethodDiagram id={m.id} title="" />}
+                              {m.onRequest ? <i className="af-mega__badge">{t("ext.labels.onRequestBadge")}</i> : null}
                             </span>
                             <b>{t(`ext.methods.${m.id}.name`)}</b>
                             <span className="af-mega__tag">{t(`ext.methods.${m.id}.tagline`)}</span>

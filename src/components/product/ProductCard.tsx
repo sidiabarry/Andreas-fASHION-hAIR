@@ -19,7 +19,6 @@ export async function ProductCard({ product, locale, sold, priority }: { product
       <CardMedia
         alt={t(imageKindOf(product) === "staged" ? "imageAltStaged" : "imageAlt", { name: text.name, subtitle: text.subtitle })}
         matchLabel={tc.raw("matchBadge") as string}
-        original={product.originals[0] ?? null}
         priority={priority}
         slug={product.slug}
         src={product.image}

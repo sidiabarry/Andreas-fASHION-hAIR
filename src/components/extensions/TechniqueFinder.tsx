@@ -6,7 +6,9 @@ import { useId, useRef, useState } from "react";
 import type { MethodId } from "@/lib/collection";
 import { rankMethods, type FinderAnswer } from "@/lib/finder";
 
-export type FinderMethod = { id: MethodId; name: string; tagline: string; best: string; image: string; packsHref: string | null; symbol: boolean };
+import { MethodDiagram } from "./MethodDiagram";
+
+export type FinderMethod = { id: MethodId; name: string; tagline: string; best: string; image: string | null; packsHref: string | null; onRequest: boolean };
 
 type Labels = {
   step: string;
@@ -22,7 +24,7 @@ type Labels = {
   confirm: string;
   selfNote: string;
   bestLabel: string;
-  symbol: string;
+  onRequest: string;
 };
 
 const KEYS = ["who", "hair", "goal"] as const;
@@ -55,9 +57,9 @@ export function TechniqueFinder({ labels, methods, inShop, confirmHref, confirmE
               if (!m) return null;
               return (
                 <li className="xf__pick" data-first={i === 0 || undefined} key={methodId}>
-                  <div className="xf__img">
-                    <Image alt="" height={400} sizes="(max-width: 760px) 40vw, 220px" src={m.image} width={300} />
-                    {m.symbol ? <span className="xf__symbol">{labels.symbol}</span> : null}
+                  <div className="xf__img" data-diagram={m.image ? undefined : ""}>
+                    {m.image ? <Image alt="" height={400} sizes="(max-width: 760px) 40vw, 220px" src={m.image} width={300} /> : <MethodDiagram id={m.id} title="" />}
+                    {m.onRequest ? <span className="xf__symbol">{labels.onRequest}</span> : null}
                   </div>
                   <div className="xf__body">
                     <p className="xf__badge">{i === 0 ? labels.best : labels.also}</p>

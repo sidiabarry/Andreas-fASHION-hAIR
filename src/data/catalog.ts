@@ -65,6 +65,8 @@ export type Product = ProductCopy & {
   extraImages?: string[];
   /** Echte, unretuschierte Aufnahmen aus dem Atelier (nur Licht und Weißabgleich angepasst), stehen hinter den Studiobildern. */
   atelierImages?: string[];
+  /** Echte Haarfarbe, gemessen in Rohfotos (Weißabgleich über das weiße Laken), dunkel → hell. Farbfeld auf der Produktseite. */
+  swatch?: string[] | null;
   /** Film aus dem Atelier (geschnitten, ohne Ton), steht in der Galerie direkt hinter dem Hauptbild. */
   video?: { src: string; poster: string } | null;
   /** Aus dem Shop genommen (Daten bleiben erhalten). Auftraggeber 21.11.2026: Walker-Tape-Produkte. */

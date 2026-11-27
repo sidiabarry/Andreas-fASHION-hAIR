@@ -1227,9 +1227,9 @@
       "onRequest": "Sur demande dans toutes les couleurs, longueurs et quantités. Andréia vous indique un prix fixe.",
       "requestCta": "Demander cette technique",
       "otherColors": "Aussi dans d'autres couleurs sur demande",
-      "symbol": "Image d'illustration",
       "film": "Film",
-      "diagram": "Schéma : comment {name} se fixe sur vos propres cheveux"
+      "diagram": "Schéma : comment {name} se fixe sur vos propres cheveux",
+      "onRequestBadge": "Sur demande"
     },
     "methods": {
       "clip": {
@@ -1429,7 +1429,7 @@
         }
       ]
     },
-    "note": "Photos des produits retouchées par IA. Tape-In et bondings à la kératine : images d'illustration créées par IA. Films : vraies prises de vue de l'atelier.",
+    "note": "Photos des produits retouchées par IA, couleurs comparées aux photos brutes de l'atelier. Films : vraies prises de vue de l'atelier. Tape-In et bondings à la kératine : sur demande, représentés par un schéma.",
     "mega": {
       "title": "Extensions",
       "text": "Sept techniques en cheveux naturels, faites main par Andréia à Iserlohn. Trouvez la vôtre en trois questions.",

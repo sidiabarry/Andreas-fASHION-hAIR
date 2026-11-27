@@ -1632,7 +1632,12 @@
     "video": {
       "src": "/assets/video/422-film.mp4",
       "poster": "/assets/video/422-film-poster.jpg"
-    }
+    },
+    "swatch": [
+      "#705732",
+      "#97815e",
+      "#b6a689"
+    ]
   },
   {
     "id": 423,
@@ -1698,6 +1703,11 @@
     "atelierImages": [
       "/assets/products/423-atelier-1.jpg",
       "/assets/products/423-atelier-2.jpg"
+    ],
+    "swatch": [
+      "#1b120d",
+      "#251b17",
+      "#312a28"
     ]
   },
   {
@@ -1762,12 +1772,17 @@
     ],
     "manufacturer": "atelier",
     "extraImages": [],
-    "atelierImages": []
+    "atelierImages": [],
+    "swatch": [
+      "#190f0d",
+      "#271f1d",
+      "#3f3938"
+    ]
   },
   {
     "id": 425,
-    "slug": "extra-duennes-tressenband-55-cm-goldblond-ombre-425",
-    "name": "Extra dünnes Tressenband 55 cm",
+    "slug": "genius-weft-55-cm-blond-ombre-425",
+    "name": "Genius Weft 55 cm",
     "subtitle": "Goldblond Ombré",
     "category": "extensions",
     "priceCents": 13500,
@@ -1776,7 +1791,7 @@
     "base": "",
     "color": "Goldblond Ombré",
     "texture": "",
-    "description": "Extra dünnes Tressenband aus Echthaar in Goldblond Ombré, 55 cm lang. Eine Packung enthält 50 g.",
+    "description": "Genius Weft aus Echthaar in Goldblond Ombré, 55 cm lang. Eine Packung enthält 50 g.",
     "specs": [
       "100 % Echthaar aus Vietnam, besonders fein",
       "Echthaar",
@@ -1797,38 +1812,31 @@
     "weightGrams": 50,
     "imageKind": "staged",
     "secondImage": "/assets/products/425-2.webp",
-    "headline": "Goldblond, das ins Licht fließt – auf einem Band, so dünn, dass es sich an Ihren Kopf schmiegt",
-    "story": "Sie stehen am Fenster, drehen den Kopf, und das Licht wandert durch Ihr Haar: vom warmen Braun am Ansatz in ein Goldblond, das zu den Spitzen hin immer heller wird. 55 cm Echthaar, getragen von einem extra dünnen Tressenband. Es ist so flach und biegsam, dass es der Rundung Ihres Hinterkopfs folgt, statt aufzutragen, und Ihr eigenes Haar fällt einfach darüber.",
+    "headline": "Langes Goldblond mit Tiefe – gemacht zum Offentragen",
+    "story": "Sie stehen am Fenster, drehen den Kopf, und das Licht wandert durch Ihr Haar, von einem Blond ins nächste. So wirkt ein Ombré: Die Farbe verläuft über die Länge, statt an einer Stelle zu wechseln. Dieses Genius Weft trägt Goldblond im Verlauf auf einer besonders flachen Naht, die dicht am Kopf liegt, damit Sie das Haar offen tragen können.",
     "benefits": [
-      "Extra dünnes, biegsames Band → Es folgt der Rundung Ihres Kopfes und trägt kaum auf, auch wenn Sie das Haar offen tragen.",
-      "Goldblond Ombré mit dunklerem Ansatz → Der Übergang zu Ihrem eigenen Ansatz wirkt weich, und Ihr Blond darf natürlich nachwachsen.",
-      "Viel Haar auf einer einzigen Linie → Die Fülle sitzt in einer Reihe statt in vielen einzelnen Strähnen. Das Gewicht verteilt sich über die ganze Breite des Bandes.",
-      "Befestigt mit Ringen oder Faden → Keine Wärme und kein Kleber an Ihrem eigenen Haar.",
-      "Beim Nachsetzen wiederverwendbar → Wächst Ihr Haar nach, löst Ihre Friseurin das Band und setzt dasselbe Haar wieder höher."
+      "Goldblond Ombré → Ihr Haar wirkt nicht wie ein einziger Ton, sondern wie viele, die ineinander übergehen.",
+      "Genius Weft hat eine flache Naht ohne Rückhaar → Die Reihe liegt dicht am Kopf und trägt wenig auf, auch wenn Sie das Haar offen tragen.",
+      "Genius Weft lässt sich an jeder Stelle zuschneiden → Die Tresse wird an Ihre Kopfform angepasst, nicht umgekehrt."
     ],
-    "howItWorks": "Ein Tressenband ist eine Bahn, an deren Oberkante das Haar dicht an dicht eingearbeitet ist. Bei diesem Band ist die Kante extra dünn und biegsam. Eine Friseurin oder Extension-Fachfrau setzt am Hinterkopf eine Reihe kleiner Ringe in eine waagerechte Linie Ihres eigenen Haares und befestigt das Band daran, meist durch Einnähen. Ihr eigenes Haar fällt von oben darüber. Wächst es nach, wird das Band gelöst und wieder höher gesetzt; wann, bestimmt Ihre Friseurin.",
-    "goodFor": "Für blondes Haar, das länger oder voller werden soll, und für alle, die einen weichen Verlauf von dunklerem Ansatz zu goldenen Längen mögen. Weil das Band so dünn ist, wird diese Art Tresse gern bei feinem bis mittlerem Haar gewählt.",
+    "howItWorks": "Genius Weft wird von einer Friseurin oder Extension-Fachfrau an einer Reihe kleiner Ringe im eigenen Haar befestigt, meist durch Einnähen. Die flache Naht lässt die Reihe dicht am Kopf liegen. Mit dem Nachwachsen Ihres Haares wird die Tresse nachgesetzt; den Zeitpunkt bestimmt Ihre Friseurin.",
+    "goodFor": "Für blondes Haar, das mehr Länge oder Fülle bekommen soll, und für alle, die einen weichen Farbverlauf mögen. Wegen der flachen Naht wird Genius Weft oft für feines bis mittleres Haar gewählt.",
     "care": [
-      "Shampoo an Ansatz und Kopfhaut geben, Spülung und Kur nur in die Längen, nicht an das Band.",
-      "Von den Spitzen her bürsten und die Reihe dabei mit der Hand stützen.",
-      "Die Reihe nach dem Waschen vollständig trocknen lassen, bevor Sie schlafen gehen."
+      "Shampoo an Ansatz und Kopfhaut, Spülung und Kur nur in die Längen, nicht an die Naht.",
+      "Die Reihe nach dem Waschen vollständig trocknen, bevor Sie schlafen gehen."
     ],
     "faq": [
-      {
-        "q": "Was ist der Unterschied zu Genius Weft?",
-        "a": "Beide sind Tressen, die an einer Ringreihe in Ihrem eigenen Haar befestigt werden. Dieses Band ist extra dünn und biegsam gearbeitet und legt sich deshalb besonders eng an die Kopfform. Welche Tresse zu Ihrem Haar passt, bespricht Andréia gern mit Ihnen."
-      },
       {
         "q": "Passt das zu meinem Blond?",
         "a": "Schicken Sie Andréia ein Foto Ihres Haares bei Tageslicht, ohne Blitz, gern mit Ansatz und Spitzen. Sie sagt Ihnen ehrlich, ob das Ombré zu Ihnen passt."
       },
       {
-        "q": "Sieht man das Band?",
-        "a": "Das Band ist extra dünn und liegt dicht am Kopf, darüber fällt Ihr eigenes Haar. Ihre Friseurin plant die Reihe gemeinsam mit Ihnen."
+        "q": "Sieht man die Tresse?",
+        "a": "Die Naht ist sehr flach und liegt dicht am Kopf, darüber fällt Ihr eigenes Haar. Ihre Friseurin plant die Reihe gemeinsam mit Ihnen."
       },
       {
         "q": "Hält das?",
-        "a": "Der Halt kommt aus der Einarbeitung an einer Reihe kleiner Ringe in Ihrem eigenen Haar. Ein Tressenband ist eine feste Methode für den Alltag. Wächst Ihr Haar nach, setzt Ihre Friseurin die Reihe nach."
+        "a": "Der Halt kommt aus der Einarbeitung an einer Reihe kleiner Ringe in Ihrem eigenen Haar. Genius Weft ist eine feste Methode für den Alltag. Wächst Ihr Haar nach, setzt Ihre Friseurin die Reihe nach."
       }
     ],
     "manufacturer": "atelier",
@@ -1836,6 +1844,11 @@
     "atelierImages": [
       "/assets/products/425-atelier-1.jpg",
       "/assets/products/425-atelier-2.jpg"
+    ],
+    "swatch": [
+      "#3a2717",
+      "#987139",
+      "#cda868"
     ]
   },
   {
@@ -1916,7 +1929,12 @@
     "video": {
       "src": "/assets/video/426-film.mp4",
       "poster": "/assets/video/426-film-poster.jpg"
-    }
+    },
+    "swatch": [
+      "#3f271c",
+      "#674532",
+      "#a17a5f"
+    ]
   },
   {
     "id": 427,
@@ -1982,7 +2000,12 @@
     "extraImages": [
       "/assets/products/427-3.webp"
     ],
-    "atelierImages": []
+    "atelierImages": [],
+    "swatch": [
+      "#4a4337",
+      "#a99264",
+      "#c8b386"
+    ]
   },
   {
     "id": 428,
@@ -2048,6 +2071,11 @@
     "extraImages": [
       "/assets/products/428-3.webp"
     ],
-    "atelierImages": []
+    "atelierImages": [],
+    "swatch": [
+      "#1d1818",
+      "#312e2f",
+      "#464344"
+    ]
   }
 ]

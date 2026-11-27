@@ -214,3 +214,13 @@
   .xf__pick { grid-template-columns: 88px 1fr; gap: 14px; }
   .xe-strands { gap: 10px; padding-inline: 2%; }
 }
+
+/* ---------- Auf Anfrage (Techniken ohne Packung im Shop: Skizze statt Foto) ---------- */
+.xe-badge { display: inline-flex; align-items: center; margin-left: 12px; padding: 4px 10px; border: 1px solid var(--af-gold); border-radius: 999px; font-family: var(--af-mono); font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--af-gold); vertical-align: 1px; }
+.xe-ch__main[data-diagram] { display: grid; place-items: center; padding: 12%; background: linear-gradient(160deg, var(--af-raise), color-mix(in srgb, var(--af-cream) 70%, var(--af-raise))); }
+.xe-ch__main[data-diagram] .xd { width: 100%; }
+.xe-ch__symbol--req { border: 1px solid var(--af-gold); color: var(--af-gold); }
+.xe-nav__img[data-diagram], .xe-table__img[data-diagram], .xf__img[data-diagram] { display: grid; place-items: center; padding: 3px; background: var(--af-raise); }
+.xe-table__req { display: block; margin-top: 1px; font-family: var(--af-mono); font-size: 0.56rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--af-gold); }
+.xe-nav__req { margin-left: 8px; font-family: var(--af-mono); font-size: 0.56rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--af-gold); }
+.xf__img[data-diagram] { padding: 10px; }

@@ -30,9 +30,14 @@ export async function ColorRow({ product, text, locale, isExtension }: { product
   return (
     <div className="pdp-color">
       <div className="pdp-color__row">
-        <span aria-hidden="true" className="pdp-color__swatch">
-          <Image alt="" height={96} sizes="48px" src={product.image} width={72} />
-        </span>
+        {product.swatch?.length ? (
+          // Gemessene Echtfarbe aus den Rohfotos (dunkel → hell), bei Ombré als Verlauf
+          <span aria-hidden="true" className="pdp-color__swatch" style={{ background: `linear-gradient(160deg, ${product.swatch.join(", ")})` }} />
+        ) : (
+          <span aria-hidden="true" className="pdp-color__swatch">
+            <Image alt="" height={96} sizes="48px" src={product.image} width={72} />
+          </span>
+        )}
         <p className="pdp-color__name">
           <span>{t("colorLabel")}</span>
           <b>{color}</b>

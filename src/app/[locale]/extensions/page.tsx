@@ -66,7 +66,7 @@ export default async function ExtensionsPage({ params }: PageProps<"/[locale]/ex
   // Hero: Film der Locken (echte Aufnahme) und zwei Detailkacheln
   const heroFilm = showcases.find((s) => s.film)?.film ?? null;
   const heroTiles = [showcases.find((s) => s.id === "butterfly"), showcases.find((s) => s.id === "invisible")].filter(
-    (s): s is (typeof showcases)[number] => Boolean(s && !s.symbol),
+    (s): s is (typeof showcases)[number] & { image: string } => Boolean(s && s.image),
   );
 
   const finderMethods: FinderMethod[] = showcases.map((s) => ({
@@ -75,7 +75,7 @@ export default async function ExtensionsPage({ params }: PageProps<"/[locale]/ex
     image: s.image,
     name: m(s.id, "name"),
     packsHref: s.products.length ? packsHref(s.id) : null,
-    symbol: s.symbol,
+    onRequest: s.onRequest,
     tagline: m(s.id, "tagline"),
   }));
 
@@ -197,12 +197,13 @@ export default async function ExtensionsPage({ params }: PageProps<"/[locale]/ex
               {showcases.map((s, i) => (
                 <li key={s.id}>
                   <a className="xe-nav__item" href={`#technik-${s.id}`}>
-                    <span className="xe-nav__img">
-                      <Image alt="" height={120} sizes="56px" src={s.image} width={90} />
+                    <span aria-hidden="true" className="xe-nav__img" data-diagram={s.image ? undefined : ""}>
+                      {s.image ? <Image alt="" height={120} sizes="56px" src={s.image} width={90} /> : <MethodDiagram id={s.id} title="" />}
                     </span>
                     <span className="xe-nav__txt">
                       <i>{String(i + 1).padStart(2, "0")}</i>
                       {m(s.id, "name")}
+                      {s.onRequest ? <small className="xe-nav__req">{t("ext.labels.onRequestBadge")}</small> : null}
                     </span>
                   </a>
                 </li>
@@ -255,7 +256,7 @@ export default async function ExtensionsPage({ params }: PageProps<"/[locale]/ex
               resultTitle: t("ext.finder.resultTitle"),
               selfNote: t("ext.finder.selfNote"),
               step: t.raw("ext.finder.step") as string,
-              symbol: t("ext.labels.symbol"),
+              onRequest: t("ext.labels.onRequestBadge"),
               toPacks: t("ext.finder.toPacks"),
               toTechnique: t("ext.finder.toTechnique"),
             }}
@@ -273,10 +274,10 @@ export default async function ExtensionsPage({ params }: PageProps<"/[locale]/ex
             <section aria-labelledby={`technik-${s.id}-title`} className="xe-ch" data-flip={i % 2 ? "" : undefined} id={`technik-${s.id}`} key={s.id}>
               <div className="af-wrap xe-ch__grid">
                 <div className="xe-ch__media">
-                  <figure className="xe-ch__main">
-                    <Image alt={s.symbol ? `${name} (${t("ext.labels.symbol")})` : name} fill sizes="(max-width: 900px) 92vw, 46vw" src={s.image} />
+                  <figure className="xe-ch__main" data-diagram={s.image ? undefined : ""}>
+                    {s.image ? <Image alt={name} fill sizes="(max-width: 900px) 92vw, 46vw" src={s.image} /> : <MethodDiagram id={s.id} title={t("ext.labels.diagram", { name })} />}
                     {s.film ? <AmbientVideo className="xe-ch__film" desktop={s.film.src} mobile={s.film.src} /> : null}
-                    {s.symbol ? <figcaption className="xe-ch__symbol">{t("ext.labels.symbol")}</figcaption> : null}
+                    {s.onRequest ? <figcaption className="xe-ch__symbol xe-ch__symbol--req">{t("ext.labels.onRequestBadge")}</figcaption> : null}
                     {s.film ? <figcaption className="xe-ch__symbol">{t("ext.labels.film")}</figcaption> : null}
                   </figure>
                   {s.detail ? (
@@ -284,13 +285,18 @@ export default async function ExtensionsPage({ params }: PageProps<"/[locale]/ex
                       <Image alt="" fill sizes="220px" src={s.detail} />
                     </figure>
                   ) : null}
-                  <figure className="xe-ch__diagram">
-                    <MethodDiagram id={s.id} title={t("ext.labels.diagram", { name })} />
-                  </figure>
+                  {s.image ? (
+                    <figure className="xe-ch__diagram">
+                      <MethodDiagram id={s.id} title={t("ext.labels.diagram", { name })} />
+                    </figure>
+                  ) : null}
                 </div>
 
                 <div className="xe-ch__copy">
-                  <p className="xe-ch__count">{t("ext.labels.count", { n: i + 1 })}</p>
+                  <p className="xe-ch__count">
+                    {t("ext.labels.count", { n: i + 1 })}
+                    {s.onRequest ? <span className="xe-badge">{t("ext.labels.onRequestBadge")}</span> : null}
+                  </p>
                   <h2 className="xe-ch__name" id={`technik-${s.id}-title`}>
                     {name}
                   </h2>
@@ -375,10 +381,11 @@ export default async function ExtensionsPage({ params }: PageProps<"/[locale]/ex
                   {showcases.map((s) => (
                     <th key={s.id} scope="col">
                       <a href={`#technik-${s.id}`}>
-                        <span className="xe-table__img">
-                          <Image alt="" height={96} sizes="48px" src={s.image} width={72} />
+                        <span className="xe-table__img" data-diagram={s.image ? undefined : ""}>
+                          {s.image ? <Image alt="" height={96} sizes="48px" src={s.image} width={72} /> : <MethodDiagram id={s.id} title="" />}
                         </span>
                         {m(s.id, "name")}
+                        {s.onRequest ? <small className="xe-table__req">{t("ext.labels.onRequestBadge")}</small> : null}
                       </a>
                     </th>
                   ))}

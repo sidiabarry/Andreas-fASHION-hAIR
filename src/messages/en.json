@@ -1227,9 +1227,9 @@
       "onRequest": "On request in any colour, length and quantity. Andréia will give you a fixed price.",
       "requestCta": "Ask about this technique",
       "otherColors": "Also in other colours on request",
-      "symbol": "Illustrative image",
       "film": "Film",
-      "diagram": "Diagram: how {name} sits on your own hair"
+      "diagram": "Diagram: how {name} sits on your own hair",
+      "onRequestBadge": "On request"
     },
     "methods": {
       "clip": {
@@ -1429,7 +1429,7 @@
         }
       ]
     },
-    "note": "Product images edited with AI. Tape-in and keratin bonds: illustrative images created with AI. Films: real footage from the atelier.",
+    "note": "Product images edited with AI, colours matched against raw photos from the atelier. Films: real footage from the atelier. Tape-in and keratin bonds: on request, shown as a diagram.",
     "mega": {
       "title": "Extensions",
       "text": "Seven techniques in human hair, handmade by Andréia in Iserlohn. Find yours in three questions.",

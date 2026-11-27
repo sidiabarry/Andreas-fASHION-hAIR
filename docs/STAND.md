@@ -7,9 +7,11 @@ Arbeitsnotizen der Agenten: `docs/arbeitsnotizen/`.
 
 - **Neue Produktbilder 422–428** von der Inhaberin (fertig bearbeitet, unverändert übernommen, `public/assets/products/<id>-<n>.webp`) sind die Hauptbilder. Alte KI-Studiobilder und Rohfotos entfernt. Ergänzt um ausgewählte, nur in Licht/Weißabgleich entwickelte Atelierfotos (`<id>-atelier-<n>.jpg`, `scripts/produktbilder/entwickeln.py`).
 - **Filme:** 422 V-Toupet (24,9 s) und 426 Locken (12,3 s), stabilisiert, in Remotion geschnitten, nahtlose Schleife (`scripts/produktfilme/`). In der Galerie als zweites Element, mit Pause-Knopf.
-- **Produkt 425 und 426 sind „Extra dünnes Tressenband“** (Auftraggeber), neue Methode `thin` in Filter, Finder, Vergleich. Genius Weft = nur 424.
+- **Produkt 426 (braune Ombré-Locken) ist „Extra dünnes Tressenband“** (Auftraggeber), neue Methode `thin` in Filter, Finder, Vergleich. 424 und 425 bleiben Genius Weft.
+- **Farbtreue:** Haarfarbe aus den Rohfotos gemessen (Weißabgleich über das Laken, Lab je Helligkeitsstufe), Bilder 422, 425, 426, 427, 428 im Farbton angeglichen (ΔE vorher 3,4–5,2; Helligkeit unverändert; Puppe, Karten, Clips per Strukturmaske geschützt). 423 und 424 lagen schon unter ΔE 2. Gemessene Echtfarbe als Farbfeld (`swatch`) auf der Produktseite. Werkzeug: `scripts/produktbilder/farbtreue.py`.
+- **Studio/Original-Schalter** in der Kollektion entfernt.
 - **Produktseite:** wischbare Galerie mit Beschriftung je Bild (KI-bearbeitet / Atelierfoto / Film), Farbzeile mit echter Strähne + Hinweis zu Bildschirmabweichungen, bei Extensions „Auch in anderen Farben auf Anfrage“, drei sichtbare Vorteile, Sicherheiten am Kaufknopf, „Die Technik dahinter“, Wunschfarben-Streifen. Rohfotos nur noch, wo es keine bearbeiteten Bilder gibt.
-- **Extensions-Seite neu:** Hero mit Atelierfilm, Technik-Leiste (läuft mit), Technik-Finder (3 Fragen), sieben Technik-Kapitel mit Bild, Nahaufnahme, Querschnitt-Skizze, Fakten, Vorteilen, „Gut zu wissen“ und Packungen, Vergleichstabelle, Farbe auf Anfrage, Shop, FAQ (mit FAQPage-JSON-LD). Tape-In und Keratin: KI-Symbolbilder, gekennzeichnet.
+- **Extensions-Seite neu:** Hero mit Atelierfilm, Technik-Leiste (läuft mit), Technik-Finder (3 Fragen), sieben Technik-Kapitel mit Bild, Nahaufnahme, Querschnitt-Skizze, Fakten, Vorteilen, „Gut zu wissen“ und Packungen, Vergleichstabelle, Farbe auf Anfrage, Shop, FAQ (mit FAQPage-JSON-LD). Tape-In und Keratin: keine Packung, „Auf Anfrage“, dargestellt als Skizze (keine KI-Bilder).
 - **Kopfzeile:** „Extensions“ klappt ein Menü mit Bildern aller sieben Techniken auf (Maus und Tastatur, Escape schließt).
 - Offen: Rohfotos dunkler Tresse am Bügel (WA0015/17/18) und lockiges Clip-in-Set (WA0034–38) keinem Katalogprodukt sicher zuzuordnen; nicht verwendet.
 

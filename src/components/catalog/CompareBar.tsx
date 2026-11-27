@@ -8,9 +8,8 @@ import { useLocalList, WISHLIST_KEY } from "@/components/cart/useLocalList";
 import { useShopPrefs } from "@/components/site/ShopPreferences";
 import { Link } from "@/i18n/navigation";
 
-import { useCatalogTools } from "./CatalogTools";
 
-export type CompareItem = { slug: string; name: string; subtitle: string; image: string; original: string | null; price: string; lengthCm: number | null; base: { width: number; height: number } | null };
+export type CompareItem = { slug: string; name: string; subtitle: string; image: string; price: string; lengthCm: number | null; base: { width: number; height: number } | null };
 
 /** Modul 7: „Mein Spiegel“. Ab zwei Merklisten-Stücken: ruhige Leiste unten, Vergleich zeilengleich im Dialog. */
 export function CompareBar({ items }: { items: CompareItem[] }) {
@@ -18,7 +17,6 @@ export function CompareBar({ items }: { items: CompareItem[] }) {
   const c = useTranslations("common");
   const list = useLocalList(WISHLIST_KEY);
   const prefs = useShopPrefs();
-  const { mode } = useCatalogTools();
   const dialog = useRef<HTMLDialogElement>(null);
   const saved = list.items.map((slug) => items.find((i) => i.slug === slug)).filter((i): i is CompareItem => Boolean(i));
   const [pick, setPick] = useState<[number, number]>([0, 1]);
@@ -60,7 +58,7 @@ export function CompareBar({ items }: { items: CompareItem[] }) {
             {[a, b].map((item, slot) => (
               <div className="af-compare2__col" key={slot}>
                 {select(slot as 0 | 1)}
-                <Image alt={`${item.name}, ${item.subtitle}`} height={400} sizes="(max-width: 700px) 44vw, 240px" src={mode === "original" && item.original ? item.original : item.image} width={300} />
+                <Image alt={`${item.name}, ${item.subtitle}`} height={400} sizes="(max-width: 700px) 44vw, 240px" src={item.image} width={300} />
                 <dl>
                   {rows.map((row) => (
                     <div key={row.key}>
