@@ -7,7 +7,7 @@ import { methodOf } from "@/lib/collection";
 
 const TEXTURES: Record<string, "glatt" | "leichtGewellt" | "lockig"> = { glatt: "glatt", "leicht gewellt": "leichtGewellt", lockig: "lockig" };
 
-/** Eigenschaften auf einen Blick: Methode, Länge, Gewicht, Farbe, Struktur, Basis. Nur, was der Katalog wirklich kennt. */
+/** Eigenschaften auf einen Blick: Methode, Länge, Gewicht, Struktur, Basis. Nur, was der Katalog wirklich kennt. */
 export async function SpecChips({ product, locale }: { product: Product; locale: Locale }) {
   const t = await getTranslations({ locale, namespace: "product.spec" });
   const te = await getTranslations({ locale, namespace: "extensions" });
@@ -27,7 +27,7 @@ export async function SpecChips({ product, locale }: { product: Product; locale:
           },
         ]
       : []),
-    ...(product.color ? [{ key: "color", label: t("color"), value: product.color }] : []),
+    // Farbe steht als eigene Zeile mit Farbfeld darunter (ColorRow); bei Pflegeprodukten gibt es keine
     ...(texture ? [{ key: "texture", label: t("texture"), value: t(`textures.${texture}`) }] : []),
     ...(product.base ? [{ key: "base", label: t("base"), value: t("baseValue", { base: product.base }) }] : []),
   ];

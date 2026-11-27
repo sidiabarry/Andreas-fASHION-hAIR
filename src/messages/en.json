@@ -97,10 +97,11 @@
     "ext": {
       "kicker": "Extensions",
       "title": "More length. *More fullness.*",
-      "lead": "Human hair in six methods, from clip-ins you put in yourself to fine wefts. You can order the packs shown here directly. Andréia will tell you in person which method and how much hair suit you.",
-      "methodsLabel": "Six methods",
+      "lead": "Human hair in seven methods, from clip-ins you put in yourself to the extra-thin weft band. You can order the packs shown here directly. Andréia will tell you in person which method and how much hair suit you.",
+      "methodsLabel": "Seven methods",
       "methods": [
         "Clip-in",
+        "Extra-thin weft band",
         "Genius Weft",
         "Butterfly Weft",
         "Invisible Tape",
@@ -396,7 +397,17 @@
     "compareTitleStaged": "Edited image and original photo",
     "compareLabelStaged": "Move the comparison: edited image on the left, unedited original photo on the right",
     "manufacturer": "Made by {name}, {address}, {email}",
-    "handmade": "Handmade by Andréia in {city}"
+    "handmade": "Handmade by Andréia in {city}",
+    "captionAtelier": "Real photo from the atelier, only light and white balance adjusted.",
+    "captionFilm": "Film from the atelier: real footage, shortened and without sound.",
+    "atelierAlt": "{name}, {subtitle}: real photo from the atelier, image {index}",
+    "filmAlt": "{name}, {subtitle}: film from the atelier",
+    "colorLabel": "Colour",
+    "colorNote": "Due to different screen settings, the colour may vary slightly.",
+    "colorMatch": "Not sure? Andréia will match your shade in advance using a photo of your hair.",
+    "otherColors": "Also available in other colours, on request.",
+    "otherColorsCta": "Request your colour",
+    "otherColorsTopic": "{name}, in another colour"
   },
   "price": {
     "smallBusiness": "No VAT is charged in accordance with § 19 of the German VAT Act (small business).",
@@ -941,7 +952,9 @@
     "packWhatsapp": "Ask on WhatsApp",
     "packAsk": "Or send an enquiry",
     "productsTitle": "Extensions in the shop",
-    "allPacks": "All extensions in the collection"
+    "allPacks": "All extensions in the collection",
+    "thin": "Extra-thin weft band",
+    "thinText": "Lots of hair on an extra-thin, pliable band that hugs the shape of the head."
   },
   "custom": {
     "metaTitle": "Request made-to-measure",
@@ -1002,7 +1015,8 @@
       "invisible": "Invisible Tape",
       "tape": "Tape-in",
       "keratin": "Keratin bonds",
-      "clip": "Clip-in"
+      "clip": "Clip-in",
+      "thin": "Extra-thin weft band"
     },
     "structures": {
       "glatt": "Straight",
@@ -1086,9 +1100,23 @@
     "share": "Share with someone you trust",
     "shareCopied": "Link copied",
     "shareText": "Have a look at this piece from Andréia’s Fashion Hair: {name}",
-    "atelierShow": "Photos from the atelier ({count})",
-    "atelierHide": "Show studio photos only",
-    "trustFold": "Shipping, returns and payment"
+    "trustFold": "Shipping, returns and payment",
+    "prev": "Previous image",
+    "next": "Next image",
+    "play": "Play film",
+    "pause": "Pause film",
+    "film": "Film",
+    "benefitsTitle": "What it means for you",
+    "assureTitle": "Order with confidence",
+    "assurePay": "Pay when you like: straight away by QR code or after Andréia's confirmation",
+    "assureReturn": "<link>14-day right of withdrawal</link> from receipt of the goods",
+    "assureShip": "Delivery in {from} to {to} working days from Iserlohn",
+    "techKicker": "The technique behind it",
+    "techLink": "Compare all seven techniques",
+    "colorsTitle": "Your colour isn't here?",
+    "colorsText": "Every one of our extensions is also available in other colours, lengths and quantities on request. Send Andréia a photo of your hair in daylight: she'll put together your shade and give you a fixed price.",
+    "colorsWhatsapp": "Send a photo via WhatsApp",
+    "colorsAsk": "Request your colour"
   },
   "cat": {
     "toolsLabel": "Adjust the view",
@@ -1131,6 +1159,283 @@
       "peruecken": "Full head & front lace",
       "pony": "Forehead & front hairline",
       "maenner": "Micro-skin crown area"
+    }
+  },
+  "ext": {
+    "metaTitle": "Human hair extensions: seven techniques, any colour",
+    "metaDescription": "Human hair extensions, handmade by Andréia in Iserlohn: clip-in, extra-thin weft band, Genius Weft, Butterfly Weft, Invisible Tape, tape-in and keratin bonds. Find your technique in three questions, any colour on request.",
+    "hero": {
+      "kicker": "Extensions · human hair · handmade in Iserlohn",
+      "title": "Your hair. *Just longer and fuller.*",
+      "lead": "Seven techniques, one goal: hair that feels like your own, because it is real. Find out in three questions which technique suits your hair and your everyday life, then order directly or let Andréia advise you in person.",
+      "ctaFinder": "Find your technique",
+      "ctaShop": "Ready to order",
+      "priceFrom": "from {price} per pack",
+      "proof": [
+        "100 % human hair, extra fine",
+        "Colour match by photo before you pay",
+        "Pay when you like",
+        "Any colour on request"
+      ],
+      "filmLabel": "Film from the atelier: extra-thin weft band, naturally curly",
+      "tileLabel": "View {name}"
+    },
+    "nav": {
+      "label": "Techniques",
+      "title": "Seven techniques. *One is right for you.*",
+      "lead": "Each technique answers the same longing in its own way: more length, more fullness, more you. Tap one to see how it sits."
+    },
+    "finder": {
+      "kicker": "Technique finder",
+      "title": "Three questions to your *perfect technique*",
+      "lead": "Honest guidance in half a minute. Andréia will give you her final recommendation in person.",
+      "step": "Question {n} of 3",
+      "back": "Back",
+      "restart": "Start again",
+      "q1": "Who should put the extensions in?",
+      "q1a": "Me, whenever I like",
+      "q1b": "My hairdresser, for every day",
+      "q2": "What is your hair like?",
+      "q2a": "Rather fine or thin",
+      "q2b": "Medium to thick",
+      "q2c": "Curly",
+      "q3": "What matters most to you?",
+      "q3a": "Length for special occasions",
+      "q3b": "Fullness that lasts",
+      "q3c": "Free styling, even updos",
+      "q3d": "As flat to the head as possible",
+      "resultTitle": "This suits you",
+      "resultLead": "This is what your answers point to. Andréia is happy to confirm it before you order.",
+      "best": "Best match",
+      "also": "Also a good fit",
+      "toTechnique": "See the technique",
+      "toPacks": "View packs",
+      "confirm": "Have Andréia confirm it",
+      "selfNote": "Clip-ins are the only technique you put in yourself. All others are applied by a specialist."
+    },
+    "labels": {
+      "count": "{n} / 7",
+      "how": "How it works",
+      "who": "Applied by",
+      "fix": "Attachment",
+      "wear": "Wear",
+      "heatGlue": "Heat and glue",
+      "best": "Ideal for",
+      "pros": "Your benefits",
+      "consider": "Good to know",
+      "inShop": "Ready to order",
+      "onRequest": "On request in any colour, length and quantity. Andréia will give you a fixed price.",
+      "requestCta": "Ask about this technique",
+      "otherColors": "Also in other colours on request",
+      "symbol": "Illustrative image",
+      "film": "Film",
+      "diagram": "Diagram: how {name} sits on your own hair"
+    },
+    "methods": {
+      "clip": {
+        "name": "Clip-in",
+        "tagline": "Length for tonight. Your own hair again tomorrow.",
+        "how": "Wefts with small clips along the top edge. You clip them in under a layer of your own hair in the morning and take them out again in the evening. No appointment, no glue, no heat.",
+        "who": "You",
+        "fix": "Clips on the weft",
+        "wear": "During the day, out in the evening",
+        "heatGlue": "Neither",
+        "best": "Shoulder-length or longer hair, occasions, trying it out",
+        "pros": [
+          "Decide every day whether to wear length",
+          "No salon appointment, no glue, no heat",
+          "Try out long hair first"
+        ],
+        "consider": [
+          "Take them out before sleeping",
+          "With very fine hair, don't wear them every day"
+        ]
+      },
+      "thin": {
+        "name": "Extra-thin weft band",
+        "tagline": "So thin it hugs the shape of your head.",
+        "how": "Lots of hair on an extra-thin, pliable band. Your hairdresser attaches it to a row of small rings in your own hair, usually by sewing. The band follows the curve of your head, and your own hair falls over it.",
+        "who": "Hairdresser or extension specialist",
+        "fix": "Row of rings, usually sewn",
+        "wear": "Permanent, moved up as hair grows",
+        "heatGlue": "Neither",
+        "best": "Fine to medium hair, curls too",
+        "pros": [
+          "Adds hardly any bulk, follows the head's shape",
+          "Lots of fullness on a single line",
+          "Reusable at every move-up"
+        ],
+        "consider": [
+          "Applied by a specialist",
+          "Moved up as your hair grows"
+        ]
+      },
+      "genius": {
+        "name": "Genius Weft",
+        "tagline": "A flat seam, cut to the shape of your head.",
+        "how": "A machine-sewn weft with no return hair at the seam. It can be cut at any point without unravelling and is attached to a row of rings in your own hair, usually sewn in.",
+        "who": "Hairdresser or extension specialist",
+        "fix": "Row of rings, usually sewn",
+        "wear": "Permanent, moved up as hair grows",
+        "heatGlue": "Neither",
+        "best": "Fine to medium hair, lots of density",
+        "pros": [
+          "Flat seam without return hair",
+          "Can be cut to any width",
+          "Reusable at every move-up"
+        ],
+        "consider": [
+          "Applied by a specialist"
+        ]
+      },
+      "butterfly": {
+        "name": "Butterfly Weft",
+        "tagline": "The weft covers its own attachment.",
+        "how": "The weft is attached to a row of rings and lies over it so that its hair covers the rings. Your own hair falls over it from above. Row by row, fullness builds across the whole back of the head.",
+        "who": "Hairdresser or extension specialist",
+        "fix": "Row of rings, covered by the weft",
+        "wear": "Permanent, moved up as hair grows",
+        "heatGlue": "Neither",
+        "best": "Lots of length and fullness that lasts",
+        "pros": [
+          "The rings sit under the weft's hair",
+          "Wide rows bring fullness across the back of the head",
+          "Reusable at every move-up"
+        ],
+        "consider": [
+          "Applied by a specialist"
+        ]
+      },
+      "invisible": {
+        "name": "Invisible Tape",
+        "tagline": "The thinnest tape. For changing your parting and wearing updos.",
+        "how": "Hair on an especially thin, flat adhesive strip, set right up to its edge. The specialist places the tapes close to the root on fine sections of your own hair.",
+        "who": "Hairdresser or extension specialist",
+        "fix": "Thin, flat adhesive strip",
+        "wear": "Permanent, moved up as hair grows",
+        "heatGlue": "No heat, adhesive strip",
+        "best": "Fine hair and anyone who loves updos",
+        "pros": [
+          "Lies flat against the head",
+          "Change your parting, sweep your hair back",
+          "Reusable at every move-up with new tape"
+        ],
+        "consider": [
+          "Don't wash for the first 48 hours",
+          "No oil or conditioner on the tapes"
+        ]
+      },
+      "tape": {
+        "name": "Tape-in",
+        "tagline": "The classic among permanent methods.",
+        "how": "Wider adhesive strips with hair, placed close to the root on fine sections of your own hair, often as a sandwich of two tapes. When your hair grows, the tapes are removed and reapplied with new tape.",
+        "who": "Hairdresser or extension specialist",
+        "fix": "Adhesive strips, often as a sandwich",
+        "wear": "Permanent, moved up as hair grows",
+        "heatGlue": "No heat, adhesive strip",
+        "best": "A proven, permanent method",
+        "pros": [
+          "Fullness in wide panels",
+          "No heat when applying",
+          "Reusable at every move-up with new tape"
+        ],
+        "consider": [
+          "No oil or conditioner on the tapes"
+        ]
+      },
+      "keratin": {
+        "name": "Keratin bonds",
+        "tagline": "Strand by strand. For styles in every direction.",
+        "how": "Individual strands with a small keratin bond, which the specialist attaches with heat to fine sections of your own hair. Because each strand sits on its own, your hair can be styled freely, even in updos.",
+        "who": "Hairdresser or extension specialist",
+        "fix": "Keratin bond per strand",
+        "wear": "Permanent, grows out with your hair",
+        "heatGlue": "With heat, keratin",
+        "best": "Free styling and updos",
+        "pros": [
+          "Small bonds, placed individually",
+          "Style freely, even ponytails and updos"
+        ],
+        "consider": [
+          "Applied with heat, a longer appointment",
+          "Removed once grown out"
+        ]
+      }
+    },
+    "compare": {
+      "kicker": "Comparison",
+      "title": "All techniques *at a glance*",
+      "lead": "The key differences side by side. What matters most to you decides.",
+      "technique": "Technique",
+      "who": "Applied by",
+      "fix": "Attachment",
+      "heat": "Heat",
+      "glue": "Glue",
+      "daily": "Removed in the evening",
+      "reuse": "Reusable at move-up",
+      "best": "Ideal for",
+      "yes": "Yes",
+      "no": "No",
+      "self": "You",
+      "pro": "Specialist",
+      "newTape": "Yes, new tape",
+      "always": "Again and again",
+      "regrow": "Applied anew",
+      "tape": "Adhesive strip",
+      "keratin": "Keratin"
+    },
+    "color": {
+      "kicker": "Colour",
+      "title": "Your colour. *Even if it isn't in the shop.*",
+      "lead": "Every technique is also available in other colours, lengths and quantities on request. Andréia personally compares a photo of your hair with her shades and puts together your colour, from platinum blonde to black, straight to curly.",
+      "whatsapp": "Send a photo via WhatsApp",
+      "ask": "Request your colour",
+      "note": "Due to different screen settings, colours may vary slightly. That's why Andréia matches every shade in advance with a photo of your hair."
+    },
+    "shop": {
+      "title": "Ready *to order*",
+      "lead": "These packs are ready to go. Andréia personally confirms colour and quantity before you pay."
+    },
+    "faq": {
+      "title": "Questions almost every customer asks",
+      "items": [
+        {
+          "q": "Which technique suits fine hair?",
+          "a": "With fine hair, what matters is that the attachment stays flat and light. Popular choices are the extra-thin weft band, Genius Weft and Invisible Tape. Send Andréia a photo of your hair and she'll tell you honestly what your hair can carry well."
+        },
+        {
+          "q": "Can I put extensions in myself?",
+          "a": "Clip-ins, yes: you put them in in the morning and take them out again in the evening. All other techniques sit firmly on your own hair and are applied by a hairdresser or extension specialist."
+        },
+        {
+          "q": "Who applies wefts, tapes and bonds?",
+          "a": "Your hairdresser or an extension specialist. Andréia advises you beforehand on technique, colour and quantity, so you go to your appointment with exactly the right hair."
+        },
+        {
+          "q": "Do you have my colour?",
+          "a": "If it isn't in the shop: on request. Every technique is also available in other colours, lengths and quantities. Send Andréia a photo of your hair in daylight, without flash."
+        },
+        {
+          "q": "How many packs do I need?",
+          "a": "That depends on your hair and what you'd like. Andréia will tell you in person before you order, most easily via WhatsApp."
+        },
+        {
+          "q": "When do I pay?",
+          "a": "Whenever you like: right after ordering by QR code in your banking app or after Andréia's personal confirmation. Nothing is debited automatically."
+        },
+        {
+          "q": "What if the extensions don't suit me?",
+          "a": "You have a 14-day right of withdrawal from receipt of the goods. Everything else is set out in the cancellation policy."
+        }
+      ]
+    },
+    "note": "Product images edited with AI. Tape-in and keratin bonds: illustrative images created with AI. Films: real footage from the atelier.",
+    "mega": {
+      "title": "Extensions",
+      "text": "Seven techniques in human hair, handmade by Andréia in Iserlohn. Find yours in three questions.",
+      "finder": "Start the technique finder",
+      "all": "View all extensions",
+      "toggle": "Show techniques"
     }
   }
 }

@@ -8,9 +8,9 @@ import { AddToCart } from "@/components/product/AddToCart";
 import { CustomStrip } from "@/components/product/CustomStrip";
 import { ProductCopyBlock } from "@/components/product/ProductCopyBlock";
 import { SpecChips } from "@/components/product/SpecChips";
-import { CompareSlider } from "@/components/product/CompareSlider";
-import { Gallery } from "@/components/product/Gallery";
+import { Gallery, type GalleryShot } from "@/components/product/Gallery";
 import { AskWhatsApp } from "@/components/pdp/AskWhatsApp";
+import { Assurance, BenefitList, ColorRow, ColorsBand, TechniqueSpotlight } from "@/components/pdp/PdpBlocks";
 import { MicroHelpers } from "@/components/pdp/MicroHelpers";
 import { PartingCompass } from "@/components/pdp/PartingCompass";
 import { ReturnPreview } from "@/components/pdp/ReturnPreview";
@@ -32,6 +32,7 @@ import { Link } from "@/i18n/navigation";
 import { breadcrumbJsonLd } from "@/lib/jsonld";
 import { formatPrice } from "@/lib/money";
 import { pageMetadata, siteUrl } from "@/lib/seo";
+import { methodOf } from "@/lib/collection";
 import { parseBaseCm, parseLengthCm } from "@/lib/units";
 import { soldSlugs } from "@/server/sold";
 
@@ -62,19 +63,23 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
   const unique = isUnique(product);
   const price = formatPrice(product.priceCents, locale);
   const kind = imageKindOf(product);
-  const gallery = galleryImages(product);
-  const images = gallery.map((shot) => shot.src);
-  let originalIndex = 0;
-  let studioIndex = 0;
-  const shots = gallery.map((shot, index) => {
-    const name = { name: text.name, subtitle: text.subtitle };
-    let alt: string;
-    if (shot.kind === "original") alt = t("product.originalAlt", { index: ++originalIndex, ...name });
-    else alt = t(kind === "staged" ? "product.imageAltStaged" : "product.imageAlt", { ...name, index: ++studioIndex });
-    return { alt, label: t("product.showImage", { index: index + 1, total: gallery.length }), src: shot.src };
+  // Rohfotos nur dort, wo es keine bearbeiteten Bilder gibt; kuratierte Atelierfotos und Filme bleiben
+  const gallery = galleryImages(product).filter((item, _, all) => item.kind !== "original" || !all.some((x) => x.kind === "studio"));
+  const images = gallery.filter((item) => item.kind !== "video").map((item) => item.src);
+  const name = { name: text.name, subtitle: text.subtitle };
+  const counters = { atelier: 0, original: 0, studio: 0 };
+  const shots: GalleryShot[] = gallery.map((item, index) => {
+    const label = t("product.showImage", { index: index + 1, total: gallery.length });
+    if (item.kind === "video") return { alt: t("product.filmAlt", name), caption: t("product.captionFilm"), label, src: item.src, video: { poster: item.poster ?? product.image } };
+    if (item.kind === "atelier") return { alt: t("product.atelierAlt", { ...name, index: ++counters.atelier }), caption: t("product.captionAtelier"), label, src: item.src };
+    if (item.kind === "original") return { alt: t("product.originalAlt", { ...name, index: ++counters.original }), label, src: item.src };
+    return {
+      alt: t(kind === "staged" ? "product.imageAltStaged" : "product.imageAlt", { ...name, index: ++counters.studio }),
+      caption: kind ? t(kind === "staged" ? "product.imageNoteStaged" : "product.imageNoteRelit") : undefined,
+      label,
+      src: item.src,
+    };
   });
-  const studioShots = shots.filter((_, i) => gallery[i].kind === "studio");
-  const atelierShots = shots.filter((_, i) => gallery[i].kind === "original");
   const copy = productCopy(product, locale);
   const available = (item: { slug: string; sold: boolean }) => !item.sold && !sold.has(item.slug);
   const isExtension = product.category === "extensions";
@@ -106,7 +111,10 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
   const perDay = formatPrice(Math.round(product.priceCents / 730), locale);
   const lengthCm = hair && !isExtension ? parseLengthCm(product.length) : null;
   const baseCm = hair && !isExtension ? parseBaseCm(product.base) : null;
-  const secondOriginal = product.originals[1] ?? null;
+  const method = methodOf(product);
+  // Detailaufnahme der Packung für „Die Technik dahinter“
+  const techImage = product.extraImages?.at(-1) ?? product.secondImage ?? null;
+  const otherPacks = isExtension ? byCategory("extensions").filter((item) => item.slug !== product.slug && available(item)).map((item) => item.image) : [];
 
   const productJson = {
     "@context": "https://schema.org",
@@ -156,32 +164,28 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
         <div className="af-pdp">
           <div className="af-pdp__gallery">
             <Gallery
-              closeLabel={t("product.zoomClose")}
-              extra={isExtension && studioShots.length ? { hide: t("pdp.atelierHide"), shots: atelierShots, show: t("pdp.atelierShow") } : undefined} hint={t("product.zoomHint")} loupeLabel={hair ? t("pdp.loupe") : undefined} loupeOffLabel={t("pdp.loupeOff")} shots={isExtension && studioShots.length ? studioShots : shots} zoomLabel={t("product.zoom")} />
-            {kind ? (
-              <p className="af-note af-imgnote" data-kind={kind}>
-                {t(kind === "staged" ? "product.imageNoteStaged" : "product.imageNoteRelit")}
-              </p>
-            ) : null}
-            {product.restyled && product.originals[0] && !isExtension ? (
-              <details className="af-pdp__compare">
-                <summary className="af-mono" id="compare-title">
-                  {t(kind === "staged" ? "product.compareTitleStaged" : "product.compareTitle")}
-                </summary>
-                <CompareSlider
-                  label={t(kind === "staged" ? "product.compareLabelStaged" : "product.compareLabel")}
-                  original={product.originals[0]}
-                  originalLabel={t("product.compareOriginal")}
-                  studio={product.image}
-                  studioLabel={t(kind === "staged" ? "product.compareStudioStaged" : "product.compareStudio")}
-                />
-              </details>
-            ) : null}
+              labels={{
+                close: t("product.zoomClose"),
+                film: t("pdp.film"),
+                hint: t("product.zoomHint"),
+                loupe: hair ? t("pdp.loupe") : undefined,
+                loupeOff: t("pdp.loupeOff"),
+                next: t("pdp.next"),
+                pause: t("pdp.pause"),
+                play: t("pdp.play"),
+                prev: t("pdp.prev"),
+                zoom: t("product.zoom"),
+              }}
+              shots={shots}
+            />
           </div>
 
           <div className="af-pdp__info af-zone-light">
             <div>
-              <p className="af-mono">{t(`categories.${product.category}.label`)}</p>
+              <p className="af-mono">
+                {t(`categories.${product.category}.label`)}
+                {method ? <span className="pdp-method"> · {t(`ext.methods.${method}.name`)}</span> : null}
+              </p>
               <h1 className="af-h2" style={{ marginTop: 14 }}>
                 {text.name}
               </h1>
@@ -191,14 +195,16 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
               {product.manufacturer === "atelier" ? <p className="af-handmade">{t("product.handmade", { city: company.address.city })}</p> : null}
               {copy?.headline ? <p className="af-headline">{copy.headline}</p> : null}
             </div>
-            <SpecChips locale={locale} product={product} />
-            {hair ? <MicroHelpers base={baseCm} clips={hasClips} lengthCm={lengthCm} /> : null}
 
             <div className="af-pdp__price">
               {price}
               <PriceNote locale={locale} unit={unitInfo(product)} />
             </div>
             {showDaily ? <p className="af-note af-daily">{t("pdp.daily", { perDay, price })}</p> : null}
+
+            <SpecChips locale={locale} product={product} />
+            {hair ? <ColorRow isExtension={isExtension} locale={locale} product={product} text={text} /> : null}
+            {hair && !isExtension ? <MicroHelpers base={baseCm} clips={hasClips} lengthCm={lengthCm} /> : null}
 
             {isSold ? (
               <p className="af-msg">{t("product.soldMsg")}</p>
@@ -208,7 +214,8 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
               <p className="af-only">{t("product.customMsg", delivery)}</p>
             ) : null}
 
-            <p className="af-text">{copy?.story ?? text.description}</p>
+            <p className="af-text pdp-story">{copy?.story ?? text.description}</p>
+            {copy?.benefits?.length ? <BenefitList benefits={copy.benefits} locale={locale} /> : null}
 
             {isSold ? (
               <Link className="af-cta-band af-glass af-glass--gold" href={{ pathname: "/anfrage", query: { produkt: `${text.name}, ${text.subtitle}`, thema: "massanfertigung" } }}>
@@ -217,8 +224,10 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
             ) : (
               <div className="af-buyrow" id="buy-anchor">
                 <AddToCart price={price} slug={product.slug} unique={unique} />
+                <Assurance locale={locale} madeToOrder={product.madeToOrder} />
               </div>
             )}
+
             <div className="af-consult">
               <h2 className="af-mono">{t("product.consultTitle")}</h2>
               <p className="af-text">{t(isExtension ? "product.consultExtensions" : "product.consultText")}</p>
@@ -238,7 +247,6 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
                 </Link>
               )}
             </div>
-
 
             <section aria-labelledby="specs-title">
               <h2 className="af-sr" id="specs-title">
@@ -297,9 +305,11 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
       </div>
       <div className="af-zone-light af-zone-fade-top af-zone-band af-pdp__after">
         <div className="af-wrap">
-          {hair && !isExtension && secondOriginal ? <PartingCompass extraAlt={t("product.originalAlt", { index: 2, name: text.name, subtitle: text.subtitle })} extraImage={secondOriginal} /> : null}
+          {isExtension && method ? <TechniqueSpotlight image={techImage} locale={locale} method={method} /> : null}
+          {isExtension ? <ColorsBand images={otherPacks} locale={locale} product={`${text.name}, ${text.subtitle}`} /> : null}
+          {hair && !isExtension ? <PartingCompass extraAlt="" extraImage={null} /> : null}
           {product.netWeightGrams ? <WeightCompare grams={product.netWeightGrams} locale={locale} /> : null}
-          {hair ? <CustomStrip product={`${text.name}, ${text.subtitle}`} /> : null}
+          {hair && !isExtension ? <CustomStrip product={`${text.name}, ${text.subtitle}`} /> : null}
           <RecentlyViewed exclude={product.slug} />
           {more.length > 0 ? (
             <section aria-labelledby="more-title" className="af-section af-section--tight" style={{ paddingBottom: 0 }}>

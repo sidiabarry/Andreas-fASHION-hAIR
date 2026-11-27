@@ -97,10 +97,11 @@
     "ext": {
       "kicker": "Extensions",
       "title": "Plus de longueur. *Plus de volume.*",
-      "lead": "Des cheveux naturels en six méthodes, du clip-in à poser soi-même jusqu'à la trame fine. Vous commandez ici directement les paquets. Quelle méthode et quelle quantité de cheveux vous conviennent, Andréia vous le dit personnellement.",
-      "methodsLabel": "Six méthodes",
+      "lead": "Des cheveux naturels en sept méthodes, du clip-in à poser soi-même jusqu'à la bande de trame extra-fine. Vous commandez ici directement les paquets. Quelle méthode et quelle quantité de cheveux vous conviennent, Andréia vous le dit personnellement.",
+      "methodsLabel": "Sept méthodes",
       "methods": [
         "Clip-in",
+        "Bande de trame extra-fine",
         "Genius Weft",
         "Butterfly Weft",
         "Invisible Tape",
@@ -396,7 +397,17 @@
     "compareTitleStaged": "Image retouchée et photo originale",
     "compareLabelStaged": "Déplacer la comparaison : image retouchée à gauche, photo originale non retouchée à droite",
     "manufacturer": "Fabriqué par {name}, {address}, {email}",
-    "handmade": "Fait main par Andréia à {city}"
+    "handmade": "Fait main par Andréia à {city}",
+    "captionAtelier": "Vraie photo de l'atelier, seuls la lumière et la balance des blancs ont été ajustées.",
+    "captionFilm": "Film de l'atelier : vraie prise de vue, raccourcie et sans son.",
+    "atelierAlt": "{name}, {subtitle} : vraie photo de l'atelier, image {index}",
+    "filmAlt": "{name}, {subtitle} : film de l'atelier",
+    "colorLabel": "Couleur",
+    "colorNote": "En raison des différents réglages d'écran, la couleur peut légèrement varier.",
+    "colorMatch": "Un doute ? Andréia compare votre nuance à l'avance grâce à une photo de vos cheveux.",
+    "otherColors": "Également disponible dans d'autres couleurs, sur demande.",
+    "otherColorsCta": "Demander votre couleur",
+    "otherColorsTopic": "{name}, dans une autre couleur"
   },
   "price": {
     "smallBusiness": "TVA non applicable selon le § 19 de la loi allemande sur la TVA (petite entreprise).",
@@ -941,7 +952,9 @@
     "packWhatsapp": "Demander par WhatsApp",
     "packAsk": "Ou envoyer une demande",
     "productsTitle": "Extensions dans la boutique",
-    "allPacks": "Toutes les extensions de la collection"
+    "allPacks": "Toutes les extensions de la collection",
+    "thin": "Bande de trame extra-fine",
+    "thinText": "Beaucoup de cheveux sur une bande extra-fine et souple qui épouse la forme de la tête."
   },
   "custom": {
     "metaTitle": "Demander une pièce sur mesure",
@@ -1002,7 +1015,8 @@
       "invisible": "Invisible Tape",
       "tape": "Tape-In",
       "keratin": "Bondings à la kératine",
-      "clip": "Clip-in"
+      "clip": "Clip-in",
+      "thin": "Bande de trame extra-fine"
     },
     "structures": {
       "glatt": "Lisse",
@@ -1086,9 +1100,23 @@
     "share": "Partager avec une personne de confiance",
     "shareCopied": "Lien copié",
     "shareText": "Regarde cette pièce d’Andréia’s Fashion Hair : {name}",
-    "atelierShow": "Photos de l’atelier ({count})",
-    "atelierHide": "Afficher seulement les photos studio",
-    "trustFold": "Livraison, retour et paiement"
+    "trustFold": "Livraison, retour et paiement",
+    "prev": "Image précédente",
+    "next": "Image suivante",
+    "play": "Lire le film",
+    "pause": "Mettre le film en pause",
+    "film": "Film",
+    "benefitsTitle": "Ce que cela vous apporte",
+    "assureTitle": "Commander en toute confiance",
+    "assurePay": "Payez quand vous le souhaitez : tout de suite par QR code ou après la confirmation d'Andréia",
+    "assureReturn": "<link>14 jours de droit de rétractation</link> à compter de la réception",
+    "assureShip": "Livraison en {from} à {to} jours ouvrés depuis Iserlohn",
+    "techKicker": "La technique",
+    "techLink": "Comparer les sept techniques",
+    "colorsTitle": "Votre couleur n'y est pas ?",
+    "colorsText": "Toutes nos extensions sont aussi disponibles sur demande dans d'autres couleurs, longueurs et quantités. Envoyez à Andréia une photo de vos cheveux à la lumière du jour : elle compose votre nuance et vous indique un prix fixe.",
+    "colorsWhatsapp": "Envoyer une photo par WhatsApp",
+    "colorsAsk": "Demander votre couleur"
   },
   "cat": {
     "toolsLabel": "Adapter l’affichage",
@@ -1131,6 +1159,283 @@
       "peruecken": "Tête entière & front lace",
       "pony": "Front & racine avant",
       "maenner": "Zone du sommet en micro-peau"
+    }
+  },
+  "ext": {
+    "metaTitle": "Extensions en cheveux naturels : sept techniques, toutes les couleurs",
+    "metaDescription": "Extensions en cheveux naturels, faites main par Andréia à Iserlohn : clip-in, bande de trame extra-fine, Genius Weft, Butterfly Weft, Invisible Tape, Tape-In et bondings à la kératine. La bonne technique en trois questions, toutes les couleurs sur demande.",
+    "hero": {
+      "kicker": "Extensions · cheveux naturels · faites main à Iserlohn",
+      "title": "Vos cheveux. *Juste plus longs et plus fournis.*",
+      "lead": "Sept techniques, un seul but : des cheveux qui ressemblent aux vôtres au toucher, parce qu'ils sont vrais. Découvrez en trois questions quelle technique convient à vos cheveux et à votre quotidien, puis commandez directement ou laissez Andréia vous conseiller personnellement.",
+      "ctaFinder": "Trouver ma technique",
+      "ctaShop": "Disponible immédiatement",
+      "priceFrom": "à partir de {price} le paquet",
+      "proof": [
+        "100 % cheveux naturels, extra-fins",
+        "Comparaison de couleur par photo avant paiement",
+        "Payez quand vous le souhaitez",
+        "Toutes les couleurs sur demande"
+      ],
+      "filmLabel": "Film de l'atelier : bande de trame extra-fine, naturellement bouclée",
+      "tileLabel": "Voir {name}"
+    },
+    "nav": {
+      "label": "Techniques",
+      "title": "Sept techniques. *L'une est faite pour vous.*",
+      "lead": "Chaque technique répond au même désir à sa manière : plus de longueur, plus de volume, plus vous-même. Touchez-en une pour voir comment elle se pose."
+    },
+    "finder": {
+      "kicker": "Guide des techniques",
+      "title": "Trois questions pour trouver *votre technique*",
+      "lead": "Une orientation honnête en trente secondes. La recommandation finale, Andréia vous la donne personnellement.",
+      "step": "Question {n} sur 3",
+      "back": "Retour",
+      "restart": "Recommencer",
+      "q1": "Qui posera les extensions ?",
+      "q1a": "Moi-même, quand je le souhaite",
+      "q1b": "Ma coiffeuse, pour tous les jours",
+      "q2": "Comment sont vos cheveux ?",
+      "q2a": "Plutôt fins ou clairsemés",
+      "q2b": "Moyens à épais",
+      "q2c": "Bouclés",
+      "q3": "Qu'est-ce qui compte le plus pour vous ?",
+      "q3a": "De la longueur pour les grandes occasions",
+      "q3b": "Du volume qui dure",
+      "q3c": "Coiffer librement, même attaché",
+      "q3d": "Le plus à plat possible",
+      "resultTitle": "Voici ce qui vous convient",
+      "resultLead": "Voilà ce que vos réponses indiquent. Andréia vous le confirme volontiers avant votre commande.",
+      "best": "Le meilleur choix",
+      "also": "Convient aussi",
+      "toTechnique": "Voir la technique",
+      "toPacks": "Voir les paquets",
+      "confirm": "Faire confirmer par Andréia",
+      "selfNote": "Les clip-ins sont la seule technique que vous posez vous-même. Toutes les autres sont posées par une spécialiste."
+    },
+    "labels": {
+      "count": "{n} / 7",
+      "how": "Comment ça marche",
+      "who": "Pose",
+      "fix": "Fixation",
+      "wear": "Port",
+      "heatGlue": "Chaleur et colle",
+      "best": "Idéal pour",
+      "pros": "Vos avantages",
+      "consider": "Bon à savoir",
+      "inShop": "Disponible immédiatement",
+      "onRequest": "Sur demande dans toutes les couleurs, longueurs et quantités. Andréia vous indique un prix fixe.",
+      "requestCta": "Demander cette technique",
+      "otherColors": "Aussi dans d'autres couleurs sur demande",
+      "symbol": "Image d'illustration",
+      "film": "Film",
+      "diagram": "Schéma : comment {name} se fixe sur vos propres cheveux"
+    },
+    "methods": {
+      "clip": {
+        "name": "Clip-in",
+        "tagline": "De la longueur pour ce soir. Demain, à nouveau vos propres cheveux.",
+        "how": "Des trames avec de petits clips sur le bord supérieur. Vous les clipsez le matin sous une couche de vos propres cheveux et les retirez le soir. Sans rendez-vous, sans colle, sans chaleur.",
+        "who": "Vous-même",
+        "fix": "Clips sur la trame",
+        "wear": "La journée, retirés le soir",
+        "heatGlue": "Ni l'un ni l'autre",
+        "best": "Cheveux mi-longs ou plus longs, occasions, pour essayer",
+        "pros": [
+          "Décider chaque jour de porter de la longueur",
+          "Pas de rendez-vous, pas de colle, pas de chaleur",
+          "Essayer d'abord les cheveux longs"
+        ],
+        "consider": [
+          "À retirer avant de dormir",
+          "Avec des cheveux très fins, ne pas les porter tous les jours"
+        ]
+      },
+      "thin": {
+        "name": "Bande de trame extra-fine",
+        "tagline": "Si fine qu'elle épouse votre tête.",
+        "how": "Beaucoup de cheveux sur une bande extra-fine et souple. Votre coiffeuse la fixe sur une rangée de petits anneaux dans vos propres cheveux, le plus souvent en la cousant. La bande suit l'arrondi de votre tête et vos propres cheveux retombent par-dessus.",
+        "who": "Coiffeuse ou spécialiste des extensions",
+        "fix": "Rangée d'anneaux, le plus souvent cousue",
+        "wear": "Durable, remontée au fil de la pousse",
+        "heatGlue": "Ni l'un ni l'autre",
+        "best": "Cheveux fins à moyens, boucles aussi",
+        "pros": [
+          "Presque pas d'épaisseur, suit la forme de la tête",
+          "Beaucoup de volume sur une seule ligne",
+          "Réutilisable à chaque remontée"
+        ],
+        "consider": [
+          "Pose par une spécialiste",
+          "Remontée quand vos cheveux poussent"
+        ]
+      },
+      "genius": {
+        "name": "Genius Weft",
+        "tagline": "Une couture plate, coupée à la forme de votre tête.",
+        "how": "Une trame cousue à la machine, sans cheveux retournés à la couture. Elle se coupe à n'importe quel endroit sans s'effilocher et se fixe sur une rangée d'anneaux dans vos propres cheveux, le plus souvent cousue.",
+        "who": "Coiffeuse ou spécialiste des extensions",
+        "fix": "Rangée d'anneaux, le plus souvent cousue",
+        "wear": "Durable, remontée au fil de la pousse",
+        "heatGlue": "Ni l'un ni l'autre",
+        "best": "Cheveux fins à moyens, beaucoup de densité",
+        "pros": [
+          "Couture plate sans cheveux retournés",
+          "Se coupe à toutes les largeurs",
+          "Réutilisable à chaque remontée"
+        ],
+        "consider": [
+          "Pose par une spécialiste"
+        ]
+      },
+      "butterfly": {
+        "name": "Butterfly Weft",
+        "tagline": "La trame recouvre sa propre fixation.",
+        "how": "La trame est fixée sur une rangée d'anneaux et repose par-dessus de sorte que ses cheveux recouvrent les anneaux. Vos propres cheveux retombent par-dessus. Rangée après rangée, le volume se construit sur tout l'arrière de la tête.",
+        "who": "Coiffeuse ou spécialiste des extensions",
+        "fix": "Rangée d'anneaux, recouverte par la trame",
+        "wear": "Durable, remontée au fil de la pousse",
+        "heatGlue": "Ni l'un ni l'autre",
+        "best": "Beaucoup de longueur et de volume qui dure",
+        "pros": [
+          "Les anneaux sont sous les cheveux de la trame",
+          "Des rangées larges pour du volume sur tout l'arrière de la tête",
+          "Réutilisable à chaque remontée"
+        ],
+        "consider": [
+          "Pose par une spécialiste"
+        ]
+      },
+      "invisible": {
+        "name": "Invisible Tape",
+        "tagline": "Le ruban adhésif le plus fin. Pour changer de raie et attacher vos cheveux.",
+        "how": "Des cheveux sur une bande adhésive particulièrement fine et plate, implantés jusqu'à son bord. La spécialiste pose les tapes près de la racine sur de fines mèches de vos propres cheveux.",
+        "who": "Coiffeuse ou spécialiste des extensions",
+        "fix": "Bande adhésive fine et plate",
+        "wear": "Durable, remontée au fil de la pousse",
+        "heatGlue": "Sans chaleur, bande adhésive",
+        "best": "Cheveux fins et celles qui aiment les coiffures attachées",
+        "pros": [
+          "Repose à plat sur la tête",
+          "Changer de raie, ramener les cheveux en arrière",
+          "Réutilisable à chaque remontée avec de nouvelles bandes"
+        ],
+        "consider": [
+          "Ne pas laver pendant les 48 premières heures",
+          "Ni huile ni après-shampooing sur les tapes"
+        ]
+      },
+      "tape": {
+        "name": "Tape-In",
+        "tagline": "Le classique des méthodes durables.",
+        "how": "Des bandes adhésives plus larges avec des cheveux, posées près de la racine sur de fines mèches de vos propres cheveux, souvent en sandwich de deux tapes. Quand vos cheveux poussent, les tapes sont retirés et reposés avec de nouvelles bandes.",
+        "who": "Coiffeuse ou spécialiste des extensions",
+        "fix": "Bandes adhésives, souvent en sandwich",
+        "wear": "Durable, remontée au fil de la pousse",
+        "heatGlue": "Sans chaleur, bande adhésive",
+        "best": "Une méthode durable et éprouvée",
+        "pros": [
+          "Du volume en larges bandes",
+          "Pas de chaleur à la pose",
+          "Réutilisable à chaque remontée avec de nouvelles bandes"
+        ],
+        "consider": [
+          "Ni huile ni après-shampooing sur les tapes"
+        ]
+      },
+      "keratin": {
+        "name": "Bondings à la kératine",
+        "tagline": "Mèche après mèche. Pour des coiffures dans tous les sens.",
+        "how": "Des mèches individuelles avec un petit point de kératine, que la spécialiste fixe à chaud sur de fines mèches de vos propres cheveux. Comme chaque mèche est posée séparément, vos cheveux se coiffent librement, même attachés.",
+        "who": "Coiffeuse ou spécialiste des extensions",
+        "fix": "Point de kératine par mèche",
+        "wear": "Durable, pousse avec vos cheveux",
+        "heatGlue": "À chaud, kératine",
+        "best": "Coiffage libre et coiffures attachées",
+        "pros": [
+          "Petits points, posés un par un",
+          "Coiffer librement, même queue de cheval et chignon"
+        ],
+        "consider": [
+          "Pose à chaud, rendez-vous plus long",
+          "Retirés une fois la repousse venue"
+        ]
+      }
+    },
+    "compare": {
+      "kicker": "Comparatif",
+      "title": "Toutes les techniques *en un coup d'œil*",
+      "lead": "Les principales différences côte à côte. C'est ce qui compte le plus pour vous qui décide.",
+      "technique": "Technique",
+      "who": "Qui pose",
+      "fix": "Fixation",
+      "heat": "Chaleur",
+      "glue": "Colle",
+      "daily": "Retirées le soir",
+      "reuse": "Réutilisable à la remontée",
+      "best": "Idéal pour",
+      "yes": "Oui",
+      "no": "Non",
+      "self": "Vous-même",
+      "pro": "Spécialiste",
+      "newTape": "Oui, nouvelles bandes",
+      "always": "Encore et encore",
+      "regrow": "Reposées à neuf",
+      "tape": "Bande adhésive",
+      "keratin": "Kératine"
+    },
+    "color": {
+      "kicker": "Couleur",
+      "title": "Votre couleur. *Même si elle n'est pas dans la boutique.*",
+      "lead": "Chaque technique est aussi disponible sur demande dans d'autres couleurs, longueurs et quantités. Andréia compare personnellement une photo de vos cheveux avec ses nuances et compose votre couleur, du blond platine au noir, du lisse au bouclé.",
+      "whatsapp": "Envoyer une photo par WhatsApp",
+      "ask": "Demander votre couleur",
+      "note": "En raison des différents réglages d'écran, les couleurs peuvent légèrement varier. C'est pourquoi Andréia compare chaque nuance à l'avance avec une photo de vos cheveux."
+    },
+    "shop": {
+      "title": "Disponible *immédiatement*",
+      "lead": "Ces paquets sont prêts. Andréia vous confirme personnellement la couleur et la quantité avant votre paiement."
+    },
+    "faq": {
+      "title": "Les questions que presque toutes nos clientes posent",
+      "items": [
+        {
+          "q": "Quelle technique pour des cheveux fins ?",
+          "a": "Avec des cheveux fins, l'important est que la fixation reste plate et légère. On choisit souvent la bande de trame extra-fine, le Genius Weft et l'Invisible Tape. Envoyez à Andréia une photo de vos cheveux : elle vous dit honnêtement ce que vos cheveux supportent bien."
+        },
+        {
+          "q": "Puis-je poser les extensions moi-même ?",
+          "a": "Les clip-ins, oui : vous les posez le matin et les retirez le soir. Toutes les autres techniques sont fixées sur vos propres cheveux et posées par une coiffeuse ou une spécialiste des extensions."
+        },
+        {
+          "q": "Qui pose les trames, les tapes et les bondings ?",
+          "a": "Votre coiffeuse ou une spécialiste des extensions. Andréia vous conseille au préalable sur la technique, la couleur et la quantité, pour que vous arriviez au rendez-vous avec exactement les bons cheveux."
+        },
+        {
+          "q": "Ma couleur existe-t-elle ?",
+          "a": "Si elle n'est pas dans la boutique : sur demande. Chaque technique existe aussi dans d'autres couleurs, longueurs et quantités. Envoyez à Andréia une photo de vos cheveux à la lumière du jour, sans flash."
+        },
+        {
+          "q": "Combien de paquets me faut-il ?",
+          "a": "Cela dépend de vos cheveux et de votre souhait. Andréia vous le dit personnellement avant votre commande, le plus simplement par WhatsApp."
+        },
+        {
+          "q": "Quand est-ce que je paie ?",
+          "a": "Quand vous le souhaitez : juste après la commande par QR code dans votre application bancaire ou après la confirmation personnelle d'Andréia. Rien n'est prélevé automatiquement."
+        },
+        {
+          "q": "Et si les extensions ne me conviennent pas ?",
+          "a": "Vous disposez de 14 jours de droit de rétractation à compter de la réception de la marchandise. Tout le reste figure dans les informations sur la rétractation."
+        }
+      ]
+    },
+    "note": "Photos des produits retouchées par IA. Tape-In et bondings à la kératine : images d'illustration créées par IA. Films : vraies prises de vue de l'atelier.",
+    "mega": {
+      "title": "Extensions",
+      "text": "Sept techniques en cheveux naturels, faites main par Andréia à Iserlohn. Trouvez la vôtre en trois questions.",
+      "finder": "Lancer le guide des techniques",
+      "all": "Voir toutes les extensions",
+      "toggle": "Afficher les techniques"
     }
   }
 }

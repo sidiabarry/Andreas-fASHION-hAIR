@@ -97,10 +97,11 @@
     "ext": {
       "kicker": "Extensions",
       "title": "Mehr Länge. *Mehr Fülle.*",
-      "lead": "Echthaar in sechs Methoden, vom Clip-in zum Selbst-Einsetzen bis zur feinen Tresse. Die Packungen hier bestellen Sie direkt. Welche Methode und wie viel Haar zu Ihnen passen, sagt Andréia Ihnen persönlich.",
-      "methodsLabel": "Sechs Methoden",
+      "lead": "Echthaar in sieben Methoden, vom Clip-in zum Selbst-Einsetzen bis zum extra dünnen Tressenband. Die Packungen hier bestellen Sie direkt. Welche Methode und wie viel Haar zu Ihnen passen, sagt Andréia Ihnen persönlich.",
+      "methodsLabel": "Sieben Methoden",
       "methods": [
         "Clip-in",
+        "Extra dünnes Tressenband",
         "Genius Weft",
         "Butterfly Weft",
         "Invisible Tape",
@@ -396,7 +397,17 @@
     "compareTitleStaged": "Bearbeitetes Bild und Originalfoto",
     "compareLabelStaged": "Vergleich verschieben: links bearbeitetes Bild, rechts unbearbeitetes Originalfoto",
     "manufacturer": "Hergestellt von {name}, {address}, {email}",
-    "handmade": "Handgefertigt von Andréia in {city}"
+    "handmade": "Handgefertigt von Andréia in {city}",
+    "captionAtelier": "Echtes Foto aus dem Atelier, nur Licht und Weißabgleich angepasst.",
+    "captionFilm": "Film aus dem Atelier: echte Aufnahme, gekürzt und ohne Ton.",
+    "atelierAlt": "{name}, {subtitle}: echtes Foto aus dem Atelier, Bild {index}",
+    "filmAlt": "{name}, {subtitle}: Film aus dem Atelier",
+    "colorLabel": "Farbe",
+    "colorNote": "Aufgrund unterschiedlicher Bildschirmeinstellungen kann die Farbe leicht abweichen.",
+    "colorMatch": "Unsicher? Andréia gleicht Ihren Ton vorab mit einem Foto Ihres Haares ab.",
+    "otherColors": "Auch in anderen Farben erhältlich, auf Anfrage.",
+    "otherColorsCta": "Wunschfarbe anfragen",
+    "otherColorsTopic": "{name}, in anderer Farbe"
   },
   "price": {
     "smallBusiness": "Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.",
@@ -941,7 +952,9 @@
     "packWhatsapp": "Per WhatsApp fragen",
     "packAsk": "Oder als Anfrage senden",
     "productsTitle": "Extensions im Shop",
-    "allPacks": "Alle Extensions in der Kollektion"
+    "allPacks": "Alle Extensions in der Kollektion",
+    "thin": "Extra dünnes Tressenband",
+    "thinText": "Viel Haar an einem extra dünnen, biegsamen Band, das sich an die Kopfform schmiegt."
   },
   "custom": {
     "metaTitle": "Maßanfertigung anfragen",
@@ -1002,7 +1015,8 @@
       "invisible": "Invisible Tape",
       "tape": "Tape-In",
       "keratin": "Keratin-Bondings",
-      "clip": "Clip-in"
+      "clip": "Clip-in",
+      "thin": "Extra dünnes Tressenband"
     },
     "structures": {
       "glatt": "Glatt",
@@ -1086,9 +1100,23 @@
     "share": "Mit Vertrauensperson teilen",
     "shareCopied": "Link kopiert",
     "shareText": "Schau mal, dieses Stück von Andréia’s Fashion Hair: {name}",
-    "atelierShow": "Fotos aus dem Atelier ({count})",
-    "atelierHide": "Nur Studiofotos zeigen",
-    "trustFold": "Versand, Rückgabe und Bezahlung"
+    "trustFold": "Versand, Rückgabe und Bezahlung",
+    "prev": "Vorheriges Bild",
+    "next": "Nächstes Bild",
+    "play": "Film abspielen",
+    "pause": "Film anhalten",
+    "film": "Film",
+    "benefitsTitle": "Was Sie davon haben",
+    "assureTitle": "Sicher bestellen",
+    "assurePay": "Bezahlen, wann Sie möchten: sofort per QR-Code oder nach Andréias Bestätigung",
+    "assureReturn": "<link>14 Tage Widerrufsrecht</link> ab Erhalt der Ware",
+    "assureShip": "Lieferung in {from} bis {to} Werktagen aus Iserlohn",
+    "techKicker": "Die Technik dahinter",
+    "techLink": "Alle sieben Techniken im Vergleich",
+    "colorsTitle": "Ihre Farbe ist nicht dabei?",
+    "colorsText": "Jede unserer Extensions gibt es auf Anfrage auch in anderen Farben, Längen und Mengen. Schicken Sie Andréia ein Foto Ihres Haares bei Tageslicht: Sie stellt Ihren Ton zusammen und nennt Ihnen einen festen Preis.",
+    "colorsWhatsapp": "Foto per WhatsApp schicken",
+    "colorsAsk": "Wunschfarbe anfragen"
   },
   "cat": {
     "toolsLabel": "Ansicht anpassen",
@@ -1131,6 +1159,283 @@
       "peruecken": "Vollmontur & Front Lace",
       "pony": "Stirn & vorderer Ansatz",
       "maenner": "Mikrohaut-Oberkopfzone"
+    }
+  },
+  "ext": {
+    "metaTitle": "Echthaar-Extensions: sieben Techniken, Farbe nach Wunsch",
+    "metaDescription": "Echthaar-Extensions, handgefertigt von Andréia in Iserlohn: Clip-in, extra dünnes Tressenband, Genius Weft, Butterfly Weft, Invisible Tape, Tape-In und Keratin-Bondings. In drei Fragen zur passenden Technik, jede Farbe auf Anfrage.",
+    "hero": {
+      "kicker": "Extensions · Echthaar · handgefertigt in Iserlohn",
+      "title": "Ihr Haar. *Nur länger und voller.*",
+      "lead": "Sieben Techniken, ein Ziel: Haar, das sich anfühlt wie Ihr eigenes, weil es echtes ist. Finden Sie in drei Fragen heraus, welche Technik zu Ihrem Haar und Ihrem Alltag passt, und bestellen Sie direkt oder lassen Sie sich von Andréia persönlich beraten.",
+      "ctaFinder": "Passende Technik finden",
+      "ctaShop": "Sofort bestellbar",
+      "priceFrom": "ab {price} je Packung",
+      "proof": [
+        "100 % Echthaar, besonders fein",
+        "Farbabgleich per Foto, bevor Sie bezahlen",
+        "Bezahlen, wann Sie möchten",
+        "Jede Farbe auf Anfrage"
+      ],
+      "filmLabel": "Film aus dem Atelier: extra dünnes Tressenband, naturlockig",
+      "tileLabel": "{name} ansehen"
+    },
+    "nav": {
+      "label": "Techniken",
+      "title": "Sieben Techniken. *Eine passt zu Ihnen.*",
+      "lead": "Jede Technik löst dieselbe Sehnsucht anders: mehr Länge, mehr Fülle, mehr Sie selbst. Tippen Sie eine an, um zu sehen, wie sie sitzt."
+    },
+    "finder": {
+      "kicker": "Technik-Finder",
+      "title": "In drei Fragen zur *passenden Technik*",
+      "lead": "Ehrliche Orientierung in einer halben Minute. Die endgültige Empfehlung gibt Ihnen Andréia persönlich.",
+      "step": "Frage {n} von 3",
+      "back": "Zurück",
+      "restart": "Neu starten",
+      "q1": "Wer soll die Extensions einsetzen?",
+      "q1a": "Ich selbst, wann ich möchte",
+      "q1b": "Meine Friseurin, für jeden Tag",
+      "q2": "Wie ist Ihr Haar?",
+      "q2a": "Eher fein oder dünn",
+      "q2b": "Mittel bis kräftig",
+      "q2c": "Lockig",
+      "q3": "Was ist Ihnen am wichtigsten?",
+      "q3a": "Länge für besondere Anlässe",
+      "q3b": "Fülle, die bleibt",
+      "q3c": "Frei stylen, auch hochgesteckt",
+      "q3d": "Möglichst flach am Kopf",
+      "resultTitle": "Das passt zu Ihnen",
+      "resultLead": "Aus Ihren Antworten ergibt sich diese Empfehlung. Andréia bestätigt sie Ihnen gern, bevor Sie bestellen.",
+      "best": "Passt am besten",
+      "also": "Ebenfalls gut",
+      "toTechnique": "Zur Technik",
+      "toPacks": "Packungen ansehen",
+      "confirm": "Von Andréia bestätigen lassen",
+      "selfNote": "Clip-ins sind die einzige Technik, die Sie selbst einsetzen. Alle anderen setzt eine Fachfrau ein."
+    },
+    "labels": {
+      "count": "{n} / 7",
+      "how": "So funktioniert es",
+      "who": "Einsetzen",
+      "fix": "Befestigung",
+      "wear": "Tragen",
+      "heatGlue": "Wärme und Kleber",
+      "best": "Ideal für",
+      "pros": "Ihre Vorteile",
+      "consider": "Gut zu wissen",
+      "inShop": "Sofort bestellbar",
+      "onRequest": "Auf Anfrage in jeder Farbe, Länge und Menge. Andréia nennt Ihnen einen festen Preis.",
+      "requestCta": "Diese Technik anfragen",
+      "otherColors": "Auch in anderen Farben auf Anfrage",
+      "symbol": "Symbolbild",
+      "film": "Film",
+      "diagram": "Schema: So sitzt {name} am eigenen Haar"
+    },
+    "methods": {
+      "clip": {
+        "name": "Clip-in",
+        "tagline": "Länge für heute Abend. Morgen wieder Ihr eigenes Haar.",
+        "how": "Tressen mit kleinen Clips an der Oberkante. Sie clipsen sie morgens unter eine Lage Ihres eigenen Haares und nehmen sie abends wieder heraus. Ohne Termin, ohne Kleber, ohne Wärme.",
+        "who": "Sie selbst",
+        "fix": "Clips an der Tresse",
+        "wear": "Tagsüber, abends heraus",
+        "heatGlue": "Weder noch",
+        "best": "Schulterlanges oder längeres Haar, Anlässe, zum Ausprobieren",
+        "pros": [
+          "Jeden Tag neu entscheiden, ob Sie Länge tragen",
+          "Kein Friseurtermin, kein Kleber, keine Wärme",
+          "Lange Haare erst einmal ausprobieren"
+        ],
+        "consider": [
+          "Vor dem Schlafen herausnehmen",
+          "Bei sehr feinem Haar nicht jeden Tag tragen"
+        ]
+      },
+      "thin": {
+        "name": "Extra dünnes Tressenband",
+        "tagline": "So dünn, dass es sich an Ihren Kopf schmiegt.",
+        "how": "Viel Haar an einem extra dünnen, biegsamen Band. Ihre Friseurin befestigt es an einer Reihe kleiner Ringe in Ihrem eigenen Haar, meist durch Einnähen. Das Band folgt der Rundung Ihres Kopfes, und Ihr eigenes Haar fällt darüber.",
+        "who": "Friseurin oder Extension-Fachfrau",
+        "fix": "Ringreihe, meist eingenäht",
+        "wear": "Dauerhaft, wird nachgesetzt",
+        "heatGlue": "Weder noch",
+        "best": "Feines bis mittleres Haar, auch Locken",
+        "pros": [
+          "Trägt kaum auf, folgt der Kopfform",
+          "Viel Fülle auf einer einzigen Linie",
+          "Beim Nachsetzen wiederverwendbar"
+        ],
+        "consider": [
+          "Einarbeitung durch eine Fachfrau",
+          "Wird nachgesetzt, wenn Ihr Haar wächst"
+        ]
+      },
+      "genius": {
+        "name": "Genius Weft",
+        "tagline": "Eine flache Naht, zugeschnitten auf Ihre Kopfform.",
+        "how": "Eine maschinell genähte Tresse ohne Rückhaar an der Naht. Sie lässt sich an jeder Stelle zuschneiden, ohne aufzugehen, und wird an einer Ringreihe in Ihrem eigenen Haar befestigt, meist eingenäht.",
+        "who": "Friseurin oder Extension-Fachfrau",
+        "fix": "Ringreihe, meist eingenäht",
+        "wear": "Dauerhaft, wird nachgesetzt",
+        "heatGlue": "Weder noch",
+        "best": "Feines bis mittleres Haar, viel Dichte",
+        "pros": [
+          "Flache Naht ohne Rückhaar",
+          "Auf jede Breite zuschneidbar",
+          "Beim Nachsetzen wiederverwendbar"
+        ],
+        "consider": [
+          "Einarbeitung durch eine Fachfrau"
+        ]
+      },
+      "butterfly": {
+        "name": "Butterfly Weft",
+        "tagline": "Die Tresse deckt ihre eigene Befestigung ab.",
+        "how": "Die Tresse wird an einer Ringreihe befestigt und liegt so darüber, dass ihr Haar die Ringe abdeckt. Ihr eigenes Haar fällt von oben darüber. Reihe für Reihe entsteht Fülle über den ganzen Hinterkopf.",
+        "who": "Friseurin oder Extension-Fachfrau",
+        "fix": "Ringreihe, von der Tresse abgedeckt",
+        "wear": "Dauerhaft, wird nachgesetzt",
+        "heatGlue": "Weder noch",
+        "best": "Viel Länge und Fülle, die bleibt",
+        "pros": [
+          "Die Ringe liegen unter dem Haar der Tresse",
+          "Breite Reihen bringen Fülle über den ganzen Hinterkopf",
+          "Beim Nachsetzen wiederverwendbar"
+        ],
+        "consider": [
+          "Einarbeitung durch eine Fachfrau"
+        ]
+      },
+      "invisible": {
+        "name": "Invisible Tape",
+        "tagline": "Der dünnste Klebestreifen. Für Scheitelwechsel und Hochsteckfrisuren.",
+        "how": "Haar auf einem besonders dünnen, flachen Klebestreifen, eingesetzt bis an seine Kante. Die Fachfrau setzt die Tapes nah am Ansatz an feine Strähnen Ihres eigenen Haares.",
+        "who": "Friseurin oder Extension-Fachfrau",
+        "fix": "Dünner, flacher Klebestreifen",
+        "wear": "Dauerhaft, wird nachgesetzt",
+        "heatGlue": "Keine Wärme, Klebestreifen",
+        "best": "Feines Haar und alle, die gern hochstecken",
+        "pros": [
+          "Liegt flach am Kopf",
+          "Scheitel wechseln, Haar zurückstreichen",
+          "Beim Nachsetzen mit neuen Klebestreifen wiederverwendbar"
+        ],
+        "consider": [
+          "Die ersten 48 Stunden nicht waschen",
+          "Kein Öl und keine Spülung an die Tapes"
+        ]
+      },
+      "tape": {
+        "name": "Tape-In",
+        "tagline": "Der Klassiker unter den festen Methoden.",
+        "how": "Breitere Klebestreifen mit Haar, die nah am Ansatz an feine Strähnen Ihres eigenen Haares gesetzt werden, oft als Sandwich aus zwei Tapes. Wächst Ihr Haar nach, werden die Tapes gelöst und mit neuen Klebestreifen wieder eingesetzt.",
+        "who": "Friseurin oder Extension-Fachfrau",
+        "fix": "Klebestreifen, oft als Sandwich",
+        "wear": "Dauerhaft, wird nachgesetzt",
+        "heatGlue": "Keine Wärme, Klebestreifen",
+        "best": "Eine bewährte, dauerhafte Methode",
+        "pros": [
+          "Fülle in breiten Bahnen",
+          "Keine Wärme beim Einsetzen",
+          "Beim Nachsetzen mit neuen Klebestreifen wiederverwendbar"
+        ],
+        "consider": [
+          "Kein Öl und keine Spülung an die Tapes"
+        ]
+      },
+      "keratin": {
+        "name": "Keratin-Bondings",
+        "tagline": "Strähne für Strähne. Für Frisuren in alle Richtungen.",
+        "how": "Einzelne Strähnen mit einer kleinen Keratin-Verbindung, die die Fachfrau mit Wärme an feinen Strähnen Ihres eigenen Haares befestigt. Weil jede Strähne einzeln sitzt, lässt sich das Haar frei stylen, auch hochgesteckt.",
+        "who": "Friseurin oder Extension-Fachfrau",
+        "fix": "Keratin-Verbindung je Strähne",
+        "wear": "Dauerhaft, wächst mit heraus",
+        "heatGlue": "Mit Wärme, Keratin",
+        "best": "Freies Styling und Hochsteckfrisuren",
+        "pros": [
+          "Kleine Verbindungen, einzeln gesetzt",
+          "Frei stylen, auch Zopf und Hochsteckfrisur"
+        ],
+        "consider": [
+          "Einsetzen mit Wärme, aufwendiger Termin",
+          "Werden nach dem Herauswachsen entfernt"
+        ]
+      }
+    },
+    "compare": {
+      "kicker": "Vergleich",
+      "title": "Alle Techniken *auf einen Blick*",
+      "lead": "Die wichtigsten Unterschiede nebeneinander. Was Ihnen am wichtigsten ist, entscheidet.",
+      "technique": "Technik",
+      "who": "Wer setzt ein",
+      "fix": "Befestigung",
+      "heat": "Wärme",
+      "glue": "Kleber",
+      "daily": "Abends abnehmen",
+      "reuse": "Beim Nachsetzen wiederverwendbar",
+      "best": "Ideal für",
+      "yes": "Ja",
+      "no": "Nein",
+      "self": "Sie selbst",
+      "pro": "Fachfrau",
+      "newTape": "Ja, neue Klebestreifen",
+      "always": "Immer wieder",
+      "regrow": "Neu gesetzt",
+      "tape": "Klebestreifen",
+      "keratin": "Keratin"
+    },
+    "color": {
+      "kicker": "Farbe",
+      "title": "Ihre Farbe. *Auch wenn sie nicht im Shop ist.*",
+      "lead": "Jede Technik gibt es auf Anfrage auch in anderen Farben, Längen und Mengen. Andréia vergleicht ein Foto Ihres Haares persönlich mit ihren Tönen und stellt Ihre Farbe zusammen, von Platinblond bis Schwarz, glatt bis lockig.",
+      "whatsapp": "Foto per WhatsApp schicken",
+      "ask": "Wunschfarbe anfragen",
+      "note": "Aufgrund unterschiedlicher Bildschirmeinstellungen können Farben leicht abweichen. Deshalb gleicht Andréia jeden Ton vorab mit einem Foto Ihres Haares ab."
+    },
+    "shop": {
+      "title": "Sofort *bestellbar*",
+      "lead": "Diese Packungen liegen bereit. Andréia bestätigt Ihnen Farbe und Menge persönlich, bevor Sie bezahlen."
+    },
+    "faq": {
+      "title": "Fragen, die fast jede Kundin stellt",
+      "items": [
+        {
+          "q": "Welche Technik passt zu feinem Haar?",
+          "a": "Bei feinem Haar zählt, dass die Befestigung flach und leicht bleibt. Oft gewählt werden das extra dünne Tressenband, Genius Weft und Invisible Tape. Schicken Sie Andréia ein Foto Ihres Haares, und sie sagt Ihnen ehrlich, was Ihr Haar gut trägt."
+        },
+        {
+          "q": "Kann ich Extensions selbst einsetzen?",
+          "a": "Clip-ins ja: Sie setzen sie morgens ein und nehmen sie abends wieder heraus. Alle anderen Techniken sitzen fest am eigenen Haar und werden von einer Friseurin oder Extension-Fachfrau eingesetzt."
+        },
+        {
+          "q": "Wer setzt Tressen, Tapes und Bondings ein?",
+          "a": "Ihre Friseurin oder eine Extension-Fachfrau. Andréia berät Sie vorher zu Technik, Farbe und Menge, damit Sie mit genau dem richtigen Haar zum Termin gehen."
+        },
+        {
+          "q": "Gibt es meine Farbe?",
+          "a": "Wenn sie nicht im Shop ist: auf Anfrage. Jede Technik gibt es auch in anderen Farben, Längen und Mengen. Schicken Sie Andréia ein Foto Ihres Haares bei Tageslicht, ohne Blitz."
+        },
+        {
+          "q": "Wie viele Packungen brauche ich?",
+          "a": "Das hängt von Ihrem Haar und Ihrem Wunsch ab. Andréia sagt es Ihnen persönlich, bevor Sie bestellen, am einfachsten per WhatsApp."
+        },
+        {
+          "q": "Wann bezahle ich?",
+          "a": "Wann Sie möchten: gleich nach der Bestellung per QR-Code in Ihrer Banking-App oder nach Andréias persönlicher Bestätigung. Abgebucht wird nichts automatisch."
+        },
+        {
+          "q": "Was, wenn die Extensions nicht passen?",
+          "a": "Sie haben 14 Tage Widerrufsrecht ab Erhalt der Ware. Alles Weitere steht in der Widerrufsbelehrung."
+        }
+      ]
+    },
+    "note": "Produktbilder mit KI bearbeitet. Tape-In und Keratin-Bondings: Symbolbilder, mit KI erstellt. Filme: echte Aufnahmen aus dem Atelier.",
+    "mega": {
+      "title": "Extensions",
+      "text": "Sieben Techniken aus Echthaar, handgefertigt von Andréia in Iserlohn. Finden Sie Ihre in drei Fragen.",
+      "finder": "Technik-Finder starten",
+      "all": "Alle Extensions ansehen",
+      "toggle": "Techniken anzeigen"
     }
   }
 }

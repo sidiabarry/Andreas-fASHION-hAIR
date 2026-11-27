@@ -97,10 +97,11 @@
     "ext": {
       "kicker": "Extensiones",
       "title": "Más largo. *Más volumen.*",
-      "lead": "Cabello natural en seis métodos, desde el clip-in de colocación propia hasta la cortina fina. Los paquetes de aquí se piden directamente. Qué método y cuánto cabello le convienen, se lo dice Andréia personalmente.",
-      "methodsLabel": "Seis métodos",
+      "lead": "Cabello natural en siete métodos, desde el clip-in de colocación propia hasta la cortina extrafina. Los paquetes de aquí se piden directamente. Qué método y cuánto cabello le convienen, se lo dice Andréia personalmente.",
+      "methodsLabel": "Siete métodos",
       "methods": [
         "Clip-in",
+        "Cortina extrafina",
         "Genius Weft",
         "Butterfly Weft",
         "Invisible Tape",
@@ -396,7 +397,17 @@
     "compareTitleStaged": "Imagen editada y foto original",
     "compareLabelStaged": "Mover la comparación: imagen editada a la izquierda, foto original sin editar a la derecha",
     "manufacturer": "Fabricado por {name}, {address}, {email}",
-    "handmade": "Hecho a mano por Andréia en {city}"
+    "handmade": "Hecho a mano por Andréia en {city}",
+    "captionAtelier": "Foto real del atelier, solo se han ajustado la luz y el balance de blancos.",
+    "captionFilm": "Vídeo del atelier: grabación real, acortada y sin sonido.",
+    "atelierAlt": "{name}, {subtitle}: foto real del atelier, imagen {index}",
+    "filmAlt": "{name}, {subtitle}: vídeo del atelier",
+    "colorLabel": "Color",
+    "colorNote": "Debido a los distintos ajustes de pantalla, el color puede variar ligeramente.",
+    "colorMatch": "¿Tiene dudas? Andréia compara su tono de antemano con una foto de su cabello.",
+    "otherColors": "También disponible en otros colores, bajo consulta.",
+    "otherColorsCta": "Consultar su color",
+    "otherColorsTopic": "{name}, en otro color"
   },
   "price": {
     "smallBusiness": "No se aplica IVA conforme al § 19 de la ley alemana del IVA (pequeña empresa).",
@@ -941,7 +952,9 @@
     "packWhatsapp": "Preguntar por WhatsApp",
     "packAsk": "O enviar una consulta",
     "productsTitle": "Extensiones en la tienda",
-    "allPacks": "Todas las extensiones de la colección"
+    "allPacks": "Todas las extensiones de la colección",
+    "thin": "Cortina extrafina",
+    "thinText": "Mucho cabello en una cortina extrafina y flexible que se adapta a la forma de la cabeza."
   },
   "custom": {
     "metaTitle": "Solicitar una pieza a medida",
@@ -1002,7 +1015,8 @@
       "invisible": "Invisible Tape",
       "tape": "Tape-In",
       "keratin": "Bondings de queratina",
-      "clip": "Clip-in"
+      "clip": "Clip-in",
+      "thin": "Cortina extrafina"
     },
     "structures": {
       "glatt": "Liso",
@@ -1086,9 +1100,23 @@
     "share": "Compartir con una persona de confianza",
     "shareCopied": "Enlace copiado",
     "shareText": "Mira esta pieza de Andréia’s Fashion Hair: {name}",
-    "atelierShow": "Fotos del taller ({count})",
-    "atelierHide": "Mostrar solo fotos de estudio",
-    "trustFold": "Envío, devolución y pago"
+    "trustFold": "Envío, devolución y pago",
+    "prev": "Imagen anterior",
+    "next": "Imagen siguiente",
+    "play": "Reproducir vídeo",
+    "pause": "Pausar vídeo",
+    "film": "Vídeo",
+    "benefitsTitle": "Lo que significa para usted",
+    "assureTitle": "Comprar con tranquilidad",
+    "assurePay": "Pague cuando quiera: al momento con código QR o tras la confirmación de Andréia",
+    "assureReturn": "<link>14 días de derecho de desistimiento</link> desde la recepción",
+    "assureShip": "Entrega en {from} a {to} días laborables desde Iserlohn",
+    "techKicker": "La técnica",
+    "techLink": "Comparar las siete técnicas",
+    "colorsTitle": "¿No está su color?",
+    "colorsText": "Todas nuestras extensiones están disponibles bajo consulta en otros colores, largos y cantidades. Envíe a Andréia una foto de su cabello con luz natural: ella compone su tono y le indica un precio fijo.",
+    "colorsWhatsapp": "Enviar una foto por WhatsApp",
+    "colorsAsk": "Consultar su color"
   },
   "cat": {
     "toolsLabel": "Ajustar la vista",
@@ -1131,6 +1159,283 @@
       "peruecken": "Cabeza completa y front lace",
       "pony": "Frente y nacimiento delantero",
       "maenner": "Zona de coronilla en microskin"
+    }
+  },
+  "ext": {
+    "metaTitle": "Extensiones de cabello natural: siete técnicas, cualquier color",
+    "metaDescription": "Extensiones de cabello natural, hechas a mano por Andréia en Iserlohn: clip-in, cortina extrafina, Genius Weft, Butterfly Weft, Invisible Tape, Tape-In y bondings de queratina. La técnica adecuada en tres preguntas, cualquier color bajo consulta.",
+    "hero": {
+      "kicker": "Extensiones · cabello natural · hechas a mano en Iserlohn",
+      "title": "Su cabello. *Solo más largo y con más volumen.*",
+      "lead": "Siete técnicas, un objetivo: cabello que se siente como el suyo, porque es auténtico. Descubra en tres preguntas qué técnica va con su cabello y su día a día, y pida directamente o deje que Andréia le asesore personalmente.",
+      "ctaFinder": "Encontrar mi técnica",
+      "ctaShop": "Disponible ya",
+      "priceFrom": "desde {price} el paquete",
+      "proof": [
+        "100 % cabello natural, extrafino",
+        "Comparación de color por foto antes de pagar",
+        "Pague cuando quiera",
+        "Cualquier color bajo consulta"
+      ],
+      "filmLabel": "Vídeo del atelier: cortina extrafina, rizado natural",
+      "tileLabel": "Ver {name}"
+    },
+    "nav": {
+      "label": "Técnicas",
+      "title": "Siete técnicas. *Una es para usted.*",
+      "lead": "Cada técnica responde al mismo deseo a su manera: más largo, más volumen, más usted. Toque una para ver cómo se coloca."
+    },
+    "finder": {
+      "kicker": "Buscador de técnicas",
+      "title": "Tres preguntas para su *técnica ideal*",
+      "lead": "Una orientación honesta en medio minuto. La recomendación final se la da Andréia personalmente.",
+      "step": "Pregunta {n} de 3",
+      "back": "Atrás",
+      "restart": "Empezar de nuevo",
+      "q1": "¿Quién colocará las extensiones?",
+      "q1a": "Yo misma, cuando quiera",
+      "q1b": "Mi peluquera, para el día a día",
+      "q2": "¿Cómo es su cabello?",
+      "q2a": "Más bien fino o escaso",
+      "q2b": "Medio a grueso",
+      "q2c": "Rizado",
+      "q3": "¿Qué es lo más importante para usted?",
+      "q3a": "Largo para ocasiones especiales",
+      "q3b": "Volumen que dura",
+      "q3c": "Peinar con libertad, también recogido",
+      "q3d": "Lo más plano posible",
+      "resultTitle": "Esto es lo que le va",
+      "resultLead": "Esto es lo que indican sus respuestas. Andréia se lo confirma con gusto antes de su pedido.",
+      "best": "La mejor opción",
+      "also": "También le va",
+      "toTechnique": "Ver la técnica",
+      "toPacks": "Ver paquetes",
+      "confirm": "Que Andréia lo confirme",
+      "selfNote": "Los clip-ins son la única técnica que se coloca usted misma. Todas las demás las coloca una especialista."
+    },
+    "labels": {
+      "count": "{n} / 7",
+      "how": "Cómo funciona",
+      "who": "Colocación",
+      "fix": "Fijación",
+      "wear": "Uso",
+      "heatGlue": "Calor y adhesivo",
+      "best": "Ideal para",
+      "pros": "Sus ventajas",
+      "consider": "Bueno saber",
+      "inShop": "Disponible ya",
+      "onRequest": "Bajo consulta en cualquier color, largo y cantidad. Andréia le indica un precio fijo.",
+      "requestCta": "Consultar esta técnica",
+      "otherColors": "También en otros colores bajo consulta",
+      "symbol": "Imagen ilustrativa",
+      "film": "Vídeo",
+      "diagram": "Esquema: cómo se fija {name} en su propio cabello"
+    },
+    "methods": {
+      "clip": {
+        "name": "Clip-in",
+        "tagline": "Largo para esta noche. Mañana, de nuevo su propio cabello.",
+        "how": "Cortinas con pequeños clips en el borde superior. Por la mañana las engancha bajo una capa de su propio cabello y por la noche se las quita. Sin cita, sin adhesivo, sin calor.",
+        "who": "Usted misma",
+        "fix": "Clips en la cortina",
+        "wear": "Durante el día, por la noche se quitan",
+        "heatGlue": "Ninguno",
+        "best": "Cabello por los hombros o más largo, ocasiones, para probar",
+        "pros": [
+          "Decidir cada día si lleva largo",
+          "Sin cita en la peluquería, sin adhesivo, sin calor",
+          "Probar primero el pelo largo"
+        ],
+        "consider": [
+          "Quitarlas antes de dormir",
+          "Con cabello muy fino, no llevarlas todos los días"
+        ]
+      },
+      "thin": {
+        "name": "Cortina extrafina",
+        "tagline": "Tan fina que se adapta a su cabeza.",
+        "how": "Mucho cabello en una cortina extrafina y flexible. Su peluquera la fija en una fila de pequeñas anillas en su propio cabello, normalmente cosiéndola. La cortina sigue la curva de su cabeza y su propio cabello cae por encima.",
+        "who": "Peluquera o especialista en extensiones",
+        "fix": "Fila de anillas, normalmente cosida",
+        "wear": "Fija, se reajusta al crecer",
+        "heatGlue": "Ninguno",
+        "best": "Cabello fino a medio, también rizado",
+        "pros": [
+          "Apenas abulta, sigue la forma de la cabeza",
+          "Mucho volumen en una sola línea",
+          "Reutilizable en cada reajuste"
+        ],
+        "consider": [
+          "La coloca una especialista",
+          "Se reajusta cuando su cabello crece"
+        ]
+      },
+      "genius": {
+        "name": "Genius Weft",
+        "tagline": "Una costura plana, cortada a la forma de su cabeza.",
+        "how": "Una cortina cosida a máquina, sin pelo de retorno en la costura. Se puede cortar en cualquier punto sin deshacerse y se fija en una fila de anillas en su propio cabello, normalmente cosida.",
+        "who": "Peluquera o especialista en extensiones",
+        "fix": "Fila de anillas, normalmente cosida",
+        "wear": "Fija, se reajusta al crecer",
+        "heatGlue": "Ninguno",
+        "best": "Cabello fino a medio, mucha densidad",
+        "pros": [
+          "Costura plana sin pelo de retorno",
+          "Se corta a cualquier ancho",
+          "Reutilizable en cada reajuste"
+        ],
+        "consider": [
+          "La coloca una especialista"
+        ]
+      },
+      "butterfly": {
+        "name": "Butterfly Weft",
+        "tagline": "La cortina cubre su propia fijación.",
+        "how": "La cortina se fija en una fila de anillas y queda encima de modo que su cabello cubre las anillas. Su propio cabello cae por encima. Fila a fila se crea volumen en toda la parte trasera de la cabeza.",
+        "who": "Peluquera o especialista en extensiones",
+        "fix": "Fila de anillas, cubierta por la cortina",
+        "wear": "Fija, se reajusta al crecer",
+        "heatGlue": "Ninguno",
+        "best": "Mucho largo y volumen que dura",
+        "pros": [
+          "Las anillas quedan bajo el cabello de la cortina",
+          "Filas anchas dan volumen a toda la parte trasera",
+          "Reutilizable en cada reajuste"
+        ],
+        "consider": [
+          "La coloca una especialista"
+        ]
+      },
+      "invisible": {
+        "name": "Invisible Tape",
+        "tagline": "La cinta adhesiva más fina. Para cambiar la raya y recogerse el pelo.",
+        "how": "Cabello sobre una cinta adhesiva especialmente fina y plana, implantado hasta su borde. La especialista coloca las cintas cerca de la raíz en mechones finos de su propio cabello.",
+        "who": "Peluquera o especialista en extensiones",
+        "fix": "Cinta adhesiva fina y plana",
+        "wear": "Fija, se reajusta al crecer",
+        "heatGlue": "Sin calor, cinta adhesiva",
+        "best": "Cabello fino y quien se recoge el pelo a menudo",
+        "pros": [
+          "Queda plana sobre la cabeza",
+          "Cambiar la raya, peinar hacia atrás",
+          "Reutilizable en cada reajuste con cinta nueva"
+        ],
+        "consider": [
+          "No lavar durante las primeras 48 horas",
+          "Ni aceite ni acondicionador en las cintas"
+        ]
+      },
+      "tape": {
+        "name": "Tape-In",
+        "tagline": "El clásico de los métodos fijos.",
+        "how": "Cintas adhesivas más anchas con cabello, colocadas cerca de la raíz en mechones finos de su propio cabello, a menudo como sándwich de dos cintas. Cuando su cabello crece, se retiran y se vuelven a colocar con cinta nueva.",
+        "who": "Peluquera o especialista en extensiones",
+        "fix": "Cintas adhesivas, a menudo en sándwich",
+        "wear": "Fija, se reajusta al crecer",
+        "heatGlue": "Sin calor, cinta adhesiva",
+        "best": "Un método fijo y probado",
+        "pros": [
+          "Volumen en bandas anchas",
+          "Sin calor al colocarlas",
+          "Reutilizable en cada reajuste con cinta nueva"
+        ],
+        "consider": [
+          "Ni aceite ni acondicionador en las cintas"
+        ]
+      },
+      "keratin": {
+        "name": "Bondings de queratina",
+        "tagline": "Mechón a mechón. Para peinados en todas las direcciones.",
+        "how": "Mechones individuales con una pequeña unión de queratina, que la especialista fija con calor en mechones finos de su propio cabello. Como cada mechón va por separado, el cabello se peina con total libertad, también recogido.",
+        "who": "Peluquera o especialista en extensiones",
+        "fix": "Unión de queratina por mechón",
+        "wear": "Fija, crece con el cabello",
+        "heatGlue": "Con calor, queratina",
+        "best": "Peinado libre y recogidos",
+        "pros": [
+          "Uniones pequeñas, colocadas una a una",
+          "Peinar con libertad, también coletas y recogidos"
+        ],
+        "consider": [
+          "Colocación con calor, cita más larga",
+          "Se retiran cuando han crecido"
+        ]
+      }
+    },
+    "compare": {
+      "kicker": "Comparativa",
+      "title": "Todas las técnicas *de un vistazo*",
+      "lead": "Las diferencias clave, una al lado de otra. Decide lo que más le importa a usted.",
+      "technique": "Técnica",
+      "who": "Quién coloca",
+      "fix": "Fijación",
+      "heat": "Calor",
+      "glue": "Adhesivo",
+      "daily": "Se quitan por la noche",
+      "reuse": "Reutilizable al reajustar",
+      "best": "Ideal para",
+      "yes": "Sí",
+      "no": "No",
+      "self": "Usted misma",
+      "pro": "Especialista",
+      "newTape": "Sí, cinta nueva",
+      "always": "Una y otra vez",
+      "regrow": "Se colocan de nuevo",
+      "tape": "Cinta adhesiva",
+      "keratin": "Queratina"
+    },
+    "color": {
+      "kicker": "Color",
+      "title": "Su color. *Aunque no esté en la tienda.*",
+      "lead": "Cada técnica está disponible bajo consulta en otros colores, largos y cantidades. Andréia compara personalmente una foto de su cabello con sus tonos y compone su color, del rubio platino al negro, de liso a rizado.",
+      "whatsapp": "Enviar una foto por WhatsApp",
+      "ask": "Consultar su color",
+      "note": "Debido a los distintos ajustes de pantalla, los colores pueden variar ligeramente. Por eso Andréia compara cada tono de antemano con una foto de su cabello."
+    },
+    "shop": {
+      "title": "Disponible *ya*",
+      "lead": "Estos paquetes están listos. Andréia le confirma personalmente el color y la cantidad antes de que pague."
+    },
+    "faq": {
+      "title": "Las preguntas que casi todas nuestras clientas hacen",
+      "items": [
+        {
+          "q": "¿Qué técnica va bien con el cabello fino?",
+          "a": "Con cabello fino lo importante es que la fijación quede plana y ligera. Se suelen elegir la cortina extrafina, Genius Weft e Invisible Tape. Envíe a Andréia una foto de su cabello y ella le dirá con sinceridad qué soporta bien."
+        },
+        {
+          "q": "¿Puedo colocarme las extensiones yo misma?",
+          "a": "Los clip-ins, sí: se los pone por la mañana y se los quita por la noche. Todas las demás técnicas van fijas en su propio cabello y las coloca una peluquera o especialista en extensiones."
+        },
+        {
+          "q": "¿Quién coloca cortinas, cintas y bondings?",
+          "a": "Su peluquera o una especialista en extensiones. Andréia le asesora antes sobre técnica, color y cantidad, para que vaya a la cita con exactamente el cabello adecuado."
+        },
+        {
+          "q": "¿Tienen mi color?",
+          "a": "Si no está en la tienda: bajo consulta. Cada técnica está disponible también en otros colores, largos y cantidades. Envíe a Andréia una foto de su cabello con luz natural, sin flash."
+        },
+        {
+          "q": "¿Cuántos paquetes necesito?",
+          "a": "Depende de su cabello y de lo que desee. Andréia se lo dice personalmente antes de su pedido, lo más fácil por WhatsApp."
+        },
+        {
+          "q": "¿Cuándo pago?",
+          "a": "Cuando quiera: justo después del pedido con código QR en su app bancaria o tras la confirmación personal de Andréia. No se carga nada automáticamente."
+        },
+        {
+          "q": "¿Y si las extensiones no me van?",
+          "a": "Tiene 14 días de derecho de desistimiento desde la recepción de la mercancía. Todo lo demás figura en la información sobre el desistimiento."
+        }
+      ]
+    },
+    "note": "Imágenes de producto editadas con IA. Tape-In y bondings de queratina: imágenes ilustrativas creadas con IA. Vídeos: grabaciones reales del atelier.",
+    "mega": {
+      "title": "Extensiones",
+      "text": "Siete técnicas en cabello natural, hechas a mano por Andréia en Iserlohn. Encuentre la suya en tres preguntas.",
+      "finder": "Iniciar el buscador de técnicas",
+      "all": "Ver todas las extensiones",
+      "toggle": "Mostrar técnicas"
     }
   }
 }

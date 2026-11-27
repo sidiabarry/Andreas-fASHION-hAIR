@@ -14,6 +14,7 @@ import { Header } from "@/components/site/Header";
 import { Rise } from "@/components/site/Rise";
 import { ShopPreferences } from "@/components/site/ShopPreferences";
 import { products, toLite } from "@/data/catalog";
+import { methodShowcases } from "@/data/methods";
 import { routing } from "@/i18n/routing";
 import { siteUrl } from "@/lib/seo";
 import { siteMode } from "@/server/mode";
@@ -60,7 +61,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
         <NextIntlClientProvider>
           <ShopPreferences>
           <CartProvider checkoutOpen={mode.checkoutOpen} products={products.map((product) => toLite(product, locale))}>
-            <Header />
+            <Header methods={methodShowcases(() => true).map((m) => ({ id: m.id, image: m.image, symbol: m.symbol }))} />
             <div id="inhalt" tabIndex={-1}>
               {children}
             </div>
