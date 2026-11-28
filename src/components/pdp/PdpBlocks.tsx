@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 
 import { Arrow } from "@/components/Arrow";
 import { MethodDiagram } from "@/components/extensions/MethodDiagram";
+import { OpenDetailsOnWide } from "@/components/pdp/OpenDetailsOnWide";
 import { company } from "@/config/company";
 import { deliveryParams } from "@/config/shipping";
 import type { Product, ProductCopy, ProductText } from "@/data/catalog";
@@ -163,7 +164,8 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 }
 
 /**
- * Ebene 3, auf Abruf: höchstens vier zugeklappte Bereiche mit klaren Namen.
+ * Ebene 3, Tiefe auf Abruf: eigenes Band unter dem Kaufbereich, höchstens vier Bereiche mit klaren Namen.
+ * Am Handy zugeklappt, am Desktop offen in zwei Spalten (nur scrollen, nichts aufklappen).
  * „Über dieses Stück“ (Geschichte, So funktioniert es, Für wen, alle Vorteile, Eigenschaften), „Pflege“, „Häufige Fragen“, „Versand, Rückgabe und Bezahlung“.
  */
 export async function PdpDetails({ locale, copy, specs, faq, trust }: { locale: Locale; copy: ProductCopy | null; specs: string[]; faq: Faq[]; trust: React.ReactNode }) {
@@ -237,6 +239,7 @@ export async function PdpDetails({ locale, copy, specs, faq, trust }: { locale: 
         </Section>
       ) : null}
       <Section title={t("pdp.trustFold")}>{trust}</Section>
+      <OpenDetailsOnWide selector=".pdp-details > details" />
     </section>
   );
 }

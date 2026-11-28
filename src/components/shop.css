@@ -229,8 +229,15 @@
 .pdp-consult { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; padding: 12px 14px; border: 1px solid var(--af-line); border-radius: var(--af-radius); background: var(--af-surface); }
 .pdp-consult > p { margin: 0; font-size: 0.92rem; font-weight: 550; }
 .pdp-consult__actions { display: flex; flex-wrap: wrap; gap: 8px; }
-.pdp-details { margin-top: 4px; }
+.pdp-details { margin-top: clamp(36px, 5vw, 72px); }
 .pdp-details > h2 { margin-bottom: 4px; }
+@media (min-width: 901px) {
+  /* Desktop: alle Bereiche offen, ruhig in zwei Spalten, damit die Tiefe nicht wieder zur langen Wand wird */
+  .af-faq.pdp-details { max-width: none; columns: 2; column-gap: clamp(40px, 6vw, 96px); }
+  .pdp-details > h2 { column-span: all; }
+  .pdp-details > details { break-inside: avoid; }
+  .pdp-details summary { font-size: 1.12rem; }
+}
 .pdp-details__body { display: grid; gap: 10px; padding: 0 0 22px; color: var(--af-muted); }
 .pdp-details__body p { margin: 0; padding: 0; max-width: 64ch; }
 .pdp-details__body h4 { margin: 8px 0 0; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.02em; color: var(--af-ink); }

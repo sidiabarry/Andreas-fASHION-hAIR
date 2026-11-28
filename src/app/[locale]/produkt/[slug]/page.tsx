@@ -253,19 +253,6 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
               </div>
             </div>
 
-            <PdpDetails
-              copy={copy}
-              faq={objections}
-              locale={locale}
-              specs={text.specs}
-              trust={
-                <>
-                  <TrustFacts compact locale={locale} />
-                  {hair ? <ReturnPreview madeToOrder={product.madeToOrder} /> : null}
-                  <p>{t("objections.payA")}</p>
-                </>
-              }
-            />
 
             {product.manufacturer === "atelier" ? (
               <p className="af-note pdp-maker">
@@ -285,6 +272,20 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
             ) : null}
           </div>
         </div>
+
+        <PdpDetails
+          copy={copy}
+          faq={objections}
+          locale={locale}
+          specs={text.specs}
+          trust={
+            <>
+              <TrustFacts compact locale={locale} />
+              {hair ? <ReturnPreview madeToOrder={product.madeToOrder} /> : null}
+              <p>{t("objections.payA")}</p>
+            </>
+          }
+        />
       </div>
       <div className="af-zone-light af-zone-fade-top af-zone-band af-pdp__after">
         <div className="af-wrap">
