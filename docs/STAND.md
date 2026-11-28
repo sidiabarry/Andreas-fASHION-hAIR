@@ -5,6 +5,8 @@ Arbeitsnotizen der Agenten: `docs/arbeitsnotizen/`.
 
 ## Stand 27.11.2026 (Produktseiten, Extensions-Seite, neue Produktbilder)
 
+- **Live seit 28.11.2026:** Production-Deploy dieses Stands (Branch `claude/blissful-shannon-5zfiik`) auf https://andreas-fashion-hair.vercel.app (Vercel-Projekt `andreas-fashion-hair`). Eigene Domain noch nicht verbunden (Schritt 8 in `docs/LIVEGANG.md`).
+
 - **Neue Produktbilder 422–428** von der Inhaberin (fertig bearbeitet, unverändert übernommen, `public/assets/products/<id>-<n>.webp`) sind die Hauptbilder. Alte KI-Studiobilder und Rohfotos entfernt. Ergänzt um ausgewählte, nur in Licht/Weißabgleich entwickelte Atelierfotos (`<id>-atelier-<n>.jpg`, `scripts/produktbilder/entwickeln.py`).
 - **Filme:** 422 V-Toupet (24,9 s) und 426 Locken (12,3 s), stabilisiert, in Remotion geschnitten, nahtlose Schleife (`scripts/produktfilme/`). In der Galerie als zweites Element, mit Pause-Knopf.
 - **Produkt 426 (braune Ombré-Locken) ist „Extra dünnes Tressenband“** (Auftraggeber), neue Methode `thin` in Filter, Finder, Vergleich. 424 und 425 bleiben Genius Weft.
