@@ -119,15 +119,16 @@
 .af-thumb__film { position: absolute; left: 4px; right: 4px; bottom: 4px; display: flex; align-items: center; justify-content: center; gap: 4px; padding: 3px 0; border-radius: 999px; background: color-mix(in srgb, var(--af-night) 78%, transparent); color: #fff; font-family: var(--af-mono); font-size: 0.56rem; letter-spacing: 0.08em; text-transform: uppercase; }
 
 /* ===== Produktseite: Methode, Farbe, Vorteile, Sicherheit ===== */
-.pdp-method { color: var(--af-gold); }
-.pdp-color { display: grid; gap: 8px; padding: 14px 16px; border: 1px solid var(--af-line); border-radius: var(--af-radius); background: var(--af-raise); }
+.pdp-eyebrow { color: var(--af-gold-light); }
+.pdp-color { display: grid; gap: 6px; padding: 12px 16px; border: 1px solid var(--af-line); border-radius: var(--af-radius); background: var(--af-raise); }
 .pdp-color__row { display: flex; align-items: center; gap: 14px; }
 .pdp-color__swatch { flex: none; overflow: hidden; width: 44px; height: 44px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 2px var(--af-raise), 0 0 0 3px var(--af-gold); }
 .pdp-color__swatch img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; transform: scale(2.2); }
 .pdp-color__name { display: grid; gap: 2px; margin: 0; }
 .pdp-color__name span { font-family: var(--af-mono); font-size: 0.64rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--af-muted); }
 .pdp-color__name b { font-weight: 550; line-height: 1.3; }
-.pdp-color__more { margin: 2px 0 0; font-size: 0.92rem; }
+.pdp-color__more { display: inline-flex; align-items: center; gap: 8px; justify-self: start; min-height: 32px; font-size: 0.9rem; font-weight: 500; color: var(--af-ink); border-bottom: 1px solid color-mix(in srgb, var(--af-gold) 60%, transparent); transition: color 0.3s var(--af-ease), gap 0.3s var(--af-ease); }
+.pdp-color__more:hover { color: var(--af-gold); gap: 12px; }
 .pdp-color__note { margin: 0; font-size: 0.78rem; line-height: 1.45; color: var(--af-muted); }
 .pdp-story { color: var(--af-ink); }
 .pdp-benefits ul { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
@@ -137,9 +138,9 @@
 .pdp-benefits b { font-weight: 600; }
 .pdp-benefits span { color: var(--af-muted); font-size: 0.95rem; }
 .af-buyrow { display: grid; gap: 14px; }
-.pdp-assure { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
-.pdp-assure li { position: relative; padding-left: 28px; font-size: 0.86rem; line-height: 1.45; color: var(--af-muted); }
-.pdp-assure li::before { content: ""; position: absolute; left: 0; top: 1px; width: 18px; height: 18px; background: var(--af-gold); -webkit-mask: var(--icon) center / contain no-repeat; mask: var(--icon) center / contain no-repeat; }
+.pdp-assure { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 0; padding: 0; list-style: none; }
+.pdp-assure li { position: relative; padding-left: 24px; font-size: 0.84rem; line-height: 1.45; color: var(--af-muted); white-space: nowrap; }
+.pdp-assure li::before { content: ""; position: absolute; left: 0; top: 1px; width: 17px; height: 17px; background: var(--af-gold); -webkit-mask: var(--icon) center / contain no-repeat; mask: var(--icon) center / contain no-repeat; }
 .pdp-assure li[data-icon="pay"] { --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6'%3E%3Cpath d='M3 6h18v12H3zM3 10h18M7 15h4'/%3E%3C/svg%3E"); }
 .pdp-assure li[data-icon="return"] { --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6'%3E%3Cpath d='M9 14 4 9l5-5M4 9h11a5 5 0 0 1 0 10h-3'/%3E%3C/svg%3E"); }
 .pdp-assure li[data-icon="ship"] { --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.6'%3E%3Cpath d='M3 7h11v9H3zM14 10h4l3 3v3h-7M7 19a2 2 0 1 0 0-.01M17 19a2 2 0 1 0 0-.01'/%3E%3C/svg%3E"); }
@@ -219,3 +220,44 @@
 .af-mega__img[data-diagram] { display: grid; place-items: center; padding: 10px; background: linear-gradient(160deg, var(--af-raise), color-mix(in srgb, var(--af-cream) 70%, var(--af-raise))); }
 .af-mega__img[data-diagram] .xd { width: 100%; }
 .af-mega__badge { position: absolute; left: 8px; bottom: 8px; padding: 3px 8px; border: 1px solid var(--af-gold); border-radius: 999px; background: var(--af-raise); font-family: var(--af-mono); font-size: 0.56rem; font-style: normal; letter-spacing: 0.1em; text-transform: uppercase; color: var(--af-gold); }
+
+/* ===== Produktseite in drei Ebenen: Kurzvorteile, Beratung in einer Zeile, Details auf Abruf ===== */
+.pdp-quick { display: grid; gap: 7px; margin: 0; padding: 0; list-style: none; }
+.pdp-quick li { position: relative; padding-left: 28px; font-weight: 550; line-height: 1.35; }
+.pdp-quick li::before { content: ""; position: absolute; left: 0; top: 1px; width: 19px; height: 19px; border-radius: 50%; background: color-mix(in srgb, var(--af-gold-fill) 24%, transparent); }
+.pdp-quick li::after { content: ""; position: absolute; left: 6px; top: 6px; width: 7px; height: 4px; border-left: 1.8px solid var(--af-gold); border-bottom: 1.8px solid var(--af-gold); transform: rotate(-45deg); }
+.pdp-consult { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; padding: 12px 14px; border: 1px solid var(--af-line); border-radius: var(--af-radius); background: var(--af-surface); }
+.pdp-consult > p { margin: 0; font-size: 0.92rem; font-weight: 550; }
+.pdp-consult__actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.pdp-details { margin-top: 4px; }
+.pdp-details > h2 { margin-bottom: 4px; }
+.pdp-details__body { display: grid; gap: 10px; padding: 0 0 22px; color: var(--af-muted); }
+.pdp-details__body p { margin: 0; padding: 0; max-width: 64ch; }
+.pdp-details__body h4 { margin: 8px 0 0; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.02em; color: var(--af-ink); }
+.pdp-details__list { display: grid; gap: 8px; margin: 0; padding: 0 0 0 18px; }
+.pdp-details__list b { color: var(--af-ink); font-weight: 600; }
+.pdp-details__faq { display: grid; gap: 14px; margin: 0; }
+.pdp-details__faq dt { font-weight: 600; color: var(--af-ink); }
+.pdp-details__faq dd { margin: 4px 0 0; }
+.pdp-details__body .af-trust { margin: 0; padding: 0; background: none; border: 0; box-shadow: none; }
+.pdp-details__body .af-trust > h2 { display: none; }
+.pdp-maker { font-size: 0.74rem; }
+
+/* Handy: Kaufknopf näher an die Entscheidung – Brotkrume einzeilig, kleinere Vorschaubilder, ruhigere Merkmale */
+@media (max-width: 760px) {
+  .af-crumb--pdp { margin-bottom: 14px; }
+  .af-crumb--pdp li[aria-current] { display: none; }
+  .af-pdp__gallery { gap: 10px; }
+  .af-pdp__thumbs { gap: 8px; }
+  .af-pdp__thumbs .af-thumb { width: 58px; height: 74px; border-radius: 10px; }
+  .af-thumb__film { left: 3px; right: 3px; bottom: 3px; padding: 2px 0; font-size: 0.5rem; }
+  .af-pdp__info .af-chips li { min-height: 0; padding: 6px 12px; }
+  .af-pdp__info .af-chips b { font-size: 0.9rem; }
+  .pdp-consult { padding: 12px; }
+  .pdp-consult__actions { display: grid; grid-template-columns: 1fr; width: 100%; }
+  .pdp-consult__actions > * { justify-content: center; }
+}
+@media (max-width: 480px) {
+  /* Kaufleiste flach halten: auf schmalen Handys ohne Produktnamen (steht direkt darüber); Preis und Grundpreis bleiben vollständig (PAngV) */
+  .af-sticky__name { display: none; }
+}

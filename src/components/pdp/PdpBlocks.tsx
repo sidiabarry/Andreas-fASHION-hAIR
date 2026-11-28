@@ -5,7 +5,7 @@ import { Arrow } from "@/components/Arrow";
 import { MethodDiagram } from "@/components/extensions/MethodDiagram";
 import { company } from "@/config/company";
 import { deliveryParams } from "@/config/shipping";
-import type { Product, ProductText } from "@/data/catalog";
+import type { Product, ProductCopy, ProductText } from "@/data/catalog";
 import type { Locale } from "@/i18n/locales";
 import { Link } from "@/i18n/navigation";
 import type { MethodId } from "@/lib/collection";
@@ -44,43 +44,30 @@ export async function ColorRow({ product, text, locale, isExtension }: { product
         </p>
       </div>
       {isExtension ? (
-        <p className="pdp-color__more">
-          {t("otherColors")}{" "}
-          <Link className="af-link" href={{ pathname: "/anfrage", query: { produkt: t("otherColorsTopic", { name: `${text.name}, ${text.subtitle}` }), thema: "extensions" } }}>
-            {t("otherColorsCta")}
-          </Link>
-        </p>
+        <Link className="pdp-color__more" href={{ pathname: "/anfrage", query: { produkt: t("otherColorsTopic", { name: `${text.name}, ${text.subtitle}` }), thema: "extensions" } }}>
+          {t("otherColors")} <Arrow />
+        </Link>
       ) : null}
-      <p className="pdp-color__note">
-        {t("colorNote")} {t("colorMatch")}
-      </p>
+      <p className="pdp-color__note">{t("colorNote")}</p>
     </div>
   );
 }
 
-/** Die drei stärksten Vorteile sichtbar statt im Akkordeon: Merkmal fett, Nutzen dahinter (Feature → Benefit). */
-export async function BenefitList({ benefits, locale }: { benefits: string[]; locale: Locale }) {
+/** Drei Kurzvorteile direkt über dem Kaufknopf: je eine Zeile, in Sekunden erfasst (Ebene 1). */
+export async function QuickBenefits({ items, locale }: { items: string[]; locale: Locale }) {
   const t = await getTranslations({ locale, namespace: "pdp" });
-  const items = benefits.slice(0, 3).map((line) => {
-    const [feature, ...rest] = line.split("→");
-    return { benefit: rest.join("→").trim(), feature: feature.trim() };
-  });
-  if (!items.length) return null;
+  const list = items.filter(Boolean).slice(0, 3);
+  if (!list.length) return null;
   return (
-    <section aria-label={t("benefitsTitle")} className="pdp-benefits">
-      <ul>
-        {items.map((item) => (
-          <li key={item.feature}>
-            <b>{item.feature}</b>
-            {item.benefit ? <span>{item.benefit}</span> : null}
-          </li>
-        ))}
-      </ul>
-    </section>
+    <ul aria-label={t("benefitsTitle")} className="pdp-quick">
+      {list.map((item) => (
+        <li key={item}>{item}</li>
+      ))}
+    </ul>
   );
 }
 
-/** Sicherheit direkt am Kaufknopf: Zahlung, Widerruf, Lieferzeit (Baymard: Rückgabe und Versand nah am Kaufbereich). */
+/** Sicherheit direkt am Kaufknopf, eine Zeile je Punkt: Zahlung, Widerruf, Lieferzeit (Baymard: Rückgabe und Versand nah am Kaufbereich). */
 export async function Assurance({ locale, madeToOrder }: { locale: Locale; madeToOrder: boolean }) {
   const t = await getTranslations({ locale, namespace: "pdp" });
   const delivery = deliveryParams();
@@ -96,7 +83,7 @@ export async function Assurance({ locale, madeToOrder }: { locale: Locale; madeT
   );
 }
 
-/** Extensions: die Technik hinter der Packung, mit Skizze und Sprung in den Vergleich. */
+/** Extensions: die Technik hinter der Packung, kompakt mit Skizze und Sprung in den Vergleich. */
 export async function TechniqueSpotlight({ method, image, locale }: { method: MethodId; image: string | null; locale: Locale }) {
   const t = await getTranslations({ locale });
   const name = t(`ext.methods.${method}.name`);
@@ -118,15 +105,6 @@ export async function TechniqueSpotlight({ method, image, locale }: { method: Me
           {name}
         </h2>
         <p className="pdp-tech__tag">{t(`ext.methods.${method}.tagline`)}</p>
-        <p className="af-text">{t(`ext.methods.${method}.how`)}</p>
-        <dl className="pdp-tech__facts">
-          {(["who", "fix", "wear", "heatGlue"] as const).map((key) => (
-            <div key={key}>
-              <dt>{t(`ext.labels.${key}`)}</dt>
-              <dd>{t(`ext.methods.${method}.${key}`)}</dd>
-            </div>
-          ))}
-        </dl>
         <Link className="af-cta-line" href={{ hash: `technik-${method}`, pathname: "/extensions" }}>
           {t("pdp.techLink")} <Arrow />
         </Link>
@@ -166,5 +144,99 @@ export async function ColorsBand({ locale, product, images }: { locale: Locale; 
         </div>
       </div>
     </aside>
+  );
+}
+
+type Faq = { q: string; a: string };
+
+/** Ein zugeklappter Bereich der Ebene 3. */
+function Section({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <details>
+      <summary>
+        <h3 className="af-faq__q">{title}</h3>
+        <i aria-hidden="true" />
+      </summary>
+      <div className="pdp-details__body">{children}</div>
+    </details>
+  );
+}
+
+/**
+ * Ebene 3, auf Abruf: höchstens vier zugeklappte Bereiche mit klaren Namen.
+ * „Über dieses Stück“ (Geschichte, So funktioniert es, Für wen, alle Vorteile, Eigenschaften), „Pflege“, „Häufige Fragen“, „Versand, Rückgabe und Bezahlung“.
+ */
+export async function PdpDetails({ locale, copy, specs, faq, trust }: { locale: Locale; copy: ProductCopy | null; specs: string[]; faq: Faq[]; trust: React.ReactNode }) {
+  const t = await getTranslations({ locale });
+  const benefits = (copy?.benefits ?? []).map((line) => {
+    const [feature, ...rest] = line.split("→");
+    return { benefit: rest.join("→").trim(), feature: feature.trim() };
+  });
+  return (
+    <section aria-labelledby="pdp-details-title" className="af-faq af-faq--compact pdp-details">
+      <h2 className="af-mono" id="pdp-details-title">
+        {t("pdp.detailsTitle")}
+      </h2>
+      <Section title={t("pdp.aboutTitle")}>
+        {copy?.story ? <p>{copy.story}</p> : null}
+        {copy?.howItWorks ? (
+          <>
+            <h4>{t("product.copy.how")}</h4>
+            <p>{copy.howItWorks}</p>
+          </>
+        ) : null}
+        {copy?.goodFor ? (
+          <>
+            <h4>{t("product.copy.good")}</h4>
+            <p>{copy.goodFor}</p>
+          </>
+        ) : null}
+        {benefits.length ? (
+          <>
+            <h4>{t("pdp.benefitsFull")}</h4>
+            <ul className="pdp-details__list">
+              {benefits.map((b) => (
+                <li key={b.feature}>
+                  <b>{b.feature}</b>
+                  {b.benefit ? <span> {b.benefit}</span> : null}
+                </li>
+              ))}
+            </ul>
+          </>
+        ) : null}
+        {specs.length ? (
+          <>
+            <h4>{t("pdp.specsTitle")}</h4>
+            <ul className="af-specs">
+              {specs.map((spec) => (
+                <li key={spec}>{spec}</li>
+              ))}
+            </ul>
+          </>
+        ) : null}
+      </Section>
+      {copy?.care?.length ? (
+        <Section title={t("product.copy.care")}>
+          <ul className="pdp-details__list">
+            {copy.care.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </Section>
+      ) : null}
+      {faq.length ? (
+        <Section title={t("pdp.faqTitle")}>
+          <dl className="pdp-details__faq">
+            {faq.map((item) => (
+              <div key={item.q}>
+                <dt>{item.q}</dt>
+                <dd>{item.a}</dd>
+              </div>
+            ))}
+          </dl>
+        </Section>
+      ) : null}
+      <Section title={t("pdp.trustFold")}>{trust}</Section>
+    </section>
   );
 }

@@ -3,6 +3,17 @@
 Aktueller Stand, offene Punkte und Arbeitsweise: **`docs/UEBERGABE.md`** (21.11.2026).
 Arbeitsnotizen der Agenten: `docs/arbeitsnotizen/`.
 
+## Stand 28.11.2026 (Produktseite in drei Ebenen)
+
+Auftrag: Produktseiten waren zu lang, die Entscheidung soll schneller fallen, ohne Information zu verlieren.
+
+- **Ebene 1, entscheiden in 10 s** (bis zum Kaufknopf): Bild/Film, Name, Preis mit Grundpreis, Merkmal-Chips (bei Extensions auch „Einsetzen: selbst/Fachfrau“ und „Tragen: täglich/dauerhaft“), Farbe mit Echtfarbfeld und Hinweis zu Bildschirmabweichungen, drei Kurzvorteile, Kaufknopf mit Zahlung/Widerruf/Lieferzeit in je einer Zeile.
+- **Ebene 2, sicher in 60 s:** eine Beratungszeile („Unsicher bei Farbe oder Menge?“ → WhatsApp, Merkliste, Teilen).
+- **Ebene 3, Tiefe auf Abruf:** höchstens vier zugeklappte Bereiche: „Über dieses Stück“ (Geschichte, So funktioniert es, Für wen, alle Vorteile, Eigenschaften), „Pflege“, „Häufige Fragen“, „Versand, Rückgabe und Bezahlung“. Kein Text gelöscht, nur umsortiert.
+- Überzeile „Handgefertigt von Andréia in Iserlohn“ statt Kategorie/Technik (Kategorie steht in der Brotkrume, Technik im Namen). Brotkrume am Handy einzeilig, kleinere Vorschaubilder.
+- Kaufleiste am Handy erscheint nach dem ersten Bildschirm, sobald der Hauptknopf nicht zu sehen ist; Grundpreis darin immer vollständig (PAngV), auf schmalen Handys ohne Produktnamen.
+- Messung (iPhone 13, Wörter vor dem Kaufknopf / Bildschirme bis zum Knopf / Klappbereiche): 422 231→85 / 3,4→2,5 / 10→4; 423 184→86 / 3,1→2,4 / 10→4; 426 228→90 / 3,4→2,4 / 12→4.
+
 ## Stand 27.11.2026 (Produktseiten, Extensions-Seite, neue Produktbilder)
 
 - **Live seit 28.11.2026:** Production-Deploy dieses Stands (Branch `claude/blissful-shannon-5zfiik`) auf https://andreas-fashion-hair.vercel.app (Vercel-Projekt `andreas-fashion-hair`). Eigene Domain noch nicht verbunden (Schritt 8 in `docs/LIVEGANG.md`).

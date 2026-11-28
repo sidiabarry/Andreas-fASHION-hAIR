@@ -6,11 +6,11 @@ import { Arrow } from "@/components/Arrow";
 import { JsonLd } from "@/components/JsonLd";
 import { AddToCart } from "@/components/product/AddToCart";
 import { CustomStrip } from "@/components/product/CustomStrip";
-import { ProductCopyBlock } from "@/components/product/ProductCopyBlock";
 import { SpecChips } from "@/components/product/SpecChips";
 import { Gallery, type GalleryShot } from "@/components/product/Gallery";
 import { AskWhatsApp } from "@/components/pdp/AskWhatsApp";
-import { Assurance, BenefitList, ColorRow, ColorsBand, TechniqueSpotlight } from "@/components/pdp/PdpBlocks";
+import { Assurance, ColorRow, ColorsBand, PdpDetails, QuickBenefits, TechniqueSpotlight } from "@/components/pdp/PdpBlocks";
+import { METHOD_FACTS } from "@/data/methods";
 import { MicroHelpers } from "@/components/pdp/MicroHelpers";
 import { PartingCompass } from "@/components/pdp/PartingCompass";
 import { ReturnPreview } from "@/components/pdp/ReturnPreview";
@@ -101,8 +101,6 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
     ...(ownFaq.length === 0 && hair ? [{ a: hasClips ? t("objections.holdClips") : t("objections.holdOther"), q: t("objections.holdQ") }] : []),
     ...(ownFaq.length === 0 && hair ? [{ a: product.base ? t("objections.fitBase", { base: product.base }) : t("objections.fitNoBase"), q: t("objections.fitQ") }] : []),
     ...(isExtension ? [{ a: t("objections.packA"), q: t("objections.packQ") }] : []),
-    { a: t("objections.returnA"), q: t("objections.returnQ") },
-    { a: t("objections.payA"), q: t("objections.payQ") },
   ];
   const base = siteUrl();
   const pageUrl = `${base}/${locale}/produkt/${product.slug}`;
@@ -112,6 +110,15 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
   const lengthCm = hair && !isExtension ? parseLengthCm(product.length) : null;
   const baseCm = hair && !isExtension ? parseBaseCm(product.base) : null;
   const method = methodOf(product);
+  // Ebene 1: Kurzfakten und Kurzvorteile (je eine Zeile). Bei Extensions aus der Technik, sonst die Merkmale der Vorteile.
+  const facts = method ? METHOD_FACTS[method] : null;
+  const extraChips = facts
+    ? [
+        { key: "who", label: t("ext.labels.who"), value: facts.self ? t("ext.compare.self") : t("ext.compare.pro") },
+        { key: "wear", label: t("ext.labels.wear"), value: facts.daily ? t("pdp.wearDaily") : t("pdp.wearPermanent") },
+      ]
+    : [];
+  const quick = method ? (t.raw(`ext.methods.${method}.pros`) as string[]) : (copy?.benefits ?? []).map((line) => line.split("→")[0].trim());
   // Detailaufnahme der Packung für „Die Technik dahinter“
   const techImage = product.extraImages?.at(-1) ?? product.secondImage ?? null;
   const otherPacks = isExtension ? byCategory("extensions").filter((item) => item.slug !== product.slug && available(item)).map((item) => item.image) : [];
@@ -149,7 +156,7 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
       />
       <ViewTracker slug={product.slug} />
       <div className="af-wrap">
-        <nav aria-label={t("common.breadcrumb")} className="af-crumb">
+        <nav aria-label={t("common.breadcrumb")} className="af-crumb af-crumb--pdp">
           <ol>
             <li>
               <Link href="/kollektion">{t("collection.title")}</Link>
@@ -182,9 +189,9 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
 
           <div className="af-pdp__info af-zone-light">
             <div>
-              <p className="af-mono">
-                {t(`categories.${product.category}.label`)}
-                {method ? <span className="pdp-method"> · {t(`ext.methods.${method}.name`)}</span> : null}
+              {/* Überzeile: Herkunft statt Kategorie (die steht schon in der Brotkrume, die Technik im Namen) */}
+              <p className={product.manufacturer === "atelier" ? "af-mono pdp-eyebrow" : "af-mono"}>
+                {product.manufacturer === "atelier" ? t("product.handmade", { city: company.address.city }) : t(`categories.${product.category}.label`)}
               </p>
               <h1 className="af-h2" style={{ marginTop: 14 }}>
                 {text.name}
@@ -192,7 +199,6 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
               <p className="af-lead" style={{ marginTop: 10 }}>
                 {text.subtitle}
               </p>
-              {product.manufacturer === "atelier" ? <p className="af-handmade">{t("product.handmade", { city: company.address.city })}</p> : null}
               {copy?.headline ? <p className="af-headline">{copy.headline}</p> : null}
             </div>
 
@@ -202,7 +208,7 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
             </div>
             {showDaily ? <p className="af-note af-daily">{t("pdp.daily", { perDay, price })}</p> : null}
 
-            <SpecChips locale={locale} product={product} />
+            <SpecChips extra={extraChips} hideMethod={Boolean(method)} locale={locale} product={product} />
             {hair ? <ColorRow isExtension={isExtension} locale={locale} product={product} text={text} /> : null}
             {hair && !isExtension ? <MicroHelpers base={baseCm} clips={hasClips} lengthCm={lengthCm} /> : null}
 
@@ -214,8 +220,8 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
               <p className="af-only">{t("product.customMsg", delivery)}</p>
             ) : null}
 
-            <p className="af-text pdp-story">{copy?.story ?? text.description}</p>
-            {copy?.benefits?.length ? <BenefitList benefits={copy.benefits} locale={locale} /> : null}
+            {copy?.story ? null : <p className="af-text">{text.description}</p>}
+            <QuickBenefits items={quick} locale={locale} />
 
             {isSold ? (
               <Link className="af-cta-band af-glass af-glass--gold" href={{ pathname: "/anfrage", query: { produkt: `${text.name}, ${text.subtitle}`, thema: "massanfertigung" } }}>
@@ -228,71 +234,48 @@ export default async function ProductPage({ params }: PageProps<"/[locale]/produ
               </div>
             )}
 
-            <div className="af-consult">
-              <h2 className="af-mono">{t("product.consultTitle")}</h2>
-              <p className="af-text">{t(isExtension ? "product.consultExtensions" : "product.consultText")}</p>
-              <div className="af-pdp__secondary">
-                <WishlistButton slug={product.slug} />
+            <div className="pdp-consult">
+              <p>{t(isExtension ? "pdp.consultShort" : "pdp.consultShortHair")}</p>
+              <div className="pdp-consult__actions">
                 {company.social.whatsapp ? (
                   <AskWhatsApp
                     ctx={{ base: product.base || null, length: product.length ? `${product.length} cm` : null, name: text.name, price, subtitle: text.subtitle, url: pageUrl }}
                     phoneHref={company.phoneHref}
+                    short
                   />
-                ) : null}
+                ) : (
+                  <Link className="af-chip" href={{ pathname: "/anfrage", query: { produkt: `${text.name}, ${text.subtitle}`, thema: "beratung" } }}>
+                    {t("product.ask")}
+                  </Link>
+                )}
+                <WishlistButton slug={product.slug} />
                 <ShareButton name={text.name} url={pageUrl} />
               </div>
-              {company.social.whatsapp ? null : (
-                <Link className="af-cta-line" href={{ pathname: "/anfrage", query: { produkt: `${text.name}, ${text.subtitle}`, thema: "beratung" } }} style={{ justifySelf: "start" }}>
-                  {t("product.ask")}
-                </Link>
-              )}
             </div>
 
-            <section aria-labelledby="specs-title">
-              <h2 className="af-sr" id="specs-title">
-                {t("product.specs")}
-              </h2>
-              {isExtension ? null : (
-                <ul className="af-specs">
-                  {text.specs.map((spec) => (
-                    <li key={spec}>{spec}</li>
-                  ))}
-                </ul>
-              )}
-              {product.manufacturer === "atelier" ? (
-                <p className="af-note">
-                  {t("product.manufacturer", {
-                    address: `${company.address.street}, ${company.address.postalCode} ${company.address.city}`,
-                    email: company.email,
-                    name: company.ownerFullName ?? company.brandName,
-                  })}
-                </p>
-              ) : null}
-            </section>
+            <PdpDetails
+              copy={copy}
+              faq={objections}
+              locale={locale}
+              specs={text.specs}
+              trust={
+                <>
+                  <TrustFacts compact locale={locale} />
+                  {hair ? <ReturnPreview madeToOrder={product.madeToOrder} /> : null}
+                  <p>{t("objections.payA")}</p>
+                </>
+              }
+            />
 
-            <section aria-labelledby="faq-title" className="af-faq af-faq--compact">
-              <h2 className="af-h3" id="faq-title">
-                {t("objections.title")}
-              </h2>
-              {copy ? <ProductCopyBlock copy={copy} locale={locale} /> : null}
-              <details>
-                <summary>
-                  <h3 className="af-faq__q">{t("pdp.trustFold")}</h3>
-                  <i aria-hidden="true" />
-                </summary>
-                <TrustFacts compact locale={locale} />
-                {hair ? <ReturnPreview madeToOrder={product.madeToOrder} /> : null}
-              </details>
-              {objections.map((item) => (
-                <details key={item.q}>
-                  <summary>
-                    <h3 className="af-faq__q">{item.q}</h3>
-                    <i aria-hidden="true" />
-                  </summary>
-                  <p>{item.a}</p>
-                </details>
-              ))}
-            </section>
+            {product.manufacturer === "atelier" ? (
+              <p className="af-note pdp-maker">
+                {t("product.manufacturer", {
+                  address: `${company.address.street}, ${company.address.postalCode} ${company.address.city}`,
+                  email: company.email,
+                  name: company.ownerFullName ?? company.brandName,
+                })}
+              </p>
+            ) : null}
 
             {product.category === "pflege" ? (
               <section aria-labelledby="safety-title" className="af-safety">

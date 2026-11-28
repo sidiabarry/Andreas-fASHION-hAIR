@@ -7,7 +7,8 @@ import { useCart } from "@/components/cart/CartProvider";
 import { Link } from "@/i18n/navigation";
 
 /**
- * Feste Kaufleiste am Handy: erscheint, sobald der Hauptknopf aus dem Bild scrollt.
+ * Feste Kaufleiste am Handy: erscheint, sobald die Kundin über das erste Bild hinaus scrollt und der Hauptknopf
+ * gerade nicht zu sehen ist (davor und danach). Beim Ankommen bleibt das Produktbild frei.
  * Beobachtet das Element mit der Kennung `buy-anchor`.
  */
 export function StickyBuyBar({ slug, unique, price, unitLine, name, available }: { slug: string; unique: boolean; price: string; unitLine?: string; name: string; available: boolean }) {
@@ -17,9 +18,30 @@ export function StickyBuyBar({ slug, unique, price, unitLine, name, available }:
   useEffect(() => {
     const anchor = document.getElementById("buy-anchor");
     if (!anchor || !("IntersectionObserver" in window)) return;
-    const observer = new IntersectionObserver(([entry]) => setVisible(!entry.isIntersecting && entry.boundingClientRect.top < 0), { threshold: 0 });
+    let anchorInView = true;
+    let pastFirstScreen = false;
+    const update = () => setVisible(!anchorInView && pastFirstScreen);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        anchorInView = entry.isIntersecting;
+        update();
+      },
+      { threshold: 0 },
+    );
     observer.observe(anchor);
-    return () => observer.disconnect();
+    const onScroll = () => {
+      const next = window.scrollY > window.innerHeight * 0.6;
+      if (next !== pastFirstScreen) {
+        pastFirstScreen = next;
+        update();
+      }
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", onScroll);
+    };
   }, []);
   const inCart = cart.ready && unique && cart.has(slug);
   return (

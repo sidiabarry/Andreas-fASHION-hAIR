@@ -8,7 +8,7 @@ import { methodOf } from "@/lib/collection";
 const TEXTURES: Record<string, "glatt" | "leichtGewellt" | "lockig"> = { glatt: "glatt", "leicht gewellt": "leichtGewellt", lockig: "lockig" };
 
 /** Eigenschaften auf einen Blick: Methode, Länge, Gewicht, Struktur, Basis. Nur, was der Katalog wirklich kennt. */
-export async function SpecChips({ product, locale }: { product: Product; locale: Locale }) {
+export async function SpecChips({ product, locale, extra = [], hideMethod = false }: { product: Product; locale: Locale; extra?: { key: string; label: string; value: string }[]; hideMethod?: boolean }) {
   const t = await getTranslations({ locale, namespace: "product.spec" });
   const te = await getTranslations({ locale, namespace: "extensions" });
   const unit = unitInfo(product);
@@ -16,7 +16,7 @@ export async function SpecChips({ product, locale }: { product: Product; locale:
   const texture = TEXTURES[product.texture.toLowerCase()];
   const cm = Number.parseInt(product.length, 10);
   const items: { key: string; label: string; value: string }[] = [
-    ...(method ? [{ key: "method", label: t("method"), value: te(method) }] : []),
+    ...(method && !hideMethod ? [{ key: "method", label: t("method"), value: te(method) }] : []),
     ...(cm > 0 ? [{ key: "length", label: t("length"), value: t("lengthValue", { cm }) }] : []),
     ...(unit
       ? [
@@ -30,6 +30,7 @@ export async function SpecChips({ product, locale }: { product: Product; locale:
     // Farbe steht als eigene Zeile mit Farbfeld darunter (ColorRow); bei Pflegeprodukten gibt es keine
     ...(texture ? [{ key: "texture", label: t("texture"), value: t(`textures.${texture}`) }] : []),
     ...(product.base ? [{ key: "base", label: t("base"), value: t("baseValue", { base: product.base }) }] : []),
+    ...extra,
   ];
   if (!items.length) return null;
   return (
